@@ -4,15 +4,15 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.profile.table
+    - field.field.profile.profile.field_profile_drupal_org_profile
+    - field.field.profile.profile.field_profile_facebook_url
     - field.field.profile.profile.field_profile_first_name
-    - field.field.profile.profile.field_profile_function
     - field.field.profile.profile.field_profile_image
     - field.field.profile.profile.field_profile_interests
     - field.field.profile.profile.field_profile_last_name
-    - field.field.profile.profile.field_profile_organization
-    - field.field.profile.profile.field_profile_phone_number
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
+    - field.field.profile.profile.field_profile_twitter_url
     - image.style.social_medium
     - profile.type.profile
   module:
@@ -33,6 +33,8 @@ content:
       image_link: ''
     third_party_settings: {  }
 hidden:
+  field_profile_drupal_org_profile: true
+  field_profile_facebook_url: true
   field_profile_first_name: true
   field_profile_function: true
   field_profile_interests: true
@@ -41,4 +43,5 @@ hidden:
   field_profile_phone_number: true
   field_profile_profile_tag: true
   field_profile_self_introduction: true
+  field_profile_twitter_url: true
   langcode: true
