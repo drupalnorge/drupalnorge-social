@@ -10,7 +10,11 @@
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "1.5.0",
         "goalgorilla/open_social": "dev-8.x-1.x",
-        "drupal/coffee": "*"
+        "drupal/coffee": "*",
+        "drupal/slack_invite": "*",
+        "drupal/sparkpost": "*",
+        "drupal/reroute_email": "*",
+        "drupal/migrate_tools": "*"
     },
     "repositories": [
         {
