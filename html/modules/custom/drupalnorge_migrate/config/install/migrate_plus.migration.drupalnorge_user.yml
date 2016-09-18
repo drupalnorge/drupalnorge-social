@@ -1,0 +1,20 @@
+id: drupalnorge_user
+label: Users for Drupal Norge
+source:
+  plugin: drupalnorge_user
+destination:
+  plugin: social_user
+
+process:
+  name: name
+  pass: pass
+  mail: mail
+  created: created
+  access: access
+  status: status
+
+migration_dependencies: {}
+dependencies:
+  enforced:
+    module:
+      - drupalnorge_migrate

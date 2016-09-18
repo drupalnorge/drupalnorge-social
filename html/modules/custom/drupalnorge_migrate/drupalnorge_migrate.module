@@ -1,0 +1,73 @@
+<?php
+use Drupal\profile\Entity\ProfileInterface;
+
+/**
+ * Helper function to create a cache id.
+ */
+function _drupalnorge_migrate_create_cid_for_mail($mail) {
+  return 'drupalnorge_field_cache_' . $mail;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ *
+ * In order to save those user fields we found in the migration, we are
+ * retrieving them here, and saving them on the profile.
+ */
+function drupalnorge_migrate_profile_create(ProfileInterface $profile) {
+  $cid = NULL;
+  try {
+    $id = $profile->getOwnerId();
+    if (!$id) {
+      return;
+    }
+    $owner = \Drupal\user\Entity\User::load($id);
+    if (!$owner) {
+      return;
+    }
+    $mail = $owner->getEmail();
+    $cid = _drupalnorge_migrate_create_cid_for_mail($mail);
+    $cache = Drupal::cache()->get($cid);
+    if ($cache && $cache->data) {
+      // Set up some mappings here.
+      $text_mappings = [
+        'field_name_first' => 'field_profile_first_name',
+        'field_name_last' => 'field_profile_last_name',
+        'field_bio' => 'field_profile_self_introduction',
+      ];
+      foreach ($text_mappings as $source => $destination) {
+        $profile->get($destination)->setValue($cache->data[$source][0]['value']);
+      }
+      $url_mappings = [
+        'field_drupal_org_user_url' => 'field_profile_drupal_org_profile',
+        'field_twitter_url' => 'field_profile_twitter_url',
+        'field_facebook_url' => 'field_profile_facebook_url',
+      ];
+      foreach ($url_mappings as $source => $destination) {
+        $profile->get($destination)->setValue($cache->data[$source][0]['url']);
+      }
+      // Try to migrate over that file we know exists at a certain path.
+      if (!empty($cache->data['user_picture'])) {
+        $url = $cache->data['user_picture'];
+        if ($file_data = @file_get_contents($url)) {
+          $path_parts = pathinfo($url);
+          if ($file = file_save_data($file_data, 'public://pictures/' . $path_parts['basename'])) {
+            $profile->get('field_profile_image')
+              ->setValue($file->id());
+          }
+        }
+
+      }
+
+    }
+  }
+  catch (Exception $e) {
+    // So what... You know. There is a life outside of this. And it is too short
+    // to handle exceptions, as everyone knows.
+    watchdog_exception('drupalnorge_migrate', $e);
+  }
+  if ($cid) {
+    // Clean up, regardless if we failed or not.
+    Drupal::cache()->delete($cid);
+  }
+}

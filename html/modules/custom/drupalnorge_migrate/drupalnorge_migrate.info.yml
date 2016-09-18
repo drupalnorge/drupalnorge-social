@@ -1,0 +1,8 @@
+name: drupalnorge_migrate
+type: module
+description: User migration for Drupal Norge
+core: 8.x
+package: Custom
+dependencies:
+  - migrate_drupal
+  - migrate_plus
