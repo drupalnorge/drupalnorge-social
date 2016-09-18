@@ -1,0 +1,25 @@
+uuid: ce0badde-f7eb-4fdc-b901-3a14128d8d35
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.event_enrollment.field_enrollment_status
+  module:
+    - options
+    - social_event
+_core:
+  default_config_hash: XgNJ1_CVEwnC4fSbjkxigoa4GcRuO24e62A-fLYcxxc
+id: event_enrollment.event_enrollment.field_enrollment_status
+field_name: field_enrollment_status
+entity_type: event_enrollment
+bundle: event_enrollment
+label: 'Enrollment status'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

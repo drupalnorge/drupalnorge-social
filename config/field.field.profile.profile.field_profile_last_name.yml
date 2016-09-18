@@ -1,0 +1,21 @@
+uuid: b06b32f0-510c-4bf8-b83c-65dc07933327
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_last_name
+    - profile.type.profile
+_core:
+  default_config_hash: csNjl3bGScQ3rN5gozhGKMxRo1RKmw0EfFRjEEOEzK4
+id: profile.profile.field_profile_last_name
+field_name: field_profile_last_name
+entity_type: profile
+bundle: profile
+label: 'Last name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

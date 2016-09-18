@@ -1,0 +1,18 @@
+uuid: 7f65cb97-8a6f-484d-92c0-e6a17fd5bd4f
+langcode: en
+status: true
+dependencies: {  }
+countryCode: IL
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%locality %postalCode"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+uppercaseFields:
+  - locality
+administrativeAreaType: null
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '\d{5}(?:\d{2})?'
+postalCodePrefix: null

@@ -1,0 +1,173 @@
+uuid: 17cc6e70-642d-4a51-b1f5-233d9bc77a53
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.field.profile.profile.field_profile_drupal_org_profile
+    - field.field.profile.profile.field_profile_facebook_url
+    - field.field.profile.profile.field_profile_first_name
+    - field.field.profile.profile.field_profile_image
+    - field.field.profile.profile.field_profile_interests
+    - field.field.profile.profile.field_profile_last_name
+    - field.field.profile.profile.field_profile_profile_tag
+    - field.field.profile.profile.field_profile_self_introduction
+    - field.field.profile.profile.field_profile_twitter_url
+    - image.style.social_x_large
+    - profile.type.profile
+  module:
+    - field_group
+    - image
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_profile_names_image:
+      children:
+        - field_profile_first_name
+        - field_profile_last_name
+        - field_profile_image
+      parent_name: ''
+      weight: 0
+      label: 'Names & profile image'
+      format_type: fieldset
+      format_settings:
+        label: 'Names & profile image'
+        required_fields: true
+        id: name
+        classes: scrollspy
+    group_profile_funct_organization:
+      children:
+        - field_profile_function
+        - field_profile_organization
+      parent_name: ''
+      weight: 1
+      label: Work
+      format_type: fieldset
+      format_settings:
+        label: Work
+        required_fields: true
+        id: work
+        classes: scollspy
+    group_profile_self_intro:
+      children:
+        - field_profile_self_introduction
+        - field_profile_expertise
+        - field_profile_interests
+        - field_profile_profile_tag
+      parent_name: ''
+      weight: 3
+      label: 'Details about you'
+      format_type: fieldset
+      format_settings:
+        label: 'Details about you'
+        required_fields: true
+        id: details
+        classes: scrollspy
+    group_profile_contact_info:
+      children:
+        - field_profile_phone_number
+        - field_profile_address
+      parent_name: ''
+      weight: 2
+      label: 'Contact information'
+      format_type: fieldset
+      format_settings:
+        label: 'Contact information'
+        required_fields: true
+        id: contact
+        classes: scollspy
+_core:
+  default_config_hash: h8ej4ulwXRgdNA5emUpoqLLd0Ioa2n_Wp4WDg4nyb6I
+id: profile.profile.default
+targetEntityType: profile
+bundle: profile
+mode: default
+content:
+  field_profile_drupal_org_profile:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_profile_facebook_url:
+    weight: 11
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_profile_first_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_profile_function:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_profile_image:
+    weight: 3
+    settings:
+      preview_image_style: social_x_large
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+  field_profile_interests:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+  field_profile_last_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_profile_organization:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_profile_phone_number:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+  field_profile_profile_tag:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+  field_profile_self_introduction:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_profile_twitter_url:
+    weight: 10
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

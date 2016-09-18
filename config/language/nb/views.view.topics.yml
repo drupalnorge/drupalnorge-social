@@ -1,0 +1,42 @@
+display:
+  default:
+    display_title: Hoved
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér på'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
+          tags:
+            previous: '‹ Forrige'
+            next: 'Neste ›'
+            first: '« Første'
+            last: 'Siste »'
+      fields:
+        title:
+          separator: ', '
+      title: Emner
+      arguments:
+        uid:
+          exception:
+            title: Alle
+  block_user_topics:
+    display_title: Blokk
+    display_options:
+      arguments:
+        uid:
+          exception:
+            title: Alle
+  page_profile:
+    display_title: Side
+    display_options:
+      menu:
+        title: Emner
+      tab_options:
+        title: Emner

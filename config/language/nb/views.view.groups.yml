@@ -1,0 +1,32 @@
+display:
+  default:
+    display_title: Hoved
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér på'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
+          tags:
+            previous: ‹‹
+            next: ››
+      fields:
+        label:
+          separator: ', '
+      title: Grupper
+      arguments:
+        group_membership_or_creator:
+          exception:
+            title: Alle
+  page_user_groups:
+    display_options:
+      menu:
+        title: Grupper

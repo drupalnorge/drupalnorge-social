@@ -1,0 +1,22 @@
+uuid: 13e25609-f26c-44f8-8be5-23f0c6eae1bd
+langcode: nb
+status: true
+dependencies:
+  module:
+    - profile
+    - taxonomy
+_core:
+  default_config_hash: 0wGajjKhaMA7cSwI9XvyWSqeLIeaKB_PjWOo-TIo8lw
+id: profile.field_profile_profile_tag
+field_name: field_profile_profile_tag
+entity_type: profile
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

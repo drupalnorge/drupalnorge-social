@@ -1,0 +1,23 @@
+uuid: f93c9f8b-5dd1-4f9b-b169-ba701bc26ede
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_facebook_url
+    - profile.type.profile
+  module:
+    - link
+id: profile.profile.field_profile_facebook_url
+field_name: field_profile_facebook_url
+entity_type: profile
+bundle: profile
+label: 'Facebook URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

@@ -1,0 +1,16 @@
+uuid: 2bdda975-7a3e-4592-9b18-d1854d69e3bb
+langcode: nb
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OF2fEyCNGH5Y7zuEZ2pZoXj_PdTuo4Q6FFDoCY6Fiuk
+name: social_medium
+label: 'social medium (44 x 44)'
+effects:
+  29ad2546-2731-11e6-b67b-9e71128cae77:
+    uuid: 29ad2546-2731-11e6-b67b-9e71128cae77
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 44
+      height: 44

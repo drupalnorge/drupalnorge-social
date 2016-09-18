@@ -1,0 +1,20 @@
+uuid: b7632e62-d62e-4868-ab28-ae2d7fe0eb95
+langcode: nb
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: B7yHZiJueXrrf7cdxYVDkQB5VHomvQteQvS1MeVDGAc
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  settings: {  }
+  third_party_settings: {  }
+  weight: 0
+hidden:
+  member_for: true
+  profile_main: true
+  profile_profile: true

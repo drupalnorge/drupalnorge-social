@@ -1,0 +1,23 @@
+uuid: 93a36d7f-0c50-4c48-8b7e-f6c00c88a795
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.post.field_post
+  module:
+    - social_post
+    - text
+_core:
+  default_config_hash: T1BFmkf81_0-pvfEqXNvkI-J7Sp_qBPJmJymj7HQ5qk
+id: post.post.field_post
+field_name: field_post
+entity_type: post
+bundle: post
+label: Post
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

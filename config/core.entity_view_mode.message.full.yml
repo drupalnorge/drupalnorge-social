@@ -1,0 +1,12 @@
+uuid: c07ffd3b-e5c4-4018-973d-29e876653584
+langcode: nb
+status: false
+dependencies:
+  module:
+    - message
+_core:
+  default_config_hash: Pl6xok1fBCKaPlLC4iDJVaucp2W72csXt7M3Jwa95nU
+id: message.full
+label: 'Full content'
+targetEntityType: message
+cache: true

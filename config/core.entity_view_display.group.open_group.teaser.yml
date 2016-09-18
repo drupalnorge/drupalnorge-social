@@ -1,0 +1,64 @@
+uuid: db8120a7-c8bb-4deb-9310-1d41818e8608
+langcode: nb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.group.teaser
+    - field.field.group.open_group.field_group_address
+    - field.field.group.open_group.field_group_description
+    - field.field.group.open_group.field_group_geolocation
+    - field.field.group.open_group.field_group_image
+    - field.field.group.open_group.field_group_location
+    - group.type.open_group
+    - image.style.social_x_large
+  module:
+    - address
+    - image
+_core:
+  default_config_hash: avyd4y83vaBnDpzNUZut7wseQA2eBb4B4DJ9JWep56E
+id: group.open_group.teaser
+targetEntityType: group
+bundle: open_group
+mode: teaser
+content:
+  field_group_address:
+    type: address_plain
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_group_description:
+    type: basic_string
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_group_image:
+    type: image
+    weight: 1
+    label: hidden
+    settings:
+      image_style: social_x_large
+      image_link: content
+    third_party_settings: {  }
+  field_group_location:
+    type: string
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  label:
+    label: hidden
+    type: string
+    weight: 0
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  field_group_address: true
+  field_group_geolocation: true
+  langcode: true
+  uid: true

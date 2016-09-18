@@ -1,0 +1,29 @@
+uuid: d1c76b11-a1a1-4435-acc3-0815d2975bc0
+langcode: nb
+status: true
+dependencies:
+  enforced:
+    module:
+      - drupalnorge_migrate
+_core:
+  default_config_hash: hOJzbdlokuIuFZJmbzOqZItgXtSL9b0LF7g6CvFYHE8
+id: drupalnorge_user
+migration_tags: null
+migration_group: null
+label: 'Users for Drupal Norge'
+source:
+  plugin: drupalnorge_user
+process:
+  name: name
+  pass: pass
+  mail: mail
+  status: status
+  field_mobile_phone: field_mobil
+  field_first_name: field_name_first
+  field_last_name: field_name_last
+  field_user_description: field_beskrivelse
+  field_phone_number: field_telefon
+  field_position: field_stiling
+destination:
+  plugin: social_user
+migration_dependencies: {  }

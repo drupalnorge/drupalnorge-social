@@ -1,0 +1,25 @@
+uuid: 09a8671d-6863-4add-bc4e-e30af9eb04de
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.post.field_visibility
+  module:
+    - dropdown
+    - social_post
+_core:
+  default_config_hash: oIxWPbNfLvguPDJhAnJC1wgzvc94KnnwOvMHRpor2Og
+id: post.post.field_visibility
+field_name: field_visibility
+entity_type: post
+bundle: post
+label: Visibility
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '2'
+default_value_callback: ''
+settings: {  }
+field_type: dropdown

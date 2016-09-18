@@ -1,0 +1,31 @@
+uuid: 9613437c-571a-446c-90b6-862899d3018c
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.search_groups_proximity
+  module:
+    - system
+    - views
+  theme:
+    - socialbase
+_core:
+  default_config_hash: 8r6_xldFrE3GeIPbri1kJFhAcnaWyx7cAwB8N_qQd-E
+id: exposed_form_search_groups_proximity_page_sidebar
+theme: socialbase
+region: complementary_top
+weight: 5
+provider: null
+plugin: 'views_exposed_filter_block:search_groups_proximity-page'
+settings:
+  id: 'views_exposed_filter_block:search_groups_proximity-page'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filtrer
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search/groups\r\n/search/groups/*"
+    negate: false
+    context_mapping: {  }

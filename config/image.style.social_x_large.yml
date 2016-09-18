@@ -1,0 +1,16 @@
+uuid: 9c46022e-98db-4ee5-bb2e-7c9490233e1c
+langcode: nb
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: WrJHXVDkFgcXOHxdy8e02Yz-Gr3DA9fOHZ-syQmMsx4
+name: social_x_large
+label: 'social extra large (220 x 220)'
+effects:
+  29ad1d94-2731-11e6-b67b-9e71128cae77:
+    uuid: 29ad1d94-2731-11e6-b67b-9e71128cae77
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 220
+      height: 220

@@ -1,0 +1,23 @@
+uuid: 2058855f-bf0b-4e47-8ed6-b460184fc8e2
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_destination
+    - message.template.create_comment_group_post
+  module:
+    - options
+_core:
+  default_config_hash: AosVXcdGB8FDUuKMV1_feDsq4ne7SvUSdVBDHIA-lvc
+id: message.create_comment_group_post.field_message_destination
+field_name: field_message_destination
+entity_type: message
+bundle: create_comment_group_post
+label: Destinations
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

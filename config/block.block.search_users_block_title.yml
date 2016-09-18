@@ -1,0 +1,28 @@
+uuid: fb557786-8455-4f36-abc4-7c874318a44d
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_search
+    - system
+  theme:
+    - socialbase
+_core:
+  default_config_hash: PreeMga4EUFuZTo1C70U1qN0ZWOb_sNyum2ZX7EEQEg
+id: search_users_block_title
+theme: socialbase
+region: hero
+weight: 2
+provider: null
+plugin: search_users_block
+settings:
+  id: search_users_block
+  label: Søk
+  provider: social_search
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search/users\r\n/search/users/*"
+    negate: false
+    context_mapping: {  }

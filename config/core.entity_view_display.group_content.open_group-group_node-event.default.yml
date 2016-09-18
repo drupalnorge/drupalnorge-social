@@ -1,0 +1,24 @@
+uuid: b2586d06-7d88-4f1e-a9b6-c315789f01fb
+langcode: nb
+status: true
+dependencies:
+  config:
+    - group.content_type.open_group-group_node-event
+_core:
+  default_config_hash: kJJjpLBQ9ldq_R6QlrcYvR1kRo3tJEMcqynshRq1oGE
+id: group_content.open_group-group_node-event.default
+targetEntityType: group_content
+bundle: open_group-group_node-event
+mode: default
+content:
+  entity_id:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  uid: true

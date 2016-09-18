@@ -1,0 +1,22 @@
+uuid: dd17b6f6-7f56-4f7a-9332-e6cfc0c2ae18
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_core
+  theme:
+    - bartik
+_core:
+  default_config_hash: nDYfYWQ6BoVzjh1_WwCefHI-_giPEExtbx4JwWFMeek
+id: pagetitleblock
+theme: bartik
+region: content
+weight: -4
+provider: null
+plugin: social_page_title_block
+settings:
+  id: social_page_title_block
+  label: 'Page title block'
+  provider: social_core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,40 @@
+uuid: 3abd85a5-df89-4ac4-90c7-800442ce3a67
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_group_image
+    - group.type.open_group
+  module:
+    - image
+_core:
+  default_config_hash: 8cN5_XNFi-NYQVLyl54VxY7pgylHwOLDjc1J6-kLgcg
+id: group.open_group.field_group_image
+field_name: field_group_image
+entity_type: group
+bundle: open_group
+label: 'Group Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: 3600x3600
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

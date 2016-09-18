@@ -1,0 +1,16 @@
+uuid: 06220519-d095-4621-bafd-bde952a611c3
+langcode: nb
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UQ7KFRvYgDDnlOEYKAJRGk--hg5fI3NoMA3Hsze2i1U
+name: social_tiny
+label: 'social tiny (16 x 16)'
+effects:
+  29ad1ec0-2731-11e6-b67b-9e71128cae77:
+    uuid: 29ad1ec0-2731-11e6-b67b-9e71128cae77
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 16
+      height: 16

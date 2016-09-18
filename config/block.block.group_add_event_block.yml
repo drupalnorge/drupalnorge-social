@@ -1,0 +1,28 @@
+uuid: 6f540fee-871b-4389-b171-8711cbdc5400
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_group
+    - system
+  theme:
+    - socialbase
+_core:
+  default_config_hash: IhbFgmf1ELaOBiBsnRl6-AJQEcph8O2pJFdGgRZu43k
+id: group_add_event_block
+theme: socialbase
+region: complementary_top
+weight: -26
+provider: null
+plugin: group_add_event_block
+settings:
+  id: group_add_event_block
+  label: 'Group add event block'
+  provider: social_group
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/group/*/events'
+    negate: false
+    context_mapping: {  }

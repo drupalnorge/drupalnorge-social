@@ -1,0 +1,13 @@
+uuid: 8b0a1206-9cb7-485d-ac27-c1c7c58b48d9
+langcode: nb
+status: true
+dependencies:
+  module:
+    - profile
+_core:
+  default_config_hash: QWiXic0BIuoYYgvkiSTxsCsPPi7k1mYuHOTIAPhoT4Q
+id: profile_unpublish_action
+label: 'Unpublish selected profile'
+type: profile
+plugin: profile_unpublish_action
+configuration: {  }

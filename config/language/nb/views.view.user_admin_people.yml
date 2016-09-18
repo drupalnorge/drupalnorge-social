@@ -1,0 +1,73 @@
+label: Brukere
+description: 'Finn og behandle folk som bruker nettstedet ditt.'
+display:
+  default:
+    display_title: Hoved
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér på'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      pager:
+        options:
+          tags:
+            previous: '‹ Forrige'
+            next: 'Neste ›'
+            first: '« Første'
+            last: 'Siste »'
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
+      fields:
+        user_bulk_form:
+          label: Masseoppdatering
+        name:
+          label: Brukernavn
+        status:
+          label: Status
+        roles_target_id:
+          label: Roller
+        created:
+          label: 'Medlem i'
+        access:
+          label: 'Sist tilkoblet'
+        operations:
+          label: Handlinger
+        mail:
+          separator: ', '
+      filters:
+        combine:
+          expose:
+            label: 'Navn eller e-post inneholder'
+        roles_target_id:
+          expose:
+            label: Rolle
+        permission:
+          expose:
+            label: Tillatelse
+        status:
+          group_info:
+            label: Status
+            group_items:
+              1:
+                title: Aktiv
+              2:
+                title: Blokkert
+      title: Brukere
+      empty:
+        area_text_custom:
+          content: 'Ingen folk tilgjengelig.'
+      use_more_text: mer
+  page_1:
+    display_title: Side
+    display_options:
+      menu:
+        title: Liste
+        description: 'Finn og behandle folk som bruker nettstedet ditt.'
+      tab_options:
+        title: Brukere
+        description: 'Behandle brukerkontoer, roller og tillatelser.'

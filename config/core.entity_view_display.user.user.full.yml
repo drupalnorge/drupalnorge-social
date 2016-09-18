@@ -1,0 +1,22 @@
+uuid: 38742edc-bc57-4e9b-b67d-2c775b323c02
+langcode: nb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.full
+  module:
+    - user
+_core:
+  default_config_hash: sU5cZk3VP8MkKAMkwAS-Dg_aHQZ2Zmp3lpF7a0raU_4
+id: user.user.full
+targetEntityType: user
+bundle: user
+mode: full
+content:
+  settings: {  }
+  third_party_settings: {  }
+  weight: 0
+hidden:
+  member_for: true
+  profile_main: true
+  profile_profile: true

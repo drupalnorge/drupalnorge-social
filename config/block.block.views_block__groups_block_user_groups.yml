@@ -1,0 +1,32 @@
+uuid: 1da8806e-daf2-4e53-a0b8-be5e78aeffe6
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.groups
+  module:
+    - system
+    - views
+  theme:
+    - socialbase
+_core:
+  default_config_hash: qhBZ0et3a-hp1wvR2x_d-6meXyG0pUjn-DL7_yVfh0I
+id: views_block__groups_block_user_groups
+theme: socialbase
+region: complementary_bottom
+weight: -14
+provider: null
+plugin: 'views_block:groups-block_user_groups'
+settings:
+  id: 'views_block:groups-block_user_groups'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/stream'
+    negate: false
+    context_mapping: {  }

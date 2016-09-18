@@ -1,0 +1,39 @@
+uuid: 7b7a9eb3-8303-472f-b7b9-8e389601c826
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.topics
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - socialbase
+_core:
+  default_config_hash: ZPwVLWBhxw-Bxk-zSesuK63a8uXbqD_GUoEquIn-Rv4
+id: socialbase_exposedformtopicspage_profile
+theme: socialbase
+region: complementary_top
+weight: 3
+provider: null
+plugin: 'views_exposed_filter_block:topics-page_profile'
+settings:
+  id: 'views_exposed_filter_block:topics-page_profile'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filtrer
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: '/user/*/topics'
+    negate: false
+    context_mapping: {  }

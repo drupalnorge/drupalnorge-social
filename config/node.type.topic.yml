@@ -1,0 +1,19 @@
+uuid: 30ce6f29-a825-40a5-9cac-b62f431ba94d
+langcode: nb
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: ou941oKcqqATWhOYNjV7vssGOZ9nbFseetTwpy6chTk
+name: Topic
+type: topic
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

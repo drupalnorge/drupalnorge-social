@@ -1,0 +1,23 @@
+uuid: 4d2b33c9-d504-4cea-8d5e-c5dcd2b56935
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_destination
+    - message.template.create_post_profile
+  module:
+    - options
+_core:
+  default_config_hash: DnvuZK9Z0e3CcOZ9XzNhmku4BxIYGMyw2UhRCu0Lb2E
+id: message.create_post_profile.field_message_destination
+field_name: field_message_destination
+entity_type: message
+bundle: create_post_profile
+label: Destinations
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

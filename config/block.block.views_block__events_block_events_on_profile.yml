@@ -1,0 +1,32 @@
+uuid: 5fc13668-55e2-44b6-9446-997e26b3ce93
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.events
+  module:
+    - system
+    - views
+  theme:
+    - socialbase
+_core:
+  default_config_hash: ZgUg_9wsWsT3IEg4nEwUirYuh3QiFgrDit54jtVZBQU
+id: views_block__events_block_events_on_profile
+theme: socialbase
+region: complementary_bottom
+weight: -22
+provider: null
+plugin: 'views_block:events-block_events_on_profile'
+settings:
+  id: 'views_block:events-block_events_on_profile'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/stream'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,28 @@
+uuid: bb6b1bb5-8320-4085-a8c5-b80716883e04
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_event
+    - system
+  theme:
+    - socialbase
+_core:
+  default_config_hash: Pr90Y2n_TmGQ4hUCpTaWgBPfuAZqIeMOkje54rdZHRI
+id: event_add_block
+theme: socialbase
+region: complementary_top
+weight: -26
+provider: null
+plugin: event_add_block
+settings:
+  id: event_add_block
+  label: 'Event add block'
+  provider: social_event
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/events'
+    negate: false
+    context_mapping: {  }

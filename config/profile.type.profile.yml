@@ -1,0 +1,16 @@
+uuid: cc93a84f-53c3-4629-a596-69dd8292430c
+langcode: nb
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BKqpkcpQ6vRhAciVQT_3sOA3bKs1vtrCini-GiyGcKs
+id: profile
+label: Profile
+registration: true
+multiple: false
+roles:
+  authenticated: '0'
+  administrator: '0'
+  contentmanager: '0'
+  sitemanager: '0'
+weight: 0

@@ -1,0 +1,35 @@
+uuid: 590861ef-c12c-478b-85ed-32bf8eb4761a
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_comments
+    - node.type.event
+  module:
+    - comment
+_core:
+  default_config_hash: vwf3UG4AfeKtuNSWPqZPy509jLIrUDCvWjyoknc7B08
+id: node.event.field_event_comments
+field_name: field_event_comments
+entity_type: node
+bundle: event
+label: Comments
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  anonymous: 0
+  form_location: true
+  preview: 0
+field_type: comment

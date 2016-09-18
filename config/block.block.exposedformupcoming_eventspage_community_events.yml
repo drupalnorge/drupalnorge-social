@@ -1,0 +1,31 @@
+uuid: 6a98ee8f-26ab-41d2-a21e-ff67ea69713d
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.upcoming_events
+  module:
+    - system
+    - views
+  theme:
+    - socialbase
+_core:
+  default_config_hash: bMyPHJ2HkkWS0GtR2Z29zdWwvV426iXh_Pv9o-RixfQ
+id: exposedformupcoming_eventspage_community_events
+theme: socialbase
+region: complementary_top
+weight: 3
+provider: null
+plugin: 'views_exposed_filter_block:upcoming_events-page_community_events'
+settings:
+  id: 'views_exposed_filter_block:upcoming_events-page_community_events'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filtrer
+visibility:
+  request_path:
+    id: request_path
+    pages: /community-events
+    negate: false
+    context_mapping: {  }

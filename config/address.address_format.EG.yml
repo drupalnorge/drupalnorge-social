@@ -1,0 +1,18 @@
+uuid: bac0192e-5142-4f11-86cb-c907536cd2ca
+langcode: en
+status: true
+dependencies: {  }
+countryCode: EG
+format: "%recipient\n%organization\n%addressLine1\n%addressLine2\n%locality\n%administrativeArea\n%postalCode"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+uppercaseFields:
+  - locality
+administrativeAreaType: province
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '\d{5}'
+postalCodePrefix: null

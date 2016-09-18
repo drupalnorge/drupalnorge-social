@@ -1,0 +1,21 @@
+uuid: 7659a4c6-d385-4e37-a2ac-53373a0fa618
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_group_description
+    - group.type.open_group
+_core:
+  default_config_hash: aqySxwRuGZHUdjdkV9moKcgEBt8uNpxNOfVVwX8eGfs
+id: group.open_group.field_group_description
+field_name: field_group_description
+entity_type: group
+bundle: open_group
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

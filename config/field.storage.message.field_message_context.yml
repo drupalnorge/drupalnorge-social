@@ -1,0 +1,23 @@
+uuid: 34e07d95-e337-458b-8b12-71bcc35fae10
+langcode: nb
+status: true
+dependencies:
+  module:
+    - message
+    - options
+_core:
+  default_config_hash: JgBOStb2vC_3cRfD2wr5lf9WrMEDjJu6kHd-1frEeaA
+id: message.field_message_context
+field_name: field_message_context
+entity_type: message
+type: list_string
+settings:
+  allowed_values: {  }
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

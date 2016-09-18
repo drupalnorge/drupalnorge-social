@@ -1,0 +1,92 @@
+uuid: c030139e-dddb-456b-b641-c2634a067e37
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.field.profile.profile.field_profile_drupal_org_profile
+    - field.field.profile.profile.field_profile_facebook_url
+    - field.field.profile.profile.field_profile_first_name
+    - field.field.profile.profile.field_profile_image
+    - field.field.profile.profile.field_profile_interests
+    - field.field.profile.profile.field_profile_last_name
+    - field.field.profile.profile.field_profile_profile_tag
+    - field.field.profile.profile.field_profile_self_introduction
+    - field.field.profile.profile.field_profile_twitter_url
+    - profile.type.profile
+  module:
+    - link
+    - text
+_core:
+  default_config_hash: fcEi-VJyInQ2WcUQfjoPrmrXBKVc3Eiwilpvbww0oIw
+id: profile.profile.default
+targetEntityType: profile
+bundle: profile
+mode: default
+content:
+  field_profile_drupal_org_profile:
+    weight: 4
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_profile_facebook_url:
+    weight: 6
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_profile_interests:
+    weight: 3
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_profile_phone_number:
+    weight: 0
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_profile_profile_tag:
+    type: entity_reference_label
+    weight: 0
+    label: visually_hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_profile_self_introduction:
+    weight: 2
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_profile_twitter_url:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+hidden:
+  field_profile_first_name: true
+  field_profile_function: true
+  field_profile_image: true
+  field_profile_last_name: true
+  field_profile_organization: true
+  langcode: true

@@ -1,0 +1,21 @@
+uuid: a3d6c68a-85cf-4d32-8e5b-ca87bb84d158
+langcode: nb
+status: true
+dependencies:
+  module:
+    - address
+    - group
+_core:
+  default_config_hash: SThhVdsoT2cGEl1WixzKDeTriPp9zTmXWBNcUrUwIgs
+id: group.field_group_address
+field_name: field_group_address
+entity_type: group
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

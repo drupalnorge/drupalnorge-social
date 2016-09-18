@@ -1,0 +1,28 @@
+uuid: 9113bf05-836a-4c18-b5a1-c6f78b651ec2
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_search
+    - system
+  theme:
+    - socialbase
+_core:
+  default_config_hash: kcH9B4RMKH-HmckQJqYg21VekBFL7aShcyxh1GIHZGw
+id: search_content_block_title
+theme: socialbase
+region: hero
+weight: 1
+provider: null
+plugin: search_content_block
+settings:
+  id: search_content_block
+  label: Søk
+  provider: social_search
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search/content\r\n/search/content/*"
+    negate: false
+    context_mapping: {  }

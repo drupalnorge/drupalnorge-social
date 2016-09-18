@@ -1,0 +1,14 @@
+uuid: a102b1c8-bf39-4a95-8ded-ab22c0f64196
+name: 'Drupal Norge'
+mail: styret@drupalnorge.no
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /stream
+admin_compact_mode: false
+weight_select_max: 100
+langcode: nb
+default_langcode: nb
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

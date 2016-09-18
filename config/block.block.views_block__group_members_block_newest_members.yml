@@ -1,0 +1,32 @@
+uuid: 96888cad-df39-4c85-abdd-27801634d335
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.group_members
+  module:
+    - system
+    - views
+  theme:
+    - socialbase
+_core:
+  default_config_hash: a6eu-_wYRYln-6mhudA12rSsUEbqnJONv_tfYuW3O0k
+id: views_block__group_members_block_newest_members
+theme: socialbase
+region: complementary_bottom
+weight: -13
+provider: null
+plugin: 'views_block:group_members-block_newest_members'
+settings:
+  id: 'views_block:group_members-block_newest_members'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/group/*/stream'
+    negate: false
+    context_mapping: {  }

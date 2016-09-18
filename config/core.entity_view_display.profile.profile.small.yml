@@ -1,0 +1,44 @@
+uuid: 6fab1e99-37f2-4916-9639-7958d8dc1215
+langcode: nb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.profile.small
+    - field.field.profile.profile.field_profile_first_name
+    - field.field.profile.profile.field_profile_function
+    - field.field.profile.profile.field_profile_image
+    - field.field.profile.profile.field_profile_interests
+    - field.field.profile.profile.field_profile_last_name
+    - field.field.profile.profile.field_profile_organization
+    - field.field.profile.profile.field_profile_phone_number
+    - field.field.profile.profile.field_profile_profile_tag
+    - field.field.profile.profile.field_profile_self_introduction
+    - image.style.social_small
+    - profile.type.profile
+  module:
+    - image
+_core:
+  default_config_hash: SNeneIQhj4Lz2JqvWm6LN4xKpus_iZrQZZqjnVH9bW8
+id: profile.profile.small
+targetEntityType: profile
+bundle: profile
+mode: small
+content:
+  field_profile_image:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: social_small
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  field_profile_first_name: true
+  field_profile_function: true
+  field_profile_interests: true
+  field_profile_last_name: true
+  field_profile_organization: true
+  field_profile_phone_number: true
+  field_profile_profile_tag: true
+  field_profile_self_introduction: true
+  langcode: true

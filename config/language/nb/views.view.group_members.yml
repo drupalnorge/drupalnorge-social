@@ -1,0 +1,33 @@
+label: Gruppemedlemmer
+display:
+  default:
+    display_title: Hoved
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér på'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
+      fields:
+        label:
+          separator: ', '
+      title: Gruppemedlemmer
+      arguments:
+        gid:
+          exception:
+            title: Alle
+  block_newest_members:
+    display_title: Blokk
+  page_group_members:
+    display_title: Side

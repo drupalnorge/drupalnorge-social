@@ -1,0 +1,18 @@
+uuid: 0b825675-16d8-41cb-aea1-ba38f9d8ab1e
+langcode: nb
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'view node.event.field_content_visibility:public content'
+  - 'view node.topic.field_content_visibility:public content'
+  - 'view public posts'
+  - 'view published post entities'
+  - 'view node.page.field_content_visibility:public content'
+  - 'access content search'

@@ -1,0 +1,36 @@
+uuid: e24818bd-32f1-41ba-b5e5-a6f9016428e5
+langcode: nb
+status: true
+dependencies:
+  module:
+    - field_group
+    - user
+third_party_settings:
+  field_group:
+    group_information:
+      children:
+        - account
+      parent_name: ''
+      weight: 0
+      label: 'Account information'
+      format_type: fieldset
+      format_settings:
+        label: 'Account information'
+        required_fields: true
+        id: ''
+        classes: ''
+_core:
+  default_config_hash: W5VRfsO5YP6zB07rednNH8-l03MvvelpkY_Q_G2Ri0M
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  contact: true
+  language: true
+  timezone: true

@@ -1,0 +1,30 @@
+uuid: e17150ef-ed9b-4992-8dbf-914969fbdb8c
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.post.field_recipient_user
+  module:
+    - social_post
+_core:
+  default_config_hash: AijI3zIHKk_0HU6HQXFV9uctZ2lLftr5h-GAnk6hIXs
+id: post.post.field_recipient_user
+field_name: field_recipient_user
+entity_type: post
+bundle: post
+label: 'Recipient (user)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+field_type: entity_reference

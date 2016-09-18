@@ -1,0 +1,32 @@
+uuid: 90d1e1ba-1502-4dca-bfc0-8f11945141aa
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.latest_topics
+  module:
+    - system
+    - views
+  theme:
+    - socialbase
+_core:
+  default_config_hash: Tyzbd3vfCnNHkX70rXjpS9_melHIt9dyUKTw4o37W9w
+id: views_block__latest_topics_default
+theme: socialbase
+region: complementary_bottom
+weight: -17
+provider: null
+plugin: 'views_block:latest_topics-block_latest_topics'
+settings:
+  id: 'views_block:latest_topics-block_latest_topics'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/explore"
+    negate: false
+    context_mapping: {  }

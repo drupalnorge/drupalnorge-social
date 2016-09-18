@@ -1,0 +1,22 @@
+label: Brukerinformasjon
+display:
+  default:
+    display_title: Hoved
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér på'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      title: Informasjon
+      arguments:
+        uid:
+          exception:
+            title: Alle
+  user_information:
+    display_title: Side
+    display_options:
+      menu:
+        title: Informasjon

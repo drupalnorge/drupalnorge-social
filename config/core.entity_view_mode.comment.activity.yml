@@ -1,0 +1,12 @@
+uuid: 167f1a0f-b411-4be8-823d-8d5c36ee5ccf
+langcode: nb
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: D2OrOMfZpua9rHx7eVBF2jSiv1rWSHxlC7PMGTXvHA4
+id: comment.activity
+label: Activity
+targetEntityType: comment
+cache: true

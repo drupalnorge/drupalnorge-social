@@ -1,0 +1,16 @@
+uuid: 22cf0cd5-9c81-4436-91ed-dc1fe367f901
+langcode: nb
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6alrmu0N8tMiKAdpC-QBTgUHBh_52VliDVgrhQd_Xp8
+name: social_large
+label: 'social large (128 x 128)'
+effects:
+  29ad1fa6-2731-11e6-b67b-9e71128cae77:
+    uuid: 29ad1fa6-2731-11e6-b67b-9e71128cae77
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 128
+      height: 128

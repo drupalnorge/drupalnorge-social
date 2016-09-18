@@ -1,0 +1,21 @@
+uuid: 0b1c96f6-64b2-471e-855d-6cc8f555ac2e
+langcode: nb
+status: true
+dependencies:
+  module:
+    - group
+_core:
+  default_config_hash: y987ADsiBv5ney1KB1qKcGl-xqhnjM5pRSNOwpv6fA8
+id: group.field_group_description
+field_name: field_group_description
+entity_type: group
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

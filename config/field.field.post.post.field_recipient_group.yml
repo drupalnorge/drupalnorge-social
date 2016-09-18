@@ -1,0 +1,28 @@
+uuid: 2bd328dc-e600-4b2d-a239-8fe079dfcf1a
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.post.field_recipient_group
+  module:
+    - social_post
+_core:
+  default_config_hash: v0IQm2XX0T-LpVSK5ppWZ5HvG8qeoNVMv2ydzUYZpIU
+id: post.post.field_recipient_group
+field_name: field_recipient_group
+entity_type: post
+bundle: post
+label: 'Recipient (group)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: recipient_group_reference
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

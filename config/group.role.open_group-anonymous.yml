@@ -1,0 +1,16 @@
+uuid: 0d886952-2497-429b-a172-5713614d14e8
+langcode: nb
+status: true
+dependencies:
+  config:
+    - group.type.open_group
+_core:
+  default_config_hash: BUh83uMuawEc3R9mSPg6fJfJdlMDVmTVH7vpiJy-tFA
+id: open_group-anonymous
+label: Anonymous
+weight: -102
+internal: true
+audience: anonymous
+group_type: open_group
+permissions_ui: true
+permissions: {  }

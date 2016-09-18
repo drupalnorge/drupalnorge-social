@@ -1,0 +1,51 @@
+display:
+  default:
+    display_title: Hoved
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér på'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
+          tags:
+            previous: '‹ Forrige'
+            next: 'Neste ›'
+            first: '« Første'
+            last: 'Siste »'
+      fields:
+        title:
+          separator: ', '
+      filters:
+        status:
+          expose:
+            label: Publiseringsstatus
+  block_events_on_profile:
+    display_options:
+      filters:
+        status:
+          expose:
+            label: Publiseringsstatus
+      title: 'Kommende hendelser'
+  events_overview:
+    display_options:
+      menu:
+        title: Hendelser
+      tab_options:
+        title: Emner
+      filters:
+        status:
+          expose:
+            label: Publiseringsstatus
+        field_event_date_value:
+          expose:
+            label: Startdato
+          group_info:
+            group_items:
+              1:
+                title: 'Kommende hendelser'

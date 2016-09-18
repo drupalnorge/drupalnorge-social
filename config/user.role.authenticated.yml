@@ -1,0 +1,52 @@
+uuid: 800c3ded-2fdf-409b-91e8-1bb247f425d3
+langcode: nb
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'view own unpublished content'
+  - 'use text format basic_html'
+  - 'use text format simple_text'
+  - 'add own profile profile'
+  - 'edit own profile profile'
+  - 'view any profile profile'
+  - 'view own profile profile'
+  - 'view node.event.field_content_visibility:public content'
+  - 'create event content'
+  - 'delete own event content'
+  - 'edit own event content'
+  - 'override event published option'
+  - 'view node.event.field_content_visibility:community content'
+  - 'view node.topic.field_content_visibility:public content'
+  - 'create topic content'
+  - 'delete own topic content'
+  - 'edit own topic content'
+  - 'override topic published option'
+  - 'view node.topic.field_content_visibility:community content'
+  - 'create open_group group'
+  - 'access comments'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'edit own comments'
+  - 'delete own comments'
+  - 'view public posts'
+  - 'view published post entities'
+  - 'add post entities'
+  - 'delete own post entities'
+  - 'edit own post entities'
+  - 'view community posts'
+  - 'access user profiles'
+  - 'cancel account'
+  - 'change own username'
+  - 'select account cancellation method'
+  - 'view node.page.field_content_visibility:public content'
+  - 'view node.page.field_content_visibility:community content'
+  - 'access content search'
+  - 'access users search'
+  - 'access group search'

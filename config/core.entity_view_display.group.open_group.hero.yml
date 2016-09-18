@@ -1,0 +1,63 @@
+uuid: 4c931a7a-7a97-4ad9-914c-4dc1dad43a51
+langcode: nb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.group.hero
+    - field.field.group.open_group.field_group_address
+    - field.field.group.open_group.field_group_description
+    - field.field.group.open_group.field_group_geolocation
+    - field.field.group.open_group.field_group_image
+    - field.field.group.open_group.field_group_location
+    - group.type.open_group
+    - image.style.social_xx_large
+  module:
+    - address
+    - image
+_core:
+  default_config_hash: i6ki-pVBcJ-boGaNaVQgeMuiSrQK5vNU5aU8THsg4q0
+id: group.open_group.hero
+targetEntityType: group
+bundle: open_group
+mode: hero
+content:
+  field_group_address:
+    type: address_plain
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_group_description:
+    type: basic_string
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_group_image:
+    type: image
+    weight: 1
+    label: hidden
+    settings:
+      image_style: social_xx_large
+      image_link: ''
+    third_party_settings: {  }
+  field_group_location:
+    type: string
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  label:
+    label: hidden
+    type: string
+    weight: 0
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  changed: true
+  created: true
+  field_group_geolocation: true
+  langcode: true
+  uid: true

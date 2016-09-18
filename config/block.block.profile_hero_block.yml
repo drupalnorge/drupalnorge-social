@@ -1,0 +1,28 @@
+uuid: d253bf3a-36b2-46e3-bb2d-5e0ffc9c4c81
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_profile
+    - system
+  theme:
+    - socialbase
+_core:
+  default_config_hash: EMyZbKZ3vSh0PPJ4BeDLLJT4BgOGnVInui4p2tqsBac
+id: profile_hero_block
+theme: socialbase
+region: hero
+weight: -15
+provider: null
+plugin: profile_hero_block
+settings:
+  id: profile_hero_block
+  label: 'Profile hero block'
+  provider: social_profile
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/user\r\n/user/*"
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,21 @@
+uuid: fd5e5205-9772-4652-9dfd-08595b27364d
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_first_name
+    - profile.type.profile
+_core:
+  default_config_hash: AJUjf-s01_Y0pXAPGUHoSxHIQop4_nSV4suqed6qRAg
+id: profile.profile.field_profile_first_name
+field_name: field_profile_first_name
+entity_type: profile
+bundle: profile
+label: 'First name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

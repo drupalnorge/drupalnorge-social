@@ -1,0 +1,23 @@
+uuid: e6f50c6d-35bf-4e33-ab59-f38d91041eac
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_drupal_org_profile
+    - profile.type.profile
+  module:
+    - link
+id: profile.profile.field_profile_drupal_org_profile
+field_name: field_profile_drupal_org_profile
+entity_type: profile
+bundle: profile
+label: 'Drupal.org profile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

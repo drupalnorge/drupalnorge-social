@@ -1,0 +1,45 @@
+display:
+  default:
+    display_title: Hoved
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér på'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Første'
+            last: 'Siste »'
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
+      fields:
+        label:
+          separator: ', '
+      filters:
+        label:
+          expose:
+            label: Tittel
+        field_group_description_value:
+          expose:
+            label: Beskrivelse
+        field_group_location_value:
+          expose:
+            label: Stedsnavn
+      empty:
+        area:
+          content:
+            value: 'Ingen resultater funnet.'
+      arguments:
+        'null':
+          exception:
+            title: Alle
+  page:
+    display_title: Side

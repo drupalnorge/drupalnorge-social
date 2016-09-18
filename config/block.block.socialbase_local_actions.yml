@@ -1,0 +1,20 @@
+uuid: 0f099363-5f00-4a56-a99f-4b2d512908aa
+langcode: nb
+status: true
+dependencies:
+  theme:
+    - socialbase
+_core:
+  default_config_hash: g_iQJHOc4hAoQ7TCha7RcvICZ-sj5U8keOEsQYXCBsU
+id: socialbase_local_actions
+theme: socialbase
+region: content
+weight: -18
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primære administratorhandlinger'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 448d28dc-4766-4081-a836-f00149912765
+langcode: en
+status: true
+dependencies: {  }
+countryCode: GP
+format: "%organization\n%recipient\n%addressLine1\n%addressLine2\n%postalCode %locality %sortingCode"
+requiredFields:
+  - recipient
+  - addressLine1
+  - locality
+  - postalCode
+uppercaseFields:
+  - addressLine1
+  - addressLine2
+  - locality
+  - sortingCode
+administrativeAreaType: null
+localityType: city
+dependentLocalityType: null
+postalCodeType: postal
+postalCodePattern: '9[78][01]\d{2}'
+postalCodePrefix: null

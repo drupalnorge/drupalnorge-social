@@ -1,0 +1,49 @@
+uuid: 1053137a-5082-4ee2-a416-2b2c57c5b6d1
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.field.node.topic.body
+    - field.field.node.topic.field_content_visibility
+    - field.field.node.topic.field_files
+    - field.field.node.topic.field_topic_comments
+    - field.field.node.topic.field_topic_image
+    - field.field.node.topic.field_topic_type
+    - node.type.topic
+  module:
+    - file
+    - group_core_comments
+    - text
+    - user
+_core:
+  default_config_hash: lo_0nli4DHwJjtDFxCpaJslQFmDmbWztG2tX_U_p6HY
+id: node.topic.default
+targetEntityType: node
+bundle: topic
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_files:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+  field_topic_comments:
+    weight: 1
+    label: above
+    settings:
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_group_content
+hidden:
+  field_content_visibility: true
+  field_topic_image: true
+  field_topic_type: true
+  langcode: true
+  links: true

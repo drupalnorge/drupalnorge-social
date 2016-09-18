@@ -1,0 +1,23 @@
+uuid: 55ee5961-b5ae-4b4b-b93b-a613565d9eca
+langcode: nb
+status: true
+dependencies:
+  module:
+    - message
+    - options
+_core:
+  default_config_hash: p2bBOxyAbd_owEFxYKDpB_A36JCb3CXP53SGGW7jQvU
+id: message.field_message_destination
+field_name: field_message_destination
+entity_type: message
+type: list_string
+settings:
+  allowed_values: {  }
+  allowed_values_function: activity_creator_field_activity_destinations_allowed_values
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

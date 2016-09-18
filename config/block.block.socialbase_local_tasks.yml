@@ -1,0 +1,38 @@
+uuid: bd5502a1-990b-4946-bd80-fc5e76824c42
+langcode: nb
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - socialbase
+_core:
+  default_config_hash: c9b8gkyPbS39gIu3jq7bFNw8e2SpWLRvAkclTd_-Dp4
+id: socialbase_local_tasks
+theme: socialbase
+region: secondary_navigation
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Faner
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: "post/*/edit\r\npost/*/delete\r\n/post/*/edit\r\n/post/*/delete"
+    negate: true
+    context_mapping: {  }

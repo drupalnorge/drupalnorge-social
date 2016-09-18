@@ -1,0 +1,23 @@
+uuid: 313e1a10-f443-4859-810e-533784c89c01
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_context
+    - message.template.create_post_community
+  module:
+    - options
+_core:
+  default_config_hash: 5KfIuTF_y3KpelJrihbTEQxlbUGWM-371m0NmR43epA
+id: message.create_post_community.field_message_context
+field_name: field_message_context
+entity_type: message
+bundle: create_post_community
+label: Context
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

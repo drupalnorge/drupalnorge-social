@@ -1,0 +1,29 @@
+uuid: 41014ed6-fcdc-42dc-87dd-5f55b2c6c49a
+langcode: nb
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - core.entity_view_mode.comment.activity
+    - field.field.comment.comment.field_comment_body
+  module:
+    - text
+_core:
+  default_config_hash: 9ZpZ81jkSv9SRtLbwMO8sfN-9yqgh5wHe3z09fHboeE
+id: comment.comment.activity
+targetEntityType: comment
+bundle: comment
+mode: activity
+content:
+  field_comment_body:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  links:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
