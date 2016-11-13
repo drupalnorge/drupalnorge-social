@@ -17,6 +17,7 @@
         "drupal/migrate_tools": "*"
     },
     "require-dev": {
+        "drush/drush": "~8.0",
         "drupal/coder": "^8.2",
         "squizlabs/php_codesniffer": "2.*"
     },
