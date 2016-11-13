@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ruleset name="drupal">
+    <description>The coding standard for Drupal projects.</description>
+    <arg name="extensions" value="inc,install,module,php,profile,test,theme"/>
+
+    <file>./html/modules/custom</file>
+
+    <rule ref="./vendor/drupal/coder/coder_sniffer/Drupal"/>
+</ruleset>
