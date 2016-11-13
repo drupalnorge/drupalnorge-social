@@ -1,7 +1,12 @@
 language: php
+
 php:
   - 5.6
   - 7.0
+
+matrix:
+  allow_failures:
+    - php: 7.0
 
 sudo: false
 
@@ -26,6 +31,7 @@ install:
   - ./../vendor/bin/drush cr
   - ./../vendor/bin/drush runserver http://127.0.0.1:8080 &
   - sleep 3
+  - cd $TRAVIS_BUILD_DIR
 
 script:
   - composer test
