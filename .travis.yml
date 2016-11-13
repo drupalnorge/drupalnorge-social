@@ -14,12 +14,13 @@ before_install:
   - composer --verbose self-update
   - composer --version
   - mysql -e "create database IF NOT EXISTS test;" -uroot
+  - wget http://drupalnorge-social.e-o.no/sanitized.sql
 
 install:
   - composer --verbose install
   - cd $TRAVIS_BUILD_DIR/html
   - ./../vendor/bin/drush site-install minimal --verbose --yes --db-url=mysql://root@127.0.0.1/test
-  - curl drupalnorge-social.e-o.no/sanitized.sql | ./../vendor/bin/drush sql-cli
+  - ./../vendor/bin/drush sql-cli < ../sanitized.sql
   - ./../vendor/bin/drush cim --verbose --yes
   - ./../vendor/bin/drush updb --verbose --yes
   - ./../vendor/bin/drush cr
