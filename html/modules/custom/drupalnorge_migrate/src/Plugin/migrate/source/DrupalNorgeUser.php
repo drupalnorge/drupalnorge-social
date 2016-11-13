@@ -16,6 +16,9 @@ class DrupalNorgeUser extends User {
 
   const OLD_BASE_FILE_URL = 'http://drupalnorge.no/sites/default/files/';
 
+  /**
+   * {@inheritdoc}
+   */
   public function prepareRow(Row $row) {
     // Avoid importing user 1.
     if ($row->getSourceProperty('uid') == 1) {
@@ -41,6 +44,9 @@ class DrupalNorgeUser extends User {
     return FALSE;
   }
 
+  /**
+   * {@inheritdoc}
+   */
   private function getFilePath($fid) {
     $q = $this->select('file_managed', 'fm')
       ->fields('fm');
