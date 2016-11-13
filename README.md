@@ -1,5 +1,7 @@
 # Drupal Norge Open Social
 
+[![Build Status](https://travis-ci.org/eiriksm/drupalnorge-social.svg?branch=master)](https://travis-ci.org/eiriksm/drupalnorge-social)
+
 ## Installation
 
 Clone this repository. For example with:
