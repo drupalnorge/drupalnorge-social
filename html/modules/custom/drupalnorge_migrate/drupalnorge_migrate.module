@@ -1,5 +1,12 @@
 <?php
+
+/**
+ * @file
+ * The drupalnorge migrate module.
+ */
+
 use Drupal\profile\Entity\ProfileInterface;
+use Drupal\user\Entity\User;
 
 /**
  * Helper function to create a cache id.
@@ -21,7 +28,7 @@ function drupalnorge_migrate_profile_create(ProfileInterface $profile) {
     if (!$id) {
       return;
     }
-    $owner = \Drupal\user\Entity\User::load($id);
+    $owner = User::load($id);
     if (!$owner) {
       return;
     }
