@@ -14,7 +14,8 @@
         "drupal/slack_invite": "*",
         "drupal/sparkpost": "*",
         "drupal/reroute_email": "*",
-        "drupal/migrate_tools": "*"
+        "drupal/migrate_tools": "*",
+        "drupal/geolocation": "^1.8"
     },
     "repositories": [
         {
