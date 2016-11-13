@@ -15,7 +15,8 @@
         "drupal/sparkpost": "*",
         "drupal/reroute_email": "*",
         "drupal/migrate_tools": "*",
-        "drupal/geolocation": "^1.8"
+        "drupal/geolocation": "^1.8",
+        "drupal/geocoder": "2.x-dev"
     },
     "repositories": [
         {
