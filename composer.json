@@ -16,6 +16,10 @@
         "drupal/reroute_email": "*",
         "drupal/migrate_tools": "*"
     },
+    "require-dev": {
+        "drupal/coder": "^8.2",
+        "squizlabs/php_codesniffer": "2.*"
+    },
     "repositories": [
         {
             "type": "composer",
@@ -28,6 +32,9 @@
       ],
       "post-update-cmd": [
         "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+      ],
+      "test": [
+         "./vendor/bin/phpcs -p"
       ]
     },
     "extra": {
