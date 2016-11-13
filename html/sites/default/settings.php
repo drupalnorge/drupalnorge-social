@@ -285,7 +285,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'bP5ye35RwJJJWeJSL-urh74Bon8izmULSK2IGTx2XMCk4SUkWw7pZ0pb4m_LLyOg7iq-ODOs_Q';
 
 /**
  * Deployment identifier.
@@ -416,20 +416,6 @@ $settings['update_free_access'] = FALSE;
  * getting cached pages from the proxy.
  */
 # $settings['omit_vary_cookie'] = TRUE;
-
-
-/**
- * Cache TTL for client error (4xx) responses.
- *
- * Items cached per-URL tend to result in a large number of cache items, and
- * this can be problematic on 404 pages which by their nature are unbounded. A
- * fixed TTL can be set for these items, defaulting to one hour, so that cache
- * backends which do not support LRU can purge older entries. To disable caching
- * of client error responses set the value to 0. Currently applies only to
- * page_cache module.
- */
-# $settings['cache_ttl_4xx'] = 3600;
-
 
 /**
  * Class Loader.
@@ -679,15 +665,6 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
 # $settings['container_base_class'] = '\Drupal\Core\DependencyInjection\Container';
 
 /**
- * Override the default yaml parser class.
- *
- * Provide a fully qualified class name here if you would like to provide an
- * alternate implementation YAML parser. The class must implement the
- * \Drupal\Component\Serialization\SerializationInterface interface.
- */
-# $settings['yaml_parser_class'] = NULL;
-
-/**
  * Trusted host configuration.
  *
  * Drupal core can use the Symfony trusted host mechanism to prevent HTTP Host
@@ -725,19 +702,17 @@ $settings['container_yamls'][] = __DIR__ . '/services.yml';
  */
 
 /**
- * The default list of directories that will be ignored by Drupal's file API.
+ * Load local development override configuration, if available.
  *
- * By default ignore node_modules and bower_components folders to avoid issues
- * with common frontend tools and recursive scanning of directories looking for
- * extensions.
+ * Use settings.local.php to override variables on secondary (staging,
+ * development, etc) installations of this site. Typically used to disable
+ * caching, JavaScript/CSS compression, re-routing of outgoing emails, and
+ * other things that should not happen on development and testing sites.
  *
- * @see file_scan_directory()
- * @see \Drupal\Core\Extension\ExtensionDiscovery::scanDirectory()
+ * Keep this code block at the end of this file to take full effect.
  */
-$settings['file_scan_ignore_directories'] = [
-  'node_modules',
-  'bower_components',
-];
+$settings['install_profile'] = 'social';
+$config_directories['sync'] = '../config';
 
 /**
  * Load local development override configuration, if available.
@@ -749,6 +724,6 @@ $settings['file_scan_ignore_directories'] = [
  *
  * Keep this code block at the end of this file to take full effect.
  */
-# if (file_exists(__DIR__ . '/settings.local.php')) {
-#   include __DIR__ . '/settings.local.php';
-# }
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include __DIR__ . '/settings.local.php';
+}

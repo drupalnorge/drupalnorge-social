@@ -9,12 +9,14 @@
         "composer/installers": "^1.0",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "1.5.0",
-        "goalgorilla/open_social": "dev-8.x-1.x",
+        "goalgorilla/open_social": "1.0.0-beta5",
         "drupal/coffee": "*",
         "drupal/slack_invite": "*",
         "drupal/sparkpost": "*",
         "drupal/reroute_email": "*",
-        "drupal/migrate_tools": "*"
+        "drupal/migrate_tools": "*",
+        "drupal/geolocation": "^1.8",
+        "drupal/geocoder": "2.x-dev"
     },
     "repositories": [
         {
