@@ -1,0 +1,24 @@
+default:
+  suites:
+    default:
+      paths:
+        features: %paths.base%/tests/features
+      filters:
+        tags: "~@todo"
+      contexts:
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MarkupContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\DrushContext
+  extensions:
+    Behat\MinkExtension:
+      files_path: %paths.base%/tests/files
+      base_url: http://127.0.0.1:8888
+      goutte: ~
+      selenium2: ~
+    Drupal\DrupalExtension:
+      blackbox: ~
+      drupal:
+        drupal_root: %paths.base%/html
+      api_driver: 'drupal'

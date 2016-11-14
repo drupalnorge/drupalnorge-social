@@ -29,7 +29,7 @@ install:
   - ./../vendor/bin/drush cim --verbose --yes
   - ./../vendor/bin/drush updb --verbose --yes
   - ./../vendor/bin/drush cr
-  - ./../vendor/bin/drush runserver http://127.0.0.1:8080 &
+  - ./../vendor/bin/drush runserver http://127.0.0.1:8888 &
   - sleep 3
   - cd $TRAVIS_BUILD_DIR
 

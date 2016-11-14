@@ -22,3 +22,6 @@ node_modules
 
 # Ignore local settings.php
 html/sites/default/settings.local.php
+
+# Ignore local behat.yml
+behat.yml
