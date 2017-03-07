@@ -19,7 +19,7 @@ before_install:
   - composer --verbose self-update
   - composer --version
   - mysql -e "create database IF NOT EXISTS test;" -uroot
-  - wget http://drupalnorge-social.e-o.no/sanitized.sql
+  - wget http://drupalnorge-social-old.e-o.no/sanitized.sql
 
 install:
   - composer --verbose install
