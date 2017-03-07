@@ -1,4 +1,4 @@
-uuid: 0e124010-5236-499e-875f-7e60bec4c914
+uuid: c82b1163-7e00-486f-9653-d895541f1f1f
 langcode: en
 status: true
 dependencies: {  }
@@ -7,6 +7,13 @@ label: 'Content manager'
 weight: 3
 is_admin: null
 permissions:
+  - 'override disabled public visibility'
+  - 'access comments'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'edit own comments'
+  - 'delete own comments'
+  - 'administer own comments'
   - 'access content'
   - 'view own unpublished content'
   - 'use text format basic_html'
@@ -22,6 +29,7 @@ permissions:
   - 'delete all revisions'
   - 'create url aliases'
   - 'use text format full_html'
+  - 'view the administration theme'
   - 'add own profile profile'
   - 'edit own profile profile'
   - 'view any profile profile'
@@ -64,11 +72,6 @@ permissions:
   - 'override topic revision option'
   - 'override topic sticky option'
   - 'create open_group group'
-  - 'access comments'
-  - 'post comments'
-  - 'skip comment approval'
-  - 'edit own comments'
-  - 'delete own comments'
   - 'view public posts'
   - 'view published post entities'
   - 'add post entities'
@@ -102,3 +105,12 @@ permissions:
   - 'access content search'
   - 'access users search'
   - 'access group search'
+  - 'flag follow_content'
+  - 'unflag follow_content'
+  - 'access mentions'
+  - 'view like widget'
+  - 'add or remove like votes on post'
+  - 'add or remove like votes on comment of comment'
+  - 'add or remove like votes on post_comment of comment'
+  - 'add or remove like votes on topic of node'
+  - 'add or remove like votes on event of node'

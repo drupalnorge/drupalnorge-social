@@ -1,4 +1,4 @@
-uuid: 0bbc54eb-cd1d-43cb-8972-2eab5a4c63f0
+uuid: 26e229f0-1695-476c-beaf-7c4aa3bfd0e3
 langcode: nb
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: 8R_bNk0-gCgFf1dU_G1s8Lo22qLG09Oqsacr3pe3oIs
+  default_config_hash: zUvmSJ77xup2KcXOGF_2cqlkiIl42X4L8JMjFoY-0SI
 id: message.create_event_community.field_message_destination
 field_name: field_message_destination
 entity_type: message

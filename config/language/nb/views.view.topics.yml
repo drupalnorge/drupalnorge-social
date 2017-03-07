@@ -22,6 +22,10 @@ display:
         title:
           separator: ', '
       title: Emner
+      empty:
+        area:
+          content:
+            value: 'Ingen innlegg funnet for denne brukeren'
       arguments:
         uid:
           exception:

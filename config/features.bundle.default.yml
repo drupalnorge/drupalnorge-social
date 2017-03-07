@@ -1,9 +1,9 @@
-uuid: b1cded2d-d15f-41b4-b40d-30026c8f62b1
+uuid: 7a071ced-e088-4bc1-9445-03d123680a9b
 langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: EPOQoBelne1vOGi0UkdmSvTyuP6iWPnWLljbbFQexqM
+  default_config_hash: rV83WLC4NN4hJgui1bMbyMbir3L4Q0NMZ_mBA4dIWxU
 name: Default
 machine_name: default
 description: ''
@@ -37,12 +37,12 @@ assignments:
     types:
       config:
         features_bundle: features_bundle
-    curated: 1
+    curated: true
     module:
-      installed: 1
-      profile: 1
-      namespace: 1
-      namespace_any: 0
+      installed: true
+      profile: true
+      namespace: true
+      namespace_any: false
     enabled: true
     weight: -5
   existing:
@@ -56,24 +56,17 @@ assignments:
     weight: 0
   optional:
     types:
-      config:
-        image_style: image_style
-        migration: migration
-        rdf_mapping: rdf_mapping
-        responsive_image_style: responsive_image_style
-        search_page: search_page
-        tour: tour
-        view: view
+      config: {  }
     enabled: true
     weight: 0
   packages:
     enabled: true
     weight: -20
   profile:
-    curated: 1
+    curated: true
     standard:
-      files: 1
-      dependencies: 1
+      files: true
+      dependencies: true
     types:
       config:
         block: block

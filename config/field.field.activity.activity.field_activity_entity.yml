@@ -1,4 +1,4 @@
-uuid: 8bf83c03-3bc3-4ba7-9692-be592220d3ec
+uuid: a88e104c-b005-4b15-941d-e434ced4cbf8
 langcode: nb
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - activity_creator
     - dynamic_entity_reference
 _core:
-  default_config_hash: s93qoly5qrKi6TaqbIiFozvd1mBBRI5rw_VRBBXzab4
+  default_config_hash: P_grx-Z1nkyX1KpQXbp4INfG3UEHW_DgkHNrk6YGCZc
 id: activity.activity.field_activity_entity
 field_name: field_activity_entity
 entity_type: activity
@@ -99,5 +99,23 @@ settings:
     handler_settings: {  }
   search_api_task:
     handler: 'default:search_api_task'
+    handler_settings: {  }
+  crop:
+    handler: 'default:crop'
+    handler_settings: {  }
+  flagging:
+    handler: 'default:flagging'
+    handler_settings: {  }
+  font:
+    handler: 'default:font'
+    handler_settings: {  }
+  mentions:
+    handler: 'default:mentions'
+    handler_settings: {  }
+  vote:
+    handler: 'default:vote'
+    handler_settings: {  }
+  vote_result:
+    handler: 'default:vote_result'
     handler_settings: {  }
 field_type: dynamic_entity_reference

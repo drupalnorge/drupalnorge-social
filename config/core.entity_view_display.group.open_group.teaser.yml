@@ -1,4 +1,4 @@
-uuid: db8120a7-c8bb-4deb-9310-1d41818e8608
+uuid: b9a39250-f5d1-48ee-961f-6f69142819a7
 langcode: nb
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.group.teaser
     - field.field.group.open_group.field_group_address
     - field.field.group.open_group.field_group_description
-    - field.field.group.open_group.field_group_geolocation
     - field.field.group.open_group.field_group_image
     - field.field.group.open_group.field_group_location
     - group.type.open_group
@@ -15,7 +14,7 @@ dependencies:
     - address
     - image
 _core:
-  default_config_hash: avyd4y83vaBnDpzNUZut7wseQA2eBb4B4DJ9JWep56E
+  default_config_hash: yfw_u_N9zr5i_7LK1dVP1VgdA1Qul1IVFNVtt_qjuAs
 id: group.open_group.teaser
 targetEntityType: group
 bundle: open_group
@@ -59,6 +58,5 @@ hidden:
   changed: true
   created: true
   field_group_address: true
-  field_group_geolocation: true
   langcode: true
   uid: true

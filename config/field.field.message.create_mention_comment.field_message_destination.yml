@@ -1,0 +1,23 @@
+uuid: d6ec8888-ab12-4c9d-b533-0a0660e55db6
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_destination
+    - message.template.create_mention_comment
+  module:
+    - options
+_core:
+  default_config_hash: 4ZpwlYKwHYWKQp3tYTBrt1Nq-cmvaufPjxX8F6pDkIA
+id: message.create_mention_comment.field_message_destination
+field_name: field_message_destination
+entity_type: message
+bundle: create_mention_comment
+label: field_message_destination
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

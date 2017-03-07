@@ -1,0 +1,20 @@
+uuid: 3a4932a3-f719-42f6-b073-e619376c7748
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_search
+  theme:
+    - socialblue
+id: socialblue_search_content_block_header
+theme: socialblue
+region: hidden
+weight: -9
+provider: null
+plugin: search_content_block
+settings:
+  id: search_content_block
+  label: 'Search content block'
+  provider: social_search
+  label_display: '0'
+visibility: {  }

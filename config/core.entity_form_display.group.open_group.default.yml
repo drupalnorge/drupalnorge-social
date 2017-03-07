@@ -1,11 +1,10 @@
-uuid: c1ad0dc0-f368-48c0-900c-aea4550cb0c5
+uuid: 46937afb-e2d3-4fd3-89a4-e71591a24a09
 langcode: nb
 status: true
 dependencies:
   config:
     - field.field.group.open_group.field_group_address
     - field.field.group.open_group.field_group_description
-    - field.field.group.open_group.field_group_geolocation
     - field.field.group.open_group.field_group_image
     - field.field.group.open_group.field_group_location
     - group.type.open_group
@@ -13,8 +12,9 @@ dependencies:
   module:
     - address
     - field_group
-    - image
+    - image_widget_crop
     - path
+    - text
 third_party_settings:
   field_group:
     group_content:
@@ -45,7 +45,7 @@ third_party_settings:
         id: ''
         required_fields: true
 _core:
-  default_config_hash: baa_9_jXx-uxfXVOCFHEYsufo70n0FBeggVTrPjxl0U
+  default_config_hash: kPxfyIp0rzM8Bo_JY5zhKyN2bmTK-T36v2QqZqh9Kow
 id: group.open_group.default
 targetEntityType: group
 bundle: open_group
@@ -63,14 +63,20 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: text_textarea
   field_group_image:
     weight: 3
     settings:
-      progress_indicator: throbber
+      show_crop_area: true
+      show_default_crop: true
       preview_image_style: social_x_large
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - hero
+        - teaser
+      progress_indicator: throbber
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
   field_group_location:
     weight: 32
     settings:
@@ -96,5 +102,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_group_geolocation: true
   uid: true

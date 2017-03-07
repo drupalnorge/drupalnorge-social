@@ -25,11 +25,17 @@ display:
           separator: ', '
       title: 'Kommende hendelser'
   block_my_upcoming_events:
+    display_title: 'Blokk for mine kommende hendelser'
     display_options:
+      block_description: 'Blokk for mine kommende hendelser'
       arguments:
         field_account_target_id:
           exception:
             title: Alle
+      empty:
+        area_text_custom:
+          content: 'Du har ingen kommende hendelser som du har meldt deg på'
+      title: 'Mine kommende hendelser'
   page_community_events:
     display_options:
       filters:

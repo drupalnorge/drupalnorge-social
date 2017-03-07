@@ -1,11 +1,11 @@
-uuid: c3061564-9366-4890-80fc-85d2e9d7f17e
+uuid: 85833e63-e4ce-4ae4-b523-a6cdcf5bfef6
 langcode: nb
 status: true
 dependencies:
   config:
     - group.type.open_group
 _core:
-  default_config_hash: PHXeEgb1ct5et1IM8dmWSsk7P0nyiMl49TLl4cJFLnY
+  default_config_hash: 8VJusIgccSemTRen9WSbjRIDUQvfNsO1tpTzAE0-Vuw
 id: open_group-outsider
 label: Outsider
 weight: -101
@@ -24,3 +24,4 @@ permissions:
   - 'edit own topic node'
   - 'edit own event node'
   - 'access comments'
+  - 'view group_membership content'

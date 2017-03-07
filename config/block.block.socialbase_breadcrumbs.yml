@@ -1,4 +1,4 @@
-uuid: fe521942-5ac5-440a-b41b-3c20d2ae6797
+uuid: 01aadd3d-e275-4c27-a21a-350f24f43987
 langcode: nb
 status: true
 dependencies:
@@ -7,8 +7,6 @@ dependencies:
     - user
   theme:
     - socialbase
-_core:
-  default_config_hash: 1u1kT1ArpkmW5wSx_fCG6y4IHGnnRmYQNNh30GOHXQQ
 id: socialbase_breadcrumbs
 theme: socialbase
 region: breadcrumb
@@ -17,7 +15,7 @@ provider: null
 plugin: system_breadcrumb_block
 settings:
   id: system_breadcrumb_block
-  label: Navigasjonssti
+  label: Breadcrumbs
   provider: system
   label_display: '0'
 visibility:

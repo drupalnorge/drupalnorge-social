@@ -1,4 +1,4 @@
-uuid: a9256254-ef85-44be-9580-559b35c5abbe
+uuid: 4695b6dd-b13b-4740-9dd8-007e8699b71e
 langcode: nb
 status: true
 dependencies:
@@ -6,8 +6,6 @@ dependencies:
     - help
   theme:
     - socialbase
-_core:
-  default_config_hash: L6rQUAiGqgz5fkSzcf2Pw4ZfsYqNF408db3Q3I1LSuk
 id: socialbase_help
 theme: socialbase
 region: content
@@ -16,7 +14,7 @@ provider: null
 plugin: help_block
 settings:
   id: help_block
-  label: Hjelp
+  label: Help
   provider: help
   label_display: '0'
 visibility: {  }

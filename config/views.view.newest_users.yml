@@ -1,4 +1,4 @@
-uuid: d74b649e-dd0d-46f2-a8de-c9ecda3b98a4
+uuid: a2825d84-5f2a-48b1-937b-f9696375222a
 langcode: nb
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
     - profile
     - user
 _core:
-  default_config_hash: Jyt-cr1tlFUgyTYpYDWJbk9s2ldXueoZRfI-EynX1wE
+  default_config_hash: sdgehhOeixfjQnMlWo_lmuctC6ZEp00PNnkUoPeFJlE
 id: newest_users
 label: 'Newest users'
 module: views
@@ -37,7 +37,7 @@ display:
         type: views_query
         options:
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_comment: ''
           query_tags: {  }

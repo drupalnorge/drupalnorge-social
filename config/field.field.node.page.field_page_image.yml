@@ -1,4 +1,4 @@
-uuid: a2b073e6-28c0-4eae-aec8-174cd66367f3
+uuid: 150fe89a-538d-4a0e-9f02-7a28b61d5ba1
 langcode: nb
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: Pb8HlLkeckH0amUr_lFFbtpwZLjPLBl557SJHsxG37U
+  default_config_hash: fpOBSoFobDbj9zHoAE-xTQLXIJ-xaPFVeufGklKjJ6g
 id: node.page.field_page_image
 field_name: field_page_image
 entity_type: node
@@ -23,7 +23,7 @@ settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'gif jpg jpeg'
   max_filesize: ''
-  max_resolution: 3600x3600
+  max_resolution: 4096x4096
   min_resolution: ''
   alt_field: true
   alt_field_required: false

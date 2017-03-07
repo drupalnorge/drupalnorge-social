@@ -1,4 +1,4 @@
-uuid: 258b22c7-968c-423e-a9d2-6eb5e655b97d
+uuid: 7de9aa4a-421b-431f-aca0-3af821ecf2ea
 langcode: nb
 status: true
 dependencies:
@@ -6,20 +6,24 @@ dependencies:
     - comment.type.post_comment
     - field.field.comment.post_comment.field_comment_body
 _core:
-  default_config_hash: XsnUSXtV-SVVcRABddWaUDya_-kJXCD02CpjsLuH_Y0
+  default_config_hash: gOEKdmFmRuzBGqaa4tMSNI8i0FnAKNBDv49-axyfY0w
 id: comment.post_comment.default
 targetEntityType: comment
 bundle: post_comment
 mode: default
 content:
   field_comment_body:
-    weight: 101
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
+  like_and_dislike:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 0
     settings: {  }
     third_party_settings: {  }
 hidden:

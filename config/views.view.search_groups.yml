@@ -1,6 +1,6 @@
-uuid: db625fe1-2108-4358-9798-28d74867a9eb
+uuid: eff6775c-9f94-47b1-b6ed-7edd1805b622
 langcode: nb
-status: false
+status: true
 dependencies:
   config:
     - search_api.index.social_groups
@@ -8,7 +8,7 @@ dependencies:
     - search_api
     - user
 _core:
-  default_config_hash: jaLKefjYt8KD77posyjjdvzzprQFMQnFZRJht1W0sso
+  default_config_hash: fDSniqsfBcCR8ZdJqoo61JN21ALnOSM-orLxJ8XRlaI
 id: search_groups
 label: 'Search Groups'
 module: views
@@ -29,12 +29,8 @@ display:
         options:
           perm: 'access group search'
       cache:
-        type: search_api
-        options:
-          results_lifespan: '3600'
-          results_lifespan_custom: '0'
-          output_lifespan: '3600'
-          output_lifespan_custom: '0'
+        type: none
+        options: {  }
       query:
         type: views_query
         options:

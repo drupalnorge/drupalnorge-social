@@ -1,4 +1,4 @@
-uuid: 4de6660b-3f25-4ceb-991c-9c6ef1a4024a
+uuid: 07acb056-f2f3-4772-aab6-9f441574bca0
 langcode: nb
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - dynamic_entity_reference
 _core:
-  default_config_hash: jocnfe8lZKWon1oB9Qb94d_3Jp_F-xcfT6lgGfjbGZ4
+  default_config_hash: FPG8OAbciWsRy1Fg2WzFsgkBqvDt_Zpr0C_sXAe-wMU
 id: message.create_post_profile.field_message_related_object
 field_name: field_message_related_object
 entity_type: message
@@ -75,5 +75,23 @@ settings:
     handler_settings: {  }
   search_api_task:
     handler: 'default:search_api_task'
+    handler_settings: {  }
+  crop:
+    handler: 'default:crop'
+    handler_settings: {  }
+  flagging:
+    handler: 'default:flagging'
+    handler_settings: {  }
+  font:
+    handler: 'default:font'
+    handler_settings: {  }
+  mentions:
+    handler: 'default:mentions'
+    handler_settings: {  }
+  vote:
+    handler: 'default:vote'
+    handler_settings: {  }
+  vote_result:
+    handler: 'default:vote_result'
     handler_settings: {  }
 field_type: dynamic_entity_reference

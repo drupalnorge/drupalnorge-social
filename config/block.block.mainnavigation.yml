@@ -1,4 +1,4 @@
-uuid: 009283b4-9c2a-4228-8836-51937fe26218
+uuid: 14ac6d76-d9ee-4fe4-a40d-03ba8ad490e8
 langcode: nb
 status: true
 dependencies:
@@ -8,8 +8,6 @@ dependencies:
     - system
   theme:
     - socialbase
-_core:
-  default_config_hash: QEZqe0BMNaDhsbghSITjww9qBgjtbfophAMSJNzw8cc
 id: mainnavigation
 theme: socialbase
 region: header
@@ -18,7 +16,7 @@ provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: Hovednavigasjon
+  label: 'Main navigation'
   provider: system
   label_display: '0'
   level: 1

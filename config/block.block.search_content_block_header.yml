@@ -1,4 +1,4 @@
-uuid: fd749a37-59a0-4f7f-920c-6a3cd7275685
+uuid: 08c4e8b9-51f2-451c-87ec-3a1b3ae88d5c
 langcode: nb
 status: true
 dependencies:
@@ -6,8 +6,6 @@ dependencies:
     - social_search
   theme:
     - socialbase
-_core:
-  default_config_hash: 3APGIn-xBbN8O3m1A-8_Ip-Aer8WbyI1RRDjyu4m5xA
 id: search_content_block_header
 theme: socialbase
 region: hidden

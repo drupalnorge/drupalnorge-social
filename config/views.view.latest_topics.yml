@@ -1,4 +1,4 @@
-uuid: 498ce25f-2c25-4811-9fc3-b33f7dc1b1d0
+uuid: 68a87868-72a4-4b4d-8c64-826890680106
 langcode: nb
 status: true
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
     - taxonomy
     - user
 _core:
-  default_config_hash: VhCtHJ6VISMc6LNV4xZHKIK5m6cGHNpyUH4UdR7kT6k
+  default_config_hash: m5XI8nEoB_r69bp8qdyOZHMs2UWgmzhfpWCh_2JyPiU
 id: latest_topics
 label: 'Latest topics'
 module: views
@@ -40,7 +40,7 @@ display:
         type: views_query
         options:
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_comment: ''
           query_tags: {  }
@@ -116,7 +116,7 @@ display:
           field_api_classes: false
       filters:
         status:
-          value: true
+          value: '1'
           table: node_field_data
           field: status
           plugin_id: boolean
@@ -135,6 +135,42 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+        nid:
+          id: nid
+          table: node_access
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: node_access
       sorts:
         created:
           id: created
@@ -219,6 +255,7 @@ display:
         empty: false
         relationships: false
         arguments: false
+        access: false
       relationships:
         group_content:
           id: group_content
@@ -270,15 +307,19 @@ display:
           entity_type: group_content
           entity_field: gid
           plugin_id: numeric
+      access:
+        type: group_permission
+        options:
+          group_permission: 'view group_node:topic content'
     cache_metadata:
       max-age: -1
       contexts:
+        - group_membership.roles.permissions
         - 'languages:language_content'
         - 'languages:language_interface'
         - route
         - url
         - 'user.node_grants:view'
-        - user.permissions
       tags: {  }
   page_latest_topics:
     display_plugin: page
@@ -326,7 +367,7 @@ display:
       path: newest-topics
       filters:
         status:
-          value: true
+          value: '1'
           table: node_field_data
           field: status
           plugin_id: boolean
@@ -390,6 +431,42 @@ display:
           hierarchy: false
           error_message: true
           plugin_id: taxonomy_index_tid
+        nid:
+          id: nid
+          table: node_access
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: node_access
       filter_groups:
         operator: AND
         groups:

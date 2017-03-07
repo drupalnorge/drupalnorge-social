@@ -1,4 +1,4 @@
-uuid: 4ca9daf0-0816-4c8e-80af-0f5172dbceb7
+uuid: f126bdbf-c980-4312-a943-fdc1dea09b5c
 langcode: nb
 status: true
 dependencies:
@@ -9,12 +9,10 @@ dependencies:
     - views
   theme:
     - socialbase
-_core:
-  default_config_hash: xY0051xoVGTurLL4NMm0iP3nhN-rQf0YrtQwrbk90Iw
 id: views_block__upcoming_events_block_community_events
 theme: socialbase
 region: complementary_bottom
-weight: -20
+weight: 2
 provider: null
 plugin: 'views_block:upcoming_events-block_community_events'
 settings:
@@ -27,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/explore"
+    pages: "/stream\r\n/explore"
     negate: false
     context_mapping: {  }

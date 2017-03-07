@@ -1,4 +1,4 @@
-uuid: 38742edc-bc57-4e9b-b67d-2c775b323c02
+uuid: c6b3a828-a533-4982-b98a-43660405d5d4
 langcode: nb
 status: true
 dependencies:
@@ -17,6 +17,7 @@ content:
   third_party_settings: {  }
   weight: 0
 hidden:
+  langcode: true
   member_for: true
   profile_main: true
   profile_profile: true

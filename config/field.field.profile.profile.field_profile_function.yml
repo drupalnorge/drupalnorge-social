@@ -1,0 +1,21 @@
+uuid: ffe89ecb-b67d-4ead-a65c-de0117ac870c
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_function
+    - profile.type.profile
+_core:
+  default_config_hash: ay3MOEZlPmYKTqkwlwE4jRjEnzNzVED3G28CA2KHNa0
+id: profile.profile.field_profile_function
+field_name: field_profile_function
+entity_type: profile
+bundle: profile
+label: Function
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

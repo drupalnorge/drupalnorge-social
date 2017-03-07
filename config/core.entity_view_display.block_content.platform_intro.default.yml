@@ -1,0 +1,24 @@
+uuid: 3586e9d5-5b41-43d5-b654-d56228f2b020
+langcode: nb
+status: true
+dependencies:
+  config:
+    - block_content.type.platform_intro
+    - field.field.block_content.platform_intro.field_text_block
+  module:
+    - text
+_core:
+  default_config_hash: F-5Bi37TRrCkCKIyHf8O2IDC-1MwRH4pFNiF1FpCbP0
+id: block_content.platform_intro.default
+targetEntityType: block_content
+bundle: platform_intro
+mode: default
+content:
+  field_text_block:
+    type: text_default
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

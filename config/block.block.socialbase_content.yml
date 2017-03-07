@@ -1,4 +1,4 @@
-uuid: 6157c72b-d580-467c-8174-37184a45751d
+uuid: c70cabb4-8c2f-457f-8aa1-95fded3191ce
 langcode: nb
 status: true
 dependencies:
@@ -6,8 +6,6 @@ dependencies:
     - system
   theme:
     - socialbase
-_core:
-  default_config_hash: cJBzSe8tsKTEkQ3KWM0q1o2ONKVqoKQ6m2TSCYQpIsw
 id: socialbase_content
 theme: socialbase
 region: content
@@ -16,7 +14,7 @@ provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: Hovedsideinnhold
+  label: 'Main page content'
   provider: system
   label_display: '0'
 visibility: {  }

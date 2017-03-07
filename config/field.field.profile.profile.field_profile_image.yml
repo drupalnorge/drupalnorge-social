@@ -1,4 +1,4 @@
-uuid: e69f878a-b1cf-46a9-a8b0-0189ffde72f6
+uuid: ea6aca9f-b00b-4461-bfc9-da2722e148a8
 langcode: nb
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: xqyuOoMAl8l3GKiH95zlMD4t8haA_hu38IW8R9G31yo
+  default_config_hash: tSyQuKXSwEWCqPytdKi5gnT04E2SCEUfF6-3AUegANk
 id: profile.profile.field_profile_image
 field_name: field_profile_image
 entity_type: profile
@@ -23,7 +23,7 @@ settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
-  max_resolution: 3600x3600
+  max_resolution: 4096x4096
   min_resolution: ''
   alt_field: true
   alt_field_required: false

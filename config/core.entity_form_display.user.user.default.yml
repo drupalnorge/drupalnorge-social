@@ -1,4 +1,4 @@
-uuid: e24818bd-32f1-41ba-b5e5-a6f9016428e5
+uuid: ddd8370e-2c11-4afd-bf57-153ac9a6b863
 langcode: nb
 status: true
 dependencies:
@@ -20,7 +20,7 @@ third_party_settings:
         id: ''
         classes: ''
 _core:
-  default_config_hash: W5VRfsO5YP6zB07rednNH8-l03MvvelpkY_Q_G2Ri0M
+  default_config_hash: uhywUsenQoNQd-OUBWpc7hq0Yu5CK62zA5WU3WYdeCo
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -32,5 +32,6 @@ content:
     third_party_settings: {  }
 hidden:
   contact: true
+  langcode: true
   language: true
   timezone: true

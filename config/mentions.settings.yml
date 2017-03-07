@@ -1,0 +1,4 @@
+supported_entity_types:
+  post: post
+  comment: comment
+suggestions_format: all

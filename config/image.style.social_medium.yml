@@ -1,9 +1,11 @@
-uuid: 2bdda975-7a3e-4592-9b18-d1854d69e3bb
+uuid: 7cd81844-0584-47d3-8148-bcde385b5897
 langcode: nb
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - crop
 _core:
-  default_config_hash: OF2fEyCNGH5Y7zuEZ2pZoXj_PdTuo4Q6FFDoCY6Fiuk
+  default_config_hash: qAo_Qmc0rnPwa3NIs5KfzPR-JAAzEb-aESRRqpazp0E
 name: social_medium
 label: 'social medium (44 x 44)'
 effects:
@@ -14,3 +16,9 @@ effects:
     data:
       width: 44
       height: 44
+  151b526b-cb42-4553-a9ab-9c2407ee4134:
+    uuid: 151b526b-cb42-4553-a9ab-9c2407ee4134
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: profile_medium

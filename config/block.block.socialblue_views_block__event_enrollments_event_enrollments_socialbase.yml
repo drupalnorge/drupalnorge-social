@@ -1,0 +1,38 @@
+uuid: c5cbbe46-140f-4bbd-8e88-d5aa022a30e0
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.event_enrollments
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - socialblue
+id: socialblue_views_block__event_enrollments_event_enrollments_socialbase
+theme: socialblue
+region: complementary_top
+weight: -19
+provider: null
+plugin: 'views_block:event_enrollments-event_enrollments'
+settings:
+  id: 'views_block:event_enrollments-event_enrollments'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "/node/*/edit\r\n/node/*/delete"
+    negate: true
+    context_mapping: {  }

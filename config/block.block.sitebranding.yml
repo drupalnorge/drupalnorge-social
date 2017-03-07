@@ -1,4 +1,4 @@
-uuid: 7d1803f7-67f4-41cf-a56a-d49f3ca9cb15
+uuid: 3ee5d2f8-dd19-45da-a483-7540562f46eb
 langcode: nb
 status: true
 dependencies:
@@ -6,8 +6,6 @@ dependencies:
     - system
   theme:
     - socialbase
-_core:
-  default_config_hash: oVVlNA4ROgPb_vpKdqsurVNmXkUZn2FMxwuHuRDtua0
 id: sitebranding
 theme: socialbase
 region: header
@@ -16,10 +14,10 @@ provider: null
 plugin: system_branding_block
 settings:
   id: system_branding_block
-  label: 'Nettstedets markedsføringselementer'
+  label: 'Site branding'
   provider: system
   label_display: '0'
   use_site_logo: true
-  use_site_name: false
+  use_site_name: true
   use_site_slogan: false
 visibility: {  }

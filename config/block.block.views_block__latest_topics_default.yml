@@ -1,4 +1,4 @@
-uuid: 90d1e1ba-1502-4dca-bfc0-8f11945141aa
+uuid: 11c6cab2-098b-47d1-bd0c-7c68b352233e
 langcode: nb
 status: true
 dependencies:
@@ -9,12 +9,10 @@ dependencies:
     - views
   theme:
     - socialbase
-_core:
-  default_config_hash: Tyzbd3vfCnNHkX70rXjpS9_melHIt9dyUKTw4o37W9w
 id: views_block__latest_topics_default
 theme: socialbase
 region: complementary_bottom
-weight: -17
+weight: 3
 provider: null
 plugin: 'views_block:latest_topics-block_latest_topics'
 settings:
@@ -27,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/explore"
+    pages: "/stream\r\n/explore"
     negate: false
     context_mapping: {  }

@@ -1,4 +1,4 @@
-uuid: a50e23fd-f902-45d7-a77e-a359b659c23a
+uuid: 42150c3a-5b3d-4b71-871a-07d0bad87ff6
 langcode: nb
 status: true
 dependencies:
@@ -9,8 +9,6 @@ dependencies:
     - user
   theme:
     - socialbase
-_core:
-  default_config_hash: i0cPm3IXP_wmJGAe7JGeBBwotT6pLFQPCkPq6f-vF2Q
 id: socialbase_account_menu
 theme: socialbase
 region: header
@@ -19,7 +17,7 @@ provider: null
 plugin: 'system_menu_block:account'
 settings:
   id: 'system_menu_block:account'
-  label: Brukerkonto-meny
+  label: 'User account menu'
   provider: system
   label_display: '0'
   level: 1

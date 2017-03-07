@@ -1,4 +1,4 @@
-uuid: 260916e5-69f1-4b92-af27-3796bd0c6d54
+uuid: 1c1de462-535c-4128-a075-8e693b5af546
 langcode: nb
 status: true
 dependencies:
@@ -9,8 +9,6 @@ dependencies:
     - views
   theme:
     - socialbase
-_core:
-  default_config_hash: QP9Hg0-yhZhLEJkRbUl2wVh2TYSV3wGoaKW4ByB3T3s
 id: exposed_form_search_users_page_sidebar
 theme: socialbase
 region: complementary_top
@@ -22,7 +20,7 @@ settings:
   label: ''
   provider: views
   label_display: visible
-  views_label: Filtrer
+  views_label: Filter
 visibility:
   request_path:
     id: request_path

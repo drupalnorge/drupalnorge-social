@@ -1,4 +1,4 @@
-uuid: 4dc59900-dd13-4d6c-8cb2-c9abf24dff84
+uuid: 1056cfeb-aa77-470b-a189-d3df7da53f4c
 langcode: nb
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
     - taxonomy
     - user
 _core:
-  default_config_hash: JQSma0PDcU9HpRn7qx233Qj89-X17_KLd4kx42qN-ts
+  default_config_hash: l2H1eAk5hC83pnmJonlGIuxbDWF-rQFAOzzrkwUYZwg
 id: topics
 label: 'User Topics'
 module: views
@@ -192,7 +192,7 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: true
+          value: '1'
           group: 1
           exposed: true
           expose:
@@ -224,6 +224,42 @@ display:
           plugin_id: boolean
           entity_type: node
           entity_field: status
+        nid:
+          id: nid
+          table: node_access
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: node_access
       sorts:
         created:
           id: created
@@ -403,7 +439,7 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: true
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -433,6 +469,42 @@ display:
           entity_type: node
           entity_field: status
           plugin_id: boolean
+        nid:
+          id: nid
+          table: node_access
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: node_access
       filter_groups:
         operator: AND
         groups:

@@ -1,5 +1,5 @@
-uuid: e6f50c6d-35bf-4e33-ab59-f38d91041eac
-langcode: nb
+uuid: 89f18e80-ba03-4c69-8241-5bfe7a0983c2
+langcode: en
 status: true
 dependencies:
   config:
@@ -11,7 +11,7 @@ id: profile.profile.field_profile_drupal_org_profile
 field_name: field_profile_drupal_org_profile
 entity_type: profile
 bundle: profile
-label: 'Drupal.org profile'
+label: 'Drupal.org profil'
 description: ''
 required: false
 translatable: false

@@ -1,4 +1,4 @@
-uuid: a3905d90-1cf3-41fc-94d7-22f96a560fe5
+uuid: de9527f3-c332-4ab6-b02a-fcc721d574ee
 langcode: nb
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: lRhqCzO9sMaXlug426IhNycqUSpGIdnxwbDM6sVZ0o4
+  default_config_hash: XUuI2JUOL3dIKZHWHAKVswOrNAvKtTFP8QXUxJdkHLI
 id: post.post.activity_comment
 targetEntityType: post
 bundle: post
@@ -37,3 +37,4 @@ hidden:
   field_recipient_group: true
   field_recipient_user: true
   field_visibility: true
+  like_and_dislike: true

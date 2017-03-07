@@ -4,7 +4,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Bruk
+          submit_button: Filtrer
           reset_button_label: Nullstill
           exposed_sorts_label: 'Sortér på'
           sort_asc_label: Stigende
@@ -21,6 +21,10 @@ display:
       fields:
         label:
           separator: ', '
+      filters:
+        status:
+          expose:
+            label: Publiseringsstatus
       arguments:
         gid:
           exception:

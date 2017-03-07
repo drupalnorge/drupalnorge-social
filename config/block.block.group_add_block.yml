@@ -1,4 +1,4 @@
-uuid: e60d0730-bda6-44dd-b998-9e28c0d95eb2
+uuid: ef166802-baa5-459e-9997-5a98731427de
 langcode: nb
 status: true
 dependencies:
@@ -7,12 +7,10 @@ dependencies:
     - system
   theme:
     - socialbase
-_core:
-  default_config_hash: 88AkZa3Jb0HyTb-lpje9XYFjb1BIc0E-C1sCnWf2gmM
 id: group_add_block
 theme: socialbase
 region: complementary_top
-weight: -26
+weight: -97
 provider: null
 plugin: group_add_block
 settings:

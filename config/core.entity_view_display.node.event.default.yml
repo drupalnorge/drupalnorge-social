@@ -1,8 +1,9 @@
-uuid: 38ed6ac1-63f9-403e-a484-345db4554652
+uuid: 64502e69-3307-4f3b-b496-0a12df553d27
 langcode: nb
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - field.field.node.event.body
     - field.field.node.event.field_content_visibility
     - field.field.node.event.field_event_address
@@ -14,12 +15,13 @@ dependencies:
     - field.field.node.event.field_files
     - node.type.event
   module:
+    - address
     - file
     - group_core_comments
     - text
     - user
 _core:
-  default_config_hash: bWwlkUfwZlLdS0mD5Tw3W3pbQClQFNLwKU5DUz4fYiY
+  default_config_hash: Wd_Ldr1q5SS20JeTkRtGRGR2tYAodgGKw3nkJnxOUOo
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -28,28 +30,48 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 0
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_event_address:
+    type: address_plain
+    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
   field_event_comments:
-    weight: 1
+    weight: 3
     label: above
     settings:
       pager_id: 0
+      view_mode: default
     third_party_settings: {  }
     type: comment_group_content
+  field_event_location:
+    type: string
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_files:
-    weight: 2
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
     type: file_default
+  flag_follow_content:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  like_and_dislike:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_content_visibility: true
-  field_event_address: true
   field_event_date: true
   field_event_date_end: true
   field_event_image: true
-  field_event_location: true
   langcode: true
   links: true

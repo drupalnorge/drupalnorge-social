@@ -1,4 +1,4 @@
-uuid: 9ef04915-4df3-4535-80c8-9267baab0c8d
+uuid: 669856d5-9e0d-4cfe-af63-5ece3e359892
 langcode: nb
 status: true
 dependencies:
@@ -64,6 +64,8 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  flag_follow_content:
+    weight: 10
   links:
     weight: 5
     settings: {  }
@@ -74,3 +76,4 @@ hidden:
   field_event_comments: true
   field_files: true
   langcode: true
+  like_and_dislike: true

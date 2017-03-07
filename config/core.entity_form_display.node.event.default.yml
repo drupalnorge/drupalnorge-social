@@ -1,4 +1,4 @@
-uuid: 8b3c3e6d-34b8-4e22-a8d9-5f16d69023fa
+uuid: ca17917d-c898-4a08-9aa5-d0898b998ff2
 langcode: nb
 status: true
 dependencies:
@@ -20,7 +20,7 @@ dependencies:
     - datetime
     - field_group
     - file
-    - image
+    - image_widget_crop
     - path
     - text
 third_party_settings:
@@ -87,7 +87,7 @@ third_party_settings:
         label: Visibility
         required_fields: true
         id: visibility
-        classes: 'card card-underline scrollspy'
+        classes: 'card '
     group_attachments:
       children:
         - field_files
@@ -99,9 +99,9 @@ third_party_settings:
         label: Attachments
         required_fields: true
         id: attachments
-        classes: 'card card-underline scrollspy'
+        classes: card
 _core:
-  default_config_hash: 6UUdAlSI0LeZjExl3BcRzGoe4qALhiojahV4My2qxsg
+  default_config_hash: sctGvhhY3npK4Kcx5xjcwvx3vuGW8IP8KirixCPn670
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -149,10 +149,16 @@ content:
   field_event_image:
     weight: 3
     settings:
-      progress_indicator: throbber
+      show_crop_area: true
+      show_default_crop: true
       preview_image_style: social_x_large
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - hero
+        - teaser
+      progress_indicator: throbber
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
   field_event_location:
     weight: 11
     settings:

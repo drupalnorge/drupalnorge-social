@@ -1,4 +1,4 @@
-uuid: f0d1e981-698e-4982-82b9-d85ab169fcaa
+uuid: 189c513c-58ac-4719-90e7-a8ff7887eb11
 langcode: nb
 status: true
 dependencies:
@@ -17,7 +17,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: xdT_l3VPZGTWreNIGRkJR9zzJesniLpWYjyCnCOnu6Q
+  default_config_hash: V9MGv77-PofCdXVbiBCoxaW4etK8-W2fwUlgKqlgri8
 id: node.topic.teaser
 targetEntityType: node
 bundle: topic
@@ -25,7 +25,7 @@ mode: teaser
 content:
   field_content_visibility:
     type: list_default
-    weight: 3
+    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -39,13 +39,19 @@ content:
     third_party_settings: {  }
   field_topic_type:
     type: entity_reference_label
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
-  links:
+  flag_follow_content:
+    weight: 10
+  like_and_dislike:
     weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 2
     settings: {  }
     third_party_settings: {  }
 hidden:

@@ -1,35 +1,33 @@
-uuid: de875600-1746-4c12-885b-c734ffc8af81
+uuid: 50ba9509-b2b7-4add-89ec-a2c01e83c550
 langcode: nb
 status: true
 dependencies:
   config:
     - field.field.group.open_group.field_group_address
     - field.field.group.open_group.field_group_description
-    - field.field.group.open_group.field_group_geolocation
     - field.field.group.open_group.field_group_image
     - field.field.group.open_group.field_group_location
     - group.type.open_group
 _core:
-  default_config_hash: eiOgMRobu4qCNzosS_AbxaDd2HRj_YLcuB_JEmwC5_g
+  default_config_hash: wyH6XjPbo4L2dTM9kYLL1XEHd63RFJTuOMDgvOYW52o
 id: group.open_group.default
 targetEntityType: group
 bundle: open_group
 mode: default
 content:
-  label:
-    label: hidden
-    type: string
+  field_group_description:
+    type: basic_string
     weight: 0
-    settings:
-      link_to_entity: false
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
 hidden:
   changed: true
   created: true
   field_group_address: true
   field_group_description: true
-  field_group_geolocation: true
   field_group_image: true
   field_group_location: true
+  label: true
   langcode: true
   uid: true

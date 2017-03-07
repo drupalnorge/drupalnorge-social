@@ -1,0 +1,23 @@
+uuid: 67592ebf-8bac-4a18-ba94-bf75b46c6db1
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_context
+    - message.template.create_like_node_or_post
+  module:
+    - options
+_core:
+  default_config_hash: 6smwKYTNZbZucdwo00NdeizeXUfsaTqoE9_eqZgIsqE
+id: message.create_like_node_or_post.field_message_context
+field_name: field_message_context
+entity_type: message
+bundle: create_like_node_or_post
+label: field_message_context
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

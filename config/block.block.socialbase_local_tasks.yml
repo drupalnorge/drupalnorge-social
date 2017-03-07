@@ -1,4 +1,4 @@
-uuid: bd5502a1-990b-4946-bd80-fc5e76824c42
+uuid: 64cb768b-22fb-4931-bf2c-766f8c8c23d3
 langcode: nb
 status: true
 dependencies:
@@ -7,8 +7,6 @@ dependencies:
     - user
   theme:
     - socialbase
-_core:
-  default_config_hash: c9b8gkyPbS39gIu3jq7bFNw8e2SpWLRvAkclTd_-Dp4
 id: socialbase_local_tasks
 theme: socialbase
 region: secondary_navigation
@@ -17,7 +15,7 @@ provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: Faner
+  label: Tabs
   provider: core
   label_display: '0'
   primary: true
@@ -26,8 +24,8 @@ visibility:
   user_role:
     id: user_role
     roles:
+      anonymous: anonymous
       authenticated: authenticated
-      administrator: administrator
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'

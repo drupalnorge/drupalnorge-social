@@ -1,4 +1,4 @@
-uuid: 18977909-0bb1-4d64-9ee6-d1802aba389f
+uuid: 38976d41-c062-4059-9373-8a8b7a5483fb
 langcode: nb
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: cMEV7iOmvoPey-wVycac0U7aq8KJy02nexCLg1ZTnaI
+  default_config_hash: 88CcI2Uim4ESqGPjKEGQORSJYJxAU28Hsulte9eTc_I
 id: activity_stream_group
 label: activity_stream_group
 module: views
@@ -216,7 +216,7 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: true
+          value: '1'
           group: 1
           exposed: false
           expose:

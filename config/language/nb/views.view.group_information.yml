@@ -1,0 +1,20 @@
+display:
+  default:
+    display_title: Hoved
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér på'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      fields:
+        label:
+          separator: ', '
+      arguments:
+        id:
+          exception:
+            title: Alle
+  page_group_about:
+    display_title: Side

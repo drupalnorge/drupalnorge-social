@@ -1,24 +1,30 @@
-uuid: 2ffdf07c-f22b-4bb4-b5f4-4b6084da62ba
+uuid: 0bfab502-0ec8-4688-8ade-f881eb1f2519
 langcode: nb
 status: true
 dependencies:
   config:
     - core.entity_view_mode.profile.teaser
+    - field.field.profile.profile.field_profile_address
     - field.field.profile.profile.field_profile_drupal_org_profile
+    - field.field.profile.profile.field_profile_expertise
     - field.field.profile.profile.field_profile_facebook_url
     - field.field.profile.profile.field_profile_first_name
+    - field.field.profile.profile.field_profile_function
     - field.field.profile.profile.field_profile_image
     - field.field.profile.profile.field_profile_interests
     - field.field.profile.profile.field_profile_last_name
+    - field.field.profile.profile.field_profile_organization
+    - field.field.profile.profile.field_profile_phone_number
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
+    - field.field.profile.profile.field_profile_show_email
     - field.field.profile.profile.field_profile_twitter_url
     - image.style.social_x_large
     - profile.type.profile
   module:
     - image
 _core:
-  default_config_hash: JtAmU-faQikm0Z3ZcQhVu_TjHBS4E_-gXF6vEiY5vAk
+  default_config_hash: MT2MJMR7Z9EzbjdztDLD6b8sB2MRyovWRSxxWspvEmQ
 id: profile.profile.teaser
 targetEntityType: profile
 bundle: profile
@@ -26,6 +32,13 @@ mode: teaser
 content:
   field_profile_first_name:
     weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_profile_function:
+    weight: 3
     label: hidden
     settings:
       link_to_entity: false
@@ -61,11 +74,13 @@ content:
       link: false
     third_party_settings: {  }
 hidden:
+  field_profile_address: true
   field_profile_drupal_org_profile: true
+  field_profile_expertise: true
   field_profile_facebook_url: true
-  field_profile_function: true
   field_profile_interests: true
   field_profile_phone_number: true
   field_profile_self_introduction: true
+  field_profile_show_email: true
   field_profile_twitter_url: true
   langcode: true

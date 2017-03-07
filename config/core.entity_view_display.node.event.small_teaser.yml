@@ -1,4 +1,4 @@
-uuid: 82eec4d4-0da6-4571-8689-d4bfe3fea1be
+uuid: 1dbe5976-0074-423c-80a1-53a09d3e4d67
 langcode: nb
 status: true
 dependencies:
@@ -32,6 +32,8 @@ content:
       timezone_override: ''
       format_type: day_month_time
     third_party_settings: {  }
+  flag_follow_content:
+    weight: 10
 hidden:
   body: true
   field_content_visibility: true
@@ -42,4 +44,5 @@ hidden:
   field_event_location: true
   field_files: true
   langcode: true
+  like_and_dislike: true
   links: true

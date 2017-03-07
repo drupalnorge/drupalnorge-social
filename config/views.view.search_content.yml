@@ -1,4 +1,4 @@
-uuid: 198739a6-866f-4a01-bd76-9e5ca81ca105
+uuid: 9c9162c0-926c-4896-8fad-ad90096b8c97
 langcode: nb
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - search_api
     - user
 _core:
-  default_config_hash: VO8pLG6sfwbLLv4-mO5U3I9bJHFLnmJOyrGwp5fkh_4
+  default_config_hash: t-DRS-Q3Iwp_Y1wNoPFDXP59VANUYOAKT4vVNVb1kVw
 id: search_content
 label: 'Search Content'
 module: views
@@ -29,12 +29,8 @@ display:
         options:
           perm: 'access content search'
       cache:
-        type: search_api
-        options:
-          results_lifespan: '3600'
-          results_lifespan_custom: '0'
-          output_lifespan: '3600'
-          output_lifespan_custom: '0'
+        type: none
+        options: {  }
       query:
         type: views_query
         options:

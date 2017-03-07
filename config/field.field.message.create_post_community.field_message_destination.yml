@@ -1,4 +1,4 @@
-uuid: ec02c642-d9b4-47d7-9b9e-29d516964109
+uuid: db44a2bc-a27e-4aee-b6e0-a185cf905c1f
 langcode: nb
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: yghvQUHZRO-PNQcY3D6O4YBw2-LvBXieE_Vt09ryzlY
+  default_config_hash: _QtTu2mntihqrHFEAVSb3CJMxtco8UYqdqcU-D2em38
 id: message.create_post_community.field_message_destination
 field_name: field_message_destination
 entity_type: message

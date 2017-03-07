@@ -1,9 +1,9 @@
-uuid: 582865fe-e198-4eb1-8a17-d4aaf8a46606
+uuid: 1e851c2e-66a1-4ee6-ab42-ad7c85e243cd
 langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: Zb5DX8_ckPNG7x0FwMw6eVL5Q8stKXShFVKR-MPSFlo
+  default_config_hash: yu0CoTBgFmJmD6ijz-Q7LyJiZbqsjpchuDhy5hB9gJo
 name: Social
 machine_name: social
 description: 'Auto-generated bundle from package Social'
@@ -17,7 +17,7 @@ assignments:
         post: post
         user: user
     enabled: true
-    weight: '-2'
+    weight: -2
   core:
     types:
       config:
@@ -30,10 +30,10 @@ assignments:
         user_role: user_role
         entity_view_mode: entity_view_mode
     enabled: true
-    weight: '5'
+    weight: 5
   dependency:
     enabled: true
-    weight: '15'
+    weight: 15
   exclude:
     types:
       config:
@@ -54,34 +54,34 @@ assignments:
         user_role: user_role
         view: view
         entity_view_mode: entity_view_mode
-    curated: 1
+    curated: true
     module:
-      installed: 0
-      profile: 1
-      namespace: 1
-      namespace_any: 0
+      installed: false
+      profile: true
+      namespace: true
+      namespace_any: false
     enabled: true
-    weight: '-5'
+    weight: -5
   existing:
     enabled: true
-    weight: '12'
+    weight: 12
   namespace:
     enabled: true
-    weight: '0'
+    weight: 0
   optional:
     types:
       config:
-        tour: tour
+        block: block
     enabled: true
-    weight: '0'
+    weight: 0
   packages:
     enabled: true
-    weight: '-20'
+    weight: -20
   profile:
-    curated: 1
+    curated: true
     standard:
-      files: 1
-      dependencies: 1
+      files: true
+      dependencies: true
     types:
       config:
         block: block
@@ -91,12 +91,12 @@ assignments:
         shortcut_set: shortcut_set
         tour: tour
     enabled: false
-    weight: '10'
+    weight: 10
   site:
     types:
       config:
         action: action
     enabled: false
-    weight: '7'
+    weight: 7
 profile_name: social
 is_profile: true

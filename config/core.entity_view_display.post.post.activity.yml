@@ -1,4 +1,4 @@
-uuid: b79db1c2-e429-4317-8755-f1a4b9801e4d
+uuid: 1c1faa8b-5eb4-47c7-aed3-6300a3075183
 langcode: nb
 status: true
 dependencies:
@@ -11,26 +11,32 @@ dependencies:
     - field.field.post.post.field_visibility
   module:
     - social_post
+    - text
     - user
 _core:
-  default_config_hash: XEa_mEFP9ewhWvFNU4R0Y9Bpi43pR8w1XfOenIXdASk
+  default_config_hash: g4Oo-lS8WldH_Dpz-dRNneT2WzCuLGfwGbqSiRo-Boo
 id: post.post.activity
 targetEntityType: post
 bundle: post
 mode: activity
 content:
   field_post:
-    type: basic_string
+    type: text_default
     weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
   field_post_comments:
     type: comment_post
-    weight: 2
+    weight: 3
     label: hidden
     settings:
-      num_comments: 2
+      num_comments: '2'
+      order: DESC
+    third_party_settings: {  }
+  like_and_dislike:
+    weight: 2
+    settings: {  }
     third_party_settings: {  }
   user_id:
     label: hidden

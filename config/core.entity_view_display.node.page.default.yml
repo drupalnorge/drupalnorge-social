@@ -1,8 +1,9 @@
-uuid: 11b321a4-4164-4f4c-8ba4-c2b7558af49c
+uuid: 77f78b44-7ce4-4dec-9dce-ebd80ca67648
 langcode: nb
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - field.field.node.page.body
     - field.field.node.page.field_content_visibility
     - field.field.node.page.field_files
@@ -15,7 +16,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: 1UylaNDodBzhTWfbCRRD0_nyrS_8dViFvSpQEHIKsdk
+  default_config_hash: zhiYTAeMpGlcD_PVU1hn6ZuAxoVgnd-YFel53-gyUZ4
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -40,6 +41,8 @@ content:
       pager_id: 0
     third_party_settings: {  }
     type: comment_default
+  flag_follow_content:
+    weight: 10
 hidden:
   field_content_visibility: true
   field_page_image: true

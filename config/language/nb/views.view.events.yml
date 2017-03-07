@@ -25,6 +25,10 @@ display:
         status:
           expose:
             label: Publiseringsstatus
+      title: 'Hendelser for denne brukeren'
+      empty:
+        area_text_custom:
+          content: 'Ingen hendelser funnet for denne brukeren.'
   block_events_on_profile:
     display_options:
       filters:

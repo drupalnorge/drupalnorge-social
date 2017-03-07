@@ -1,4 +1,4 @@
-uuid: a279020d-54b1-4493-b94f-7d59186a90d8
+uuid: 36e9c7e5-91ed-4ad6-a494-7742f1160281
 langcode: nb
 status: true
 dependencies:
@@ -6,9 +6,8 @@ dependencies:
     - group.content_type.open_group-group_membership
   module:
     - group
-    - user
 _core:
-  default_config_hash: 6kyeW5wv3jbGjRgooi8saSKWJCgwkZ6FvwmGfIx0S3Y
+  default_config_hash: 0NaiQMW2oJEUVZ5CU8EvU1WjjsCpbKY8Vxd2xtdkRkY
 id: group_members
 label: 'Group Members'
 module: views
@@ -25,9 +24,9 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
+        type: group_permission
         options:
-          perm: 'access content'
+          group_permission: 'view group_membership content'
       cache:
         type: tag
         options: {  }
@@ -216,12 +215,12 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
+        - group_membership.roles.permissions
         - 'languages:language_content'
         - 'languages:language_interface'
         - route
         - url
         - url.query_args
-        - user.permissions
       tags: {  }
   block_newest_members:
     display_plugin: block
@@ -272,11 +271,11 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
+        - group_membership.roles.permissions
         - 'languages:language_content'
         - 'languages:language_interface'
         - route
         - url
-        - user.permissions
       tags: {  }
   page_group_members:
     display_plugin: page
@@ -289,10 +288,10 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
+        - group_membership.roles.permissions
         - 'languages:language_content'
         - 'languages:language_interface'
         - route
         - url
         - url.query_args
-        - user.permissions
       tags: {  }

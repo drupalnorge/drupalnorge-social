@@ -1,4 +1,4 @@
-uuid: cc93a84f-53c3-4629-a596-69dd8292430c
+uuid: 0b89f390-963c-4f72-8959-bad02969b42a
 langcode: nb
 status: true
 dependencies: {  }
@@ -6,11 +6,9 @@ _core:
   default_config_hash: BKqpkcpQ6vRhAciVQT_3sOA3bKs1vtrCini-GiyGcKs
 id: profile
 label: Profile
-registration: true
+registration: false
 multiple: false
 roles:
   authenticated: '0'
   administrator: '0'
-  contentmanager: '0'
-  sitemanager: '0'
 weight: 0

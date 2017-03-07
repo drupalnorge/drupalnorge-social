@@ -1,4 +1,4 @@
-uuid: 9437f504-dab3-4f90-b510-ac01bc8fa0dd
+uuid: 8b961a0b-ccdc-4d42-98d6-60eba50a4bd9
 langcode: nb
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - dynamic_entity_reference
 _core:
-  default_config_hash: T_Nw-unXow1oYjzAJ6ejbOS8WkIYgxUqj18DHQ3g2g0
+  default_config_hash: LyvMP3OKQBJQwm7eJwqJAthWbf0WsfepRPq8b0aN37k
 id: message.create_comment_group_node.field_message_related_object
 field_name: field_message_related_object
 entity_type: message
@@ -71,5 +71,23 @@ settings:
     handler_settings: {  }
   search_api_task:
     handler: 'default:search_api_task'
+    handler_settings: {  }
+  crop:
+    handler: 'default:crop'
+    handler_settings: {  }
+  flagging:
+    handler: 'default:flagging'
+    handler_settings: {  }
+  font:
+    handler: 'default:font'
+    handler_settings: {  }
+  mentions:
+    handler: 'default:mentions'
+    handler_settings: {  }
+  vote:
+    handler: 'default:vote'
+    handler_settings: {  }
+  vote_result:
+    handler: 'default:vote_result'
     handler_settings: {  }
 field_type: dynamic_entity_reference

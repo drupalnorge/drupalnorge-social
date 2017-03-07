@@ -1,4 +1,4 @@
-uuid: 5515e68e-6648-4d04-9ad5-566c056301cb
+uuid: 5476152b-c9f0-4421-9873-8fe2c6639314
 langcode: nb
 status: true
 dependencies:
@@ -8,8 +8,6 @@ dependencies:
     - system
   theme:
     - socialbase
-_core:
-  default_config_hash: Qwub9pMtOwzb9-N-KXIjA580GWWiBAj3_UWugydF5eg
 id: footer
 theme: socialbase
 region: footer
@@ -18,7 +16,7 @@ provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: Bunntekst
+  label: Footer
   provider: system
   label_display: '0'
   level: 1

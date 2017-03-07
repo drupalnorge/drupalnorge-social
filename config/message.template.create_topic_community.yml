@@ -1,4 +1,4 @@
-uuid: d28171f7-0d03-4950-980e-ea02600b4654
+uuid: aa26f842-285f-4da7-9be8-74b3c87f9192
 langcode: nb
 status: true
 dependencies:
@@ -14,15 +14,18 @@ third_party_settings:
       stream_home: stream_home
       stream_profile: stream_profile
     activity_create_direct: 0
-    activity_bundle_entity: node.topic
     activity_action: create_entitiy_action
+    activity_bundle_entities:
+      node-topic: node-topic
 _core:
-  default_config_hash: '-H4t1gYUG09OrMMC7yL1tw0yB6xG2NedVuSiZVVpY8o'
+  default_config_hash: 5zgexuL111nwnHFXypA5AsemLoRP-0AsY0mY0mE0kwY
 template: create_topic_community
 label: 'Create topic'
 description: 'A user created a topic in the community'
 text:
-  - '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> created a topic</p>'
+  -
+    format: full_html
+    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> created a topic</p>'
 settings:
   'token options':
     clear: false
