@@ -8,15 +8,12 @@
     "require": {
         "composer/installers": "^1.0",
         "drupal-composer/drupal-scaffold": "^2.0.0",
-        "cweagans/composer-patches": "1.5.0",
-        "goalgorilla/open_social": "1.0.0-beta5",
-        "drupal/coffee": "*",
-        "drupal/slack_invite": "*",
-        "drupal/sparkpost": "*",
-        "drupal/reroute_email": "*",
-        "drupal/migrate_tools": "*",
-        "drupal/geolocation": "^1.8",
-        "drupal/geocoder": "2.x-dev"
+        "cweagans/composer-patches": "^1.0",
+        "goalgorilla/open_social": "^1.0@beta",
+        "drupal/coffee": "1.x-dev",
+        "drupal/sparkpost": "2.x-dev",
+        "drupal/reroute_email": "1.x-dev",
+        "drupal/migrate_tools": "3.x-dev"
     },
     "require-dev": {
         "drush/drush": "~8.0",
@@ -62,6 +59,11 @@
             "drush/contrib/{$name}": [
                 "type:drupal-drush"
             ]
+        },
+        "patches": {
+          "drupal/core": {
+              "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
+          }
         },
         "enable-patching": true
     }
