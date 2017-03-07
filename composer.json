@@ -13,7 +13,8 @@
         "drupal/coffee": "1.x-dev",
         "drupal/sparkpost": "2.x-dev",
         "drupal/reroute_email": "1.x-dev",
-        "drupal/migrate_tools": "3.x-dev"
+        "drupal/migrate_tools": "3.x-dev",
+        "drupal/slack_invite": "^1.1"
     },
     "require-dev": {
         "drush/drush": "~8.0",
