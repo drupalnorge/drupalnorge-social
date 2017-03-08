@@ -1,4 +1,4 @@
-uuid: bcb26943-8ca5-4050-a5dd-f59f4f60ee67
+uuid: 4adad61b-7955-468a-9d88-326e1da58214
 langcode: nb
 status: true
 dependencies:
@@ -10,8 +10,6 @@ dependencies:
     - user
   theme:
     - socialbase
-_core:
-  default_config_hash: vQLSPy3ndi-zEP8HoSRMFbTT01hmX94Q94Dq5dIOTZw
 id: anhomepageheroblock
 theme: socialbase
 region: hero
@@ -29,7 +27,7 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: /stream
     negate: false
     context_mapping: {  }
   user_role:

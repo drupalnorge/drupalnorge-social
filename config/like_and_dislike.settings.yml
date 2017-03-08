@@ -1,0 +1,13 @@
+allow_cancel_vote: true
+enabled_types:
+  comment:
+    - comment
+    - post_comment
+  node:
+    - topic
+    - event
+  post: {  }
+hide_vote_widget: true
+_core:
+  default_config_hash: BikhTyqmbIEQU0hZw6BI6IX_6QtiggG50Hbm8-j1GtA
+langcode: nb

@@ -1,4 +1,4 @@
-uuid: 083d7af1-73e4-4f77-824f-a70a9e752851
+uuid: 4ed09cbb-b88a-4a42-b0fc-8b4a96175b73
 langcode: nb
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - activity_viewer
     - options
 _core:
-  default_config_hash: IJMNDDidSXSAmfLIRZ83ske8aNYAS1WZf6RTN9MbPa8
+  default_config_hash: QvzXGcuO0zld9vhAr5oLfzrkd956c0ZzsPzyGbU2oHA
 id: activity_stream
 label: 'Activity Stream'
 module: views
@@ -253,6 +253,23 @@ display:
         - 'config:core.entity_view_display.activity.activity.default'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'
+  block_stream_homepage:
+    display_plugin: block
+    id: block_stream_homepage
+    display_title: 'Homepage stream block'
+    position: 3
+    display_options:
+      display_extenders: {  }
+      display_description: ''
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url.query_args
+      tags:
+        - 'config:core.entity_view_display.activity.activity.default'
+        - 'config:core.entity_view_display.activity.activity.notification'
+        - 'config:core.entity_view_display.activity.activity.notification_archive'
   page_activity_stream:
     display_plugin: page
     id: page_activity_stream
@@ -261,6 +278,12 @@ display:
     display_options:
       display_extenders: {  }
       path: stream
+      access:
+        type: none
+        options: {  }
+      defaults:
+        access: false
+      enabled: false
     cache_metadata:
       max-age: -1
       contexts:

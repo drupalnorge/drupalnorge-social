@@ -1,4 +1,4 @@
-uuid: 4a189ea8-c572-46c7-9f05-95f33ab538b3
+uuid: 34c27fd4-3559-4408-8e4a-05a86d341cb0
 langcode: nb
 status: true
 dependencies:
@@ -36,6 +36,8 @@ content:
       image_style: social_x_large
       image_link: content
     third_party_settings: {  }
+  flag_follow_content:
+    weight: 10
   links:
     weight: 1
     settings: {  }

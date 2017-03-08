@@ -1,4 +1,4 @@
-uuid: 3a06af77-2a0a-4f59-8847-9e89ba3f7628
+uuid: 97b3322a-567d-4c21-94d9-636be75421d7
 langcode: nb
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
     - search_api_views_taxonomy
     - user
 _core:
-  default_config_hash: OsGoeVQHt-iBCD9bevQDdsej4VSw5GaIyToR1PiD_PA
+  default_config_hash: fvI_t3skpvkxV8S6eKiigX36Q8F6V_HQ7U-3PRqFlIA
 id: search_users
 label: 'Search Users'
 module: views
@@ -33,12 +33,8 @@ display:
         options:
           perm: 'access users search'
       cache:
-        type: search_api
-        options:
-          results_lifespan: '3600'
-          results_lifespan_custom: '0'
-          output_lifespan: '3600'
-          output_lifespan_custom: '0'
+        type: none
+        options: {  }
       query:
         type: views_query
         options:
@@ -152,7 +148,7 @@ display:
           expose:
             operator_id: field_profile_expertise_op
             label: Expertise
-            description: ''
+            description: 'Separate multiple values by a comma.'
             use_operator: false
             operator: field_profile_expertise_op
             identifier: expertise
@@ -197,7 +193,7 @@ display:
           expose:
             operator_id: field_profile_interests_op
             label: Interests
-            description: ''
+            description: 'Separate multiple values by a comma.'
             use_operator: false
             operator: field_profile_interests_op
             identifier: interests

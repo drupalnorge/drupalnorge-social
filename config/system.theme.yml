@@ -1,5 +1,5 @@
 admin: seven
-default: socialbase
+default: socialblue
 _core:
   default_config_hash: 3s9J8YS9ddMx4Dx-kAnh2ScvAoDpRI4YVvHL6tsGCdY
 langcode: nb

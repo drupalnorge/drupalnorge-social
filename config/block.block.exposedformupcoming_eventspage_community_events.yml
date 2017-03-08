@@ -1,4 +1,4 @@
-uuid: 6a98ee8f-26ab-41d2-a21e-ff67ea69713d
+uuid: 23a52cf4-736d-4ce7-a2d8-78b70c1a737f
 langcode: nb
 status: true
 dependencies:
@@ -9,8 +9,6 @@ dependencies:
     - views
   theme:
     - socialbase
-_core:
-  default_config_hash: bMyPHJ2HkkWS0GtR2Z29zdWwvV426iXh_Pv9o-RixfQ
 id: exposedformupcoming_eventspage_community_events
 theme: socialbase
 region: complementary_top
@@ -22,7 +20,7 @@ settings:
   label: ''
   provider: views
   label_display: visible
-  views_label: Filtrer
+  views_label: Filter
 visibility:
   request_path:
     id: request_path

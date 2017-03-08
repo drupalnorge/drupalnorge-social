@@ -1,26 +1,20 @@
-uuid: 4599b72c-793e-4346-9cb5-b78f139b5bd9
-langcode: en
+uuid: 315a2ebb-6f39-4398-8e48-4344a86070a0
+langcode: nb
 status: true
 dependencies:
   module:
     - slack_invite
-    - system
   theme:
-    - socialbase
+    - socialblue
 id: slackinviteform
-theme: socialbase
-region: complementary_bottom
-weight: -23
+theme: socialblue
+region: complementary_top
+weight: -25
 provider: null
 plugin: slack_invite_form_block
 settings:
   id: slack_invite_form_block
-  label: '#drupalnorge på slack'
+  label: '#drupalnorge på Slack'
   provider: slack_invite
   label_display: visible
-visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: false
-    context_mapping: {  }
+visibility: {  }

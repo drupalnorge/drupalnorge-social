@@ -1,8 +1,9 @@
-uuid: 1053137a-5082-4ee2-a416-2b2c57c5b6d1
+uuid: 352c2f8e-5e1e-4067-b90b-b926cdbc9ff2
 langcode: nb
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - field.field.node.topic.body
     - field.field.node.topic.field_content_visibility
     - field.field.node.topic.field_files
@@ -16,7 +17,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: lo_0nli4DHwJjtDFxCpaJslQFmDmbWztG2tX_U_p6HY
+  default_config_hash: p5e13RGzhyE1BG4U2paaZQZKmgyxtVap2Wt_7_kbKz0
 id: node.topic.default
 targetEntityType: node
 bundle: topic
@@ -29,7 +30,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_files:
-    weight: 2
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -41,6 +42,12 @@ content:
       pager_id: 0
     third_party_settings: {  }
     type: comment_group_content
+  flag_follow_content:
+    weight: 10
+  like_and_dislike:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_content_visibility: true
   field_topic_image: true

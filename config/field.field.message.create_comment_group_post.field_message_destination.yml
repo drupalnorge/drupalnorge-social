@@ -1,4 +1,4 @@
-uuid: 2058855f-bf0b-4e47-8ed6-b460184fc8e2
+uuid: 79f05464-d73b-4b2f-87b3-2bcafce1ff4d
 langcode: nb
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: AosVXcdGB8FDUuKMV1_feDsq4ne7SvUSdVBDHIA-lvc
+  default_config_hash: AjANSHQfqvJnuUQlzyM7emySWvnB1Sh8QYVpDitVjGk
 id: message.create_comment_group_post.field_message_destination
 field_name: field_message_destination
 entity_type: message

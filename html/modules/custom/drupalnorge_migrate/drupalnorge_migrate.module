@@ -7,6 +7,8 @@
 
 use Drupal\profile\Entity\ProfileInterface;
 use Drupal\user\Entity\User;
+use Drupal\profile\Entity\Profile;
+use Drupal\Core\Url;
 
 /**
  * Helper function to create a cache id.
@@ -16,12 +18,25 @@ function _drupalnorge_migrate_create_cid_for_mail($mail) {
 }
 
 /**
+ * Fixes things.
+ *
+ * Will be run manually.
+ */
+function drupalnorge_migrate_fix_all_profiles() {
+  $profiles = Profile::loadMultiple();
+  foreach ($profiles as $profile) {
+    drupalnorge_migrate_fix_profile($profile);
+    $profile->save();
+  }
+}
+
+/**
  * Implements hook_ENTITY_TYPE_insert().
  *
  * In order to save those user fields we found in the migration, we are
  * retrieving them here, and saving them on the profile.
  */
-function drupalnorge_migrate_profile_create(ProfileInterface $profile) {
+function drupalnorge_migrate_fix_profile(ProfileInterface $profile) {
   $cid = NULL;
   try {
     $id = $profile->getOwnerId();
@@ -40,10 +55,17 @@ function drupalnorge_migrate_profile_create(ProfileInterface $profile) {
       $text_mappings = [
         'field_name_first' => 'field_profile_first_name',
         'field_name_last' => 'field_profile_last_name',
-        'field_bio' => 'field_profile_self_introduction',
       ];
       foreach ($text_mappings as $source => $destination) {
-        $profile->get($destination)->setValue($cache->data[$source][0]['value']);
+        if (!empty($cache->data[$source][0]['value'])) {
+          $profile->get($destination)->setValue($cache->data[$source][0]['value']);
+        }
+      }
+      if (!empty($cache->data['field_bio'][0]['value'])) {
+        $profile->get('field_profile_self_introduction')->setValue([
+          'value' => $cache->data['field_bio'][0]['value'],
+          'format' => 'basic_html',
+        ]);
       }
       $url_mappings = [
         'field_drupal_org_user_url' => 'field_profile_drupal_org_profile',
@@ -51,21 +73,44 @@ function drupalnorge_migrate_profile_create(ProfileInterface $profile) {
         'field_facebook_url' => 'field_profile_facebook_url',
       ];
       foreach ($url_mappings as $source => $destination) {
-        $profile->get($destination)->setValue($cache->data[$source][0]['url']);
+        if (empty($cache->data[$source][0]['url'])) {
+          continue;
+        }
+        // Make sure we get a valid URL.
+        $url = parse_url($cache->data[$source][0]['url']);
+        if (empty($url['scheme'])) {
+          $url['scheme'] = 'http';
+        }
+        if (empty($url['host'])) {
+          // If a user has entered "example.com" as URL, the host will be parsed
+          // as path, so we set the host as the path, and the path as empty.
+          $url['host'] = $url['path'];
+          $url['path'] = '';
+        }
+        if (!empty($url['path'])) {
+          $url['path'] = '/' . $url['path'];
+        }
+        // Make sure we can parse it. This is the function the rendering will
+        // use, so we just try to construct it like this, since that will show
+        // us if things are about to go bad.
+        $url = sprintf('%s://%s%s', $url['scheme'], $url['host'], $url['path']);
+        $url_object = Url::fromUri($url);
+        $profile->get($destination)->setValue($url);
       }
       // Try to migrate over that file we know exists at a certain path.
       if (!empty($cache->data['user_picture'])) {
         $url = $cache->data['user_picture'];
         if ($file_data = @file_get_contents($url)) {
           $path_parts = pathinfo($url);
-          if ($file = file_save_data($file_data, 'public://pictures/' . $path_parts['basename'])) {
+          $dir = 'public://pictures';
+          file_prepare_directory($dir, FILE_CREATE_DIRECTORY);
+          if ($file = file_save_data($file_data, $dir . '/' . $path_parts['basename'])) {
             $profile->get('field_profile_image')
               ->setValue($file->id());
           }
         }
 
       }
-
     }
   }
   catch (Exception $e) {

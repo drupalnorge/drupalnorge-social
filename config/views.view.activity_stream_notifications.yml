@@ -1,4 +1,4 @@
-uuid: 260f2d8e-717b-42dc-9580-8fe5519d6d51
+uuid: 160c5fef-f83e-4ec7-9735-0e6501f3c274
 langcode: nb
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: WbEiSxxKeTpM15Ql1kFL4tbC2IRCDrlAGtJ3f0m73-A
+  default_config_hash: 1m4VTz0mKgmOOc71JS1OeuMYx6NpCAFmxxK9FoTBqHg
 id: activity_stream_notifications
 label: 'Activity stream notifications'
 module: views
@@ -208,7 +208,7 @@ display:
           group_type: group
           admin_label: ''
           operator: '='
-          value: true
+          value: '1'
           group: 1
           exposed: false
           expose:
@@ -385,6 +385,8 @@ display:
           quantity: 9
       defaults:
         pager: false
+        css_class: false
+      css_class: 'list-group z-depth-1'
     cache_metadata:
       max-age: -1
       contexts:

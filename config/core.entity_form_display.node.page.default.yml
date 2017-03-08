@@ -1,4 +1,4 @@
-uuid: e6516271-5086-492e-ae38-fae500564692
+uuid: 2f60b484-0abe-4011-a930-c3c88e3b7f5d
 langcode: nb
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
     - comment
     - field_group
     - file
-    - image
+    - image_widget_crop
     - path
     - text
 third_party_settings:
@@ -31,7 +31,7 @@ third_party_settings:
         label: Content
         required_fields: true
         id: content
-        classes: 'card card-underline scrollspy'
+        classes: 'card '
     group_page_description:
       children:
         - body
@@ -43,7 +43,7 @@ third_party_settings:
         label: 'Page description'
         required_fields: true
         id: description
-        classes: 'card card-underline scrollspy'
+        classes: 'card '
     group_attachments:
       children:
         - field_files
@@ -55,7 +55,7 @@ third_party_settings:
         label: Attachments
         required_fields: true
         id: attachments
-        classes: 'card card-underline scrollspy'
+        classes: 'card '
     group_page_visibility:
       children:
         - field_content_visibility
@@ -67,9 +67,9 @@ third_party_settings:
         label: Visibility
         required_fields: true
         id: visibility
-        classes: 'card card-underline scrollspy'
+        classes: 'card '
 _core:
-  default_config_hash: XgA9-q4EpppqrSmd47JAzFcEk4gDPwQLBsd9KdcNh94
+  default_config_hash: 9ieRV37FVd1XPUz4F6_6fvHJa26-9d90U1ueAv5CXLA
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -107,10 +107,16 @@ content:
   field_page_image:
     weight: 2
     settings:
+      show_crop_area: true
+      show_default_crop: true
       preview_image_style: social_x_large
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - hero
+        - teaser
       progress_indicator: throbber
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
   langcode:
     type: language_select
     weight: 2

@@ -1,4 +1,4 @@
-uuid: c01c3eaf-59de-4e34-8d9d-450072e4a05b
+uuid: 24a044bc-99d0-4513-9285-6bf9837d17f1
 langcode: nb
 status: true
 dependencies:
@@ -6,8 +6,6 @@ dependencies:
     - system
   theme:
     - socialbase
-_core:
-  default_config_hash: skAEvDrG6ROzkkvY6AbJcOk-JUuv1al_Tcetvcf7ya0
 id: socialbase_messages
 theme: socialbase
 region: content
@@ -16,7 +14,7 @@ provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: Statusmeldinger
+  label: 'Status messages'
   provider: system
   label_display: '0'
 visibility: {  }

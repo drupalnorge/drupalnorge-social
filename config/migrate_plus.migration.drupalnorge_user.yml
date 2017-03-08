@@ -1,4 +1,4 @@
-uuid: d1c76b11-a1a1-4435-acc3-0815d2975bc0
+uuid: 499727c7-fd3d-42ef-b2e2-97274f5aa969
 langcode: nb
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - drupalnorge_migrate
 _core:
-  default_config_hash: hOJzbdlokuIuFZJmbzOqZItgXtSL9b0LF7g6CvFYHE8
+  default_config_hash: FWhsT6r11_pABE1G4AAYnYH9bgV3xiQI7V3ac94amig
 id: drupalnorge_user
 migration_tags: null
 migration_group: null
@@ -17,13 +17,9 @@ process:
   name: name
   pass: pass
   mail: mail
+  created: created
+  access: access
   status: status
-  field_mobile_phone: field_mobil
-  field_first_name: field_name_first
-  field_last_name: field_name_last
-  field_user_description: field_beskrivelse
-  field_phone_number: field_telefon
-  field_position: field_stiling
 destination:
   plugin: social_user
 migration_dependencies: {  }

@@ -1,0 +1,23 @@
+uuid: a07ffb04-1092-46a8-a272-dfa0a8eb4b3a
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_context
+    - message.template.create_comment_following_node
+  module:
+    - options
+_core:
+  default_config_hash: Piuz2n5ougkqE7XjHlgbG-Mp_hpR_uV1i8c7_FaNI88
+id: message.create_comment_following_node.field_message_context
+field_name: field_message_context
+entity_type: message
+bundle: create_comment_following_node
+label: Context
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

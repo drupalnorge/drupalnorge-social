@@ -1,8 +1,9 @@
-uuid: 2ff54873-779c-4383-8974-5ed343517d40
+uuid: 0edbc65a-c8e9-4624-a1da-c8241375e6db
 langcode: nb
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - core.entity_view_mode.node.search_index
     - field.field.node.event.body
     - field.field.node.event.field_content_visibility
@@ -19,7 +20,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: wz0NBwTjVzBOACcAWubt3lSrw1u_M3pIG9YqMqjGzew
+  default_config_hash: 3yl5dOkaJIUO86x2sEzcM9gl3BDW8W2djf-oIHlO1q4
 id: node.event.search_index
 targetEntityType: node
 bundle: event
@@ -38,6 +39,8 @@ content:
       pager_id: 0
     third_party_settings: {  }
     type: comment_default
+  flag_follow_content:
+    weight: 10
 hidden:
   field_content_visibility: true
   field_event_address: true
@@ -47,4 +50,5 @@ hidden:
   field_event_location: true
   field_files: true
   langcode: true
+  like_and_dislike: true
   links: true

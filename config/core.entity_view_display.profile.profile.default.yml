@@ -1,30 +1,43 @@
-uuid: c030139e-dddb-456b-b641-c2634a067e37
+uuid: 36dbdd9e-248d-4e14-96b7-2bef81d84ac8
 langcode: nb
 status: true
 dependencies:
   config:
+    - field.field.profile.profile.field_profile_address
     - field.field.profile.profile.field_profile_drupal_org_profile
+    - field.field.profile.profile.field_profile_expertise
     - field.field.profile.profile.field_profile_facebook_url
     - field.field.profile.profile.field_profile_first_name
+    - field.field.profile.profile.field_profile_function
     - field.field.profile.profile.field_profile_image
     - field.field.profile.profile.field_profile_interests
     - field.field.profile.profile.field_profile_last_name
+    - field.field.profile.profile.field_profile_organization
+    - field.field.profile.profile.field_profile_phone_number
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
+    - field.field.profile.profile.field_profile_show_email
     - field.field.profile.profile.field_profile_twitter_url
     - profile.type.profile
   module:
+    - address
     - link
     - text
 _core:
-  default_config_hash: fcEi-VJyInQ2WcUQfjoPrmrXBKVc3Eiwilpvbww0oIw
+  default_config_hash: a-W37DahZWQq7MK856t6xbAgLUM0JwSCQ5lo5PrDYl8
 id: profile.profile.default
 targetEntityType: profile
 bundle: profile
 mode: default
 content:
+  field_profile_address:
+    weight: 1
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
   field_profile_drupal_org_profile:
-    weight: 4
+    weight: 5
     label: above
     settings:
       trim_length: 80
@@ -34,8 +47,15 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+  field_profile_expertise:
+    weight: 4
+    label: visually_hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   field_profile_facebook_url:
-    weight: 6
+    weight: 7
     label: above
     settings:
       trim_length: 80
@@ -73,7 +93,7 @@ content:
     third_party_settings: {  }
     type: text_default
   field_profile_twitter_url:
-    weight: 5
+    weight: 6
     label: above
     settings:
       trim_length: 80
@@ -89,4 +109,5 @@ hidden:
   field_profile_image: true
   field_profile_last_name: true
   field_profile_organization: true
+  field_profile_show_email: true
   langcode: true

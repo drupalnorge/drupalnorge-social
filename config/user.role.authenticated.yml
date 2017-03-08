@@ -1,4 +1,4 @@
-uuid: 800c3ded-2fdf-409b-91e8-1bb247f425d3
+uuid: c0ceee89-d638-44e1-9359-372e7991ad51
 langcode: nb
 status: true
 dependencies: {  }
@@ -10,6 +10,12 @@ weight: 1
 is_admin: false
 permissions:
   - 'access content'
+  - 'access comments'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'edit own comments'
+  - 'delete own comments'
+  - 'administer own comments'
   - 'view own unpublished content'
   - 'use text format basic_html'
   - 'use text format simple_text'
@@ -30,11 +36,6 @@ permissions:
   - 'override topic published option'
   - 'view node.topic.field_content_visibility:community content'
   - 'create open_group group'
-  - 'access comments'
-  - 'post comments'
-  - 'skip comment approval'
-  - 'edit own comments'
-  - 'delete own comments'
   - 'view public posts'
   - 'view published post entities'
   - 'add post entities'
@@ -50,3 +51,12 @@ permissions:
   - 'access content search'
   - 'access users search'
   - 'access group search'
+  - 'flag follow_content'
+  - 'unflag follow_content'
+  - 'access mentions'
+  - 'view like widget'
+  - 'add or remove like votes on post'
+  - 'add or remove like votes on comment of comment'
+  - 'add or remove like votes on post_comment of comment'
+  - 'add or remove like votes on topic of node'
+  - 'add or remove like votes on event of node'

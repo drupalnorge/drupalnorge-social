@@ -1,4 +1,4 @@
-uuid: b77303a6-01cc-467b-a01c-8de5e7d5bc5c
+uuid: dc451326-6f51-4efb-b430-fa4b401fdbc1
 langcode: en
 status: true
 dependencies: {  }
@@ -7,6 +7,14 @@ label: 'Site manager'
 weight: 4
 is_admin: null
 permissions:
+  - 'override disabled public visibility'
+  - 'delete all comments'
+  - 'access comments'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'edit own comments'
+  - 'delete own comments'
+  - 'administer own comments'
   - 'access content'
   - 'view own unpublished content'
   - 'use text format basic_html'
@@ -22,6 +30,7 @@ permissions:
   - 'delete all revisions'
   - 'create url aliases'
   - 'use text format full_html'
+  - 'view the administration theme'
   - 'administer taxonomy'
   - 'delete terms in expertise'
   - 'edit terms in expertise'
@@ -43,6 +52,8 @@ permissions:
   - 'edit profile tags'
   - 'delete terms in profile_tag'
   - 'edit terms in profile_tag'
+  - 'administer profile settings'
+  - 'view profile email'
   - 'view node.event.field_content_visibility:public content'
   - 'create event content'
   - 'delete own event content'
@@ -79,11 +90,6 @@ permissions:
   - 'override topic revision option'
   - 'override topic sticky option'
   - 'create open_group group'
-  - 'access comments'
-  - 'post comments'
-  - 'skip comment approval'
-  - 'edit own comments'
-  - 'delete own comments'
   - 'view public posts'
   - 'view published post entities'
   - 'add post entities'
@@ -117,3 +123,18 @@ permissions:
   - 'access content search'
   - 'access users search'
   - 'access group search'
+  - 'flag follow_content'
+  - 'unflag follow_content'
+  - 'access mentions'
+  - 'add font entities'
+  - 'delete font entities'
+  - 'edit font entities'
+  - 'access font overview'
+  - 'view published font entities'
+  - 'view unpublished font entities'
+  - 'view like widget'
+  - 'add or remove like votes on post'
+  - 'add or remove like votes on comment of comment'
+  - 'add or remove like votes on post_comment of comment'
+  - 'add or remove like votes on topic of node'
+  - 'add or remove like votes on event of node'

@@ -1,6 +1,6 @@
-uuid: a102b1c8-bf39-4a95-8ded-ab22c0f64196
-name: 'Drupal Norge'
-mail: styret@drupalnorge.no
+uuid: 31016341-e7b9-4d10-a6e8-de4f4d389f14
+name: Site-Install
+mail: admin@example.com
 slogan: ''
 page:
   403: ''
@@ -11,4 +11,4 @@ weight_select_max: 100
 langcode: nb
 default_langcode: nb
 _core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

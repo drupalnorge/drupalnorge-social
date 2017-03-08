@@ -1,7 +1,7 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
-  url: /themes/socialbase/images/favicon/favicon.ico
+  url: 'http://dsoc.dev/profiles/contrib/social/themes/socialbase/favicon.ico'
   use_default: 1
 schema: '8000'
 features:
@@ -22,8 +22,10 @@ region_wells:
 forms_smart_descriptions: 0
 cdn_provider: ''
 tooltip_enabled: 0
+button_colorize: 0
+button_iconize: 0
 _core:
-  default_config_hash: iySZcWtfipQgBhpW8NcT1Uo95O8XamPlAxa548npgV0
+  default_config_hash: UHZzDbRuYyk87YbgHmeLgP56yuiJFfwyUoKaycEYYm4
 schemas:
   bootstrap: 8000
   socialbase: 8000

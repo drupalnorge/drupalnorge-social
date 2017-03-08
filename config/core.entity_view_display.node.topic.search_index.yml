@@ -1,8 +1,9 @@
-uuid: c143a2fe-e9d1-485e-ac6c-ae7da36fee69
+uuid: 4ef197fa-85b9-486b-bb1d-a2bdb12b49ca
 langcode: nb
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment.default
     - core.entity_view_mode.node.search_index
     - field.field.node.topic.body
     - field.field.node.topic.field_content_visibility
@@ -16,7 +17,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: L5Cc1U93bXEoiO3IhhMHwBs_pe7Sf6jeXEc31WWGWJE
+  default_config_hash: cZwrtERYH9j6KkcBHhD5M9ex1uxCJ96pBO2oQLDxp9w
 id: node.topic.search_index
 targetEntityType: node
 bundle: topic
@@ -35,10 +36,13 @@ content:
       pager_id: 0
     third_party_settings: {  }
     type: comment_default
+  flag_follow_content:
+    weight: 10
 hidden:
   field_content_visibility: true
   field_files: true
   field_topic_image: true
   field_topic_type: true
   langcode: true
+  like_and_dislike: true
   links: true

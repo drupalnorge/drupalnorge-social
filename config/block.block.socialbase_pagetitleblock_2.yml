@@ -1,4 +1,4 @@
-uuid: 32011cc2-f20c-498a-8609-b92a7bce5bdb
+uuid: ec1a4f21-111a-476c-835b-0193241b6075
 langcode: nb
 status: true
 dependencies:
@@ -7,8 +7,6 @@ dependencies:
     - system
   theme:
     - socialbase
-_core:
-  default_config_hash: uGWqOl5wFxCPVb8pkP9so2rKDmrKalu59VENCJYVwJY
 id: socialbase_pagetitleblock_2
 theme: socialbase
 region: hero
@@ -23,6 +21,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '*/enrollments'
+    pages: "*/enrollments\r\n*/managers"
     negate: false
     context_mapping: {  }

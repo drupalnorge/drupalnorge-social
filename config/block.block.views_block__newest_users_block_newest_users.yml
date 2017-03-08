@@ -1,4 +1,4 @@
-uuid: 7a6a4d90-519d-441a-b9d6-79b8b66e9f52
+uuid: 3fcde89d-c290-4e2f-9ae3-b44c9ff4188f
 langcode: nb
 status: true
 dependencies:
@@ -9,12 +9,10 @@ dependencies:
     - views
   theme:
     - socialbase
-_core:
-  default_config_hash: G1-RyiPMTdjrhlljBAQBt2f72EPStRzFDBz4S52QmQM
 id: views_block__newest_users_block_newest_users
 theme: socialbase
 region: complementary_bottom
-weight: -12
+weight: 5
 provider: null
 plugin: 'views_block:newest_users-block_newest_users'
 settings:
@@ -27,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "<front>\r\n/explore"
+    pages: "/stream\r\n/explore"
     negate: false
     context_mapping: {  }

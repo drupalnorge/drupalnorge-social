@@ -22,6 +22,10 @@ display:
         label:
           separator: ', '
       title: Grupper
+      empty:
+        area:
+          content:
+            value: 'Ingen grupper funnet for denne brukeren'
       arguments:
         group_membership_or_creator:
           exception:

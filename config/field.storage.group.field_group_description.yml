@@ -1,18 +1,18 @@
-uuid: 0b1c96f6-64b2-471e-855d-6cc8f555ac2e
+uuid: 89c785d7-ff06-428c-9817-e0bb50e8dcd9
 langcode: nb
 status: true
 dependencies:
   module:
     - group
+    - text
 _core:
-  default_config_hash: y987ADsiBv5ney1KB1qKcGl-xqhnjM5pRSNOwpv6fA8
+  default_config_hash: X3uqFg12E2rJ3gtTAeDlxLm6xjW8zFqFHKCZkdG-UU8
 id: group.field_group_description
 field_name: field_group_description
 entity_type: group
-type: string_long
-settings:
-  case_sensitive: false
-module: core
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

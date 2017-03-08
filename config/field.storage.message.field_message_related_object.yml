@@ -1,4 +1,4 @@
-uuid: 2a6d92c0-e26c-4697-bee2-d0deeae1dfbb
+uuid: d115d6fb-0e1e-4665-8634-8aa353a8944c
 langcode: nb
 status: true
 dependencies:
@@ -6,6 +6,7 @@ dependencies:
     - activity_creator
     - block_content
     - comment
+    - crop
     - dynamic_entity_reference
     - file
     - group

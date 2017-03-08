@@ -1,4 +1,4 @@
-uuid: ff3f0f6d-3ac2-4136-8576-f1968ef670c1
+uuid: 77910223-f1d9-4dab-9922-eb2c56433c66
 langcode: nb
 status: true
 dependencies:
@@ -73,6 +73,8 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  flag_follow_content:
+    weight: 10
   links:
     weight: 5
     settings: {  }
@@ -82,3 +84,4 @@ hidden:
   field_content_visibility: true
   field_files: true
   langcode: true
+  like_and_dislike: true

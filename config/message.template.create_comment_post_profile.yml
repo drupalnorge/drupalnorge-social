@@ -1,0 +1,39 @@
+uuid: 28874795-fbc1-4b0a-b9f2-30bb8911ba1b
+langcode: nb
+status: true
+dependencies:
+  module:
+    - activity_logger
+third_party_settings:
+  activity_logger:
+    activity_bundle_entities:
+      comment-post_comment: comment-post_comment
+    activity_action: create_entitiy_action
+    activity_context: profile_activity_context
+    activity_destinations:
+      notifications: notifications
+      email: email
+    activity_create_direct: 1
+    activity_aggregate: 0
+    activity_entity_condition: comment_not_reply
+_core:
+  default_config_hash: ExRrJBE89CITmLMLC4OYDOunY1p0cRHk1VkY7kTpOZE
+template: create_comment_post_profile
+label: 'Create comment on post on my profile'
+description: 'A person commented on the post posted on my profile'
+text:
+  -
+    format: full_html
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on a post on your <a href=\"[message:recipient-user-url]\">profile</a></p>\r\n"
+  -
+    format: full_html
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on a post on your <a href=\"[message:recipient-user-url]\">profile</a></p>\r\n"
+  -
+    format: full_html
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on a post on your <a href=\"[message:recipient-user-url]\">profile</a></p>\r\n"
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

@@ -1,0 +1,22 @@
+uuid: 63e3cc74-e5a4-42dc-8994-720973a8c504
+langcode: nb
+status: true
+dependencies:
+  module:
+    - profile
+    - taxonomy
+_core:
+  default_config_hash: sWcQsnM2xvASI-H6QeowIEMTDMrz3lYcs5_eg6OCp9Q
+id: profile.field_profile_expertise
+field_name: field_profile_expertise
+entity_type: profile
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

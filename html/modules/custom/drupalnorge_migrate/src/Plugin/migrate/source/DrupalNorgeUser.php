@@ -29,9 +29,6 @@ class DrupalNorgeUser extends User {
       // when that smarty-pants module (social_profile) decides to make us a
       // profile.
       $cid = _drupalnorge_migrate_create_cid_for_mail($row->getSourceProperty('mail'));
-      if ($n = $row->getSourceProperty('field_user_drupal_org')) {
-        $wat++;
-      }
       if ($fid = $row->getSourceProperty('picture')) {
         if ($path = $this->getFilePath($fid)) {
           $row->setSourceProperty('user_picture', $path);

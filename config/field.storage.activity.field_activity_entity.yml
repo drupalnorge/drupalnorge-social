@@ -1,4 +1,4 @@
-uuid: 3a34d097-dcc7-4c64-8fe1-e20cf0af2f5c
+uuid: 39469740-4e76-44b8-a386-7f38c98bc379
 langcode: nb
 status: true
 dependencies:
@@ -6,20 +6,25 @@ dependencies:
     - activity_creator
     - block_content
     - comment
+    - crop
     - dynamic_entity_reference
     - file
+    - flag
     - group
+    - mentions
     - menu_link_content
     - message
     - node
     - profile
     - search_api
     - social_event
+    - social_font
     - social_post
     - taxonomy
     - user
+    - votingapi
 _core:
-  default_config_hash: kaG0f8RSmsRjOVcR5-6BmuLbU19ntLLZnVx8jjf5ZdA
+  default_config_hash: RMiQPfGDcmWNcu2QNNtUxLJvjXlxFZ2rkckbcdXlNfk
 id: activity.field_activity_entity
 field_name: field_activity_entity
 entity_type: activity

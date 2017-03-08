@@ -1,0 +1,23 @@
+uuid: 9ac0c274-c4b6-4750-a58c-f0c2d24e205f
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_context
+    - message.template.create_comment_reply
+  module:
+    - options
+_core:
+  default_config_hash: 9scupCAlDcXatd2xVP0OCCaU-8Orn2eKQp1RSvlTJfU
+id: message.create_comment_reply.field_message_context
+field_name: field_message_context
+entity_type: message
+bundle: create_comment_reply
+label: Context
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

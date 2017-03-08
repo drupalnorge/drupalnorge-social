@@ -1,4 +1,4 @@
-uuid: d253bf3a-36b2-46e3-bb2d-5e0ffc9c4c81
+uuid: baffe69c-346c-418c-a3c0-7d32d6aa6a85
 langcode: nb
 status: true
 dependencies:
@@ -7,8 +7,6 @@ dependencies:
     - system
   theme:
     - socialbase
-_core:
-  default_config_hash: EMyZbKZ3vSh0PPJ4BeDLLJT4BgOGnVInui4p2tqsBac
 id: profile_hero_block
 theme: socialbase
 region: hero

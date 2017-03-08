@@ -1,4 +1,4 @@
-uuid: 2407777f-2262-4ace-b3cd-b420807b17c9
+uuid: eefed9ed-9131-43fa-ac91-7c610816d589
 langcode: nb
 status: true
 dependencies:
@@ -19,14 +19,14 @@ dependencies:
     - datetime
     - user
 _core:
-  default_config_hash: GYOpBPPDA8OeDGoS56hIV5p80wsj5LCRFHuOjUUY2Ds
+  default_config_hash: Us3rZInBZJrVVoQcAD6VY--RJf0P5aK1RsPcj4fx9wk
 id: node.event.hero
 targetEntityType: node
 bundle: event
 mode: hero
 content:
   field_event_address:
-    type: address_default
+    type: address_plain
     weight: 3
     label: hidden
     settings: {  }
@@ -54,6 +54,8 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  flag_follow_content:
+    weight: 10
 hidden:
   body: true
   field_content_visibility: true
@@ -61,4 +63,5 @@ hidden:
   field_event_image: true
   field_files: true
   langcode: true
+  like_and_dislike: true
   links: true

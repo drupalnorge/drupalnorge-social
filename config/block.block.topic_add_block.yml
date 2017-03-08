@@ -1,4 +1,4 @@
-uuid: df405894-2161-4f9e-bbb7-bc25c4f253e9
+uuid: 9318b701-fa67-471b-a9cf-21de718fc23a
 langcode: nb
 status: true
 dependencies:
@@ -7,12 +7,10 @@ dependencies:
     - system
   theme:
     - socialbase
-_core:
-  default_config_hash: jqoyaPsPUNAwGs_HjofeXbLr4BO8s5c_9VRCmAqacZs
 id: topic_add_block
 theme: socialbase
 region: complementary_top
-weight: -26
+weight: -98
 provider: null
 plugin: topic_add_block
 settings:

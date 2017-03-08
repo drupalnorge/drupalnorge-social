@@ -1,4 +1,4 @@
-uuid: 4c931a7a-7a97-4ad9-914c-4dc1dad43a51
+uuid: 71e85a0b-cbb9-4f78-9018-4cefedeb7b34
 langcode: nb
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.group.hero
     - field.field.group.open_group.field_group_address
     - field.field.group.open_group.field_group_description
-    - field.field.group.open_group.field_group_geolocation
     - field.field.group.open_group.field_group_image
     - field.field.group.open_group.field_group_location
     - group.type.open_group
@@ -15,7 +14,7 @@ dependencies:
     - address
     - image
 _core:
-  default_config_hash: i6ki-pVBcJ-boGaNaVQgeMuiSrQK5vNU5aU8THsg4q0
+  default_config_hash: DlaOdpHM4rwpieTvAak3DhF52KUDMi_BnjSqB-jkDqI
 id: group.open_group.hero
 targetEntityType: group
 bundle: open_group
@@ -24,12 +23,6 @@ content:
   field_group_address:
     type: address_plain
     weight: 4
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-  field_group_description:
-    type: basic_string
-    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -58,6 +51,6 @@ content:
 hidden:
   changed: true
   created: true
-  field_group_geolocation: true
+  field_group_description: true
   langcode: true
   uid: true

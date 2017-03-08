@@ -1,4 +1,4 @@
-uuid: 4d2b33c9-d504-4cea-8d5e-c5dcd2b56935
+uuid: fd9bab76-d560-4b71-ab95-3f93930337f9
 langcode: nb
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: DnvuZK9Z0e3CcOZ9XzNhmku4BxIYGMyw2UhRCu0Lb2E
+  default_config_hash: 7UKoDr-YvfjRgQUuh-5WaPO2jJzLJNJFX3XybSw8NUQ
 id: message.create_post_profile.field_message_destination
 field_name: field_message_destination
 entity_type: message

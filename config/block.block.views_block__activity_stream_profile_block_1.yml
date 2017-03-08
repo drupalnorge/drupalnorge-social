@@ -1,4 +1,4 @@
-uuid: aaac279c-38aa-472a-b8d6-43da454f480e
+uuid: f28cc7aa-b5ad-4463-80ac-d30122323cf8
 langcode: nb
 status: true
 dependencies:
@@ -9,8 +9,6 @@ dependencies:
     - views
   theme:
     - socialbase
-_core:
-  default_config_hash: qB56HaN5RVyXpw0ojJVwPpZNe_wP11eW05nYQa4lrcc
 id: views_block__activity_stream_profile_block_1
 theme: socialbase
 region: content

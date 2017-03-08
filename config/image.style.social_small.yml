@@ -1,9 +1,11 @@
-uuid: 655345a3-03dc-4d19-ada3-52aab56ab146
+uuid: 3c80246a-8693-4e6d-b64c-3cee431cc428
 langcode: nb
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - crop
 _core:
-  default_config_hash: VD75-KfDhxfDRyE2iNsBEJ3OY0dS839BC1yf_KuvEFM
+  default_config_hash: d2bJtymlRx49G7U-OhP0lLJklrThBBBIKfq0ik54coA
 name: social_small
 label: 'social small (24 x 24)'
 effects:
@@ -14,3 +16,9 @@ effects:
     data:
       width: 24
       height: 24
+  3da54178-876f-4602-a245-60f035dc3c66:
+    uuid: 3da54178-876f-4602-a245-60f035dc3c66
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: profile_small

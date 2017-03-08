@@ -1,4 +1,4 @@
-uuid: 0b825675-16d8-41cb-aea1-ba38f9d8ab1e
+uuid: ce624c8f-ab10-4bc5-8755-74c830da23c4
 langcode: nb
 status: true
 dependencies: {  }
@@ -16,3 +16,4 @@ permissions:
   - 'view published post entities'
   - 'view node.page.field_content_visibility:public content'
   - 'access content search'
+  - 'view like widget'

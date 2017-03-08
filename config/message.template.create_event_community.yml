@@ -1,4 +1,4 @@
-uuid: 211807ee-c0d6-4db3-bac6-02193f4f6240
+uuid: 51bebb0a-eb6d-4f6a-af17-09f1093a27db
 langcode: nb
 status: true
 dependencies:
@@ -14,15 +14,18 @@ third_party_settings:
       stream_home: stream_home
       stream_profile: stream_profile
     activity_create_direct: 0
-    activity_bundle_entity: node.event
     activity_action: create_entitiy_action
+    activity_bundle_entities:
+      node-event: node-event
 _core:
-  default_config_hash: OTr59PeSzYgs77s5qCBu4CjlsdS5EYKSS2E1PiKc1EU
+  default_config_hash: 3cq5FFP76T2znKUujVyelnroPf71SUbWYryuI8BFj4E
 template: create_event_community
 label: 'Create event'
 description: 'A user created an event in the community'
 text:
-  - '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> created an event</p>'
+  -
+    format: full_html
+    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> created an event</p>'
 settings:
   'token options':
     clear: false

@@ -1,24 +1,30 @@
-uuid: 10545ace-2607-422f-8f9b-c41a68191ad6
+uuid: e5c401ec-c950-4f15-8c5c-827eef59f5f5
 langcode: nb
 status: true
 dependencies:
   config:
     - core.entity_view_mode.profile.hero
+    - field.field.profile.profile.field_profile_address
     - field.field.profile.profile.field_profile_drupal_org_profile
+    - field.field.profile.profile.field_profile_expertise
     - field.field.profile.profile.field_profile_facebook_url
     - field.field.profile.profile.field_profile_first_name
+    - field.field.profile.profile.field_profile_function
     - field.field.profile.profile.field_profile_image
     - field.field.profile.profile.field_profile_interests
     - field.field.profile.profile.field_profile_last_name
+    - field.field.profile.profile.field_profile_organization
+    - field.field.profile.profile.field_profile_phone_number
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
+    - field.field.profile.profile.field_profile_show_email
     - field.field.profile.profile.field_profile_twitter_url
     - image.style.social_large
     - profile.type.profile
   module:
     - image
 _core:
-  default_config_hash: HUd9S6xHXIIS0oYeCpr4bmbC4T3wMKQJ7fMwZzG5HY8
+  default_config_hash: AUWShl1KUyTZeT5Z2bk4ejp7MIBviEJG5z8ytLWlCM4
 id: profile.profile.hero
 targetEntityType: profile
 bundle: profile
@@ -61,11 +67,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
 hidden:
+  field_profile_address: true
   field_profile_drupal_org_profile: true
+  field_profile_expertise: true
   field_profile_facebook_url: true
   field_profile_interests: true
   field_profile_phone_number: true
   field_profile_profile_tag: true
   field_profile_self_introduction: true
+  field_profile_show_email: true
   field_profile_twitter_url: true
   langcode: true

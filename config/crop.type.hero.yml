@@ -1,0 +1,14 @@
+uuid: 905e2a9e-8935-4ffe-b398-58038850835b
+langcode: nb
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: M7gu0hM5eQSjsQOYu7Dr2RFyItlWKYgKPQIfGbhVo1Q
+label: Large
+id: hero
+description: 'Header image in the hero region'
+aspect_ratio: '1200:423'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

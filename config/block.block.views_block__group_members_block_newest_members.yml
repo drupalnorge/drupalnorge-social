@@ -1,4 +1,4 @@
-uuid: 96888cad-df39-4c85-abdd-27801634d335
+uuid: cdb8d363-e0fd-43b8-b389-54036e81fa24
 langcode: nb
 status: true
 dependencies:
@@ -9,12 +9,10 @@ dependencies:
     - views
   theme:
     - socialbase
-_core:
-  default_config_hash: a6eu-_wYRYln-6mhudA12rSsUEbqnJONv_tfYuW3O0k
 id: views_block__group_members_block_newest_members
 theme: socialbase
 region: complementary_bottom
-weight: -13
+weight: 5
 provider: null
 plugin: 'views_block:group_members-block_newest_members'
 settings:
@@ -27,6 +25,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/group/*/stream'
+    pages: "/group/*/stream\r\n/group/*/about"
     negate: false
     context_mapping: {  }

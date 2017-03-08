@@ -1,4 +1,4 @@
-uuid: 55acd995-7d78-4abc-be66-0756523b90f9
+uuid: f44bbebc-2019-4fd8-ad4c-144017b24f27
 langcode: nb
 status: true
 dependencies:
@@ -16,7 +16,7 @@ dependencies:
     - image
     - user
 _core:
-  default_config_hash: GsdhrpnUXKKzu34AGalMT43wl-Mklic9d-PpGBC6ivY
+  default_config_hash: AUiZa-TxPNuEGupBKUkfh0PfWFeOvi_zUax_XVz-n3o
 id: node.topic.activity_comment
 targetEntityType: node
 bundle: topic
@@ -37,6 +37,8 @@ content:
     settings:
       link: true
     third_party_settings: {  }
+  flag_follow_content:
+    weight: 10
   links:
     weight: 2
     settings: {  }
@@ -47,3 +49,4 @@ hidden:
   field_files: true
   field_topic_comments: true
   langcode: true
+  like_and_dislike: true

@@ -1,4 +1,4 @@
-uuid: 2fdae95e-4068-49b3-ad96-ac97eca3c7fe
+uuid: dccc25d6-088c-4cb1-bb65-5c17cb167902
 langcode: nb
 status: true
 dependencies:
@@ -14,7 +14,7 @@ dependencies:
     - social_event
     - user
 _core:
-  default_config_hash: UO-SL2BYjtoURuVpo52Hsr0EkmhpphSDI-S6hI6OgoM
+  default_config_hash: NvqSQizSVEVKbAe67I53N5ZkXyJ6bxYwReLZklwB45A
 id: upcoming_events
 label: '(Upcoming) Community events'
 module: views
@@ -41,7 +41,7 @@ display:
         type: views_query
         options:
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_comment: ''
           query_tags: {  }
@@ -133,7 +133,7 @@ display:
           field_api_classes: false
       filters:
         status:
-          value: true
+          value: '1'
           table: node_field_data
           field: status
           plugin_id: boolean
@@ -192,6 +192,42 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: datetime
+        nid:
+          id: nid
+          table: node_access
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: node_access
       sorts:
         field_event_date_value:
           id: field_event_date_value
@@ -339,7 +375,7 @@ display:
           plugin_id: numeric
       filters:
         status:
-          value: true
+          value: '1'
           table: node_field_data
           field: status
           plugin_id: boolean
@@ -437,6 +473,42 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: datetime
+        nid:
+          id: nid
+          table: node_access
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: node_access
       filter_groups:
         operator: AND
         groups:
@@ -487,7 +559,7 @@ display:
       path: community-events
       filters:
         status:
-          value: true
+          value: '1'
           table: node_field_data
           field: status
           plugin_id: boolean
@@ -562,16 +634,68 @@ display:
                   min: ''
                   max: ''
           plugin_id: datetime
+        nid:
+          id: nid
+          table: node_access
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: node_access
       defaults:
         filters: false
         filter_groups: false
         title: false
+        sorts: false
       filter_groups:
         operator: AND
         groups:
           1: AND
       exposed_block: true
       title: 'Community events'
+      sorts:
+        event_passed_upcoming_sort:
+          id: event_passed_upcoming_sort
+          table: node
+          field: event_passed_upcoming_sort
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          granularity: minute
+          entity_type: node
+          plugin_id: event_passed_upcoming_sort
     cache_metadata:
       max-age: -1
       contexts:
@@ -659,7 +783,7 @@ display:
           plugin_id: numeric
       filters:
         status:
-          value: true
+          value: '1'
           table: node_field_data
           field: status
           plugin_id: boolean
@@ -718,6 +842,42 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           plugin_id: datetime
+        nid:
+          id: nid
+          table: node_access
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: node_access
       filter_groups:
         operator: AND
         groups:
