@@ -7,6 +7,8 @@
 
 use Drupal\profile\Entity\ProfileInterface;
 use Drupal\user\Entity\User;
+use Drupal\profile\Entity\Profile;
+use \Drupal\Core\Url;
 
 /**
  * Helper function to create a cache id.
@@ -21,7 +23,7 @@ function _drupalnorge_migrate_create_cid_for_mail($mail) {
  * Will be run manually.
  */
 function drupalnorge_migrate_fix_all_profiles() {
-  $profiles = \Drupal\profile\Entity\Profile::loadMultiple();
+  $profiles = Profile::loadMultiple();
   foreach ($profiles as $profile) {
     drupalnorge_migrate_fix_profile($profile);
     $profile->save();
@@ -92,7 +94,7 @@ function drupalnorge_migrate_fix_profile(ProfileInterface $profile) {
         // use, so we just try to construct it like this, since that will show
         // us if things are about to go bad.
         $url = sprintf('%s://%s%s', $url['scheme'], $url['host'], $url['path']);
-        $url_object = \Drupal\Core\Url::fromUri($url);
+        $url_object = Url::fromUri($url);
         $profile->get($destination)->setValue($url);
       }
       // Try to migrate over that file we know exists at a certain path.
