@@ -14,10 +14,10 @@
         "drupal/sparkpost": "2.x-dev",
         "drupal/reroute_email": "1.x-dev",
         "drupal/migrate_tools": "3.x-dev",
-        "drupal/slack_invite": "^1.1"
+        "drupal/slack_invite": "^1.1",
+        "drush/drush": "^8.1"
     },
     "require-dev": {
-        "drush/drush": "~8.0",
         "drupal/coder": "^8.2",
         "squizlabs/php_codesniffer": "2.*",
         "drupal/drupal-extension": "~3.0"
@@ -38,6 +38,13 @@
       "test": [
          "./vendor/bin/phpcs -p",
          "./vendor/bin/behat --colors"
+      ],
+      "build": [
+        "git pull",
+        "composer install --no-dev",
+        "./vendor/bin/drush --root=$(pwd)/html updb -y",
+        "./vendor/bin/drush --root=$(pwd)/html cim -y",
+        "./vendor/bin/drush --root=$(pwd)/html cr"
       ]
     },
     "extra": {
@@ -63,7 +70,7 @@
         },
         "patches": {
           "drupal/core": {
-              "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
+            "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
           }
         },
         "enable-patching": true

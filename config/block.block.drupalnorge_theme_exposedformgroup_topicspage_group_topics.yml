@@ -1,0 +1,29 @@
+uuid: 958b9cbb-4ec0-43f8-94d5-e412de740aba
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.group_topics
+  module:
+    - system
+    - views
+  theme:
+    - drupalnorge_theme
+id: drupalnorge_theme_exposedformgroup_topicspage_group_topics
+theme: drupalnorge_theme
+region: complementary_top
+weight: -17
+provider: null
+plugin: 'views_exposed_filter_block:group_topics-page_group_topics'
+settings:
+  id: 'views_exposed_filter_block:group_topics-page_group_topics'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: Filter
+visibility:
+  request_path:
+    id: request_path
+    pages: '/group/*/topics'
+    negate: false
+    context_mapping: {  }

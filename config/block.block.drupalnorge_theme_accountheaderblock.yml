@@ -1,0 +1,29 @@
+uuid: f1979db6-721e-4eae-973a-1658bffd57ef
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_user
+    - user
+  theme:
+    - drupalnorge_theme
+id: drupalnorge_theme_accountheaderblock
+theme: drupalnorge_theme
+region: header
+weight: 2
+provider: null
+plugin: account_header_block
+settings:
+  id: account_header_block
+  label: 'Account header block'
+  provider: social_user
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

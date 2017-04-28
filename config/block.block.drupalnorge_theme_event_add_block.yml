@@ -1,0 +1,26 @@
+uuid: 287c278e-5bff-487c-84c7-c7ba86a683bd
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_event
+    - system
+  theme:
+    - drupalnorge_theme
+id: drupalnorge_theme_event_add_block
+theme: drupalnorge_theme
+region: complementary_top
+weight: -24
+provider: null
+plugin: event_add_block
+settings:
+  id: event_add_block
+  label: 'Event add block'
+  provider: social_event
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/events'
+    negate: false
+    context_mapping: {  }

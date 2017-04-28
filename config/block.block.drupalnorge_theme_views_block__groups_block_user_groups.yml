@@ -1,0 +1,30 @@
+uuid: aced7a5d-2bbf-490e-8631-52628c56daae
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.groups
+  module:
+    - system
+    - views
+  theme:
+    - drupalnorge_theme
+id: drupalnorge_theme_views_block__groups_block_user_groups
+theme: drupalnorge_theme
+region: complementary_bottom
+weight: 4
+provider: null
+plugin: 'views_block:groups-block_user_groups'
+settings:
+  id: 'views_block:groups-block_user_groups'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/stream'
+    negate: false
+    context_mapping: {  }

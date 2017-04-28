@@ -19,6 +19,15 @@ class DrupalNorgeUser extends User {
   /**
    * {@inheritdoc}
    */
+  public function query() {
+    $q = parent::query();
+    $q->condition('u.mail', 'ole.martin.meyer@gmail.com', '<>');
+    return $q;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function prepareRow(Row $row) {
     // Avoid importing user 1.
     if ($row->getSourceProperty('uid') == 1) {

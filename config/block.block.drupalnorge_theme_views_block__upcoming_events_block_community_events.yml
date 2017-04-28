@@ -1,0 +1,30 @@
+uuid: f68a7b2e-3597-4b76-bbab-20532385bed9
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.upcoming_events
+  module:
+    - system
+    - views
+  theme:
+    - drupalnorge_theme
+id: drupalnorge_theme_views_block__upcoming_events_block_community_events
+theme: drupalnorge_theme
+region: complementary_bottom
+weight: 2
+provider: null
+plugin: 'views_block:upcoming_events-block_community_events'
+settings:
+  id: 'views_block:upcoming_events-block_community_events'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/stream\r\n/explore"
+    negate: false
+    context_mapping: {  }

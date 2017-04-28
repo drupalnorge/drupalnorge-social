@@ -1,0 +1,20 @@
+uuid: a178ddac-5eac-4e48-b26b-b3ee3a851894
+langcode: nb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalnorge_theme
+id: drupalnorge_theme_messages
+theme: drupalnorge_theme
+region: content
+weight: -22
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }
