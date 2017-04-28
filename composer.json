@@ -14,10 +14,10 @@
         "drupal/sparkpost": "2.x-dev",
         "drupal/reroute_email": "1.x-dev",
         "drupal/migrate_tools": "3.x-dev",
-        "drupal/slack_invite": "^1.1"
+        "drupal/slack_invite": "^1.1",
+        "drush/drush": "^8.1"
     },
     "require-dev": {
-        "drush/drush": "~8.0",
         "drupal/coder": "^8.2",
         "squizlabs/php_codesniffer": "2.*",
         "drupal/drupal-extension": "~3.0"
