@@ -1,0 +1,26 @@
+uuid: 16b03469-2718-495a-9608-113a2cfe93f8
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_core
+    - system
+  theme:
+    - drupalnorge_theme
+id: drupalnorge_theme_pagetitleblock_2
+theme: drupalnorge_theme
+region: hero
+weight: -22
+provider: null
+plugin: social_page_title_block
+settings:
+  id: social_page_title_block
+  label: 'Page title for enrollments'
+  provider: social_core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "*/enrollments\r\n*/managers"
+    negate: false
+    context_mapping: {  }

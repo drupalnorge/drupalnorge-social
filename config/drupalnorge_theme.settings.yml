@@ -1,0 +1,19 @@
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://dsoc.dev/profiles/contrib/social/themes/socialblue/favicon.ico'
+  use_default: 1
+features:
+  comment_user_picture: true
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: 1
+schemas:
+  bootstrap: 8000
+  socialbase: 8000
+  socialblue: 8000
+  drupalnorge_theme: 8000

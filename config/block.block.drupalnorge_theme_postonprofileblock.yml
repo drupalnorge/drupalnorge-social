@@ -1,0 +1,28 @@
+uuid: 1aa5b22a-7afb-46aa-ab5e-1cac36eb0d28
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_post
+    - system
+  theme:
+    - drupalnorge_theme
+_core:
+  default_config_hash: b5E5NPiSRKlKRNZcEWgscia7LJXEHE6iMoBAyh0uJRU
+id: drupalnorge_theme_postonprofileblock
+theme: drupalnorge_theme
+region: hidden
+weight: -9
+provider: null
+plugin: post_profile_block
+settings:
+  id: post_profile_block
+  label: 'Post on profile block'
+  provider: social_post
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/stream'
+    negate: false
+    context_mapping: {  }

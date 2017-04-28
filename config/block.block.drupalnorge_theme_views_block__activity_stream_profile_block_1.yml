@@ -1,0 +1,30 @@
+uuid: e2bcb161-6682-4b5a-8b81-2bee6ad2c8af
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.activity_stream_profile
+  module:
+    - system
+    - views
+  theme:
+    - drupalnorge_theme
+id: drupalnorge_theme_views_block__activity_stream_profile_block_1
+theme: drupalnorge_theme
+region: content
+weight: -18
+provider: null
+plugin: 'views_block:activity_stream_profile-block_1'
+settings:
+  id: 'views_block:activity_stream_profile-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*/stream'
+    negate: false
+    context_mapping: {  }

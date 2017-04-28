@@ -1,0 +1,20 @@
+uuid: 7f71cf3e-e0e5-44ee-a473-9d4ef3399503
+langcode: nb
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupalnorge_theme
+id: drupalnorge_theme_help
+theme: drupalnorge_theme
+region: content
+weight: -21
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
