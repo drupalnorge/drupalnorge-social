@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6256cb9c98c4417f02cda8fe4b612a75",
+    "content-hash": "a3b9041042d253734814924bf861ad9e",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1257,7 +1257,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.19.zip",
-                "reference": null,
+                "reference": "8.x-1.19",
                 "shasum": "87de41eab3c5cd49d4e1b5b764cb3b9d5ad683a0"
             },
             "require": {
@@ -1362,7 +1362,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/coffee",
-                "reference": "705db6793a8493d8c4a48e14780698de6f08e06a"
+                "reference": "8f6a4ee294342399df7ad9261225d2a0cd3ac43f"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1374,8 +1374,8 @@
                     "dev-8.x-1.x": "8.1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2+3-dev",
-                    "datestamp": "1483637942"
+                    "version": "8.x-1.0-beta2+4-dev",
+                    "datestamp": "1494319685"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1416,7 +1416,7 @@
                 "issues": "https://drupal.org/project/issues/coffee",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2017-01-05 17:35:05"
+            "time": "2017-05-09 08:49:39"
         },
         {
             "name": "drupal/config_update",
@@ -1668,7 +1668,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/crop-8.x-1.2.zip",
-                "reference": null,
+                "reference": "8.x-1.2",
                 "shasum": "0ad542254940c844f8a22c1b386131f06c665b4f"
             },
             "require": {
@@ -1767,7 +1767,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/devel-8.x-1.0-rc2.zip",
-                "reference": null,
+                "reference": "8.x-1.0-rc2",
                 "shasum": "011322bf9c263dab29f94640829f4b654e9c5632"
             },
             "require": {
@@ -1845,7 +1845,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/dynamic_entity_reference-8.x-1.2.zip",
-                "reference": null,
+                "reference": "8.x-1.2",
                 "shasum": "768c5ed7347d3bdb67e865ca4c73016c0c0cd65d"
             },
             "require": {
@@ -1900,7 +1900,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/entity-8.x-1.0-alpha4.zip",
-                "reference": null,
+                "reference": "8.x-1.0-alpha4",
                 "shasum": "c081d3757c159dfee74c9e5acb63bdee81c42e18"
             },
             "require": {
@@ -2152,7 +2152,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/group-8.x-1.0-beta5.zip",
-                "reference": null,
+                "reference": "8.x-1.0-beta5",
                 "shasum": "8584143f1e95d4eb29a89216906d68c11c6598c2"
             },
             "require": {
@@ -2185,6 +2185,58 @@
             }
         },
         {
+            "name": "drupal/honeypot",
+            "version": "1.25.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/honeypot",
+                "reference": "8.x-1.25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/honeypot-8.x-1.25.zip",
+                "reference": null,
+                "shasum": "9dfe6677c5b4a19e87fae143755949b79168b9d1"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.25",
+                    "datestamp": "1494742085"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jeff Geerling",
+                    "homepage": "https://www.drupal.org/user/389011",
+                    "email": "geerlingguy@mac.com"
+                }
+            ],
+            "description": "Mitigates spam form submissions using the honeypot method.",
+            "homepage": "https://www.drupal.org/project/honeypot",
+            "keywords": [
+                "deterrent",
+                "form",
+                "honeypot",
+                "honeytrap",
+                "php",
+                "spam"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/honeypot"
+            }
+        },
+        {
             "name": "drupal/image_widget_crop",
             "version": "1.5.0",
             "source": {
@@ -2195,7 +2247,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/image_widget_crop-8.x-1.5.zip",
-                "reference": null,
+                "reference": "8.x-1.5",
                 "shasum": "1f0a3de727d22a675c8be2e7af49ea22592d9d19"
             },
             "require": {
@@ -2373,7 +2425,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/message-8.x-1.0-beta1.zip",
-                "reference": null,
+                "reference": "8.x-1.0-beta1",
                 "shasum": "092d3ec801cdf138c2e71b891794ce3e17ddd836"
             },
             "require": {
@@ -2767,7 +2819,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.0.zip",
-                "reference": null,
+                "reference": "8.x-1.0",
                 "shasum": "f95109c2038bdf01f144da2b97170e8a2eb2bf4d"
             },
             "require": {
@@ -3024,7 +3076,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0.zip",
-                "reference": null,
+                "reference": "8.x-1.0",
                 "shasum": "d24c7f1ffddbd0fc56bc92bacae1c4ff769a4442"
             },
             "require": {
