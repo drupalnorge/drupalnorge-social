@@ -25,7 +25,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Hoved
     position: 0
     display_options:
       access:
@@ -46,13 +46,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Bruk
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér på'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
       pager:
         type: mini
         options:
@@ -62,12 +62,12 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Offset
+            offset_label: Forskyving
           tags:
             previous: ‹‹
             next: ››
@@ -255,7 +255,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Alle
           title_enable: false
           title: ''
           default_argument_type: fixed
@@ -291,6 +291,7 @@ display:
         - url.query_args
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
@@ -302,7 +303,7 @@ display:
   event_enrollments:
     display_plugin: block
     id: event_enrollments
-    display_title: Block
+    display_title: Blokk
     position: 2
     display_options:
       display_extenders: {  }
@@ -357,7 +358,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Alle
           title_enable: false
           title: ''
           default_argument_type: node
@@ -394,6 +395,7 @@ display:
         - url
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
@@ -405,7 +407,7 @@ display:
   view_enrollments:
     display_plugin: page
     id: view_enrollments
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }
@@ -439,18 +441,18 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '‹ Forrige'
+            next: 'Neste ›'
+            first: '« Første'
+            last: 'Siste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Offset
+            offset_label: Forskyving
           quantity: 5
     cache_metadata:
       max-age: -1
@@ -460,6 +462,7 @@ display:
         - url.query_args
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'

@@ -26,6 +26,7 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+    region: content
   field_hero_image:
     type: image_widget_crop
     weight: 0
@@ -38,6 +39,7 @@ content:
         - hero
       progress_indicator: throbber
     third_party_settings: {  }
+    region: content
   field_text_block:
     type: text_textarea
     weight: 0
@@ -45,6 +47,7 @@ content:
       placeholder: ''
       rows: 5
     third_party_settings: {  }
+    region: content
   info:
     type: string_textfield
     weight: -5
@@ -52,9 +55,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
   langcode:
     type: language_select
     weight: 2
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden: {  }

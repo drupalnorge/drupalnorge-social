@@ -23,7 +23,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Hoved
     position: 0
     display_options:
       access:
@@ -44,13 +44,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Bruk
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér på'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
       pager:
         type: mini
         options:
@@ -60,12 +60,12 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Offset
+            offset_label: Forskyving
           tags:
             previous: ‹‹
             next: ››
@@ -169,6 +169,7 @@ display:
         - url.query_args
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
@@ -211,6 +212,7 @@ display:
         - 'languages:language_interface'
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
@@ -237,16 +239,16 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Siste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Offset
+            offset_label: Forskyving
           quantity: 9
       defaults:
         pager: false
@@ -258,6 +260,7 @@ display:
         - url.query_args
         - user.permissions
       tags:
+        - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'

@@ -21,7 +21,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Hoved
     position: 0
     display_options:
       access:
@@ -40,13 +40,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Bruk
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér på'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
       pager:
         type: full
         options:
@@ -57,16 +57,16 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« First'
-            last: 'Last »'
+            first: '« Første'
+            last: 'Siste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Offset
+            offset_label: Forskyving
           quantity: 9
       style:
         type: default
@@ -172,7 +172,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'No results found.'
+            value: 'Ingen resultater funnet.'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -188,7 +188,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Alle
           title_enable: false
           title: ''
           default_argument_type: fixed
@@ -212,24 +212,26 @@ display:
           plugin_id: search_api_fulltext
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user.permissions
       tags: {  }
   page:
     display_plugin: page
     id: page
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }
       path: search/groups/%keys
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user.permissions
       tags: {  }
@@ -244,7 +246,7 @@ display:
       display_description: ''
       menu:
         type: tab
-        title: Groups
+        title: Grupper
         description: ''
         expanded: false
         parent: ''
@@ -268,9 +270,10 @@ display:
       defaults:
         header: false
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_interface'
+        - url
         - url.query_args
         - user.permissions
       tags: {  }

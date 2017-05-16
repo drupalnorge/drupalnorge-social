@@ -27,7 +27,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Hoved
     position: 0
     display_options:
       access:
@@ -48,13 +48,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrer
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér på'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
       pager:
         type: full
         options:
@@ -63,18 +63,18 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '‹ Forrige'
+            next: 'Neste ›'
+            first: '« Første'
+            last: 'Siste »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Offset
+            offset_label: Forskyving
           quantity: 9
       style:
         type: default
@@ -242,7 +242,7 @@ display:
             label: ''
           granularity: minute
           plugin_id: datetime
-      title: 'Upcoming events'
+      title: 'Kommende hendelser'
       header: {  }
       footer: {  }
       empty:
@@ -306,12 +306,12 @@ display:
   block_my_upcoming_events:
     display_plugin: block
     id: block_my_upcoming_events
-    display_title: 'My upcoming events block'
+    display_title: 'Blokk for mine kommende hendelser'
     position: 3
     display_options:
       display_extenders: {  }
       display_description: ''
-      block_description: 'My upcoming events block'
+      block_description: 'Blokk for mine kommende hendelser'
       pager:
         type: some
         options:
@@ -350,7 +350,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Alle
           title_enable: false
           title: ''
           default_argument_type: current_user
@@ -535,9 +535,9 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No upcoming events you have enrolled for'
+          content: 'Du har ingen kommende hendelser som du har meldt deg på'
           plugin_id: text_custom
-      title: 'My upcoming events'
+      title: 'Mine kommende hendelser'
     cache_metadata:
       max-age: -1
       contexts:
@@ -595,7 +595,7 @@ display:
           exposed: true
           expose:
             operator_id: field_event_date_value_op
-            label: 'Start date'
+            label: Startdato
             description: null
             use_operator: false
             operator: field_event_date_value_op
@@ -618,7 +618,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: 'Upcoming events'
+                title: 'Kommende hendelser'
                 operator: '>='
                 value:
                   type: offset
@@ -756,7 +756,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Alle
           title_enable: false
           title: ''
           default_argument_type: group_id_from_url
@@ -906,7 +906,7 @@ display:
           tokenize: false
           content: 'No upcoming events in this group'
           plugin_id: text_custom
-      title: 'Upcoming events'
+      title: 'Kommende hendelser'
     cache_metadata:
       max-age: -1
       contexts:

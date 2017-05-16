@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.field.group_content.open_group-group_membership.group_roles
     - group.content_type.open_group-group_membership
+  module:
+    - path
 _core:
   default_config_hash: uVijsFmEyh29z826cQUIn1zEaSHlLlt6UKPTW4FHD8k
 id: group_content.open_group-group_membership.default
@@ -20,14 +22,23 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
   group_roles:
     type: options_buttons
     weight: 6
     settings: {  }
     third_party_settings: {  }
+    region: content
   langcode:
     type: language_select
     weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
     settings: {  }
     third_party_settings: {  }
 hidden:

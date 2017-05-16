@@ -7,6 +7,7 @@ dependencies:
     - node.type.event
   module:
     - gnode
+    - node
 _core:
   default_config_hash: 1PaHvyc61z-_L06ydzNqWrvOIjJC9IPQrCx0nRug9Sg
 id: open_group-group_node-event
@@ -17,5 +18,3 @@ content_plugin: 'group_node:event'
 plugin_config:
   group_cardinality: 1
   entity_cardinality: 1
-  info_text:
-    value: '<p>By submitting this form you will add this content to the group.<br />It will then be subject to the access control settings that were configured for the group.<br/>Please fill out any available fields to describe the relation between the content and the group.</p>'

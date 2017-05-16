@@ -32,8 +32,10 @@ content:
       timezone_override: ''
       format_type: day_month_time
     third_party_settings: {  }
+    region: content
   flag_follow_content:
     weight: 10
+    region: content
 hidden:
   body: true
   field_content_visibility: true

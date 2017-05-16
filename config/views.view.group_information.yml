@@ -20,7 +20,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Hoved
     position: 0
     display_options:
       access:
@@ -41,13 +41,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Bruk
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér på'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
       pager:
         type: some
         options:
@@ -181,7 +181,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Alle
           title_enable: true
           title: 'About {{ arguments.id }}'
           default_argument_type: fixed
@@ -219,7 +219,7 @@ display:
   page_group_about:
     display_plugin: page
     id: page_group_about
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }

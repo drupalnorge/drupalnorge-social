@@ -38,6 +38,7 @@ content:
       image_style: social_small
       image_link: ''
     third_party_settings: {  }
+    region: content
 hidden:
   field_profile_address: true
   field_profile_drupal_org_profile: true

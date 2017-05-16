@@ -9,7 +9,7 @@ dependencies:
 _core:
   default_config_hash: 0NaiQMW2oJEUVZ5CU8EvU1WjjsCpbKY8Vxd2xtdkRkY
 id: group_members
-label: 'Group Members'
+label: Gruppemedlemmer
 module: views
 description: ''
 tag: ''
@@ -20,7 +20,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Hoved
     position: 0
     display_options:
       access:
@@ -41,13 +41,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Bruk
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér på'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
       pager:
         type: mini
         options:
@@ -60,12 +60,12 @@ display:
             next: ››
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Offset
+            offset_label: Forskyving
       style:
         type: default
       row:
@@ -156,7 +156,7 @@ display:
           entity_type: group_content
           entity_field: created
           plugin_id: date
-      title: 'Group Members'
+      title: Gruppemedlemmer
       header: {  }
       footer: {  }
       empty:
@@ -186,7 +186,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Alle
           title_enable: false
           title: ''
           default_argument_type: group_id_from_url
@@ -225,7 +225,7 @@ display:
   block_newest_members:
     display_plugin: block
     id: block_newest_members
-    display_title: Block
+    display_title: Blokk
     position: 2
     display_options:
       display_extenders: {  }
@@ -280,7 +280,7 @@ display:
   page_group_members:
     display_plugin: page
     id: page_group_members
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }

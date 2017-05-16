@@ -19,11 +19,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
+    region: content
   langcode:
     type: language_select
     weight: 2
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   author: true
   subject: true
