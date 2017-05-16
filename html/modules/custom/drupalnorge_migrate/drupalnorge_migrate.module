@@ -31,7 +31,7 @@ function drupalnorge_migrate_fix_all_profiles() {
 }
 
 /**
- * Implements hook_ENTITY_TYPE_insert().
+ * Fixes a profile manually.
  *
  * In order to save those user fields we found in the migration, we are
  * retrieving them here, and saving them on the profile.
