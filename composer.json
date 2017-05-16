@@ -41,7 +41,7 @@
       ],
       "build": [
         "git pull",
-        "composer install --no-dev",
+        "@composer install --no-dev",
         "./vendor/bin/drush --root=$(pwd)/html updb -y",
         "./vendor/bin/drush --root=$(pwd)/html cim -y",
         "./vendor/bin/drush --root=$(pwd)/html cr"
