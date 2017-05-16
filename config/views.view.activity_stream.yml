@@ -321,7 +321,7 @@ display:
         title: false
         filters: false
         filter_groups: false
-      title: 'Explore Stream'
+      title: 'Se aktivitet'
       filters:
         field_activity_destinations_value:
           id: field_activity_destinations_value

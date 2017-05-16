@@ -5,12 +5,12 @@ dependencies: {  }
 _core:
   default_config_hash: qFUcn7HaiVt0347HkylU8eaUghDWpkttnFJpq2jP36g
 id: follow_content
-label: 'Follow content'
+label: Følg
 bundles: {  }
 entity_type: node
 global: false
 weight: 0
-flag_short: 'Follow content'
+flag_short: Følg
 flag_long: ''
 flag_message: ''
 unflag_short: 'Unfollow content'

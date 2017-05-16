@@ -278,8 +278,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Published
-            format_custom_false: Unpublished
+            format_custom_true: Publisert
+            format_custom_false: Avpublisert
           plugin_id: field
           entity_type: node
           entity_field: status

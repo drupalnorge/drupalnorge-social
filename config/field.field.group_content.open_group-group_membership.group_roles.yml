@@ -11,7 +11,7 @@ id: group_content.open_group-group_membership.group_roles
 field_name: group_roles
 entity_type: group_content
 bundle: open_group-group_membership
-label: Roles
+label: Roller
 description: ''
 required: false
 translatable: true

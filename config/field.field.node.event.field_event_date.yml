@@ -13,7 +13,7 @@ id: node.event.field_event_date
 field_name: field_event_date
 entity_type: node
 bundle: event
-label: 'Start date'
+label: Startdato
 description: ''
 required: true
 translatable: false

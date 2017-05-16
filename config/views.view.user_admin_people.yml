@@ -296,8 +296,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Active
-            format_custom_false: Blocked
+            format_custom_true: Aktiv
+            format_custom_false: Blokkert
           entity_type: user
           entity_field: status
         roles_target_id:
