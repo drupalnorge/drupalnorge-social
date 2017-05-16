@@ -21,7 +21,7 @@ _core:
   default_config_hash: 3cq5FFP76T2znKUujVyelnroPf71SUbWYryuI8BFj4E
 template: create_event_community
 label: 'Create event'
-description: 'A user created an event in the community'
+description: 'En bruker opprettet en hendelse i fellesskapet'
 text:
   -
     format: full_html

@@ -19,7 +19,7 @@ _core:
   default_config_hash: zJRRZwuLvT9hTlY-Hz-rsr0F3Sk0Vte2eUvJD7Jl0SI
 template: create_post_community
 label: 'Create post in the community'
-description: 'A user created a post in the community'
+description: 'En bruker opprettet et innlegg i fellesskapet'
 text:
   -
     format: full_html

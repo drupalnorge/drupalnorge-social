@@ -21,7 +21,7 @@ _core:
   default_config_hash: 5zgexuL111nwnHFXypA5AsemLoRP-0AsY0mY0mE0kwY
 template: create_topic_community
 label: 'Create topic'
-description: 'A user created a topic in the community'
+description: 'En bruker opprettet et emne i fellesskapet'
 text:
   -
     format: full_html
