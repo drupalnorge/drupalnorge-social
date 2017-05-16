@@ -4,24 +4,18 @@ status: true
 dependencies:
   module:
     - activity_creator
-    - block_content
     - comment
     - crop
     - dynamic_entity_reference
-    - file
     - flag
     - group
     - mentions
-    - menu_link_content
     - message
     - node
-    - profile
     - search_api
     - social_event
     - social_font
     - social_post
-    - taxonomy
-    - user
     - votingapi
 _core:
   default_config_hash: RMiQPfGDcmWNcu2QNNtUxLJvjXlxFZ2rkckbcdXlNfk

@@ -22,6 +22,7 @@ class DrupalNorgeUser extends User {
   public function query() {
     $q = parent::query();
     $q->condition('u.mail', 'ole.martin.meyer@gmail.com', '<>');
+    $q->condition('u.uid', 1, '>');
     return $q;
   }
 
@@ -29,10 +30,6 @@ class DrupalNorgeUser extends User {
    * {@inheritdoc}
    */
   public function prepareRow(Row $row) {
-    // Avoid importing user 1.
-    if ($row->getSourceProperty('uid') == 1) {
-      return FALSE;
-    }
     if (parent::prepareRow($row)) {
       // Juuuust, set all of those fields in the cache. So we can store them
       // when that smarty-pants module (social_profile) decides to make us a

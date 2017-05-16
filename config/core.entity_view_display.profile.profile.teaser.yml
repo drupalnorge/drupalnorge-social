@@ -37,6 +37,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
   field_profile_function:
     weight: 3
     label: hidden
@@ -44,6 +45,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
   field_profile_image:
     weight: 0
     label: hidden
@@ -52,6 +54,7 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
   field_profile_last_name:
     weight: 2
     label: hidden
@@ -59,6 +62,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
   field_profile_organization:
     weight: 4
     label: hidden
@@ -66,6 +70,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
   field_profile_profile_tag:
     type: entity_reference_label
     weight: 5
@@ -73,6 +78,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
+    region: content
 hidden:
   field_profile_address: true
   field_profile_drupal_org_profile: true

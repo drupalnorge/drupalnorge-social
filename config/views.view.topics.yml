@@ -25,7 +25,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Hoved
     position: 0
     display_options:
       access:
@@ -46,10 +46,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrer
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér på'
           expose_sort_order: true
           sort_asc_label: ascending
           sort_desc_label: descending
@@ -62,17 +62,17 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Offset
+            offset_label: Forskyving
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '‹ Forrige'
+            next: 'Neste ›'
+            first: '« Første'
+            last: 'Siste »'
           quantity: 9
       style:
         type: default
@@ -276,7 +276,7 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-      title: Topics
+      title: Emner
       header: {  }
       footer: {  }
       empty:
@@ -290,7 +290,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'No topics found for this user'
+            value: 'Ingen innlegg funnet for denne brukeren'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -306,7 +306,7 @@ display:
           exception:
             value: ''
             title_enable: false
-            title: All
+            title: Alle
           title_enable: false
           title: ''
           default_argument_type: fixed
@@ -354,7 +354,7 @@ display:
   block_user_topics:
     display_plugin: block
     id: block_user_topics
-    display_title: Block
+    display_title: Blokk
     position: 2
     display_options:
       display_extenders: {  }
@@ -394,7 +394,7 @@ display:
           exception:
             value: ''
             title_enable: false
-            title: All
+            title: Alle
           title_enable: false
           title: ''
           default_argument_type: user
@@ -537,14 +537,14 @@ display:
   page_profile:
     display_plugin: page
     id: page_profile
-    display_title: Page
+    display_title: Side
     position: 1
     display_options:
       display_extenders: {  }
       path: user/%user/topics
       menu:
         type: none
-        title: Topics
+        title: Emner
         description: ''
         expanded: false
         parent: ''
@@ -553,7 +553,7 @@ display:
         menu_name: main
       tab_options:
         type: none
-        title: Topics
+        title: Emner
         description: ''
         weight: 0
       exposed_block: true

@@ -12,10 +12,7 @@ id: user.user.full
 targetEntityType: user
 bundle: user
 mode: full
-content:
-  settings: {  }
-  third_party_settings: {  }
-  weight: 0
+content: {  }
 hidden:
   langcode: true
   member_for: true

@@ -25,7 +25,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Hoved
     position: 0
     display_options:
       access:
@@ -46,10 +46,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrer
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér på'
           expose_sort_order: true
           sort_asc_label: ascending
           sort_desc_label: descending
@@ -62,17 +62,17 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Offset
+            offset_label: Forskyving
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '‹ Forrige'
+            next: 'Neste ›'
+            first: '« Første'
+            last: 'Siste »'
           quantity: 9
       style:
         type: default
@@ -182,7 +182,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: 'Publish status'
+            label: Publiseringsstatus
             description: ''
             use_operator: false
             operator: status_op
@@ -260,7 +260,7 @@ display:
             label: ''
           granularity: second
           plugin_id: datetime
-      title: 'Events for this user'
+      title: 'Hendelser for denne brukeren'
       header: {  }
       footer: {  }
       empty:
@@ -273,7 +273,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No events found for this user'
+          content: 'Ingen hendelser funnet for denne brukeren.'
           plugin_id: text_custom
       relationships: {  }
       arguments: {  }
@@ -377,7 +377,7 @@ display:
           exposed: false
           expose:
             operator_id: ''
-            label: 'Publish status'
+            label: Publiseringsstatus
             description: ''
             use_operator: false
             operator: status_op
@@ -525,7 +525,7 @@ display:
         operator: AND
         groups:
           1: AND
-      title: 'Upcoming events'
+      title: 'Kommende hendelser'
     cache_metadata:
       max-age: -1
       contexts:
@@ -545,7 +545,7 @@ display:
       path: user/%user/events
       menu:
         type: none
-        title: Events
+        title: Hendelser
         description: ''
         expanded: false
         parent: ''
@@ -554,7 +554,7 @@ display:
         menu_name: main
       tab_options:
         type: none
-        title: Topics
+        title: Emner
         description: ''
         weight: 0
       exposed_block: true
@@ -613,7 +613,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: 'Publish status'
+            label: Publiseringsstatus
             description: ''
             use_operator: false
             operator: status_op
@@ -657,7 +657,7 @@ display:
           exposed: true
           expose:
             operator_id: field_event_date_value_op
-            label: 'Start date'
+            label: Startdato
             description: null
             use_operator: false
             operator: field_event_date_value_op
@@ -680,7 +680,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: 'Upcoming events'
+                title: 'Kommende hendelser'
                 operator: '>='
                 value:
                   type: offset

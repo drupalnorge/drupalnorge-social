@@ -3,22 +3,16 @@ langcode: nb
 status: true
 dependencies:
   module:
-    - activity_creator
-    - block_content
-    - comment
     - crop
     - dynamic_entity_reference
-    - file
-    - group
-    - menu_link_content
+    - flag
+    - mentions
     - message
     - node
-    - profile
     - search_api
-    - social_event
+    - social_font
     - social_post
-    - taxonomy
-    - user
+    - votingapi
 _core:
   default_config_hash: TVUb787RPflYL6_oERF8laE0zo71xPwq9L6nbRO9rgI
 id: message.field_message_related_object

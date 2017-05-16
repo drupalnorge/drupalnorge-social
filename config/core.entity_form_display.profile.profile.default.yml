@@ -97,6 +97,7 @@ content:
       default_country: null
     third_party_settings: {  }
     type: address_default
+    region: content
   field_profile_drupal_org_profile:
     weight: 9
     settings:
@@ -104,6 +105,7 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
   field_profile_expertise:
     weight: 6
     settings:
@@ -112,6 +114,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete_tags
+    region: content
   field_profile_facebook_url:
     weight: 11
     settings:
@@ -119,6 +122,7 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
   field_profile_first_name:
     weight: 1
     settings:
@@ -126,6 +130,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
   field_profile_function:
     weight: 2
     settings:
@@ -133,6 +138,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
   field_profile_image:
     weight: 3
     settings:
@@ -147,6 +153,7 @@ content:
       show_crop_area: true
     third_party_settings: {  }
     type: image_widget_crop
+    region: content
   field_profile_interests:
     weight: 7
     settings:
@@ -155,6 +162,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete_tags
+    region: content
   field_profile_last_name:
     weight: 2
     settings:
@@ -162,6 +170,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
   field_profile_organization:
     weight: 3
     settings:
@@ -169,17 +178,20 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
   field_profile_phone_number:
     weight: 6
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
+    region: content
   field_profile_profile_tag:
     weight: 8
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
   field_profile_self_introduction:
     weight: 5
     settings:
@@ -187,6 +199,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
   field_profile_twitter_url:
     weight: 10
     settings:
@@ -194,10 +207,12 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
   langcode:
     type: language_select
     weight: 2
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   field_profile_show_email: true

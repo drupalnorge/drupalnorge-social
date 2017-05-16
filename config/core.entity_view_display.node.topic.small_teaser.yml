@@ -22,6 +22,7 @@ mode: small_teaser
 content:
   flag_follow_content:
     weight: 10
+    region: content
 hidden:
   body: true
   field_content_visibility: true

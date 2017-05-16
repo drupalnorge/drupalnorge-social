@@ -29,12 +29,14 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_files:
     weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: file_default
+    region: content
   field_topic_comments:
     weight: 1
     label: above
@@ -42,12 +44,15 @@ content:
       pager_id: 0
     third_party_settings: {  }
     type: comment_group_content
+    region: content
   flag_follow_content:
     weight: 10
+    region: content
   like_and_dislike:
     weight: 2
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   field_content_visibility: true
   field_topic_image: true

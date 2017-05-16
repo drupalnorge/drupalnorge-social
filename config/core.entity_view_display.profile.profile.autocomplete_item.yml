@@ -37,6 +37,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
   field_profile_image:
     type: image
     weight: 0
@@ -45,6 +46,7 @@ content:
       image_style: social_medium
       image_link: ''
     third_party_settings: {  }
+    region: content
   field_profile_last_name:
     type: string
     weight: 2
@@ -52,6 +54,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
 hidden:
   field_profile_address: true
   field_profile_drupal_org_profile: true
