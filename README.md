@@ -6,7 +6,7 @@
 
 Clone this repository. For example with:
 
-`git clone git@github.com:eiriksm/drupalnorge-social.git`
+`git clone git@github.com:drupalnorge/drupalnorge-social.git`
 
 If you want a database dump, here is one: [drupalnorge-social.e-o.no/sanitized.sql](http://drupalnorge-social.e-o.no/sanitized.sql)
 
