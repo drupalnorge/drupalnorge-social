@@ -5,6 +5,6 @@ dependencies: {  }
 _core:
   default_config_hash: hGHnIBzGy-ezfVmmfzoO6FbC-fhM8_KKG_Ysyae9xtk
 id: post_comment
-label: 'Post comment'
+label: 'Legg inn kommentar'
 target_entity_type_id: post
 description: 'Comment on a post in the activity streams'

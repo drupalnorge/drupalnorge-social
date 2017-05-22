@@ -13,7 +13,7 @@ dependencies:
 _core:
   default_config_hash: '-SgPCen-8ecG1X9JIJQ0nE7grcx1mTZfoUWXMKA8luM'
 id: group_events
-label: Gruppearrangement
+label: 'Hendelser i gruppa'
 module: views
 description: ''
 tag: ''
@@ -181,7 +181,7 @@ display:
               authenticated: authenticated
           is_grouped: true
           group_info:
-            label: 'Event status'
+            label: 'Status for hendelse'
             description: ''
             identifier: field_event_date_value
             optional: false
@@ -200,7 +200,7 @@ display:
                   min: ''
                   max: ''
               2:
-                title: 'Events that have started or are finished'
+                title: 'Hendelser som har startet eller er ferdige'
                 operator: '<'
                 value:
                   type: offset
@@ -259,7 +259,7 @@ display:
           granularity: minute
           entity_type: node
           plugin_id: event_passed_upcoming_sort
-      title: Gruppearrangement
+      title: 'Hendelser i gruppa'
       header: {  }
       footer: {  }
       empty:
@@ -272,7 +272,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No events in this group'
+          content: 'Ingen hendelser i denne gruppa'
           plugin_id: text_custom
       relationships:
         gc__node:

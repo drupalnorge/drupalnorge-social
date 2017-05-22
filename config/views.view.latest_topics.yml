@@ -15,7 +15,7 @@ dependencies:
 _core:
   default_config_hash: m5XI8nEoB_r69bp8qdyOZHMs2UWgmzhfpWCh_2JyPiU
 id: latest_topics
-label: 'Latest topics'
+label: 'Siste emner'
 module: views
 description: 'Displays the newest topics in the community'
 tag: ''
@@ -187,7 +187,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: 'Newest topics'
+      title: 'Alle emner'
       header: {  }
       footer: {  }
       empty:
@@ -238,7 +238,7 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
-      block_description: 'Latest group topics'
+      block_description: 'Siste emner for gruppa'
       empty:
         area_text_custom:
           id: area_text_custom
@@ -249,7 +249,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No topics in this group'
+          content: 'Ingen emner i denne gruppa'
           plugin_id: text_custom
       defaults:
         empty: false

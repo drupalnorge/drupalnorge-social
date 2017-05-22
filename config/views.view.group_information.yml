@@ -164,7 +164,7 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts: {  }
-      title: 'About Group'
+      title: 'Om gruppa'
       header: {  }
       footer: {  }
       empty: {  }
@@ -183,7 +183,7 @@ display:
             title_enable: false
             title: Alle
           title_enable: true
-          title: 'About {{ arguments.id }}'
+          title: 'Om {{ arguments.id }}'
           default_argument_type: fixed
           default_argument_options:
             argument: ''

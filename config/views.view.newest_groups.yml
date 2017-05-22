@@ -12,7 +12,7 @@ dependencies:
 _core:
   default_config_hash: yqSTMNtV9D8eZY9PG_MhiA_oamFxDf43Evn1XxtJ0jY
 id: newest_groups
-label: 'Newest groups'
+label: 'Nyeste grupper'
 module: views
 description: ''
 tag: ''
@@ -162,7 +162,7 @@ display:
           entity_type: group
           entity_field: created
           plugin_id: date
-      title: 'All groups'
+      title: 'Alle grupper'
       header: {  }
       footer: {  }
       empty: {  }
@@ -184,7 +184,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      title: 'Newest groups'
+      title: 'Nyeste grupper'
       defaults:
         title: false
         pager: false

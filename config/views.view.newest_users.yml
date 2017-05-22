@@ -12,7 +12,7 @@ dependencies:
 _core:
   default_config_hash: sdgehhOeixfjQnMlWo_lmuctC6ZEp00PNnkUoPeFJlE
 id: newest_users
-label: 'Newest users'
+label: 'Nyeste brukere'
 module: views
 description: 'Displays a block and page for the newest users on the platform based on Profile'
 tag: ''
@@ -155,7 +155,7 @@ display:
           entity_type: profile
           entity_field: created
           plugin_id: date
-      title: 'Newest members'
+      title: 'Nyeste medlemmer'
       header: {  }
       footer: {  }
       empty: {  }
@@ -185,7 +185,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      title: 'Newest members'
+      title: 'Nyeste medlemmer'
       defaults:
         title: false
         pager: false

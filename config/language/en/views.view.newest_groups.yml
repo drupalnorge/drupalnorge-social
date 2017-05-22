@@ -1,0 +1,34 @@
+label: 'Newest groups'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      fields:
+        label:
+          separator: ', '
+      title: 'All groups'
+  block_newest_groups:
+    display_title: 'Newest groups block'
+    display_options:
+      title: 'Newest groups'
+      block_description: 'Newest groups block'
+  page_all_groups:
+    display_title: 'Newest groups page'

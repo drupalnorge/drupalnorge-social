@@ -13,7 +13,7 @@ id: node.event.field_event_address
 field_name: field_event_address
 entity_type: node
 bundle: event
-label: Address
+label: Adresse
 description: ''
 required: false
 translatable: false

@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: QvzXGcuO0zld9vhAr5oLfzrkd956c0ZzsPzyGbU2oHA
 id: activity_stream
-label: 'Activity Stream'
+label: Aktivitetsstrøm
 module: views
 description: ''
 tag: ''
@@ -217,7 +217,7 @@ display:
           entity_type: activity
           entity_field: created
           plugin_id: date
-      title: Stream
+      title: Strøm
       header:
         entity_block:
           id: entity_block

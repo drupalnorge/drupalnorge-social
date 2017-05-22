@@ -254,7 +254,7 @@ display:
           entity_type: activity
           entity_field: created
           plugin_id: date
-      title: 'Activity stream'
+      title: Aktivitetsstrøm
       header: {  }
       footer: {  }
       empty:
@@ -268,7 +268,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'You do not have any notifications.'
+            value: 'Du har ingen varslinger.'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -310,7 +310,7 @@ display:
       display_extenders: {  }
       use_more: false
       use_more_always: true
-      use_more_text: 'All notifications'
+      use_more_text: 'Alle varslinger'
     cache_metadata:
       max-age: -1
       contexts:

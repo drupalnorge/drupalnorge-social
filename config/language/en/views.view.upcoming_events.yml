@@ -1,0 +1,75 @@
+label: '(Upcoming) Community events'
+description: 'Show upcoming events (my, community and overview)'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      fields:
+        title:
+          separator: ', '
+      title: 'Upcoming events'
+      empty:
+        area_text_custom:
+          content: 'No events found'
+  block_community_events:
+    display_title: 'Community events block'
+    display_options:
+      block_description: 'Community events block'
+  block_my_upcoming_events:
+    display_title: 'My upcoming events block'
+    display_options:
+      block_description: 'My upcoming events block'
+      arguments:
+        field_account_target_id:
+          exception:
+            title: All
+      empty:
+        area_text_custom:
+          content: 'No upcoming events you have enrolled for'
+      title: 'My upcoming events'
+  page_community_events:
+    display_title: 'Community events page'
+    display_options:
+      filters:
+        field_event_date_value:
+          expose:
+            label: 'Start date'
+          group_info:
+            label: 'Event status'
+            group_items:
+              1:
+                title: 'Upcoming events'
+              2:
+                title: 'Events that have started or are finished'
+      title: 'Community events'
+  upcoming_events_group:
+    display_title: 'Upcoming events group block'
+    display_options:
+      block_description: 'Upcoming events group block'
+      arguments:
+        gid:
+          admin_label: group_contextual
+          exception:
+            title: All
+      empty:
+        area_text_custom:
+          content: 'No upcoming events in this group'
+      title: 'Upcoming events'

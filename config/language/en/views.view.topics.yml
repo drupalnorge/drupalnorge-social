@@ -1,0 +1,66 @@
+label: 'User Topics'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: ascending
+          sort_desc_label: descending
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+      fields:
+        title:
+          separator: ', '
+      filters:
+        field_topic_type_target_id:
+          expose:
+            label: 'is the type of'
+        status:
+          expose:
+            label: 'has the publish status of'
+      sorts:
+        created:
+          expose:
+            label: 'Sort by publish date'
+      title: Topics
+      empty:
+        area:
+          content:
+            value: 'No topics found for this user'
+      arguments:
+        uid:
+          exception:
+            title: All
+  block_user_topics:
+    display_title: Block
+    display_options:
+      title: 'Recently created topics'
+      block_description: 'Recently created topics'
+      arguments:
+        uid:
+          exception:
+            title: All
+      sorts:
+        created:
+          expose:
+            label: 'Sort by publish date'
+  page_profile:
+    display_title: Page
+    display_options:
+      menu:
+        title: Topics
+      tab_options:
+        title: Topics

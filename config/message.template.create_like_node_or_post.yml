@@ -19,7 +19,7 @@ _core:
   default_config_hash: vNbWg2cIRNlgcrwYmyPLcgJ3vPVWsMrgieNeeKHuq6o
 template: create_like_node_or_post
 label: 'Create like on node or post'
-description: 'A person likes a post, topic or event created by me'
+description: 'En person liker et innlegg, et emne eller en hendelse opprettet av meg'
 text:
   -
     value: '<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> likes your <a href="[vote:liked_entity]">[vote:liked_content_type]</a></p>'

@@ -380,8 +380,8 @@ display:
         options:
           items_per_page: 2
           offset: 0
-      title: 'Recently created topics'
-      block_description: 'Recently created topics'
+      title: 'Nylig opprettede emner'
+      block_description: 'Nylig opprettede emner'
       arguments:
         uid:
           id: uid

@@ -13,7 +13,7 @@ id: comment.post_comment.field_comment_body
 field_name: field_comment_body
 entity_type: comment
 bundle: post_comment
-label: 'Post comment'
+label: 'Legg inn kommentar'
 description: ''
 required: true
 translatable: true

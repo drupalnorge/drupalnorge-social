@@ -91,6 +91,7 @@ module:
   toolbar: 0
   update: 0
   user: 0
+  views_ui: 0
   votingapi: 0
   views: 10
   improved_theme_settings: 50

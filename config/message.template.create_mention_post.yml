@@ -11,8 +11,8 @@ third_party_settings:
     activity_action: create_entitiy_action
     activity_context: mention_activity_context
     activity_destinations:
-      notifications: notifications
       stream_profile: stream_profile
+      notifications: notifications
       email: email
     activity_create_direct: 1
     activity_aggregate: 0
@@ -24,13 +24,13 @@ label: 'Create mention in a post'
 description: 'A person mentioned me in a post'
 text:
   -
-    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> mentioned you in a post</p>'
+    value: "<p><a href=\"[message:author:url:relative]\">[message:author:display-name]</a> nevnte deg i et innlegg</p>\r\n"
     format: full_html
   -
-    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> mentioned you in a post</p>'
+    value: "<p><a href=\"[message:author:url:relative]\">[message:author:display-name]</a> nevnte deg i et innlegg</p>\r\n"
     format: full_html
   -
-    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> mentioned you in a <a href="[message:field_message_related_object:entity:url:absolute]">post</a></p>'
+    value: "<p><a href=\"[message:author:url:relative]\">[message:author:display-name]</a> nevnte deg i et <a href=\"[message:field_message_related_object:entity:url:absolute]\">innlegg</a></p>\r\n"
     format: full_html
 settings:
   'token options':

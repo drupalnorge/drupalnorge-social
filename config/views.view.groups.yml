@@ -247,7 +247,7 @@ display:
         options:
           relationship: none
           view_mode: small_teaser
-      title: 'Recently joined groups'
+      title: 'Grupper nylig blitt med i'
     cache_metadata:
       max-age: -1
       contexts:

@@ -13,7 +13,7 @@ dependencies:
 _core:
   default_config_hash: 3JQVl57csa-iFa6jWVEZf2E2Cb0yGQ1O6lZj_X-X_rY
 id: group_topics
-label: 'Group Topics'
+label: 'Emner for gruppa'
 module: views
 description: ''
 tag: ''
@@ -309,7 +309,7 @@ display:
             group_items: {  }
           plugin_id: node_access
       sorts: {  }
-      title: 'Group Topics'
+      title: 'Emner for gruppa'
       header: {  }
       footer: {  }
       empty:
@@ -322,7 +322,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No topics in this group'
+          content: 'Ingen emner i denne gruppa'
           plugin_id: text_custom
       relationships:
         gc__node:

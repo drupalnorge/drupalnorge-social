@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: g0xG6W1yMrC3-0MmqSGi4TS3cI962yWsynMHyWz0LC0
 id: activity.notification_archive
-label: 'Notification archive'
+label: Varslingsarkiv
 targetEntityType: activity
 cache: true

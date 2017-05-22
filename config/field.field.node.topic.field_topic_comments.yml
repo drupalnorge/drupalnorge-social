@@ -13,7 +13,7 @@ id: node.topic.field_topic_comments
 field_name: field_topic_comments
 entity_type: node
 bundle: topic
-label: Comments
+label: Kommentarer
 description: ''
 required: false
 translatable: false

@@ -12,7 +12,7 @@ id: event_enrollment.event_enrollment.field_account
 field_name: field_account
 entity_type: event_enrollment
 bundle: event_enrollment
-label: Account
+label: Konto
 description: ''
 required: true
 translatable: false

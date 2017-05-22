@@ -13,7 +13,7 @@ id: profile.profile.field_profile_address
 field_name: field_profile_address
 entity_type: profile
 bundle: profile
-label: Address
+label: Adresse
 description: ''
 required: false
 translatable: false

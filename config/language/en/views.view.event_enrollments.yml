@@ -1,0 +1,61 @@
+label: Enrollments
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
+      title: Enrollments
+      header:
+        result:
+          content: '@total people have enrolled'
+      empty:
+        area_text_custom:
+          content: 'No one has enrolled for this event'
+      arguments:
+        nid:
+          exception:
+            title: All
+  event_enrollments:
+    display_title: Block
+    display_options:
+      block_description: 'Enrollments Block'
+      footer:
+        area:
+          content:
+            value: '<a href="/node/{{ raw_arguments.nid }}/enrollments">See all enrollments</a>'
+      arguments:
+        nid:
+          exception:
+            title: All
+      use_more_text: 'All enrollments'
+  view_enrollments:
+    display_title: Page
+    display_options:
+      menu:
+        title: Enrollments
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset

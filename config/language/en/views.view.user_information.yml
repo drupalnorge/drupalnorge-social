@@ -1,0 +1,26 @@
+label: 'User information'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      title: Information
+      empty:
+        area:
+          content:
+            value: 'There is no profile added yet, you can <a href="/user/{{ arguments.uid }}/profile">add a profile here</a>'
+      arguments:
+        uid:
+          exception:
+            title: All
+  user_information:
+    display_title: Page
+    display_options:
+      menu:
+        title: Information

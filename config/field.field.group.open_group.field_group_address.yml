@@ -13,7 +13,7 @@ id: group.open_group.field_group_address
 field_name: field_group_address
 entity_type: group
 bundle: open_group
-label: Address
+label: Adresse
 description: ''
 required: false
 translatable: false

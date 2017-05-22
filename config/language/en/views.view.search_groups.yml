@@ -1,0 +1,47 @@
+label: 'Search Groups'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      title: 'Search Groups'
+      header:
+        area:
+          content:
+            value: '<h4 class="section-title">Group results</h4><p>If you are searching for users, <a href="/search/users/{{ arguments.search_api_fulltext }}">click here</a> If you are searching for content, <a href="/search/content/{{ arguments.search_api_fulltext }}">click here</a></p>'
+      empty:
+        area:
+          content:
+            value: 'No results found.'
+      arguments:
+        search_api_fulltext:
+          exception:
+            title: All
+  page:
+    display_title: Page
+  page_no_value:
+    display_title: 'Page (no value)'
+    display_options:
+      menu:
+        title: Groups
+      header:
+        area:
+          content:
+            value: '<h4 class="section-title">Group results</h4><p>If you are searching for users, <a href="/search/users/">click here</a> If you are searching for content, <a href="/search/content/">click here</a></p>'

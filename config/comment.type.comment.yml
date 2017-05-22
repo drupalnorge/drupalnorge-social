@@ -5,6 +5,6 @@ dependencies: {  }
 _core:
   default_config_hash: hD_X55d0D-MMgKFM6COxkqKRh3Rxu9YOLpgCOPFiRXo
 id: comment
-label: Comment
+label: Kommentar
 target_entity_type_id: node
 description: 'Default comment type.'

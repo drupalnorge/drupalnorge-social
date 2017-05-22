@@ -262,7 +262,7 @@ display:
           entity_type: activity
           entity_field: created
           plugin_id: date
-      title: 'Activity stream'
+      title: Aktivitetsstrøm
       header:
         entity_block:
           id: entity_block

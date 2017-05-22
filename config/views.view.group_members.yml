@@ -229,7 +229,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      title: 'Newest Members'
+      title: 'Nyeste medlemmer'
       defaults:
         title: false
         pager: false

@@ -607,7 +607,7 @@ display:
               authenticated: authenticated
           is_grouped: true
           group_info:
-            label: 'Event status'
+            label: 'Status for hendelse'
             description: ''
             identifier: field_event_date_value
             optional: false
@@ -626,7 +626,7 @@ display:
                   min: ''
                   max: ''
               2:
-                title: 'Events that have started or are finished'
+                title: 'Hendelser som har startet eller er ferdige'
                 operator: '<'
                 value:
                   type: offset
@@ -680,7 +680,7 @@ display:
         groups:
           1: AND
       exposed_block: true
-      title: 'Community events'
+      title: 'Hendelser i fellesskapet'
       sorts:
         event_passed_upcoming_sort:
           id: event_passed_upcoming_sort
@@ -904,7 +904,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No upcoming events in this group'
+          content: 'Ingen kommende hendelser for denne gruppa'
           plugin_id: text_custom
       title: 'Kommende hendelser'
     cache_metadata:

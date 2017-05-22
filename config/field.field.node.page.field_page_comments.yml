@@ -13,7 +13,7 @@ id: node.page.field_page_comments
 field_name: field_page_comments
 entity_type: node
 bundle: page
-label: Comments
+label: Kommentarer
 description: ''
 required: false
 translatable: false

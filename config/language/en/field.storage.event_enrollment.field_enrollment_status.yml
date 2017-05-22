@@ -1,0 +1,6 @@
+settings:
+  allowed_values:
+    -
+      label: 'Not enrolled'
+    -
+      label: Enrolled
