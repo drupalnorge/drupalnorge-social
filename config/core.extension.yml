@@ -35,6 +35,7 @@ module:
   filter: 0
   flag: 0
   gnode: 0
+  google_analytics: 0
   grolesync: 0
   group: 0
   group_core_comments: 0
