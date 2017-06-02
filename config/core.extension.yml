@@ -22,7 +22,6 @@ module:
   datetime: 0
   dblog: 0
   dropdown: 0
-  drupalnorge_migrate: 0
   dynamic_entity_reference: 0
   editor: 0
   entity: 0
@@ -53,8 +52,6 @@ module:
   message: 0
   migrate: 0
   migrate_drupal: 0
-  migrate_plus: 0
-  migrate_tools: 0
   node: 0
   options: 0
   override_node_options: 0
