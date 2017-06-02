@@ -11,7 +11,7 @@
         "cweagans/composer-patches": "^1.0",
         "goalgorilla/open_social": "^1.0@beta",
         "drupal/coffee": "1.x-dev",
-        "drupal/sparkpost": "2.x-dev",
+        "drupal/sparkpost": "2.0-beta1",
         "drupal/reroute_email": "1.x-dev",
         "drupal/migrate_tools": "3.x-dev",
         "drupal/slack_invite": "^1.1",
