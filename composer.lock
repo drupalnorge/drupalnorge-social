@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "11ca7349fc1ae00834b588185478dcd0",
+    "content-hash": "1b49dc4639f1368877dfa5a121014ed0",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -3080,7 +3080,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/sparkpost-8.x-2.0-beta1.zip",
-                "reference": null,
+                "reference": "8.x-2.0-beta1",
                 "shasum": "b553bab26ed458c194ed1f3c42566184ce0750cb"
             },
             "require": {
@@ -3096,6 +3096,9 @@
                 "drupal": {
                     "version": "8.x-2.0-beta1",
                     "datestamp": "1496414043"
+                },
+                "patches_applied": {
+                    "Email subjects can get double escaped (https://www.drupal.org/node/2883467)": "https://www.drupal.org/files/issues/email_subjects_can_get-2883467-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
