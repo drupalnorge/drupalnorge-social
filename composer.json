@@ -73,6 +73,9 @@
         "patches": {
           "drupal/core": {
             "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
+          },
+          "drupal/sparkpost": {
+            "Email subjects can get double escaped (https://www.drupal.org/node/2883467)": "https://www.drupal.org/files/issues/email_subjects_can_get-2883467-2.patch"
           }
         },
         "enable-patching": true
