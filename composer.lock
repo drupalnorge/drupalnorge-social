@@ -2564,7 +2564,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0-beta1",
-                    "datestamp": "1476307739"
+                    "datestamp": "1494450485"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2576,6 +2576,10 @@
                     "name": "Mike Ryan",
                     "homepage": "https://www.drupal.org/u/mikeryan",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
                 }
             ],
             "description": "Enhancements to core migration support.",
@@ -3079,7 +3083,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/sparkpost",
-                "reference": "dc2ff84438ba91a2256686d1feef7b1e1571a377"
+                "reference": "cf13788eb62ba051f43fd5a8ff67b59aaccb7acb"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -3092,8 +3096,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.x-dev",
-                    "datestamp": "1488465483"
+                    "version": "8.x-2.0-alpha1+1-dev",
+                    "datestamp": "1490197082"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3119,7 +3123,7 @@
                 "source": "http://cgit.drupalcode.org/sparkpost",
                 "issues": "https://www.drupal.org/project/issues/sparkpost"
             },
-            "time": "2017-03-02 14:38:36"
+            "time": "2017-03-22 15:37:53"
         },
         {
             "name": "drupal/token",
