@@ -13,11 +13,11 @@
         "drupal/coffee": "1.x-dev",
         "drupal/sparkpost": "2.0-beta1",
         "drupal/reroute_email": "1.x-dev",
-        "drupal/migrate_tools": "3.x-dev",
         "drupal/slack_invite": "^1.1",
         "drush/drush": "^8.1",
         "drupal/honeypot": "^1.25",
-        "drupal/google_analytics": "^2.1"
+        "drupal/google_analytics": "^2.1",
+        "drupal/migrate_tools": "3.x-dev"
     },
     "require-dev": {
         "drupal/coder": "^8.2",

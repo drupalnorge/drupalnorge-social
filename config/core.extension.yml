@@ -22,7 +22,6 @@ module:
   datetime: 0
   dblog: 0
   dropdown: 0
-  drupalnorge_migrate: 0
   dynamic_entity_reference: 0
   editor: 0
   entity: 0
