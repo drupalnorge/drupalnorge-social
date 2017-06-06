@@ -14,7 +14,7 @@
         "drupal/sparkpost": "2.0-beta1",
         "drupal/reroute_email": "1.x-dev",
         "drupal/slack_invite": "^1.1",
-        "drush/drush": "^8.1",
+        "drush/drush": "~8.1.12",
         "drupal/honeypot": "^1.25",
         "drupal/google_analytics": "^2.1"
     },
