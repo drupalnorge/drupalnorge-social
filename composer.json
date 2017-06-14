@@ -15,7 +15,7 @@
         "drupal/reroute_email": "1.x-dev",
         "drupal/slack_invite": "^1.1",
         "drush/drush": "~8.1.12",
-        "drupal/honeypot": "^1.25",
+        "drupal/honeypot": "~1.26.0",
         "drupal/google_analytics": "^2.1"
     },
     "require-dev": {
