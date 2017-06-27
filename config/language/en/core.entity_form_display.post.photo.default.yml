@@ -1,0 +1,4 @@
+content:
+  field_post:
+    settings:
+      placeholder: 'Say something about this photo'

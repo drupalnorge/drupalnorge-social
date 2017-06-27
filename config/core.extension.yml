@@ -35,7 +35,6 @@ module:
   flag: 0
   gnode: 0
   google_analytics: 0
-  grolesync: 0
   group: 0
   group_core_comments: 0
   help: 0
@@ -66,6 +65,7 @@ module:
   social_core: 0
   social_editor: 0
   social_event: 0
+  social_file_private: 0
   social_follow_content: 0
   social_font: 0
   social_group: 0
@@ -73,9 +73,11 @@ module:
   social_mentions: 0
   social_page: 0
   social_post: 0
+  social_post_photo: 0
   social_profile: 0
   social_search: 0
   social_topic: 0
+  social_tour: 0
   social_user: 0
   sparkpost: 0
   system: 0
@@ -85,6 +87,7 @@ module:
   text: 0
   token: 0
   toolbar: 0
+  tour: 0
   update: 0
   user: 0
   views_ui: 0
