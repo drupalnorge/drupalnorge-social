@@ -1,0 +1,5 @@
+name: drupalnorge_custom
+type: module
+description: Custom things for Drupal Norge
+core: 8.x
+package: Custom
