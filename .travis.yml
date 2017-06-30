@@ -21,11 +21,10 @@ install:
   - cd $TRAVIS_BUILD_DIR/html
   - chmod -R 777 sites/default
   - touch sites/default/settings.local.php
+  - echo '<?php $settings["file_private_path"] = "../private";' >> sites/default/settings.local.php
   - ./../vendor/bin/drush site-install social --verbose --yes --db-url=mysql://root@127.0.0.1/test
   - ./../vendor/bin/drush sql-cli < ../sanitized.sql
-  - ./../vendor/bin/drush cim --verbose --yes
-  - ./../vendor/bin/drush updb --verbose --yes
-  - ./../vendor/bin/drush cr
+  - cd .. && composer build && cd -
   - ./../vendor/bin/drush runserver http://127.0.0.1:8888 &
   - sleep 3
   - cd $TRAVIS_BUILD_DIR

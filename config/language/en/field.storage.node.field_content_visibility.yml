@@ -1,0 +1,6 @@
+settings:
+  allowed_values:
+    -
+      label: 'Public - visible to everyone including people who are not a member'
+    -
+      label: 'Community - visible only to logged in members'
