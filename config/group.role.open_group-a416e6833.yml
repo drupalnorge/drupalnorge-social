@@ -1,12 +1,16 @@
-uuid: 9ef37979-975f-4b56-bbfe-52f2ea23c004
+uuid: 8409f9cf-f557-4d2d-9a20-3088f66bfd4a
 langcode: nb
 status: true
 dependencies:
   config:
     - group.type.open_group
   enforced:
+    module:
+      - grolesync
     config:
       - user.role.administrator
+_core:
+  default_config_hash: w0EshTzxRHqPyIGdp7m_JW5sAviw2HmBkZHrgiD3sCY
 id: open_group-a416e6833
 label: Administrator
 weight: 2

@@ -12,13 +12,13 @@ display:
           sort_desc_label: Desc
       pager:
         options:
-          tags:
-            previous: ‹‹
-            next: ››
           expose:
             items_per_page_label: 'Items per page'
             items_per_page_options_all_label: '- All -'
             offset_label: Offset
+          tags:
+            previous: ‹‹
+            next: ››
       filters:
         field_profile_expertise:
           expose:
@@ -35,7 +35,7 @@ display:
       header:
         area:
           content:
-            value: '<h4 class="section-title">Member results</h4>'
+            value: '<h4 class="section-title">Member results</h4><p>If you are searching for content, <a href="/search/content/{{ arguments.search_api_fulltext }}">click here</a> If you are searching for groups, <a href="/search/groups/{{ arguments.search_api_fulltext }}">click here</a></p>'
       empty:
         area:
           content:
@@ -54,4 +54,4 @@ display:
       header:
         area:
           content:
-            value: '<h4 class="section-title">Member results</h4>'
+            value: '<h4 class="section-title">Member results</h4><p>If you are searching for content, <a href="/search/content/{{ arguments.search_api_fulltext }}">click here</a> If you are searching for groups, <a href="/search/groups/{{ arguments.search_api_fulltext }}">click here</a></p>'

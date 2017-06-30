@@ -5,8 +5,6 @@ dependencies:
   config:
     - field.storage.message.field_message_related_object
     - message.template.create_comment_group_post
-    - node.type.event
-    - node.type.topic
   module:
     - dynamic_entity_reference
 _core:

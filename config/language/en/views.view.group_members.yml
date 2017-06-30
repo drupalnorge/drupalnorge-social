@@ -26,7 +26,7 @@ display:
       empty:
         area:
           content:
-            value: 'No members in this group'
+            value: 'No memebers in this group'
       arguments:
         gid:
           exception:
@@ -37,6 +37,6 @@ display:
       title: 'Newest Members'
       empty:
         area_text_custom:
-          content: 'No members in this group'
+          content: 'No memebers in this group'
   page_group_members:
     display_title: Page
