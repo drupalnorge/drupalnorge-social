@@ -13,7 +13,7 @@ id: post.post.field_post
 field_name: field_post
 entity_type: post
 bundle: post
-label: 'Legg inn'
+label: Post
 description: ''
 required: true
 translatable: false
