@@ -1,0 +1,23 @@
+uuid: f768a925-a2b4-4289-b4ae-75c5baee7297
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_tour
+_core:
+  default_config_hash: bBSQ6ha1iFzcYtjKN4r-JnURDvRUzCU6ZgmZCBjcHPo
+id: social-explore
+label: 'Explore functionality.'
+module: social_tour
+routes:
+  -
+    route_name: view.user_information.user_information
+tips:
+  explore_tooltip:
+    id: explore_tooltip
+    plugin: text
+    location: bottom
+    body: 'Click on the explore button to browse to all content in the community'
+    weight: 1
+    attributes:
+      data-id: main-navigation
