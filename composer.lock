@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e028940c968e0b7090b21cdda7d5746",
+    "content-hash": "d92004405e449f1cb616193691a90fcb",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -8212,7 +8212,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "goalgorilla/open_social": 10,
         "drupal/coffee": 20,
         "drupal/reroute_email": 20
     },
