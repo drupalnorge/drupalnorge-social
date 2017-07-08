@@ -1,0 +1,32 @@
+uuid: 38ca13c1-af42-431d-9595-6b1b0e0ce7f3
+langcode: nb
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - social_post
+_core:
+  default_config_hash: tkOw-OXqe3DGFPXPySFxxCgv4QqR7kJFpIjkIHf3giM
+id: post.field_post_image
+field_name: field_post_image
+entity_type: post
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

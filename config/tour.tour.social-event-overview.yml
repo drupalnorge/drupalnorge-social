@@ -1,0 +1,22 @@
+uuid: 8094a085-10ac-41f6-89f8-968612c2d63e
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_tour
+_core:
+  default_config_hash: 3mzC480BxC1KloPGxlsB4Ipsm0Y8hHdp1s968YY6ezE
+id: social-event-overview
+label: 'Event Overview functionality.'
+module: social_tour
+routes:
+  -
+    route_name: view.upcoming_events.page_community_events
+tips:
+  filter_tooltip:
+    id: filter_tooltip
+    plugin: text
+    location: left
+    body: 'Use the event filter if you only want to see either upcoming or past events'
+    attributes:
+      data-id: block-socialblue-exposedformupcoming-eventspage-community-events
