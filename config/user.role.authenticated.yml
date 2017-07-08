@@ -47,6 +47,7 @@ permissions:
   - 'select account cancellation method'
   - 'skip comment approval'
   - 'unflag follow_content'
+  - 'update own profile profile'
   - 'use text format basic_html'
   - 'use text format simple_text'
   - 'view any profile profile'

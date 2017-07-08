@@ -1,4 +1,4 @@
-uuid: bc4a9a9e-6da2-4874-a5e4-5152a98b7dbc
+uuid: b2d97058-5152-454e-97ef-b52d1371eb76
 langcode: en
 status: true
 dependencies:
@@ -20,4 +20,4 @@ tips:
     body: 'Here other community members can leave messages for you! You can also post messages on your own profile, these messages will be shown on other community members'' homepage.'
     weight: 1
     attributes:
-      backdrop: 1
+      backdrop: '1'

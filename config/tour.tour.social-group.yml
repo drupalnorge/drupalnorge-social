@@ -1,4 +1,4 @@
-uuid: f943306f-590e-46f8-89fa-f7def27357fe
+uuid: 2739f6c6-21c8-4578-a0e6-a8afacd01693
 langcode: en
 status: true
 dependencies:
@@ -20,4 +20,4 @@ tips:
     body: 'Here you can see all the activity in this group and join it.'
     weight: 1
     attributes:
-      backdrop: 1
+      backdrop: '1'

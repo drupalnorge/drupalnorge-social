@@ -1,4 +1,4 @@
-uuid: c88ec608-883b-4fcc-870d-f85a15b84322
+uuid: d47f7e8b-6ba7-487f-8b6c-bebab0c8f342
 langcode: en
 status: true
 dependencies:
@@ -22,4 +22,4 @@ tips:
     weight: 1
     attributes:
       data-class: flag-follow_content
-      backdrop: 1
+      backdrop: '1'
