@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * @file
+ * Post update file for custom module.
+ */
+
+/**
  * Fix the post type uuid.
  */
 function drupalnorge_custom_post_update_fix_post_type(&$sandbox) {
