@@ -1,5 +1,5 @@
-uuid: b6d6b03d-be28-44f6-8b0f-93bb558ba8bf
-langcode: nb
+uuid: b6a97851-b73b-48a6-a553-f4536dafe8c0
+langcode: en
 status: true
 dependencies:
   config:
@@ -17,7 +17,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: wXUrdCrgZwF_wtJ2E_FKj2uG-bgn7_065ghXsw5r9Ys
+  default_config_hash: at2Bf2iqF3uRClyj0M9vwB6Cdjrlzyzkay_dXaVRVss
 id: post.photo.default
 targetEntityType: post
 bundle: photo
@@ -36,7 +36,7 @@ content:
     region: content
     label: hidden
     settings:
-      num_comments: 2
+      num_comments: '0'
       order: DESC
     third_party_settings: {  }
   field_post_image:

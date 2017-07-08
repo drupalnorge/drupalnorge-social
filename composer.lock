@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc705581ae5025738ead835af42ac409",
+    "content-hash": "45f49c724f4a003c95f1f3a124c43ce7",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -305,54 +305,6 @@
             ],
             "description": "Internationalization library powered by CLDR data.",
             "time": "2016-12-13T12:33:19+00:00"
-        },
-        {
-            "name": "commerceguys/zone",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/commerceguys/zone.git",
-                "reference": "9bd0b361a971284442972c42b6749ca855c65435"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/zone/zipball/9bd0b361a971284442972c42b6749ca855c65435",
-                "reference": "9bd0b361a971284442972c42b6749ca855c65435",
-                "shasum": ""
-            },
-            "require": {
-                "commerceguys/addressing": "~1.0",
-                "doctrine/collections": "~1.0",
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "1.*",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "2.*",
-                "symfony/intl": ">=2.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "CommerceGuys\\Zone\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bojan Zivanovic"
-                }
-            ],
-            "description": "Zone management library.",
-            "time": "2017-04-20 12:44:24"
         },
         {
             "name": "composer/installers",
@@ -1150,22 +1102,21 @@
         },
         {
             "name": "drupal/address",
-            "version": "1.0.0-rc4",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/address",
-                "reference": "8.x-1.0-rc4"
+                "reference": "8.x-1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.0-rc4.zip",
+                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.0.zip",
                 "reference": null,
-                "shasum": "541b020ce839dd9c75374e213c1131d9c1f6f52d"
+                "shasum": "2be22f841f8e4af2ba23b6bc9983e013c167c520"
             },
             "require": {
                 "commerceguys/addressing": "~1.0",
                 "commerceguys/intl": "~0.7",
-                "commerceguys/zone": "~1.0",
                 "drupal/core": "*"
             },
             "type": "drupal-module",
@@ -1174,7 +1125,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-rc4",
+                    "version": "8.x-1.0",
                     "datestamp": "1495109886"
                 }
             },
@@ -1204,20 +1155,20 @@
         },
         {
             "name": "drupal/addtoany",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/addtoany",
-                "reference": "8.x-1.7"
+                "reference": "8.x-1.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/addtoany-8.x-1.7.zip",
+                "url": "https://ftp.drupal.org/files/projects/addtoany-8.x-1.8.zip",
                 "reference": null,
-                "shasum": "d11bd0aad032f71c097babd28268b6cf43011c9c"
+                "shasum": "fc3fc0193cb2fd434c0d4112f99287b72f233a41"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -1225,7 +1176,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.7",
+                    "version": "8.x-1.8",
                     "datestamp": "1493344443"
                 }
             },
@@ -2376,58 +2327,6 @@
             }
         },
         {
-            "name": "drupal/libraries",
-            "version": "dev-3.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/libraries",
-                "reference": "061ead081c92a6209b09eaf23b4e3103f360946e"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-3.x-dev",
-                    "datestamp": "1487978583"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Pol",
-                    "homepage": "https://www.drupal.org/user/47194"
-                },
-                {
-                    "name": "rjacobs",
-                    "homepage": "https://www.drupal.org/user/422459"
-                },
-                {
-                    "name": "sun",
-                    "homepage": "https://www.drupal.org/user/54136"
-                },
-                {
-                    "name": "tstoeckler",
-                    "homepage": "https://www.drupal.org/user/107158"
-                }
-            ],
-            "description": "Allows version-dependent and shared usage of external libraries in Drupal.",
-            "homepage": "http://drupal.org/project/libraries",
-            "support": {
-                "source": "http://cgit.drupalcode.org/libraries",
-                "issues": "http://drupal.org/project/issues/libraries",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
-            },
-            "time": "2017-03-15 17:04:08"
-        },
-        {
             "name": "drupal/like_and_dislike",
             "version": "1.0.0-alpha2",
             "source": {
@@ -2633,17 +2532,17 @@
         },
         {
             "name": "drupal/profile",
-            "version": "1.0.0-alpha5",
+            "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/profile",
-                "reference": "8.x-1.0-alpha5"
+                "reference": "8.x-1.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/profile-8.x-1.0-alpha5.zip",
+                "url": "https://ftp.drupal.org/files/projects/profile-8.x-1.0-beta1.zip",
                 "reference": null,
-                "shasum": "58a3efbcc2a2f6689fe3316ef471d31ca7f0fa36"
+                "shasum": "0a60fbae2ec3985eaf36574974ede24499b8faf9"
             },
             "require": {
                 "drupal/core": "~8.1",
@@ -2655,11 +2554,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha5",
-                    "datestamp": "1493741883"
-                },
-                "patches_applied": {
-                    "Fixes access control on entities": "https://www.drupal.org/files/issues/profile-accesscontrol-2703825-6.patch"
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1497287643"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2828,20 +2724,20 @@
         },
         {
             "name": "drupal/search_api",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/search_api",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.1.zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.2.zip",
                 "reference": null,
-                "shasum": "896d21a8b0dee0bea6e49fb0b2ac38315f4b52fe"
+                "shasum": "c6359692a220321ee8b4d6c61970b1c846afebe2"
             },
             "require": {
-                "drupal/core": "^8.2"
+                "drupal/core": "^8.3"
             },
             "require-dev": {
                 "drupal/search_api_db": "*"
@@ -2852,7 +2748,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1",
+                    "version": "8.x-1.2",
                     "datestamp": "1498403342"
                 }
             },
@@ -2985,17 +2881,17 @@
         },
         {
             "name": "drupal/social_auth",
-            "version": "1.0.0-beta3",
+            "version": "1.0.0-beta4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/social_auth",
-                "reference": "8.x-1.0-beta3"
+                "reference": "8.x-1.0-beta4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/social_auth-8.x-1.0-beta3.zip",
+                "url": "https://ftp.drupal.org/files/projects/social_auth-8.x-1.0-beta4.zip",
                 "reference": null,
-                "shasum": "fc9eb03034cf68ae1b5a13086aee632b410bb812"
+                "shasum": "fcdb080544147ad994a5d3798c1b7b680e3059ac"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -3007,7 +2903,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta3",
+                    "version": "8.x-1.0-beta4",
                     "datestamp": "1492524242"
                 }
             },
@@ -3547,16 +3443,16 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "1.0.0-rc8",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "02fe7f515f0ef4c4fbaaae1eda79758eaf38ff03"
+                "reference": "9853393463264c528bd4cce7e3a20663d829f499"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/02fe7f515f0ef4c4fbaaae1eda79758eaf38ff03",
-                "reference": "02fe7f515f0ef4c4fbaaae1eda79758eaf38ff03",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/9853393463264c528bd4cce7e3a20663d829f499",
+                "reference": "9853393463264c528bd4cce7e3a20663d829f499",
                 "shasum": ""
             },
             "require": {
@@ -3564,8 +3460,8 @@
                 "composer/installers": "^1.0",
                 "cweagans/composer-patches": "^1.5.0",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
-                "drupal/address": "1.0-rc4",
-                "drupal/addtoany": "1.7",
+                "drupal/address": "1.0",
+                "drupal/addtoany": "1.8",
                 "drupal/admin_toolbar": "1.19",
                 "drupal/bootstrap": "3.5",
                 "drupal/config_update": "1.3",
@@ -3580,15 +3476,14 @@
                 "drupal/flag": "4.0-alpha2",
                 "drupal/group": "1.0-rc1",
                 "drupal/image_widget_crop": "1.5",
-                "drupal/libraries": "3.x-dev#dcd717dc541293ae5c4003f304921cca9200728c",
                 "drupal/like_and_dislike": "1.0-alpha2",
                 "drupal/link_css": "1.x-dev",
                 "drupal/message": "1.0-beta1",
                 "drupal/override_node_options": "2.0",
-                "drupal/profile": "1.0-alpha5",
+                "drupal/profile": "1.0-beta1",
                 "drupal/r4032login": "1.x-dev#4b2077aa70e3f7b00b8a9cba25af5b948ba2e3b9",
-                "drupal/search_api": "1.1",
-                "drupal/social_auth": "1.0-beta3",
+                "drupal/search_api": "1.2",
+                "drupal/social_auth": "1.0-beta4",
                 "drupal/token": "1.0",
                 "drupal/votingapi": "3.0-alpha2",
                 "facebook/graph-sdk": "^5.4",
@@ -3602,9 +3497,6 @@
             "type": "drupal-profile",
             "extra": {
                 "patches": {
-                    "drupal/profile": {
-                        "Fixes access control on entities": "https://www.drupal.org/files/issues/profile-accesscontrol-2703825-6.patch"
-                    },
                     "drupal/core": {
                         "Clean up user input for exposed checkboxes": "https://www.drupal.org/files/issues/2687773-18-Cleanup-user-input-for-checkboxes-8.2.patch",
                         "Color module html preview optional": "https://www.drupal.org/files/issues/color-optional-html-preview-2844190-2.patch"
@@ -3619,7 +3511,7 @@
                 "GPL-2.0+"
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
-            "time": "2017-06-21T19:40:04+00:00"
+            "time": "2017-06-29T10:45:58+00:00"
         },
         {
             "name": "google/apiclient",
@@ -7572,6 +7464,54 @@
             "time": "2017-04-04T11:38:05+00:00"
         },
         {
+            "name": "commerceguys/zone",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/commerceguys/zone.git",
+                "reference": "9bd0b361a971284442972c42b6749ca855c65435"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/commerceguys/zone/zipball/9bd0b361a971284442972c42b6749ca855c65435",
+                "reference": "9bd0b361a971284442972c42b6749ca855c65435",
+                "shasum": ""
+            },
+            "require": {
+                "commerceguys/addressing": "~1.0",
+                "doctrine/collections": "~1.0",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "1.*",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "2.*",
+                "symfony/intl": ">=2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "CommerceGuys\\Zone\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bojan Zivanovic"
+                }
+            ],
+            "description": "Zone management library.",
+            "time": "2017-04-20T12:44:24+00:00"
+        },
+        {
             "name": "container-interop/container-interop",
             "version": "1.2.0",
             "source": {
@@ -7756,6 +7696,57 @@
                 "web"
             ],
             "time": "2017-06-15T13:59:40+00:00"
+        },
+        {
+            "name": "drupal/libraries",
+            "version": "dev-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/libraries",
+                "reference": "061ead081c92a6209b09eaf23b4e3103f360946e"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.x-dev",
+                    "datestamp": "1487978583"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Pol",
+                    "homepage": "https://www.drupal.org/user/47194"
+                },
+                {
+                    "name": "rjacobs",
+                    "homepage": "https://www.drupal.org/user/422459"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
+                },
+                {
+                    "name": "tstoeckler",
+                    "homepage": "https://www.drupal.org/user/107158"
+                }
+            ],
+            "description": "Allows version-dependent and shared usage of external libraries in Drupal.",
+            "homepage": "http://drupal.org/project/libraries",
+            "support": {
+                "source": "http://cgit.drupalcode.org/libraries",
+                "issues": "http://drupal.org/project/issues/libraries",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
         },
         {
             "name": "fabpot/goutte",

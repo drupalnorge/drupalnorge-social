@@ -1,9 +1,8 @@
-uuid: 210ee337-b5c3-4c97-9014-5c2b747d6b9c
-langcode: nb
+uuid: c35e3bf9-bce9-46c6-9f57-d9b22b8d796e
+langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.post_comment.default
     - core.entity_view_mode.post.activity
     - field.field.post.photo.field_post
     - field.field.post.photo.field_post_comments
@@ -14,12 +13,12 @@ dependencies:
     - image.style.social_post_photo
     - social_post.post_type.photo
   module:
-    - comment
     - image
+    - social_post
     - text
     - user
 _core:
-  default_config_hash: rlKJU-PQBYR-3tRSQbamQN55f1pdTJA6_s6SRmtquQQ
+  default_config_hash: Nsu4_pbDKXm7GZ681P6KBtVU0aY3xHk4aecv8aNybOA
 id: post.photo.activity
 targetEntityType: post
 bundle: photo
@@ -33,13 +32,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_post_comments:
-    type: comment_default
+    type: comment_post
     weight: 3
     region: content
     label: hidden
     settings:
-      view_mode: default
-      pager_id: 0
+      num_comments: '2'
+      order: DESC
     third_party_settings: {  }
   field_post_image:
     weight: 1
