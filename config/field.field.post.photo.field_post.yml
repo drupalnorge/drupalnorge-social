@@ -1,0 +1,23 @@
+uuid: c48254c3-50d8-4178-898c-99d2abad1519
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.post.field_post
+    - social_post.post_type.photo
+  module:
+    - text
+_core:
+  default_config_hash: ni1yGMypEqOQfTgZv9owGxWm01SxD8wXYKQMXGF7Ukg
+id: post.photo.field_post
+field_name: field_post
+entity_type: post
+bundle: photo
+label: Post
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

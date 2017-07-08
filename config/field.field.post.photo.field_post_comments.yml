@@ -1,0 +1,35 @@
+uuid: 109676e9-e106-45b6-94fa-54cd94e821ae
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.post.field_post_comments
+    - social_post.post_type.photo
+  module:
+    - comment
+_core:
+  default_config_hash: TyMNwf-JJ0j5eflLVc5B78rNy5m7_CwaT2FF9e5sqGw
+id: post.photo.field_post_comments
+field_name: field_post_comments
+entity_type: post
+bundle: photo
+label: 'Post comments'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  anonymous: 0
+  form_location: true
+  preview: 0
+field_type: comment

@@ -1,0 +1,23 @@
+uuid: f943306f-590e-46f8-89fa-f7def27357fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_tour
+_core:
+  default_config_hash: YpgiaBCi85pTrPMgY8oT4J7eacZLfA58Vd4xdfvU38E
+id: social-group
+label: 'Group functionality.'
+module: social_tour
+routes:
+  -
+    route_name: entity.group.canonical
+tips:
+  welcome_group:
+    id: welcome_group
+    plugin: text
+    label: 'Welcome on this group page!'
+    body: 'Here you can see all the activity in this group and join it.'
+    weight: 1
+    attributes:
+      backdrop: 1

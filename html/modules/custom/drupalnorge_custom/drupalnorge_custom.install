@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * @file
+ * Install things for drupalnorge_custom.
+ */
+
+/**
+ * Empty update hook.
+ */
+function drupalnorge_custom_update_8000() {
+}
