@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5634e38a48708cacbe0becae60ba6d1d",
+    "content-hash": "bc705581ae5025738ead835af42ac409",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1159,7 +1159,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/address-8.x-1.0-rc4.zip",
-                "reference": "8.x-1.0-rc4",
+                "reference": null,
                 "shasum": "541b020ce839dd9c75374e213c1131d9c1f6f52d"
             },
             "require": {
@@ -1175,7 +1175,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc4",
-                    "datestamp": "1486737287"
+                    "datestamp": "1495109886"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1213,7 +1213,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/addtoany-8.x-1.7.zip",
-                "reference": "8.x-1.7",
+                "reference": null,
                 "shasum": "d11bd0aad032f71c097babd28268b6cf43011c9c"
             },
             "require": {
@@ -1226,7 +1226,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.7",
-                    "datestamp": "1478206740"
+                    "datestamp": "1493344443"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1478,16 +1478,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.3.3",
+            "version": "8.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "98da955d81c79f1a753536ab9c9dad5f80a72922"
+                "reference": "f34eee7255142ab5416107972ef13d011f11e163"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/98da955d81c79f1a753536ab9c9dad5f80a72922",
-                "reference": "98da955d81c79f1a753536ab9c9dad5f80a72922",
+                "url": "https://api.github.com/repos/drupal/core/zipball/f34eee7255142ab5416107972ef13d011f11e163",
+                "reference": "f34eee7255142ab5416107972ef13d011f11e163",
                 "shasum": ""
             },
             "require": {
@@ -1666,7 +1666,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2017-06-07T17:35:30+00:00"
+            "time": "2017-06-21T18:13:27+00:00"
         },
         {
             "name": "drupal/crop",
@@ -2088,11 +2088,17 @@
         },
         {
             "name": "drupal/flag",
-            "version": "dev-4.x",
+            "version": "4.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/flag",
-                "reference": "4f9093a3da47d95dae1a3696309a0741e667dc3d"
+                "reference": "8.x-4.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/flag-8.x-4.0-alpha2.zip",
+                "reference": null,
+                "shasum": "e9ead06aadc9d26364b9ad1225354b0c47d5ce02"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2103,8 +2109,8 @@
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.0-alpha2+7-dev",
-                    "datestamp": "1497044041"
+                    "version": "8.x-4.0-alpha2",
+                    "datestamp": "1494517385"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2149,8 +2155,7 @@
             "homepage": "https://www.drupal.org/project/flag",
             "support": {
                 "source": "http://cgit.drupalcode.org/flag"
-            },
-            "time": "2017-06-09 22:01:59"
+            }
         },
         {
             "name": "drupal/google_analytics",
@@ -2637,7 +2642,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/profile-8.x-1.0-alpha5.zip",
-                "reference": "8.x-1.0-alpha5",
+                "reference": null,
                 "shasum": "58a3efbcc2a2f6689fe3316ef471d31ca7f0fa36"
             },
             "require": {
@@ -2651,7 +2656,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha5",
-                    "datestamp": "1471873739"
+                    "datestamp": "1493741883"
                 },
                 "patches_applied": {
                     "Fixes access control on entities": "https://www.drupal.org/files/issues/profile-accesscontrol-2703825-6.patch"
@@ -2989,7 +2994,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/social_auth-8.x-1.0-beta3.zip",
-                "reference": "8.x-1.0-beta3",
+                "reference": null,
                 "shasum": "fc9eb03034cf68ae1b5a13086aee632b410bb812"
             },
             "require": {
@@ -3003,7 +3008,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta3",
-                    "datestamp": "1487427184"
+                    "datestamp": "1492524242"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3542,16 +3547,16 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "1.0.0-rc6",
+            "version": "1.0.0-rc8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "b81a1d486ec5ac3c74769716e72fd0103d38827f"
+                "reference": "02fe7f515f0ef4c4fbaaae1eda79758eaf38ff03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/b81a1d486ec5ac3c74769716e72fd0103d38827f",
-                "reference": "b81a1d486ec5ac3c74769716e72fd0103d38827f",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/02fe7f515f0ef4c4fbaaae1eda79758eaf38ff03",
+                "reference": "02fe7f515f0ef4c4fbaaae1eda79758eaf38ff03",
                 "shasum": ""
             },
             "require": {
@@ -3564,7 +3569,7 @@
                 "drupal/admin_toolbar": "1.19",
                 "drupal/bootstrap": "3.5",
                 "drupal/config_update": "1.3",
-                "drupal/core": "8.3.3",
+                "drupal/core": "8.3.4",
                 "drupal/crop": "1.2",
                 "drupal/csv_serialization": "1.0",
                 "drupal/devel": "1.0-rc2",
@@ -3572,7 +3577,7 @@
                 "drupal/entity": "1.0-alpha4",
                 "drupal/features": "3.5",
                 "drupal/field_group": "1.0-rc6",
-                "drupal/flag": "4.x-dev#85f84c17cd4c3f822a2b07dff5cc50b77b0dda25",
+                "drupal/flag": "4.0-alpha2",
                 "drupal/group": "1.0-rc1",
                 "drupal/image_widget_crop": "1.5",
                 "drupal/libraries": "3.x-dev#dcd717dc541293ae5c4003f304921cca9200728c",
@@ -3614,7 +3619,7 @@
                 "GPL-2.0+"
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
-            "time": "2017-06-19T10:25:44+00:00"
+            "time": "2017-06-21T19:40:04+00:00"
         },
         {
             "name": "google/apiclient",
