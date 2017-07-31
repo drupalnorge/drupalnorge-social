@@ -1111,7 +1111,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/address-8.x-1.0.zip",
-                "reference": null,
+                "reference": "8.x-1.0",
                 "shasum": "2be22f841f8e4af2ba23b6bc9983e013c167c520"
             },
             "require": {
@@ -1164,7 +1164,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/addtoany-8.x-1.8.zip",
-                "reference": null,
+                "reference": "8.x-1.8",
                 "shasum": "fc3fc0193cb2fd434c0d4112f99287b72f233a41"
             },
             "require": {
@@ -2227,7 +2227,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.26",
-                    "datestamp": "1497409443"
+                    "datestamp": "1499867343"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2847,7 +2847,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.2.zip",
-                "reference": null,
+                "reference": "8.x-1.2",
                 "shasum": "c6359692a220321ee8b4d6c61970b1c846afebe2"
             },
             "require": {
@@ -3568,20 +3568,23 @@
         },
         {
             "name": "firebase/php-jwt",
-            "version": "v4.0.0",
+            "version": "v5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "dccf163dc8ed7ed6a00afc06c51ee5186a428d35"
+                "reference": "9984a4d3a32ae7673d6971ea00bae9d0a1abba0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/dccf163dc8ed7ed6a00afc06c51ee5186a428d35",
-                "reference": "dccf163dc8ed7ed6a00afc06c51ee5186a428d35",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/9984a4d3a32ae7673d6971ea00bae9d0a1abba0e",
+                "reference": "9984a4d3a32ae7673d6971ea00bae9d0a1abba0e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": " 4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -3607,7 +3610,7 @@
             ],
             "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
             "homepage": "https://github.com/firebase/php-jwt",
-            "time": "2016-07-18T04:51:16+00:00"
+            "time": "2017-06-27T22:17:23+00:00"
         },
         {
             "name": "goalgorilla/open_social",
@@ -3783,20 +3786,20 @@
         },
         {
             "name": "google/auth",
-            "version": "v1.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-auth-library-php.git",
-                "reference": "db77bd2de0bcc40bf50ebe851e9eed332aeaa4df"
+                "reference": "db8e3022a308cb0e988026d38e67b91a42b41622"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-auth-library-php/zipball/db77bd2de0bcc40bf50ebe851e9eed332aeaa4df",
-                "reference": "db77bd2de0bcc40bf50ebe851e9eed332aeaa4df",
+                "url": "https://api.github.com/repos/google/google-auth-library-php/zipball/db8e3022a308cb0e988026d38e67b91a42b41622",
+                "reference": "db8e3022a308cb0e988026d38e67b91a42b41622",
                 "shasum": ""
             },
             "require": {
-                "firebase/php-jwt": "~2.0|~3.0|~4.0",
+                "firebase/php-jwt": "~2.0|~3.0|~4.0|~5.0",
                 "guzzlehttp/guzzle": "~5.3.1|~6.0",
                 "guzzlehttp/psr7": "~1.2",
                 "php": ">=5.4",
@@ -3827,7 +3830,7 @@
                 "google",
                 "oauth2"
             ],
-            "time": "2017-06-13T18:00:07+00:00"
+            "time": "2017-07-31T16:34:40+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -7772,7 +7775,7 @@
                 }
             ],
             "description": "Zone management library.",
-            "time": "2017-04-20T12:44:24+00:00"
+            "time": "2017-04-20 12:44:24"
         },
         {
             "name": "container-interop/container-interop",
@@ -8009,7 +8012,8 @@
                 "source": "http://cgit.drupalcode.org/libraries",
                 "issues": "http://drupal.org/project/issues/libraries",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            }
+            },
+            "time": "2017-03-15 17:04:08"
         },
         {
             "name": "fabpot/goutte",
