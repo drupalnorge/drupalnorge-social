@@ -8,5 +8,5 @@
 /**
  * Empty update hook.
  */
-function drupalnorge_custom_update_8000() {
+function drupalnorge_custom_update_8001() {
 }
