@@ -29,7 +29,7 @@ display:
       header:
         area:
           content:
-            value: '<h4 class="section-title">Content results</h4><p>If you are searching for users, <a href="/search/users/{{ arguments.search_api_fulltext }}">click here</a> If you are searching for groups, <a href="/search/groups/{{ arguments.search_api_fulltext }}">click here</a></p>'
+            value: '<h4 class="section-title">Content results</h4>'
       empty:
         area:
           content:
@@ -44,7 +44,7 @@ display:
       header:
         area:
           content:
-            value: '<h4 class="section-title">Content results</h4><p>If you are searching for users, <a href="/search/users/{{ arguments.search_api_fulltext }}">click here</a> If you are searching for groups, <a href="/search/groups/{{ arguments.search_api_fulltext }}">click here</a></p>'
+            value: '<h4 class="section-title">Content results</h4>'
   page_no_value:
     display_title: 'Page (no value)'
     display_options:

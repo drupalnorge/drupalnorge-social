@@ -41,11 +41,13 @@ module:
   help: 0
   honeypot: 0
   image: 0
+  image_effects: 0
   image_widget_crop: 0
   language: 0
   like_and_dislike: 0
   link: 0
   locale: 0
+  mailsystem: 0
   mentions: 0
   menu_link_content: 0
   menu_ui: 0
@@ -77,10 +79,12 @@ module:
   social_post_photo: 0
   social_profile: 0
   social_search: 0
+  social_swiftmail: 0
   social_topic: 0
   social_tour: 0
   social_user: 0
   sparkpost: 0
+  swiftmailer: 0
   system: 0
   taxonomy: 0
   telephone: 0
