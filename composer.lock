@@ -2230,7 +2230,11 @@
                 },
                 "drupal": {
                     "version": "8.x-1.26",
-                    "datestamp": "1497409443"
+                    "datestamp": "1499867343",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
