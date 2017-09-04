@@ -30,6 +30,9 @@
         }
     ],
     "scripts": {
+      "import": {
+        "./vendor/bin/drush --root=$(pwd)/html cim -y"
+      },
       "post-install-cmd": [
         "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
       ],
@@ -44,7 +47,7 @@
         "git pull",
         "@composer install --no-dev",
         "./vendor/bin/drush --root=$(pwd)/html updb -y",
-        "./vendor/bin/drush --root=$(pwd)/html cim -y",
+        "@composer import",
         "./vendor/bin/drush --root=$(pwd)/html cr"
       ]
     },
