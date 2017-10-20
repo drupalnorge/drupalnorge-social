@@ -7864,7 +7864,7 @@
                 }
             ],
             "description": "Zone management library.",
-            "time": "2017-04-20T12:44:24+00:00"
+            "time": "2017-04-20 12:44:24"
         },
         {
             "name": "container-interop/container-interop",
@@ -8105,7 +8105,8 @@
                 "source": "http://cgit.drupalcode.org/libraries",
                 "issues": "http://drupal.org/project/issues/libraries",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            }
+            },
+            "time": "2017-03-15 17:04:08"
         },
         {
             "name": "fabpot/goutte",
