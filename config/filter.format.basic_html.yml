@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - editor
+    - mentions
 _core:
   default_config_hash: Myn8s2mj1Z1gdYZEra7cRipwLoHjsGef2RiLCO_E2-k
 name: 'Basic HTML'
@@ -56,3 +57,12 @@ filters:
     status: true
     weight: 0
     settings: {  }
+  filter_mentions:
+    id: filter_mentions
+    provider: mentions
+    status: true
+    weight: -10
+    settings:
+      mentions_filter:
+        ProfileMention: '0'
+        UserMention: '0'
