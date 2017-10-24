@@ -4,7 +4,7 @@ html/core
 html/modules/contrib
 html/themes/contrib
 html/profiles/contrib
-
+/html/libraries
 # Ignore Drupal's file directory
 html/sites/*/files
 
