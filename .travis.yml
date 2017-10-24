@@ -14,7 +14,7 @@ before_install:
   - composer --verbose self-update
   - composer --version
   - mysql -e "create database IF NOT EXISTS test;" -uroot
-  - wget http://drupalnorge-social-old.e-o.no/sanitized.sql
+  - wget https://drupalnorge.no/sanitized.db
 
 install:
   - composer --verbose install
@@ -22,7 +22,7 @@ install:
   - chmod -R 777 sites/default
   - touch sites/default/settings.local.php
   - ./../vendor/bin/drush site-install social --verbose --yes --db-url=mysql://root@127.0.0.1/test
-  - ./../vendor/bin/drush sql-cli < ../sanitized.sql
+  - ./../vendor/bin/drush sql-cli < ../sanitized.db
   - ./../vendor/bin/drush updb --verbose --yes
   - ./../vendor/bin/drush cim --verbose --yes
   - ./../vendor/bin/drush cr

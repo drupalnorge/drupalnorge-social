@@ -8,7 +8,7 @@ Clone this repository. For example with:
 
 `git clone git@github.com:drupalnorge/drupalnorge-social.git`
 
-If you want a database dump, here is one: [drupalnorge-social.e-o.no/sanitized.sql](http://drupalnorge-social.e-o.no/sanitized.sql)
+If you want a database dump, here is one: [https://drupalnorge.no/sanitized.db](https://drupalnorge.no/sanitized.db)
 
 `cd` into the repository root. Install the composer dependencies. For example with:
 
