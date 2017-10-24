@@ -1,5 +1,5 @@
 uuid: ba0019ab-058f-4ba5-9136-fdcefe7fbc99
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,10 +9,12 @@ dependencies:
     - views
   theme:
     - socialblue
+_core:
+  default_config_hash: RymhcPR3B-3uuTJ92k7c0gWRYQVr6wZCa5q4AFJ0C5E
 id: socialblue_views_block__activity_stream_block_stream_homepage
 theme: socialblue
 region: content
-weight: -26
+weight: null
 provider: null
 plugin: 'views_block:activity_stream-block_stream_homepage'
 settings:

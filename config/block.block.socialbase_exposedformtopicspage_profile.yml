@@ -1,5 +1,5 @@
 uuid: dbf76f9f-e1f3-426b-a809-54fc4eea8ecb
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -10,6 +10,8 @@ dependencies:
     - views
   theme:
     - socialbase
+_core:
+  default_config_hash: ZPwVLWBhxw-Bxk-zSesuK63a8uXbqD_GUoEquIn-Rv4
 id: socialbase_exposedformtopicspage_profile
 theme: socialbase
 region: complementary_top

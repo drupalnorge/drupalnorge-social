@@ -1,0 +1,21 @@
+uuid: 10fda780-278a-4823-a478-4bf169d6a6be
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.closed_group
+    - node.type.topic
+  module:
+    - gnode
+    - node
+_core:
+  default_config_hash: epw4DZ0eXhrFncFtPdG524rOwJImLLuWSg2Lyh6NOYE
+id: closed_group-group_node-topic
+label: topic
+description: 'Adds <em class="placeholder">Topic</em> content to groups both publicly and privately.'
+group_type: closed_group
+content_plugin: 'group_node:topic'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false

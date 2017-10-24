@@ -1,5 +1,5 @@
 uuid: 28874795-fbc1-4b0a-b9f2-30bb8911ba1b
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -17,20 +17,20 @@ third_party_settings:
     activity_aggregate: 0
     activity_entity_condition: comment_not_reply
 _core:
-  default_config_hash: ExRrJBE89CITmLMLC4OYDOunY1p0cRHk1VkY7kTpOZE
+  default_config_hash: ebTULGw-OfZo5D5dnHsNBKXwMV3yRIrKE12yztCSZYI
 template: create_comment_post_profile
 label: 'Create comment on post on my profile'
 description: 'A person commented on the post posted on my profile'
 text:
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on a post on your <a href=\"[message:recipient-user-url]\">profile</a></p>\r\n"
     format: full_html
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on a post on your <a href=\"[message:recipient-user-url]\">profile</a></p>\r\n"
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on a post on your <a href=\"[message:recipient-user-url]\">profile</a></p>\r\n"
     format: full_html
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on a post on your <a href=\"[message:recipient-user-url]\">profile</a></p>\r\n"
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on a post on your <a href=\"[message:recipient-user-url]\">profile</a></p>\r\n"
     format: full_html
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> commented on a post on your <a href="[message:recipient-user-url]">profile</a></p>'
 settings:
   'token options':
     clear: false

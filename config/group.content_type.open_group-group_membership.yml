@@ -1,5 +1,5 @@
 uuid: c989ddb0-e01e-448e-9f90-c30eb529b5a7
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -7,7 +7,7 @@ dependencies:
   module:
     - user
 _core:
-  default_config_hash: ZtHvErD3Ms8F0iLJYj3lKcC4xb1iGYruNZsp4NxTqFA
+  default_config_hash: ANRuEQZLCnuSVkBzT8h_wvvOREIVnH_5-o2zAjoY6Gs
 id: open_group-group_membership
 label: 'Open group: Group membership'
 description: 'Adds users to groups as members.'
@@ -16,3 +16,4 @@ content_plugin: group_membership
 plugin_config:
   group_cardinality: 0
   entity_cardinality: 1
+  use_creation_wizard: false

@@ -1,5 +1,5 @@
 uuid: d43906f7-d5ea-40f8-9ff6-317dd8f075ab
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: 7nu6Yrca-1OevP7owUffjJiYzuZ0XIfR63PtrQhrEz8
+  default_config_hash: i-BaHuB0bPB7XiAUCcg65ciAm48O8Q_mJ5d1hqOhrNE
 id: block_content.hero_call_to_action_block.field_hero_image
 field_name: field_hero_image
 entity_type: block_content
@@ -21,12 +21,12 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'gif jpg jpeg'
+  file_extensions: 'gif jpg jpeg png'
   max_filesize: '50 MB'
   max_resolution: 2048x1080
   min_resolution: 200x200
-  alt_field: true
-  alt_field_required: true
+  alt_field: false
+  alt_field_required: false
   title_field: false
   title_field_required: false
   default_image:

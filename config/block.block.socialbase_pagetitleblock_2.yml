@@ -1,5 +1,5 @@
 uuid: ec1a4f21-111a-476c-835b-0193241b6075
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,8 @@ dependencies:
     - system
   theme:
     - socialbase
+_core:
+  default_config_hash: pW3WXIcTtVib_25hwdsqsHPOTa5XROdm6ob58PVm74M
 id: socialbase_pagetitleblock_2
 theme: socialbase
 region: hero

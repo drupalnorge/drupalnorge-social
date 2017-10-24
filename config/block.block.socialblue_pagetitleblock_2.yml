@@ -1,5 +1,5 @@
 uuid: 643a4342-dfc8-469b-a714-c768237a3af7
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,8 @@ dependencies:
     - system
   theme:
     - socialblue
+_core:
+  default_config_hash: _gholCIy4qz-qp5b2aPXUhGV7wSuWOoC500E2HCimmU
 id: socialblue_pagetitleblock_2
 theme: socialblue
 region: hero
@@ -21,6 +23,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "*/enrollments\r\n*/managers"
+    pages: "*/enrollments\r\n*/organisers"
     negate: false
     context_mapping: {  }

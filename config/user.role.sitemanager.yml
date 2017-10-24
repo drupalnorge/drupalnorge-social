@@ -139,6 +139,7 @@ permissions:
   - 'view own profile profile'
   - 'view own unpublished content'
   - 'view page revisions'
+  - 'view profile'
   - 'view profile email'
   - 'view public posts'
   - 'view published font entities'

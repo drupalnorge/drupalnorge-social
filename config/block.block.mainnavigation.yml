@@ -1,5 +1,5 @@
 uuid: 14ac6d76-d9ee-4fe4-a40d-03ba8ad490e8
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,6 +8,8 @@ dependencies:
     - system
   theme:
     - socialbase
+_core:
+  default_config_hash: QEZqe0BMNaDhsbghSITjww9qBgjtbfophAMSJNzw8cc
 id: mainnavigation
 theme: socialbase
 region: header

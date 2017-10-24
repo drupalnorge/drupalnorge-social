@@ -1,5 +1,5 @@
 uuid: a88e104c-b005-4b15-941d-e434ced4cbf8
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -15,12 +15,12 @@ dependencies:
     - activity_creator
     - dynamic_entity_reference
 _core:
-  default_config_hash: P_grx-Z1nkyX1KpQXbp4INfG3UEHW_DgkHNrk6YGCZc
+  default_config_hash: ppRhEM1LrV_b49cOQDQYvFnKzJaey1Y8WO-JL1uyEzs
 id: activity.activity.field_activity_entity
 field_name: field_activity_entity
 entity_type: activity
 bundle: activity
-label: Entitet
+label: Entity
 description: ''
 required: false
 translatable: false

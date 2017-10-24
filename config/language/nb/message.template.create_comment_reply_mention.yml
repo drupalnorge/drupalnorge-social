@@ -1,10 +1,10 @@
 text:
   -
-    value: "<p><a href=\"[message:author:url:relative]\">[message:author:display-name]</a> svarte på en kommentar der du er nevnt</p>\r\n"
+    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> replied to a comment where you are mentioned</p>'
     format: full_html
   -
-    value: "<p><a href=\"[message:author:url:relative]\">[message:author:display-name]</a>&nbsp;svarte på en kommentar der du er nevnt.</p>\r\n"
+    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> replied to a comment where you are mentioned</p>'
     format: full_html
   -
-    value: "<p><a href=\"[message:author:url:relative]\">[message:author:display-name]</a> svarte på en <a href=\"[message:field_message_related_object:entity:url:absolute]\">kommentar</a> der du er nevnt</p>\r\n"
+    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> replied to a <a href="[message:field_message_related_object:entity:url:absolute]">comment</a> where you are mentioned</p>'
     format: full_html

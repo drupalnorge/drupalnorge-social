@@ -1,5 +1,5 @@
 uuid: 3e481074-b871-4bd5-8c1b-54d634a18e91
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - socialbase
+_core:
+  default_config_hash: Uytm_C0GW6HvQiH-AIMay8WQRUTxMaYpfOxCzg20Hf8
 id: views_block__event_enrollments_event_enrollments_socialbase
 theme: socialbase
 region: complementary_top

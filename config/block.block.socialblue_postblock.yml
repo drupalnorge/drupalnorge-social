@@ -1,5 +1,5 @@
 uuid: 2e9ba291-ed25-4be9-a8ce-05c70448c23c
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,8 @@ dependencies:
     - system
   theme:
     - socialblue
+_core:
+  default_config_hash: THj7ZZhBJZBZcOYZCN5a2t0IzBvF1cQgKEnXrkyn23I
 id: socialblue_postblock
 theme: socialblue
 region: hidden

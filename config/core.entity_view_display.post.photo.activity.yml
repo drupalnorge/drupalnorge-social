@@ -1,5 +1,5 @@
 uuid: c35e3bf9-bce9-46c6-9f57-d9b22b8d796e
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -18,7 +18,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: Nsu4_pbDKXm7GZ681P6KBtVU0aY3xHk4aecv8aNybOA
+  default_config_hash: XbHSbFY2mk-IknfUMx6Ra6giQISegcxRyqqVZap6f70
 id: post.photo.activity
 targetEntityType: post
 bundle: photo

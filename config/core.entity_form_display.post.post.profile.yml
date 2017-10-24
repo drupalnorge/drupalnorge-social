@@ -1,5 +1,5 @@
 uuid: 3423d7c4-4d5b-457e-b926-6d2da289ba35
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,11 +9,11 @@ dependencies:
     - field.field.post.post.field_recipient_group
     - field.field.post.post.field_recipient_user
     - field.field.post.post.field_visibility
+    - social_post.post_type.post
   module:
     - dropdown
-    - social_post
 _core:
-  default_config_hash: j3pBD3sb_yg2RV15TdpQSMnqBVbMjJsQkv4sHBlle4k
+  default_config_hash: '-TXzZOOrCRMu-qamSvMz0KbfVw6wdKFxAvu1B8fUM8Y'
 id: post.post.profile
 targetEntityType: post
 bundle: post
@@ -24,7 +24,7 @@ content:
     weight: 0
     settings:
       rows: 5
-      placeholder: 'Hva tenker du på?'
+      placeholder: 'What''s on your mind?'
     third_party_settings: {  }
     region: content
   field_visibility:

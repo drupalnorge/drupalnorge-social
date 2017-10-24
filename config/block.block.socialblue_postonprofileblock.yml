@@ -1,5 +1,5 @@
 uuid: f696e886-5f58-4aeb-9e93-9fffcbbdfa33
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,8 @@ dependencies:
     - system
   theme:
     - socialblue
+_core:
+  default_config_hash: Keolfk9f2yJvo-tVh71uqBoVc2jm2oCVvhvjHciUayA
 id: socialblue_postonprofileblock
 theme: socialblue
 region: hidden

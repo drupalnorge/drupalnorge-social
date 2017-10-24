@@ -1,5 +1,5 @@
 uuid: 39469740-4e76-44b8-a386-7f38c98bc379
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -18,7 +18,7 @@ dependencies:
     - social_post
     - votingapi
 _core:
-  default_config_hash: RMiQPfGDcmWNcu2QNNtUxLJvjXlxFZ2rkckbcdXlNfk
+  default_config_hash: _EtG5ISz88zoWMFPq3KuLxu76hXW3attXKepfyTMnhE
 id: activity.field_activity_entity
 field_name: field_activity_entity
 entity_type: activity

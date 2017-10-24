@@ -1,5 +1,5 @@
 uuid: 6b9a1e1b-68f3-4103-b13e-b177cea94e1e
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,6 +8,8 @@ dependencies:
     - system
   theme:
     - socialblue
+_core:
+  default_config_hash: 38d56nuhCmqWOSx7yvBPp1ejo21DLF35I7zIk-CsPTM
 id: socialblue_mainnavigation
 theme: socialblue
 region: header

@@ -1,9 +1,10 @@
 uuid: 2dda40cf-294e-438c-bc23-c95b50f2f86d
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.group_content.teaser
+    - group.content_type.closed_group-group_node-event
     - group.content_type.open_group-group_node-event
   module:
     - datetime
@@ -11,9 +12,9 @@ dependencies:
     - node
     - social_event
 _core:
-  default_config_hash: '-SgPCen-8ecG1X9JIJQ0nE7grcx1mTZfoUWXMKA8luM'
+  default_config_hash: U9RO5AdLIkxPFLpJ_Oz5J2bXOkDKJa2hLieYCilC9ec
 id: group_events
-label: 'Hendelser i gruppa'
+label: 'Group Events'
 module: views
 description: ''
 tag: ''
@@ -24,7 +25,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Hoved
+    display_title: Master
     position: 0
     display_options:
       access:
@@ -45,13 +46,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Bruk
+          submit_button: Apply
           reset_button: true
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: false
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: mini
         options:
@@ -61,12 +62,12 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementer per side'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskyving
+            offset_label: Offset
           tags:
             previous: ‹‹
             next: ››
@@ -149,6 +150,7 @@ display:
           field: type
           value:
             open_group-group_node-event: open_group-group_node-event
+            closed_group-group_node-event: closed_group-group_node-event
           entity_type: group_content
           entity_field: type
           plugin_id: bundle
@@ -181,7 +183,7 @@ display:
               authenticated: authenticated
           is_grouped: true
           group_info:
-            label: 'Status for hendelse'
+            label: 'Event status'
             description: ''
             identifier: field_event_date_value
             optional: false
@@ -192,7 +194,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: 'Kommende hendelser'
+                title: 'Upcoming events'
                 operator: '>='
                 value:
                   type: offset
@@ -200,7 +202,7 @@ display:
                   min: ''
                   max: ''
               2:
-                title: 'Hendelser som har startet eller er ferdige'
+                title: 'Events that have started or are finished'
                 operator: '<'
                 value:
                   type: offset
@@ -259,7 +261,7 @@ display:
           granularity: minute
           entity_type: node
           plugin_id: event_passed_upcoming_sort
-      title: 'Hendelser i gruppa'
+      title: 'Group Events'
       header: {  }
       footer: {  }
       empty:
@@ -272,7 +274,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'Ingen hendelser i denne gruppa'
+          content: 'No events in this group'
           plugin_id: text_custom
       relationships:
         gc__node:
@@ -301,7 +303,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: false
           title: ''
           default_argument_type: fixed
@@ -341,7 +343,7 @@ display:
   page_group_events:
     display_plugin: page
     id: page_group_events
-    display_title: Side
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }

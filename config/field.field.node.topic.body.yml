@@ -1,5 +1,5 @@
 uuid: deb933d3-77c9-405d-a012-6ae490444aae
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:

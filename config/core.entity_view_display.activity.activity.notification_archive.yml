@@ -1,5 +1,5 @@
 uuid: 2497d216-33ce-439f-b922-bbe35bd64bd6
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -15,7 +15,7 @@ dependencies:
     - activity_creator
     - text
 _core:
-  default_config_hash: ROQpW_hcMpiPNvy3Ft77KvaHpGvMTtnl2h90JpdUfsA
+  default_config_hash: 1qnzzMicL7yqujKS0pmwRQZrt6vDOFbLyjsAbKfX5zQ
 id: activity.activity.notification_archive
 targetEntityType: activity
 bundle: activity

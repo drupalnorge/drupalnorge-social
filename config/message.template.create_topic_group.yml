@@ -1,5 +1,5 @@
 uuid: 7f5297f9-474e-46ad-a02d-ccaaeaa199b5
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -8,17 +8,15 @@ third_party_settings:
   activity_logger:
     activity_context: group_activity_context
     activity_destinations:
-      stream_profile: stream_profile
-      stream_group: stream_group
       notifications: notifications
       stream_explore: stream_explore
+      stream_group: stream_group
       stream_home: stream_home
+      stream_profile: stream_profile
     activity_create_direct: 0
     activity_action: create_entitiy_action
     activity_bundle_entities:
       node-topic: node-topic
-    activity_aggregate: 0
-    activity_entity_condition: ''
 _core:
   default_config_hash: N79DYQkHx2R-vNUDtEmgqyvdIojA5nqaVA_ZcTffHJ4
 template: create_topic_group
@@ -26,11 +24,14 @@ label: 'Create topic in group'
 description: 'A user created a topic in a group'
 text:
   -
-    value: "<p><a href=\"[message:author:url:relative]\">[message:author:display-name]</a> opprettet et innlegg i&nbsp;<a href=\"[message:gurl]\">[message:gtitle]</a></p>\r\n"
     format: full_html
+    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> created a topic in <a href="[message:gurl]">[message:gtitle]</a></p>'
 settings:
   'token options':
     clear: false
     'token replace': true
-  purge_override: false
-  purge_methods: {  }
+  purge:
+    override: false
+    enabled: false
+    quota: null
+    days: null

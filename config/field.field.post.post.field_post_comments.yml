@@ -1,14 +1,14 @@
 uuid: 54623668-99ba-4374-b451-d3de5f30fe0f
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
     - field.storage.post.field_post_comments
+    - social_post.post_type.post
   module:
     - comment
-    - social_post
 _core:
-  default_config_hash: VxsbTIFYIflteYCIvR_u6Nt7XMiqMLrdRZ6-sFcqSbk
+  default_config_hash: AQ9iC2hR5QGEr6dkImYd5RVm0egxSfZEDDaHShMANws
 id: post.post.field_post_comments
 field_name: field_post_comments
 entity_type: post

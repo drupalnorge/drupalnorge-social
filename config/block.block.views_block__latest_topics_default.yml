@@ -1,5 +1,5 @@
 uuid: 11c6cab2-098b-47d1-bd0c-7c68b352233e
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - socialbase
+_core:
+  default_config_hash: wmSwdlCOcGaB5p146V6MPX8IFkY7D98dgcgE97Ru9Ro
 id: views_block__latest_topics_default
 theme: socialbase
 region: complementary_bottom

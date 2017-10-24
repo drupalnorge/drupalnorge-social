@@ -30,6 +30,7 @@ module:
   entity: 0
   entity_access_by_field: 0
   features: 0
+  features_ui: 0
   field: 0
   field_group: 0
   field_ui: 0

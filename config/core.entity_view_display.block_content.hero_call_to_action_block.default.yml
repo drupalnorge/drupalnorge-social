@@ -1,5 +1,5 @@
 uuid: 44721677-f799-458e-8c34-f726eccd7b17
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -7,13 +7,13 @@ dependencies:
     - field.field.block_content.hero_call_to_action_block.field_call_to_action_link
     - field.field.block_content.hero_call_to_action_block.field_hero_image
     - field.field.block_content.hero_call_to_action_block.field_text_block
-    - image.style.social_xx_large
+    - image.style.social_an_hero
   module:
     - image
     - link
     - text
 _core:
-  default_config_hash: l91dwQUmSfwXUa_5ipho-vlTj2cJskmjRs1ehVVtD2k
+  default_config_hash: G81ZXOHApcfxH8R-pvWpcDpChdmnLoMKkTjL_elLX98
 id: block_content.hero_call_to_action_block.default
 targetEntityType: block_content
 bundle: hero_call_to_action_block
@@ -36,7 +36,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: social_xx_large
+      image_style: social_an_hero
       image_link: ''
     third_party_settings: {  }
     region: content

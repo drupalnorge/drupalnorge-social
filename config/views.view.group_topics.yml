@@ -1,9 +1,10 @@
 uuid: 7019724d-9a22-4553-92c2-5f9aa11d6ce3
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.group_content.teaser
+    - group.content_type.closed_group-group_node-topic
     - group.content_type.open_group-group_node-topic
     - taxonomy.vocabulary.topic_types
   module:
@@ -11,9 +12,9 @@ dependencies:
     - node
     - taxonomy
 _core:
-  default_config_hash: 3JQVl57csa-iFa6jWVEZf2E2Cb0yGQ1O6lZj_X-X_rY
+  default_config_hash: gEtfQTTL0PkY2DZvAUq03bg2MGKfakXbCKa0_U2RI5A
 id: group_topics
-label: 'Emner for gruppa'
+label: 'Group Topics'
 module: views
 description: ''
 tag: ''
@@ -24,7 +25,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Hoved
+    display_title: Master
     position: 0
     display_options:
       access:
@@ -45,13 +46,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filtrer
+          submit_button: Filter
           reset_button: true
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: false
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: mini
         options:
@@ -61,12 +62,12 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementer per side'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskyving
+            offset_label: Offset
           tags:
             previous: ‹‹
             next: ››
@@ -152,6 +153,7 @@ display:
           admin_label: ''
           operator: in
           value:
+            closed_group-group_node-topic: closed_group-group_node-topic
             open_group-group_node-topic: open_group-group_node-topic
           group: 1
           exposed: false
@@ -243,7 +245,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: Publiseringsstatus
+            label: 'Published status'
             description: ''
             use_operator: false
             operator: status_op
@@ -309,7 +311,7 @@ display:
             group_items: {  }
           plugin_id: node_access
       sorts: {  }
-      title: 'Emner for gruppa'
+      title: 'Group Topics'
       header: {  }
       footer: {  }
       empty:
@@ -322,7 +324,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'Ingen emner i denne gruppa'
+          content: 'No topics in this group'
           plugin_id: text_custom
       relationships:
         gc__node:
@@ -351,7 +353,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: false
           title: ''
           default_argument_type: fixed
@@ -396,7 +398,7 @@ display:
   page_group_topics:
     display_plugin: page
     id: page_group_topics
-    display_title: Side
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }

@@ -1,11 +1,13 @@
 uuid: b841539f-d46e-42d3-b0c0-77cc931f8365
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
     - help
   theme:
     - socialblue
+_core:
+  default_config_hash: 0iJl2CxUvihBkc9ahyOCUVOIr_SJWb44MrpGeCylupU
 id: socialblue_help
 theme: socialblue
 region: content

@@ -1,5 +1,5 @@
 uuid: 4ef197fa-85b9-486b-bb1d-a2bdb12b49ca
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -17,7 +17,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: cZwrtERYH9j6KkcBHhD5M9ex1uxCJ96pBO2oQLDxp9w
+  default_config_hash: h2Y7ZAqTmsEq-vxjHwUIZH8I9Bp1fuS5RSagP1yBKQw
 id: node.topic.search_index
 targetEntityType: node
 bundle: topic

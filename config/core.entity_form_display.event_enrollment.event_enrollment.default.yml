@@ -1,5 +1,5 @@
 uuid: f270f5df-4626-40c8-b72a-703682bf4cf5
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,7 +9,7 @@ dependencies:
   module:
     - social_event
 _core:
-  default_config_hash: C_7USEsQ9cHGVgmzqcaIduiSg0kyWR5Jo-4GYzMGZTQ
+  default_config_hash: NMbvfZgCd0-cBojlZ5n_KDJOjX69vRHjnCw-i5a_hMc
 id: event_enrollment.event_enrollment.default
 targetEntityType: event_enrollment
 bundle: event_enrollment

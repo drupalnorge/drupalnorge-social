@@ -1,5 +1,5 @@
 uuid: 2f60b484-0abe-4011-a930-c3c88e3b7f5d
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -69,7 +69,7 @@ third_party_settings:
         id: visibility
         classes: 'card '
 _core:
-  default_config_hash: 9ieRV37FVd1XPUz4F6_6fvHJa26-9d90U1ueAv5CXLA
+  default_config_hash: mkwgqbJvrXpKsG7Ml8Y0AIOBsaQgzaNlAypB8vcRTE8
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -126,9 +126,9 @@ content:
   langcode:
     type: language_select
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   path:
     type: path
     weight: 7

@@ -1,5 +1,5 @@
 uuid: 22226abb-711b-40f8-bbd6-e2614fd09be5
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,8 @@ dependencies:
     - user
   theme:
     - socialblue
+_core:
+  default_config_hash: zpcjUu6OMyoQyljn-E2MugD-9fskGdQ9FMtI1B2Fvp0
 id: socialblue_local_tasks
 theme: socialblue
 region: secondary_navigation

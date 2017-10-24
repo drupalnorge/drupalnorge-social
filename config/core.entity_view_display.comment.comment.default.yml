@@ -1,5 +1,5 @@
 uuid: 14347b30-ba49-43d5-83cb-d1257190b856
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: STjvSHMb_WqPlExGv_WIpwtwbiX2NHRq1mViOvyLsm4
+  default_config_hash: esymz5RiLq0PxhqIKk-wiYSBKvGVfORSsdNPYujTZcw
 id: comment.comment.default
 targetEntityType: comment
 bundle: comment
@@ -22,12 +22,12 @@ content:
     type: text_default
     region: content
   like_and_dislike:
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: content
   links:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content

@@ -1,5 +1,5 @@
 uuid: 6d44ebff-2d51-4e8d-ad41-b7633e585b8a
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -9,11 +9,11 @@ third_party_settings:
     available_menus: {  }
     parent: ''
 _core:
-  default_config_hash: ou941oKcqqATWhOYNjV7vssGOZ9nbFseetTwpy6chTk
+  default_config_hash: YAfFfoWEwsZ4zhpgJul5q3wxYHutZ-dr0xHiDuvSfX8
 name: Topic
 type: topic
 description: ''
 help: ''
 new_revision: false
 preview_mode: 1
-display_submitted: false
+display_submitted: true

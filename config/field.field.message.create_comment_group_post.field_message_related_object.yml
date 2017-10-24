@@ -1,5 +1,5 @@
 uuid: ec541633-a423-4b16-83e6-e023ac8a8507
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -10,7 +10,7 @@ dependencies:
   module:
     - dynamic_entity_reference
 _core:
-  default_config_hash: VQZA13pj0uttBol4EbZz-d8qhVePIiv91tz9l_bDNP8
+  default_config_hash: 9W8nCkR8cG8qoiRxFGR42OAcvXg9zCXQV19gQ0XoqaE
 id: message.create_comment_group_post.field_message_related_object
 field_name: field_message_related_object
 entity_type: message

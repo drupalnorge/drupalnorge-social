@@ -1,0 +1,35 @@
+uuid: 4d721f59-2cc6-494c-9c2c-9d5140c29b7b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.group.small_teaser
+    - field.field.group.closed_group.field_group_address
+    - field.field.group.closed_group.field_group_description
+    - field.field.group.closed_group.field_group_image
+    - field.field.group.closed_group.field_group_location
+    - group.type.closed_group
+_core:
+  default_config_hash: biTLuwMMWnCwOMegZgoYEsBW8hOjn2WrxQfPJBZjvOw
+id: group.closed_group.small_teaser
+targetEntityType: group
+bundle: closed_group
+mode: small_teaser
+content:
+  label:
+    label: hidden
+    type: string
+    weight: -5
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_group_address: true
+  field_group_description: true
+  field_group_image: true
+  field_group_location: true
+  langcode: true
+  uid: true

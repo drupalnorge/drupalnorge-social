@@ -1,5 +1,5 @@
 uuid: 2386ab28-7541-4831-9ac7-5db9fde38864
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: node.event.field_event_comments
 field_name: field_event_comments
 entity_type: node
 bundle: event
-label: Kommentarer
+label: Comments
 description: ''
 required: false
 translatable: false

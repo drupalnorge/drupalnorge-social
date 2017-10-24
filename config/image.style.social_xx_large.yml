@@ -1,11 +1,12 @@
 uuid: 97339916-4441-49a8-a1d6-b925aba8038d
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
     - crop
+    - image_effects
 _core:
-  default_config_hash: W-_fzr543T2d9eKxnPNPGvBJdWyq9aZCZjNW5y5PZGw
+  default_config_hash: snYarEUY4HvSM4DSvHHqjGMCTgXuqoU5vfR_SWKfY4U
 name: social_xx_large
 label: 'social extra extra large (1200 x 423)'
 effects:
@@ -22,3 +23,9 @@ effects:
     data:
       width: 1200
       height: 423
+  fa621cfb-8201-4ac7-8dd1-a9a1f6031115:
+    uuid: fa621cfb-8201-4ac7-8dd1-a9a1f6031115
+    id: image_effects_auto_orient
+    weight: 3
+    data:
+      scan_exif: true

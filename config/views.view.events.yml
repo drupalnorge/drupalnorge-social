@@ -1,5 +1,5 @@
 uuid: da63b453-1c41-492e-aff4-20f6cc29433a
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -25,7 +25,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Hoved
+    display_title: Master
     position: 0
     display_options:
       access:
@@ -46,10 +46,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filtrer
+          submit_button: Filter
           reset_button: true
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: ascending
           sort_desc_label: descending
@@ -62,17 +62,17 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementer per side'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskyving
+            offset_label: Offset
           tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
-            first: '« Første'
-            last: 'Siste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           quantity: 9
       style:
         type: default
@@ -182,7 +182,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: Publiseringsstatus
+            label: 'Publish status'
             description: ''
             use_operator: false
             operator: status_op
@@ -260,7 +260,7 @@ display:
             label: ''
           granularity: second
           plugin_id: datetime
-      title: 'Hendelser for denne brukeren'
+      title: 'Events for this user'
       header: {  }
       footer: {  }
       empty:
@@ -273,7 +273,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'Ingen hendelser funnet for denne brukeren.'
+          content: 'No events found for this user'
           plugin_id: text_custom
       relationships: {  }
       arguments: {  }
@@ -377,7 +377,7 @@ display:
           exposed: false
           expose:
             operator_id: ''
-            label: Publiseringsstatus
+            label: 'Publish status'
             description: ''
             use_operator: false
             operator: status_op
@@ -525,7 +525,7 @@ display:
         operator: AND
         groups:
           1: AND
-      title: 'Kommende hendelser'
+      title: 'Upcoming events'
     cache_metadata:
       max-age: -1
       contexts:
@@ -545,7 +545,7 @@ display:
       path: user/%user/events
       menu:
         type: none
-        title: Hendelser
+        title: Events
         description: ''
         expanded: false
         parent: ''
@@ -554,7 +554,7 @@ display:
         menu_name: main
       tab_options:
         type: none
-        title: Emner
+        title: Topics
         description: ''
         weight: 0
       exposed_block: true
@@ -613,7 +613,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: Publiseringsstatus
+            label: 'Publish status'
             description: ''
             use_operator: false
             operator: status_op
@@ -657,7 +657,7 @@ display:
           exposed: true
           expose:
             operator_id: field_event_date_value_op
-            label: Startdato
+            label: 'Start date'
             description: null
             use_operator: false
             operator: field_event_date_value_op
@@ -669,7 +669,7 @@ display:
               authenticated: authenticated
           is_grouped: true
           group_info:
-            label: 'Status for hendelse'
+            label: 'Event status'
             description: ''
             identifier: field_event_date_value
             optional: false
@@ -680,7 +680,7 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: 'Kommende hendelser'
+                title: 'Upcoming events'
                 operator: '>='
                 value:
                   type: offset
@@ -688,7 +688,7 @@ display:
                   min: ''
                   max: ''
               2:
-                title: 'Hendelser som har startet eller er ferdige'
+                title: 'Events that have started or are finished'
                 operator: '<'
                 value:
                   type: offset

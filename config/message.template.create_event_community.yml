@@ -1,5 +1,5 @@
 uuid: 51bebb0a-eb6d-4f6a-af17-09f1093a27db
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -21,7 +21,7 @@ _core:
   default_config_hash: 3cq5FFP76T2znKUujVyelnroPf71SUbWYryuI8BFj4E
 template: create_event_community
 label: 'Create event'
-description: 'En bruker opprettet en hendelse i fellesskapet'
+description: 'A user created an event in the community'
 text:
   -
     format: full_html

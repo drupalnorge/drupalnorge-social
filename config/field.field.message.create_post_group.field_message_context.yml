@@ -1,5 +1,5 @@
 uuid: adb5db54-5cf1-487d-9944-d85f680d5c41
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:

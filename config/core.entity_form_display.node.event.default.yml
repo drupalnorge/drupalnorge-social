@@ -1,5 +1,5 @@
 uuid: ca17917d-c898-4a08-9aa5-d0898b998ff2
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -101,7 +101,7 @@ third_party_settings:
         id: attachments
         classes: card
 _core:
-  default_config_hash: sctGvhhY3npK4Kcx5xjcwvx3vuGW8IP8KirixCPn670
+  default_config_hash: NX1AjfjjcnXVBHVqwi0C86syJe60c_7THPidEkRRM3g
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -131,7 +131,7 @@ content:
   field_event_address:
     weight: 14
     settings:
-      default_country: ''
+      default_country: site_default
     third_party_settings: {  }
     type: address_default
     region: content
@@ -185,9 +185,9 @@ content:
   langcode:
     type: language_select
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   path:
     type: path
     weight: 10

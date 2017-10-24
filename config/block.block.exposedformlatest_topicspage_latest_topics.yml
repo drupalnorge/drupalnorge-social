@@ -1,5 +1,5 @@
 uuid: 2527679b-10a7-4428-946f-4b6797f2f715
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - socialbase
+_core:
+  default_config_hash: kMqxltcLhmoj5txHbRyHXOdcggiYPmbTVkGt9E1CZKE
 id: exposedformlatest_topicspage_latest_topics
 theme: socialbase
 region: complementary_top
@@ -24,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: /newest-topics
+    pages: /all-topics
     negate: false
     context_mapping: {  }

@@ -1,5 +1,5 @@
 uuid: cfae8125-5792-4bfe-8b43-dfe9ac6757e7
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -24,7 +24,7 @@ dependencies:
     - address
     - text
 _core:
-  default_config_hash: 5qPAM05KkTpFPZ7XbNGdl-yzaPA1VO1fRkFG8wAgO5k
+  default_config_hash: rPpe1uKdAeEt39H8siyh0_OkKmDoiVv0UA2xPhr-sAo
 id: profile.profile.search_index
 targetEntityType: profile
 bundle: profile
@@ -107,4 +107,3 @@ hidden:
   field_profile_profile_tag: true
   field_profile_show_email: true
   field_profile_twitter_url: true
-  langcode: true

@@ -6,8 +6,8 @@ enabled_types:
   node:
     - topic
     - event
-  post: {  }
+  post:
+    - post
 hide_vote_widget: true
 _core:
-  default_config_hash: BikhTyqmbIEQU0hZw6BI6IX_6QtiggG50Hbm8-j1GtA
-langcode: nb
+  default_config_hash: 6AEbDZGtCKf9Rgdo1yE2umJy2o1tyhRJ0tnwtj6i690

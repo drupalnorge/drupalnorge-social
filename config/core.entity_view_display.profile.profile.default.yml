@@ -1,5 +1,5 @@
 uuid: 36dbdd9e-248d-4e14-96b7-2bef81d84ac8
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -21,10 +21,9 @@ dependencies:
     - profile.type.profile
   module:
     - address
-    - link
     - text
 _core:
-  default_config_hash: a-W37DahZWQq7MK856t6xbAgLUM0JwSCQ5lo5PrDYl8
+  default_config_hash: b9q_GhKabHpKC-5LKg5V8F4Qefjx9WwWNzrZXh0Mj_4
 id: profile.profile.default
 targetEntityType: profile
 bundle: profile
@@ -37,18 +36,6 @@ content:
     third_party_settings: {  }
     type: address_default
     region: content
-  field_profile_drupal_org_profile:
-    weight: 5
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
   field_profile_expertise:
     weight: 4
     label: visually_hidden
@@ -56,18 +43,6 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_profile_facebook_url:
-    weight: 7
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
     region: content
   field_profile_interests:
     weight: 3
@@ -100,23 +75,13 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_profile_twitter_url:
-    weight: 6
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
 hidden:
+  field_profile_drupal_org_profile: true
+  field_profile_facebook_url: true
   field_profile_first_name: true
   field_profile_function: true
   field_profile_image: true
   field_profile_last_name: true
   field_profile_organization: true
   field_profile_show_email: true
-  langcode: true
+  field_profile_twitter_url: true

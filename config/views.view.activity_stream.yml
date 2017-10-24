@@ -1,5 +1,5 @@
 uuid: 4ed09cbb-b88a-4a42-b0fc-8b4a96175b73
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,9 +9,9 @@ dependencies:
     - activity_viewer
     - options
 _core:
-  default_config_hash: QvzXGcuO0zld9vhAr5oLfzrkd956c0ZzsPzyGbU2oHA
+  default_config_hash: 4_NzOE2FlDpDTVp3mZHIDpp3KiCC1rYumrK7pXS8RT0
 id: activity_stream
-label: Aktivitetsstrøm
+label: 'Activity Stream'
 module: views
 description: ''
 tag: ''
@@ -22,7 +22,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Hoved
+    display_title: Master
     position: 0
     display_options:
       access:
@@ -42,13 +42,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Bruk
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: mini
         options:
@@ -61,12 +61,12 @@ display:
             next: ››
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementer per side'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskyving
+            offset_label: Offset
       style:
         type: default
       row:
@@ -164,10 +164,10 @@ display:
             group_items: {  }
           reduce_duplicates: false
           plugin_id: list_field
-        activity_post_visibility_access_filter:
-          id: activity_post_visibility_access_filter
+        activity_filter_nodes_from_my_groups_filter:
+          id: activity_filter_nodes_from_my_groups_filter
           table: activity
-          field: activity_post_visibility_access_filter
+          field: activity_filter_nodes_from_my_groups_filter
           relationship: none
           group_type: group
           admin_label: ''
@@ -200,7 +200,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: activity
-          plugin_id: activity_post_visibility_access
+          plugin_id: activity_filter_nodes_from_my_groups
       sorts:
         created:
           id: created
@@ -217,7 +217,7 @@ display:
           entity_type: activity
           entity_field: created
           plugin_id: date
-      title: Strøm
+      title: Stream
       header:
         entity_block:
           id: entity_block
@@ -261,11 +261,96 @@ display:
     display_options:
       display_extenders: {  }
       display_description: ''
+      filters:
+        field_activity_destinations_value:
+          id: field_activity_destinations_value
+          table: activity__field_activity_destinations
+          field: field_activity_destinations_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            stream_home: stream_home
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
+        activity_filter_personalised_homepage_filter:
+          id: activity_filter_personalised_homepage_filter
+          table: activity
+          field: activity_filter_personalised_homepage_filter
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value: ''
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: activity
+          plugin_id: activity_filter_personalised_homepage
+      defaults:
+        filters: false
+        filter_groups: false
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
         - url.query_args
+        - user
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
         - 'config:core.entity_view_display.activity.activity.notification'
@@ -273,7 +358,7 @@ display:
   page_activity_stream:
     display_plugin: page
     id: page_activity_stream
-    display_title: Side
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }
@@ -321,7 +406,7 @@ display:
         title: false
         filters: false
         filter_groups: false
-      title: 'Se aktivitet'
+      title: 'Explore Stream'
       filters:
         field_activity_destinations_value:
           id: field_activity_destinations_value

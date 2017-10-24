@@ -1,5 +1,5 @@
 uuid: 160c5fef-f83e-4ec7-9735-0e6501f3c274
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -12,7 +12,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: 1m4VTz0mKgmOOc71JS1OeuMYx6NpCAFmxxK9FoTBqHg
+  default_config_hash: 0X-IBmAAqeVySG0rBmpFvo0OVopSAFDZrQhKiPCsJGU
 id: activity_stream_notifications
 label: 'Activity stream notifications'
 module: views
@@ -25,7 +25,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Hoved
+    display_title: Master
     position: 0
     display_options:
       access:
@@ -47,13 +47,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Bruk
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: some
         options:
@@ -254,7 +254,7 @@ display:
           entity_type: activity
           entity_field: created
           plugin_id: date
-      title: Aktivitetsstrøm
+      title: 'Activity stream'
       header: {  }
       footer: {  }
       empty:
@@ -268,7 +268,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'Du har ingen varslinger.'
+            value: 'You do not have any notifications.'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -284,7 +284,7 @@ display:
           exception:
             value: ''
             title_enable: false
-            title: Alle
+            title: All
           title_enable: false
           title: ''
           default_argument_type: current_user
@@ -310,7 +310,7 @@ display:
       display_extenders: {  }
       use_more: false
       use_more_always: true
-      use_more_text: 'Alle varslinger'
+      use_more_text: 'All notifications'
     cache_metadata:
       max-age: -1
       contexts:
@@ -325,7 +325,7 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: Blokk
+    display_title: Block
     position: 2
     display_options:
       display_extenders: {  }
@@ -357,7 +357,7 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: Side
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }
@@ -370,23 +370,23 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
-            first: '« Første'
-            last: 'Siste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementer per side'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskyving
+            offset_label: Offset
           quantity: 9
       defaults:
         pager: false
         css_class: false
-      css_class: 'list-group z-depth-1'
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:

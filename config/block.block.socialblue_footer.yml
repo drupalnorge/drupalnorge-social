@@ -1,5 +1,5 @@
 uuid: 9941533e-a108-4fba-b72b-63fe82249804
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,6 +8,8 @@ dependencies:
     - system
   theme:
     - socialblue
+_core:
+  default_config_hash: O4W6f_mEsKoLHd-ARQ6jhIBxaPb4d2_bvBv_fFSE37E
 id: socialblue_footer
 theme: socialblue
 region: footer

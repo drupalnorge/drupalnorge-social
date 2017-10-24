@@ -1,5 +1,5 @@
 uuid: 1f48fe93-cad1-46fa-84f4-b50815290341
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -71,7 +71,7 @@ third_party_settings:
         id: attachments
         classes: 'card '
 _core:
-  default_config_hash: P6FipJektbU5MZIfZOUMpxB0pc6xmUctL3c5gTN20I0
+  default_config_hash: GA-pHDPx5vtmf3emsWiX0FK1TfzzL76cjZ1cqgv7I_8
 id: node.topic.default
 targetEntityType: node
 bundle: topic
@@ -134,9 +134,9 @@ content:
   langcode:
     type: language_select
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   path:
     type: path
     weight: 7

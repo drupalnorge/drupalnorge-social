@@ -1,10 +1,10 @@
 uuid: 6987c118-1a43-4d7d-8b6b-6c4e5f15deab
-langcode: nb
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: hGHnIBzGy-ezfVmmfzoO6FbC-fhM8_KKG_Ysyae9xtk
 id: post_comment
-label: 'Legg inn kommentar'
+label: 'Post comment'
 target_entity_type_id: post
 description: 'Comment on a post in the activity streams'

@@ -1,5 +1,5 @@
 uuid: 1dbe5976-0074-423c-80a1-53a09d3e4d67
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -18,7 +18,7 @@ dependencies:
     - datetime
     - user
 _core:
-  default_config_hash: 0_V-QCr3KfTg79eChBdhdvFSwxVP70uOoFhCw3KNSb0
+  default_config_hash: Git3JE3oT8awB-_6lsdlg0ZW7cXPHQ4pl78ItG0O6bU
 id: node.event.small_teaser
 targetEntityType: node
 bundle: event

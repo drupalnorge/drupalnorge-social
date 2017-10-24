@@ -1,5 +1,5 @@
 uuid: 1056cfeb-aa77-470b-a189-d3df7da53f4c
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -12,7 +12,7 @@ dependencies:
     - taxonomy
     - user
 _core:
-  default_config_hash: l2H1eAk5hC83pnmJonlGIuxbDWF-rQFAOzzrkwUYZwg
+  default_config_hash: r72T2d1Jmx-7Disor6Ip5-xvbhZ_P9MdQw8n0tNKPkI
 id: topics
 label: 'User Topics'
 module: views
@@ -25,7 +25,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Hoved
+    display_title: Master
     position: 0
     display_options:
       access:
@@ -39,17 +39,17 @@ display:
         type: views_query
         options:
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_comment: ''
           query_tags: {  }
       exposed_form:
         type: basic
         options:
-          submit_button: Filtrer
+          submit_button: Filter
           reset_button: true
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: ascending
           sort_desc_label: descending
@@ -62,17 +62,17 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementer per side'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskyving
+            offset_label: Offset
           tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
-            first: '« Første'
-            last: 'Siste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           quantity: 9
       style:
         type: default
@@ -276,7 +276,7 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-      title: Emner
+      title: Topics
       header: {  }
       footer: {  }
       empty:
@@ -290,7 +290,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'Ingen innlegg funnet for denne brukeren'
+            value: 'No topics found for this user'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -306,7 +306,7 @@ display:
           exception:
             value: ''
             title_enable: false
-            title: Alle
+            title: All
           title_enable: false
           title: ''
           default_argument_type: fixed
@@ -354,7 +354,7 @@ display:
   block_user_topics:
     display_plugin: block
     id: block_user_topics
-    display_title: Blokk
+    display_title: Block
     position: 2
     display_options:
       display_extenders: {  }
@@ -370,6 +370,9 @@ display:
         filters: false
         filter_groups: false
         sorts: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
       row:
         type: 'entity:node'
         options:
@@ -380,8 +383,8 @@ display:
         options:
           items_per_page: 2
           offset: 0
-      title: 'Nylig opprettede emner'
-      block_description: 'Nylig opprettede emner'
+      title: 'Recently created topics'
+      block_description: 'Recently created topics'
       arguments:
         uid:
           id: uid
@@ -394,7 +397,7 @@ display:
           exception:
             value: ''
             title_enable: false
-            title: Alle
+            title: All
           title_enable: false
           title: ''
           default_argument_type: user
@@ -525,6 +528,9 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
+      use_more: true
+      use_more_always: true
+      use_more_text: 'All topics'
     cache_metadata:
       max-age: -1
       contexts:
@@ -537,14 +543,14 @@ display:
   page_profile:
     display_plugin: page
     id: page_profile
-    display_title: Side
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }
       path: user/%user/topics
       menu:
         type: none
-        title: Emner
+        title: Topics
         description: ''
         expanded: false
         parent: ''
@@ -553,7 +559,7 @@ display:
         menu_name: main
       tab_options:
         type: none
-        title: Emner
+        title: Topics
         description: ''
         weight: 0
       exposed_block: true

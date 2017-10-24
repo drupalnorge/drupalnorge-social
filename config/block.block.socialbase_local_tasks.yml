@@ -1,5 +1,5 @@
 uuid: 64cb768b-22fb-4931-bf2c-766f8c8c23d3
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,8 @@ dependencies:
     - user
   theme:
     - socialbase
+_core:
+  default_config_hash: GHIwbkxMekWJubZw-NaCaFV9arJ_cU-YZyfTJ9kVKqs
 id: socialbase_local_tasks
 theme: socialbase
 region: secondary_navigation

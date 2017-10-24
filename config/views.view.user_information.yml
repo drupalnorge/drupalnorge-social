@@ -1,5 +1,5 @@
 uuid: 2248a229-3386-438d-8d24-37b577304448
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,9 +8,9 @@ dependencies:
     - profile
     - user
 _core:
-  default_config_hash: WJH0r9dMlmOLfzE5OrT9B32hznqmpAyxvsdswGXogwk
+  default_config_hash: IcO0jdveNQfm7V73VxfEkOwhoc1Es3Dtd3QJaqxGtAk
 id: user_information
-label: Brukerinformasjon
+label: 'User information'
 module: views
 description: ''
 tag: ''
@@ -21,7 +21,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Hoved
+    display_title: Master
     position: 0
     display_options:
       access:
@@ -42,13 +42,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Bruk
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: some
         options:
@@ -125,7 +125,7 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts: {  }
-      title: Informasjon
+      title: Information
       header: {  }
       footer: {  }
       empty:
@@ -176,7 +176,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: false
           title: ''
           default_argument_type: fixed
@@ -212,6 +212,8 @@ display:
       tags:
         - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
+        - 'config:core.entity_view_display.profile.profile.compact_notification'
+        - 'config:core.entity_view_display.profile.profile.compact_teaser'
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
         - 'config:core.entity_view_display.profile.profile.search_index'
@@ -222,14 +224,14 @@ display:
   user_information:
     display_plugin: page
     id: user_information
-    display_title: Side
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }
       path: user/%user/information
       menu:
         type: none
-        title: Informasjon
+        title: Information
         description: ''
         expanded: false
         parent: ''
@@ -245,6 +247,8 @@ display:
       tags:
         - 'config:core.entity_view_display.profile.profile.autocomplete_item'
         - 'config:core.entity_view_display.profile.profile.compact'
+        - 'config:core.entity_view_display.profile.profile.compact_notification'
+        - 'config:core.entity_view_display.profile.profile.compact_teaser'
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
         - 'config:core.entity_view_display.profile.profile.search_index'

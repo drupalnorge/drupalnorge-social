@@ -1,5 +1,5 @@
 uuid: af0863cb-1a55-44d1-8625-2fdcca2bee65
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: node.event.field_event_date
 field_name: field_event_date
 entity_type: node
 bundle: event
-label: Startdato
+label: 'Start date'
 description: ''
 required: true
 translatable: false

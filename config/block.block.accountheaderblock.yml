@@ -1,5 +1,5 @@
 uuid: e1693292-1b92-4a00-8f6c-eb65f595a4fd
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,8 @@ dependencies:
     - user
   theme:
     - socialbase
+_core:
+  default_config_hash: hw-7VqRnZaYIFdTMj7oL8DbEVeE5THhXA3aVAxoiAEc
 id: accountheaderblock
 theme: socialbase
 region: header

@@ -1,5 +1,5 @@
 uuid: 4ae14379-609b-4a6b-842e-0b1c6cde9e43
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,12 +8,13 @@ dependencies:
     - field.field.post.post.field_recipient_group
     - field.field.post.post.field_recipient_user
     - field.field.post.post.field_visibility
+    - social_post.post_type.post
   module:
     - social_post
     - text
     - user
 _core:
-  default_config_hash: RTc1IoerPoZz_HnmppD4jCv5QMFmtJFl9SjnuPjOTL8
+  default_config_hash: JNBwWHCvAmeyGNkIo_1Kt38Bp6d31CU8MNgWNQ2Xd-E
 id: post.post.default
 targetEntityType: post
 bundle: post

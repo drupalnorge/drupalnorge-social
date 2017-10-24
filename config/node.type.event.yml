@@ -1,5 +1,5 @@
 uuid: 9fc28931-cf72-4fdb-bd20-8f4bc0658498
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -9,11 +9,11 @@ third_party_settings:
     available_menus: {  }
     parent: ''
 _core:
-  default_config_hash: nGSVFSlLNe9XuZ2TftJOVVw31b18_r-h20NcseKdYEo
+  default_config_hash: xAKaUWzbpluOMIPdY2QIzKEqVZffz4vaL3nWFtL884I
 name: Event
 type: event
 description: ''
 help: ''
 new_revision: false
 preview_mode: 1
-display_submitted: false
+display_submitted: true

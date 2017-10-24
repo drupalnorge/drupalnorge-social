@@ -1,5 +1,5 @@
 uuid: 12965a7b-5e1d-428e-a346-eaaa34a8188f
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -24,7 +24,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: u2RYBibjuMrCeiXaoDnJxwHkP_g7MtcqbcdGe7M67II
+  default_config_hash: 4wIaFAyCOsU09KgaggXQZgU_HvmxMFb4Z9uJIzKPKGk
 id: profile.profile.compact
 targetEntityType: profile
 bundle: profile
@@ -35,7 +35,7 @@ content:
     label: hidden
     settings:
       image_style: social_medium
-      image_link: ''
+      image_link: content
     third_party_settings: {  }
     type: image
     region: content
@@ -54,4 +54,3 @@ hidden:
   field_profile_self_introduction: true
   field_profile_show_email: true
   field_profile_twitter_url: true
-  langcode: true

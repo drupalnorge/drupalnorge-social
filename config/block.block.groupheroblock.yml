@@ -1,5 +1,5 @@
 uuid: 6815c701-a840-49c9-b9e4-41f3916640d2
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,8 @@ dependencies:
     - system
   theme:
     - socialbase
+_core:
+  default_config_hash: Km8x5dudZtQBrd2Qpd7bM8-KHkRG72x1p_Zq9GEt4p4
 id: groupheroblock
 theme: socialbase
 region: hero

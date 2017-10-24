@@ -1,5 +1,5 @@
 uuid: deafcaa2-8f4a-4250-8e51-4548d1bcd6f3
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,6 +9,8 @@ dependencies:
     - user
   theme:
     - socialblue
+_core:
+  default_config_hash: uwuPJ-DnOf475vRqnKskANLyjjDuUaPFEr4dG6Jgu8I
 id: socialblue_account_menu
 theme: socialblue
 region: header

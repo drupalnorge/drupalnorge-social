@@ -117,6 +117,7 @@ permissions:
   - 'view own profile profile'
   - 'view own unpublished content'
   - 'view page revisions'
+  - 'view profile'
   - 'view public posts'
   - 'view published post entities'
   - 'view the administration theme'

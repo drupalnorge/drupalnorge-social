@@ -1,5 +1,5 @@
 uuid: 090973aa-96ca-4c7b-b9bd-e6f4511d97a0
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: node.topic.field_topic_comments
 field_name: field_topic_comments
 entity_type: node
 bundle: topic
-label: Kommentarer
+label: Comments
 description: ''
 required: false
 translatable: false

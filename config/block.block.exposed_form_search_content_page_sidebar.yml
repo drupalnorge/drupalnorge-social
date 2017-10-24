@@ -1,5 +1,5 @@
 uuid: d478318e-6211-45f2-b8bd-1a11681dfd0d
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - socialbase
+_core:
+  default_config_hash: IvOxJXmshvoGoIfYTgZW3Cbh6rMrVhKjxGGXQ23zHE8
 id: exposed_form_search_content_page_sidebar
 theme: socialbase
 region: complementary_top
