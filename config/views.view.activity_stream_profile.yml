@@ -1,5 +1,5 @@
 uuid: 6d23d1c6-dd01-4b4e-a5b7-3e97a923a681
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -11,7 +11,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: F_S_aeUquDhF_56BvJUaNXqwB4hGFb9AqRtI9DG1048
+  default_config_hash: FsgovQ6r5w8ht2lCxbomcpcFizUvWuwZdYNXSSB8ZfE
 id: activity_stream_profile
 label: activity_stream_profile
 module: views
@@ -24,7 +24,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Hoved
+    display_title: Master
     position: 0
     display_options:
       access:
@@ -46,13 +46,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Bruk
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: full
         options:
@@ -61,18 +61,18 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
-            first: '« Første'
-            last: 'Siste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementer per side'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskyving
+            offset_label: Offset
           quantity: 9
       style:
         type: default
@@ -132,10 +132,10 @@ display:
           hide_alter_empty: true
           view_mode: default
       filters:
-        activity_visibility_access_filter:
-          id: activity_visibility_access_filter
+        activity_post_visibility_access_filter:
+          id: activity_post_visibility_access_filter
           table: activity
-          field: activity_visibility_access_filter
+          field: activity_post_visibility_access_filter
           relationship: none
           group_type: group
           admin_label: ''
@@ -262,7 +262,7 @@ display:
           entity_type: activity
           entity_field: created
           plugin_id: date
-      title: Aktivitetsstrøm
+      title: 'Activity stream'
       header:
         entity_block:
           id: entity_block
@@ -292,7 +292,7 @@ display:
           exception:
             value: ''
             title_enable: false
-            title: Alle
+            title: All
           title_enable: false
           title: ''
           default_argument_type: user
@@ -330,7 +330,7 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: Blokk
+    display_title: Block
     position: 2
     display_options:
       display_extenders: {  }

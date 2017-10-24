@@ -1,5 +1,5 @@
 uuid: 46937afb-e2d3-4fd3-89a4-e71591a24a09
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -45,7 +45,7 @@ third_party_settings:
         id: ''
         required_fields: true
 _core:
-  default_config_hash: kPxfyIp0rzM8Bo_JY5zhKyN2bmTK-T36v2QqZqh9Kow
+  default_config_hash: GecjUqtDtil_0FpZKolGp4fP-wdtAmSQGYEGsUnbles
 id: group.open_group.default
 targetEntityType: group
 bundle: open_group
@@ -54,7 +54,7 @@ content:
   field_group_address:
     weight: 33
     settings:
-      default_country: null
+      default_country: site_default
     third_party_settings: {  }
     type: address_default
     region: content
@@ -99,9 +99,9 @@ content:
   langcode:
     type: language_select
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   path:
     type: path
     weight: 30

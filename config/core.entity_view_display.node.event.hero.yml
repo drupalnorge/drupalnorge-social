@@ -1,5 +1,5 @@
 uuid: eefed9ed-9131-43fa-ac91-7c610816d589
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -19,7 +19,7 @@ dependencies:
     - datetime
     - user
 _core:
-  default_config_hash: Us3rZInBZJrVVoQcAD6VY--RJf0P5aK1RsPcj4fx9wk
+  default_config_hash: 3cXys4EKyI73E2SpI0BxB_5iNujtOk28xmKnhd6W34A
 id: node.event.hero
 targetEntityType: node
 bundle: event

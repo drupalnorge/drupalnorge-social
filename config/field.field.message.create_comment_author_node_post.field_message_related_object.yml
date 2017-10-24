@@ -1,5 +1,5 @@
 uuid: 8badaa6a-fe53-4038-a991-288b9285f80a
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -10,7 +10,7 @@ dependencies:
   module:
     - dynamic_entity_reference
 _core:
-  default_config_hash: tDeObwxdzOMSvDW8RCULzLkF2is8urAK7rC3DCo1zBc
+  default_config_hash: YlcvoTrPzgBHC4uTe2gI7ATG8EyARnEZ0olbN2tlHJE
 id: message.create_comment_author_node_post.field_message_related_object
 field_name: field_message_related_object
 entity_type: message

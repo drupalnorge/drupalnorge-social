@@ -1,5 +1,5 @@
 uuid: ebd1ba0d-0a81-44bc-8480-aed3051ecb8f
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,8 @@ dependencies:
     - system
   theme:
     - socialbase
+_core:
+  default_config_hash: eRDnrgAFbPm0A-OlCOnP1jDf0GEkTK9undIsnA8cSMo
 id: search_block_hero
 theme: socialbase
 region: hero
@@ -21,6 +23,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/search/content\r\n/search/content/*\r\n/search/users\r\n/search/users/*\r\n/search/groups\r\n/search/groups/*"
+    pages: "/search/content\r\n/search/content/*\r\n/search/users\r\n/search/users/*\r\n/search/groups\r\n/search/groups/*\r\n/search/all\r\n/search/all/*"
     negate: false
     context_mapping: {  }

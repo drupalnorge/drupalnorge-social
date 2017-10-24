@@ -1,11 +1,11 @@
 uuid: 282119fd-afa7-4ed0-b87f-0659a26e10c4
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
     - group.type.open_group
 _core:
-  default_config_hash: JfEBD0t4FHpJlojHtBj5tvKSAChnv9WWYBhbYp0rurg
+  default_config_hash: DSkRrH6E_WqoA7VrxhBXoKmJwTGvLZ4o0hiumubN6aA
 id: open_group-member
 label: Member
 weight: -100

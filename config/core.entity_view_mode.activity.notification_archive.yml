@@ -1,5 +1,5 @@
 uuid: 14428861-b73d-4e0a-90ac-b04ed6cae41e
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: g0xG6W1yMrC3-0MmqSGi4TS3cI962yWsynMHyWz0LC0
 id: activity.notification_archive
-label: Varslingsarkiv
+label: 'Notification archive'
 targetEntityType: activity
 cache: true

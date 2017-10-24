@@ -1,5 +1,5 @@
 uuid: 9da956f4-929c-47c8-a0d2-9fc9ceb14b7e
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -7,7 +7,7 @@ dependencies:
   module:
     - user
 _core:
-  default_config_hash: q171bliZixppY6ky8VXYJcwbJoarO31sgCHZ8JE8Cgc
+  default_config_hash: jPM9sVqCQKh-yK4wLBSyetFLIJO3rgyPzsqD91MrEdI
 id: user.user.register
 targetEntityType: user
 bundle: user
@@ -17,6 +17,9 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
+    region: content
+  google_analytics:
+    weight: 3
     region: content
 hidden:
   contact: true

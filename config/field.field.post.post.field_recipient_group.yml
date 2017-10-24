@@ -1,13 +1,12 @@
 uuid: 0c4a5ba5-6098-45da-8bf3-aa74a5dbec3a
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
     - field.storage.post.field_recipient_group
-  module:
-    - social_post
+    - social_post.post_type.post
 _core:
-  default_config_hash: v0IQm2XX0T-LpVSK5ppWZ5HvG8qeoNVMv2ydzUYZpIU
+  default_config_hash: SwwEbemUe_i8ALLpWSLa_4gV2nX_j0PB5p60lyLqBfc
 id: post.post.field_recipient_group
 field_name: field_recipient_group
 entity_type: post

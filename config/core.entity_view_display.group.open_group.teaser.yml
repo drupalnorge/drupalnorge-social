@@ -1,5 +1,5 @@
 uuid: b9a39250-f5d1-48ee-961f-6f69142819a7
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -14,7 +14,7 @@ dependencies:
     - address
     - image
 _core:
-  default_config_hash: yfw_u_N9zr5i_7LK1dVP1VgdA1Qul1IVFNVtt_qjuAs
+  default_config_hash: 9vG4F75UZeMDAqTLuorfTyV8gOz0yfPZfdGdwGOnFf8
 id: group.open_group.teaser
 targetEntityType: group
 bundle: open_group

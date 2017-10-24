@@ -1,5 +1,5 @@
 uuid: c3f4c5af-6dc7-49e8-a0dc-a3f36442c222
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - dropdown
 _core:
-  default_config_hash: Nqs3_WhO3e0YiQ0fWwLHRJ6U3cj2dzbzBYJuALZ_R9Q
+  default_config_hash: 1iWPzz3lG39ZtI8k8V9VyaG1yCFHJkWWyU4yAY0GeLY
 id: post.photo.field_visibility
 field_name: field_visibility
 entity_type: post
@@ -17,9 +17,7 @@ label: Visibility
 description: ''
 required: true
 translatable: false
-default_value:
-  -
-    value: '2'
+default_value: null
 default_value_callback: ''
 settings: {  }
 field_type: dropdown

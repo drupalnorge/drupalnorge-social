@@ -1,5 +1,5 @@
 uuid: 56b2fe19-79a3-47f8-b69f-2d5ed4cffc76
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -15,7 +15,7 @@ dependencies:
     - dynamic_entity_reference
     - text
 _core:
-  default_config_hash: TU7A4d9g6iKCqKodZP77KJ94k8FHhVWYMQU7evAinz8
+  default_config_hash: 98kAXv_smSiRJxKvvFi2fHrB7pqqLHSbqFxCJaaFxc8
 id: activity.activity.default
 targetEntityType: activity
 bundle: activity

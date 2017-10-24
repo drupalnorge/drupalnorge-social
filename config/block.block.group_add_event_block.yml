@@ -1,5 +1,5 @@
 uuid: 29ea8945-7644-4b65-aedd-e04850c8e43e
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,8 @@ dependencies:
     - system
   theme:
     - socialbase
+_core:
+  default_config_hash: IhbFgmf1ELaOBiBsnRl6-AJQEcph8O2pJFdGgRZu43k
 id: group_add_event_block
 theme: socialbase
 region: complementary_top

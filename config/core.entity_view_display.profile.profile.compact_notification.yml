@@ -1,11 +1,13 @@
 uuid: dc867764-bc15-414e-8649-d5838a70f4ec
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.profile.compact_notification
     - field.field.profile.profile.field_profile_address
+    - field.field.profile.profile.field_profile_drupal_org_profile
     - field.field.profile.profile.field_profile_expertise
+    - field.field.profile.profile.field_profile_facebook_url
     - field.field.profile.profile.field_profile_first_name
     - field.field.profile.profile.field_profile_function
     - field.field.profile.profile.field_profile_image
@@ -16,10 +18,13 @@ dependencies:
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
     - field.field.profile.profile.field_profile_show_email
+    - field.field.profile.profile.field_profile_twitter_url
     - image.style.social_medium
     - profile.type.profile
   module:
     - image
+_core:
+  default_config_hash: rO01PX8pjC0NAha6kXMwjkJs-w9xXvedcpyIvG7grNc
 id: profile.profile.compact_notification
 targetEntityType: profile
 bundle: profile

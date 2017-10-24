@@ -1,5 +1,5 @@
 uuid: d4b26896-a600-4f53-aa5a-8ee5285aefc8
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -10,7 +10,7 @@ dependencies:
   module:
     - dynamic_entity_reference
 _core:
-  default_config_hash: tJfghg_09ydi-TMgySeGEU_JJjfPysVD2x6SdMaz2QY
+  default_config_hash: jNsi-9GoeWXNy89h9AhuGSqakWAhtzbhwj4wFc3siKI
 id: message.create_event_community.field_message_related_object
 field_name: field_message_related_object
 entity_type: message

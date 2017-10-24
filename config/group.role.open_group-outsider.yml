@@ -1,11 +1,11 @@
 uuid: 85833e63-e4ce-4ae4-b523-a6cdcf5bfef6
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
     - group.type.open_group
 _core:
-  default_config_hash: 8VJusIgccSemTRen9WSbjRIDUQvfNsO1tpTzAE0-Vuw
+  default_config_hash: a-hsIRdzI-QLiPKaxOB6s8NYLETyeR7EbA5elWP7zcQ
 id: open_group-outsider
 label: Outsider
 weight: -101

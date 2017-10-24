@@ -1,5 +1,5 @@
 uuid: 7615774d-ddfe-48a6-8f8b-39b6fb8f49be
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -10,7 +10,7 @@ dependencies:
     - field.field.group.open_group.field_group_location
     - group.type.open_group
 _core:
-  default_config_hash: nWLDze6J3mf3WA46wQJf_Vd1y9jbwSk4b_ayD6i4Nac
+  default_config_hash: jb6bs-IrIDB-WAiima9d7ll3eZp-4ASeV6fDm9Vf_iA
 id: group.open_group.small_teaser
 targetEntityType: group
 bundle: open_group

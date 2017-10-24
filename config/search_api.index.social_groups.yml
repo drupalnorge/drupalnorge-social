@@ -1,5 +1,5 @@
 uuid: 1125637e-6787-4d01-be23-39633c54f8b9
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -9,13 +9,25 @@ dependencies:
   config:
     - field.storage.group.field_group_description
     - search_api.server.social_database
+    - core.entity_view_mode.group.teaser
 _core:
-  default_config_hash: eQAfzinQ9J7N45dvfEup3-Z68qA9SdTJtbjR_lrNZoQ
+  default_config_hash: MkAv4XQYmAl1d9QpZYkn0NC_dmUGfutHddININpHYt4
 id: social_groups
 name: 'Social Groups'
 description: 'Default group index created for the Social distribution.'
 read_only: false
 field_settings:
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:group':
+          closed_group: teaser
+          open_group: teaser
   type:
     label: Type
     datasource_id: 'entity:group'
@@ -42,16 +54,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.group.field_group_description
-  rendered_item:
-    label: 'Rendered HTML output'
-    property_path: rendered_item
-    type: text
-    configuration:
-      roles:
-        anonymous: anonymous
-      view_mode:
-        'entity:group':
-          open_group: default
 datasource_settings:
   'entity:group':
     plugin_id: 'entity:group'
@@ -106,6 +108,7 @@ processor_settings:
       b: 2
       em: 1
       u: 1
+    all_fields: false
   ignorecase:
     plugin_id: ignorecase
     settings:
@@ -118,6 +121,7 @@ processor_settings:
       weights:
         preprocess_index: -10
         preprocess_query: -10
+    all_fields: false
   ignore_character:
     plugin_id: ignore_character
     settings:
@@ -162,6 +166,7 @@ processor_settings:
         Pi: Pi
         Po: Po
         Ps: Ps
+    all_fields: false
   rendered_item:
     plugin_id: rendered_item
     settings:
@@ -249,6 +254,7 @@ processor_settings:
       - was
       - will
       - with
+    all_fields: false
   tokenizer:
     plugin_id: tokenizer
     settings:
@@ -264,6 +270,7 @@ processor_settings:
     spaces: ''
     overlap_cjk: 1
     minimum_word_size: '3'
+    all_fields: false
   transliteration:
     plugin_id: transliteration
     settings:
@@ -274,6 +281,7 @@ processor_settings:
       weights:
         preprocess_index: -10
         preprocess_query: -10
+    all_fields: false
 tracker_settings:
   default:
     plugin_id: default

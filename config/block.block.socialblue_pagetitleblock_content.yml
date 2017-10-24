@@ -1,5 +1,5 @@
 uuid: 94655723-0133-495a-9cc1-c8b99e04150b
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,8 @@ dependencies:
     - system
   theme:
     - socialblue
+_core:
+  default_config_hash: bF2KuP7boy9i2PYD6oM5SvfYM7yKJNAjtyTq8Xmx8XA
 id: socialblue_pagetitleblock_content
 theme: socialblue
 region: title
@@ -21,6 +23,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/search/*'
+    pages: '/search/*\r\n/user/*/stream'
     negate: true
     context_mapping: {  }

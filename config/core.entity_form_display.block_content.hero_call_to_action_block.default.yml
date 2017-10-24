@@ -1,5 +1,5 @@
 uuid: bc8b8ea4-ef6f-4d0d-b362-899279c3c482
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -7,13 +7,13 @@ dependencies:
     - field.field.block_content.hero_call_to_action_block.field_call_to_action_link
     - field.field.block_content.hero_call_to_action_block.field_hero_image
     - field.field.block_content.hero_call_to_action_block.field_text_block
-    - image.style.social_xx_large
+    - image.style.social_an_hero
   module:
     - image_widget_crop
     - link
     - text
 _core:
-  default_config_hash: rwYchAuU_zOr-sOavxIGO5NgALVpJPsgIxCww0EQYDg
+  default_config_hash: KkxvZs-jt05xqKx9mYUXEaFQ0HRs1wr3o8DQNIRN6K0
 id: block_content.hero_call_to_action_block.default
 targetEntityType: block_content
 bundle: hero_call_to_action_block
@@ -33,10 +33,10 @@ content:
     settings:
       show_crop_area: true
       show_default_crop: true
-      preview_image_style: social_xx_large
+      preview_image_style: social_an_hero
       crop_preview_image_style: crop_thumbnail
       crop_list:
-        - hero
+        - hero_an
       progress_indicator: throbber
     third_party_settings: {  }
     region: content
@@ -59,7 +59,7 @@ content:
   langcode:
     type: language_select
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

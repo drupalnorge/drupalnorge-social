@@ -1,11 +1,11 @@
 uuid: 3378be13-ed5c-4030-979d-f8c9bf79fa00
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
     - group.content_type.open_group-group_node-event
 _core:
-  default_config_hash: kJJjpLBQ9ldq_R6QlrcYvR1kRo3tJEMcqynshRq1oGE
+  default_config_hash: BSXRhojW1LxxJsPb9rvF2rUd-hwQ1pbwqvI7DN4k2gs
 id: group_content.open_group-group_node-event.default
 targetEntityType: group_content
 bundle: open_group-group_node-event

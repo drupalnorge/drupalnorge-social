@@ -1,9 +1,11 @@
 uuid: d0d6c91d-4ef5-4b3b-98cb-cddc6ad984a1
-langcode: nb
+langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - image_effects
 _core:
-  default_config_hash: UQ7KFRvYgDDnlOEYKAJRGk--hg5fI3NoMA3Hsze2i1U
+  default_config_hash: n7cBM5_Qghqlv3PWB0dGnv3kLwBF9sOMBwbxvuaFscc
 name: social_tiny
 label: 'social tiny (16 x 16)'
 effects:
@@ -14,3 +16,9 @@ effects:
     data:
       width: 16
       height: 16
+  2b600be6-28ba-4206-85c7-ea5a6e71e934:
+    uuid: 2b600be6-28ba-4206-85c7-ea5a6e71e934
+    id: image_effects_auto_orient
+    weight: 2
+    data:
+      scan_exif: true

@@ -1,5 +1,5 @@
 uuid: 9ff141a3-31c8-43e8-ae68-6c1d656e72dd
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - socialbase
+_core:
+  default_config_hash: _Se3YiNuLfZNs5HDfGbGe9QEV_I2-wJEU0Wk8nF9x6c
 id: exposedformgroup_eventspage_group_events
 theme: socialbase
 region: complementary_top

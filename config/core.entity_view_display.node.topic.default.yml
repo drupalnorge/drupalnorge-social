@@ -1,5 +1,5 @@
 uuid: 352c2f8e-5e1e-4067-b90b-b926cdbc9ff2
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -17,7 +17,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: p5e13RGzhyE1BG4U2paaZQZKmgyxtVap2Wt_7_kbKz0
+  default_config_hash: r_hPyypaKDgAmrC5KU2HsLhbAINpFZoZxqrKjpO0V2M
 id: node.topic.default
 targetEntityType: node
 bundle: topic
@@ -35,18 +35,19 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: file_default
     region: content
+    type: file_default
   field_topic_comments:
     weight: 1
     label: above
     settings:
       pager_id: 0
     third_party_settings: {  }
-    type: comment_group_content
     region: content
+    type: comment_group_content
   flag_follow_content:
     weight: 10
+    third_party_settings: {  }
     region: content
   like_and_dislike:
     weight: 2

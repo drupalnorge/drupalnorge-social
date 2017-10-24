@@ -1,5 +1,5 @@
 uuid: 6cf16b0e-6cb9-49f4-b618-b2634e1e3e4f
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -17,7 +17,7 @@ dependencies:
     - social_core
     - user
 _core:
-  default_config_hash: _DTGltMOQTbWdNUhDwZ20ql7uQW66hFdbZXu-fSCQzM
+  default_config_hash: GSx1jFkpvfhPj42X6GSqmzuXfYTYL0PNeuaTawr_u1Y
 id: node.topic.activity
 targetEntityType: node
 bundle: topic

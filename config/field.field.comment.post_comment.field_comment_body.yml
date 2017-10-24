@@ -1,5 +1,5 @@
 uuid: d4457bd9-3cdf-4190-bf80-db317f674019
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ id: comment.post_comment.field_comment_body
 field_name: field_comment_body
 entity_type: comment
 bundle: post_comment
-label: 'Legg inn kommentar'
+label: 'Post comment'
 description: ''
 required: true
 translatable: true

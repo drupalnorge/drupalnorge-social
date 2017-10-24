@@ -1,16 +1,16 @@
 uuid: 961d1ec2-2b3b-4d08-8330-c2a1fcc2f901
-langcode: nb
+langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: qFUcn7HaiVt0347HkylU8eaUghDWpkttnFJpq2jP36g
+  default_config_hash: 9ai-CTRoUcmCBw-2I9nqhaqcX8YnCCRS-pComg-LTfE
 id: follow_content
-label: Følg
+label: 'Follow content'
 bundles: {  }
 entity_type: node
 global: false
 weight: 0
-flag_short: Følg
+flag_short: 'Follow content'
 flag_long: ''
 flag_message: ''
 unflag_short: 'Unfollow content'
@@ -25,5 +25,6 @@ flagTypeConfig:
   show_as_field: true
   show_on_form: false
   show_contextual_link: false
+  extra_permissions: {  }
   access_author: ''
 linkTypeConfig: {  }

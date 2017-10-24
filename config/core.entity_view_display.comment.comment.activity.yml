@@ -1,5 +1,5 @@
 uuid: 2981ce35-b934-4b36-946b-1c634aaf778b
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,7 +9,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: FgOdX9-nVuSk47TFUS5wqVmTpfI2p4FN9XaBHuSXJXU
+  default_config_hash: XMYQ36iNFChm5Sy3NcQt8ou6555IiTfJOXrgnnMT4e4
 id: comment.comment.activity
 targetEntityType: comment
 bundle: comment

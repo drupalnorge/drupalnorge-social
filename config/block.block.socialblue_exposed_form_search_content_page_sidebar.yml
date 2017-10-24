@@ -1,5 +1,5 @@
 uuid: 838b01ae-46ac-433f-b315-8c13052ddbd9
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,10 +9,12 @@ dependencies:
     - views
   theme:
     - socialblue
+_core:
+  default_config_hash: G7CVrF8YuE82q46xnmfrQt8auY_tjXHpTl_P6gSMQGU
 id: socialblue_exposed_form_search_content_page_sidebar
 theme: socialblue
 region: complementary_top
-weight: -14
+weight: 3
 provider: null
 plugin: 'views_exposed_filter_block:search_content-page'
 settings:

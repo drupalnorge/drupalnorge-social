@@ -1,5 +1,5 @@
 uuid: b80e98bc-f03e-429b-91d2-75177e798466
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -8,7 +8,6 @@ third_party_settings:
   activity_logger:
     activity_context: profile_activity_context
     activity_destinations:
-      stream_profile: stream_profile
       notifications: notifications
       email: email
     activity_create_direct: 1
@@ -16,25 +15,27 @@ third_party_settings:
       post-post: post-post
     activity_action: create_entitiy_action
     activity_aggregate: 0
-    activity_entity_condition: ''
 _core:
-  default_config_hash: D7mcIIvNGAj0ol8ni71OH54viM3JnjKiPQmEaCHj78g
+  default_config_hash: aSvlkk6NBN2QpKCKfB-v3FWfRdmX5SS6fs8m0dbth8o
 template: create_post_profile
 label: 'Create post on profile'
 description: 'A person created a post on my profile'
 text:
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> postet på din profil</p>\r\n"
     format: full_html
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> posted on your profile</p>\r\n"
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> postet på din profil</p>\r\n"
     format: full_html
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> posted on your profile</p>\r\n"
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> postet på din <a href=\"[message:recipient-user-url]\">profil</a></p>\r\n"
     format: full_html
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> posted on your <a href="[message:recipient-user-url]">profile</a></p>'
 settings:
   'token options':
     clear: false
     'token replace': true
-  purge_override: false
-  purge_methods: {  }
+  purge:
+    override: false
+    enabled: false
+    quota: null
+    days: null

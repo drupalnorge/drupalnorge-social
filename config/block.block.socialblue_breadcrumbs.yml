@@ -1,5 +1,5 @@
 uuid: 60893a58-d547-4bad-a3d1-71bceba592e1
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,8 @@ dependencies:
     - user
   theme:
     - socialblue
+_core:
+  default_config_hash: e_3HKxADJMCzhWIGUnpTkNSn4mQD7KdKKD5eogz3vs4
 id: socialblue_breadcrumbs
 theme: socialblue
 region: breadcrumb

@@ -1,5 +1,5 @@
 uuid: eff6775c-9f94-47b1-b6ed-7edd1805b622
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,9 +8,9 @@ dependencies:
     - search_api
     - user
 _core:
-  default_config_hash: fDSniqsfBcCR8ZdJqoo61JN21ALnOSM-orLxJ8XRlaI
+  default_config_hash: 99C2lHZnlTUNF9nkmqCwViBh1c6L_FOhuA0X3Vzlw04
 id: search_groups
-label: 'Søk grupper'
+label: 'Search Groups'
 module: views
 description: ''
 tag: ''
@@ -21,7 +21,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Hoved
+    display_title: Master
     position: 0
     display_options:
       access:
@@ -40,13 +40,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Bruk
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: full
         options:
@@ -57,16 +57,16 @@ display:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Første'
-            last: 'Siste »'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementer per side'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskyving
+            offset_label: Offset
           quantity: 9
       style:
         type: default
@@ -75,6 +75,7 @@ display:
         options:
           view_modes:
             'entity:group':
+              closed_group: teaser
               open_group: teaser
       fields:
         search_api_language:
@@ -145,7 +146,7 @@ display:
           expose:
             label: ''
           plugin_id: search_api
-      title: 'Søk grupper'
+      title: 'Search Groups'
       header:
         area:
           id: area
@@ -157,7 +158,7 @@ display:
           empty: true
           tokenize: true
           content:
-            value: '<h4 class="section-title">Resultater for grupper</h4><p>Hvis du søker etter brukere, <a href="/search/users/{{ arguments.search_api_fulltext }}">klikk her</a>. Hvis du søker etter innhold, <a href="/search/content/{{ arguments.search_api_fulltext }}">klikk her</a>.</p>'
+            value: '<h4 class="section-title">Group results</h4>'
             format: basic_html
           plugin_id: text
       footer: {  }
@@ -172,7 +173,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'Ingen resultater funnet.'
+            value: 'No results found.'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -188,7 +189,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: false
           title: ''
           default_argument_type: fixed
@@ -222,7 +223,7 @@ display:
   page:
     display_plugin: page
     id: page
-    display_title: Side
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }
@@ -246,7 +247,7 @@ display:
       display_description: ''
       menu:
         type: tab
-        title: Grupper
+        title: Groups
         description: ''
         expanded: false
         parent: ''
@@ -264,7 +265,7 @@ display:
           empty: true
           tokenize: true
           content:
-            value: '<h4 class="section-title">Resultater for grupper</h4><p>Hvis du søker etter brukere, <a href="/search/users/">klikk her</a>. Hvis du søker etter innhold, <a href="/search/content/">klikk her</a>.</p>'
+            value: '<h4 class="section-title">Group results</h4>'
             format: basic_html
           plugin_id: text
       defaults:

@@ -1,12 +1,13 @@
 uuid: 0e274b6e-2056-44a0-8406-f47d97d97451
-langcode: nb
+langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: gPld2blM3XBD-6HfPOEEzchyjIAmAmK-v6whehMZIrI
+  default_config_hash: B5PzJ4IFUxsjKOcGf4yAn3zuzUzMJJ_QNiZiEuCANxc
 id: open_group
 label: 'Open group'
-description: 'This is a open group. Users may join without approval and all content added in this group will be visible for non members as well.'
-creator_roles: {  }
+description: 'This is an open group. Users may join without approval and all content added in this group will be visible for non members as well.'
 creator_membership: true
-creator_wizard: true
+creator_wizard: false
+creator_roles:
+  - open_group-group_manager

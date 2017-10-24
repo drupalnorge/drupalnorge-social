@@ -1,0 +1,7 @@
+text:
+  -
+    value: "<p><a href=\"[message:author:url:relative]\">[message:author:display-name]</a> commented on [social_comment:parent_entity_author]'s [social_comment:commented_content_type] in <a href=\"[message:gurl]\">[message:gtitle]</a></p>\r\n"
+    format: full_html
+  -
+    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> and @count others commented on [social_comment:parent_entity_author]''s [social_comment:commented_content_type] in <a href="[message:gurl]">[message:gtitle]</a></p>'
+    format: full_html

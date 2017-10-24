@@ -1,5 +1,5 @@
 uuid: 4fe70e44-5636-409e-8947-112b381a56a1
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -24,7 +24,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: j7GNrHXfFS1Q6Sf9orDQQQdSxBHhDdc_zwF4GU0o4V4
+  default_config_hash: FP1pxadCeyvIl_yY8W40RMsBo_vSozGQVsxmKZK6N3U
 id: profile.profile.table
 targetEntityType: profile
 bundle: profile
@@ -54,4 +54,3 @@ hidden:
   field_profile_self_introduction: true
   field_profile_show_email: true
   field_profile_twitter_url: true
-  langcode: true

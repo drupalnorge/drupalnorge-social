@@ -1,5 +1,5 @@
 uuid: ca150e67-515e-440c-bca3-173e9d6f2c06
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -10,6 +10,8 @@ dependencies:
     - views
   theme:
     - socialblue
+_core:
+  default_config_hash: Q1Mm3jEdn0vzdytLroTsHc0Cg1iQtNPWiLfFJtk3MEs
 id: socialblue_views_block__upcoming_events_block_my_upcoming_events
 theme: socialblue
 region: complementary_bottom

@@ -1,5 +1,5 @@
 uuid: bb69ae8e-8883-4f2c-a393-e46c6560928c
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -18,20 +18,20 @@ third_party_settings:
     activity_aggregate: 0
     activity_entity_condition: comment_not_reply
 _core:
-  default_config_hash: z2TUvNsv6AgV3gxZ_7np-PPY6P13An-cABkUGPO8-AQ
+  default_config_hash: 4D6FfTOrYOVWsRvGe3T5RX78O4KKPaJTH99ffT7ug40
 template: create_comment_author_node_post
 label: 'Create comment on authors node or post'
 description: 'A person commented on a post, topic or event created or organised by me'
 text:
   -
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> commented on your <a href="[message:field_message_related_object:entity:url:absolute]">[social_comment:commented_content_type]</a></p>'
     format: full_html
-    value: '<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on your <a href="[message:field_message_related_object:entity:url:absolute]">content</a></p>'
   -
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> commented on your <a href="[message:field_message_related_object:entity:url:absolute]">[social_comment:commented_content_type]</a></p>'
     format: full_html
-    value: '<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on your <a href="[message:field_message_related_object:entity:url:absolute]">content</a></p>'
   -
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> commented on your <a href="[message:field_message_related_object:entity:url:absolute]">[social_comment:commented_content_type]</a></p>'
     format: full_html
-    value: '<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on your <a href="[message:field_message_related_object:entity:url:absolute]">content</a></p>'
 settings:
   'token options':
     clear: false

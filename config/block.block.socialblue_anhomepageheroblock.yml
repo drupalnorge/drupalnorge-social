@@ -1,5 +1,5 @@
 uuid: 396dc654-6f6b-4c32-a4ed-4ba2cb865b70
-langcode: nb
+langcode: en
 status: true
 dependencies:
   content:
@@ -10,6 +10,8 @@ dependencies:
     - user
   theme:
     - socialblue
+_core:
+  default_config_hash: _2nk0nU1RIaVO43S8JTkEA9lALoySulaYH_bbsS4j7o
 id: socialblue_anhomepageheroblock
 theme: socialblue
 region: hero

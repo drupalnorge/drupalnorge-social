@@ -1,5 +1,5 @@
 uuid: 9575d7c3-cd53-4fc3-9047-4fb5a2e1a9f7
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -22,7 +22,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: XjBkVacUSGAcDKhWG3NebkMBnnmnznJklcjvbeADU1Q
+  default_config_hash: 9ZzPVG_pP7mZo7dnKpPCO-8OLhXNOkpCBL8dL026-EE
 id: node.event.teaser
 targetEntityType: node
 bundle: event

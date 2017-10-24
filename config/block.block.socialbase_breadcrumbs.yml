@@ -1,5 +1,5 @@
 uuid: 01aadd3d-e275-4c27-a21a-350f24f43987
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,8 @@ dependencies:
     - user
   theme:
     - socialbase
+_core:
+  default_config_hash: 1u1kT1ArpkmW5wSx_fCG6y4IHGnnRmYQNNh30GOHXQQ
 id: socialbase_breadcrumbs
 theme: socialbase
 region: breadcrumb

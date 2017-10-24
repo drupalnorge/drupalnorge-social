@@ -1,5 +1,5 @@
 uuid: acf1ef0c-9ccb-45e5-b40f-d4386523113b
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -24,7 +24,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: 3kUqwmHjvNZS9KnsH8nUBqk7vfCwP34aWWYB1QOOSvI
+  default_config_hash: WapGCkULoJQ92NOStO_T5IDbEkkbpppAQqk-a0Pxyok
 id: profile.profile.autocomplete_item
 targetEntityType: profile
 bundle: profile
@@ -68,4 +68,3 @@ hidden:
   field_profile_self_introduction: true
   field_profile_show_email: true
   field_profile_twitter_url: true
-  langcode: true

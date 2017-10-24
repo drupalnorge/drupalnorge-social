@@ -1,5 +1,5 @@
 uuid: a34e1585-ad7a-495f-a1c6-b1ae9cd52adb
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -10,7 +10,7 @@ dependencies:
     - social_group
     - user
 _core:
-  default_config_hash: dFKwef9ygZI6lI5-zAQ0T4E9P_buaMIloSAsYxL1Uss
+  default_config_hash: x7iMLm7lWHBHInN7dGaPlKbTRty3_mg9XfIeWDOq8v8
 id: groups
 label: 'User Groups'
 module: views
@@ -23,7 +23,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Hoved
+    display_title: Master
     position: 0
     display_options:
       access:
@@ -44,13 +44,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Bruk
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: mini
         options:
@@ -60,12 +60,12 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementer per side'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Alle -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Forskyving
+            offset_label: Offset
           tags:
             previous: ‹‹
             next: ››
@@ -158,7 +158,7 @@ display:
           entity_type: group
           entity_field: created
           plugin_id: date
-      title: Grupper
+      title: Groups
       header: {  }
       footer: {  }
       empty:
@@ -172,7 +172,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'Ingen grupper funnet for denne brukeren'
+            value: 'No groups found for this user'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -188,7 +188,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: Alle
+            title: All
           title_enable: false
           title: ''
           default_argument_type: user
@@ -238,6 +238,9 @@ display:
         style: false
         row: false
         title: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
       block_description: 'User Groups'
       style:
         type: default
@@ -247,7 +250,10 @@ display:
         options:
           relationship: none
           view_mode: small_teaser
-      title: 'Grupper nylig blitt med i'
+      title: 'Recently joined groups'
+      use_more: true
+      use_more_always: true
+      use_more_text: 'All groups'
     cache_metadata:
       max-age: -1
       contexts:
@@ -266,7 +272,7 @@ display:
       display_description: ''
       menu:
         type: none
-        title: Grupper
+        title: Groups
         description: ''
         expanded: false
         parent: ''

@@ -1,5 +1,5 @@
 uuid: 77910223-f1d9-4dab-9922-eb2c56433c66
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -22,7 +22,7 @@ dependencies:
     - social_core
     - user
 _core:
-  default_config_hash: XFeyaAhL9pYlDZX31lLcJ771JFHm_jsg0LHdDoCZSuk
+  default_config_hash: _x1gQjE-fJ78r8Chu7TBCH1MbkS71NEW-DNPTRhrk_o
 id: node.event.activity
 targetEntityType: node
 bundle: event

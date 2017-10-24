@@ -1,5 +1,5 @@
 uuid: c1c7f856-58e3-4adf-89d5-3dbf3347c96b
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,10 +7,12 @@ dependencies:
     - system
   theme:
     - socialblue
+_core:
+  default_config_hash: IHLul8E5SE9sMZuhVqP1dBRAQhWE1KTjxgn-m7Q5is0
 id: socialblue_group_add_block
 theme: socialblue
 region: complementary_top
-weight: -22
+weight: -97
 provider: null
 plugin: group_add_block
 settings:

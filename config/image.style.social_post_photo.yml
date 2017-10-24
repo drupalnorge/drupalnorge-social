@@ -1,9 +1,11 @@
 uuid: d020f4f9-3b1c-47d8-b7bb-faa78a5061ba
-langcode: nb
+langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - image_effects
 _core:
-  default_config_hash: '-3shTje5EDB1IvO4zUIk2EUGM8Riq6tBr2nA_yMSvg0'
+  default_config_hash: 3BVhoc75UBfKSXbOinTB2BG1ZUxVqbmPOQZ45HD8I4E
 name: social_post_photo
 label: 'social post photo (714 x 1071)'
 effects:
@@ -15,3 +17,9 @@ effects:
       width: 714
       height: 1071
       upscale: false
+  1c9fe5fc-70fa-4b42-a1e2-41d7bb5323e6:
+    uuid: 1c9fe5fc-70fa-4b42-a1e2-41d7bb5323e6
+    id: image_effects_auto_orient
+    weight: 2
+    data:
+      scan_exif: true

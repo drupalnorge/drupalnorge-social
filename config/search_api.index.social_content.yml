@@ -1,5 +1,5 @@
 uuid: 4d54987d-8339-4bea-a845-64b54fb0d74a
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,7 +9,7 @@ dependencies:
     - search_api
     - node
 _core:
-  default_config_hash: 83qI19pgMRs_1rwh2rd80eatAj2kYEuwXIuBrPGC3wQ
+  default_config_hash: YefSKpo_CF6XgC6cBqX7oUqYIsRdpiK7YEmZoXyu6VI
 id: social_content
 name: 'Social Content'
 description: 'Default content index created for the Social distribution.'
@@ -32,7 +32,7 @@ field_settings:
         'entity:node':
           book: search_index
           event: search_index
-          page: default
+          page: search_index
           topic: search_index
   type:
     label: Type
@@ -124,6 +124,7 @@ processor_settings:
       b: 2
       em: 1
       u: 1
+    all_fields: false
   ignorecase:
     plugin_id: ignorecase
     settings:
@@ -133,6 +134,7 @@ processor_settings:
       weights:
         preprocess_index: -10
         preprocess_query: -10
+    all_fields: false
   rendered_item:
     plugin_id: rendered_item
     settings:
@@ -220,6 +222,7 @@ processor_settings:
       - was
       - will
       - with
+    all_fields: false
   tokenizer:
     plugin_id: tokenizer
     settings:
@@ -235,6 +238,7 @@ processor_settings:
     spaces: ''
     overlap_cjk: 1
     minimum_word_size: '3'
+    all_fields: false
   transliteration:
     plugin_id: transliteration
     settings:
@@ -244,11 +248,7 @@ processor_settings:
       weights:
         preprocess_index: -10
         preprocess_query: -10
-  entity_status:
-    plugin_id: node_status
-    settings:
-      weights:
-        preprocess_index: -10
+    all_fields: false
 tracker_settings:
   default:
     plugin_id: default

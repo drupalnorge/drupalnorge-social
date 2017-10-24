@@ -1,5 +1,5 @@
 uuid: a245d7a1-eaed-4658-a79d-6d63902c727a
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - socialblue
+_core:
+  default_config_hash: OV9Thne7ds1mIBkVEofkAsFpykpmDEk4eNc7aWoIsnQ
 id: socialblue_views_block__activity_stream_profile_block_1
 theme: socialblue
 region: content

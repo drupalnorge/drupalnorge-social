@@ -1,11 +1,13 @@
 uuid: 379c273e-6c66-405c-8717-87c3380671bf
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
     - socialblue
+_core:
+  default_config_hash: WQavb4yx5tp3JXnHNNH_B1-tp7ADTvyM3LDxGEuWbMw
 id: socialblue_content
 theme: socialblue
 region: content

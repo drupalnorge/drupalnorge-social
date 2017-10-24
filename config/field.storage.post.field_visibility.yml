@@ -1,12 +1,12 @@
 uuid: e0807112-4afe-402a-ad9f-ca1e1f0d4d9e
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
     - dropdown
     - social_post
 _core:
-  default_config_hash: RebAF06SADTbNRm_HBF4RL67YGT5pIzNmX_haHHx-FU
+  default_config_hash: 9IChKT1xRW3I7-oWdWMhAXoRYjpyJzG7PIVhkHaOlzU
 id: post.field_visibility
 field_name: field_visibility
 entity_type: post
@@ -25,6 +25,10 @@ settings:
       value: '2'
       label: Community
       description: 'Visible only to members who are logged in'
+    -
+      value: '3'
+      label: 'Group members'
+      description: 'Visible only to group members'
 module: dropdown
 locked: false
 cardinality: 1

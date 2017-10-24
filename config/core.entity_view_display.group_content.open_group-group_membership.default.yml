@@ -1,12 +1,12 @@
 uuid: 62112d58-2d6e-473a-a178-4e16f565d244
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
     - field.field.group_content.open_group-group_membership.group_roles
     - group.content_type.open_group-group_membership
 _core:
-  default_config_hash: s7vjYaXibm5gTvjllE_pdJ4QpnFAJsKlA8L9xa7lXzI
+  default_config_hash: jGyQJ5yQsfIk_ZYccKOl7qrRKklzXoKTMbnGrRvH0mc
 id: group_content.open_group-group_membership.default
 targetEntityType: group_content
 bundle: open_group-group_membership

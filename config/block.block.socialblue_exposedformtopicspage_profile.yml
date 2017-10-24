@@ -1,5 +1,5 @@
 uuid: 4bf911c0-e9ea-4e8e-b16d-49cfcee06e10
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -10,10 +10,12 @@ dependencies:
     - views
   theme:
     - socialblue
+_core:
+  default_config_hash: 0MO8kRMzukuFcnRLLugyr7OwKplACfFPLV7582vt5Uc
 id: socialblue_exposedformtopicspage_profile
 theme: socialblue
 region: complementary_top
-weight: -13
+weight: 3
 provider: null
 plugin: 'views_exposed_filter_block:topics-page_profile'
 settings:

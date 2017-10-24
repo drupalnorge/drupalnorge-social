@@ -1,9 +1,9 @@
 uuid: 532e815b-1453-41d6-88ca-b11a2f6f271e
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
-    - social_post
+    - social_post_photo
     - system
   theme:
     - socialbase

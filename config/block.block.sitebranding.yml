@@ -1,11 +1,13 @@
 uuid: 3ee5d2f8-dd19-45da-a483-7540562f46eb
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
     - socialbase
+_core:
+  default_config_hash: 38SP4Ez8nO0AVi0dkEYnWt2dFniIz1nylQ2YELfHbq0
 id: sitebranding
 theme: socialbase
 region: header

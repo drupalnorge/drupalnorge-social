@@ -1,5 +1,5 @@
 uuid: 328d43ab-95fd-47e9-90bf-59a0ae54b7b4
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,8 @@ dependencies:
     - system
   theme:
     - socialbase
+_core:
+  default_config_hash: gVVKBv0XM0-cDJPAEM_KQ1SvA6lKbXbrRMkkcOWFd8k
 id: group_add_topic_block
 theme: socialbase
 region: complementary_top

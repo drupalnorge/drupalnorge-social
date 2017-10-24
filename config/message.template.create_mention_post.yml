@@ -1,5 +1,5 @@
 uuid: 501a48cb-4b77-491b-bb61-75bd63cbdedf
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -11,26 +11,25 @@ third_party_settings:
     activity_action: create_entitiy_action
     activity_context: mention_activity_context
     activity_destinations:
-      stream_profile: stream_profile
       notifications: notifications
       email: email
     activity_create_direct: 1
     activity_aggregate: 0
     activity_entity_condition: mention_post
 _core:
-  default_config_hash: rdeOgjncMwQW4dZxdAFVMtPRwiuEw4TCGbckBZCzl2k
+  default_config_hash: 6wA3-SNNRI0WYtTmGmM4MjD3xoEsmuGS7ctJpc7i7Ug
 template: create_mention_post
 label: 'Create mention in a post'
 description: 'A person mentioned me in a post'
 text:
   -
-    value: "<p><a href=\"[message:author:url:relative]\">[message:author:display-name]</a> nevnte deg i et innlegg</p>\r\n"
+    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> mentioned you in a post</p>'
     format: full_html
   -
-    value: "<p><a href=\"[message:author:url:relative]\">[message:author:display-name]</a> nevnte deg i et innlegg</p>\r\n"
+    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> mentioned you in a post</p>'
     format: full_html
   -
-    value: "<p><a href=\"[message:author:url:relative]\">[message:author:display-name]</a> nevnte deg i et <a href=\"[message:field_message_related_object:entity:url:absolute]\">innlegg</a></p>\r\n"
+    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> mentioned you in a <a href="[message:field_message_related_object:entity:url:absolute]">post</a></p>'
     format: full_html
 settings:
   'token options':

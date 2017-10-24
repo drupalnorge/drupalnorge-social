@@ -1,5 +1,5 @@
 uuid: e0023ee8-6675-441c-9967-4d2ca0030f74
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -11,7 +11,7 @@ id: group_content.open_group-group_membership.group_roles
 field_name: group_roles
 entity_type: group_content
 bundle: open_group-group_membership
-label: Roller
+label: Roles
 description: ''
 required: false
 translatable: true

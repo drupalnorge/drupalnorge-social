@@ -1,5 +1,5 @@
 uuid: d3e19cd9-4961-4e36-a5fc-5928915b8e7b
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -8,9 +8,9 @@ dependencies:
 _core:
   default_config_hash: 0a14mVVCnnJaHe3k6iFyp_GAY3ZSdmKDyL77A1LEpp8
 id: content
-label: Innhold
+label: Content
 module: node
-description: 'Finne og behandle innhold.'
+description: 'Find and manage content.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -29,22 +29,22 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filtrer
+          submit_button: Filter
           reset_button: true
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: full
         options:
           items_per_page: 50
           tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
-            first: '« Første'
-            last: 'Siste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       style:
         type: table
         options:
@@ -161,7 +161,7 @@ display:
           id: title
           table: node_field_data
           field: title
-          label: Tittel
+          label: Title
           exclude: false
           alter:
             alter_text: false
@@ -184,7 +184,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Innholdstype
+          label: 'Content Type'
           exclude: false
           alter:
             alter_text: false
@@ -247,7 +247,7 @@ display:
           table: users_field_data
           field: name
           relationship: uid
-          label: Forfatter
+          label: Author
           exclude: false
           alter:
             alter_text: false
@@ -278,8 +278,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Publisert
-            format_custom_false: Avpublisert
+            format_custom_true: Published
+            format_custom_false: Unpublished
           plugin_id: field
           entity_type: node
           entity_field: status
@@ -287,7 +287,7 @@ display:
           id: changed
           table: node_field_data
           field: changed
-          label: Oppdatert
+          label: Updated
           exclude: false
           alter:
             alter_text: false
@@ -312,7 +312,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Handlinger
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -390,7 +390,7 @@ display:
               authenticated: authenticated
           is_grouped: true
           group_info:
-            label: Publiseringsstatus
+            label: 'Published status'
             description: ''
             identifier: status
             optional: true
@@ -401,11 +401,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Publisert
+                title: Published
                 operator: '='
                 value: '1'
               2:
-                title: Avpublisert
+                title: Unpublished
                 operator: '='
                 value: '0'
           plugin_id: boolean
@@ -465,7 +465,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Tittel
+            label: Title
             description: ''
             use_operator: false
             operator: title_op
@@ -534,14 +534,14 @@ display:
           entity_type: node
           entity_field: langcode
       sorts: {  }
-      title: Innhold
+      title: Content
       empty:
         area_text_custom:
           id: area_text_custom
           table: views
           field: area_text_custom
           empty: true
-          content: 'Intet innhold tilgjengelig.'
+          content: 'No content available.'
           plugin_id: text_custom
       arguments: {  }
       relationships:
@@ -559,7 +559,7 @@ display:
           1: AND
       display_extenders: {  }
     display_plugin: default
-    display_title: Hoved
+    display_title: Master
     id: default
     position: 0
     cache_metadata:
@@ -578,20 +578,20 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Innhold
+        title: Content
         description: ''
         menu_name: admin
         weight: -10
         context: ''
       tab_options:
         type: normal
-        title: Innhold
-        description: 'Finn og administrer innhold'
+        title: Content
+        description: 'Find and manage content'
         menu_name: admin
         weight: -10
       display_extenders: {  }
     display_plugin: page
-    display_title: Side
+    display_title: Page
     id: page_1
     position: 1
     cache_metadata:

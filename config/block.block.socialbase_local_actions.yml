@@ -1,9 +1,11 @@
 uuid: 2c3d94a8-4a97-4102-9de2-970b92017788
-langcode: nb
+langcode: en
 status: true
 dependencies:
   theme:
     - socialbase
+_core:
+  default_config_hash: g_iQJHOc4hAoQ7TCha7RcvICZ-sj5U8keOEsQYXCBsU
 id: socialbase_local_actions
 theme: socialbase
 region: content

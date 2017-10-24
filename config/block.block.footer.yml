@@ -1,5 +1,5 @@
 uuid: 5476152b-c9f0-4421-9873-8fe2c6639314
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -8,6 +8,8 @@ dependencies:
     - system
   theme:
     - socialbase
+_core:
+  default_config_hash: Qwub9pMtOwzb9-N-KXIjA580GWWiBAj3_UWugydF5eg
 id: footer
 theme: socialbase
 region: footer

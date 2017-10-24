@@ -1,11 +1,12 @@
 uuid: 3c80246a-8693-4e6d-b64c-3cee431cc428
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
     - crop
+    - image_effects
 _core:
-  default_config_hash: d2bJtymlRx49G7U-OhP0lLJklrThBBBIKfq0ik54coA
+  default_config_hash: NJXjBzWMsg68K3eNxJFjw9O1uWqANUd_YBD6ZTB-op0
 name: social_small
 label: 'social small (24 x 24)'
 effects:
@@ -22,3 +23,9 @@ effects:
     weight: 1
     data:
       crop_type: profile_small
+  db56295b-59b4-4adb-873b-4fd967615ffc:
+    uuid: db56295b-59b4-4adb-873b-4fd967615ffc
+    id: image_effects_auto_orient
+    weight: 3
+    data:
+      scan_exif: true

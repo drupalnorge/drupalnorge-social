@@ -1,5 +1,5 @@
 uuid: 923e536f-9958-4797-a623-9fd30c7b0e95
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -10,10 +10,12 @@ dependencies:
     - views
   theme:
     - socialblue
+_core:
+  default_config_hash: nh5w2HyyMdVmLkORoql-7P8RXgsF_bl26XLi2MFy49w
 id: socialblue_exposedformeventsevents_overview
 theme: socialblue
 region: complementary_top
-weight: -16
+weight: 1
 provider: null
 plugin: 'views_exposed_filter_block:events-events_overview'
 settings:

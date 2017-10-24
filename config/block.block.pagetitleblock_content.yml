@@ -1,5 +1,5 @@
 uuid: 98efe53f-6ade-4911-bfcc-d536819941ea
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
@@ -7,6 +7,8 @@ dependencies:
     - system
   theme:
     - socialbase
+_core:
+  default_config_hash: XlcqhiFUha2cNLhkfWUo9S0WLJh8joRUeTPi9vujuR8
 id: pagetitleblock_content
 theme: socialbase
 region: title

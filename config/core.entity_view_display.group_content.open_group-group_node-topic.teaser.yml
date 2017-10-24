@@ -1,12 +1,12 @@
 uuid: 7f50fcb8-d913-4613-9628-7f446ee5d43b
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.group_content.teaser
     - group.content_type.open_group-group_node-topic
 _core:
-  default_config_hash: vn67WY5ZXaRp3lQ6saMBGLlY76oakc8DFsz6Os3iBCM
+  default_config_hash: AXhF7aeW4R8UkKMZOcOu85K3Q3wq5aKnblOn6BIKaAA
 id: group_content.open_group-group_node-topic.teaser
 targetEntityType: group_content
 bundle: open_group-group_node-topic

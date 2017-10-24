@@ -1,10 +1,10 @@
 uuid: 2794aef9-b5eb-497d-ac5b-0ba44cc0cbe8
-langcode: nb
+langcode: en
 status: true
 dependencies: {  }
 _core:
   default_config_hash: hD_X55d0D-MMgKFM6COxkqKRh3Rxu9YOLpgCOPFiRXo
 id: comment
-label: Kommentar
+label: Comment
 target_entity_type_id: node
 description: 'Default comment type.'

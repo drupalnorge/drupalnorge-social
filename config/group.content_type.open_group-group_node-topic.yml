@@ -1,5 +1,5 @@
 uuid: 69461d99-6779-41f1-98f1-2dd42016b207
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -9,12 +9,13 @@ dependencies:
     - gnode
     - node
 _core:
-  default_config_hash: '-lKSNwU0w9chIPTkjbF7UpbMdkeML71qu73iOHFQOPk'
+  default_config_hash: BgBLkxuqqlzVEeCVcDGgjrpjtFMtKa6LCaBt6zjK90M
 id: open_group-group_node-topic
-label: 'Open group: Group node (Topic)'
+label: topic
 description: 'Adds <em class="placeholder">Topic</em> content to groups both publicly and privately.'
 group_type: open_group
 content_plugin: 'group_node:topic'
 plugin_config:
   group_cardinality: 1
   entity_cardinality: 1
+  use_creation_wizard: false

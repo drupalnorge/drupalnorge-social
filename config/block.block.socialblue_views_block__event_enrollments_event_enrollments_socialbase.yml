@@ -1,5 +1,5 @@
 uuid: c5cbbe46-140f-4bbd-8e88-d5aa022a30e0
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -10,10 +10,12 @@ dependencies:
     - views
   theme:
     - socialblue
+_core:
+  default_config_hash: WoH7kJIJuRWNxIKfVBMMzetSmnHFu2n5YQfpZHZl8zU
 id: socialblue_views_block__event_enrollments_event_enrollments_socialbase
 theme: socialblue
 region: complementary_top
-weight: -19
+weight: -20
 provider: null
 plugin: 'views_block:event_enrollments-event_enrollments'
 settings:

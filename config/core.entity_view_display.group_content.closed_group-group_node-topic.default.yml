@@ -1,0 +1,25 @@
+uuid: 915e43e9-c6ad-4e42-9541-a24ebdc3c92d
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.content_type.closed_group-group_node-topic
+_core:
+  default_config_hash: zmrBnWW9Rpbmd5G7bdFb5XBZoQ3r6CYlAJYNWLvu5X0
+id: group_content.closed_group-group_node-topic.default
+targetEntityType: group_content
+bundle: closed_group-group_node-topic
+mode: default
+content:
+  entity_id:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  uid: true
