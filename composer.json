@@ -9,7 +9,7 @@
         "composer/installers": "^v1.4.0",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "^1.0",
-        "goalgorilla/open_social": "1.5.0",
+        "goalgorilla/open_social": "1.6.0",
         "drupal/coffee": "1.x-dev",
         "drupal/sparkpost": "2.0-beta1",
         "drupal/reroute_email": "1.x-dev",
@@ -44,6 +44,7 @@
             "./vendor/bin/behat --colors"
         ],
         "import": [
+            "./vendor/bin/drush --root=$(pwd)/html cc drush",
             "./vendor/bin/drush --root=$(pwd)/html cim -y",
             "./vendor/bin/drush --root=$(pwd)/html fra --bundle=social -y"
         ],

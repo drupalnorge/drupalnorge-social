@@ -18,14 +18,14 @@ third_party_settings:
     activity_bundle_entities:
       node-topic: node-topic
 _core:
-  default_config_hash: 5zgexuL111nwnHFXypA5AsemLoRP-0AsY0mY0mE0kwY
+  default_config_hash: fUIQO9Lm_XhSfzcT-ae10YmFY4YdMea1rMIFMfUjI0M
 template: create_topic_community
 label: 'Create topic'
 description: 'A user created a topic in the community'
 text:
   -
     format: full_html
-    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> created a topic</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created a topic</p>'
 settings:
   'token options':
     clear: false

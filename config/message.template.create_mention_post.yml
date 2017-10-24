@@ -17,19 +17,19 @@ third_party_settings:
     activity_aggregate: 0
     activity_entity_condition: mention_post
 _core:
-  default_config_hash: 6wA3-SNNRI0WYtTmGmM4MjD3xoEsmuGS7ctJpc7i7Ug
+  default_config_hash: tgMUo4bRZ1ZIb1B-Q1H8bGoHt-jNnOeQgpIlnsr4Xhw
 template: create_mention_post
 label: 'Create mention in a post'
 description: 'A person mentioned me in a post'
 text:
   -
-    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> mentioned you in a post</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a post</p>'
     format: full_html
   -
-    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> mentioned you in a post</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a post</p>'
     format: full_html
   -
-    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> mentioned you in a <a href="[message:field_message_related_object:entity:url:absolute]">post</a></p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a <a href="[message:field_message_related_object:entity:url:absolute]">post</a></p>'
     format: full_html
 settings:
   'token options':
