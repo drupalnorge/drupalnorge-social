@@ -45,8 +45,7 @@
         ],
         "import": [
             "./vendor/bin/drush --root=$(pwd)/html cc drush",
-            "./vendor/bin/drush --root=$(pwd)/html cim -y",
-            "./vendor/bin/drush --root=$(pwd)/html fra --bundle=social -y"
+            "./vendor/bin/drush --root=$(pwd)/html cim -y"
         ],
         "export": [
             "./vendor/bin/drush --root=$(pwd)/html cex -y"
