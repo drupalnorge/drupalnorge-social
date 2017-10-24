@@ -9,7 +9,7 @@
         "composer/installers": "^v1.4.0",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "^1.0",
-        "goalgorilla/open_social": "1.4.0",
+        "goalgorilla/open_social": "1.5.0",
         "drupal/coffee": "1.x-dev",
         "drupal/sparkpost": "2.0-beta1",
         "drupal/reroute_email": "1.x-dev",
@@ -28,26 +28,35 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
     ],
     "scripts": {
-      "post-install-cmd": [
-        "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
-      ],
-      "post-update-cmd": [
-        "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
-      ],
-      "test": [
-         "./vendor/bin/phpcs -p",
-         "./vendor/bin/behat --colors"
-      ],
-      "build": [
-        "git pull",
-        "@composer install --no-dev",
-        "./vendor/bin/drush --root=$(pwd)/html updb -y",
-        "./vendor/bin/drush --root=$(pwd)/html cim -y",
-        "./vendor/bin/drush --root=$(pwd)/html cr"
-      ]
+        "post-install-cmd": [
+            "@composer drupal-scaffold"
+        ],
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "test": [
+            "./vendor/bin/phpcs -p",
+            "./vendor/bin/behat --colors"
+        ],
+        "import": [
+            "./vendor/bin/drush --root=$(pwd)/html cim -y",
+            "./vendor/bin/drush --root=$(pwd)/html fra --bundle=social -y"
+        ],
+        "export": [
+            "./vendor/bin/drush --root=$(pwd)/html cex -y"
+        ],
+        "build": [
+            "git pull",
+            "@composer install --no-dev",
+            "./vendor/bin/drush --root=$(pwd)/html updb -y",
+            "@composer import",
+            "./vendor/bin/drush --root=$(pwd)/html cr"
+        ]
     },
     "extra": {
         "installer-paths": {
@@ -68,16 +77,25 @@
             ],
             "drush/contrib/{$name}": [
                 "type:drupal-drush"
+            ],
+            "html/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
             ]
         },
         "patches": {
-          "drupal/core": {
-            "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
-          },
-          "drupal/sparkpost": {
-            "Email subjects can get double escaped (https://www.drupal.org/node/2883467)": "https://www.drupal.org/files/issues/email_subjects_can_get-2883467-2.patch"
-          }
+            "drupal/core": {
+                "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
+            },
+            "drupal/sparkpost": {
+                "Email subjects can get double escaped (https://www.drupal.org/node/2883467)": "https://www.drupal.org/files/issues/email_subjects_can_get-2883467-2.patch"
+            }
         },
-        "enable-patching": true
+        "enable-patching": true,
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ]
     }
 }
