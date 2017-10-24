@@ -17,10 +17,10 @@ third_party_settings:
     activity_aggregate: 0
     activity_entity_condition: comment_not_reply
 _core:
-  default_config_hash: ebTULGw-OfZo5D5dnHsNBKXwMV3yRIrKE12yztCSZYI
+  default_config_hash: VzdQ8vTRrqzyGuXw2z7VP7vzX7bhEZLQhdrcVjo5dhk
 template: create_comment_post_profile
 label: 'Create comment on post on my profile'
-description: 'A person commented on the post posted on my profile'
+description: 'A person commented on a post on my profile'
 text:
   -
     format: full_html

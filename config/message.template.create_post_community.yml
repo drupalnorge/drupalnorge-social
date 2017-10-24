@@ -16,14 +16,14 @@ third_party_settings:
     activity_bundle_entities:
       post-post: post-post
 _core:
-  default_config_hash: zJRRZwuLvT9hTlY-Hz-rsr0F3Sk0Vte2eUvJD7Jl0SI
+  default_config_hash: kKHsUYXAxkTVpHpcsY5TpAthL6g7h74_Xf7CaFXmHJY
 template: create_post_community
 label: 'Create post in the community'
 description: 'A user created a post in the community'
 text:
   -
     format: full_html
-    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> posted</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> posted</p>'
 settings:
   'token options':
     clear: false
