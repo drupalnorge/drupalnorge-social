@@ -43,13 +43,20 @@ display:
           expose:
             label: Startdato
           group_info:
+            label: 'Status for hendelse'
             group_items:
               1:
                 title: 'Kommende hendelser'
+              2:
+                title: 'Hendelser som har startet eller er ferdige'
+      title: 'Hendelser i fellesskapet'
   upcoming_events_group:
     display_options:
       arguments:
         gid:
           exception:
             title: Alle
+      empty:
+        area_text_custom:
+          content: 'Ingen kommende hendelser for denne gruppa'
       title: 'Kommende hendelser'

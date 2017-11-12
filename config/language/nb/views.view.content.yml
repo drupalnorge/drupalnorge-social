@@ -27,6 +27,9 @@ display:
           label: Forfatter
         status:
           label: Status
+          settings:
+            format_custom_true: Publisert
+            format_custom_false: Avpublisert
         changed:
           label: Oppdatert
         operations:
@@ -50,7 +53,7 @@ display:
             label: Tittel
         langcode:
           expose:
-            label: Språk
+            label: Language
       title: Innhold
       empty:
         area_text_custom:

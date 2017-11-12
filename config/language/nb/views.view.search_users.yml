@@ -1,3 +1,4 @@
+label: 'Søk brukere'
 display:
   default:
     display_title: Hoved
@@ -11,13 +12,15 @@ display:
           sort_desc_label: Synkende
       pager:
         options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« Første'
+            last: 'Siste »'
           expose:
             items_per_page_label: 'Elementer per side'
             items_per_page_options_all_label: '- Alle -'
             offset_label: Forskyving
-          tags:
-            previous: ‹‹
-            next: ››
       title: 'Søk brukere'
       empty:
         area:

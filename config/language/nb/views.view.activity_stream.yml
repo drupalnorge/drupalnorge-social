@@ -1,3 +1,4 @@
+label: Aktivitetsstrøm
 display:
   default:
     display_title: Hoved
@@ -18,5 +19,9 @@ display:
             items_per_page_label: 'Elementer per side'
             items_per_page_options_all_label: '- Alle -'
             offset_label: Forskyving
+      title: Strøm
   page_activity_stream:
     display_title: Side
+  page_explore:
+    display_options:
+      title: 'Se aktivitet'

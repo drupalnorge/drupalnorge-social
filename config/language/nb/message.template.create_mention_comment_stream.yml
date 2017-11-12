@@ -1,4 +1,3 @@
 text:
   -
-    value: "<p><a href=\"\">[message:author:display-name]</a> mentioned<a href=\"\"> [social_mentions:mentioned_user] </a>in a comment</p>\r\n"
     format: basic_html

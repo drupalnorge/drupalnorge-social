@@ -50,6 +50,9 @@ display:
           expose:
             label: Startdato
           group_info:
+            label: 'Status for hendelse'
             group_items:
               1:
                 title: 'Kommende hendelser'
+              2:
+                title: 'Hendelser som har startet eller er ferdige'

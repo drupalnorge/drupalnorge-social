@@ -1,0 +1,13 @@
+tips:
+  search-api-index-fields-label:
+    label: Label
+  search-api-index-fields-machine-name:
+    label: 'Machine name'
+  search-api-index-fields-type:
+    label: Type
+  search-api-index-fields-edit:
+    label: 'Edit field'
+  search-api-index-fields-remove:
+    label: 'Remove field'
+  search-api-index-fields-submit:
+    label: 'Save changes'

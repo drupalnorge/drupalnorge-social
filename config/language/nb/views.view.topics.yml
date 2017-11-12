@@ -33,10 +33,13 @@ display:
   block_user_topics:
     display_title: Blokk
     display_options:
+      title: 'Nylig opprettede emner'
+      block_description: 'Nylig opprettede emner'
       arguments:
         uid:
           exception:
             title: Alle
+      use_more_text: 'Alle emner'
   page_profile:
     display_title: Side
     display_options:

@@ -12,9 +12,11 @@ display:
       fields:
         label:
           separator: ', '
+      title: 'Om gruppa'
       arguments:
         id:
           exception:
             title: Alle
+          title: 'Om {{ arguments.id }}'
   page_group_about:
     display_title: Side

@@ -9,10 +9,16 @@ display:
           exposed_sorts_label: 'Sortér på'
           sort_asc_label: Stigende
           sort_desc_label: Synkende
+      title: Aktivitetsstrøm
+      empty:
+        area:
+          content:
+            value: 'Du har ingen varslinger.'
       arguments:
         field_activity_recipient_user_target_id:
           exception:
             title: Alle
+      use_more_text: 'Alle varslinger'
   block_1:
     display_title: Blokk
   page_1:
