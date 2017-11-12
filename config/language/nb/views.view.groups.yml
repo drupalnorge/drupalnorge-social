@@ -30,6 +30,10 @@ display:
         group_membership_or_creator:
           exception:
             title: Alle
+  block_user_groups:
+    display_options:
+      title: 'Grupper nylig blitt med i'
+      use_more_text: 'Alle grupper'
   page_user_groups:
     display_options:
       menu:

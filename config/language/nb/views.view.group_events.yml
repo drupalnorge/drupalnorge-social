@@ -1,4 +1,4 @@
-label: Gruppearrangement
+label: 'Hendelser i gruppa'
 display:
   default:
     display_title: Hoved
@@ -25,10 +25,16 @@ display:
       filters:
         field_event_date_value:
           group_info:
+            label: 'Status for hendelse'
             group_items:
               1:
                 title: 'Kommende hendelser'
-      title: Gruppearrangement
+              2:
+                title: 'Hendelser som har startet eller er ferdige'
+      title: 'Hendelser i gruppa'
+      empty:
+        area_text_custom:
+          content: 'Ingen hendelser i denne gruppa'
       arguments:
         gid:
           exception:

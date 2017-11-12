@@ -1,3 +1,4 @@
+label: 'Emner for gruppa'
 display:
   default:
     display_title: Hoved
@@ -25,6 +26,10 @@ display:
         status:
           expose:
             label: Publiseringsstatus
+      title: 'Emner for gruppa'
+      empty:
+        area_text_custom:
+          content: 'Ingen emner i denne gruppa'
       arguments:
         gid:
           exception:

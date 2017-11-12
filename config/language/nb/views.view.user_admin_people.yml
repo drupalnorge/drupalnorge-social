@@ -29,6 +29,9 @@ display:
           label: Brukernavn
         status:
           label: Status
+          settings:
+            format_custom_true: Aktiv
+            format_custom_false: Blokkert
         roles_target_id:
           label: Roller
         created:

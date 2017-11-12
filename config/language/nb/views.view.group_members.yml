@@ -29,5 +29,8 @@ display:
             title: Alle
   block_newest_members:
     display_title: Blokk
+    display_options:
+      title: 'Nyeste medlemmer'
+      use_more_text: 'Alle medlemmer'
   page_group_members:
     display_title: Side

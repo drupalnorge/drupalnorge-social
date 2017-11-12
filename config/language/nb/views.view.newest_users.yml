@@ -1,3 +1,4 @@
+label: 'Nyeste brukere'
 display:
   default:
     display_title: Hoved
@@ -18,6 +19,11 @@ display:
           tags:
             previous: ‹‹
             next: ››
+      title: 'Nyeste medlemmer'
+  block_newest_users:
+    display_options:
+      title: 'Nyeste medlemmer'
+      use_more_text: 'Alle medlemmer'
   page_newest_users:
     display_options:
       pager:
@@ -31,3 +37,4 @@ display:
             items_per_page_label: 'Elementer per side'
             items_per_page_options_all_label: '- Alle -'
             offset_label: Forskyving
+      title: 'Alle medlemmer'

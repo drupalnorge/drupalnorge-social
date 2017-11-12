@@ -1,3 +1,4 @@
+label: 'Siste emner'
 display:
   default:
     display_title: Hoved
@@ -12,12 +13,23 @@ display:
       fields:
         title:
           separator: ', '
+      title: 'Alle emner'
+  block_latest_topics:
+    display_options:
+      title: 'Nyeste emner'
+      use_more_text: 'Alle emner'
   group_topics_block:
     display_options:
+      block_description: 'Siste emner for gruppa'
+      empty:
+        area_text_custom:
+          content: 'Ingen emner i denne gruppa'
       arguments:
         gid:
           exception:
             title: Alle
+      title: 'Nyeste emner'
+      use_more_text: 'Alle emner'
   page_latest_topics:
     display_options:
       pager:

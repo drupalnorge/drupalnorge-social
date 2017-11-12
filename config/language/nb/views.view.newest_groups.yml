@@ -1,3 +1,4 @@
+label: 'Nyeste grupper'
 display:
   default:
     display_title: Hoved
@@ -23,3 +24,8 @@ display:
       fields:
         label:
           separator: ', '
+      title: 'Alle grupper'
+  block_newest_groups:
+    display_options:
+      title: 'Nyeste grupper'
+      use_more_text: 'Alle grupper'

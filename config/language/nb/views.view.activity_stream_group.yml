@@ -20,6 +20,7 @@ display:
             items_per_page_label: 'Elementer per side'
             items_per_page_options_all_label: '- Alle -'
             offset_label: Forskyving
+      title: Aktivitetsstrøm
       arguments:
         activity_group_argument:
           exception:
