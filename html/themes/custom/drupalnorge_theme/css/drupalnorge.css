@@ -1,6 +1,6 @@
 .navbar-default .navbar-brand {
     background: none !important;
 }
-.slack-invite-form {
+.slack-invite-form, .mailchimp-signup-subscribe-form {
     padding: 1.25rem;
 }
