@@ -1,0 +1,20 @@
+uuid: 0e54246a-a703-44f9-a828-936240369f6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - mailchimp_signup
+  theme:
+    - drupalnorge_theme
+id: mailchimpsubscriptionformmelddegpanyhetsbrevet
+theme: drupalnorge_theme
+region: complementary_top
+weight: -24
+provider: null
+plugin: 'mailchimp_signup_subscribe_block:meld_deg_pa_nyhetsbrevet'
+settings:
+  id: 'mailchimp_signup_subscribe_block:meld_deg_pa_nyhetsbrevet'
+  label: 'Meld deg på nyhetsbrevet'
+  provider: mailchimp_signup
+  label_display: visible
+visibility: {  }
