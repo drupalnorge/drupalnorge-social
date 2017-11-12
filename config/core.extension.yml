@@ -50,6 +50,8 @@ module:
   like_and_dislike: 0
   link: 0
   locale: 0
+  mailchimp: 0
+  mailchimp_signup: 0
   mailsystem: 0
   mentions: 0
   menu_link_content: 0
