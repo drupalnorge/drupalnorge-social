@@ -30,6 +30,7 @@ install:
   - ./../vendor/bin/drush runserver http://127.0.0.1:8888 &
   - sleep 3
   - cd $TRAVIS_BUILD_DIR
+  - composer install
 
 script:
   - composer test
