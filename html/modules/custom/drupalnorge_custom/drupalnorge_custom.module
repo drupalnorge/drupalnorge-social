@@ -4,3 +4,34 @@
  * @file
  * Drupal Norge custom module.
  */
+
+/**
+ * Implements hook_entity_insert().
+ */
+function drupalnorge_custom_entity_insert(Drupal\Core\Entity\EntityInterface $entity) {
+  $type = $entity->getEntityTypeId();
+  /** @var \Drupal\slack\Slack $slack */
+  $slack = \Drupal::service('slack.slack_service');
+  if ($type == 'comment') {
+    /** @var \Drupal\comment\Entity\Comment $entity */
+    $owner = $entity->getOwner();
+    $node = $entity->getCommentedEntity();
+    $slack->sendMessage(t('@user commented on @title: @url', [
+      '@user' => $owner->getDisplayName(),
+      '@title' => $node->label(),
+      '@url' => $node->toUrl('canonical', [
+        'absolute' => TRUE,
+      ])->toString(),
+    ]));
+  }
+  if ($type == 'node') {
+    /** @var \Drupal\node\Entity\Node $entity */
+    $slack->sendMessage(t('@user posted on drupalnorge.no: @title. @url', [
+      '@title' => $entity->label(),
+      '@user' => $entity->getOwner()->getDisplayName(),
+      '@url' => $entity->toUrl('canonical', [
+        'absolute' => TRUE,
+      ])->toString(),
+    ]));
+  }
+}
