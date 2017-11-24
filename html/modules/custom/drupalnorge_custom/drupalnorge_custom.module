@@ -5,10 +5,12 @@
  * Drupal Norge custom module.
  */
 
+use Drupal\Core\Entity\EntityInterface;
+
 /**
  * Implements hook_entity_insert().
  */
-function drupalnorge_custom_entity_insert(Drupal\Core\Entity\EntityInterface $entity) {
+function drupalnorge_custom_entity_insert(EntityInterface $entity) {
   $type = $entity->getEntityTypeId();
   /** @var \Drupal\slack\Slack $slack */
   $slack = \Drupal::service('slack.slack_service');
