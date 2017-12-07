@@ -212,7 +212,7 @@
             "version": "3.2.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
+                "url": "https://github.com/jquery/jquery-dist.git",
                 "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e"
             },
             "dist": {
@@ -857,16 +857,16 @@
         },
         {
             "name": "cweagans/composer-patches",
-            "version": "1.6.3",
+            "version": "1.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cweagans/composer-patches.git",
-                "reference": "730f0f620845974764a91482ac936cc6f39da184"
+                "reference": "462e65061606dc6149349535d4322241515d1b16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/730f0f620845974764a91482ac936cc6f39da184",
-                "reference": "730f0f620845974764a91482ac936cc6f39da184",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/462e65061606dc6149349535d4322241515d1b16",
+                "reference": "462e65061606dc6149349535d4322241515d1b16",
                 "shasum": ""
             },
             "require": {
@@ -897,7 +897,7 @@
                 }
             ],
             "description": "Provides a way to patch Composer packages.",
-            "time": "2017-11-22T20:18:27+00:00"
+            "time": "2017-12-07T16:16:31+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
