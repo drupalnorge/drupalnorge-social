@@ -8,7 +8,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: fpOBSoFobDbj9zHoAE-xTQLXIJ-xaPFVeufGklKjJ6g
+  default_config_hash: 6EhK4Mu7aFWHL1M98zHnZ5CqSVSnsOWZ_SiGjfm884c
 id: node.page.field_page_image
 field_name: field_page_image
 entity_type: node
@@ -21,7 +21,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'gif jpg jpeg'
+  file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: 4096x4096
   min_resolution: ''

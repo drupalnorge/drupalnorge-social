@@ -8,7 +8,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: i-BaHuB0bPB7XiAUCcg65ciAm48O8Q_mJ5d1hqOhrNE
+  default_config_hash: 9dJ8YW6quwievC6YFiy5yQiRlwnGRWkzcQmG6lG1M3o
 id: block_content.hero_call_to_action_block.field_hero_image
 field_name: field_hero_image
 entity_type: block_content
@@ -21,7 +21,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'gif jpg jpeg png'
+  file_extensions: 'png gif jpg jpeg'
   max_filesize: '50 MB'
   max_resolution: 2048x1080
   min_resolution: 200x200

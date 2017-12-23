@@ -10,7 +10,7 @@ dependencies:
     - social_group
     - user
 _core:
-  default_config_hash: x7iMLm7lWHBHInN7dGaPlKbTRty3_mg9XfIeWDOq8v8
+  default_config_hash: j7pIbbkhq33FlY-AoeiglfeTG18bPehQSYti_JGti1E
 id: groups
 label: 'User Groups'
 module: views
@@ -150,7 +150,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
+          order: DESC
           exposed: false
           expose:
             label: ''

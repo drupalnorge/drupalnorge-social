@@ -45,13 +45,11 @@ settings:
   plugins:
     stylescombo:
       styles: ''
-    language:
-      language_list: un
 image_upload:
   status: true
-  scheme: private
+  scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: null
-    height: null
+    width: 0
+    height: 0

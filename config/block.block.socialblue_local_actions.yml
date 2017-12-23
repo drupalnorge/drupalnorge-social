@@ -5,10 +5,10 @@ dependencies:
   theme:
     - socialblue
 _core:
-  default_config_hash: pVsR7rTbksNB4kDLIOub6wkgtdkK95Tk2Eco9sKbwG4
+  default_config_hash: O_bSLDdC9WQc1c7MefAGzkqqZ3hM8BWQkNppL3FmtAk
 id: socialblue_local_actions
 theme: socialblue
-region: content
+region: complementary_top
 weight: -18
 provider: null
 plugin: local_actions_block

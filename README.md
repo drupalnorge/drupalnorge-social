@@ -17,3 +17,7 @@ If you want a database dump, here is one: [https://drupalnorge.no/sanitized.db](
 Install drupal. You can do this however you want. One way is to use drush:
 
 `drush site-install --db-url=mysql://USER:PASS@HOST/DATABASE`
+
+## Upgrading open social
+
+Refer to this guide: [https://www.drupal.org/docs/8/distributions/open-social/installing-and-updating](https://www.drupal.org/docs/8/distributions/open-social/installing-and-updating)
