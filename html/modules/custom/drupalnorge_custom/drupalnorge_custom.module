@@ -37,3 +37,31 @@ function drupalnorge_custom_entity_insert(EntityInterface $entity) {
     ]));
   }
 }
+
+/**
+ * Implements hook_file_download().
+ */
+function drupalnorge_custom_file_download($uri) {
+  if ($uri == 'private://default_images/default-profile-picture.png') {
+    // Stole this from file_download().
+    $files = \Drupal::entityManager()->getStorage('file')->loadByProperties([
+      'uri' => $uri,
+    ]);
+    if (count($files)) {
+      foreach ($files as $item) {
+        // Since some database servers sometimes use a case-insensitive
+        // comparison by default, double check that the filename is an exact
+        // match.
+        if ($item->getFileUri() === $uri) {
+          $file = $item;
+          break;
+        }
+      }
+    }
+    if (!isset($file)) {
+      return;
+    }
+    $headers = file_get_content_headers($file);
+    return $headers;
+  }
+}
