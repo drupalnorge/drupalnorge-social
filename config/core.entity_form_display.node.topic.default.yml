@@ -133,6 +133,12 @@ content:
     third_party_settings: {  }
     type: options_buttons
     region: content
+  groups:
+    type: options_select
+    settings: {  }
+    weight: 16
+    region: content
+    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 2
