@@ -101,7 +101,7 @@ third_party_settings:
         id: attachments
         classes: card
 _core:
-  default_config_hash: NX1AjfjjcnXVBHVqwi0C86syJe60c_7THPidEkRRM3g
+  default_config_hash: sebD4LjqDOF1bHkmqoTJVQlek_9sR_BSxnM7zumMMH8
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -186,7 +186,8 @@ content:
     type: language_select
     weight: 2
     region: content
-    settings: {  }
+    settings:
+      include_locked: true
     third_party_settings: {  }
   path:
     type: path
@@ -201,6 +202,13 @@ content:
     weight: 6
     third_party_settings: {  }
     region: content
+  status:
+    region: content
+    settings:
+      display_label: true
+    type: boolean_checkbox
+    weight: 120
+    third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:

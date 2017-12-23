@@ -1,7 +1,10 @@
 text:
   -
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a post</p>'
     format: full_html
   -
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a post</p>'
     format: full_html
   -
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a <a href="[message:field_message_related_object:entity:url:absolute]">post</a></p>'
     format: full_html

@@ -5,10 +5,10 @@ dependencies:
   theme:
     - socialbase
 _core:
-  default_config_hash: g_iQJHOc4hAoQ7TCha7RcvICZ-sj5U8keOEsQYXCBsU
+  default_config_hash: p5ptEPdCn5SGKsmn9szaZ5cG17TYIZ5U6-YdUuI9c-o
 id: socialbase_local_actions
 theme: socialbase
-region: content
+region: complementary_top
 weight: -18
 provider: null
 plugin: local_actions_block

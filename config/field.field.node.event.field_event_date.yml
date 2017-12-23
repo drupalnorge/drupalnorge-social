@@ -8,12 +8,12 @@ dependencies:
   module:
     - datetime
 _core:
-  default_config_hash: Uj_NrdSqOUvu2F3CF8TuPdL5AT0N1ZKASOFU5kmadwA
+  default_config_hash: pPHPELeLXbiNq458ZjX_PF5-6oEJjCG6vowOqiVjA4g
 id: node.event.field_event_date
 field_name: field_event_date
 entity_type: node
 bundle: event
-label: 'Start date'
+label: Start
 description: ''
 required: true
 translatable: false

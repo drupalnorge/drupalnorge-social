@@ -8,7 +8,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: yX39O-N-KywXF5ZhMeQallR9vgQgQv6HtlN9WLP-mo0
+  default_config_hash: zNKAYlJ4MCUFjAX9RyTGL6wab2LvaCyr9j-zRXv6uGo
 id: node.event.field_event_image
 field_name: field_event_image
 entity_type: node
@@ -21,7 +21,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'gif jpg jpeg'
+  file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: 4096x4096
   min_resolution: ''

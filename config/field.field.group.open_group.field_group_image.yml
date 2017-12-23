@@ -8,7 +8,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: 8cN5_XNFi-NYQVLyl54VxY7pgylHwOLDjc1J6-kLgcg
+  default_config_hash: V1FDPFvf7aypnWVu9xsIgkKKQLHr4dOZOuUbp4thBS0
 id: group.open_group.field_group_image
 field_name: field_group_image
 entity_type: group
@@ -21,7 +21,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'gif jpg jpeg'
+  file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
   max_resolution: 3600x3600
   min_resolution: ''
