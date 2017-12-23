@@ -17,7 +17,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: r_hPyypaKDgAmrC5KU2HsLhbAINpFZoZxqrKjpO0V2M
+  default_config_hash: sv3qhFymppZHJIwPKaK2T5ERbQ7MQ0ga2W83g9pV9Fs
 id: node.topic.default
 targetEntityType: node
 bundle: topic
@@ -58,5 +58,8 @@ hidden:
   field_content_visibility: true
   field_topic_image: true
   field_topic_type: true
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
   langcode: true
   links: true

@@ -8,7 +8,7 @@ dependencies:
   theme:
     - socialblue
 _core:
-  default_config_hash: 94x75RC8UuwSTKWl4Sry5BoWwTck4je0ktaPkNM3CWI
+  default_config_hash: 5IK9LN3JMmB_uu6ueDvlXoz4jDw_eblODNGPXxL7ofg
 id: socialblue_groupheroblock
 theme: socialblue
 region: hero
@@ -23,6 +23,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/group/*'
+    pages: "/group/*/stream\r\n/group/*/about\r\n/group/*/events\r\n/group/*/topics\r\n/group/*/members\r\n/group/*/membership\r\n/group/*/leave\r\n/group/*/content/*"
     negate: false
     context_mapping: {  }

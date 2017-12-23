@@ -21,7 +21,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: 7DejdxIkoszfsj_kSt-62-RkLFBJXhL9M9b4q7T2zf0
+  default_config_hash: dCGz6G01KpyFxVZYWAL0XFWzuSy-U8kjBTW2gS7i8zg
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -80,6 +80,9 @@ hidden:
   field_event_date: true
   field_event_date_end: true
   field_event_image: true
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
   langcode: true
   links: true
   private_message_link: true

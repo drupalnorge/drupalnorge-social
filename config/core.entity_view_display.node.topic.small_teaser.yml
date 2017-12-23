@@ -14,7 +14,7 @@ dependencies:
   module:
     - user
 _core:
-  default_config_hash: quB_X5kzX-ufIO_h_dp_i4p5e07dfQD6LV9jKF1amWs
+  default_config_hash: skShdvdjAuwtM7EWsow0qYhs8LBUh4yqIKyy-I-jFUo
 id: node.topic.small_teaser
 targetEntityType: node
 bundle: topic
@@ -30,6 +30,9 @@ hidden:
   field_topic_comments: true
   field_topic_image: true
   field_topic_type: true
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
   langcode: true
   like_and_dislike: true
   links: true

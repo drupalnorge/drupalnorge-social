@@ -78,6 +78,7 @@ third_party_settings:
         required_fields: true
     group_event_visibility:
       children:
+        - groups
         - field_content_visibility
       parent_name: ''
       weight: 2
@@ -101,7 +102,7 @@ third_party_settings:
         id: attachments
         classes: card
 _core:
-  default_config_hash: sebD4LjqDOF1bHkmqoTJVQlek_9sR_BSxnM7zumMMH8
+  default_config_hash: 3xO1b_imnyjtyWL6X99E1p9hCFynOpFfSNTDEzp3_1o
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -123,7 +124,7 @@ content:
     third_party_settings: {  }
     region: content
   field_content_visibility:
-    weight: 10
+    weight: 17
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -164,6 +165,7 @@ content:
         - hero
         - teaser
       progress_indicator: throbber
+      warn_multiple_usages: true
     third_party_settings: {  }
     type: image_widget_crop
     region: content

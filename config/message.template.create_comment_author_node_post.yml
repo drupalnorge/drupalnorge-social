@@ -18,10 +18,10 @@ third_party_settings:
     activity_aggregate: 0
     activity_entity_condition: comment_not_reply
 _core:
-  default_config_hash: 4D6FfTOrYOVWsRvGe3T5RX78O4KKPaJTH99ffT7ug40
+  default_config_hash: aNCmu-Us94xs36Wtn6aF3Eknr8GlJWczkLqMCXvTyXs
 template: create_comment_author_node_post
 label: 'Create comment on authors node or post'
-description: 'A person commented on a post, topic or event created or organised by me'
+description: 'A person commented on content created or organised by me'
 text:
   -
     value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> commented on your <a href="[message:field_message_related_object:entity:url:absolute]">[social_comment:commented_content_type]</a></p>'

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.profile.profile.field_profile_address
+    - field.field.profile.profile.field_profile_banner_image
     - field.field.profile.profile.field_profile_drupal_org_profile
     - field.field.profile.profile.field_profile_expertise
     - field.field.profile.profile.field_profile_facebook_url
@@ -23,21 +24,21 @@ dependencies:
     - address
     - text
 _core:
-  default_config_hash: b9q_GhKabHpKC-5LKg5V8F4Qefjx9WwWNzrZXh0Mj_4
+  default_config_hash: H1dm70pY-ypST1UXmTwckhmwsobB2w7-Z5Kik2_8Nl8
 id: profile.profile.default
 targetEntityType: profile
 bundle: profile
 mode: default
 content:
   field_profile_address:
-    weight: 1
+    weight: 2
     label: visually_hidden
     settings: {  }
     third_party_settings: {  }
     type: address_default
     region: content
   field_profile_expertise:
-    weight: 4
+    weight: 5
     label: visually_hidden
     settings:
       link: true
@@ -45,7 +46,7 @@ content:
     type: entity_reference_label
     region: content
   field_profile_interests:
-    weight: 3
+    weight: 4
     label: visually_hidden
     settings:
       link: true
@@ -62,20 +63,21 @@ content:
     region: content
   field_profile_profile_tag:
     type: entity_reference_label
-    weight: 0
+    weight: 1
     label: visually_hidden
     settings:
       link: false
     third_party_settings: {  }
     region: content
   field_profile_self_introduction:
-    weight: 2
+    weight: 3
     label: visually_hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
 hidden:
+  field_profile_banner_image: true
   field_profile_drupal_org_profile: true
   field_profile_facebook_url: true
   field_profile_first_name: true

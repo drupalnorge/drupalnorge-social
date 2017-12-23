@@ -7,7 +7,7 @@ dependencies:
   module:
     - user
 _core:
-  default_config_hash: jPM9sVqCQKh-yK4wLBSyetFLIJO3rgyPzsqD91MrEdI
+  default_config_hash: DumuFlmZ-VVW13ViC_zDIFb-Oh0XmRPeDkFerAGVfdM
 id: user.user.register
 targetEntityType: user
 bundle: user
@@ -23,6 +23,7 @@ content:
     region: content
 hidden:
   contact: true
+  groups: true
   langcode: true
   language: true
   timezone: true

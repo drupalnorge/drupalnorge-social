@@ -16,7 +16,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: x0D3MDvb_8xxBKmQJgIoteFFr9iT5Qv_-ww2Njzn_dw
+  default_config_hash: YFJL0HKt1dfpVQn1LzMMCjG4K_cZcoelvtu7EiP3fZs
 id: node.page.teaser
 targetEntityType: node
 bundle: page
@@ -50,4 +50,7 @@ hidden:
   body: true
   field_files: true
   field_page_comments: true
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
   langcode: true

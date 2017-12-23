@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.profile.search_index
     - field.field.profile.profile.field_profile_address
+    - field.field.profile.profile.field_profile_banner_image
     - field.field.profile.profile.field_profile_drupal_org_profile
     - field.field.profile.profile.field_profile_expertise
     - field.field.profile.profile.field_profile_facebook_url
@@ -24,7 +25,7 @@ dependencies:
     - address
     - text
 _core:
-  default_config_hash: rPpe1uKdAeEt39H8siyh0_OkKmDoiVv0UA2xPhr-sAo
+  default_config_hash: MzVMB3kYLr4btfNy6qFN5NCF_v_dGJAuOJHH9lD1tjg
 id: profile.profile.search_index
 targetEntityType: profile
 bundle: profile
@@ -101,6 +102,7 @@ content:
     type: text_default
     region: content
 hidden:
+  field_profile_banner_image: true
   field_profile_drupal_org_profile: true
   field_profile_facebook_url: true
   field_profile_image: true

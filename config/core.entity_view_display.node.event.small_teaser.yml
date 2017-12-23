@@ -18,7 +18,7 @@ dependencies:
     - datetime
     - user
 _core:
-  default_config_hash: Git3JE3oT8awB-_6lsdlg0ZW7cXPHQ4pl78ItG0O6bU
+  default_config_hash: qUwXhhweystjCIhPDre3iTASe8pCTgI6t1FEo9ROVHA
 id: node.event.small_teaser
 targetEntityType: node
 bundle: event
@@ -45,6 +45,9 @@ hidden:
   field_event_image: true
   field_event_location: true
   field_files: true
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
   langcode: true
   like_and_dislike: true
   links: true

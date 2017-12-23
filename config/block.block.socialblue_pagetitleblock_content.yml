@@ -8,7 +8,7 @@ dependencies:
   theme:
     - socialblue
 _core:
-  default_config_hash: dN1kpIKXkVH9R6WVwZ92MvHSuyDwXgfqTiYw4TKZ7GY
+  default_config_hash: D1-36bzxZAt9qWCX33ZH8FqfPstQo2MTfMTV1y8jLRs
 id: socialblue_pagetitleblock_content
 theme: socialblue
 region: title
@@ -23,6 +23,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/search/*\r\n/user/*/stream"
+    pages: "/search/*\r\n*/stream\r\n*/events\r\n*/topics\r\n*/groups\r\n*/information\r\n*/members\r\n*/membership\r\n*/about"
     negate: true
     context_mapping: {  }

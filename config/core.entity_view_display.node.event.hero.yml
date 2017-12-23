@@ -19,7 +19,7 @@ dependencies:
     - datetime
     - user
 _core:
-  default_config_hash: 3cXys4EKyI73E2SpI0BxB_5iNujtOk28xmKnhd6W34A
+  default_config_hash: YyO2wBCVEGkdF8Te6I8GNCvuoQ3x0lz061tLjB2ESnI
 id: node.event.hero
 targetEntityType: node
 bundle: event
@@ -67,6 +67,9 @@ hidden:
   field_event_comments: true
   field_event_image: true
   field_files: true
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
   langcode: true
   like_and_dislike: true
   links: true

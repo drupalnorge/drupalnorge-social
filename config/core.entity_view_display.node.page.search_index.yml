@@ -16,7 +16,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: fpGhveklPTEcixeNAC-R85dZ9MQxkMOPSpB3xH9l-rE
+  default_config_hash: ZztjUiFdk0e_fr0BsxFlmaXnhQ8FKaigiyK6qLxEOEA
 id: node.page.search_index
 targetEntityType: node
 bundle: page
@@ -47,5 +47,8 @@ hidden:
   field_content_visibility: true
   field_files: true
   field_page_image: true
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
   langcode: true
   links: true

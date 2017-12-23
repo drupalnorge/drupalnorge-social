@@ -8,7 +8,7 @@ dependencies:
   theme:
     - socialblue
 _core:
-  default_config_hash: zpcjUu6OMyoQyljn-E2MugD-9fskGdQ9FMtI1B2Fvp0
+  default_config_hash: Y-xDI9TVJJWizoKNii4wo2BaW-U0Q5oBhYb70Cv5nvo
 id: socialblue_local_tasks
 theme: socialblue
 region: secondary_navigation
@@ -33,6 +33,6 @@ visibility:
       user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: "post/*/edit\r\npost/*/delete\r\n/post/*/edit\r\n/post/*/delete"
+    pages: "post/*/edit\r\npost/*/delete\r\n/post/*/edit\r\n/post/*/delete\r\n/user/*/edit\r\n/group/*/edit"
     negate: true
     context_mapping: {  }
