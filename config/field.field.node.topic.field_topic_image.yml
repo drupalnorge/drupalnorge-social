@@ -8,13 +8,13 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: klh_rmFg_NuYUGrsFbQfG1BkoV8c3Hsi0G0GTgDLulI
+  default_config_hash: Tqdqu-VdrzuNBYtEYJ9KOUWISjYETHxgehPkIO4hMQE
 id: node.topic.field_topic_image
 field_name: field_topic_image
 entity_type: node
 bundle: topic
 label: Image
-description: ''
+description: 'Crop your image to select which part of your image to show on display.'
 required: false
 translatable: false
 default_value: {  }

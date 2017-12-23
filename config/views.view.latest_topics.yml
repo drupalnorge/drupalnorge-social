@@ -13,7 +13,7 @@ dependencies:
     - taxonomy
     - user
 _core:
-  default_config_hash: Q88jH_9I3V0vuEb-hVhrf-A1WUmKWVeG2ItZrfRpImI
+  default_config_hash: BeNsJcgXkV3MGjPSlUKUIw75TGuuI75Tv3VTPQqCZz0
 id: latest_topics
 label: 'Latest topics'
 module: views
@@ -416,7 +416,7 @@ display:
           exposed: true
           expose:
             operator_id: field_topic_type_target_id_op
-            label: 'What type of topics do you want to see?'
+            label: 'is the type of'
             description: ''
             use_operator: false
             operator: field_topic_type_target_id_op

@@ -1,20 +1,20 @@
-uuid: 43f0e74f-0b06-43c9-b7d9-6faa202697fd
+uuid: 08169eca-f76f-4ccf-8fb6-4d4b55baf282
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.group.field_group_image
-    - group.type.open_group
+    - field.storage.profile.field_profile_banner_image
+    - profile.type.profile
   module:
     - image
 _core:
-  default_config_hash: 9MU0oWlhR0IgFGZnZTCjONVEce9u29uEN1edEZcQAxU
-id: group.open_group.field_group_image
-field_name: field_group_image
-entity_type: group
-bundle: open_group
-label: 'Group Image'
-description: 'Crop your image to select which part of your image to show on display.'
+  default_config_hash: UawMZhFSdMC2-AAWiIopNZcwbmXdudFfo1gRND_A7Qg
+id: profile.profile.field_profile_banner_image
+field_name: field_profile_banner_image
+entity_type: profile
+bundle: profile
+label: 'Banner Image'
+description: ''
 required: false
 translatable: false
 default_value: {  }

@@ -20,7 +20,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: HpIn6WA8R2Yp2r7TSoEnn3z2-GbDgFtfBTKCvQXoviM
+  default_config_hash: DE1MjFY8LFtCgV5ZJnwxTmp8-t59v3gvXZzmNK1SYzo
 id: node.event.search_index
 targetEntityType: node
 bundle: event
@@ -52,6 +52,9 @@ hidden:
   field_event_image: true
   field_event_location: true
   field_files: true
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
   langcode: true
   like_and_dislike: true
   links: true

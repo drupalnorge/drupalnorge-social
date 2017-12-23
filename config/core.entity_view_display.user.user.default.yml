@@ -5,13 +5,16 @@ dependencies:
   module:
     - user
 _core:
-  default_config_hash: TTwGbTaqOR9e2rMgGBVpo-s3afaI1JvfQtWCkOI8Rmw
+  default_config_hash: om_7hUoEYLrw14iqjv2PT4CJb2AV2XirhM4wozROwlo
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
 content: {  }
 hidden:
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
   langcode: true
   member_for: true
   profile_main: true

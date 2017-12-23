@@ -9,7 +9,7 @@ dependencies:
   theme:
     - socialblue
 _core:
-  default_config_hash: B6cgDgu2CY-w126jNSomj48lAbUQgbtFM-OcZSvpCcc
+  default_config_hash: JVyoMc_39WCEqZb953sFBAT54Grdqc9-jWOMHcK2qT0
 id: socialblue_pagetitleblock
 theme: socialblue
 region: hero
@@ -33,6 +33,6 @@ visibility:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: '/node/add/*'
+    pages: "/node/add/*\r\n/node/*/edit\r\n/node/*/delete"
     negate: true
     context_mapping: {  }

@@ -22,7 +22,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: 9ZzPVG_pP7mZo7dnKpPCO-8OLhXNOkpCBL8dL026-EE
+  default_config_hash: 80pTIWGki1iJfTggrKetbVcdBrz0rIdIuvn1UruIOx0
 id: node.event.teaser
 targetEntityType: node
 bundle: event
@@ -89,5 +89,8 @@ hidden:
   body: true
   field_event_comments: true
   field_files: true
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
   langcode: true
   like_and_dislike: true

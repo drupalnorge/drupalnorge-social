@@ -5,7 +5,7 @@ dependencies:
   module:
     - editor
 _core:
-  default_config_hash: Lc7hl9OK7U2oKMfap_MVRKGMqesY6mvNkcbNgntDtfM
+  default_config_hash: GMgjpe7a6vaF-1j0bQ8C9O8sVqNEfHahisZg0NmM22M
 name: 'Full HTML'
 format: full_html
 weight: 1
@@ -47,6 +47,6 @@ filters:
     status: false
     weight: -10
     settings:
-      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <h1> <pre>'
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <s> <sup> <sub> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr> <hr> <p> <h1> <pre> <mention id>'
       filter_html_help: true
       filter_html_nofollow: false

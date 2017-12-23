@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.profile.hero
     - field.field.profile.profile.field_profile_address
+    - field.field.profile.profile.field_profile_banner_image
     - field.field.profile.profile.field_profile_drupal_org_profile
     - field.field.profile.profile.field_profile_expertise
     - field.field.profile.profile.field_profile_facebook_url
@@ -24,7 +25,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: nNsyFMXsnIkIEwDJzLY8gRTqeg9D_WF30r24DGOCupM
+  default_config_hash: 36YBcEJOfzRmcrxHHk5Hr64CxaYaaknucEukhTeIBQU
 id: profile.profile.hero
 targetEntityType: profile
 bundle: profile
@@ -73,6 +74,7 @@ content:
     region: content
 hidden:
   field_profile_address: true
+  field_profile_banner_image: true
   field_profile_drupal_org_profile: true
   field_profile_expertise: true
   field_profile_facebook_url: true

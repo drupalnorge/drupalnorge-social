@@ -9,16 +9,16 @@
         "composer/installers": "^v1.4.0",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "^1.0",
-        "goalgorilla/open_social": "1.7.0",
+        "goalgorilla/open_social": "1.8.0",
         "drupal/coffee": "1.x-dev",
         "drupal/sparkpost": "2.0-beta1",
         "drupal/reroute_email": "1.x-dev",
         "drupal/slack_invite": "^1.1",
-        "drush/drush": "~8.1.13",
         "drupal/honeypot": "~1.26.0",
         "drupal/google_analytics": "^2.1",
         "drupal/config_ignore": "^2.1",
-        "drupal/slack": "^1.2"
+        "drupal/slack": "^1.2",
+        "drush/drush": "^9@rc"
     },
     "require-dev": {
         "drupal/coder": "^8.2",

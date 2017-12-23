@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.profile.small
     - field.field.profile.profile.field_profile_address
+    - field.field.profile.profile.field_profile_banner_image
     - field.field.profile.profile.field_profile_drupal_org_profile
     - field.field.profile.profile.field_profile_expertise
     - field.field.profile.profile.field_profile_facebook_url
@@ -24,7 +25,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: 0omZTdlRwJRotWT9aYfjibQwEEjO9gPoXz3CUlZV3KA
+  default_config_hash: Bkn4JOErVWDli-Eu9rIDCUY0oojKm3_0mcQ-qENnyOo
 id: profile.profile.small
 targetEntityType: profile
 bundle: profile
@@ -41,6 +42,7 @@ content:
     region: content
 hidden:
   field_profile_address: true
+  field_profile_banner_image: true
   field_profile_drupal_org_profile: true
   field_profile_expertise: true
   field_profile_facebook_url: true
