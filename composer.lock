@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bee3d1d667dbde714f73ee522456849a",
+    "content-hash": "7ff49ff4376a76e666ee169be7f7982a",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -9668,6 +9668,46 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/stage_file_proxy"
             }
+        },
+        {
+            "name": "eiriksm/wait-for-listen",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eiriksm/wait-for-listen.git",
+                "reference": "f101c597427be4be873ab7bc99a9bf96a06902c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eiriksm/wait-for-listen/zipball/f101c597427be4be873ab7bc99a9bf96a06902c8",
+                "reference": "f101c597427be4be873ab7bc99a9bf96a06902c8",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.7.21",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "bin": [
+                "wait-for-listen"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "eiriksm\\WaitForListen\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Eirik S. Morland",
+                    "email": "eirik@morland.no"
+                }
+            ],
+            "description": "Waits until a port is listening.",
+            "time": "2017-09-04T18:09:59+00:00"
         },
         {
             "name": "fabpot/goutte",

@@ -1,6 +1,6 @@
 default:
   autoload:
-    - './html/profiles/contrib/social/profiles/social/tests/behat/features/bootstrap'
+    - './html/profiles/contrib/social/tests/behat/features/bootstrap'
   suites:
     default:
       paths:
