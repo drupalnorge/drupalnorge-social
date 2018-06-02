@@ -17,6 +17,7 @@ before_install:
   - wget --no-check-certificate https://drupalnorge.no/sanitized.db
 
 install:
+  - cd $TRAVIS_BUILD_DIR
   - ./scripts/travis.sh
 
 script:
