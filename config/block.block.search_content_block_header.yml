@@ -1,0 +1,22 @@
+uuid: 7e5964fe-5e36-43ed-b5d6-242986a0cd6d
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_search
+  theme:
+    - socialbase
+_core:
+  default_config_hash: pvQzsgFwdFmzMj7xaHs1NOaYjpX5_jTzGls-p69abU0
+id: search_content_block_header
+theme: socialbase
+region: content_top
+weight: -9
+provider: null
+plugin: search_content_block
+settings:
+  id: search_content_block
+  label: 'Search content block'
+  provider: social_search
+  label_display: '0'
+visibility: {  }

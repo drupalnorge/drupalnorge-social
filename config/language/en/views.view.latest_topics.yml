@@ -22,6 +22,8 @@ display:
     display_title: 'Latest topics block'
     display_options:
       block_description: 'Latest topic block'
+      title: 'Newest topics'
+      use_more_text: 'All topics'
   group_topics_block:
     display_title: 'Latest topics group'
     display_options:
@@ -33,6 +35,8 @@ display:
         gid:
           exception:
             title: All
+      title: 'Newest topics'
+      use_more_text: 'All topics'
   page_latest_topics:
     display_title: 'Latest topics page'
     display_options:
@@ -51,4 +55,4 @@ display:
         field_topic_type_target_id:
           admin_label: field_topic_type_expose_filter
           expose:
-            label: 'What type of topics do you want to see?'
+            label: 'is the type of'

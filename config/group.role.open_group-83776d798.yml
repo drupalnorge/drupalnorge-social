@@ -1,5 +1,5 @@
 uuid: 07284245-7422-40e9-a041-a56004be149a
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
     config:
       - user.role.contentmanager
 _core:
-  default_config_hash: pRfWe655C0AT4lTolP9-GjlB1sEsBnOhJOk1tRyKiQw
+  default_config_hash: HAaSEwW0VkOyyAls3gn8PAG2hRcmDcbDLvzfcG3TlbQ
 id: open_group-83776d798
 label: 'Content manager'
 weight: 3
@@ -59,3 +59,4 @@ permissions:
   - 'enroll to events in groups'
   - 'access posts in group'
   - 'add post entities in group'
+  - 'view group stream page'

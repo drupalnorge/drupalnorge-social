@@ -1,0 +1,4 @@
+label: 'Closed group: Group membership'
+description: 'Adds users to groups as members.'
+group_type: closed_group
+content_plugin: group_membership

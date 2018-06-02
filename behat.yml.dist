@@ -1,4 +1,6 @@
 default:
+  autoload:
+    - './html/profiles/contrib/social/profiles/social/tests/behat/features/bootstrap'
   suites:
     default:
       paths:
@@ -6,11 +8,12 @@ default:
       filters:
         tags: "~@todo"
       contexts:
-        - Drupal\DrupalExtension\Context\DrupalContext
         - Drupal\DrupalExtension\Context\MinkContext
         - Drupal\DrupalExtension\Context\MarkupContext
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\DrushContext
+        - FeatureContext
+        - SocialDrupalContext
   extensions:
     Behat\MinkExtension:
       files_path: %paths.base%/tests/files
@@ -22,3 +25,9 @@ default:
       drupal:
         drupal_root: %paths.base%/html
       api_driver: 'drupal'
+      text:
+        username_field: "name_or_mail"
+        password_field: "edit-pass"
+        log_in: "edit-submit"
+      region_map:
+        mentions: "#social-post-entity-form"

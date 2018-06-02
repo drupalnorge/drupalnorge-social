@@ -1,5 +1,5 @@
 uuid: 67f604f7-783b-4f00-81b8-c51a840fa027
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -11,9 +11,10 @@ dependencies:
   module:
     - user
     - search_api
+    - social_search
     - profile
 _core:
-  default_config_hash: aWLetF6L3hx1oUGuPhQhN8DfXUDxDCdhcyD6swYgrQ8
+  default_config_hash: M23lofcSb88vkUnF5_ulaMz4G6LRpAFGX8DBkvdpeO4
 id: social_users
 name: 'Social Users'
 description: 'Default users index created for the Social distribution.'
@@ -122,8 +123,8 @@ processor_settings:
       em: 1
       u: 1
     all_fields: false
-  transliteration:
-    plugin_id: transliteration
+  ignorecase:
+    plugin_id: ignorecase
     settings:
       fields:
         - rendered_item
@@ -132,8 +133,14 @@ processor_settings:
         preprocess_index: -10
         preprocess_query: -10
     all_fields: false
-  ignorecase:
-    plugin_id: ignorecase
+  rendered_item:
+    plugin_id: rendered_item
+    settings:
+      weights:
+        add_properties: 0
+        pre_index_save: -10
+  transliteration:
+    plugin_id: transliteration
     settings:
       fields:
         - rendered_item
@@ -147,6 +154,11 @@ processor_settings:
     settings:
       weights:
         preprocess_index: -30
+  aggregated_field:
+    plugin_id: aggregated_field
+    settings:
+      weights:
+        add_properties: 20
   stopwords:
     plugin_id: stopwords
     settings:
@@ -229,21 +241,14 @@ processor_settings:
       - will
       - with
     all_fields: false
-  aggregated_field:
-    plugin_id: aggregated_field
-    settings:
-      weights:
-        add_properties: 20
-  rendered_item:
-    plugin_id: rendered_item
-    settings:
-      weights:
-        add_properties: 0
-        pre_index_save: -10
+  super_user:
+    weights:
+      preprocess_query: 30
 tracker_settings:
   default:
     plugin_id: default
     settings: {  }
+    indexing_order: fifo
 options:
   index_directly: true
   cron_limit: 50

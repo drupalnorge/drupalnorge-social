@@ -1,0 +1,4 @@
+label: event
+description: 'Adds <em class="placeholder">Event</em> content to groups both publicly and privately.'
+group_type: public_group
+content_plugin: 'group_node:event'

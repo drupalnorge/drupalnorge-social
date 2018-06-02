@@ -1,11 +1,11 @@
 uuid: 13ed4532-ab11-4960-938d-6ac30c5cacd3
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - group.type.open_group
 _core:
-  default_config_hash: fjLQtR06mDQBj6Nt2EfuzrG5J5CscArvCDvRSM9DkTU
+  default_config_hash: fk5a2l4dNs-hoYovnJ1yAvLyZEvyBRqN8b9dQKBb5F0
 id: open_group-group_admin
 label: 'Group Admin'
 weight: 5
@@ -57,3 +57,4 @@ permissions:
   - 'enroll to events in groups'
   - 'access posts in group'
   - 'add post entities in group'
+  - 'view group stream page'

@@ -1,17 +1,16 @@
 uuid: 38976d41-c062-4059-9373-8a8b7a5483fb
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - block.block.postongroupblock
-    - user.role.authenticated
   module:
     - activity_creator
     - activity_viewer
+    - group
     - options
-    - user
 _core:
-  default_config_hash: 88CcI2Uim4ESqGPjKEGQORSJYJxAU28Hsulte9eTc_I
+  default_config_hash: ewwMlPrGS67WH1ZymoH2_L60cKKkj2GA1q_oQe_f3oE
 id: activity_stream_group
 label: activity_stream_group
 module: views
@@ -28,10 +27,9 @@ display:
     position: 0
     display_options:
       access:
-        type: role
+        type: group_permission
         options:
-          role:
-            authenticated: authenticated
+          group_permission: 'view group stream page'
       cache:
         type: none
         options: {  }
@@ -318,11 +316,11 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
+        - group_membership.roles.permissions
         - 'languages:language_interface'
         - route
         - url
         - url.query_args
-        - user.roles
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
         - 'config:core.entity_view_display.activity.activity.notification'
@@ -338,11 +336,11 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
+        - group_membership.roles.permissions
         - 'languages:language_interface'
         - route
         - url
         - url.query_args
-        - user.roles
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
         - 'config:core.entity_view_display.activity.activity.notification'

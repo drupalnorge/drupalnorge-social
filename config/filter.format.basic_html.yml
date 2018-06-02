@@ -1,5 +1,5 @@
 uuid: 68a46cae-e3b4-4bb4-b893-0f004aecd69f
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -56,12 +56,3 @@ filters:
     status: true
     weight: 0
     settings: {  }
-  filter_mentions:
-    id: filter_mentions
-    provider: mentions
-    status: true
-    weight: -10
-    settings:
-      mentions_filter:
-        ProfileMention: '0'
-        UserMention: '0'

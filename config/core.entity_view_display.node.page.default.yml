@@ -1,5 +1,5 @@
 uuid: 77f78b44-7ce4-4dec-9dce-ebd80ca67648
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -16,7 +16,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: yaIpS9cx_JB9Ice1P967UhZxSsRHa-vg7OmRmHNI4AA
+  default_config_hash: bxHknQvsa_esZnLYlew8T028H5oUvqVzJpyf_dpyGGc
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -53,5 +53,6 @@ hidden:
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
+  groups_type_public_group: true
   langcode: true
   links: true

@@ -1,11 +1,11 @@
 uuid: e4c14a6c-a465-47ce-acf7-134c7e00c5af
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - group.type.closed_group
 _core:
-  default_config_hash: jxrTE4mQKVKsxj0S88HaMj-uz9mGenvFCToYba7VWJQ
+  default_config_hash: '-u_jXfI7SRmQKCnvH0mEoXRyoThERG0Uzmg0h5Se2Uk'
 id: closed_group-outsider
 label: Outsider
 weight: -101
@@ -20,3 +20,4 @@ permissions:
   8: 'update own group_node:event entity'
   9: 'access comments'
   10: 'view group_membership content'
+  11: 'view group stream page'

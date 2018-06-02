@@ -1,0 +1,4 @@
+label: topic
+description: 'Adds <em class="placeholder">Topic</em> content to groups both publicly and privately.'
+group_type: public_group
+content_plugin: 'group_node:topic'

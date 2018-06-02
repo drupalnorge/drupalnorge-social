@@ -45,6 +45,7 @@ display:
         area_text_custom:
           content: 'No upcoming events you have enrolled for'
       title: 'My upcoming events'
+      use_more_text: 'All my upcoming events'
   page_community_events:
     display_title: 'Community events page'
     display_options:

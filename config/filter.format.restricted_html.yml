@@ -1,9 +1,7 @@
 uuid: 7b1e85ba-c015-4699-b9f9-79a01909ae8e
-langcode: en
+langcode: nb
 status: true
-dependencies:
-  module:
-    - mentions
+dependencies: {  }
 _core:
   default_config_hash: svzvsrZlfyHwBHGze539jJhmQPyb-CLVSc_jNHreKLw
 name: 'Restricted HTML'
@@ -32,12 +30,3 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
-  filter_mentions:
-    id: filter_mentions
-    provider: mentions
-    status: true
-    weight: -10
-    settings:
-      mentions_filter:
-        ProfileMention: ProfileMention
-        UserMention: UserMention
