@@ -11,7 +11,6 @@ dependencies:
   module:
     - user
     - search_api
-    - social_search
     - profile
 _core:
   default_config_hash: aWLetF6L3hx1oUGuPhQhN8DfXUDxDCdhcyD6swYgrQ8
@@ -79,16 +78,22 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
-  add_url:
-    plugin_id: add_url
+  tokenizer:
+    plugin_id: tokenizer
     settings:
+      fields:
+        - rendered_item
+        - name
+      spaces: ''
+      overlap_cjk: 1
+      minimum_word_size: '3'
       weights:
-        preprocess_index: -30
-  aggregated_field:
-    plugin_id: aggregated_field
-    settings:
-      weights:
-        add_properties: 20
+        preprocess_index: -6
+        preprocess_query: -6
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    all_fields: false
   html_filter:
     plugin_id: html_filter
     settings:
@@ -117,6 +122,16 @@ processor_settings:
       em: 1
       u: 1
     all_fields: false
+  transliteration:
+    plugin_id: transliteration
+    settings:
+      fields:
+        - rendered_item
+        - name
+      weights:
+        preprocess_index: -10
+        preprocess_query: -10
+    all_fields: false
   ignorecase:
     plugin_id: ignorecase
     settings:
@@ -127,12 +142,11 @@ processor_settings:
         preprocess_index: -10
         preprocess_query: -10
     all_fields: false
-  rendered_item:
-    plugin_id: rendered_item
+  add_url:
+    plugin_id: add_url
     settings:
       weights:
-        add_properties: 0
-        pre_index_save: -10
+        preprocess_index: -30
   stopwords:
     plugin_id: stopwords
     settings:
@@ -215,35 +229,17 @@ processor_settings:
       - will
       - with
     all_fields: false
-  tokenizer:
-    plugin_id: tokenizer
+  aggregated_field:
+    plugin_id: aggregated_field
     settings:
-      fields:
-        - rendered_item
-        - name
-      spaces: ''
-      overlap_cjk: 1
-      minimum_word_size: '3'
       weights:
-        preprocess_index: -6
-        preprocess_query: -6
-    spaces: ''
-    overlap_cjk: 1
-    minimum_word_size: '3'
-    all_fields: false
-  transliteration:
-    plugin_id: transliteration
+        add_properties: 20
+  rendered_item:
+    plugin_id: rendered_item
     settings:
-      fields:
-        - rendered_item
-        - name
       weights:
-        preprocess_index: -10
-        preprocess_query: -10
-    all_fields: false
-  super_user:
-    weights:
-      preprocess_query: 30
+        add_properties: 0
+        pre_index_save: -10
 tracker_settings:
   default:
     plugin_id: default
