@@ -19,7 +19,8 @@
         "drupal/config_ignore": "^2.1",
         "drupal/slack": "^1.2",
         "drush/drush": "^9@rc",
-        "commerceguys/addressing": "1.0.0-beta3"
+        "commerceguys/addressing": "1.0.0-beta3",
+        "drupal/social": "1.9"
     },
     "require-dev": {
         "drupal/coder": "^8.2",

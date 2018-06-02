@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "77a4e0f1f75f0eaf16248ef6ff63ec68",
+    "content-hash": "bee3d1d667dbde714f73ee522456849a",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -4164,6 +4164,72 @@
             "homepage": "https://www.drupal.org/project/slack_invite",
             "support": {
                 "source": "http://cgit.drupalcode.org/slack_invite"
+            }
+        },
+        {
+            "name": "drupal/social",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/social",
+                "reference": "8.x-1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/social-8.x-1.9-core.zip",
+                "reference": "8.x-1.9",
+                "shasum": "ba03da6fc96cbc463dfbeb670b8f338cfe0838a0"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-profile",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.9",
+                    "datestamp": "1516098941",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "GoalGorilla",
+                    "homepage": "https://www.drupal.org/user/272162"
+                },
+                {
+                    "name": "bramtenhove",
+                    "homepage": "https://www.drupal.org/user/1549848"
+                },
+                {
+                    "name": "jaapjan",
+                    "homepage": "https://www.drupal.org/user/555428"
+                },
+                {
+                    "name": "jochemvn",
+                    "homepage": "https://www.drupal.org/user/2521788"
+                },
+                {
+                    "name": "nielsvandermolen",
+                    "homepage": "https://www.drupal.org/user/2765413"
+                },
+                {
+                    "name": "ronaldtebrake",
+                    "homepage": "https://www.drupal.org/user/2314038"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/social",
+            "support": {
+                "source": "http://cgit.drupalcode.org/social"
             }
         },
         {
@@ -9527,72 +9593,6 @@
                 "web"
             ],
             "time": "2017-12-06T20:35:40+00:00"
-        },
-        {
-            "name": "drupal/social",
-            "version": "1.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/social",
-                "reference": "8.x-1.9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/social-8.x-1.9-core.zip",
-                "reference": "8.x-1.9",
-                "shasum": "ba03da6fc96cbc463dfbeb670b8f338cfe0838a0"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-profile",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1516098941",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "GoalGorilla",
-                    "homepage": "https://www.drupal.org/user/272162"
-                },
-                {
-                    "name": "bramtenhove",
-                    "homepage": "https://www.drupal.org/user/1549848"
-                },
-                {
-                    "name": "jaapjan",
-                    "homepage": "https://www.drupal.org/user/555428"
-                },
-                {
-                    "name": "jochemvn",
-                    "homepage": "https://www.drupal.org/user/2521788"
-                },
-                {
-                    "name": "nielsvandermolen",
-                    "homepage": "https://www.drupal.org/user/2765413"
-                },
-                {
-                    "name": "ronaldtebrake",
-                    "homepage": "https://www.drupal.org/user/2314038"
-                }
-            ],
-            "homepage": "https://www.drupal.org/project/social",
-            "support": {
-                "source": "http://cgit.drupalcode.org/social"
-            }
         },
         {
             "name": "drupal/stage_file_proxy",
