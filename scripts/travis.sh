@@ -1,3 +1,5 @@
+npm i phantomjs-prebuilt
+./node_modules/.bin/phantomjs --webdriver=8643 &
 composer --verbose install --no-dev
 cd $TRAVIS_BUILD_DIR/html
 chmod -R 777 sites/default
@@ -10,6 +12,7 @@ composer build
 cd html
 ./../vendor/bin/drush cr
 ./../vendor/bin/drush runserver http://127.0.0.1:8888 &
-sleep 3
+../vendor/bin/wait-for-listen 8888
+../vendor/bin/wait-for-listen 8643 127.0.0.1
 cd $TRAVIS_BUILD_DIR
 composer install
