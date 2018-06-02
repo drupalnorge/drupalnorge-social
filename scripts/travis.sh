@@ -12,7 +12,7 @@ composer build
 cd html
 ./../vendor/bin/drush cr
 ./../vendor/bin/drush runserver http://127.0.0.1:8888 &
-../vendor/bin/wait-for-listen 8888
-../vendor/bin/wait-for-listen 8643 127.0.0.1
 cd $TRAVIS_BUILD_DIR
 composer install
+./vendor/bin/wait-for-listen 8888
+./vendor/bin/wait-for-listen 8643 127.0.0.1
