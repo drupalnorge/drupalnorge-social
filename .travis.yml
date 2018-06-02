@@ -17,7 +17,7 @@ before_install:
   - wget --no-check-certificate https://drupalnorge.no/sanitized.db
 
 install:
-  - composer --verbose install
+  - composer --verbose install --no-dev
   - cd $TRAVIS_BUILD_DIR/html
   - chmod -R 777 sites/default
   - touch sites/default/settings.local.php

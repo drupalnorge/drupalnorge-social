@@ -9329,24 +9329,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/zone.git",
-                "reference": "9bd0b361a971284442972c42b6749ca855c65435"
+                "reference": "132d44d2f93fe3fb3796839788184a91bbfa6459"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/zone/zipball/9bd0b361a971284442972c42b6749ca855c65435",
-                "reference": "9bd0b361a971284442972c42b6749ca855c65435",
+                "url": "https://api.github.com/repos/commerceguys/zone/zipball/132d44d2f93fe3fb3796839788184a91bbfa6459",
+                "reference": "132d44d2f93fe3fb3796839788184a91bbfa6459",
                 "shasum": ""
             },
             "require": {
                 "commerceguys/addressing": "~1.0",
-                "doctrine/collections": "~1.0",
                 "php": ">=5.5.0"
             },
             "require-dev": {
                 "mikey179/vfsstream": "1.*",
                 "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "2.*",
-                "symfony/intl": ">=2.3"
+                "squizlabs/php_codesniffer": "2.*"
             },
             "type": "library",
             "extra": {
@@ -9369,7 +9367,7 @@
                 }
             ],
             "description": "Zone management library.",
-            "time": "2017-04-20T12:44:24+00:00"
+            "time": "2018-05-28T22:58:28+00:00"
         },
         {
             "name": "drupal/coder",
