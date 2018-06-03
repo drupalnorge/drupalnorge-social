@@ -11,11 +11,11 @@ dependencies:
   theme:
     - socialblue
 _core:
-  default_config_hash: isi6nOMiS3q-NXN7Eo0STr0yBhXPxYZwY9unMxsgYYc
+  default_config_hash: 4a6ND-EfIGeJkT9PyuuoPwBovr9vnDac_0sKmv-RrzM
 id: views_block__group_managers_block_list_managers
 theme: socialblue
 region: content
-weight: -22
+weight: -15
 provider: null
 plugin: 'views_block:group_managers-block_list_managers'
 settings:

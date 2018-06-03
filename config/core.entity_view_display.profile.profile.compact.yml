@@ -25,7 +25,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: GmdUlzHyjnx6oaE8ohyqMklAy_k6y4hADYPG3VVvhh0
+  default_config_hash: rvDzDSTKCBw__wTfQIeVx4pOgUfdYlQX6yzhwh6iY2A
 id: profile.profile.compact
 targetEntityType: profile
 bundle: profile
@@ -36,7 +36,7 @@ content:
     label: hidden
     settings:
       image_style: social_medium
-      image_link: content
+      image_link: ''
     third_party_settings: {  }
     type: image
     region: content

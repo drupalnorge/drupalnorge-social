@@ -50,10 +50,10 @@ third_party_settings:
         - field_profile_organization
       parent_name: ''
       weight: 1
-      label: 'Function and organisation'
+      label: 'Function and organization'
       format_type: fieldset
       format_settings:
-        label: 'Function and organisation'
+        label: 'Function and organization'
         required_fields: true
         id: work
         classes: scollspy
@@ -86,7 +86,7 @@ third_party_settings:
         id: contact
         classes: scollspy
 _core:
-  default_config_hash: BWK370bitl5mmcWbOXtilc7B9KFYPc1j5_xo0Qt80JM
+  default_config_hash: q5dRMlfrlHczeboqgnggDsIvBp1Z0aun2cMsa4qIDbQ
 id: profile.profile.default
 targetEntityType: profile
 bundle: profile

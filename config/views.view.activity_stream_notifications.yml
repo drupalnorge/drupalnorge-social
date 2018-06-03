@@ -12,11 +12,11 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: 0X-IBmAAqeVySG0rBmpFvo0OVopSAFDZrQhKiPCsJGU
+  default_config_hash: KHV--K7xc3KogxPeRTELQ8G3eWms7VY0RH9aJzf0pw8
 id: activity_stream_notifications
 label: 'Activity stream notifications'
 module: views
-description: 'Activity stream on a profile'
+description: 'Activity stream notifications on a profile'
 tag: ''
 base_table: activity_field_data
 base_field: id
@@ -254,7 +254,7 @@ display:
           entity_type: activity
           entity_field: created
           plugin_id: date
-      title: 'Activity stream'
+      title: Notifications
       header: {  }
       footer: {  }
       empty:

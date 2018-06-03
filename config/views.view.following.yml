@@ -14,7 +14,7 @@ dependencies:
     - profile
     - user
 _core:
-  default_config_hash: wbjouWWlC46sOay7jFw1Xu8uTZplYKzwXH4hoVvtRv8
+  default_config_hash: 83ZHZ6-0CEwOzb9oY0nUYb7NS3Hqf8nGrSc1ikZ0wZE
 id: following
 label: 'Content I follow'
 module: views
@@ -451,7 +451,7 @@ display:
           plugin_id: numeric
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -470,7 +470,7 @@ display:
       path: following
       exposed_block: true
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
