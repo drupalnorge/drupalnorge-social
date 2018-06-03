@@ -1,5 +1,5 @@
 uuid: 67f604f7-783b-4f00-81b8-c51a840fa027
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -123,8 +123,8 @@ processor_settings:
       em: 1
       u: 1
     all_fields: false
-  ignorecase:
-    plugin_id: ignorecase
+  transliteration:
+    plugin_id: transliteration
     settings:
       fields:
         - rendered_item
@@ -133,14 +133,8 @@ processor_settings:
         preprocess_index: -10
         preprocess_query: -10
     all_fields: false
-  rendered_item:
-    plugin_id: rendered_item
-    settings:
-      weights:
-        add_properties: 0
-        pre_index_save: -10
-  transliteration:
-    plugin_id: transliteration
+  ignorecase:
+    plugin_id: ignorecase
     settings:
       fields:
         - rendered_item
@@ -154,11 +148,6 @@ processor_settings:
     settings:
       weights:
         preprocess_index: -30
-  aggregated_field:
-    plugin_id: aggregated_field
-    settings:
-      weights:
-        add_properties: 20
   stopwords:
     plugin_id: stopwords
     settings:
@@ -241,6 +230,17 @@ processor_settings:
       - will
       - with
     all_fields: false
+  aggregated_field:
+    plugin_id: aggregated_field
+    settings:
+      weights:
+        add_properties: 20
+  rendered_item:
+    plugin_id: rendered_item
+    settings:
+      weights:
+        add_properties: 0
+        pre_index_save: -10
   super_user:
     weights:
       preprocess_query: 30

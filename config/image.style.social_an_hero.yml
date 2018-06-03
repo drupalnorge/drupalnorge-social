@@ -1,12 +1,14 @@
 uuid: 988a13cb-3d9f-47b1-af3b-b918ffe1b2dd
-langcode: nb
+langcode: en
 status: true
 dependencies:
+  config:
+    - crop.type.hero_an
   module:
     - crop
     - image_effects
 _core:
-  default_config_hash: e5PpCz-DKw8Mw63Lm2MCgdM3ZmSSzpF6-CvPq34iUC4
+  default_config_hash: nkVsg_Gr4_0InvzSFnKAvhZSO3vtRzbWx266aTQDnVw
 name: social_an_hero
 label: 'social an hero image (1200 x 490)'
 effects:

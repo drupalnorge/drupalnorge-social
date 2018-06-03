@@ -1,12 +1,14 @@
 uuid: 97339916-4441-49a8-a1d6-b925aba8038d
-langcode: nb
+langcode: en
 status: true
 dependencies:
+  config:
+    - crop.type.hero
   module:
     - crop
     - image_effects
 _core:
-  default_config_hash: snYarEUY4HvSM4DSvHHqjGMCTgXuqoU5vfR_SWKfY4U
+  default_config_hash: wA7KG3_p2Mr3lxMiSAqO258oWO5G5w7myOGPjzat5mk
 name: social_xx_large
 label: 'social extra extra large (1200 x 423)'
 effects:
