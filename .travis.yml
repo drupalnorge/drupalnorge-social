@@ -15,6 +15,8 @@ before_install:
   - phpenv config-rm xdebug.ini
   - composer --verbose self-update
   - composer --version
+  - which google-chrome
+  - which google-chrome-stable
   - mysql -e "create database IF NOT EXISTS test;" -uroot
   - wget --no-check-certificate https://drupalnorge.no/sanitized.db
 
