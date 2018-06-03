@@ -16,3 +16,4 @@ cd $TRAVIS_BUILD_DIR
 composer install
 ./vendor/bin/wait-for-listen 8888
 ./vendor/bin/wait-for-listen 8643 127.0.0.1
+curl localhost:8888
