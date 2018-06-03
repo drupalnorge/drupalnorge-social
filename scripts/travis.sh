@@ -1,4 +1,4 @@
-npm install chromedriver
+npm install chromedriver@2.35
 ./node_modules/.bin/chromedriver --port=8643 --url-base=wd/hub --log-level=INFO &
 composer install --no-dev
 cd $TRAVIS_BUILD_DIR/html
