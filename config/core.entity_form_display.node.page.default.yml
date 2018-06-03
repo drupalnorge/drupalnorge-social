@@ -1,5 +1,5 @@
 uuid: 2f60b484-0abe-4011-a930-c3c88e3b7f5d
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -139,7 +139,7 @@ content:
   status:
     region: content
     settings:
-      display_label: 1
+      display_label: true
     type: boolean_checkbox
     weight: 120
     third_party_settings: {  }
