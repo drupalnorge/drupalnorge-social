@@ -1,5 +1,5 @@
 uuid: ca17917d-c898-4a08-9aa5-d0898b998ff2
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
