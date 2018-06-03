@@ -1,6 +1,6 @@
-npm i phantomjs-prebuilt
-./node_modules/.bin/phantomjs --webdriver=8643 &
-composer --verbose install --no-dev
+npm install chromedriver
+./node_modules/.bin/chromedriver --port=8643 --url-base=wd/hub &
+composer install --no-dev
 cd $TRAVIS_BUILD_DIR/html
 chmod -R 777 sites/default
 touch sites/default/settings.local.php
