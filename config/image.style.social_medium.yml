@@ -1,12 +1,14 @@
 uuid: 7cd81844-0584-47d3-8148-bcde385b5897
-langcode: nb
+langcode: en
 status: true
 dependencies:
+  config:
+    - crop.type.profile_medium
   module:
     - crop
     - image_effects
 _core:
-  default_config_hash: jIxICDpf67yDPSNje7cPTtmcAo7lc7lBtgQQxywTFgA
+  default_config_hash: OquM4ij33EbFl5euJqdD9UoclGjQcALPSP1WF035M9k
 name: social_medium
 label: 'social medium (44 x 44)'
 effects:

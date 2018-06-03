@@ -20,9 +20,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset_label: Offset
       title: Stream
-      header:
-        entity_block:
-          admin_label: header_postblock
   block_stream_homepage:
     display_title: 'Homepage stream block'
   page_activity_stream:

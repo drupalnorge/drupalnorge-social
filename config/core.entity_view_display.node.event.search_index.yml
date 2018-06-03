@@ -1,5 +1,5 @@
 uuid: 0edbc65a-c8e9-4624-a1da-c8241375e6db
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -44,6 +44,14 @@ content:
   flag_follow_content:
     weight: 10
     region: content
+  groups_type_public_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
 hidden:
   field_content_visibility: true
   field_event_address: true

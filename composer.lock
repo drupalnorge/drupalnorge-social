@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "24123e7c58d7c614b22aa3a2d4b18180",
+    "content-hash": "a7b42516672bbceb598df5a50202882e",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2240,16 +2240,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.4.5",
+            "version": "8.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "44a857df6f7ffd063cffed9a41767cdc50dd7474"
+                "reference": "f439a43c7da1df8d16067f797c0bc3498eb4c699"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/44a857df6f7ffd063cffed9a41767cdc50dd7474",
-                "reference": "44a857df6f7ffd063cffed9a41767cdc50dd7474",
+                "url": "https://api.github.com/repos/drupal/core/zipball/f439a43c7da1df8d16067f797c0bc3498eb4c699",
+                "reference": "f439a43c7da1df8d16067f797c0bc3498eb4c699",
                 "shasum": ""
             },
             "require": {
@@ -2406,7 +2406,6 @@
             "extra": {
                 "patches_applied": {
                     "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch",
-                    "SA-CORE-2018-002": "https://cgit.drupalcode.org/drupal/patch/?id=88e134084c440adf7a977f410f603e1effe795c6",
                     "SA-CORE-2018-004": "https://cgit.drupalcode.org/drupal/rawdiff/?h=8.5.x&id=bb6d396609600d1169da29456ba3db59abae4b7e",
                     "Color module html preview optional": "https://www.drupal.org/files/issues/color-optional-html-preview-2844190-2.patch",
                     "Restrict images to this site blocks image style derivatives": "https://www.drupal.org/files/issues/image_restrict_image_styles-2528214-19.patch",
@@ -2435,7 +2434,7 @@
                 "GPL-2.0+"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-02-20T21:35:13+00:00"
+            "time": "2018-03-27T10:03:10+00:00"
         },
         {
             "name": "drupal/crop",
@@ -4173,17 +4172,17 @@
         },
         {
             "name": "drupal/social",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/social",
-                "reference": "8.x-1.11"
+                "reference": "8.x-1.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/social-8.x-1.11-core.zip",
-                "reference": "8.x-1.11",
-                "shasum": "f8ced54276dae989650d69ff294778af21b7ad4c"
+                "url": "https://ftp.drupal.org/files/projects/social-8.x-1.12-core.zip",
+                "reference": "8.x-1.12",
+                "shasum": "3a9d5e139a0546d16b8c9b75352c620d4258bbe9"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4194,8 +4193,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.11",
-                    "datestamp": "1519296784",
+                    "version": "8.x-1.12",
+                    "datestamp": "1522267080",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5117,16 +5116,16 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "029bdc3fae372d30caeb5f567b7491c7677b9411"
+                "reference": "528ca3d0cbd725e4c495d180971cacd81e52dab1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/029bdc3fae372d30caeb5f567b7491c7677b9411",
-                "reference": "029bdc3fae372d30caeb5f567b7491c7677b9411",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/528ca3d0cbd725e4c495d180971cacd81e52dab1",
+                "reference": "528ca3d0cbd725e4c495d180971cacd81e52dab1",
                 "shasum": ""
             },
             "require": {
@@ -5150,7 +5149,7 @@
                 "drupal/block_field": "1.0-alpha5",
                 "drupal/bootstrap": "3.9",
                 "drupal/config_update": "1.5",
-                "drupal/core": "8.4.5",
+                "drupal/core": "8.4.6",
                 "drupal/crop": "1.5",
                 "drupal/csv_serialization": "1.2",
                 "drupal/devel": "1.2",
@@ -5232,7 +5231,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
-            "time": "2018-02-22T10:55:53+00:00"
+            "time": "2018-03-28T19:22:30+00:00"
         },
         {
             "name": "google/apiclient",

@@ -1,12 +1,14 @@
 uuid: f8250a0f-04cb-4749-85e5-739eb9d8b6d6
-langcode: nb
+langcode: en
 status: true
 dependencies:
+  config:
+    - crop.type.profile_large
   module:
     - crop
     - image_effects
 _core:
-  default_config_hash: kEbCyh5ZduenZ6GJz-aXORHRoWG3snvzoEcgbt1LjRM
+  default_config_hash: zUmb7uKHqLXxHNugmyT1LX0B0AG0l-xagfa0kA173Q4
 name: social_large
 label: 'social large (128 x 128)'
 effects:

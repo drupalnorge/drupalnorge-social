@@ -1,5 +1,5 @@
 uuid: 2e846ce1-bcfe-4ea7-9618-8a31a750a529
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
@@ -20,7 +20,7 @@ dependencies:
     - group
     - profile
 _core:
-  default_config_hash: PoMxVALaKWqRtsrPy26aGHdBGO5a4RAvt4s2lsJQ7T4
+  default_config_hash: h_Hxs4ihO3mTwu6TYsrucUXfYWr_t9YC0EPh65Dx7t4
 id: social_all
 name: 'Social all'
 description: ''
@@ -145,6 +145,7 @@ field_settings:
     datasource_id: 'entity:profile'
     property_path: 'uid:entity:name'
     type: text
+    boost: !!float 2
     dependencies:
       module:
         - user
@@ -168,9 +169,6 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
-  content_access:
-    weights:
-      preprocess_query: -30
   tokenizer:
     fields:
       - rendered_item
@@ -182,6 +180,9 @@ processor_settings:
       preprocess_index: -6
       preprocess_query: -6
     all_fields: false
+  content_access:
+    weights:
+      preprocess_query: -30
   html_filter:
     fields:
       - rendered_item
@@ -205,20 +206,6 @@ processor_settings:
       preprocess_index: -15
       preprocess_query: -15
     all_fields: false
-  ignorecase:
-    fields:
-      - rendered_item
-      - type
-      - title
-      - label
-      - field_group_description
-      - field_group_location
-      - name
-    weights:
-      preprocess_index: -20
-      preprocess_query: -20
-    all_fields: false
-  rendered_item: {  }
   transliteration:
     fields:
       - rendered_item
@@ -232,8 +219,20 @@ processor_settings:
       preprocess_index: -20
       preprocess_query: -20
     all_fields: false
+  ignorecase:
+    fields:
+      - rendered_item
+      - type
+      - title
+      - label
+      - field_group_description
+      - field_group_location
+      - name
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+    all_fields: false
   add_url: {  }
-  aggregated_field: {  }
   stopwords:
     fields:
       - rendered_item
@@ -278,6 +277,8 @@ processor_settings:
       preprocess_index: -5
       preprocess_query: -2
     all_fields: false
+  aggregated_field: {  }
+  rendered_item: {  }
   super_user:
     weights:
       preprocess_query: 30
