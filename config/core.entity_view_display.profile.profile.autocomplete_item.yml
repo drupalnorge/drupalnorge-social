@@ -1,10 +1,11 @@
 uuid: acf1ef0c-9ccb-45e5-b40f-d4386523113b
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - core.entity_view_mode.profile.autocomplete_item
     - field.field.profile.profile.field_profile_address
+    - field.field.profile.profile.field_profile_banner_image
     - field.field.profile.profile.field_profile_drupal_org_profile
     - field.field.profile.profile.field_profile_expertise
     - field.field.profile.profile.field_profile_facebook_url

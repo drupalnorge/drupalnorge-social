@@ -38,5 +38,6 @@ display:
       empty:
         area_text_custom:
           content: 'No members in this group'
+      use_more_text: 'All members'
   page_group_members:
     display_title: Page

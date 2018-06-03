@@ -1,11 +1,11 @@
 uuid: 6ff230f6-2e95-4aa5-849c-0f1d8d64cee4
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - group.type.closed_group
 _core:
-  default_config_hash: 0p_EjzSHDbBxecwiZ1zEp_l26WZOHeAGiTpM0PbIqTA
+  default_config_hash: wEFx-jPIWoF4YStE573kLtipAD5Jc-KG_v5LOu1H7qY
 id: closed_group-group_manager
 label: 'Group Manager'
 weight: -99
@@ -39,3 +39,4 @@ permissions:
   22: 'enroll to events in groups'
   23: 'access group_node overview'
   25: 'access content overview'
+  26: 'view group stream page'

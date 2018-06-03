@@ -1,5 +1,5 @@
 uuid: 580b3f55-066d-4fe1-8887-dd46d2c92fe0
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -7,7 +7,7 @@ dependencies:
   module:
     - search_api
 _core:
-  default_config_hash: GZiM1wRSuuLjHAENiCSZHBI6Cbif2u51Z5x6wBp32kY
+  default_config_hash: vXfmios3DPtZ0da4sWMIXfIS0JCDVc_VtIn3BrvTJzI
 id: search_all
 label: 'Search All'
 module: views
@@ -79,6 +79,7 @@ display:
             'entity:group':
               closed_group: teaser
               open_group: teaser
+              public_group: teaser
             'entity:profile':
               profile: teaser
       fields:

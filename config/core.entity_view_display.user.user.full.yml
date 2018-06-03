@@ -1,5 +1,5 @@
 uuid: c6b3a828-a533-4982-b98a-43660405d5d4
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -7,7 +7,7 @@ dependencies:
   module:
     - user
 _core:
-  default_config_hash: OUvcHdiVu4hF01QNZNDB8wfGLb6zpIUEMGl-_gvJBFw
+  default_config_hash: mZKjV79TZE_tU-VDdpJZzsaM5Ab2QByRJvOTYom5HEA
 id: user.user.full
 targetEntityType: user
 bundle: user
@@ -17,6 +17,7 @@ hidden:
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
+  groups_type_public_group: true
   langcode: true
   member_for: true
   profile_main: true

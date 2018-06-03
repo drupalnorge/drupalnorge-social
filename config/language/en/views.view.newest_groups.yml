@@ -5,7 +5,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Apply
+          submit_button: Filter
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
@@ -30,5 +30,11 @@ display:
     display_options:
       title: 'Newest groups'
       block_description: 'Newest groups block'
+      use_more_text: 'All groups'
   page_all_groups:
     display_title: 'Newest groups page'
+    display_options:
+      filters:
+        type:
+          expose:
+            label: 'Group type'

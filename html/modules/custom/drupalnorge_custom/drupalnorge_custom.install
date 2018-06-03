@@ -10,3 +10,37 @@
  */
 function drupalnorge_custom_update_8001() {
 }
+
+/**
+ * Update all posts and comments to use basic html.
+ */
+function drupalnorge_custom_update_8002() {
+  $posts = \Drupal::entityTypeManager()
+    ->getStorage('post')
+    ->loadByProperties([]);
+
+  foreach ($posts as $post) {
+    // Probably just one, but to be sure.
+    $values = $post->field_post->getValue();
+    foreach ($values as &$value) {
+      $value['format'] = 'basic_html';
+    }
+    $post->field_post->setValue($values);
+    $post->save();
+  }
+
+  // Then do the same for comments.
+  $posts = \Drupal::entityTypeManager()
+    ->getStorage('comment')
+    ->loadByProperties([]);
+
+  foreach ($posts as $post) {
+    // Probably just one, but to be sure.
+    $values = $post->field_comment_body->getValue();
+    foreach ($values as &$value) {
+      $value['format'] = 'basic_html';
+    }
+    $post->field_comment_body->setValue($values);
+    $post->save();
+  }
+}

@@ -9,7 +9,7 @@
         "composer/installers": "^v1.4.0",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "^1.0",
-        "goalgorilla/open_social": "1.8.0",
+        "goalgorilla/open_social": "1.9",
         "drupal/coffee": "1.x-dev",
         "drupal/sparkpost": "2.0-beta1",
         "drupal/reroute_email": "1.x-dev",
@@ -18,12 +18,16 @@
         "drupal/google_analytics": "^2.1",
         "drupal/config_ignore": "^2.1",
         "drupal/slack": "^1.2",
-        "drush/drush": "^9@rc"
+        "drush/drush": "^9@rc",
+        "commerceguys/addressing": "1.0.0-beta3",
+        "drupal/social": "1.9"
     },
     "require-dev": {
         "drupal/coder": "^8.2",
         "squizlabs/php_codesniffer": "~2.9.1",
-        "drupal/drupal-extension": "~3.0"
+        "drupal/drupal-extension": "~3.0",
+        "drupal/stage_file_proxy": "^1.0@alpha",
+        "eiriksm/wait-for-listen": "^1.0"
     },
     "repositories": [
         {
@@ -90,6 +94,9 @@
                 "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch",
                 "SA-CORE-2018-002": "https://cgit.drupalcode.org/drupal/patch/?id=88e134084c440adf7a977f410f603e1effe795c6",
                 "SA-CORE-2018-004": "https://cgit.drupalcode.org/drupal/rawdiff/?h=8.5.x&id=bb6d396609600d1169da29456ba3db59abae4b7e"
+            },
+            "drupal/features": {
+              "drush 9 compability": "https://cgit.drupalcode.org/features/patch/?id=2e82a6ad751fc88f771be5b4e53b98a8c6eb66b5"
             }
         },
         "enable-patching": true,

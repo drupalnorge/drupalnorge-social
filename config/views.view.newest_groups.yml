@@ -1,16 +1,15 @@
 uuid: f67f40e8-e051-4a01-b277-b43a068d88e5
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - core.entity_view_mode.group.small_teaser
     - core.entity_view_mode.group.teaser
-    - user.role.authenticated
   module:
     - group
     - user
 _core:
-  default_config_hash: dk1d0F9_1CyhfbkRaT2llOfpSC2jeBmO3nTjSfExjm8
+  default_config_hash: m59mmgLMtOnt0MSyksk0IBtUNeEDnRLhyjKNf_aUWSU
 id: newest_groups
 label: 'Newest groups'
 module: views
@@ -27,10 +26,9 @@ display:
     position: 0
     display_options:
       access:
-        type: role
+        type: perm
         options:
-          role:
-            authenticated: authenticated
+          perm: 'access group search'
       cache:
         type: tag
         options: {  }
@@ -175,7 +173,7 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user.roles
+        - user.permissions
       tags: {  }
   block_newest_groups:
     display_plugin: block
@@ -216,7 +214,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user.roles
+        - user.permissions
       tags: {  }
   page_all_groups:
     display_plugin: page
@@ -286,5 +284,5 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user.roles
+        - user.permissions
       tags: {  }

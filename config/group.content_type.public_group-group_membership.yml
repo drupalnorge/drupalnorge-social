@@ -1,0 +1,19 @@
+uuid: 948c06ee-b272-4496-a10f-7ea0ff71f117
+langcode: nb
+status: true
+dependencies:
+  config:
+    - group.type.public_group
+  module:
+    - user
+_core:
+  default_config_hash: cPjfyyWZ8lpmzCCdjw5Z3RCENdTbYf-9ITbuweAV7gc
+id: public_group-group_membership
+label: 'Public group: Group membership'
+description: 'Adds users to groups as members.'
+group_type: public_group
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

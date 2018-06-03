@@ -1,11 +1,11 @@
 uuid: a1675838-cffa-4eab-a59e-2a25a1fbd10f
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - group.type.open_group
 _core:
-  default_config_hash: NVo2wJAFp2KUscH7Y7shT0mqVeJHK8JQlBUaRyU89Q0
+  default_config_hash: OewDuaB91dcsCtMsYbI8ArLE5Qm9WHkiTOpaXaWHRoY
 id: open_group-group_manager
 label: 'Group Manager'
 weight: -99
@@ -39,3 +39,4 @@ permissions:
   - 'enroll to events in groups'
   - 'access group_node overview'
   - 'access content overview'
+  - 'view group stream page'

@@ -1,5 +1,5 @@
 uuid: 352c2f8e-5e1e-4067-b90b-b926cdbc9ff2
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -49,6 +49,14 @@ content:
     weight: 10
     third_party_settings: {  }
     region: content
+  groups_type_public_group:
+    label: above
+    weight: -5
+    region: content
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
   like_and_dislike:
     weight: 2
     settings: {  }

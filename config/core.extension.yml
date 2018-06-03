@@ -80,6 +80,7 @@ module:
   social_post: 0
   social_post_photo: 0
   social_profile: 0
+  social_search: 0
   social_swiftmail: 0
   social_topic: 0
   social_tour: 0

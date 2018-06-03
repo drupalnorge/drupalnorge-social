@@ -1,5 +1,5 @@
 uuid: 1125637e-6787-4d01-be23-39633c54f8b9
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -11,7 +11,7 @@ dependencies:
     - search_api.server.social_database
     - core.entity_view_mode.group.teaser
 _core:
-  default_config_hash: MkAv4XQYmAl1d9QpZYkn0NC_dmUGfutHddININpHYt4
+  default_config_hash: 4l3hTHy4i4ZI6pqhZ2Odrv-eLEpS6XqT-9Vayhsa8sk
 id: social_groups
 name: 'Social Groups'
 description: 'Default group index created for the Social distribution.'
@@ -71,16 +71,22 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
-  add_url:
-    plugin_id: add_url
+  tokenizer:
+    plugin_id: tokenizer
     settings:
+      fields:
+        - field_group_description
+        - rendered_item
+      spaces: ''
+      overlap_cjk: 1
+      minimum_word_size: '3'
       weights:
-        preprocess_index: -30
-  aggregated_field:
-    plugin_id: aggregated_field
-    settings:
-      weights:
-        add_properties: 20
+        preprocess_index: -6
+        preprocess_query: -6
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    all_fields: false
   html_filter:
     plugin_id: html_filter
     settings:
@@ -108,19 +114,6 @@ processor_settings:
       b: 2
       em: 1
       u: 1
-    all_fields: false
-  ignorecase:
-    plugin_id: ignorecase
-    settings:
-      fields:
-        - type
-        - label
-        - name
-        - field_group_description
-        - rendered_item
-      weights:
-        preprocess_index: -10
-        preprocess_query: -10
     all_fields: false
   ignore_character:
     plugin_id: ignore_character
@@ -167,12 +160,46 @@ processor_settings:
         Po: Po
         Ps: Ps
     all_fields: false
+  ignorecase:
+    plugin_id: ignorecase
+    settings:
+      fields:
+        - type
+        - label
+        - name
+        - field_group_description
+        - rendered_item
+      weights:
+        preprocess_index: -10
+        preprocess_query: -10
+    all_fields: false
   rendered_item:
     plugin_id: rendered_item
     settings:
       weights:
         add_properties: 0
         pre_index_save: -10
+  transliteration:
+    plugin_id: transliteration
+    settings:
+      fields:
+        - label
+        - field_group_description
+        - rendered_item
+      weights:
+        preprocess_index: -10
+        preprocess_query: -10
+    all_fields: false
+  add_url:
+    plugin_id: add_url
+    settings:
+      weights:
+        preprocess_index: -30
+  aggregated_field:
+    plugin_id: aggregated_field
+    settings:
+      weights:
+        add_properties: 20
   stopwords:
     plugin_id: stopwords
     settings:
@@ -255,37 +282,11 @@ processor_settings:
       - will
       - with
     all_fields: false
-  tokenizer:
-    plugin_id: tokenizer
-    settings:
-      fields:
-        - field_group_description
-        - rendered_item
-      spaces: ''
-      overlap_cjk: 1
-      minimum_word_size: '3'
-      weights:
-        preprocess_index: -6
-        preprocess_query: -6
-    spaces: ''
-    overlap_cjk: 1
-    minimum_word_size: '3'
-    all_fields: false
-  transliteration:
-    plugin_id: transliteration
-    settings:
-      fields:
-        - label
-        - field_group_description
-        - rendered_item
-      weights:
-        preprocess_index: -10
-        preprocess_query: -10
-    all_fields: false
 tracker_settings:
   default:
     plugin_id: default
     settings: {  }
+    indexing_order: fifo
 options:
   index_directly: true
   cron_limit: 50

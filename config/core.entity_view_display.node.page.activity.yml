@@ -1,5 +1,5 @@
 uuid: 37c1b280-41fc-489a-9e91-9beec8cd897c
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -16,7 +16,7 @@ dependencies:
     - social_core
     - user
 _core:
-  default_config_hash: Zq7rfkZkkuBidyRTZyJd8fxWrrRoULBycgwwYKF-6sA
+  default_config_hash: 5_cDtD3n1om6NPR11IocvRwoT_A2w0m_L9uKsqaP2Pw
 id: node.page.activity
 targetEntityType: node
 bundle: page
@@ -54,4 +54,5 @@ hidden:
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
+  groups_type_public_group: true
   langcode: true

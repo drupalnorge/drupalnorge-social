@@ -36,6 +36,7 @@ display:
     display_options:
       block_description: 'User Groups'
       title: 'Recently joined groups'
+      use_more_text: 'All groups'
   page_user_groups:
     display_title: 'User Groups Page'
     display_options:

@@ -1,5 +1,5 @@
 uuid: 61f77db6-d4c2-4ec8-9954-98f635a3fbab
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
     config:
       - user.role.sitemanager
 _core:
-  default_config_hash: '-ZpC4jOHoTRTQ70M2JrKxXVKlHVbCJJQxzc3JueuCK8'
+  default_config_hash: dBeHwyLNYm6UJ80soFbHcJMohkyMLMuvZm80_mOsEUY
 id: open_group-ba5854c29
 label: 'Site manager'
 weight: 4
@@ -59,3 +59,4 @@ permissions:
   - 'enroll to events in groups'
   - 'access posts in group'
   - 'add post entities in group'
+  - 'view group stream page'

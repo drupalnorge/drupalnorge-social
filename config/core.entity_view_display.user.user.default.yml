@@ -1,11 +1,11 @@
 uuid: 2cb23a80-0c3a-4ed2-96dc-49927326ec35
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - user
 _core:
-  default_config_hash: om_7hUoEYLrw14iqjv2PT4CJb2AV2XirhM4wozROwlo
+  default_config_hash: bD2RG8U02z8GSE4RHHEerQVWEim3RMBwurQSAg3fVX8
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -15,6 +15,7 @@ hidden:
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
+  groups_type_public_group: true
   langcode: true
   member_for: true
   profile_main: true

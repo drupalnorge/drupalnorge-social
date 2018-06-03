@@ -1,0 +1,22 @@
+uuid: 8a1f7972-105b-43b9-a61f-d4ea646497ca
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_search
+  theme:
+    - socialblue
+_core:
+  default_config_hash: VQ6q9FRybbWvnB24twPpJ2FYXWgncoYqXetQMbg7Gvs
+id: socialblue_search_content_block_header
+theme: socialblue
+region: content_top
+weight: -9
+provider: null
+plugin: search_content_block
+settings:
+  id: search_content_block
+  label: 'Search content block'
+  provider: social_search
+  label_display: '0'
+visibility: {  }

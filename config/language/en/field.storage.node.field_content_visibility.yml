@@ -4,3 +4,5 @@ settings:
       label: 'Public - visible to everyone including people who are not a member'
     -
       label: 'Community - visible only to logged in members'
+    -
+      label: 'Group members - visible only to group members'

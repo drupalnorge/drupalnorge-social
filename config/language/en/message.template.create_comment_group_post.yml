@@ -2,6 +2,6 @@ label: 'Create comment on post in the group'
 description: 'A user add a comment to post in the group'
 text:
   -
-    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> commented on a post in <a href="[message:gurl]">[message:gtitle]</a></p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> commented on a post in <a href="[message:gurl]">[message:gtitle]</a></p>'
   -
-    value: '<p><a href="[message:author:url:relative]">[message:author:display-name]</a> and @count others commented on a post in <a href="[message:gurl]">[message:gtitle]</a></p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> and @count others commented on a post in <a href="[message:gurl]">[message:gtitle]</a></p>'

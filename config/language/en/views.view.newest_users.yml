@@ -20,12 +20,16 @@ display:
           tags:
             previous: ‹‹
             next: ››
+      filters:
+        uid_raw:
+          admin_label: filter_no_admin
       title: 'Newest members'
   block_newest_users:
     display_title: 'Newest users block'
     display_options:
       title: 'Newest members'
       block_description: 'Newest users block'
+      use_more_text: 'All members'
   page_newest_users:
     display_title: 'Newest users page'
     display_options:
@@ -40,3 +44,4 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options_all_label: '- All -'
             offset_label: Offset
+      title: 'All members'

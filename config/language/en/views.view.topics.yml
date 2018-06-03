@@ -57,6 +57,7 @@ display:
         created:
           expose:
             label: 'Sort by publish date'
+      use_more_text: 'All topics'
   page_profile:
     display_title: Page
     display_options:

@@ -9,3 +9,6 @@ settings:
     -
       label: Community
       description: 'Visible only to members who are logged in'
+    -
+      label: 'Group members'
+      description: 'Visible only to group members'

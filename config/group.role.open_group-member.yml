@@ -1,11 +1,11 @@
 uuid: 282119fd-afa7-4ed0-b87f-0659a26e10c4
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - group.type.open_group
 _core:
-  default_config_hash: DSkRrH6E_WqoA7VrxhBXoKmJwTGvLZ4o0hiumubN6aA
+  default_config_hash: lIPSnolppYefzluKO5vt-IB7IsKHoodrKmF4LsjlgAc
 id: open_group-member
 label: Member
 weight: -100
@@ -35,3 +35,4 @@ permissions:
   - 'post comments'
   - 'access comments'
   - 'edit own comments'
+  - 'view group stream page'

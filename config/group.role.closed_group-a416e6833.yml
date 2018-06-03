@@ -1,5 +1,5 @@
 uuid: 60f3c1c9-89ac-425a-967e-919b74dbf141
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
     config:
       - user.role.administrator
 _core:
-  default_config_hash: 8_hniGH7VvigFZhXQIu1X27vVD-B0uN9xmhPXItHB7s
+  default_config_hash: ygXCHKfNoR6qljW_oGF2HXzpresLIEyGLQ4gv7wHvxk
 id: closed_group-a416e6833
 label: Administrator
 weight: 2
@@ -59,3 +59,4 @@ permissions:
   - 'enroll to events in groups'
   - 'access posts in group'
   - 'add post entities in group'
+  - 'view group stream page'

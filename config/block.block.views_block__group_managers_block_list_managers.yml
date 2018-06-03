@@ -1,5 +1,5 @@
 uuid: df641539-92c9-4e97-b95a-2eb3f36d6b54
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -11,7 +11,7 @@ dependencies:
   theme:
     - socialblue
 _core:
-  default_config_hash: zO6FJqX1ZHPNHkFM-uv6d2ylfTwG6W_4sbsfxvPCCjk
+  default_config_hash: isi6nOMiS3q-NXN7Eo0STr0yBhXPxYZwY9unMxsgYYc
 id: views_block__group_managers_block_list_managers
 theme: socialblue
 region: content
@@ -32,6 +32,7 @@ visibility:
     group_types:
       closed_group: closed_group
       open_group: open_group
+      public_group: public_group
     negate: false
     context_mapping:
       group: '@group.group_route_context:group'

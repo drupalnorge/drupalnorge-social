@@ -1,5 +1,5 @@
 uuid: 22e3d1d7-a467-4587-beff-216f6f49c32a
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
     config:
       - user.role.contentmanager
 _core:
-  default_config_hash: kxyTZ0lvwfg5mT9j2Z5fhSSm18v6xrGv83QBY5JlYDE
+  default_config_hash: GaCZtXiG6y0F8AJUlRB73ZZqQPcEAjL-rfJC9vCxVfI
 id: closed_group-83776d798
 label: 'Content manager'
 weight: 3
@@ -59,3 +59,4 @@ permissions:
   39: 'add post entities in group'
   40: 'access content overview'
   46: 'view group_membership content'
+  47: 'view group stream page'
