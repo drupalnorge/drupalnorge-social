@@ -3,7 +3,7 @@ language: php
 php:
   - 7.0
 addons:
-  chrome: stable
+  chrome: beta
 
 sudo: false
 
@@ -15,8 +15,7 @@ before_install:
   - phpenv config-rm xdebug.ini
   - composer --verbose self-update
   - composer --version
-  - which google-chrome
-  - which google-chrome-stable
+  - google-chrome --version
   - mysql -e "create database IF NOT EXISTS test;" -uroot
   - wget --no-check-certificate https://drupalnorge.no/sanitized.db
 
