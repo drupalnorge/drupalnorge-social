@@ -1,6 +1,7 @@
 default:
   autoload:
     - './html/profiles/contrib/social/tests/behat/features/bootstrap'
+    - './tests/src/Context'
   suites:
     default:
       paths:
@@ -13,7 +14,7 @@ default:
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\DrushContext
         - FeatureContext
-        - SocialDrupalContext
+        - DrupalNorge\DrupalNorgeSocial\Tests\Context\DrupalNorgeContext
   extensions:
     Behat\MinkExtension:
       files_path: %paths.base%/tests/files

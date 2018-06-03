@@ -39,6 +39,9 @@
             "url": "https://asset-packagist.org"
         }
     ],
+    "autoload": {
+      "psr-4": { "DrupalNorge\\DrupalNorgeSocial\\Tests\\": "tests/src" }
+    },
     "scripts": {
         "post-install-cmd": [
             "@composer drupal-scaffold"
