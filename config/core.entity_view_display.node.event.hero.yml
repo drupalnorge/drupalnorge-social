@@ -1,5 +1,5 @@
 uuid: eefed9ed-9131-43fa-ac91-7c610816d589
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -61,14 +61,6 @@ content:
   flag_follow_content:
     weight: 10
     region: content
-  groups_type_public_group:
-    label: above
-    weight: -5
-    region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
 hidden:
   body: true
   field_content_visibility: true
