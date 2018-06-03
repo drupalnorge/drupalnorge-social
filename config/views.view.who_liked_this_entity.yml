@@ -11,7 +11,7 @@ dependencies:
     - views_infinite_scroll
     - votingapi
 _core:
-  default_config_hash: VqTcJYwgKSBHa4XIpOW8w91sS8rCXz6r91ee_MLv6jY
+  default_config_hash: 7jtDFqTgkAkBnIZ9y5SlE0yRujnCmwUExvLIF_KgoBU
 id: who_liked_this_entity
 label: 'Who liked this entity'
 module: views
@@ -251,6 +251,8 @@ display:
           text: 'see profile'
           entity_type: user
           plugin_id: entity_link
+          output_url_as_text: false
+          absolute: false
       filters:
         type:
           id: type

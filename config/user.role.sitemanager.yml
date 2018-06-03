@@ -32,6 +32,7 @@ permissions:
   - 'administer account settings'
   - 'administer blocks'
   - 'administer menu'
+  - 'administer navigation settings'
   - 'administer nodes'
   - 'administer own comments'
   - 'administer profile settings'

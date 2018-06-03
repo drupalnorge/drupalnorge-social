@@ -12,14 +12,13 @@ third_party_settings:
     activity_context: group_activity_context
     activity_destinations:
       stream_explore: stream_explore
-      stream_group: stream_group
       stream_home: stream_home
       stream_profile: stream_profile
     activity_create_direct: 1
     activity_aggregate: 1
     activity_entity_condition: comment_not_reply
 _core:
-  default_config_hash: qpSbf7XxVC08z3ehgN_GDJNvLCx56DPFcuy2ZVwEk1U
+  default_config_hash: ZJQbLM7UFpykgQrCY5DxeTHlXNZbpq4i_fbQ7of8wJI
 template: create_comment_group_node
 label: 'Create comment on node in the group'
 description: 'A user add a comment to content in the group'
