@@ -26,6 +26,7 @@ default:
             switches:
               - "--headless"
               - "--disable-gpu"
+              - "--no-sandbox"
       javascript_session: selenium2
       browser_name: chrome
       goutte: ~
