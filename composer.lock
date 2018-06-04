@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f8686fcde56e92c1c02fc282aede3ff",
+    "content-hash": "6db7625f6df39ef5a2a8ffaf7458ad71",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -4219,17 +4219,17 @@
         },
         {
             "name": "drupal/social",
-            "version": "1.15.0",
+            "version": "1.16.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/social",
-                "reference": "8.x-1.15"
+                "reference": "8.x-1.16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/social-8.x-1.15-core.zip",
-                "reference": "8.x-1.15",
-                "shasum": "1f46cf2bb96a63585972b0c5fc420c75e59b9914"
+                "url": "https://ftp.drupal.org/files/projects/social-8.x-1.16-core.zip",
+                "reference": "8.x-1.16",
+                "shasum": "6b7055cdf784b415448171a35eb70f5858fd9472"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4240,8 +4240,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.15",
-                    "datestamp": "1524568687",
+                    "version": "8.x-1.16",
+                    "datestamp": "1524677284",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5155,16 +5155,16 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "1.15.0",
+            "version": "1.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "85ea7f65ac05c8214804a280d90472e8e45cd458"
+                "reference": "62d0357551ef6c95cfc85d076c0b08562aa7f926"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/85ea7f65ac05c8214804a280d90472e8e45cd458",
-                "reference": "85ea7f65ac05c8214804a280d90472e8e45cd458",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/62d0357551ef6c95cfc85d076c0b08562aa7f926",
+                "reference": "62d0357551ef6c95cfc85d076c0b08562aa7f926",
                 "shasum": ""
             },
             "require": {
@@ -5188,7 +5188,7 @@
                 "drupal/block_field": "1.0-alpha5",
                 "drupal/bootstrap": "3.9",
                 "drupal/config_update": "1.5",
-                "drupal/core": "~8.5.2",
+                "drupal/core": "~8.5.3",
                 "drupal/crop": "1.5",
                 "drupal/csv_serialization": "1.2",
                 "drupal/devel": "1.2",
@@ -5278,7 +5278,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
-            "time": "2018-04-24T09:43:46+00:00"
+            "time": "2018-04-25T16:39:39+00:00"
         },
         {
             "name": "google/apiclient",
@@ -5341,16 +5341,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.61",
+            "version": "v0.62",
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client-services.git",
-                "reference": "f7221039fda179b3f5096a6272b38706f2a6fcd0"
+                "reference": "a3c342e711aaf61f83b1ef9de7a6685446a409e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client-services/zipball/f7221039fda179b3f5096a6272b38706f2a6fcd0",
-                "reference": "f7221039fda179b3f5096a6272b38706f2a6fcd0",
+                "url": "https://api.github.com/repos/google/google-api-php-client-services/zipball/a3c342e711aaf61f83b1ef9de7a6685446a409e7",
+                "reference": "a3c342e711aaf61f83b1ef9de7a6685446a409e7",
                 "shasum": ""
             },
             "require": {
@@ -5374,7 +5374,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2018-05-26T00:23:39+00:00"
+            "time": "2018-05-31T00:23:15+00:00"
         },
         {
             "name": "google/auth",
