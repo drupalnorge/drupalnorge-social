@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f8686fcde56e92c1c02fc282aede3ff",
+    "content-hash": "d5cf11f4dda06777015b2ae7d6017839",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -4219,17 +4219,17 @@
         },
         {
             "name": "drupal/social",
-            "version": "1.15.0",
+            "version": "1.17.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/social",
-                "reference": "8.x-1.15"
+                "reference": "8.x-1.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/social-8.x-1.15-core.zip",
-                "reference": "8.x-1.15",
-                "shasum": "1f46cf2bb96a63585972b0c5fc420c75e59b9914"
+                "url": "https://ftp.drupal.org/files/projects/social-8.x-1.17-core.zip",
+                "reference": "8.x-1.17",
+                "shasum": "14958342c050de93479d835196f23cfc72d7d603"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4240,8 +4240,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.15",
-                    "datestamp": "1524568687",
+                    "version": "8.x-1.17",
+                    "datestamp": "1527241984",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

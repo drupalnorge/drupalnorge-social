@@ -20,7 +20,7 @@
         "drupal/slack": "^1.2",
         "drush/drush": "^9@rc",
         "commerceguys/addressing": "1.0.0-beta3",
-        "drupal/social": "1.15"
+        "drupal/social": "1.17.0"
     },
     "require-dev": {
         "drupal/coder": "^8.2",
