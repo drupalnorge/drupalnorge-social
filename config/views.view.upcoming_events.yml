@@ -14,7 +14,7 @@ dependencies:
     - social_event
     - user
 _core:
-  default_config_hash: PL9wIgh5C40G3yfUBqUHiIfBt3j3Nvutc1GXkQa956I
+  default_config_hash: LRnUz32gIySF6FQMlP4uWuzSc1Jnn0XOBRJMOo3ZLpg
 id: upcoming_events
 label: '(Upcoming) Community events'
 module: views
@@ -686,7 +686,7 @@ display:
         groups:
           1: AND
       exposed_block: true
-      title: 'Community events'
+      title: 'All events'
       sorts:
         event_passed_upcoming_sort:
           id: event_passed_upcoming_sort

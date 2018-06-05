@@ -72,7 +72,7 @@ third_party_settings:
         id: attachments
         classes: 'card '
 _core:
-  default_config_hash: FBM4ybh9fYsTPXvjBw0lGx19IGZDwj8aDC8PiSg_IHQ
+  default_config_hash: 7gp9MbxXU7HOGmCzXk8LMVCxpLv_WPYpnFy49fW_2os
 id: node.topic.default
 targetEntityType: node
 bundle: topic
@@ -168,9 +168,12 @@ content:
     third_party_settings: {  }
     region: content
   uid:
-    type: options_select
+    type: entity_reference_autocomplete
     weight: 3
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
 hidden:

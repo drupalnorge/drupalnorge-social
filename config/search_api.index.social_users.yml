@@ -14,7 +14,7 @@ dependencies:
     - social_search
     - profile
 _core:
-  default_config_hash: M23lofcSb88vkUnF5_ulaMz4G6LRpAFGX8DBkvdpeO4
+  default_config_hash: KmOcrNYPVSRfl7Cewlz7WsP-KK-_cMF6gVJa3spBpOw
 id: social_users
 name: 'Social Users'
 description: 'Default users index created for the Social distribution.'
@@ -65,6 +65,14 @@ field_settings:
     datasource_id: 'entity:profile'
     property_path: 'uid:entity:name'
     type: text
+    dependencies:
+      module:
+        - user
+  user_status:
+    label: 'Owner » User » User status'
+    datasource_id: 'entity:profile'
+    property_path: 'uid:entity:status'
+    type: boolean
     dependencies:
       module:
         - user
@@ -123,8 +131,8 @@ processor_settings:
       em: 1
       u: 1
     all_fields: false
-  transliteration:
-    plugin_id: transliteration
+  ignorecase:
+    plugin_id: ignorecase
     settings:
       fields:
         - rendered_item
@@ -133,8 +141,14 @@ processor_settings:
         preprocess_index: -10
         preprocess_query: -10
     all_fields: false
-  ignorecase:
-    plugin_id: ignorecase
+  rendered_item:
+    plugin_id: rendered_item
+    settings:
+      weights:
+        add_properties: 0
+        pre_index_save: -10
+  transliteration:
+    plugin_id: transliteration
     settings:
       fields:
         - rendered_item
@@ -148,6 +162,11 @@ processor_settings:
     settings:
       weights:
         preprocess_index: -30
+  aggregated_field:
+    plugin_id: aggregated_field
+    settings:
+      weights:
+        add_properties: 20
   stopwords:
     plugin_id: stopwords
     settings:
@@ -230,20 +249,12 @@ processor_settings:
       - will
       - with
     all_fields: false
-  aggregated_field:
-    plugin_id: aggregated_field
-    settings:
-      weights:
-        add_properties: 20
-  rendered_item:
-    plugin_id: rendered_item
-    settings:
-      weights:
-        add_properties: 0
-        pre_index_save: -10
   super_user:
     weights:
       preprocess_query: 30
+  blocked_users:
+    weights:
+      preprocess_query: -30
 tracker_settings:
   default:
     plugin_id: default
