@@ -5,7 +5,7 @@ dependencies:
   config:
     - group.type.public_group
 _core:
-  default_config_hash: z8l56ACsnh59tdvfYiY_YeEBIKMOF-RZX-50V_mHyas
+  default_config_hash: YcSijr2cuBFYCTDhcA_Acjd2R-mD1-uTEpPxchhZdJo
 id: public_group-anonymous
 label: Anonymous
 weight: -102
@@ -14,10 +14,10 @@ audience: anonymous
 group_type: public_group
 permissions_ui: true
 permissions:
-  1: 'view group_node:event content'
-  2: 'view group_node:event entity'
-  3: 'view group_node:topic entity'
-  4: 'view group_node:topic content'
-  5: 'view group_membership content'
-  6: 'view group'
-  13: 'view group stream page'
+  - 'view group_node:event content'
+  - 'view group_node:event entity'
+  - 'view group_node:topic entity'
+  - 'view group_node:topic content'
+  - 'view group_membership content'
+  - 'view group'
+  - 'view group stream page'

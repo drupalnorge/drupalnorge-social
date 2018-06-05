@@ -82,6 +82,12 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
+  content_access:
+    plugin_id: content_access
+    settings:
+      weights:
+        preprocess_index: -10
+        preprocess_query: -10
   tokenizer:
     plugin_id: tokenizer
     settings:
@@ -98,12 +104,6 @@ processor_settings:
     overlap_cjk: 1
     minimum_word_size: '3'
     all_fields: false
-  content_access:
-    plugin_id: content_access
-    settings:
-      weights:
-        preprocess_index: -10
-        preprocess_query: -10
   html_filter:
     plugin_id: html_filter
     settings:
@@ -131,8 +131,8 @@ processor_settings:
       em: 1
       u: 1
     all_fields: false
-  transliteration:
-    plugin_id: transliteration
+  ignorecase:
+    plugin_id: ignorecase
     settings:
       fields:
         - title
@@ -141,8 +141,14 @@ processor_settings:
         preprocess_index: -10
         preprocess_query: -10
     all_fields: false
-  ignorecase:
-    plugin_id: ignorecase
+  rendered_item:
+    plugin_id: rendered_item
+    settings:
+      weights:
+        add_properties: 0
+        pre_index_save: -10
+  transliteration:
+    plugin_id: transliteration
     settings:
       fields:
         - title
@@ -156,6 +162,11 @@ processor_settings:
     settings:
       weights:
         preprocess_index: -30
+  aggregated_field:
+    plugin_id: aggregated_field
+    settings:
+      weights:
+        add_properties: 20
   stopwords:
     plugin_id: stopwords
     settings:
@@ -238,17 +249,6 @@ processor_settings:
       - will
       - with
     all_fields: false
-  aggregated_field:
-    plugin_id: aggregated_field
-    settings:
-      weights:
-        add_properties: 20
-  rendered_item:
-    plugin_id: rendered_item
-    settings:
-      weights:
-        add_properties: 0
-        pre_index_save: -10
 tracker_settings:
   default:
     plugin_id: default

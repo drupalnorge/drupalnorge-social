@@ -20,10 +20,10 @@ dependencies:
     - group
     - profile
 _core:
-  default_config_hash: h_Hxs4ihO3mTwu6TYsrucUXfYWr_t9YC0EPh65Dx7t4
+  default_config_hash: bBsg8rK8bcEQIMoRmz6s-rP8OJb8Zl_vRdxC09qAeF4
 id: social_all
 name: 'Social all'
-description: ''
+description: 'All content index created for the Social distribution.'
 read_only: false
 field_settings:
   rendered_item:
@@ -149,6 +149,14 @@ field_settings:
     dependencies:
       module:
         - user
+  user_status:
+    label: 'Owner » User » User status'
+    datasource_id: 'entity:profile'
+    property_path: 'uid:entity:status'
+    type: boolean
+    dependencies:
+      module:
+        - user
 datasource_settings:
   'entity:node':
     bundles:
@@ -169,7 +177,11 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
+  content_access:
+    weights:
+      preprocess_query: -30
   tokenizer:
+    all_fields: false
     fields:
       - rendered_item
       - field_group_description
@@ -179,11 +191,8 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
-    all_fields: false
-  content_access:
-    weights:
-      preprocess_query: -30
   html_filter:
+    all_fields: false
     fields:
       - rendered_item
       - type
@@ -205,21 +214,8 @@ processor_settings:
     weights:
       preprocess_index: -15
       preprocess_query: -15
-    all_fields: false
-  transliteration:
-    fields:
-      - rendered_item
-      - type
-      - title
-      - label
-      - field_group_description
-      - field_group_location
-      - name
-    weights:
-      preprocess_index: -20
-      preprocess_query: -20
-    all_fields: false
   ignorecase:
+    all_fields: false
     fields:
       - rendered_item
       - type
@@ -231,9 +227,24 @@ processor_settings:
     weights:
       preprocess_index: -20
       preprocess_query: -20
+  rendered_item: {  }
+  transliteration:
     all_fields: false
+    fields:
+      - rendered_item
+      - type
+      - title
+      - label
+      - field_group_description
+      - field_group_location
+      - name
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
   add_url: {  }
+  aggregated_field: {  }
   stopwords:
+    all_fields: false
     fields:
       - rendered_item
       - field_group_description
@@ -276,12 +287,12 @@ processor_settings:
     weights:
       preprocess_index: -5
       preprocess_query: -2
-    all_fields: false
-  aggregated_field: {  }
-  rendered_item: {  }
   super_user:
     weights:
       preprocess_query: 30
+  blocked_users:
+    weights:
+      preprocess_query: -30
 tracker_settings:
   default:
     indexing_order: fifo
