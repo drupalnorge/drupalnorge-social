@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6db7625f6df39ef5a2a8ffaf7458ad71",
+    "content-hash": "8b7dc84ed5c505668315135d1ebc65ca",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -569,50 +569,6 @@
             ],
             "description": "A PHP 5.4+ enumeration library.",
             "time": "2015-02-27T21:36:56+00:00"
-        },
-        {
-            "name": "commerceguys/intl",
-            "version": "v0.7.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/commerceguys/intl.git",
-                "reference": "de1435502068393fae4061818e194e4ea61b98d6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/intl/zipball/de1435502068393fae4061818e194e4ea61b98d6",
-                "reference": "de1435502068393fae4061818e194e4ea61b98d6",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "mikey179/vfsstream": "1.*",
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "CommerceGuys\\Intl\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bojan Zivanovic"
-                }
-            ],
-            "description": "Internationalization library powered by CLDR data.",
-            "time": "2017-12-29T00:13:05+00:00"
         },
         {
             "name": "composer/installers",
@@ -1693,22 +1649,24 @@
         },
         {
             "name": "drupal/address",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/address",
-                "reference": "8.x-1.3"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "170551d6ecf4a08bac178f31b9869a626279d9eb"
+                "url": "https://ftp.drupal.org/files/projects/address-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "143e426be73418c719c6bddd5fb81c610604e860"
             },
             "require": {
-                "commerceguys/addressing": "~1.0",
-                "commerceguys/intl": "~0.7",
+                "commerceguys/addressing": "^1.0.0",
                 "drupal/core": "*"
+            },
+            "require-dev": {
+                "drupal/token": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -1716,8 +1674,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1511382784",
+                    "version": "8.x-1.4",
+                    "datestamp": "1527081784",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1750,17 +1708,17 @@
         },
         {
             "name": "drupal/addtoany",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/addtoany",
-                "reference": "8.x-1.8"
+                "reference": "8.x-1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/addtoany-8.x-1.8.zip",
-                "reference": "8.x-1.8",
-                "shasum": "fc3fc0193cb2fd434c0d4112f99287b72f233a41"
+                "url": "https://ftp.drupal.org/files/projects/addtoany-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "529592c0c8905b1ecd05a5a9cbe0f4bfb178729a"
             },
             "require": {
                 "drupal/core": "*"
@@ -1771,8 +1729,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1493344443",
+                    "version": "8.x-1.9",
+                    "datestamp": "1521676564",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1781,7 +1739,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2541,17 +2499,17 @@
         },
         {
             "name": "drupal/csv_serialization",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/csv_serialization",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/csv_serialization-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "4a67589e87c22a45b79fd72e68d8872624e7b016"
+                "url": "https://ftp.drupal.org/files/projects/csv_serialization-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "e1b773848631669cf0a31bc188fb6049a2587493"
             },
             "require": {
                 "drupal/core": "^8.0.4",
@@ -2563,7 +2521,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.2",
+                    "version": "8.x-1.3",
                     "datestamp": "1519740785",
                     "security-coverage": {
                         "status": "covered",
@@ -4467,17 +4425,17 @@
         },
         {
             "name": "drupal/swiftmailer",
-            "version": "1.0.0-beta1",
+            "version": "1.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/swiftmailer",
-                "reference": "8.x-1.0-beta1"
+                "reference": "8.x-1.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/swiftmailer-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "d49a50638a629c24d681181b82255fd50c1b2642"
+                "url": "https://ftp.drupal.org/files/projects/swiftmailer-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "a63a91e7816a06bf8e52ac9b5e48a892a1e6b1d4"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -4491,13 +4449,14 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1487207830",
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1519655285",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
                     }
-                }
+                },
+                "patches_applied": []
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -5155,16 +5114,16 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "1.16.0",
+            "version": "1.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "62d0357551ef6c95cfc85d076c0b08562aa7f926"
+                "reference": "526572d22852141f95003e398edfa5a56cb78ba2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/62d0357551ef6c95cfc85d076c0b08562aa7f926",
-                "reference": "62d0357551ef6c95cfc85d076c0b08562aa7f926",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/526572d22852141f95003e398edfa5a56cb78ba2",
+                "reference": "526572d22852141f95003e398edfa5a56cb78ba2",
                 "shasum": ""
             },
             "require": {
@@ -5182,15 +5141,15 @@
                 "composer/installers": "^1.0",
                 "cweagans/composer-patches": "^1.5.0",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
-                "drupal/address": "1.3",
-                "drupal/addtoany": "1.8",
+                "drupal/address": "1.4",
+                "drupal/addtoany": "1.9",
                 "drupal/admin_toolbar": "1.23",
                 "drupal/block_field": "1.0-alpha5",
                 "drupal/bootstrap": "3.9",
                 "drupal/config_update": "1.5",
                 "drupal/core": "~8.5.3",
                 "drupal/crop": "1.5",
-                "drupal/csv_serialization": "1.2",
+                "drupal/csv_serialization": "1.3",
                 "drupal/devel": "1.2",
                 "drupal/dynamic_entity_reference": "1.5",
                 "drupal/embed": "1.0",
@@ -5214,7 +5173,7 @@
                 "drupal/search_api": "1.6",
                 "drupal/social_api": "1.1",
                 "drupal/social_auth": "1.0",
-                "drupal/swiftmailer": "1.0-beta1",
+                "drupal/swiftmailer": "1.0-beta2",
                 "drupal/token": "1.1",
                 "drupal/url_embed": "1.0-alpha1",
                 "drupal/views_infinite_scroll": "1.5",
@@ -5265,6 +5224,12 @@
                     },
                     "drupal/votingapi": {
                         "Delete everywhere": "https://www.drupal.org/files/issues/2018-03-29/delete-everywhere-2957067-2.patch"
+                    },
+                    "drupal/image_widget_crop": {
+                        "Initial crop fix": "https://www.drupal.org/files/issues/2018-04-25/2865396-26-apply-default-crop.diff"
+                    },
+                    "drupal/swiftmailer": {
+                        "Fix missing filter_format after update to beta2": "https://www.drupal.org/files/issues/2018-03-26/2948607-fix-filter-format-1.patch"
                     }
                 }
             },
@@ -5278,7 +5243,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
-            "time": "2018-04-25T16:39:39+00:00"
+            "time": "2018-05-25T09:47:39+00:00"
         },
         {
             "name": "google/apiclient",
