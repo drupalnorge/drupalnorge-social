@@ -342,7 +342,7 @@
             "version": "1.11.4",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jonthornton/jquery-timepicker.git",
+                "url": "https://github.com/jonthornton/jquery-timepicker.git",
                 "reference": "e0ac33d4b85f1be3a107e5bd6174c6672b27ec34"
             },
             "dist": {
@@ -1565,16 +1565,16 @@
         },
         {
             "name": "drupal-composer/drupal-scaffold",
-            "version": "2.5.0",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-scaffold.git",
-                "reference": "76342f9cd22a673b0b87b5e8774613f8ee287fbc"
+                "reference": "2d6b25538ab4d7245cb8a5f01895b24bbd4d69c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/76342f9cd22a673b0b87b5e8774613f8ee287fbc",
-                "reference": "76342f9cd22a673b0b87b5e8774613f8ee287fbc",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/2d6b25538ab4d7245cb8a5f01895b24bbd4d69c0",
+                "reference": "2d6b25538ab4d7245cb8a5f01895b24bbd4d69c0",
                 "shasum": ""
             },
             "require": {
@@ -1603,7 +1603,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
-            "time": "2018-04-18T16:14:55+00:00"
+            "time": "2018-06-06T20:36:41+00:00"
         },
         {
             "name": "drupal/address",
