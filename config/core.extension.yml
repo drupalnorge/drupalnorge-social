@@ -11,6 +11,7 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
+  captcha: 0
   ckeditor: 0
   coffee: 0
   color: 0
@@ -60,6 +61,7 @@ module:
   path: 0
   profile: 0
   r4032login: 0
+  recaptcha: 0
   reroute_email: 0
   search_api: 0
   search_api_db: 0
