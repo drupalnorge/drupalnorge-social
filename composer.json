@@ -20,7 +20,7 @@
         "drupal/slack": "^1.2",
         "drush/drush": "^9@rc",
         "drupal/social": "1.17",
-        "drupal/recaptcha": "^1.7"
+        "drupal/recaptcha": "^2.3"
     },
     "require-dev": {
         "drupal/coder": "^8.2",
