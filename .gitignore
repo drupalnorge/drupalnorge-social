@@ -25,3 +25,11 @@ html/sites/default/settings.local.php
 
 # Ignore local behat.yml
 behat.yml
+
+
+# Ingore Lando-files
+/app
+
+
+# Ingore DDEV-files
+.ddev/docker-compose.yaml
