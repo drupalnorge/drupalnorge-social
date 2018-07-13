@@ -32,7 +32,7 @@ We have a ready configuration file for _[Lando development environment](https://
 
 ### c) Using *DDEV* as a development environment
 
-We have a ready configuration file for _[DDEV development environment](https://docs.devwithlando.io)_ for you. However, you can change the configuration `.ddev/.config.yaml`-file you want.
+We have a ready configuration file for _[DDEV development environment](https://ddev.readthedocs.io)_ for you. However, you can change the configuration `.ddev/.config.yaml`-file you want.
 
 1. Clone this repository. For example with: `git clone git@github.com:drupalnorge/drupalnorge-social.git`
 
