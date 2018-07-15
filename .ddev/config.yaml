@@ -59,3 +59,7 @@ provider: default
 # post-import-db:
 #   - exec: drush cr
 #   - exec: drush updb
+
+hooks:
+  post-start:
+    - exec: "composer install -d /var/www/html"
