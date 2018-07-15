@@ -38,9 +38,11 @@ We have a ready configuration file for _[DDEV development environment](https://d
 
 1. Clone this repository. For example with: `git clone git@github.com:drupalnorge/drupalnorge-social.git`
 
-2. `cd` into the repository root. Install the composer dependencies. For example with: `ddev exec composer install -d /var/www/html`
+2. `cd` into the repository root and start the development environment by `ddev start`
 
-3. Install drupal. You can do this however you want. One way is to use drush: `ddev exec drush site-install --db-url=mysql://USER:PASS@HOST/DATABASE`
+3. Install the composer dependencies. For example with: `ddev exec composer install -d /var/www/html`
+
+4. Install drupal. You can do this however you want. One way is to use drush: `ddev exec drush site-install --db-url=mysql://USER:PASS@HOST/DATABASE`
 
 
 
