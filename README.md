@@ -38,7 +38,7 @@ We have a ready configuration file for _[DDEV development environment](https://d
 
 2. `cd` into the repository root. Install the composer dependencies. For example with: `lando composer install`
 
-3. Install drupal. You can do this however you want. One way is to use drush: `lando drush site-install --db-url=mysql://USER:PASS@HOST/DATABASE`
+3. Install drupal. You can do this however you want. One way is to use drush: `ddev exec drush site-install --db-url=mysql://USER:PASS@HOST/DATABASE`
 
 
 
