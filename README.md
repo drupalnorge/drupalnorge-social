@@ -21,14 +21,13 @@ If you want a database dump, here is one: [https://drupalnorge.no/sanitized.db](
 ### b) Using *Lando* as a development environment
 
 We have a ready configuration file for _[Lando development environment](https://docs.devwithlando.io)_ for you. However, you can change the configuration `.lando.yml`-file you want.
+_NOTE: (This file is included the step composer install)_
 
 1. Clone this repository. For example with: `git clone git@github.com:drupalnorge/drupalnorge-social.git`
 
 2. `cd` into the repository root and start the development environment by `lando start`
 
-3. Install the composer dependencies. For example with: `lando composer install`
-
-4. Install drupal. You can do this however you want. One way is to use drush: `lando drush site-install --db-url=mysql://USER:PASS@HOST/DATABASE`
+3. Install drupal. You can do this however you want. One way is to use drush: `lando drush site-install --db-url=mysql://USER:PASS@HOST/DATABASE`
 
 
 

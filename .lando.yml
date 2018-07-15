@@ -123,7 +123,7 @@ config:
     # Examples: https://github.com/lando/lando/tree/master/examples
     #
     # database: config/mysql
-    
+
 
 # Configure services to Drupal8
 services:
@@ -139,6 +139,15 @@ services:
     # "database"
     #
     # You might want to run `lando info` on your app to see what databases you
-    # have available    
+    # have available
     hosts:
       - database
+
+
+# Add in some custom event scripting
+events:
+
+  # Run some commands after `lando start`
+  post-start:
+    # Composer install command
+    - "cd $LANDO_MOUNT && composer install"
