@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3cf466bdc4c3e0c44e666288a32900d7",
+    "content-hash": "42263a6b20d1d183cada807bfac471f0",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1726,17 +1726,17 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "1.23.0",
+            "version": "1.24.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/admin_toolbar",
-                "reference": "8.x-1.23"
+                "reference": "8.x-1.24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.23.zip",
-                "reference": "8.x-1.23",
-                "shasum": "46d7ed18a9154c35e765ae43ce43aa292c025d65"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.24.zip",
+                "reference": "8.x-1.24",
+                "shasum": "682ffa443a1e339583022eb6adbb00c1103ea6d4"
             },
             "require": {
                 "drupal/core": "*"
@@ -1747,8 +1747,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.23",
-                    "datestamp": "1527522480",
+                    "version": "8.x-1.24",
+                    "datestamp": "1527523080",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1761,20 +1761,25 @@
             ],
             "authors": [
                 {
-                    "name": "Mohamed Anis Taktak",
-                    "homepage": "https://www.drupal.org/u/matio89"
+                    "name": "Wilfrid Roze (eme)",
+                    "homepage": "https://www.drupal.org/u/eme",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "adriancid",
-                    "homepage": "https://www.drupal.org/user/1962106"
+                    "name": "Romain Jarraud (romainj)",
+                    "homepage": "https://www.drupal.org/u/romainj",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "bolbol",
-                    "homepage": "https://www.drupal.org/user/3400070"
+                    "name": "Adrian Cid Almaguer (adriancid)",
+                    "homepage": "https://www.drupal.org/u/adriancid",
+                    "email": "adriancid@gmail.com",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "eme",
-                    "homepage": "https://www.drupal.org/user/542492"
+                    "name": "Mohamed Anis Taktak (matio89)",
+                    "homepage": "https://www.drupal.org/u/matio89",
+                    "role": "Maintainer"
                 },
                 {
                     "name": "fethi.krout",
@@ -1789,8 +1794,12 @@
                     "homepage": "https://www.drupal.org/user/370706"
                 }
             ],
-            "description": "Admin Toolbar improve the default Drupal Toolbar, it lets the hover of sub menus.",
+            "description": "Provides a drop-down menu interface to the core Drupal Toolbar.",
             "homepage": "http://drupal.org/project/admin_toolbar",
+            "keywords": [
+                "Drupal",
+                "Toolbar"
+            ],
             "support": {
                 "source": "http://cgit.drupalcode.org/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
@@ -2439,7 +2448,8 @@
                     "recurse": false,
                     "replace": false,
                     "merge-extra": false
-                }
+                },
+                "patches_applied": []
             },
             "autoload": {
                 "psr-4": {
@@ -2897,20 +2907,20 @@
         },
         {
             "name": "drupal/features",
-            "version": "3.5.0",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/features",
-                "reference": "8.x-3.5"
+                "reference": "8.x-3.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.5.zip",
-                "reference": "8.x-3.5",
-                "shasum": "546b34387018f9adbe742b6992c4d473f9447c41"
+                "url": "https://ftp.drupal.org/files/projects/features-8.x-3.7.zip",
+                "reference": "8.x-3.7",
+                "shasum": "1a832002f47f32a83eae789e42e4f06225de9e43"
             },
             "require": {
-                "drupal/config_update": "*",
+                "drupal/config_update": "^1.4",
                 "drupal/core": "*"
             },
             "type": "drupal-module",
@@ -2919,16 +2929,14 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.5",
-                    "datestamp": "1519703584",
+                    "version": "8.x-3.7",
+                    "datestamp": "1519763284",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
-                "patches_applied": {
-                    "drush 9 compability": "https://cgit.drupalcode.org/features/patch/?id=2e82a6ad751fc88f771be5b4e53b98a8c6eb66b5"
-                }
+                "patches_applied": []
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -2964,7 +2972,7 @@
                     "homepage": "https://www.drupal.org/user/241634"
                 }
             ],
-            "description": "Enables administrators to package configuration into modules.",
+            "description": "Enables administrators to package configuration into modules",
             "homepage": "https://www.drupal.org/project/features",
             "support": {
                 "source": "http://cgit.drupalcode.org/features"
@@ -3887,11 +3895,17 @@
         },
         {
             "name": "drupal/r4032login",
-            "version": "dev-1.x",
+            "version": "1.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/r4032login",
-                "reference": "4a178ae64ab517ee3d47e54d166adfec67e22126"
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/r4032login-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "8a0e4ee6cd2815b50b3b6b2a62b9430cf9720d06"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3902,11 +3916,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1527759185",
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1530773024",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -3960,8 +3974,7 @@
             "homepage": "https://www.drupal.org/project/r4032login",
             "support": {
                 "source": "http://cgit.drupalcode.org/r4032login"
-            },
-            "time": "2018-06-01T09:37:26+00:00"
+            }
         },
         {
             "name": "drupal/recaptcha",
@@ -5103,16 +5116,16 @@
         },
         {
             "name": "facebook/graph-sdk",
-            "version": "5.6.2",
+            "version": "5.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facebook/php-graph-sdk.git",
-                "reference": "030f8c5b9b1a6c09e71719fd638b66ea4daa2f10"
+                "reference": "90e92bd1816fe718e55184ab85910dfcf488432c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-graph-sdk/zipball/030f8c5b9b1a6c09e71719fd638b66ea4daa2f10",
-                "reference": "030f8c5b9b1a6c09e71719fd638b66ea4daa2f10",
+                "url": "https://api.github.com/repos/facebook/php-graph-sdk/zipball/90e92bd1816fe718e55184ab85910dfcf488432c",
+                "reference": "90e92bd1816fe718e55184ab85910dfcf488432c",
                 "shasum": ""
             },
             "require": {
@@ -5157,7 +5170,7 @@
                 "facebook",
                 "sdk"
             ],
-            "time": "2018-02-14T23:24:51+00:00"
+            "time": "2018-07-03T02:25:00+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -5207,16 +5220,16 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "1.17.0",
+            "version": "1.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "526572d22852141f95003e398edfa5a56cb78ba2"
+                "reference": "907903b9b5c85a1c37cbc3dd976241ec7502ad96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/526572d22852141f95003e398edfa5a56cb78ba2",
-                "reference": "526572d22852141f95003e398edfa5a56cb78ba2",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/907903b9b5c85a1c37cbc3dd976241ec7502ad96",
+                "reference": "907903b9b5c85a1c37cbc3dd976241ec7502ad96",
                 "shasum": ""
             },
             "require": {
@@ -5236,7 +5249,7 @@
                 "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/address": "1.4",
                 "drupal/addtoany": "1.9",
-                "drupal/admin_toolbar": "1.23",
+                "drupal/admin_toolbar": "1.24",
                 "drupal/block_field": "1.0-alpha5",
                 "drupal/bootstrap": "3.9",
                 "drupal/config_update": "1.5",
@@ -5248,7 +5261,7 @@
                 "drupal/embed": "1.0",
                 "drupal/entity": "1.0-beta3",
                 "drupal/entity_reference_revisions": "1.4",
-                "drupal/features": "3.5",
+                "drupal/features": "3.7",
                 "drupal/field_group": "3.0-beta1",
                 "drupal/flag": "4.0-alpha2",
                 "drupal/group": "1.0-rc2",
@@ -5262,7 +5275,7 @@
                 "drupal/paragraphs": "1.2",
                 "drupal/private_message": "1.0-beta18",
                 "drupal/profile": "1.0-rc1",
-                "drupal/r4032login": "1.x-dev#4b2077aa70e3f7b00b8a9cba25af5b948ba2e3b9",
+                "drupal/r4032login": "1.0-beta2",
                 "drupal/search_api": "1.6",
                 "drupal/social_api": "1.1",
                 "drupal/social_auth": "1.0",
@@ -5301,14 +5314,17 @@
                     "drupal/group": {
                         "Add computed field for Group reference": "https://www.drupal.org/files/issues/add-computed-field-without-FieldItemListComputedInterface-2718195-34.patch"
                     },
+                    "drupal/image_widget_crop": {
+                        "Initial crop fix": "https://www.drupal.org/files/issues/2018-04-25/2865396-26-apply-default-crop.diff"
+                    },
                     "drupal/like_and_dislike": {
                         "Fix preview on node": "https://www.drupal.org/files/issues/2848080-2-preview-fails-on-node.patch"
                     },
                     "drupal/private_message": {
                         "Email notification settings are not taken into account": "https://www.drupal.org/files/issues/2910537-2.patch"
                     },
-                    "drupal/bootstrap": {
-                        "Not possible to select vertical tabs menu items with keyboard": "https://www.drupal.org/files/issues/bootstrap-vertical-tabs-menu-items-accessibility-2949112-2.patch"
+                    "drupal/swiftmailer": {
+                        "Fix missing filter_format after update to beta2": "https://www.drupal.org/files/issues/2018-03-26/2948607-fix-filter-format-1.patch"
                     },
                     "drupal/url_embed": {
                         "WSOD if wrong url or network unavailable": "https://www.drupal.org/files/issues/url_embed_WSOD_convert_url_to_embed-2871744-5.patch",
@@ -5318,11 +5334,8 @@
                     "drupal/votingapi": {
                         "Delete everywhere": "https://www.drupal.org/files/issues/2018-03-29/delete-everywhere-2957067-2.patch"
                     },
-                    "drupal/image_widget_crop": {
-                        "Initial crop fix": "https://www.drupal.org/files/issues/2018-04-25/2865396-26-apply-default-crop.diff"
-                    },
-                    "drupal/swiftmailer": {
-                        "Fix missing filter_format after update to beta2": "https://www.drupal.org/files/issues/2018-03-26/2948607-fix-filter-format-1.patch"
+                    "drupal/bootstrap": {
+                        "Not possible to select vertical tabs menu items with keyboard": "https://www.drupal.org/files/issues/bootstrap-vertical-tabs-menu-items-accessibility-2949112-2.patch"
                     }
                 }
             },
@@ -5336,20 +5349,20 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
-            "time": "2018-05-25T09:47:39+00:00"
+            "time": "2018-06-26T11:53:12+00:00"
         },
         {
             "name": "google/apiclient",
-            "version": "v2.2.1",
+            "version": "v2.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client.git",
-                "reference": "b69b8ac4bf6501793c389d4e013a79d09c85c5f2"
+                "reference": "4e0fd83510e579043e10e565528b323b7c2b3c81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/b69b8ac4bf6501793c389d4e013a79d09c85c5f2",
-                "reference": "b69b8ac4bf6501793c389d4e013a79d09c85c5f2",
+                "url": "https://api.github.com/repos/google/google-api-php-client/zipball/4e0fd83510e579043e10e565528b323b7c2b3c81",
+                "reference": "4e0fd83510e579043e10e565528b323b7c2b3c81",
                 "shasum": ""
             },
             "require": {
@@ -5364,7 +5377,7 @@
             },
             "require-dev": {
                 "cache/filesystem-adapter": "^0.3.2",
-                "phpunit/phpunit": "~4",
+                "phpunit/phpunit": "~4.8.36",
                 "squizlabs/php_codesniffer": "~2.3",
                 "symfony/css-selector": "~2.1",
                 "symfony/dom-crawler": "~2.1"
@@ -5395,20 +5408,20 @@
             "keywords": [
                 "google"
             ],
-            "time": "2017-11-03T01:19:53+00:00"
+            "time": "2018-06-20T15:52:20+00:00"
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.62",
+            "version": "v0.64",
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client-services.git",
-                "reference": "a3c342e711aaf61f83b1ef9de7a6685446a409e7"
+                "reference": "0250aa8cadbe58e790aa07d736b675f3bdd87a1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client-services/zipball/a3c342e711aaf61f83b1ef9de7a6685446a409e7",
-                "reference": "a3c342e711aaf61f83b1ef9de7a6685446a409e7",
+                "url": "https://api.github.com/repos/google/google-api-php-client-services/zipball/0250aa8cadbe58e790aa07d736b675f3bdd87a1c",
+                "reference": "0250aa8cadbe58e790aa07d736b675f3bdd87a1c",
                 "shasum": ""
             },
             "require": {
@@ -5432,20 +5445,20 @@
             "keywords": [
                 "google"
             ],
-            "time": "2018-05-31T00:23:15+00:00"
+            "time": "2018-06-30T00:22:51+00:00"
         },
         {
             "name": "google/auth",
-            "version": "v1.3.0",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-auth-library-php.git",
-                "reference": "8f7c96146b2c62d3f4c6bbc4b5bb8a8e396b0b71"
+                "reference": "1af6b99470d73d61eb51e5c5265f1b51970606cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-auth-library-php/zipball/8f7c96146b2c62d3f4c6bbc4b5bb8a8e396b0b71",
-                "reference": "8f7c96146b2c62d3f4c6bbc4b5bb8a8e396b0b71",
+                "url": "https://api.github.com/repos/google/google-auth-library-php/zipball/1af6b99470d73d61eb51e5c5265f1b51970606cf",
+                "reference": "1af6b99470d73d61eb51e5c5265f1b51970606cf",
                 "shasum": ""
             },
             "require": {
@@ -5479,7 +5492,7 @@
                 "google",
                 "oauth2"
             ],
-            "time": "2018-04-06T19:26:30+00:00"
+            "time": "2018-07-20T20:51:16+00:00"
         },
         {
             "name": "grasmash/expander",
@@ -9005,16 +9018,16 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.8.1",
+            "version": "1.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "63d920d1c9ebc009d860c3666593a66298727dd6"
+                "reference": "273c18bf6aaab20be9667a3aa4e7702e1e4e7ced"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/63d920d1c9ebc009d860c3666593a66298727dd6",
-                "reference": "63d920d1c9ebc009d860c3666593a66298727dd6",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/273c18bf6aaab20be9667a3aa4e7702e1e4e7ced",
+                "reference": "273c18bf6aaab20be9667a3aa4e7702e1e4e7ced",
                 "shasum": ""
             },
             "require": {
@@ -9064,7 +9077,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2018-07-09T21:17:27+00:00"
+            "time": "2018-07-19T18:38:31+00:00"
         },
         {
             "name": "zendframework/zend-escaper",
