@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3cf466bdc4c3e0c44e666288a32900d7",
+    "content-hash": "a0322fcbd2575ffee1e935d70a23b7cd",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2439,7 +2439,8 @@
                     "recurse": false,
                     "replace": false,
                     "merge-extra": false
-                }
+                },
+                "patches_applied": []
             },
             "autoload": {
                 "psr-4": {
@@ -4268,17 +4269,17 @@
         },
         {
             "name": "drupal/social",
-            "version": "1.17.0",
+            "version": "1.18.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/social",
-                "reference": "8.x-1.17"
+                "reference": "8.x-1.18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/social-8.x-1.17-core.zip",
-                "reference": "8.x-1.17",
-                "shasum": "14958342c050de93479d835196f23cfc72d7d603"
+                "url": "https://ftp.drupal.org/files/projects/social-8.x-1.18-core.zip",
+                "reference": "8.x-1.18",
+                "shasum": "74d16fd528687b2c7fbaa1a6ca1c27c37e657018"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4289,8 +4290,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.17",
-                    "datestamp": "1527241984",
+                    "version": "8.x-1.18",
+                    "datestamp": "1530015225",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9005,16 +9006,16 @@
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.8.1",
+            "version": "1.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "63d920d1c9ebc009d860c3666593a66298727dd6"
+                "reference": "273c18bf6aaab20be9667a3aa4e7702e1e4e7ced"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/63d920d1c9ebc009d860c3666593a66298727dd6",
-                "reference": "63d920d1c9ebc009d860c3666593a66298727dd6",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/273c18bf6aaab20be9667a3aa4e7702e1e4e7ced",
+                "reference": "273c18bf6aaab20be9667a3aa4e7702e1e4e7ced",
                 "shasum": ""
             },
             "require": {
@@ -9064,7 +9065,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2018-07-09T21:17:27+00:00"
+            "time": "2018-07-19T18:38:31+00:00"
         },
         {
             "name": "zendframework/zend-escaper",
