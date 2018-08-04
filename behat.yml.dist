@@ -10,8 +10,8 @@ default:
         tags: "~@todo"
       contexts:
         - FeatureContext
-        - SocialDrupalContext
         - DrupalNorge\DrupalNorgeSocial\Tests\Context\DrupalNorgeContext
+        - SocialMinkContexts
         - Drupal\DrupalExtension\Context\BatchContext
         - Drupal\DrupalExtension\Context\ConfigContext
         - Drupal\DrupalExtension\Context\MessageContext
