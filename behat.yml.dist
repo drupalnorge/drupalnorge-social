@@ -11,7 +11,7 @@ default:
       contexts:
         - FeatureContext
         - SocialDrupalContext
-        - SocialMinkContext
+        - DrupalNorge\DrupalNorgeSocial\Tests\Context\DrupalNorgeContext
         - Drupal\DrupalExtension\Context\BatchContext
         - Drupal\DrupalExtension\Context\ConfigContext
         - Drupal\DrupalExtension\Context\MessageContext
