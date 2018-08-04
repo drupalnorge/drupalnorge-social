@@ -14,6 +14,7 @@ default:
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\DrushContext
         - FeatureContext
+        - SocialMinkContext
         - DrupalNorge\DrupalNorgeSocial\Tests\Context\DrupalNorgeContext
   extensions:
     Behat\MinkExtension:
