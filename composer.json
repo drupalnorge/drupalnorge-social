@@ -9,7 +9,7 @@
         "composer/installers": "^v1.4.0",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "^1.0",
-        "goalgorilla/open_social": "1.17",
+        "goalgorilla/open_social": "2.3.0",
         "drupal/coffee": "1.x-dev",
         "drupal/sparkpost": "2.0-beta1",
         "drupal/reroute_email": "1.x-dev",
@@ -95,9 +95,6 @@
         "patches": {
             "drupal/core": {
                 "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
-            },
-            "drupal/features": {
-              "drush 9 compability": "https://cgit.drupalcode.org/features/patch/?id=2e82a6ad751fc88f771be5b4e53b98a8c6eb66b5"
             }
         },
         "enable-patching": true,
