@@ -9,13 +9,14 @@ default:
       filters:
         tags: "~@todo"
       contexts:
-        - Drupal\DrupalExtension\Context\MinkContext
-        - Drupal\DrupalExtension\Context\MarkupContext
-        - Drupal\DrupalExtension\Context\MessageContext
-        - Drupal\DrupalExtension\Context\DrushContext
         - FeatureContext
+        - SocialDrupalContext
         - SocialMinkContext
-        - DrupalNorge\DrupalNorgeSocial\Tests\Context\DrupalNorgeContext
+        - Drupal\DrupalExtension\Context\BatchContext
+        - Drupal\DrupalExtension\Context\ConfigContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - PostContext
+        - EmailContext
   extensions:
     Behat\MinkExtension:
       files_path: %paths.base%/tests/files
