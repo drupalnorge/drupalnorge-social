@@ -14,7 +14,7 @@
         "drupal/sparkpost": "2.0-beta1",
         "drupal/reroute_email": "1.x-dev",
         "drupal/slack_invite": "^1.1",
-        "drupal/honeypot": "~1.26.0",
+        "drupal/honeypot": "~1.27.0",
         "drupal/google_analytics": "^2.1",
         "drupal/config_ignore": "^2.1",
         "drupal/slack": "^1.2",
