@@ -75,8 +75,8 @@
             "rm /app/sanitized.db"
         ],
         "install-site": [
-            "@composer up-db",
-            "@composer install"
+            "@composer install",
+            "@composer up-db"
         ]
     },
     "extra": {
