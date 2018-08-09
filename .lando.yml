@@ -127,6 +127,11 @@ config:
 
 # Configure services to Drupal8
 services:
+  appserver:
+    overrides:
+      services:
+        environment:
+          COMPOSER_PROCESS_TIMEOUT: 6000
 
   # PhpMyAdmin
   # Add a phpmyadmin db frontend
