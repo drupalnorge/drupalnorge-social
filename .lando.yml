@@ -181,3 +181,7 @@ tooling:
     service: appserver
     description: Repleace the latest database from DrupalNorge
     cmd: composer up-db
+  resetadmin:
+    service: appserver
+    description: Reset admin password
+    cmd: composer resetadmin
