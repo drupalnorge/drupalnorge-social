@@ -65,13 +65,15 @@
             "./vendor/bin/drush --root=$(pwd)/html cr"
         ],
         "up-site": [
-            "@composer update goalgorilla/open_social --with-all-dependencies"
+            "@composer update goalgorilla/open_social --with-all-dependencies",
+            "./vendor/bin/drush cr"
         ],
         "up-db": [
             "./vendor/bin/drush sql-drop --yes",
             "wget --no-check-certificate https://drupalnorge.no/sanitized.db",
             "./vendor/bin/drush sql-cli < /app/sanitized.db",
-            "rm /app/sanitized.db"
+            "rm /app/sanitized.db",
+            "./vendor/bin/drush cr"
         ],
         "install-site": [
             "@composer install",
