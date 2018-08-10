@@ -10,13 +10,12 @@ default:
         tags: "~@todo"
       contexts:
         - FeatureContext
-        - DrupalNorge\DrupalNorgeSocial\Tests\Context\DrupalNorgeContext
-        - SocialMinkContexts
-        - Drupal\DrupalExtension\Context\BatchContext
+        - SocialMinkContext
         - Drupal\DrupalExtension\Context\ConfigContext
         - Drupal\DrupalExtension\Context\MessageContext
-        - PostContext
-        - EmailContext
+        - Drupal\DrupalExtension\Context\MarkupContext
+        - Drupal\DrupalExtension\Context\DrushContext
+        - DrupalNorge\DrupalNorgeSocial\Tests\Context\DrupalNorgeContext
   extensions:
     Behat\MinkExtension:
       files_path: %paths.base%/tests/files
