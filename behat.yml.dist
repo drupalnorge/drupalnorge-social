@@ -5,7 +5,8 @@ default:
   suites:
     default:
       paths:
-        features: %paths.base%/tests/features
+        features: '%paths.base%/tests/features'
+        bootstrap: './html/profiles/contrib/social/tests/behat/features/bootstrap'
       filters:
         tags: "~@todo"
       contexts:
