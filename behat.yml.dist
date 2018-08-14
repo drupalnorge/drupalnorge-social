@@ -5,15 +5,17 @@ default:
   suites:
     default:
       paths:
-        features: %paths.base%/tests/features
+        features: '%paths.base%/tests/features'
+        bootstrap: './html/profiles/contrib/social/tests/behat/features/bootstrap'
       filters:
         tags: "~@todo"
       contexts:
-        - Drupal\DrupalExtension\Context\MinkContext
-        - Drupal\DrupalExtension\Context\MarkupContext
-        - Drupal\DrupalExtension\Context\MessageContext
-        - Drupal\DrupalExtension\Context\DrushContext
         - FeatureContext
+        - SocialMinkContext
+        - Drupal\DrupalExtension\Context\ConfigContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\MarkupContext
+        - Drupal\DrupalExtension\Context\DrushContext
         - DrupalNorge\DrupalNorgeSocial\Tests\Context\DrupalNorgeContext
   extensions:
     Behat\MinkExtension:

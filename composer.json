@@ -9,7 +9,7 @@
         "composer/installers": "^v1.4.0",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "^1.0",
-        "goalgorilla/open_social": "1.17",
+        "goalgorilla/open_social": "2.3.0",
         "drupal/coffee": "1.x-dev",
         "drupal/sparkpost": "2.0-beta1",
         "drupal/reroute_email": "1.x-dev",
@@ -19,7 +19,7 @@
         "drupal/config_ignore": "^2.1",
         "drupal/slack": "^1.2",
         "drush/drush": "^9@rc",
-        "drupal/social": "1.17",
+        "drupal/social": "2.3.0",
         "drupal/recaptcha": "^2.3"
     },
     "require-dev": {
@@ -64,6 +64,24 @@
             "./vendor/bin/drush --root=$(pwd)/html updb -y",
             "@composer import",
             "./vendor/bin/drush --root=$(pwd)/html cr"
+        ],
+        "up-site": [
+            "@composer update goalgorilla/open_social --with-all-dependencies",
+            "./vendor/bin/drush cr"
+        ],
+        "up-db": [
+            "./vendor/bin/drush sql-drop --yes",
+            "wget --no-check-certificate https://drupalnorge.no/sanitized.db",
+            "./vendor/bin/drush sql-cli < /app/sanitized.db",
+            "rm /app/sanitized.db",
+            "./vendor/bin/drush cr"
+        ],
+        "install-site": [
+            "@composer install",
+            "@composer up-db"
+        ],
+        "resetadmin": [
+            "./vendor/bin/drush uli"
         ]
     },
     "extra": {
@@ -95,9 +113,6 @@
         "patches": {
             "drupal/core": {
                 "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
-            },
-            "drupal/features": {
-              "drush 9 compability": "https://cgit.drupalcode.org/features/patch/?id=2e82a6ad751fc88f771be5b4e53b98a8c6eb66b5"
             }
         },
         "enable-patching": true,
