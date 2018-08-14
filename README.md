@@ -42,8 +42,43 @@ _(NOTE: The configuration file has already included a step automatic such as `co
 
 3. Install drupal. You can do this however you want. One way is to use drush: `ddev exec drush site-install --db-url=mysql://USER:PASS@HOST/DATABASE`
 
-
-
 ## Upgrading open social
 
 Refer to this guide: [https://www.drupal.org/docs/8/distributions/open-social/installing-and-updating](https://www.drupal.org/docs/8/distributions/open-social/installing-and-updating)
+
+## Running tests locally
+
+- Install chromedriver with npm. If you do not have npm, install it together with nodejs. To install chromedriver inside of the project root, just run this command: `npm install chromedriver`
+- Create a file called behat.yml in the project root. It should contain the following:
+
+```yml
+imports:
+  # This tells behat to use all defaults, except the ones we override.
+  - 'behat.yml.dist'
+default:
+  extensions:
+    Behat\MinkExtension:
+      # Set this to whatever your project is available at, locally.
+      base_url: http://drupalnorge.localhost/
+      selenium2:
+        wd_host: http://localhost:8643/wd/hub
+```
+
+If you also want to watch the tests run on your computer, you can uncomment the line about headless in behat.yml.dist, like so (do not commit this change):
+
+```diff
+-              - "--headless"
++              #- "--headless"
+```
+
+Now we want to start chromedriver. You can do this in one terminal window, and start the tests in another:
+
+```
+./node_modules/.bin/chromedriver --port=8643 --url-base=wd/hub
+```
+
+Next step is to run the tests. In another terminal window, run the folloing command, in the project root:
+
+```
+composer test
+```
