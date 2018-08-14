@@ -75,6 +75,7 @@ module:
   social_file_private: 0
   social_follow_content: 0
   social_font: 0
+  social_group: 0
   social_like: 0
   social_mentions: 0
   social_page: 0
@@ -102,7 +103,6 @@ module:
   views_infinite_scroll: 0
   views_ui: 0
   votingapi: 0
-  social_group: 2
   views: 10
   improved_theme_settings: 50
   social: 1000
