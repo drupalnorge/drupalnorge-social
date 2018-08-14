@@ -19,7 +19,7 @@ config:
   #
   # NOTE: that this needs to be wrapped in quotes so that it is a string
   #
-  php: '7.1'
+  php: '7.0'
 
   # Optionally specify whether you want to serve drupal via nginx or apache
   #
@@ -127,6 +127,11 @@ config:
 
 # Configure services to Drupal8
 services:
+  appserver:
+    overrides:
+      services:
+        environment:
+          COMPOSER_PROCESS_TIMEOUT: 6000
 
   # PhpMyAdmin
   # Add a phpmyadmin db frontend
@@ -143,11 +148,40 @@ services:
     hosts:
       - database
 
-
+      
 # Add in some custom event scripting
-events:
+# events:
 
-  # Run some commands after `lando start`
-  post-start:
-    # Composer install command
-    - "cd $LANDO_MOUNT && composer install"
+# Run some commands after `lando start`
+  # post-start:
+     # Composer install command
+     # - "cd $LANDO_MOUNT && composer install"
+
+
+# Lets make a high level wrapper that runs various test commands
+# Ideally you'd put more than just one thing in here
+tooling:
+  test:
+    service: appserver
+    description: Run our tests
+    cmd: composer test
+  install:
+    service: appserver
+    description: Installing the DrupalNorge site WITH database
+    cmd: composer install-site
+  install-nodb:
+    service: appserver
+    description: Installing the DrupalNorge site WITHOUT database.
+    cmd: composer install
+  up-site:
+    service: appserver
+    description: Upgrade the DrupalNorge via composer.json
+    cmd: composer up-site
+  up-db:
+    service: appserver
+    description: Repleace the latest database from DrupalNorge
+    cmd: composer up-db
+  resetadmin:
+    service: appserver
+    description: Reset admin password
+    cmd: composer resetadmin
