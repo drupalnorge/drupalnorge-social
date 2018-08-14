@@ -77,7 +77,7 @@ Now we want to start chromedriver. You can do this in one terminal window, and s
 ./node_modules/.bin/chromedriver --port=8643 --url-base=wd/hub
 ```
 
-Next step is to run the tests. In another terminal window, run the folloing command, in the project root:
+Next step is to run the tests. In another terminal window, run the following command, in the project root:
 
 ```
 composer test
