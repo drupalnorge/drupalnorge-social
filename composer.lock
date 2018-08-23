@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b0330162d51700d2602ec2e2ec2dd5b",
+    "content-hash": "67387a7800c8590b15064e54dbc03211",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2941,8 +2941,7 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -4053,7 +4052,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/reroute_email",
-                "reference": "d52ccda1e5b007ba3e68c6cc958d3ea958687e6d"
+                "reference": "6adf8a222bcf87c5b057e4e2751fc7e4b7fc483c"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4064,8 +4063,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1+1-dev",
-                    "datestamp": "1473901440",
+                    "version": "8.x-1.0-beta1+24-dev",
+                    "datestamp": "1513341185",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4074,7 +4073,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4094,6 +4093,10 @@
                     "homepage": "https://www.drupal.org/user/388531"
                 },
                 {
+                    "name": "bohart",
+                    "homepage": "https://www.drupal.org/user/289861"
+                },
+                {
                     "name": "kbahey",
                     "homepage": "https://www.drupal.org/user/4063"
                 },
@@ -4111,7 +4114,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/reroute_email"
             },
-            "time": "2016-09-15T01:00:31+00:00"
+            "time": "2017-12-15T12:26:59+00:00"
         },
         {
             "name": "drupal/search_api",
