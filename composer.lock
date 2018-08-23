@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b0330162d51700d2602ec2e2ec2dd5b",
+    "content-hash": "32c92b94dd2086c2e073aae5fd2b8f52",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -2941,8 +2941,7 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": []
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -4287,17 +4286,17 @@
         },
         {
             "name": "drupal/social",
-            "version": "1.18.0",
+            "version": "1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/social",
-                "reference": "8.x-1.18"
+                "reference": "8.x-1.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/social-8.x-1.18-core.zip",
-                "reference": "8.x-1.18",
-                "shasum": "74d16fd528687b2c7fbaa1a6ca1c27c37e657018"
+                "url": "https://ftp.drupal.org/files/projects/social-8.x-1.19-core.zip",
+                "reference": "8.x-1.19",
+                "shasum": "8598833fc1612a4729d24a4dabe91d1e323477fe"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4308,8 +4307,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.18",
-                    "datestamp": "1530015225",
+                    "version": "8.x-1.19",
+                    "datestamp": "1533159180",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
