@@ -2,10 +2,12 @@ uuid: f5688a84-2fff-4088-9f68-67b4f6a1e5e4
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - socialblue
 _core:
-  default_config_hash: O_bSLDdC9WQc1c7MefAGzkqqZ3hM8BWQkNppL3FmtAk
+  default_config_hash: 6Q57FuLO1HAlmMS3Tabfox0ZP5242p5llniudshyqdg
 id: socialblue_local_actions
 theme: socialblue
 region: complementary_top
@@ -17,4 +19,9 @@ settings:
   label: 'Primary admin actions'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/admin/reports/*'
+    negate: true
+    context_mapping: {  }
