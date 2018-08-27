@@ -14,8 +14,6 @@ display:
           tags:
             previous: '‹ Forrige'
             next: 'Neste ›'
-            first: '« Første'
-            last: 'Siste »'
           expose:
             items_per_page_label: 'Elementer per side'
             items_per_page_options_all_label: '- Alle -'

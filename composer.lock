@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0df8c1df36a7f9e86080bf50398e436f",
+    "content-hash": "70f6572d61abd07924b79a05238b7807",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -1693,7 +1693,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.9",
-                    "datestamp": "1521676564",
+                    "datestamp": "1530656921",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1862,17 +1862,17 @@
         },
         {
             "name": "drupal/bootstrap",
-            "version": "3.9.0",
+            "version": "3.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/bootstrap",
-                "reference": "8.x-3.9"
+                "reference": "8.x-3.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.9.zip",
-                "reference": "8.x-3.9",
-                "shasum": "2095ebf22b147a096d34ebbc428dfb62ea01f89b"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.11.zip",
+                "reference": "8.x-3.11",
+                "shasum": "6ff80e37e2e1f916646300889f3392764c9cdb32"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1883,15 +1883,15 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.9",
-                    "datestamp": "1519144980",
+                    "version": "8.x-3.11",
+                    "datestamp": "1532095085",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "patches_applied": {
-                    "Not possible to select vertical tabs menu items with keyboard": "https://www.drupal.org/files/issues/bootstrap-vertical-tabs-menu-items-accessibility-2949112-2.patch"
+                    "Replace methods in Attributes.cleanClass pass the identifier as a 3rd parameter": "https://www.drupal.org/files/issues/2018-05-10/2969106-4.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2088,7 +2088,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0",
-                    "datestamp": "1503305044",
+                    "datestamp": "1511779985",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2220,7 +2220,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2452,9 +2452,10 @@
                 "patches_applied": {
                     "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch",
                     "Color module html preview optional": "https://www.drupal.org/files/issues/color-optional-html-preview-2844190-2.patch",
-                    "Restrict images to this site blocks image style derivatives": "https://www.drupal.org/files/issues/image_restrict_image_styles-2528214-19.patch",
+                    "Restrict images to this site blocks image style derivatives": "https://www.drupal.org/files/issues/image_restrict_image_styles-2528214-24.patch",
                     "Fix SQL error when importing translations": "https://www.drupal.org/files/issues/2599228-31.patch",
-                    "Optimize getCommentedEntity()": "https://www.drupal.org/files/issues/get-commented-entity-2580551.52.patch"
+                    "Optimize getCommentedEntity()": "https://www.drupal.org/files/issues/get-commented-entity-2580551.52.patch",
+                    "ajax.js insert command sometimes wraps content in a div": "https://www.drupal.org/files/issues/2018-03-14/736066-296-328.patch"
                 }
             },
             "autoload": {
@@ -2561,7 +2562,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.3",
-                    "datestamp": "1519740785",
+                    "datestamp": "1531841921",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2582,6 +2583,66 @@
             "homepage": "https://www.drupal.org/project/csv_serialization",
             "support": {
                 "source": "http://cgit.drupalcode.org/csv_serialization"
+            }
+        },
+        {
+            "name": "drupal/data_policy",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/data_policy",
+                "reference": "8.x-1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/data_policy-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "dfddb492efde1f67242ea90f0f7811b8f6eb7574"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1527011884",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "GoalGorilla",
+                    "homepage": "https://www.drupal.org/user/272162"
+                },
+                {
+                    "name": "bramtenhove",
+                    "homepage": "https://www.drupal.org/user/1549848"
+                },
+                {
+                    "name": "jaapjan",
+                    "homepage": "https://www.drupal.org/user/555428"
+                }
+            ],
+            "description": "Create data policies and track user agreements as well as informing users.",
+            "homepage": "https://drupal.org/project/data_policy",
+            "keywords": [
+                "Data policy",
+                "Drupal",
+                "GDPR"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/data_policy"
             }
         },
         {
@@ -2814,7 +2875,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta3",
-                    "datestamp": "1520958485",
+                    "datestamp": "1528452184",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -3070,7 +3131,7 @@
                 },
                 "drupal": {
                     "version": "8.x-4.0-alpha2",
-                    "datestamp": "1494517385",
+                    "datestamp": "1521598685",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3082,7 +3143,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3314,7 +3375,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0",
-                    "datestamp": "1492431842",
+                    "datestamp": "1524304384",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3323,13 +3384,9 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
-                {
-                    "name": "Drupal Media Team",
-                    "homepage": "https://www.drupal.org/user/3260690"
-                },
                 {
                     "name": "mondrake",
                     "homepage": "https://www.drupal.org/user/1307444"
@@ -3378,7 +3435,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.1",
-                    "datestamp": "1510136887",
+                    "datestamp": "1530698921",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3449,7 +3506,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha2",
-                    "datestamp": "1476452339",
+                    "datestamp": "1519314784",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3514,7 +3571,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3624,7 +3681,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc1",
-                    "datestamp": "1508449444",
+                    "datestamp": "1524519784",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -3687,7 +3744,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.3",
-                    "datestamp": "1507667643",
+                    "datestamp": "1522490884",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3786,17 +3843,17 @@
         },
         {
             "name": "drupal/private_message",
-            "version": "1.0.0-beta18",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/private_message",
-                "reference": "8.x-1.0-beta18"
+                "reference": "8.x-1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/private_message-8.x-1.0-beta18.zip",
-                "reference": "8.x-1.0-beta18",
-                "shasum": "f65ae6c5b67a851d62eaa074b53e0e8b12cde7aa"
+                "url": "https://ftp.drupal.org/files/projects/private_message-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "7798741e1321c718b86ad0532334c6602dcab885"
             },
             "require": {
                 "drupal/core": "*"
@@ -3807,25 +3864,33 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta18",
-                    "datestamp": "1495504085",
+                    "version": "8.x-1.0",
+                    "datestamp": "1527331984",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "patches_applied": {
-                    "Email notification settings are not taken into account": "https://www.drupal.org/files/issues/2910537-2.patch"
+                    "Entity field weights": "https://www.drupal.org/files/issues/2018-05-15/set-entity-field-weights-2972948-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
                     "name": "Jaypan",
                     "homepage": "https://www.drupal.org/user/324696"
+                },
+                {
+                    "name": "aburrows",
+                    "homepage": "https://www.drupal.org/user/577844"
+                },
+                {
+                    "name": "edutrul",
+                    "homepage": "https://www.drupal.org/user/1621444"
                 }
             ],
             "description": "A private message system for users to send messages to each other",
@@ -3859,7 +3924,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc1",
-                    "datestamp": "1505830145",
+                    "datestamp": "1505830324",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -3874,6 +3939,10 @@
                 {
                     "name": "bojanz",
                     "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "daggerhart",
+                    "homepage": "https://www.drupal.org/user/167806"
                 },
                 {
                     "name": "dakala",
@@ -3900,17 +3969,17 @@
         },
         {
             "name": "drupal/r4032login",
-            "version": "1.0.0",
+            "version": "1.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/r4032login",
-                "reference": "8.x-1.0"
+                "reference": "8.x-1.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/r4032login-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "85ca96a4ff1ee3e3801dfc0bf8331127b4048f81"
+                "url": "https://ftp.drupal.org/files/projects/r4032login-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "8a0e4ee6cd2815b50b3b6b2a62b9430cf9720d06"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3921,11 +3990,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1533913684",
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1530773024",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4052,7 +4121,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/reroute_email",
-                "reference": "d52ccda1e5b007ba3e68c6cc958d3ea958687e6d"
+                "reference": "6adf8a222bcf87c5b057e4e2751fc7e4b7fc483c"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4063,8 +4132,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1+1-dev",
-                    "datestamp": "1473901440",
+                    "version": "8.x-1.0-beta1+24-dev",
+                    "datestamp": "1513341185",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4073,7 +4142,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4093,6 +4162,10 @@
                     "homepage": "https://www.drupal.org/user/388531"
                 },
                 {
+                    "name": "bohart",
+                    "homepage": "https://www.drupal.org/user/289861"
+                },
+                {
                     "name": "kbahey",
                     "homepage": "https://www.drupal.org/user/4063"
                 },
@@ -4110,7 +4183,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/reroute_email"
             },
-            "time": "2016-09-15T01:00:31+00:00"
+            "time": "2017-12-15T12:26:59+00:00"
         },
         {
             "name": "drupal/search_api",
@@ -4211,7 +4284,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4270,7 +4343,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4286,17 +4359,17 @@
         },
         {
             "name": "drupal/social",
-            "version": "1.19.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/social",
-                "reference": "8.x-1.19"
+                "reference": "8.x-2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/social-8.x-1.19-core.zip",
-                "reference": "8.x-1.19",
-                "shasum": "8598833fc1612a4729d24a4dabe91d1e323477fe"
+                "url": "https://ftp.drupal.org/files/projects/social-8.x-2.1-core.zip",
+                "reference": "8.x-2.1",
+                "shasum": "a21f5848e0005fdb1b61bf41311dfecaebc526df"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4304,11 +4377,11 @@
             "type": "drupal-profile",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.19",
-                    "datestamp": "1533159180",
+                    "version": "8.x-2.1",
+                    "datestamp": "1530271745",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4445,7 +4518,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -4555,7 +4628,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta2",
-                    "datestamp": "1519655285",
+                    "datestamp": "1519655459",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -4690,7 +4763,7 @@
                 },
                 "patches_applied": {
                     "WSOD if wrong url or network unavailable": "https://www.drupal.org/files/issues/url_embed_WSOD_convert_url_to_embed-2871744-5.patch",
-                    "Improve performance for embeds": "https://www.drupal.org/files/issues/caching_layer_url_embed_2867668-14.patch",
+                    "Improve performance for embeds": "https://www.drupal.org/files/issues/2018-03-16/url_embed-caching-layer-2867668-17.patch",
                     "Translate dialog title": "https://www.drupal.org/files/issues/2018-03-16/url_embed_translate_dialog_title-2953591-2.patch"
                 }
             },
@@ -4761,7 +4834,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -5221,16 +5294,16 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "1.19.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "97c00ef8d5dfb23f9a8c7d2c98ecd6b9f33ffb02"
+                "reference": "0a2edee5c7a32205eb5a0d818785e65eeeed8bee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/97c00ef8d5dfb23f9a8c7d2c98ecd6b9f33ffb02",
-                "reference": "97c00ef8d5dfb23f9a8c7d2c98ecd6b9f33ffb02",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/0a2edee5c7a32205eb5a0d818785e65eeeed8bee",
+                "reference": "0a2edee5c7a32205eb5a0d818785e65eeeed8bee",
                 "shasum": ""
             },
             "require": {
@@ -5252,11 +5325,12 @@
                 "drupal/addtoany": "1.9",
                 "drupal/admin_toolbar": "1.24",
                 "drupal/block_field": "1.0-alpha5",
-                "drupal/bootstrap": "3.9",
+                "drupal/bootstrap": "3.11",
                 "drupal/config_update": "1.5",
-                "drupal/core": "~8.5.6",
+                "drupal/core": "~8.5.4",
                 "drupal/crop": "1.5",
                 "drupal/csv_serialization": "1.3",
+                "drupal/data_policy": "^1.0",
                 "drupal/devel": "1.2",
                 "drupal/dynamic_entity_reference": "1.5",
                 "drupal/embed": "1.0",
@@ -5274,9 +5348,9 @@
                 "drupal/message": "1.0-rc1",
                 "drupal/override_node_options": "2.3",
                 "drupal/paragraphs": "1.2",
-                "drupal/private_message": "1.0-beta18",
+                "drupal/private_message": "1.0",
                 "drupal/profile": "1.0-rc1",
-                "drupal/r4032login": "1.0",
+                "drupal/r4032login": "1.0-beta2",
                 "drupal/search_api": "1.6",
                 "drupal/social_api": "1.1",
                 "drupal/social_auth": "1.0",
@@ -5305,9 +5379,10 @@
                 "patches": {
                     "drupal/core": {
                         "Color module html preview optional": "https://www.drupal.org/files/issues/color-optional-html-preview-2844190-2.patch",
-                        "Restrict images to this site blocks image style derivatives": "https://www.drupal.org/files/issues/image_restrict_image_styles-2528214-19.patch",
+                        "Restrict images to this site blocks image style derivatives": "https://www.drupal.org/files/issues/image_restrict_image_styles-2528214-24.patch",
                         "Fix SQL error when importing translations": "https://www.drupal.org/files/issues/2599228-31.patch",
-                        "Optimize getCommentedEntity()": "https://www.drupal.org/files/issues/get-commented-entity-2580551.52.patch"
+                        "Optimize getCommentedEntity()": "https://www.drupal.org/files/issues/get-commented-entity-2580551.52.patch",
+                        "ajax.js insert command sometimes wraps content in a div": "https://www.drupal.org/files/issues/2018-03-14/736066-296-328.patch"
                     },
                     "drupal/flag": {
                         "Add relationship to flagged entities when Flagging is base table": "https://www.drupal.org/files/issues/2723703_31.patch"
@@ -5322,21 +5397,21 @@
                         "Fix preview on node": "https://www.drupal.org/files/issues/2848080-2-preview-fails-on-node.patch"
                     },
                     "drupal/private_message": {
-                        "Email notification settings are not taken into account": "https://www.drupal.org/files/issues/2910537-2.patch"
+                        "Entity field weights": "https://www.drupal.org/files/issues/2018-05-15/set-entity-field-weights-2972948-2.patch"
                     },
                     "drupal/swiftmailer": {
                         "Fix missing filter_format after update to beta2": "https://www.drupal.org/files/issues/2018-03-26/2948607-fix-filter-format-1.patch"
                     },
                     "drupal/url_embed": {
                         "WSOD if wrong url or network unavailable": "https://www.drupal.org/files/issues/url_embed_WSOD_convert_url_to_embed-2871744-5.patch",
-                        "Improve performance for embeds": "https://www.drupal.org/files/issues/caching_layer_url_embed_2867668-14.patch",
+                        "Improve performance for embeds": "https://www.drupal.org/files/issues/2018-03-16/url_embed-caching-layer-2867668-17.patch",
                         "Translate dialog title": "https://www.drupal.org/files/issues/2018-03-16/url_embed_translate_dialog_title-2953591-2.patch"
                     },
                     "drupal/votingapi": {
                         "Delete everywhere": "https://www.drupal.org/files/issues/2018-03-29/delete-everywhere-2957067-2.patch"
                     },
                     "drupal/bootstrap": {
-                        "Not possible to select vertical tabs menu items with keyboard": "https://www.drupal.org/files/issues/bootstrap-vertical-tabs-menu-items-accessibility-2949112-2.patch"
+                        "Replace methods in Attributes.cleanClass pass the identifier as a 3rd parameter": "https://www.drupal.org/files/issues/2018-05-10/2969106-4.patch"
                     }
                 }
             },
@@ -5350,7 +5425,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
-            "time": "2018-08-01T21:16:31+00:00"
+            "time": "2018-06-28T11:44:23+00:00"
         },
         {
             "name": "google/apiclient",
@@ -5413,16 +5488,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.66",
+            "version": "v0.67",
             "source": {
                 "type": "git",
                 "url": "https://github.com/google/google-api-php-client-services.git",
-                "reference": "357a13e6f59e5590071b1d455c0ead482fac65db"
+                "reference": "32f65995935033e40cc94d4f484905b38eb039f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/google/google-api-php-client-services/zipball/357a13e6f59e5590071b1d455c0ead482fac65db",
-                "reference": "357a13e6f59e5590071b1d455c0ead482fac65db",
+                "url": "https://api.github.com/repos/google/google-api-php-client-services/zipball/32f65995935033e40cc94d4f484905b38eb039f8",
+                "reference": "32f65995935033e40cc94d4f484905b38eb039f8",
                 "shasum": ""
             },
             "require": {
@@ -5446,7 +5521,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2018-08-21T20:23:38+00:00"
+            "time": "2018-08-25T00:23:06+00:00"
         },
         {
             "name": "google/auth",

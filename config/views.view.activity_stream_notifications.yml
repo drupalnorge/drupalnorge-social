@@ -12,7 +12,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: KHV--K7xc3KogxPeRTELQ8G3eWms7VY0RH9aJzf0pw8
+  default_config_hash: _KJDBKKFObDdyklOK03BcvRtRPNSX5aAnRAHMnXc3Sg
 id: activity_stream_notifications
 label: 'Activity stream notifications'
 module: views
@@ -363,17 +363,15 @@ display:
       display_extenders: {  }
       path: notifications
       pager:
-        type: full
+        type: mini
         options:
-          items_per_page: 10
+          items_per_page: 30
           offset: 0
           id: 0
           total_pages: null
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: ‹‹
+            next: ››
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -382,7 +380,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          quantity: 9
       defaults:
         pager: false
         css_class: false
