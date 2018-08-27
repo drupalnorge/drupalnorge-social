@@ -17,7 +17,7 @@ dependencies:
     - image
     - text
 _core:
-  default_config_hash: zAl9WTPKrs_CAnLh76goKjQiFIKE2KMTaoQmB8JzcP0
+  default_config_hash: 6aRwL-FA3GG0tkrrXC1fsxzUNUVCqsO2Dne6z69-_jE
 id: post.photo.group
 targetEntityType: post
 bundle: photo
@@ -44,6 +44,13 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  status:
+    region: content
+    settings:
+      display_label: true
+    type: boolean_checkbox
+    weight: 20
     third_party_settings: {  }
 hidden:
   field_post_comments: true
