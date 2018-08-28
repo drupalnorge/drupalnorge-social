@@ -7,7 +7,7 @@ dependencies:
   module:
     - search_api
 _core:
-  default_config_hash: vXfmios3DPtZ0da4sWMIXfIS0JCDVc_VtIn3BrvTJzI
+  default_config_hash: nTEZPfZFhICZXGRCE2Zi4HQBa9p_Lt-rbBtjwHfJ37g
 id: search_all
 label: 'Search All'
 module: views
@@ -182,7 +182,7 @@ display:
           empty: true
           tokenize: true
           content:
-            value: '<h4 class="section-title">All results</h4>'
+            value: '<h4>All results</h4>'
             format: basic_html
           plugin_id: text
       footer: {  }

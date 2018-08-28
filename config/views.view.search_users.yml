@@ -11,7 +11,7 @@ dependencies:
     - search_api
     - user
 _core:
-  default_config_hash: FRzeIOlAOYwyCgjErb3b_Mfv9TRMlQB4Wc9d6IMVDaU
+  default_config_hash: 0yatMRSn4pr7te_UFJIHcFMeiaHccmtmYFAtIrfASh0
 id: search_users
 label: 'Search Users'
 module: views
@@ -298,7 +298,7 @@ display:
           empty: true
           tokenize: true
           content:
-            value: '<h4 class="section-title">Member results</h4>'
+            value: '<h4>Member results</h4>'
             format: full_html
           plugin_id: text
       footer: {  }
@@ -409,7 +409,7 @@ display:
           empty: true
           tokenize: true
           content:
-            value: '<h4 class="section-title">Member results</h4>'
+            value: '<h4>Member results</h4>'
             format: basic_html
           plugin_id: text
       defaults:
