@@ -5,7 +5,7 @@ dependencies:
   config:
     - group.type.closed_group
 _core:
-  default_config_hash: BnB8UlKsxLAf9vogpcokfEML8HdSE9ozA5CE502mIag
+  default_config_hash: '--qS3AZ3PSfoK6SSRWW2OLNp5KeTOsqsr6ZKYhzATMM'
 id: closed_group-outsider
 label: Outsider
 weight: -101
@@ -20,4 +20,3 @@ permissions:
   - 'update own group_node:event entity'
   - 'access comments'
   - 'view group_membership content'
-  - 'view group stream page'
