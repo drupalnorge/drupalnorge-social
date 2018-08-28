@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70f6572d61abd07924b79a05238b7807",
+    "content-hash": "a4f6e3b9fe49d9695f1b973a5e4691be",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -4117,11 +4117,17 @@
         },
         {
             "name": "drupal/reroute_email",
-            "version": "dev-1.x",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/reroute_email",
-                "reference": "6adf8a222bcf87c5b057e4e2751fc7e4b7fc483c"
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/reroute_email-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "84d75bc9674b66d7ba3b9b870f2a5ba1292f7509"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4132,11 +4138,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1+24-dev",
-                    "datestamp": "1513341185",
+                    "version": "8.x-1.0",
+                    "datestamp": "1513342685",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -4182,8 +4188,7 @@
             "homepage": "https://www.drupal.org/project/reroute_email",
             "support": {
                 "source": "http://cgit.drupalcode.org/reroute_email"
-            },
-            "time": "2017-12-15T12:26:59+00:00"
+            }
         },
         {
             "name": "drupal/search_api",
@@ -10471,7 +10476,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/coffee": 20,
-        "drupal/reroute_email": 20,
         "drush/drush": 5,
         "drupal/stage_file_proxy": 15
     },
