@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d05733916ee8a2d1ebef0773e829f153",
+    "content-hash": "a18c6b2f574f44136db902548a75f34a",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -3442,7 +3442,7 @@
                     }
                 },
                 "patches_applied": {
-                    "Initial crop fix": "https://www.drupal.org/files/issues/2018-04-25/2865396-26-apply-default-crop.diff"
+                    "Initial crop fix": "https://www.drupal.org/files/issues/2018-07-05/2865396-36-apply-default-crop.diff"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3872,7 +3872,8 @@
                     }
                 },
                 "patches_applied": {
-                    "Entity field weights": "https://www.drupal.org/files/issues/2018-05-15/set-entity-field-weights-2972948-2.patch"
+                    "Entity field weights": "https://www.drupal.org/files/issues/2018-05-15/set-entity-field-weights-2972948-2.patch",
+                    "Private message unread messages fix": "https://www.drupal.org/files/issues/2018-06-08/2978324-getthreads-sort-order-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
