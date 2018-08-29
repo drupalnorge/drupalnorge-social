@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65cad737f85854f4dfc0b4d2c2b5ac72",
+    "content-hash": "b0a2201395d3f77e7f1ffb641db260b5",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -4365,17 +4365,17 @@
         },
         {
             "name": "drupal/social",
-            "version": "2.3.0",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/social",
-                "reference": "8.x-2.3"
+                "reference": "8.x-2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/social-8.x-2.3-core.zip",
-                "reference": "8.x-2.3",
-                "shasum": "dbd061bc721136c04d84608fefd502f2a829c41f"
+                "url": "https://ftp.drupal.org/files/projects/social-8.x-2.4-core.zip",
+                "reference": "8.x-2.4",
+                "shasum": "730f2e03b54794b7159936a98f4565c4c87ade0a"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4386,8 +4386,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.3",
-                    "datestamp": "1533159180",
+                    "version": "8.x-2.4",
+                    "datestamp": "1535037780",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5300,16 +5300,16 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "2.3.0",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "c36d535835d60e67299a74d2e74ffc1e64b6566d"
+                "reference": "69a770cb87f525e2eaccc74e8ae73179681b337b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/c36d535835d60e67299a74d2e74ffc1e64b6566d",
-                "reference": "c36d535835d60e67299a74d2e74ffc1e64b6566d",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/69a770cb87f525e2eaccc74e8ae73179681b337b",
+                "reference": "69a770cb87f525e2eaccc74e8ae73179681b337b",
                 "shasum": ""
             },
             "require": {
@@ -5432,7 +5432,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
-            "time": "2018-08-01T21:14:17+00:00"
+            "time": "2018-08-23T15:09:47+00:00"
         },
         {
             "name": "google/apiclient",
