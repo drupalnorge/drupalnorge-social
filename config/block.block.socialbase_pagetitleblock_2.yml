@@ -8,7 +8,7 @@ dependencies:
   theme:
     - socialbase
 _core:
-  default_config_hash: pW3WXIcTtVib_25hwdsqsHPOTa5XROdm6ob58PVm74M
+  default_config_hash: DmK7LQPIAFAWRERnDPM7T4BZR4nNKuWlQ7Owk6Jg0HI
 id: socialbase_pagetitleblock_2
 theme: socialbase
 region: hero
@@ -23,6 +23,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "*/enrollments\r\n*/managers"
+    pages: "*/enrollments\r\n*/organisers\r\n*/manage-enrollments"
     negate: false
     context_mapping: {  }

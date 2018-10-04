@@ -17,19 +17,19 @@ third_party_settings:
     activity_aggregate: 0
     activity_entity_condition: mention_comment
 _core:
-  default_config_hash: CsmVd3LWvWOjRXz88yBur_f75qGlnaJAPByN1Ofj1lU
+  default_config_hash: gSjgAsLTtPTtVvlH_jqci2BvUFbvgxE8k-sT1fdOj1k
 template: create_mention_comment
 label: 'Create mention in a comment'
 description: 'A person mentioned me in a comment'
 text:
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a comment</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a <a href="[message:field_message_related_object:entity:url:absolute]">comment</a> on [social_mentions:commented_entity_link_html]</p>'
     format: full_html
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a comment</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a <a href="[message:field_message_related_object:entity:url:absolute]">comment</a> on [social_mentions:commented_entity_link_html]</p>'
     format: full_html
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a <a href="[message:field_message_related_object:entity:url:absolute]">comment</a></p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a <a href="[message:field_message_related_object:entity:url:absolute]">comment</a> on [social_mentions:commented_entity_link_html]</p>'
     format: full_html
 settings:
   'token options':
