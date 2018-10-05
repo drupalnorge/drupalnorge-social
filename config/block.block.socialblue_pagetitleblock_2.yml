@@ -8,7 +8,7 @@ dependencies:
   theme:
     - socialblue
 _core:
-  default_config_hash: _gholCIy4qz-qp5b2aPXUhGV7wSuWOoC500E2HCimmU
+  default_config_hash: 1G7Yq-o1avWZ71c6QqLTJU5-4Qy6DfzKiOk6lufUSno
 id: socialblue_pagetitleblock_2
 theme: socialblue
 region: hero
@@ -23,6 +23,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "*/enrollments\r\n*/organisers"
+    pages: "*/enrollments\r\n*/organisers\r\n*/manage-enrollments"
     negate: false
     context_mapping: {  }

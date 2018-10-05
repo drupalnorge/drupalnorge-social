@@ -22,19 +22,19 @@ third_party_settings:
     activity_aggregate: 0
     activity_entity_condition: ''
 _core:
-  default_config_hash: ZFN7gytX3iozYwSR_QLum85MV8HelzqidHBc8EryGt0
+  default_config_hash: BirGNGla4eFUSlud-HN6IGU_FR-P3Q9umQuMCzQnGVU
 template: create_content_in_joined_group
 label: 'Create a post, topic or event in a joined group'
 description: 'A person created a post, event or topic in a group I joined'
 text:
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created a <a href="[social_group:content_url]">[social_group:content_type]</a> in the <a href="[message:gurl]">[message:gtitle]</a> group.</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created [social_group:created_entity_link_html] in the <a href="[message:gurl]">[message:gtitle]</a> group</p>'
     format: full_html
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created a <a href="[social_group:content_url]">[social_group:content_type]</a> in the <a href="[message:gurl]">[message:gtitle]</a> group.</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created [social_group:created_entity_link_html] in the <a href="[message:gurl]">[message:gtitle]</a> group</p>'
     format: full_html
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created a <a href="[social_group:content_url]">[social_group:content_type]</a> in the <a href="[message:gurl]">[message:gtitle]</a> group.</p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created [social_group:created_entity_link_html] in the <a href="[message:gurl]">[message:gtitle]</a> group</p>'
     format: full_html
 settings:
   'token options':
