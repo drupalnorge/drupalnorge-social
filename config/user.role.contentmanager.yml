@@ -28,6 +28,7 @@ permissions:
   - 'add or remove like votes on topic of node'
   - 'add own profile profile'
   - 'add post entities'
+  - 'administer comments'
   - 'administer menu'
   - 'administer nodes'
   - 'administer own comments'

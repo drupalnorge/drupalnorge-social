@@ -19,6 +19,7 @@ effects:
     data:
       width: 128
       height: 128
+      anchor: center-center
   357bbb69-a9cc-4de8-b1ec-f6dacf47fe56:
     uuid: 357bbb69-a9cc-4de8-b1ec-f6dacf47fe56
     id: crop_crop
