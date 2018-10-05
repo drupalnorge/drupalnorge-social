@@ -40,7 +40,10 @@
         }
     ],
     "autoload": {
-      "psr-4": { "DrupalNorge\\DrupalNorgeSocial\\Tests\\": "tests/src" }
+      "psr-4": {
+          "DrupalNorge\\DrupalNorgeSocial\\Tests\\": "tests/src",
+          "Drupal\\social\\Behat\\": "tests/behat/features/bootstrap"
+        }
     },
     "scripts": {
         "post-install-cmd": [
