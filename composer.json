@@ -42,7 +42,7 @@
     "autoload": {
       "psr-4": {
           "DrupalNorge\\DrupalNorgeSocial\\Tests\\": "tests/src",
-          "Drupal\\social\\Behat\\": "tests/behat/features/bootstrap"
+          "Drupal\\social\\Behat\\": "html/profiles/contrib/social/tests/behat/features/bootstrap"
         }
     },
     "scripts": {
