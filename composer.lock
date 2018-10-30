@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "48efddc6d426bb75e0cc62707b910c7b",
+    "content-hash": "4940aa077b3a4eb06558e505e307463b",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -114,22 +114,19 @@
         },
         {
             "name": "bower-asset/autosize",
-            "version": "4.0.0",
+            "version": "4.0.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:jackmoore/autosize.git",
-                "reference": "113f1b345868901619d4b01cda02b09aa1690ebd"
+                "reference": "6ae70cd3d28888eb858eef1167e6ed75d25dff7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jackmoore/autosize/zipball/113f1b345868901619d4b01cda02b09aa1690ebd",
-                "reference": "113f1b345868901619d4b01cda02b09aa1690ebd",
+                "url": "https://api.github.com/repos/jackmoore/autosize/zipball/6ae70cd3d28888eb858eef1167e6ed75d25dff7f",
+                "reference": "6ae70cd3d28888eb858eef1167e6ed75d25dff7f",
                 "shasum": null
             },
-            "type": "bower-asset",
-            "license": [
-                "MIT"
-            ]
+            "type": "bower-asset"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -193,16 +190,16 @@
         },
         {
             "name": "bower-asset/highlight",
-            "version": "9.7.0",
+            "version": "9.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/highlightjs/highlight.js.git",
-                "reference": "bb1cdfe052cd6c98e0d1d61f16dff9f1d2d57ffc"
+                "reference": "16ab6f3b5f9a432e6e8825807103b6bb5cefef15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/highlightjs/highlight.js/zipball/bb1cdfe052cd6c98e0d1d61f16dff9f1d2d57ffc",
-                "reference": "bb1cdfe052cd6c98e0d1d61f16dff9f1d2d57ffc",
+                "url": "https://api.github.com/repos/highlightjs/highlight.js/zipball/16ab6f3b5f9a432e6e8825807103b6bb5cefef15",
+                "reference": "16ab6f3b5f9a432e6e8825807103b6bb5cefef15",
                 "shasum": null
             },
             "type": "bower-asset"
@@ -286,69 +283,52 @@
             ]
         },
         {
-            "name": "bower-asset/respond",
-            "version": "1.4.2",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:scottjehl/Respond.git",
-                "reference": "20b7f4a192bb910c8c7e067b961de38519d334e4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/scottjehl/Respond/zipball/20b7f4a192bb910c8c7e067b961de38519d334e4",
-                "reference": "20b7f4a192bb910c8c7e067b961de38519d334e4",
-                "shasum": null
-            },
-            "type": "bower-asset"
-        },
-        {
             "name": "bower-asset/select2",
-            "version": "4.0.3",
+            "version": "4.0.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/select2/select2.git",
-                "reference": "566c7846fbf8c3b7674346f26d0ee872c0a77629"
+                "url": "git@github.com:ivaynberg/select2.git",
+                "reference": "ebf10c93db7d6d7a0d1330119d4c6f32cbd231d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/select2/select2/zipball/566c7846fbf8c3b7674346f26d0ee872c0a77629",
-                "reference": "566c7846fbf8c3b7674346f26d0ee872c0a77629",
+                "url": "https://api.github.com/repos/ivaynberg/select2/zipball/ebf10c93db7d6d7a0d1330119d4c6f32cbd231d7",
+                "reference": "ebf10c93db7d6d7a0d1330119d4c6f32cbd231d7",
                 "shasum": null
             },
-            "type": "bower-asset"
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
         },
         {
             "name": "bower-asset/tablesaw",
-            "version": "v2.0.3",
+            "version": "v3.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentgroup/tablesaw.git",
-                "reference": "5bfebe20c539c18aecb4881a14c6bab5cfa3cb46"
+                "reference": "20ccb0dab9c098dc56dd45703eb88b14a4c22b34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentgroup/tablesaw/zipball/5bfebe20c539c18aecb4881a14c6bab5cfa3cb46",
-                "reference": "5bfebe20c539c18aecb4881a14c6bab5cfa3cb46",
+                "url": "https://api.github.com/repos/filamentgroup/tablesaw/zipball/20ccb0dab9c098dc56dd45703eb88b14a4c22b34",
+                "reference": "20ccb0dab9c098dc56dd45703eb88b14a4c22b34",
                 "shasum": null
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.11.2",
-                "bower-asset/respond": ">=1.4.2"
             },
             "type": "bower-asset"
         },
         {
             "name": "bower-asset/timepicker",
-            "version": "1.11.4",
+            "version": "1.11.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jonthornton/jquery-timepicker.git",
-                "reference": "e0ac33d4b85f1be3a107e5bd6174c6672b27ec34"
+                "reference": "b53338cc92270da3750d5c0cc6abe60fb27a0d89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jonthornton/jquery-timepicker/zipball/e0ac33d4b85f1be3a107e5bd6174c6672b27ec34",
-                "reference": "e0ac33d4b85f1be3a107e5bd6174c6672b27ec34",
+                "url": "https://api.github.com/repos/jonthornton/jquery-timepicker/zipball/b53338cc92270da3750d5c0cc6abe60fb27a0d89",
+                "reference": "b53338cc92270da3750d5c0cc6abe60fb27a0d89",
                 "shasum": null
             },
             "require": {
@@ -2347,16 +2327,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.5.7",
+            "version": "8.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "d8bdf376c0549e9bfc33030157b498df4b9bec87"
+                "reference": "356292934802bb1aecc478e88a3cba77442d7c62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/d8bdf376c0549e9bfc33030157b498df4b9bec87",
-                "reference": "d8bdf376c0549e9bfc33030157b498df4b9bec87",
+                "url": "https://api.github.com/repos/drupal/core/zipball/356292934802bb1aecc478e88a3cba77442d7c62",
+                "reference": "356292934802bb1aecc478e88a3cba77442d7c62",
                 "shasum": ""
             },
             "require": {
@@ -2474,10 +2454,12 @@
                 "drupal/link": "self.version",
                 "drupal/locale": "self.version",
                 "drupal/media": "self.version",
+                "drupal/media_library": "self.version",
                 "drupal/menu_link_content": "self.version",
                 "drupal/menu_ui": "self.version",
                 "drupal/migrate": "self.version",
                 "drupal/migrate_drupal": "self.version",
+                "drupal/migrate_drupal_multilingual": "self.version",
                 "drupal/migrate_drupal_ui": "self.version",
                 "drupal/minimal": "self.version",
                 "drupal/node": "self.version",
@@ -2509,7 +2491,8 @@
                 "drupal/user": "self.version",
                 "drupal/views": "self.version",
                 "drupal/views_ui": "self.version",
-                "drupal/workflows": "self.version"
+                "drupal/workflows": "self.version",
+                "drupal/workspaces": "self.version"
             },
             "require-dev": {
                 "behat/mink": "1.7.x-dev",
@@ -2520,7 +2503,7 @@
                 "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
                 "mikey179/vfsstream": "^1.2",
                 "phpspec/prophecy": "^1.4",
-                "phpunit/phpunit": "^4.8.35 || ^6.1",
+                "phpunit/phpunit": "^4.8.35 || ^6.5",
                 "symfony/css-selector": "^3.4.0",
                 "symfony/debug": "^3.4.0",
                 "symfony/phpunit-bridge": "^3.4.3"
@@ -2556,14 +2539,7 @@
                     "replace": false,
                     "merge-extra": false
                 },
-                "patches_applied": {
-                    "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch",
-                    "Color module html preview optional": "https://www.drupal.org/files/issues/color-optional-html-preview-2844190-2.patch",
-                    "Restrict images to this site blocks image style derivatives": "https://www.drupal.org/files/issues/image_restrict_image_styles-2528214-24.patch",
-                    "Fix SQL error when importing translations": "https://www.drupal.org/files/issues/2599228-31.patch",
-                    "Optimize getCommentedEntity()": "https://www.drupal.org/files/issues/get-commented-entity-2580551.52.patch",
-                    "ajax.js insert command sometimes wraps content in a div": "https://www.drupal.org/files/issues/2018-03-14/736066-296-328.patch"
-                }
+                "patches_applied": []
             },
             "autoload": {
                 "psr-4": {
@@ -2586,7 +2562,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2018-09-05T22:26:39+00:00"
+            "time": "2018-10-17T22:19:50+00:00"
         },
         {
             "name": "drupal/crop",
@@ -2646,17 +2622,17 @@
         },
         {
             "name": "drupal/csv_serialization",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/csv_serialization",
-                "reference": "8.x-1.3"
+                "reference": "8.x-1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/csv_serialization-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "e1b773848631669cf0a31bc188fb6049a2587493"
+                "url": "https://ftp.drupal.org/files/projects/csv_serialization-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "74cfc47c5c8a907f40112ec4819fe108f2775ef1"
             },
             "require": {
                 "drupal/core": "^8.0.4",
@@ -2668,7 +2644,7 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.3",
+                    "version": "8.x-1.4",
                     "datestamp": "1531841921",
                     "security-coverage": {
                         "status": "covered",
@@ -2840,17 +2816,17 @@
         },
         {
             "name": "drupal/dynamic_entity_reference",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/dynamic_entity_reference",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/dynamic_entity_reference-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "cb41d7b259ee91d030166dab82bebd841df6d390"
+                "url": "https://ftp.drupal.org/files/projects/dynamic_entity_reference-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "9f1d1343f7fac8003bb70b887ec77f11c80afa1a"
             },
             "require": {
                 "drupal/core": "*"
@@ -2861,8 +2837,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1516093086",
+                    "version": "8.x-1.6",
+                    "datestamp": "1536250980",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3081,6 +3057,53 @@
             "homepage": "https://www.drupal.org/project/entity_reference_revisions",
             "support": {
                 "source": "http://cgit.drupalcode.org/entity_reference_revisions"
+            }
+        },
+        {
+            "name": "drupal/exif_orientation",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/exif_orientation",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/exif_orientation-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "c233610a675e663660708f175aab8d90f56dfd2b"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1525963087",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                }
+            ],
+            "description": "Rotates images per their EXIF Orientation",
+            "homepage": "https://www.drupal.org/project/exif_orientation",
+            "support": {
+                "source": "http://cgit.drupalcode.org/exif_orientation"
             }
         },
         {
@@ -5446,29 +5469,29 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "3.0.0",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "bacf5b2f3d419e0d7c8f28b388be6dba4b10843f"
+                "reference": "28ad9d1cf0e8c461d593f86e65e841768499d3d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/bacf5b2f3d419e0d7c8f28b388be6dba4b10843f",
-                "reference": "bacf5b2f3d419e0d7c8f28b388be6dba4b10843f",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/28ad9d1cf0e8c461d593f86e65e841768499d3d4",
+                "reference": "28ad9d1cf0e8c461d593f86e65e841768499d3d4",
                 "shasum": ""
             },
             "require": {
                 "abraham/twitteroauth": "^0.7.2",
-                "bower-asset/autosize": "4.0.0",
+                "bower-asset/autosize": "~4.0.2",
                 "bower-asset/bootstrap": "3.3.7",
                 "bower-asset/d3": "v3.5.17",
-                "bower-asset/highlight": "9.7.0",
+                "bower-asset/highlight": "~9.12.0",
                 "bower-asset/morris.js": "0.5.1",
                 "bower-asset/raphael": "2.2.7",
-                "bower-asset/select2": "4.0.3",
-                "bower-asset/tablesaw": "2.0.3",
-                "bower-asset/timepicker": "1.11.4",
+                "bower-asset/select2": "~4.0.5",
+                "bower-asset/tablesaw": "~3.0.9",
+                "bower-asset/timepicker": "~1.11.14",
                 "bower-asset/waves": "0.7.6",
                 "composer/installers": "^1.0",
                 "cweagans/composer-patches": "^1.5.0",
@@ -5479,15 +5502,16 @@
                 "drupal/block_field": "1.0-alpha5",
                 "drupal/bootstrap": "3.11",
                 "drupal/config_update": "1.5",
-                "drupal/core": "~8.5.6",
+                "drupal/core": "~8.6.0",
                 "drupal/crop": "1.5",
-                "drupal/csv_serialization": "1.3",
+                "drupal/csv_serialization": "1.4.0",
                 "drupal/data_policy": "^1.0",
                 "drupal/devel": "1.2",
-                "drupal/dynamic_entity_reference": "1.5",
+                "drupal/dynamic_entity_reference": "1.6",
                 "drupal/embed": "1.0",
                 "drupal/entity": "1.0-beta4",
                 "drupal/entity_reference_revisions": "1.4",
+                "drupal/exif_orientation": "^1.0",
                 "drupal/features": "3.7",
                 "drupal/field_group": "3.0-beta1",
                 "drupal/flag": "4.0-alpha2",
@@ -5531,10 +5555,9 @@
                 "patches": {
                     "drupal/core": {
                         "Color module html preview optional": "https://www.drupal.org/files/issues/color-optional-html-preview-2844190-2.patch",
-                        "Restrict images to this site blocks image style derivatives": "https://www.drupal.org/files/issues/image_restrict_image_styles-2528214-24.patch",
+                        "Restrict images to this site blocks image style derivatives": "https://www.drupal.org/files/issues/2018-06-14/2528214-36.patch",
                         "Fix SQL error when importing translations": "https://www.drupal.org/files/issues/2599228-31.patch",
-                        "Optimize getCommentedEntity()": "https://www.drupal.org/files/issues/get-commented-entity-2580551.52.patch",
-                        "ajax.js insert command sometimes wraps content in a div": "https://www.drupal.org/files/issues/2018-03-14/736066-296-328.patch"
+                        "Optimize getCommentedEntity()": "https://www.drupal.org/files/issues/get-commented-entity-2580551.52.patch"
                     },
                     "drupal/flag": {
                         "Add relationship to flagged entities when Flagging is base table": "https://www.drupal.org/files/issues/2723703_31.patch"
@@ -5571,7 +5594,8 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Social\\": "src"
+                    "Social\\": "src",
+                    "Drupal\\social\\Behat\\": "tests/behat/features/bootstrap"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -5579,7 +5603,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
-            "time": "2018-08-30T16:23:53+00:00"
+            "time": "2018-10-30T14:02:06+00:00"
         },
         {
             "name": "google/apiclient",
@@ -5642,16 +5666,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.70",
+            "version": "v0.74",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "759a1a246409eae1c723abc72d817205a1d5549f"
+                "reference": "1582b1a96fdbe7fdee910477bb6e86fd3110b5ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/759a1a246409eae1c723abc72d817205a1d5549f",
-                "reference": "759a1a246409eae1c723abc72d817205a1d5549f",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/1582b1a96fdbe7fdee910477bb6e86fd3110b5ee",
+                "reference": "1582b1a96fdbe7fdee910477bb6e86fd3110b5ee",
                 "shasum": ""
             },
             "require": {
@@ -5675,7 +5699,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2018-09-16T00:22:55+00:00"
+            "time": "2018-10-29T00:22:47+00:00"
         },
         {
             "name": "google/auth",
@@ -6308,16 +6332,16 @@
         },
         {
             "name": "masterminds/html5",
-            "version": "2.3.0",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Masterminds/html5-php.git",
-                "reference": "2c37c6c520b995b761674de3be8455a381679067"
+                "reference": "33f8d475d28741398be26cdff7a10a63003324a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/2c37c6c520b995b761674de3be8455a381679067",
-                "reference": "2c37c6c520b995b761674de3be8455a381679067",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/33f8d475d28741398be26cdff7a10a63003324a3",
+                "reference": "33f8d475d28741398be26cdff7a10a63003324a3",
                 "shasum": ""
             },
             "require": {
@@ -6369,7 +6393,7 @@
                 "serializer",
                 "xml"
             ],
-            "time": "2017-09-04T12:26:28+00:00"
+            "time": "2018-10-22T16:58:34+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -6869,16 +6893,16 @@
         },
         {
             "name": "php-http/message",
-            "version": "1.7.0",
+            "version": "v1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/message.git",
-                "reference": "741f2266a202d59c4ed75436671e1b8e6f475ea3"
+                "reference": "a296f8bca76071711fe10e5f2a3350bd2295dbba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/message/zipball/741f2266a202d59c4ed75436671e1b8e6f475ea3",
-                "reference": "741f2266a202d59c4ed75436671e1b8e6f475ea3",
+                "url": "https://api.github.com/repos/php-http/message/zipball/a296f8bca76071711fe10e5f2a3350bd2295dbba",
+                "reference": "a296f8bca76071711fe10e5f2a3350bd2295dbba",
                 "shasum": ""
             },
             "require": {
@@ -6937,7 +6961,7 @@
                 "message",
                 "psr-7"
             ],
-            "time": "2018-08-15T06:37:30+00:00"
+            "time": "2018-10-29T11:56:34+00:00"
         },
         {
             "name": "php-http/message-factory",
