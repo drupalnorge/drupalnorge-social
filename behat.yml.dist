@@ -1,21 +1,24 @@
 default:
   autoload:
-    - './html/profiles/contrib/social/tests/behat/features/bootstrap'
-    - './tests/src/Context'
+    - '%paths.base%/html/profiles/contrib/social/tests/behat/features/bootstrap'
+    - '%paths.base%/tests/src/Context'
   suites:
     default:
       paths:
         features: '%paths.base%/tests/features'
-        bootstrap: './html/profiles/contrib/social/tests/behat/features/bootstrap'
+        bootstrap: '%paths.base%/html/profiles/contrib/social/tests/behat/features/bootstrap'
       filters:
         tags: "~@todo"
       contexts:
-        - FeatureContext
-        - SocialMinkContext
+        - Drupal\social\Behat\FeatureContext
+        - Drupal\social\Behat\SocialMinkContext
+        - Drupal\DrupalExtension\Context\BatchContext
         - Drupal\DrupalExtension\Context\ConfigContext
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\MarkupContext
         - Drupal\DrupalExtension\Context\DrushContext
+        - Drupal\social\Behat\PostContext
+        - Drupal\social\Behat\EmailContext
         - DrupalNorge\DrupalNorgeSocial\Tests\Context\DrupalNorgeContext
   extensions:
     Behat\MinkExtension:
