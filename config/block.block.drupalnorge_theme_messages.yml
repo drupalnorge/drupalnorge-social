@@ -9,7 +9,7 @@ dependencies:
 id: drupalnorge_theme_messages
 theme: drupalnorge_theme
 region: content
-weight: -22
+weight: -23
 provider: null
 plugin: system_messages_block
 settings:
