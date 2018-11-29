@@ -12,7 +12,7 @@ dependencies:
 id: drupalnorge_theme_views_block__activity_stream_block_stream_homepage
 theme: drupalnorge_theme
 region: content
-weight: -24
+weight: -22
 provider: null
 plugin: 'views_block:activity_stream-block_stream_homepage'
 settings:

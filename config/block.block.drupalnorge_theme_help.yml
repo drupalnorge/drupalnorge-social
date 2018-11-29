@@ -9,7 +9,7 @@ dependencies:
 id: drupalnorge_theme_help
 theme: drupalnorge_theme
 region: content
-weight: -21
+weight: -20
 provider: null
 plugin: help_block
 settings:
