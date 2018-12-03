@@ -20,6 +20,8 @@ content:
     region: content
   google_analytics:
     weight: 3
+    settings: {  }
+    third_party_settings: {  }
     region: content
 hidden:
   contact: true

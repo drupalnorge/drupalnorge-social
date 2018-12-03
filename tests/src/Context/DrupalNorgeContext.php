@@ -3,7 +3,7 @@
 namespace DrupalNorge\DrupalNorgeSocial\Tests\Context;
 
 
-class DrupalNorgeContext extends \SocialDrupalContext {
+class DrupalNorgeContext extends \Drupal\social\Behat\SocialDrupalContext {
 
   /**
    * @When I trigger :event on :field
