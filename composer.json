@@ -85,6 +85,12 @@
         ]
     },
     "extra": {
+        "violinist": {
+            "blacklist": [
+                "drupal/social",
+                "goalgorilla/open_social"
+            ]
+        }
         "installer-paths": {
             "html/core": [
                 "drupal/core"
