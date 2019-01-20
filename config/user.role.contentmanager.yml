@@ -59,6 +59,7 @@ permissions:
   - 'edit any post entities'
   - 'edit any profile profile'
   - 'edit any topic content'
+  - 'edit group types'
   - 'edit own comments'
   - 'edit own event content'
   - 'edit own page content'

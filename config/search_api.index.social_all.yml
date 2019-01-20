@@ -177,9 +177,9 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
-  content_access:
-    weights:
-      preprocess_query: -30
+  rendered_item: {  }
+  add_url: {  }
+  aggregated_field: {  }
   tokenizer:
     all_fields: false
     fields:
@@ -191,58 +191,6 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
-  html_filter:
-    all_fields: false
-    fields:
-      - rendered_item
-      - type
-      - title
-      - label
-      - field_group_description
-      - field_group_location
-      - name
-    title: true
-    alt: true
-    tags:
-      h1: 5
-      h2: 3
-      h3: 2
-      strong: 2
-      b: 2
-      em: 1
-      u: 1
-    weights:
-      preprocess_index: -15
-      preprocess_query: -15
-  ignorecase:
-    all_fields: false
-    fields:
-      - rendered_item
-      - type
-      - title
-      - label
-      - field_group_description
-      - field_group_location
-      - name
-    weights:
-      preprocess_index: -20
-      preprocess_query: -20
-  rendered_item: {  }
-  transliteration:
-    all_fields: false
-    fields:
-      - rendered_item
-      - type
-      - title
-      - label
-      - field_group_description
-      - field_group_location
-      - name
-    weights:
-      preprocess_index: -20
-      preprocess_query: -20
-  add_url: {  }
-  aggregated_field: {  }
   stopwords:
     all_fields: false
     fields:
@@ -287,12 +235,64 @@ processor_settings:
     weights:
       preprocess_index: -5
       preprocess_query: -2
-  super_user:
+  ignorecase:
+    all_fields: false
+    fields:
+      - rendered_item
+      - type
+      - title
+      - label
+      - field_group_description
+      - field_group_location
+      - name
     weights:
-      preprocess_query: 30
+      preprocess_index: -20
+      preprocess_query: -20
+  transliteration:
+    all_fields: false
+    fields:
+      - rendered_item
+      - type
+      - title
+      - label
+      - field_group_description
+      - field_group_location
+      - name
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  content_access:
+    weights:
+      preprocess_query: -30
+  html_filter:
+    all_fields: false
+    fields:
+      - rendered_item
+      - type
+      - title
+      - label
+      - field_group_description
+      - field_group_location
+      - name
+    title: true
+    alt: true
+    tags:
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      b: 2
+      em: 1
+      u: 1
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
   blocked_users:
     weights:
       preprocess_query: -30
+  super_user:
+    weights:
+      preprocess_query: 30
 tracker_settings:
   default:
     indexing_order: fifo

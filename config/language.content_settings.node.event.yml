@@ -1,0 +1,18 @@
+uuid: 63e4ebe0-d223-4858-b02c-6b6c8b9b62a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.event
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+_core:
+  default_config_hash: 22av_uj659zY_Kgp7tV9WAEiiJxu-B46gjQSAQFtK6Q
+id: node.event
+target_entity_type_id: node
+target_bundle: event
+default_langcode: site_default
+language_alterable: false

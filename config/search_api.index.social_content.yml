@@ -9,7 +9,7 @@ dependencies:
     - search_api
     - node
 _core:
-  default_config_hash: xnSz3OHiVfzJ3efoUtI6NTEKvTZQ8Qwsh5w7Icoak4w
+  default_config_hash: yaq6LVKdo3DGtS3aPC4anJgIcSCrutH3e4g_jPIxewY
 id: social_content
 name: 'Social Content'
 description: 'Default content index created for the Social distribution.'
@@ -53,7 +53,7 @@ field_settings:
     type: integer
     indexed_locked: true
     type_locked: true
-  search_api_node_grants:
+  node_grants:
     label: 'Node access information'
     property_path: search_api_node_grants
     type: string
@@ -82,12 +82,22 @@ datasource_settings:
       default: true
       selected: {  }
 processor_settings:
-  content_access:
-    plugin_id: content_access
+  rendered_item:
+    plugin_id: rendered_item
     settings:
       weights:
-        preprocess_index: -10
-        preprocess_query: -10
+        add_properties: 0
+        pre_index_save: -10
+  add_url:
+    plugin_id: add_url
+    settings:
+      weights:
+        preprocess_index: -30
+  aggregated_field:
+    plugin_id: aggregated_field
+    settings:
+      weights:
+        add_properties: 20
   tokenizer:
     plugin_id: tokenizer
     settings:
@@ -104,69 +114,6 @@ processor_settings:
     overlap_cjk: 1
     minimum_word_size: '3'
     all_fields: false
-  html_filter:
-    plugin_id: html_filter
-    settings:
-      fields:
-        - rendered_item
-      title: true
-      alt: true
-      tags:
-        h1: 5
-        h2: 3
-        h3: 2
-        strong: 2
-        b: 2
-      weights:
-        preprocess_index: -10
-        preprocess_query: -10
-    title: true
-    alt: true
-    tags:
-      h1: 5
-      h2: 3
-      h3: 2
-      strong: 2
-      b: 2
-      em: 1
-      u: 1
-    all_fields: false
-  ignorecase:
-    plugin_id: ignorecase
-    settings:
-      fields:
-        - title
-        - rendered_item
-      weights:
-        preprocess_index: -10
-        preprocess_query: -10
-    all_fields: false
-  rendered_item:
-    plugin_id: rendered_item
-    settings:
-      weights:
-        add_properties: 0
-        pre_index_save: -10
-  transliteration:
-    plugin_id: transliteration
-    settings:
-      fields:
-        - title
-        - rendered_item
-      weights:
-        preprocess_index: -10
-        preprocess_query: -10
-    all_fields: false
-  add_url:
-    plugin_id: add_url
-    settings:
-      weights:
-        preprocess_index: -30
-  aggregated_field:
-    plugin_id: aggregated_field
-    settings:
-      weights:
-        add_properties: 20
   stopwords:
     plugin_id: stopwords
     settings:
@@ -248,6 +195,59 @@ processor_settings:
       - was
       - will
       - with
+    all_fields: false
+  ignorecase:
+    plugin_id: ignorecase
+    settings:
+      fields:
+        - title
+        - rendered_item
+      weights:
+        preprocess_index: -10
+        preprocess_query: -10
+    all_fields: false
+  transliteration:
+    plugin_id: transliteration
+    settings:
+      fields:
+        - title
+        - rendered_item
+      weights:
+        preprocess_index: -10
+        preprocess_query: -10
+    all_fields: false
+  content_access:
+    plugin_id: content_access
+    settings:
+      weights:
+        preprocess_index: -10
+        preprocess_query: -10
+  html_filter:
+    plugin_id: html_filter
+    settings:
+      fields:
+        - rendered_item
+      title: true
+      alt: true
+      tags:
+        h1: 5
+        h2: 3
+        h3: 2
+        strong: 2
+        b: 2
+      weights:
+        preprocess_index: -10
+        preprocess_query: -10
+    title: true
+    alt: true
+    tags:
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      b: 2
+      em: 1
+      u: 1
     all_fields: false
 tracker_settings:
   default:

@@ -69,7 +69,7 @@ third_party_settings:
         id: visibility
         classes: 'card '
 _core:
-  default_config_hash: kHmVEBVF0GCXIpHfL7z0JV8p8plq3zgOM7S2BQVBAoM
+  default_config_hash: 3Z-1RH4Ygf-ZS11i1tHHb08h_tsEQ6BwTPx3gUUH3Wo
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -139,7 +139,7 @@ content:
   status:
     region: content
     settings:
-      display_label: 1
+      display_label: true
     type: boolean_checkbox
     weight: 120
     third_party_settings: {  }

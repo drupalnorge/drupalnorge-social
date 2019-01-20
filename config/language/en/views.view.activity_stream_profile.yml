@@ -14,8 +14,8 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+            previous: ‹‹
+            next: ››
           expose:
             items_per_page_label: 'Items per page'
             items_per_page_options_all_label: '- All -'
