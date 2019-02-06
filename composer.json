@@ -19,7 +19,7 @@
         "drupal/config_ignore": "^2.1",
         "drupal/slack": "^1.2",
         "drush/drush": "^9@rc",
-        "drupal/social": "3.3",
+        "drupal/social": "3.9.0",
         "drupal/recaptcha": "^2.3"
     },
     "require-dev": {
