@@ -2079,7 +2079,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/coffee",
-                "reference": "8f6a4ee294342399df7ad9261225d2a0cd3ac43f"
+                "reference": "146571e62abee442c3d62b4247eb8c5fcff5d57b"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2137,7 +2137,7 @@
                 "issues": "https://drupal.org/project/issues/coffee",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2017-05-09T08:49:39+00:00"
+            "time": "2018-11-12T07:59:17+00:00"
         },
         {
             "name": "drupal/config_filter",
