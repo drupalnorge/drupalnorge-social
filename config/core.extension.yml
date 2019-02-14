@@ -106,6 +106,7 @@ module:
   views_ui: 0
   votingapi: 0
   social_group: 2
+  content_translation: 10
   views: 10
   improved_theme_settings: 50
   social: 1000

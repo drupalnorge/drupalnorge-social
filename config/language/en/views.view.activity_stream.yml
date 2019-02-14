@@ -22,6 +22,8 @@ display:
       title: Stream
   block_stream_homepage:
     display_title: 'Homepage stream block'
+  block_stream_homepage_without_post:
+    display_title: 'Homepage stream block'
   page_activity_stream:
     display_title: Page
   page_explore:

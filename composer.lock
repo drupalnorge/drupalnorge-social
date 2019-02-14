@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db9c7be5a2c503ee37ef481b23ec712c",
+    "content-hash": "f86ee967a963375d640efc7a5c2ebf4a",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -193,12 +193,12 @@
             "version": "9.13.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/highlightjs/highlight.js.git",
+                "url": "git@github.com:isagalaev/highlight.js.git",
                 "reference": "93cc723bac055240bc7c3559d907b6a9ab4ee326"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/highlightjs/highlight.js/zipball/93cc723bac055240bc7c3559d907b6a9ab4ee326",
+                "url": "https://api.github.com/repos/isagalaev/highlight.js/zipball/93cc723bac055240bc7c3559d907b6a9ab4ee326",
                 "reference": "93cc723bac055240bc7c3559d907b6a9ab4ee326",
                 "shasum": null
             },
@@ -265,7 +265,7 @@
             "version": "v2.2.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/DmitryBaranovskiy/raphael.git",
+                "url": "git@github.com:DmitryBaranovskiy/raphael.git",
                 "reference": "c02b9c125d036e42b9bb95d0e401bbf6a5153da5"
             },
             "dist": {

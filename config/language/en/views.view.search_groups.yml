@@ -21,6 +21,10 @@ display:
             items_per_page_label: 'Items per page'
             items_per_page_options_all_label: '- All -'
             offset_label: Offset
+      filters:
+        type:
+          expose:
+            label: Type
       title: 'Search Groups'
       header:
         area:
