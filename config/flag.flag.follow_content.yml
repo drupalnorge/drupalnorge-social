@@ -1,9 +1,11 @@
 uuid: 961d1ec2-2b3b-4d08-8330-c2a1fcc2f901
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - node
 _core:
-  default_config_hash: 9ai-CTRoUcmCBw-2I9nqhaqcX8YnCCRS-pComg-LTfE
+  default_config_hash: u7QcIilN6W6ooHahb_7xRJH8vSy0RDp_LDpyqBUk1Dk
 id: follow_content
 label: 'Follow content'
 bundles: {  }

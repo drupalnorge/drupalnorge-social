@@ -28,7 +28,7 @@ display:
       header:
         area:
           content:
-            value: '<h4 class="section-title">All results</h4>'
+            value: '<h4>All results</h4>'
       empty:
         area:
           content:

@@ -5,7 +5,7 @@ dependencies:
   config:
     - group.type.closed_group
 _core:
-  default_config_hash: '--qS3AZ3PSfoK6SSRWW2OLNp5KeTOsqsr6ZKYhzATMM'
+  default_config_hash: yi6UMp_bd65PxS600HpLmrj32L_daXwjLAgrDNubndc
 id: closed_group-outsider
 label: Outsider
 weight: -101
@@ -14,7 +14,6 @@ audience: outsider
 group_type: closed_group
 permissions_ui: true
 permissions:
-  - 'join group'
   - 'view group'
   - 'update own group_node:topic entity'
   - 'update own group_node:event entity'

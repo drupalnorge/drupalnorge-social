@@ -1,5 +1,5 @@
 label: 'Activity stream notifications'
-description: 'Activity stream on a profile'
+description: 'Activity stream notifications on a profile'
 display:
   default:
     display_title: Master
@@ -11,7 +11,7 @@ display:
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
           sort_desc_label: Desc
-      title: 'Activity stream'
+      title: Notifications
       empty:
         area:
           content:
@@ -29,8 +29,8 @@ display:
       pager:
         options:
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+            previous: ‹‹
+            next: ››
           expose:
             items_per_page_label: 'Items per page'
             items_per_page_options_all_label: '- All -'

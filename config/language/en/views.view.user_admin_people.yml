@@ -42,6 +42,12 @@ display:
           label: Operations
         mail:
           separator: ', '
+        field_profile_first_name:
+          label: 'First name'
+          separator: ', '
+        field_profile_last_name:
+          label: 'Last name'
+          separator: ', '
       filters:
         combine:
           expose:

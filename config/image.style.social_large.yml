@@ -8,7 +8,7 @@ dependencies:
     - crop
     - image_effects
 _core:
-  default_config_hash: zUmb7uKHqLXxHNugmyT1LX0B0AG0l-xagfa0kA173Q4
+  default_config_hash: P7sxRKVeGwKyFfz_189LtVEoiza35F_5aeMl-_gD4JE
 name: social_large
 label: 'social large (128 x 128)'
 effects:
@@ -17,9 +17,9 @@ effects:
     id: image_scale_and_crop
     weight: -9
     data:
+      anchor: center-center
       width: 128
       height: 128
-      anchor: center-center
   357bbb69-a9cc-4de8-b1ec-f6dacf47fe56:
     uuid: 357bbb69-a9cc-4de8-b1ec-f6dacf47fe56
     id: crop_crop

@@ -79,6 +79,7 @@ permissions:
   - 'edit any profile profile'
   - 'edit any topic content'
   - 'edit font entities'
+  - 'edit group types'
   - 'edit own comments'
   - 'edit own event content'
   - 'edit own page content'

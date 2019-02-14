@@ -29,6 +29,9 @@ display:
         status:
           expose:
             label: 'Published status'
+      sorts:
+        created:
+          admin_label: sort_created
       title: 'Group Topics'
       empty:
         area_text_custom:
