@@ -114,7 +114,7 @@
             "drupal/core": {
                 "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
             },
-            "drupal/bootstap": {
+            "drupal/bootstrap": {
                 "Error: Unsupported operand types during providers JSON discovery": "https://www.drupal.org/files/issues/2019-01-24/3027569-8.x-3.x-8.patch"
             }
         },
