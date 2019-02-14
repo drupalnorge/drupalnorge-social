@@ -1,5 +1,5 @@
 uuid: f8250a0f-04cb-4749-85e5-739eb9d8b6d6
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
     - crop
     - image_effects
 _core:
-  default_config_hash: P7sxRKVeGwKyFfz_189LtVEoiza35F_5aeMl-_gD4JE
+  default_config_hash: by7soStphcJwnSYwoc3Jh100ArXP2AVNcFhDQqrX73E
 name: social_large
 label: 'social large (128 x 128)'
 effects:
@@ -26,6 +26,7 @@ effects:
     weight: -10
     data:
       crop_type: profile_large
+      automatic_crop_provider: null
   bf83acde-b72f-4383-90a0-cd57f0dfba28:
     uuid: bf83acde-b72f-4383-90a0-cd57f0dfba28
     id: image_effects_auto_orient

@@ -2,3 +2,4 @@ redirect_comment_to_entity: true
 remove_author_field: true
 _core:
   default_config_hash: 7uCHOf1OYdSyT8MOI6Rx9H_JVN2qvH34dI4_swcMqI4
+langcode: nb
