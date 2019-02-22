@@ -9,9 +9,9 @@
         "composer/installers": "^v1.4.0",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "^1.0",
-        "goalgorilla/open_social": "4.3",
+        "goalgorilla/open_social": "4.5",
         "drupal/coffee": "1.x-dev",
-        "drupal/sparkpost": "2.0-beta1",
+        "drupal/sparkpost": "2.0-rc1",
         "drupal/reroute_email": "^1.0",
         "drupal/slack_invite": "^1.1",
         "drupal/honeypot": "~1.29.0",
@@ -19,7 +19,7 @@
         "drupal/config_ignore": "^2.1",
         "drupal/slack": "^1.2",
         "drush/drush": "^9@rc",
-        "drupal/social": "4.3",
+        "drupal/social": "4.5",
         "drupal/recaptcha": "^2.3"
     },
     "require-dev": {
@@ -113,6 +113,9 @@
         "patches": {
             "drupal/core": {
                 "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
+            },
+            "drupal/bootstrap": {
+                "Error: Unsupported operand types during providers JSON discovery": "https://www.drupal.org/files/issues/2019-01-24/3027569-8.x-3.x-8.patch"
             }
         },
         "enable-patching": true,

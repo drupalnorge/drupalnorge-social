@@ -8,7 +8,7 @@ dependencies:
     - crop
     - image_effects
 _core:
-  default_config_hash: zgtnqPrhGPnROzcVRoZ9_cMnFqWJGyuG6vwCiKRLvDM
+  default_config_hash: jQGw92zx4a6kuLl6UifCoNFmTCL2637hvKR8TaiMYCI
 name: social_small
 label: 'social small (24 x 24)'
 effects:
@@ -26,6 +26,7 @@ effects:
     weight: 1
     data:
       crop_type: profile_small
+      automatic_crop_provider: null
   db56295b-59b4-4adb-873b-4fd967615ffc:
     uuid: db56295b-59b4-4adb-873b-4fd967615ffc
     id: image_effects_auto_orient
