@@ -9,6 +9,7 @@ label: 'Anonym bruker'
 weight: 0
 is_admin: false
 permissions:
+  - 'access comments'
   - 'access content'
   - 'access content search'
   - 'access group search'
