@@ -37,8 +37,8 @@ before_install:
 
 install:
   - cd $TRAVIS_BUILD_DIR
-  - if [ "$TEST_SUITE" = "Composer" ] || [ "$TEST_SUITE" = "PHPCS" ]; then composer install --no-dev; fi
-  - if [ "$TEST_SUITE" = "Behat" ]; then ./scripts/travis.sh; fi
+  - if [ "$TEST_SUITE" = "Composer" ]; then composer install --no-dev; fi
+  - if [ "$TEST_SUITE" = "Behat" ] || [ "$TEST_SUITE" = "PHPCS" ]; then ./scripts/travis.sh; fi
 
 script:
   - if [ "$TEST_SUITE" = "PHPCS" ]; then composer phpcs; fi
