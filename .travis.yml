@@ -36,8 +36,7 @@ before_install:
       google-chrome --version
       mysql -e "create database IF NOT EXISTS test;" -uroot
       wget --no-check-certificate https://drupalnorge.no/sanitized.db
-      ;;;;;;
-    fi
+    ; fi
 
 install:
   - cd $TRAVIS_BUILD_DIR
