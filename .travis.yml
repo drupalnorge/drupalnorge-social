@@ -23,17 +23,20 @@ before_install:
   - export COMPOSER_MEMORY_LIMIT=-1
   # To enforce throwing an error and stopping package installation/update immediately
   - export COMPOSER_EXIT_ON_PATCH_FAILURE=1
-
-  # Print info and prepare for the installation
-  - echo 'sendmail_path = /bin/true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
-  - phpenv config-rm xdebug.ini
-  - composer --verbose self-update
-  - composer --version
-  - google-chrome --version
-  - mysql -e "create database IF NOT EXISTS test;" -uroot
-  - wget --no-check-certificate https://drupalnorge.no/sanitized.db
   # Installing hirak/prestissimo allows composer to parallelise downloads which speeds up the composer install.
+  - composer --verbose self-update
   - composer global require hirak/prestissimo
+
+  - if [ "$TEST_SUITE" = "Behat" ] || [ "$TEST_SUITE" = "PHPCS" ]; then
+    # Print info and prepare for the installation
+    echo 'sendmail_path = /bin/true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+    phpenv config-rm xdebug.ini
+    composer --version
+    google-chrome --version
+    mysql -e "create database IF NOT EXISTS test;" -uroot
+    wget --no-check-certificate https://drupalnorge.no/sanitized.db
+    ;
+  fi
 
 install:
   - cd $TRAVIS_BUILD_DIR
