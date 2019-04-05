@@ -7,6 +7,13 @@ addons:
 
 sudo: false
 
+matrix:
+  fast_finish: true
+  include:
+    - env: TEST_SUITE=Install
+    - env: TEST_SUITE=PHPCS
+    - env: TEST_SUITE=Behat
+
 services:
   - mysql
 
@@ -33,5 +40,5 @@ install:
   - ./scripts/travis.sh
 
 script:
-  # The tests will run on strict mode
-  - composer stest
+  - if [ "$TEST_SUITE" = "PHPCS" ]; then composer phpcs; fi
+  - if [ "$TEST_SUITE" = "Behat" ]; then composer sbehat; fi

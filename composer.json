@@ -47,13 +47,22 @@
             "@composer drupal-scaffold"
         ],
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "test": [
-            "./vendor/bin/phpcs -p",
+        "behat": [
             "./vendor/bin/behat --colors"
         ],
-        "stest": [
-            "./vendor/bin/phpcs -p",
+        "sbehat": [
             "./vendor/bin/behat --colors --stop-on-failure --strict"
+        ],
+        "phpcs": [
+            "./vendor/bin/phpcs -p"
+        ],
+        "test": [
+            "@composer phpcs",
+            "@composer behat"
+        ],
+        "stest": [
+            "@composer behat",
+            "@composer sbehat"
         ],
         "import": [
             "./vendor/bin/drush --root=$(pwd)/html cc drush",
