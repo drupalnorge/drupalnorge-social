@@ -27,9 +27,9 @@ before_install:
   - composer --verbose self-update
   - composer global require hirak/prestissimo
 
+  # Print info and prepare for the installation
   - |
     if [ "$TEST_SUITE" = "Behat" ] || [ "$TEST_SUITE" = "PHPCS" ]; then
-      # Print info and prepare for the installation
       echo 'sendmail_path = /bin/true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
       phpenv config-rm xdebug.ini
       composer --version
