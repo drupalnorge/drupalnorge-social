@@ -27,16 +27,17 @@ before_install:
   - composer --verbose self-update
   - composer global require hirak/prestissimo
 
-  - if [ "$TEST_SUITE" = "Behat" ] || [ "$TEST_SUITE" = "PHPCS" ]; then
-    # Print info and prepare for the installation
-    - echo 'sendmail_path = /bin/true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
-    - phpenv config-rm xdebug.ini
-    - composer --version
-    - google-chrome --version
-    - mysql -e "create database IF NOT EXISTS test;" -uroot
-    - wget --no-check-certificate https://drupalnorge.no/sanitized.db
-    ;
-  fi
+  - |
+    if [ "$TEST_SUITE" = "Behat" ] || [ "$TEST_SUITE" = "PHPCS" ]; then
+      # Print info and prepare for the installation
+      echo 'sendmail_path = /bin/true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+      phpenv config-rm xdebug.ini
+      composer --version
+      google-chrome --version
+      mysql -e "create database IF NOT EXISTS test;" -uroot
+      wget --no-check-certificate https://drupalnorge.no/sanitized.db
+      ;
+    fi
 
 install:
   - cd $TRAVIS_BUILD_DIR
