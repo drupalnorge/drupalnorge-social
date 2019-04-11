@@ -17,16 +17,16 @@ third_party_settings:
     activity_aggregate: 1
     activity_entity_condition: comment_not_reply
 _core:
-  default_config_hash: XM7CsEOxi7pbETb3fVVffg_Bw28EXbZJfDdP1xN6tDI
+  default_config_hash: dL6ebaOTtEEseLIn2aJePZCssDoJ2TF2ws6LhkNEMTc
 template: create_comment_community_node
 label: 'Create comment on node in the community'
 description: 'A user add a comment to content in the community'
 text:
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on [social_comment:parent_entity_author]'s [social_comment:commented_content_type]</p>\r\n"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on [social_comment:parent_entity_author]'s [social_comment:commented_content_type]</p>\n"
     format: full_html
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> and @count others commented on [social_comment:parent_entity_author]'s [social_comment:commented_content_type]</p>\r\n"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> and @count others commented on [social_comment:parent_entity_author]'s [social_comment:commented_content_type]</p>\n"
     format: full_html
 settings:
   'token options':
