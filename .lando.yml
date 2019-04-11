@@ -131,9 +131,8 @@ config:
 services:
   appserver:
     overrides:
-      services:
-        environment:
-          COMPOSER_PROCESS_TIMEOUT: 6000
+      environment:
+        COMPOSER_PROCESS_TIMEOUT: 6000
 
   # PhpMyAdmin
   # Add a phpmyadmin db frontend
