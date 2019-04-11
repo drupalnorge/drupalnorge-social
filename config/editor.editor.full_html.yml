@@ -7,7 +7,7 @@ dependencies:
   module:
     - ckeditor
 _core:
-  default_config_hash: uSZwSmVKjzKDyHXl-T3AvMVrjHi_0axD7lsz7eqre2I
+  default_config_hash: YvMwqCuM0QsEzQEGaa64MAB9Me3w6oUCfBuOAni-xmk
 format: full_html
 editor: ckeditor
 settings:
@@ -58,6 +58,7 @@ settings:
           items:
             - ShowBlocks
             - Source
+            - Maximize
   plugins:
     language:
       language_list: un
