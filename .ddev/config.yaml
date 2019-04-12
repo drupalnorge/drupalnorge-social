@@ -2,7 +2,7 @@ APIVersion: v0.20.0
 name: dnorge
 type: drupal8
 docroot: "html/"
-php_version: "7.0"
+php_version: "7.2"
 # router_http_port: "8000"
 # router_https_port: "8443"
 xdebug_enabled: true
