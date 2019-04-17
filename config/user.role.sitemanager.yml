@@ -41,6 +41,7 @@ permissions:
   - 'administer site configuration'
   - 'administer social_event settings'
   - 'administer social_topic settings'
+  - 'administer social_user settings'
   - 'administer taxonomy'
   - 'administer themes'
   - 'administer users'

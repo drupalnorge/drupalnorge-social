@@ -44,6 +44,7 @@ module:
   google_analytics: 0
   group: 0
   group_core_comments: 0
+  gvbo: 0
   help: 0
   honeypot: 0
   image: 0
@@ -78,6 +79,9 @@ module:
   social_file_private: 0
   social_follow_content: 0
   social_font: 0
+  social_group_gvbo: 0
+  social_lets_connect: 0
+  social_lets_connect_usage: 0
   social_like: 0
   social_mentions: 0
   social_page: 0
@@ -102,6 +106,7 @@ module:
   tour: 0
   update: 0
   user: 0
+  views_bulk_operations: 0
   views_infinite_scroll: 0
   views_ui: 0
   votingapi: 0

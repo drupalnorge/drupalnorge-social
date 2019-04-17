@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
+    - field.field.node.event.field_event_enroll
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_files
@@ -21,7 +22,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: dCGz6G01KpyFxVZYWAL0XFWzuSy-U8kjBTW2gS7i8zg
+  default_config_hash: CXeWoIz4HXNKtZSFPOG2Xbrt_M9sgPeixxbrrRmUqg0
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -83,14 +84,19 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  links:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_content_visibility: true
   field_event_date: true
   field_event_date_end: true
+  field_event_enroll: true
   field_event_image: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
   langcode: true
-  links: true
   private_message_link: true

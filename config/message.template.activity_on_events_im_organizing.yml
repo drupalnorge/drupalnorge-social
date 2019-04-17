@@ -17,7 +17,7 @@ third_party_settings:
     activity_aggregate: false
     activity_entity_condition: ''
 _core:
-  default_config_hash: VNiBieLz0xyHzFpI9PbX_3iKPlXRWmRu1xT2DHxzBDA
+  default_config_hash: CFdQpcplvNPOnGi7NVlcqTNZPY61jLc3YS3ZbAvpywg
 template: activity_on_events_im_organizing
 label: 'Activity on events I am organizing'
 description: 'Activity on events I am organizing'

@@ -7,7 +7,7 @@ dependencies:
   theme:
     - socialblue
 _core:
-  default_config_hash: 6Q57FuLO1HAlmMS3Tabfox0ZP5242p5llniudshyqdg
+  default_config_hash: 7gOwRKXY4A_b3Z2j-rC_uWgsGUJpsTFuB-wArf8T5as
 id: socialblue_local_actions
 theme: socialblue
 region: complementary_top
@@ -22,6 +22,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '/admin/reports/*'
+    pages: "/admin/reports/*\r\n/group/*/membership\r\n/node/*/all-enrollments"
     negate: true
     context_mapping: {  }

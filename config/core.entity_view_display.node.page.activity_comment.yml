@@ -15,7 +15,7 @@ dependencies:
     - image
     - user
 _core:
-  default_config_hash: 0Xn_dFl5cAC1x3sRQADO0LFp34GfwJ3o8zEVp5vFISE
+  default_config_hash: d1R8UiAFwQxJ05xVpQVGxpcQ0doFiDsE7crXGJNaUaY
 id: node.page.activity_comment
 targetEntityType: node
 bundle: page
@@ -36,7 +36,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  addtoany: true
   body: true
   field_content_visibility: true
   field_files: true
