@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
+    - field.field.node.event.field_event_enroll
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_files
@@ -19,7 +20,7 @@ dependencies:
     - datetime
     - user
 _core:
-  default_config_hash: YyO2wBCVEGkdF8Te6I8GNCvuoQ3x0lz061tLjB2ESnI
+  default_config_hash: Gn_t2DkrFAsHIC_uJFXsVJVpjlhZTTGmFjE3gUiMFBg
 id: node.event.hero
 targetEntityType: node
 bundle: event
@@ -73,6 +74,7 @@ hidden:
   body: true
   field_content_visibility: true
   field_event_comments: true
+  field_event_enroll: true
   field_event_image: true
   field_files: true
   groups: true

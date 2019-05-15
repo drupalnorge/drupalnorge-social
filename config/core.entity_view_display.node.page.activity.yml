@@ -16,7 +16,7 @@ dependencies:
     - social_core
     - user
 _core:
-  default_config_hash: 5_cDtD3n1om6NPR11IocvRwoT_A2w0m_L9uKsqaP2Pw
+  default_config_hash: NCicc06gOpkS2U5TfM9f-jwdzhUMH4qjNGj8r4a-Q2I
 id: node.page.activity
 targetEntityType: node
 bundle: page
@@ -46,7 +46,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  addtoany: true
   body: true
   field_content_visibility: true
   field_files: true

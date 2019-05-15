@@ -2,8 +2,8 @@ label: 'Create reply on my comment'
 description: 'A person replied on my comments'
 text:
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> replied on your <a href=\"[message:field_message_related_object:entity:url:absolute]\">comment</a> in [social_comment:commented_entity_link_html]</p>\r\n"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> replied on your <a href=\"[message:field_message_related_object:entity:url:absolute]\">comment</a> in [social_comment:commented_entity_link_html]</p>\n"
   -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> replied on your <a href=\"[message:field_message_related_object:entity:url:absolute]\">comment</a> in [social_comment:commented_entity_link_html]</p>\r\n"
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> replied on your <a href=\"[message:field_message_related_object:entity:url:absolute]\">comment</a> in [social_comment:commented_entity_link_html]</p>\n"
   -
     value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> replied on your <a href="[message:field_message_related_object:entity:url:absolute]">comment</a> in [social_comment:commented_entity_link_html]</p>'

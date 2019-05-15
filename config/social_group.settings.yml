@@ -1,1 +1,3 @@
 allow_group_selection_in_node: false
+allow_hero_selection: false
+default_hero: hero
