@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
+    - field.field.node.event.field_event_enroll
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_files
@@ -21,7 +22,7 @@ dependencies:
     - image
     - user
 _core:
-  default_config_hash: G-X4pB9myNKASARy8vDn9bfVJo5PcoGEN0DpQSqL7GA
+  default_config_hash: OLxhV81lkVKNd27Okw3x7a0HYATS4FTrruJJLlAUKKI
 id: node.event.activity_comment
 targetEntityType: node
 bundle: event
@@ -89,6 +90,7 @@ hidden:
   body: true
   field_content_visibility: true
   field_event_comments: true
+  field_event_enroll: true
   field_files: true
   groups: true
   groups_type_closed_group: true

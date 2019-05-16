@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
+    - field.field.node.event.field_event_enroll
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_files
@@ -43,7 +44,7 @@ third_party_settings:
         - field_event_date
         - field_event_date_end
       parent_name: ''
-      weight: 3
+      weight: 4
       label: 'Date & time'
       format_type: fieldset
       format_settings:
@@ -101,8 +102,20 @@ third_party_settings:
         required_fields: true
         id: attachments
         classes: card
+    group_enrollment:
+      children:
+        - field_event_enroll
+      parent_name: ''
+      weight: 3
+      label: 'Enrollment options'
+      format_type: fieldset
+      format_settings:
+        label: 'Enrollment options'
+        required_fields: true
+        id: enrollment
+        classes: card
 _core:
-  default_config_hash: 3xO1b_imnyjtyWL6X99E1p9hCFynOpFfSNTDEzp3_1o
+  default_config_hash: qKBzdABwV4xgosxvvpPa9VD-XmjoctFRVihQvmMs2a4
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -154,6 +167,13 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
+  field_event_enroll:
+    region: content
+    settings:
+      display_label: true
+    type: boolean_checkbox
+    weight: 12
+    third_party_settings: {  }
   field_event_image:
     weight: 3
     settings:

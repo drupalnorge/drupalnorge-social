@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
+    - field.field.node.event.field_event_enroll
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_files
@@ -18,7 +19,7 @@ dependencies:
     - datetime
     - user
 _core:
-  default_config_hash: qUwXhhweystjCIhPDre3iTASe8pCTgI6t1FEo9ROVHA
+  default_config_hash: 9CA9kVWccGl4Hxo0zdjYZD0uUv-BU03E1y-ZNjolJxc
 id: node.event.small_teaser
 targetEntityType: node
 bundle: event
@@ -50,6 +51,7 @@ hidden:
   field_event_address: true
   field_event_comments: true
   field_event_date_end: true
+  field_event_enroll: true
   field_event_image: true
   field_event_location: true
   field_files: true

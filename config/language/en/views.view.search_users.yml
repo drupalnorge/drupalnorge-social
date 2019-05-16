@@ -37,7 +37,7 @@ display:
       header:
         area:
           content:
-            value: '<h4>Member results</h4>'
+            value: '<h4 class="section-title">Member results</h4>'
       empty:
         area:
           content:
@@ -56,4 +56,4 @@ display:
       header:
         area:
           content:
-            value: '<h4>Member results</h4>'
+            value: '<h4 class="section-title">Member results</h4>'

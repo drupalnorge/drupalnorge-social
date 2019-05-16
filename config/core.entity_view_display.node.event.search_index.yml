@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
+    - field.field.node.event.field_event_enroll
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_files
@@ -20,7 +21,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: DE1MjFY8LFtCgV5ZJnwxTmp8-t59v3gvXZzmNK1SYzo
+  default_config_hash: 2OrnR1Dbh9fUUI1h0RJfwJjCCJNfeUxKQ_9c9uM4QsI
 id: node.event.search_index
 targetEntityType: node
 bundle: event
@@ -57,6 +58,7 @@ hidden:
   field_event_address: true
   field_event_date: true
   field_event_date_end: true
+  field_event_enroll: true
   field_event_image: true
   field_event_location: true
   field_files: true

@@ -1,30 +1,7 @@
-label: People
-description: 'Find and manage people interacting with your site.'
 display:
   default:
-    display_title: Master
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filter
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        options:
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page_label: 'Items per page'
-            items_per_page_options_all_label: '- All -'
-            offset_label: Offset
       fields:
-        user_bulk_form:
-          label: 'Bulk update'
         name:
           label: Username
         status:
@@ -48,6 +25,24 @@ display:
         field_profile_last_name:
           label: 'Last name'
           separator: ', '
+      exposed_form:
+        options:
+          submit_button: Filter
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       filters:
         combine:
           expose:
@@ -74,6 +69,7 @@ display:
         area_text_custom:
           content: 'No people available.'
       use_more_text: more
+    display_title: Master
   page_1:
     display_title: Page
     display_options:
@@ -83,3 +79,5 @@ display:
       tab_options:
         title: People
         description: 'Manage user accounts, roles, and permissions.'
+label: People
+description: 'Find and manage people interacting with your site.'

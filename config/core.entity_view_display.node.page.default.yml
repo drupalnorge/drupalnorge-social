@@ -16,7 +16,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: bxHknQvsa_esZnLYlew8T028H5oUvqVzJpyf_dpyGGc
+  default_config_hash: EKclcOVxcA9S1nyiVc7gySTEccR5VUwyvVIVDg5v_Sk
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -47,6 +47,11 @@ content:
   flag_follow_content:
     weight: 10
     region: content
+  links:
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_content_visibility: true
   field_page_image: true
@@ -55,4 +60,3 @@ hidden:
   groups_type_open_group: true
   groups_type_public_group: true
   langcode: true
-  links: true
