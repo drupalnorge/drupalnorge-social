@@ -1,0 +1,21 @@
+uuid: 804c7a71-87dd-4ab2-a33b-d20ae6652a36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_context
+    - message.template.join_to_group
+  module:
+    - options
+id: message.join_to_group.field_message_context
+field_name: field_message_context
+entity_type: message
+bundle: join_to_group
+label: field_message_context
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -7,5 +7,4 @@ _core:
 name: Expertise
 vid: expertise
 description: 'A users expertises'
-hierarchy: 0
 weight: 0

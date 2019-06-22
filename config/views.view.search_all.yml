@@ -71,15 +71,15 @@ display:
         type: search_api
         options:
           view_modes:
-            'entity:node':
-              event: teaser
-              page: teaser
-              topic: teaser
-              book: teaser
             'entity:group':
               closed_group: teaser
               open_group: teaser
               public_group: teaser
+            'entity:node':
+              book: teaser
+              event: teaser
+              page: teaser
+              topic: teaser
             'entity:profile':
               profile: teaser
       fields:
