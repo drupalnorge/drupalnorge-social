@@ -71,8 +71,8 @@
         "up-db": [
             "./vendor/bin/drush sql-drop --yes",
             "wget --no-check-certificate https://drupalnorge.no/sanitized.db",
-            "./vendor/bin/drush sql-cli < /app/sanitized.db",
-            "rm /app/sanitized.db",
+            "./vendor/bin/drush sql-cli < ./sanitized.db",
+            "rm ./sanitized.db",
             "./vendor/bin/drush cr"
         ],
         "install-site": [
