@@ -13,6 +13,7 @@ html/sites/*/files
 
 # Ignore database dumps
 *.sql
+*.db
 
 # Ignore node modules folder
 node_modules
@@ -26,10 +27,8 @@ html/sites/default/settings.local.php
 # Ignore local behat.yml
 behat.yml
 
-
 # Ingore Lando-files
 /app
-
 
 # Ingore DDEV-files
 .ddev/docker-compose.yaml
