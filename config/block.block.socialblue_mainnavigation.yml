@@ -9,7 +9,7 @@ dependencies:
   theme:
     - socialblue
 _core:
-  default_config_hash: 38d56nuhCmqWOSx7yvBPp1ejo21DLF35I7zIk-CsPTM
+  default_config_hash: G__z_1Sj0z-HowcyDBUlQ4Muwd89CXXhV-r3ZfqeZCA
 id: socialblue_mainnavigation
 theme: socialblue
 region: header
@@ -23,4 +23,5 @@ settings:
   label_display: '0'
   level: 1
   depth: 0
+  expand_all_items: false
 visibility: {  }

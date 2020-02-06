@@ -2,26 +2,87 @@ uuid: 67f604f7-783b-4f00-81b8-c51a840fa027
 langcode: en
 status: true
 dependencies:
-  config:
-    - field.storage.profile.field_profile_expertise
-    - field.storage.profile.field_profile_interests
-    - field.storage.profile.field_profile_profile_tag
-    - field.storage.profile.field_profile_first_name
-    - field.storage.profile.field_profile_last_name
-    - search_api.server.social_database
-    - core.entity_view_mode.profile.search_index
   module:
     - profile
     - user
     - search_api
     - social_search
+  config:
+    - field.storage.profile.field_profile_expertise
+    - field.storage.profile.field_profile_first_name
+    - field.storage.profile.field_profile_interests
+    - field.storage.profile.field_profile_last_name
+    - field.storage.profile.field_profile_profile_tag
+    - search_api.server.social_database
+    - core.entity_view_mode.profile.search_index
 _core:
-  default_config_hash: efGBqbNw_Hy6sokVParKmi4lYdl21QaF32_L_I_j0f4
+  default_config_hash: DISMSpL3sN3hwLfwzea6p8b8ZCaZnjde0lx5MYXnYhs
 id: social_users
 name: 'Social Users'
 description: 'Default users index created for the Social distribution.'
 read_only: false
 field_settings:
+  created:
+    label: Created
+    datasource_id: 'entity:profile'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - profile
+  field_profile_expertise:
+    label: Expertise
+    datasource_id: 'entity:profile'
+    property_path: field_profile_expertise
+    type: integer
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_expertise
+  field_profile_first_name:
+    label: 'First name'
+    datasource_id: 'entity:profile'
+    property_path: field_profile_first_name
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_first_name
+  field_profile_interests:
+    label: Interests
+    datasource_id: 'entity:profile'
+    property_path: field_profile_interests
+    type: integer
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_interests
+  field_profile_last_name:
+    label: 'Last name'
+    datasource_id: 'entity:profile'
+    property_path: field_profile_last_name
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_last_name
+  field_profile_profile_tag:
+    label: 'Profile tag'
+    datasource_id: 'entity:profile'
+    property_path: field_profile_profile_tag
+    type: integer
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_profile_tag
+  name:
+    label: 'Owner » User » Name'
+    datasource_id: 'entity:profile'
+    property_path: 'uid:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      module:
+        - profile
+        - user
+        - user
   rendered_item:
     label: 'Rendered HTML output'
     property_path: rendered_item
@@ -31,32 +92,8 @@ field_settings:
         authenticated: authenticated
       view_mode:
         'entity:profile':
-          profile: search_index
           main: ''
-  field_profile_expertise:
-    label: Expertise
-    datasource_id: 'entity:profile'
-    property_path: field_profile_expertise
-    type: integer
-    dependencies:
-      config:
-        - field.storage.profile.field_profile_expertise
-  field_profile_interests:
-    label: Interests
-    datasource_id: 'entity:profile'
-    property_path: field_profile_interests
-    type: integer
-    dependencies:
-      config:
-        - field.storage.profile.field_profile_interests
-  field_profile_profile_tag:
-    label: 'Profile tag'
-    datasource_id: 'entity:profile'
-    property_path: field_profile_profile_tag
-    type: integer
-    dependencies:
-      config:
-        - field.storage.profile.field_profile_profile_tag
+          profile: search_index
   uid:
     label: Owner
     datasource_id: 'entity:profile'
@@ -65,16 +102,6 @@ field_settings:
     dependencies:
       module:
         - profile
-  name:
-    label: 'Owner » User » Name'
-    datasource_id: 'entity:profile'
-    property_path: 'uid:entity:name'
-    type: text
-    dependencies:
-      module:
-        - profile
-        - user
-        - user
   user_status:
     label: 'Owner » User » User status'
     datasource_id: 'entity:profile'
@@ -85,22 +112,6 @@ field_settings:
         - profile
         - user
         - user
-  field_profile_first_name:
-    label: 'First name'
-    datasource_id: 'entity:profile'
-    property_path: field_profile_first_name
-    type: text
-    dependencies:
-      config:
-        - field.storage.profile.field_profile_first_name
-  field_profile_last_name:
-    label: 'Last name'
-    datasource_id: 'entity:profile'
-    property_path: field_profile_last_name
-    type: text
-    dependencies:
-      config:
-        - field.storage.profile.field_profile_last_name
 datasource_settings:
   'entity:profile':
     plugin_id: 'entity:profile'
@@ -123,12 +134,12 @@ processor_settings:
       add_properties: 20
   tokenizer:
     plugin_id: tokenizer
-    all_fields: false
+    all_fields: true
     fields:
-      - rendered_item
-      - name
       - field_profile_first_name
       - field_profile_last_name
+      - name
+      - rendered_item
     spaces: ''
     overlap_cjk: 1
     minimum_word_size: '3'
@@ -139,8 +150,8 @@ processor_settings:
     plugin_id: stopwords
     all_fields: false
     fields:
-      - rendered_item
       - name
+      - rendered_item
     stopwords:
       - a
       - an
@@ -182,23 +193,23 @@ processor_settings:
       preprocess_query: -2
   ignorecase:
     plugin_id: ignorecase
-    all_fields: false
+    all_fields: true
     fields:
-      - rendered_item
-      - name
       - field_profile_first_name
       - field_profile_last_name
+      - name
+      - rendered_item
     weights:
       preprocess_index: -10
       preprocess_query: -10
   transliteration:
     plugin_id: transliteration
-    all_fields: false
+    all_fields: true
     fields:
-      - rendered_item
-      - name
       - field_profile_first_name
       - field_profile_last_name
+      - name
+      - rendered_item
     weights:
       preprocess_index: -10
       preprocess_query: -10
@@ -206,17 +217,17 @@ processor_settings:
     plugin_id: html_filter
     all_fields: false
     fields:
-      - rendered_item
       - name
+      - rendered_item
     title: true
     alt: true
     tags:
+      b: 2
+      em: 1
       h1: 5
       h2: 3
       h3: 2
       strong: 2
-      b: 2
-      em: 1
       u: 1
     weights:
       preprocess_index: -10

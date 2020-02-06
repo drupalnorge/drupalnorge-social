@@ -15,7 +15,7 @@ dependencies:
     - dynamic_entity_reference
     - text
 _core:
-  default_config_hash: '-GW4pfFUFKfiJAzpJXoM6YSrT51Jy3bCqGVVMgPpv_I'
+  default_config_hash: y_2SHS8OAIsFjn4ETtAi29RP1NIAdqZ_xD4ZqZi6ZOY
 id: activity.activity.default
 targetEntityType: activity
 bundle: activity
@@ -91,4 +91,5 @@ hidden:
   field_activity_recipient_group: true
   field_activity_recipient_user: true
   field_activity_status: true
+  search_api_excerpt: true
   user_id: true

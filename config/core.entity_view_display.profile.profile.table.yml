@@ -25,7 +25,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: kCAIbaVa2tzl0O1J32FwxmP-C88kjajsk134g96iRKE
+  default_config_hash: 4f-ZYQ9uYrTOn0BSa6jh5zXspIBGi5mT1JqTOLJpJ8c
 id: profile.profile.table
 targetEntityType: profile
 bundle: profile
@@ -56,3 +56,4 @@ hidden:
   field_profile_self_introduction: true
   field_profile_show_email: true
   field_profile_twitter_url: true
+  search_api_excerpt: true

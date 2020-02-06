@@ -15,7 +15,7 @@ dependencies:
     - image
     - user
 _core:
-  default_config_hash: d1R8UiAFwQxJ05xVpQVGxpcQ0doFiDsE7crXGJNaUaY
+  default_config_hash: vNN88EYaSfziM9dykYGOUaM_EzdH6WlkIWmbxwktnJQ
 id: node.page.activity_comment
 targetEntityType: node
 bundle: page
@@ -46,3 +46,4 @@ hidden:
   groups_type_open_group: true
   groups_type_public_group: true
   langcode: true
+  search_api_excerpt: true

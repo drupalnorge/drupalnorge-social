@@ -6,7 +6,7 @@ dependencies:
     - comment.type.post_comment
     - field.field.comment.post_comment.field_comment_body
 _core:
-  default_config_hash: 9EflK6aDvSFRqgUB2LEh2-AXU3DrP2V9OxvgTkWDa30
+  default_config_hash: FofkEbCSl5bmiwsIkBnLEdy9UzgZh3vsNmwNyOVPshw
 id: comment.post_comment.default
 targetEntityType: comment
 bundle: post_comment
@@ -31,3 +31,4 @@ content:
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true

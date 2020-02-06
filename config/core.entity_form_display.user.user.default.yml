@@ -32,7 +32,7 @@ third_party_settings:
         required_fields: true
       label: 'Locale settings'
 _core:
-  default_config_hash: nZZPpvLP8s_Dh4dP5GZ6gi0-aPLc0vzbmVDbbx2SeiE
+  default_config_hash: pRQ6ymdA2LS1Ssy6jQIpcFyAkOgrFCOfnW5S1j_knPE
 id: user.user.default
 targetEntityType: user
 bundle: user
@@ -58,3 +58,4 @@ hidden:
   groups: true
   langcode: true
   language: true
+  profile_profiles: true

@@ -16,7 +16,7 @@ dependencies:
     - node
     - social_event
 _core:
-  default_config_hash: pa89D722raWgS_iqIkucEaYHl64qAYzLvWXuSCTqIE4
+  default_config_hash: U1m7im0n_LIf-xAersIh9IgiJ-tRm2iZ9odxkEOxeBU
 id: group_events
 label: 'Group Events'
 module: views
@@ -345,7 +345,7 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - group_membership.roles.permissions
+        - user.group_permissions
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
@@ -364,7 +364,7 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - group_membership.roles.permissions
+        - user.group_permissions
         - 'languages:language_content'
         - 'languages:language_interface'
         - url

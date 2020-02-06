@@ -8,7 +8,7 @@ dependencies:
     - search_api
     - user
 _core:
-  default_config_hash: _kPpnpsTbsL-cmpWfTWHVMTeEis9eBU-epKXIajkBkk
+  default_config_hash: UzqYXdbaXFDPvfUFswTry6Km44lfyuNVMAG2cOgMC6w
 id: search_groups
 label: 'Search Groups'
 module: views
@@ -185,6 +185,18 @@ display:
           id: search_api_relevance
           table: search_api_index_social_groups
           field: search_api_relevance
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: search_api
+        created:
+          id: created
+          table: search_api_index_social_groups
+          field: created
           relationship: none
           group_type: group
           admin_label: ''

@@ -19,7 +19,7 @@ dependencies:
     - datetime
     - user
 _core:
-  default_config_hash: 9CA9kVWccGl4Hxo0zdjYZD0uUv-BU03E1y-ZNjolJxc
+  default_config_hash: RxbsGYX4dpCz1n1v-7kLOscoy2QpVi-hNRClHXmWEkE
 id: node.event.small_teaser
 targetEntityType: node
 bundle: event
@@ -61,3 +61,4 @@ hidden:
   langcode: true
   like_and_dislike: true
   links: true
+  search_api_excerpt: true

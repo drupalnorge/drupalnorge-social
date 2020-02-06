@@ -9,7 +9,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: UCH4wjLm2bBbHP6hQrLLcnkU7wU1OEpJYJKiKS0Xwwo
+  default_config_hash: fL_gUDfHUUsIhKpGeS4iVq4fk9uVZ2mnx__yRaO5v4w
 id: comment.comment.activity_comment
 targetEntityType: comment
 bundle: comment
@@ -30,3 +30,4 @@ content:
 hidden:
   langcode: true
   like_and_dislike: true
+  search_api_excerpt: true

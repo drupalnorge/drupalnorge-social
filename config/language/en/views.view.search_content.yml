@@ -5,11 +5,11 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Filter
+          submit_button: Apply
           reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          exposed_sorts_label: Sort
+          sort_asc_label: (ascending)
+          sort_desc_label: (descending)
       pager:
         options:
           expose:
@@ -25,6 +25,10 @@ display:
         type:
           expose:
             label: 'Content type'
+      sorts:
+        search_api_relevance:
+          expose:
+            label: Relevance
       title: 'Search content'
       header:
         area:

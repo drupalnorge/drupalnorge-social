@@ -15,7 +15,7 @@ dependencies:
     - activity_creator
     - text
 _core:
-  default_config_hash: 0YiTurZ0UpGA4ZDwc0_0xtZpbemlq_-OTDcFrht6PeE
+  default_config_hash: _PP-WiPTqYhSbjdVpCP7tG1ylK-g8j1kwL5hCCd769A
 id: activity.activity.notification
 targetEntityType: activity
 bundle: activity
@@ -43,4 +43,5 @@ hidden:
   field_activity_recipient_group: true
   field_activity_recipient_user: true
   field_activity_status: true
+  search_api_excerpt: true
   user_id: true

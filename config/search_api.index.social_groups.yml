@@ -11,12 +11,47 @@ dependencies:
     - search_api.server.social_database
     - core.entity_view_mode.group.teaser
 _core:
-  default_config_hash: CGa7QTYL2l7tUuBd0ZnTSTfodE8PdK1blK_0qLM6gaM
+  default_config_hash: Ed3QodM_5VMVirtscZV64UyLSBVNL0B4_UJSKAMhC00
 id: social_groups
 name: 'Social Groups'
 description: 'Default group index created for the Social distribution.'
 read_only: false
 field_settings:
+  created:
+    label: 'Created on'
+    datasource_id: 'entity:group'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - group
+  field_group_description:
+    label: Description
+    datasource_id: 'entity:group'
+    property_path: field_group_description
+    type: text
+    dependencies:
+      config:
+        - field.storage.group.field_group_description
+  label:
+    label: Title
+    datasource_id: 'entity:group'
+    property_path: label
+    type: text
+    boost: !!float 21
+    dependencies:
+      module:
+        - group
+  name:
+    label: 'Group creator » User » Name'
+    datasource_id: 'entity:group'
+    property_path: 'uid:entity:name'
+    type: string
+    dependencies:
+      module:
+        - group
+        - user
+        - user
   rendered_item:
     label: 'Rendered HTML output'
     property_path: rendered_item
@@ -36,33 +71,6 @@ field_settings:
     dependencies:
       module:
         - group
-  label:
-    label: Title
-    datasource_id: 'entity:group'
-    property_path: label
-    type: text
-    boost: !!float 8
-    dependencies:
-      module:
-        - group
-  name:
-    label: 'Group creator » User » Name'
-    datasource_id: 'entity:group'
-    property_path: 'uid:entity:name'
-    type: string
-    dependencies:
-      module:
-        - group
-        - user
-        - user
-  field_group_description:
-    label: Description
-    datasource_id: 'entity:group'
-    property_path: field_group_description
-    type: text
-    dependencies:
-      config:
-        - field.storage.group.field_group_description
 datasource_settings:
   'entity:group':
     plugin_id: 'entity:group'
@@ -88,9 +96,10 @@ processor_settings:
       add_properties: 20
   tokenizer:
     plugin_id: tokenizer
-    all_fields: false
+    all_fields: true
     fields:
       - field_group_description
+      - label
       - rendered_item
     spaces: ''
     overlap_cjk: 1
@@ -145,23 +154,25 @@ processor_settings:
       preprocess_query: -2
   ignorecase:
     plugin_id: ignorecase
-    all_fields: false
+    all_fields: true
     fields:
-      - type
+      - field_group_description
       - label
       - name
-      - field_group_description
       - rendered_item
+      - type
     weights:
       preprocess_index: -10
       preprocess_query: -10
   transliteration:
     plugin_id: transliteration
-    all_fields: false
+    all_fields: true
     fields:
-      - label
       - field_group_description
+      - label
+      - name
       - rendered_item
+      - type
     weights:
       preprocess_index: -10
       preprocess_query: -10
@@ -169,10 +180,10 @@ processor_settings:
     plugin_id: ignore_character
     all_fields: false
     fields:
-      - type
+      - field_group_description
       - label
       - name
-      - field_group_description
+      - type
     ignorable: '[''¿¡!?,.:;]'
     strip:
       character_sets:
@@ -203,12 +214,12 @@ processor_settings:
     title: true
     alt: true
     tags:
+      b: 2
+      em: 1
       h1: 5
       h2: 3
       h3: 2
       strong: 2
-      b: 2
-      em: 1
       u: 1
     weights:
       preprocess_index: -10

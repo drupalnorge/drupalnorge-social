@@ -5,7 +5,7 @@ dependencies:
   config:
     - group.content_type.public_group-group_node-event
 _core:
-  default_config_hash: WEiWb02IZr6Lk5qC2Z7o0VVu4512W0iw5jWi1KDeZKI
+  default_config_hash: JAHPSh1UwR9kNFOx3aWZ3_X5q2xZa5M0fDwtl178M2A
 id: group_content.public_group-group_node-event.default
 targetEntityType: group_content
 bundle: public_group-group_node-event
@@ -22,4 +22,5 @@ content:
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true
   uid: true

@@ -17,7 +17,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: Klypy_jItft_0QlAdXkbC_4e7zpm-DTiOx3aTk67kyw
+  default_config_hash: _rfdDQ708wrytrUXs9o6sYeh1KEqmRUlDcNOEW0NfX0
 id: node.topic.default
 targetEntityType: node
 bundle: topic
@@ -49,14 +49,6 @@ content:
     weight: 10
     third_party_settings: {  }
     region: content
-  groups_type_public_group:
-    label: above
-    weight: -5
-    region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
   like_and_dislike:
     weight: 2
     settings: {  }
@@ -74,4 +66,6 @@ hidden:
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
+  groups_type_public_group: true
   langcode: true
+  search_api_excerpt: true

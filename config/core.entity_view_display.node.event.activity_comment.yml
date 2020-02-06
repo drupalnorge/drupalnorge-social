@@ -22,7 +22,7 @@ dependencies:
     - image
     - user
 _core:
-  default_config_hash: OLxhV81lkVKNd27Okw3x7a0HYATS4FTrruJJLlAUKKI
+  default_config_hash: psOy9JYXqH1kjMmGPXNIsB_qmfjt_8eKxTJRH-FiG1s
 id: node.event.activity_comment
 targetEntityType: node
 bundle: event
@@ -97,3 +97,4 @@ hidden:
   groups_type_open_group: true
   langcode: true
   like_and_dislike: true
+  search_api_excerpt: true

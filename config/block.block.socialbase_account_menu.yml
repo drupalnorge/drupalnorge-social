@@ -10,7 +10,7 @@ dependencies:
   theme:
     - socialbase
 _core:
-  default_config_hash: i0cPm3IXP_wmJGAe7JGeBBwotT6pLFQPCkPq6f-vF2Q
+  default_config_hash: FjC-IqH0cWjvuwop_2gboIQzIzxqD-GEWaSAMnvahT0
 id: socialbase_account_menu
 theme: socialbase
 region: header
@@ -24,6 +24,7 @@ settings:
   label_display: '0'
   level: 1
   depth: 1
+  expand_all_items: false
 visibility:
   user_role:
     id: user_role

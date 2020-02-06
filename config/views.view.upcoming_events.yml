@@ -14,7 +14,7 @@ dependencies:
     - social_event
     - user
 _core:
-  default_config_hash: LRnUz32gIySF6FQMlP4uWuzSc1Jnn0XOBRJMOo3ZLpg
+  default_config_hash: jICmCvyBLhkwjQbswDAncFY0kUOuDGtZmMJf26vPvxg
 id: upcoming_events
 label: '(Upcoming) Community events'
 module: views
@@ -564,17 +564,6 @@ display:
       display_description: ''
       path: community-events
       filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-          group: 1
         type:
           id: type
           table: node_field_data

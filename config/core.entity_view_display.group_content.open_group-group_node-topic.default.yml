@@ -5,7 +5,7 @@ dependencies:
   config:
     - group.content_type.open_group-group_node-topic
 _core:
-  default_config_hash: VgMMVlIoHx4BCvvxGVZ9amL8zEAmEIZXd5eDZXu8dyg
+  default_config_hash: TJj4XyxytZvwUyURwj_7A7XCa7LOQadz2yOnTgLVkLs
 id: group_content.open_group-group_node-topic.default
 targetEntityType: group_content
 bundle: open_group-group_node-topic
@@ -22,4 +22,5 @@ content:
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true
   uid: true

@@ -1,0 +1,52 @@
+label: 'Group Manage Members'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      fields:
+        rendered_entity:
+          label: Member
+        field_profile_organization:
+          label: Organization
+          separator: ', '
+        group_roles:
+          label: Role
+          separator: ', '
+        created:
+          label: 'Joined date'
+          separator: ', '
+        operations:
+          label: Operation
+      title: 'Group Manage Members'
+      header:
+        result:
+          content: '@total members'
+      empty:
+        area:
+          content:
+            value: 'There are no members yet.'
+      arguments:
+        gid:
+          exception:
+            title: All
+          title: 'Members of {{ arguments.gid }}'
+  page_group_manage_members:
+    display_title: Page

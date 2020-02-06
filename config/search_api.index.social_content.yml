@@ -6,24 +6,48 @@ dependencies:
     - node
     - search_api
   config:
+    - field.storage.node.field_event_date
+    - field.storage.node.field_event_date_end
     - search_api.server.social_database
     - core.entity_view_mode.node.search_index
 _core:
-  default_config_hash: g6owjnxYX8od07RgZphG7QORijY6fA-eDODR2sxJ8VU
+  default_config_hash: MbX9nCJS7GUDX3vfIkeKB6-6wVbLokpUUXwFaw2oO58
 id: social_content
 name: 'Social Content'
 description: 'Default content index created for the Social distribution.'
 read_only: false
 field_settings:
-  title:
-    label: Title
+  created:
+    label: 'Authored on'
     datasource_id: 'entity:node'
-    property_path: title
-    type: text
-    boost: !!float 8
+    property_path: created
+    type: date
     dependencies:
       module:
         - node
+  field_event_date:
+    label: Start
+    datasource_id: 'entity:node'
+    property_path: field_event_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_event_date
+  field_event_date_end:
+    label: End
+    datasource_id: 'entity:node'
+    property_path: field_event_date_end
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_event_date_end
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
   rendered_item:
     label: 'Rendered HTML output'
     property_path: rendered_item
@@ -37,14 +61,6 @@ field_settings:
           event: search_index
           page: search_index
           topic: search_index
-  type:
-    label: Type
-    datasource_id: 'entity:node'
-    property_path: type
-    type: string
-    dependencies:
-      module:
-        - node
   status:
     label: 'Publishing status'
     datasource_id: 'entity:node'
@@ -55,6 +71,24 @@ field_settings:
     dependencies:
       module:
         - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 21
+    dependencies:
+      module:
+        - node
+  type:
+    label: Type
+    datasource_id: 'entity:node'
+    property_path: type
+    type: text
+    boost: !!float 13
+    dependencies:
+      module:
+        - node
   uid:
     label: 'Authored by'
     datasource_id: 'entity:node'
@@ -62,21 +96,6 @@ field_settings:
     type: integer
     indexed_locked: true
     type_locked: true
-    dependencies:
-      module:
-        - node
-  node_grants:
-    label: 'Node access information'
-    property_path: search_api_node_grants
-    type: string
-    indexed_locked: true
-    type_locked: true
-    hidden: true
-  created:
-    label: 'Authored on'
-    datasource_id: 'entity:node'
-    property_path: created
-    type: date
     dependencies:
       module:
         - node
@@ -105,10 +124,11 @@ processor_settings:
       add_properties: 20
   tokenizer:
     plugin_id: tokenizer
-    all_fields: false
+    all_fields: true
     fields:
-      - title
       - rendered_item
+      - title
+      - type
     spaces: ''
     overlap_cjk: 1
     minimum_word_size: '3'
@@ -119,8 +139,8 @@ processor_settings:
     plugin_id: stopwords
     all_fields: false
     fields:
-      - title
       - rendered_item
+      - title
     stopwords:
       - a
       - an
@@ -162,19 +182,21 @@ processor_settings:
       preprocess_query: -2
   ignorecase:
     plugin_id: ignorecase
-    all_fields: false
+    all_fields: true
     fields:
-      - title
       - rendered_item
+      - title
+      - type
     weights:
       preprocess_index: -10
       preprocess_query: -10
   transliteration:
     plugin_id: transliteration
-    all_fields: false
+    all_fields: true
     fields:
-      - title
       - rendered_item
+      - title
+      - type
     weights:
       preprocess_index: -10
       preprocess_query: -10
@@ -191,12 +213,12 @@ processor_settings:
     title: true
     alt: true
     tags:
+      b: 2
+      em: 1
       h1: 5
       h2: 3
       h3: 2
       strong: 2
-      b: 2
-      em: 1
       u: 1
     weights:
       preprocess_index: -10

@@ -10,7 +10,7 @@ dependencies:
   theme:
     - socialblue
 _core:
-  default_config_hash: G7CVrF8YuE82q46xnmfrQt8auY_tjXHpTl_P6gSMQGU
+  default_config_hash: QRo3tGvHr084jZ0ZUS31X0Z9_VJcHRdtVG0B6IxLllQ
 id: socialblue_exposed_form_search_content_page_sidebar
 theme: socialblue
 region: complementary_top
@@ -22,7 +22,7 @@ settings:
   label: ''
   provider: views
   label_display: visible
-  views_label: Filter
+  views_label: 'Sort and Filter'
 visibility:
   request_path:
     id: request_path

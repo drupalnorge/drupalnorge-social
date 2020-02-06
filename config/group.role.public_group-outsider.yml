@@ -5,7 +5,7 @@ dependencies:
   config:
     - group.type.public_group
 _core:
-  default_config_hash: HYzSi9kRkNPqU4YzmxLkD30zWFSli-mAiediPrWEBSA
+  default_config_hash: EKNx2oP4Q3v4ILh08JN3oLLv0LaYwGeko0WKDBM1R7U
 id: public_group-outsider
 label: Outsider
 weight: -101
@@ -14,15 +14,15 @@ audience: outsider
 group_type: public_group
 permissions_ui: true
 permissions:
+  - 'access comments'
+  - 'access posts in group'
   - 'join group'
+  - 'update own group_node:event entity'
+  - 'update own group_node:topic entity'
+  - 'view group'
+  - 'view group stream page'
+  - 'view group_membership content'
   - 'view group_node:event content'
   - 'view group_node:event entity'
   - 'view group_node:topic content'
   - 'view group_node:topic entity'
-  - 'view group'
-  - 'access posts in group'
-  - 'update own group_node:topic entity'
-  - 'update own group_node:event entity'
-  - 'access comments'
-  - 'view group_membership content'
-  - 'view group stream page'

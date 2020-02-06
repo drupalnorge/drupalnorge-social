@@ -3,9 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: hvqwNcvxm1QIj2AubYszdMKi9CVMQz6C3gjBmT8gZEI
+  default_config_hash: 0oDKR41_MvDHVtKzJwxUv877N6E6vHBi5_yCMu7Vo8s
 name: Interests
 vid: interests
 description: 'A users interests for their profile.'
-hierarchy: 0
 weight: 0

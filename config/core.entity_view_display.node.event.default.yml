@@ -22,7 +22,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: CXeWoIz4HXNKtZSFPOG2Xbrt_M9sgPeixxbrrRmUqg0
+  default_config_hash: YSzSy3HUo9je_gPC2_J3qhGlXR5m_9do9ByM1pYjWPQ
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -100,3 +100,4 @@ hidden:
   groups_type_open_group: true
   langcode: true
   private_message_link: true
+  search_api_excerpt: true
