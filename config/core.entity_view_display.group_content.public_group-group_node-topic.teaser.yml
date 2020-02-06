@@ -6,7 +6,7 @@ dependencies:
     - core.entity_view_mode.group_content.teaser
     - group.content_type.public_group-group_node-topic
 _core:
-  default_config_hash: OwAmBtjZFr8vSqE6NnZEv82oZ-041TyHrh5W6DoA0Rw
+  default_config_hash: o1c6xUunctYmlr44HJ6SRmJBNDBds90TVFZPANq7je0
 id: group_content.public_group-group_node-topic.teaser
 targetEntityType: group_content
 bundle: public_group-group_node-topic
@@ -23,4 +23,5 @@ content:
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true
   uid: true

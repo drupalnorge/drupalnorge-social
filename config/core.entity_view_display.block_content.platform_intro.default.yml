@@ -8,7 +8,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: gTJyC4W7RU2IRRuZUGvn9CI7Tu1pKAZYDeAVHlEhfHo
+  default_config_hash: Ec4Lz0EcmBPQ7Jfpj0Swo2As0Q1RtZXUStwPYQIVVbE
 id: block_content.platform_intro.default
 targetEntityType: block_content
 bundle: platform_intro
@@ -23,3 +23,4 @@ content:
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true

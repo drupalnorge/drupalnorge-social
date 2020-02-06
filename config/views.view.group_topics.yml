@@ -16,7 +16,7 @@ dependencies:
     - node
     - taxonomy
 _core:
-  default_config_hash: 5m7I8A5nRpDvVHWRpsErPz0vhfrwHBduKdTqDr3XsbI
+  default_config_hash: w68Lg24lxOIZS50lCZN4ldYaaotGC6Zf5hvGlTC7uOg
 id: group_topics
 label: 'Group Topics'
 module: views
@@ -54,9 +54,9 @@ display:
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-          expose_sort_order: false
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          expose_sort_order: true
+          sort_asc_label: ascending
+          sort_desc_label: descending
       pager:
         type: mini
         options:
@@ -324,9 +324,9 @@ display:
           group_type: group
           admin_label: sort_created
           order: DESC
-          exposed: false
+          exposed: true
           expose:
-            label: ''
+            label: 'Sort by publish date'
           granularity: second
           entity_type: node
           entity_field: created
@@ -414,11 +414,13 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - group_membership.roles.permissions
+        - user.group_permissions
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
         - user
         - 'user.node_grants:view'
       tags: {  }
@@ -434,11 +436,13 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - group_membership.roles.permissions
+        - user.group_permissions
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
+        - 'url.query_args:sort_by'
+        - 'url.query_args:sort_order'
         - user
         - 'user.node_grants:view'
       tags: {  }

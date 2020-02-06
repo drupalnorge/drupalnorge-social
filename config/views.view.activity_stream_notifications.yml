@@ -12,7 +12,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: hgPlJn1-4avmG9_H-ex026PFy0aTvU4JJ0qBnz0Wx7I
+  default_config_hash: ttxaKuxOXNBOVRhBP19lSnXWA1LFxjYkmqqlkNX6mWE
 id: activity_stream_notifications
 label: 'Activity stream notifications'
 module: views
@@ -34,7 +34,7 @@ display:
           role:
             authenticated: authenticated
       cache:
-        type: none
+        type: tag
         options: {  }
       query:
         type: views_query

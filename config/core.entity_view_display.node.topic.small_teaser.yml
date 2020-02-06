@@ -14,7 +14,7 @@ dependencies:
   module:
     - user
 _core:
-  default_config_hash: skShdvdjAuwtM7EWsow0qYhs8LBUh4yqIKyy-I-jFUo
+  default_config_hash: KIjTOuvJT-3Lnw49izSC6l2IEQRuKefxB8dHRByhu_0
 id: node.topic.small_teaser
 targetEntityType: node
 bundle: topic
@@ -23,14 +23,6 @@ content:
   flag_follow_content:
     weight: 10
     region: content
-  groups_type_public_group:
-    label: above
-    weight: -5
-    region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
 hidden:
   body: true
   field_content_visibility: true
@@ -41,6 +33,8 @@ hidden:
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
+  groups_type_public_group: true
   langcode: true
   like_and_dislike: true
   links: true
+  search_api_excerpt: true

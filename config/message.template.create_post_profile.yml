@@ -16,7 +16,7 @@ third_party_settings:
     activity_action: create_entitiy_action
     activity_aggregate: 0
 _core:
-  default_config_hash: v7A_f9j205ZFPSSITrUyqwN2sqUTHxgm97jpY3ArIQU
+  default_config_hash: qSOzrHG_GK56jMNkCbKiGHTZMyBCFK5UTiB01yFY3kI
 template: create_post_profile
 label: 'Create post on profile'
 description: 'A person created a post on my profile'
@@ -29,7 +29,7 @@ text:
     value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> posted on your profile</p>\n"
   -
     format: full_html
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> posted on your <a href="[message:recipient-user-url]">profile</a></p>'
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> posted on your <a href="[message:recipient-user-url]">profile</a></p><p>[message:additional_information]</p>'
 settings:
   'token options':
     clear: false

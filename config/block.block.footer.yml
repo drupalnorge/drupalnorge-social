@@ -9,7 +9,7 @@ dependencies:
   theme:
     - socialbase
 _core:
-  default_config_hash: Qwub9pMtOwzb9-N-KXIjA580GWWiBAj3_UWugydF5eg
+  default_config_hash: lqe2jxmkLFkRO6MgBW3274S6F9U5Z2kwCEMW-yhsEPA
 id: footer
 theme: socialbase
 region: footer
@@ -23,4 +23,5 @@ settings:
   label_display: '0'
   level: 1
   depth: 0
+  expand_all_items: false
 visibility: {  }

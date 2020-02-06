@@ -5,7 +5,7 @@ dependencies:
   module:
     - group
 _core:
-  default_config_hash: sIjc8skPEYka93B4qByXLOsC6k-JBj5c2S499QP0m5o
+  default_config_hash: q8BMTefPMCErqS5j7G979LlY7p_6EvQeBHiSR7cooWY
 id: group_information
 label: 'Group Information'
 module: views
@@ -169,7 +169,7 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - group_membership.roles.permissions
+        - user.group_permissions
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
@@ -185,7 +185,7 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - group_membership.roles.permissions
+        - user.group_permissions
         - 'languages:language_content'
         - 'languages:language_interface'
         - url

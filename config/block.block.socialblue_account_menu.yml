@@ -10,7 +10,7 @@ dependencies:
   theme:
     - socialblue
 _core:
-  default_config_hash: uwuPJ-DnOf475vRqnKskANLyjjDuUaPFEr4dG6Jgu8I
+  default_config_hash: B2tojDJyWg4NEUWtwg0U0WoKVUsG4p_4TuBXTIbW3S0
 id: socialblue_account_menu
 theme: socialblue
 region: header
@@ -24,6 +24,7 @@ settings:
   label_display: '0'
   level: 1
   depth: 1
+  expand_all_items: false
 visibility:
   user_role:
     id: user_role

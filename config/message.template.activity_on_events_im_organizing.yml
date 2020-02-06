@@ -13,11 +13,11 @@ third_party_settings:
     activity_destinations:
       notifications: notifications
       email: email
-    activity_create_direct: true
+    activity_create_direct: false
     activity_aggregate: false
     activity_entity_condition: ''
 _core:
-  default_config_hash: CFdQpcplvNPOnGi7NVlcqTNZPY61jLc3YS3ZbAvpywg
+  default_config_hash: fU8silRFFQrY9hQOzMGBkPFIDGc_F8PI94ZUAVe1sQw
 template: activity_on_events_im_organizing
 label: 'Activity on events I am organizing'
 description: 'Activity on events I am organizing'

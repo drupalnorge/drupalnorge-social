@@ -1,4 +1,4 @@
-label: 'Public group: Group membership'
-description: 'Adds users to groups as members.'
 group_type: public_group
 content_plugin: group_membership
+label: 'Public group: Group membership'
+description: 'Adds users to groups as members.'

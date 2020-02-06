@@ -8,8 +8,8 @@ display:
           submit_button: Filter
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: ascending
+          sort_desc_label: descending
       pager:
         options:
           expose:
@@ -32,6 +32,8 @@ display:
       sorts:
         created:
           admin_label: sort_created
+          expose:
+            label: 'Sort by publish date'
       title: 'Group Topics'
       empty:
         area_text_custom:

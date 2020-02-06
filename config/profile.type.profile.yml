@@ -3,14 +3,14 @@ langcode: en
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 6-UbVkbj-KqMtzRTQW7ubMUlNAks72UnQ0SRIoLRlgw
+  default_config_hash: XknqMjXmay6Ivp8iiMAhawIM4idlyWLmoGLuNZtPyBA
 id: profile
 label: Profile
-registration: false
+display_label: null
 multiple: false
+registration: false
 roles:
   authenticated: '0'
   administrator: '0'
-weight: 0
-use_revisions: false
-description: 'The default Open Social profile type'
+allow_revisions: false
+new_revision: false

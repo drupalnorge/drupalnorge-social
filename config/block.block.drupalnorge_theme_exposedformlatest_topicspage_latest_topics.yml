@@ -19,7 +19,7 @@ settings:
   id: 'views_exposed_filter_block:latest_topics-page_latest_topics'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: Filter
 visibility:
   request_path:

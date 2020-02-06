@@ -25,7 +25,7 @@ dependencies:
     - address
     - text
 _core:
-  default_config_hash: n6saLC9i9xRvYHiAl9XpaxmwN7fLhhtFhc7qPhX7qAs
+  default_config_hash: deHlSJRd3xCeatWn_C0Uf2ixOT7eyl-DzLcRJs3JhDE
 id: profile.profile.search_index
 targetEntityType: profile
 bundle: profile
@@ -95,3 +95,4 @@ hidden:
   field_profile_profile_tag: true
   field_profile_show_email: true
   field_profile_twitter_url: true
+  search_api_excerpt: true

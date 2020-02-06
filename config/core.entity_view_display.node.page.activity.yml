@@ -16,7 +16,7 @@ dependencies:
     - social_core
     - user
 _core:
-  default_config_hash: NCicc06gOpkS2U5TfM9f-jwdzhUMH4qjNGj8r4a-Q2I
+  default_config_hash: MOwMLFoE7s630IIuH3ml6JuouPVGMjqKHVehU3-kK-8
 id: node.page.activity
 targetEntityType: node
 bundle: page
@@ -55,3 +55,4 @@ hidden:
   groups_type_open_group: true
   groups_type_public_group: true
   langcode: true
+  search_api_excerpt: true

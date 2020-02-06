@@ -11,7 +11,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: Z5r5kqO6_PZTZq_wEk-zL5_dUhNpDtDBlB5_T6_9xHg
+  default_config_hash: vFW30BSSL9R69dLaBcCqJ25jrWGBw5nKxwEv5AySm00
 id: activity_stream_profile
 label: activity_stream_profile
 module: views
@@ -33,7 +33,7 @@ display:
           role:
             authenticated: authenticated
       cache:
-        type: none
+        type: tag
         options: {  }
       query:
         type: views_query

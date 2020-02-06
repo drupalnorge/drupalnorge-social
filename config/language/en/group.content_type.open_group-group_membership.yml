@@ -1,4 +1,4 @@
-label: 'Open group: Group membership'
-description: 'Adds users to groups as members.'
 group_type: open_group
 content_plugin: group_membership
+label: 'Open group: Group membership'
+description: 'Adds users to groups as members.'

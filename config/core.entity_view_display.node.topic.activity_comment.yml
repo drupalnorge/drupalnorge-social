@@ -16,7 +16,7 @@ dependencies:
     - image
     - user
 _core:
-  default_config_hash: BC3drau761N5l2puCkRF8Mqd3_pZmsoFXqXWq0fkMVA
+  default_config_hash: 4AnPBOFQOdlyi6zQcSuNt7j2_IqZQO3V9I5JRFaH94M
 id: node.topic.activity_comment
 targetEntityType: node
 bundle: topic
@@ -42,14 +42,6 @@ content:
   flag_follow_content:
     weight: 10
     region: content
-  groups_type_public_group:
-    label: above
-    weight: -5
-    region: content
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
   links:
     weight: 2
     settings: {  }
@@ -63,5 +55,7 @@ hidden:
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true
+  groups_type_public_group: true
   langcode: true
   like_and_dislike: true
+  search_api_excerpt: true

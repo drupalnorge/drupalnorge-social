@@ -9,7 +9,7 @@ dependencies:
   theme:
     - socialblue
 _core:
-  default_config_hash: O4W6f_mEsKoLHd-ARQ6jhIBxaPb4d2_bvBv_fFSE37E
+  default_config_hash: 7asZviSzAATgkU2DK59oGgKCp_vT02_OfndEBaVTGdk
 id: socialblue_footer
 theme: socialblue
 region: footer
@@ -23,4 +23,5 @@ settings:
   label_display: '0'
   level: 1
   depth: 0
+  expand_all_items: false
 visibility: {  }

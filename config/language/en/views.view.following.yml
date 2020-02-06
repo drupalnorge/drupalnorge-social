@@ -31,7 +31,7 @@ display:
         link_flag:
           label: Operations
           alter:
-            text: '<div class="btn btn-sm"> {{ link_flag }} </div>'
+            text: '{{ link_flag }}'
       filters:
         type:
           expose:

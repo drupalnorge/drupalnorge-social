@@ -10,7 +10,7 @@ dependencies:
     - field.field.group.open_group.field_group_location
     - group.type.open_group
 _core:
-  default_config_hash: jb6bs-IrIDB-WAiima9d7ll3eZp-4ASeV6fDm9Vf_iA
+  default_config_hash: xI52fD2CETRWsxCxpVfkGde0sCLTPYDxA7KlNPzIPBA
 id: group.open_group.small_teaser
 targetEntityType: group
 bundle: open_group
@@ -32,4 +32,5 @@ hidden:
   field_group_image: true
   field_group_location: true
   langcode: true
+  search_api_excerpt: true
   uid: true

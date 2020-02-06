@@ -50,6 +50,7 @@ permissions:
   - 'unflag follow_content'
   - 'update own profile profile'
   - 'use text format basic_html'
+  - 'use text format mail_html'
   - 'use text format simple_text'
   - 'view any profile profile'
   - 'view community posts'

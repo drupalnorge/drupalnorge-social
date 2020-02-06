@@ -14,7 +14,7 @@ dependencies:
     - profile
     - user
 _core:
-  default_config_hash: IYN5LtgDti-hlGh2rtyM1MTqE_2cHirEool3addCFG8
+  default_config_hash: 2UFxRhD62-Y1YVrzHK9eECIsh1QAWh_JmdzIi3fv030
 id: following
 label: 'Content I follow'
 module: views
@@ -260,7 +260,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<div class="btn btn-sm"> {{ link_flag }} </div>'
+            text: '{{ link_flag }}'
             make_link: false
             path: ''
             absolute: false

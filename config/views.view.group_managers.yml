@@ -10,7 +10,7 @@ dependencies:
     - profile
     - user
 _core:
-  default_config_hash: BHZifOpbMfOmopBzSa3rwQyGpF2e-skIhaKwtht0p_Y
+  default_config_hash: nZhqrvviO-n1tVyu1NzRv175wsIviYg_CAgQcaX7Zl4
 id: group_managers
 label: 'Group Managers'
 module: views
@@ -314,7 +314,7 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - group_membership.roles.permissions
+        - user.group_permissions
         - 'languages:language_interface'
         - route
         - url
@@ -342,7 +342,7 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - group_membership.roles.permissions
+        - user.group_permissions
         - 'languages:language_interface'
         - route
         - url

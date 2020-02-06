@@ -17,7 +17,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: vY2ylqtrp-IlDa8ojm5kjO0BYayPFXq-Htsa3X6nhKI
+  default_config_hash: AIV8kX2w5a5zOKI9hVjfqwZFK66nRtd4486sydPzaPI
 id: post.photo.activity_comment
 targetEntityType: post
 bundle: photo
@@ -52,3 +52,4 @@ hidden:
   field_recipient_user: true
   field_visibility: true
   like_and_dislike: true
+  search_api_excerpt: true

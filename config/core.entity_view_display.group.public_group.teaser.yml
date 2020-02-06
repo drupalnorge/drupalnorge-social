@@ -14,7 +14,7 @@ dependencies:
     - address
     - image
 _core:
-  default_config_hash: GysTzxAtdrNX5bWXPkKTS5DXb6s76QRSbxJENB5Uy0I
+  default_config_hash: p9JiSsEAYPkRZhNky8ssHIcyQH9W8TbAb5lsH-SrLeM
 id: group.public_group.teaser
 targetEntityType: group
 bundle: public_group
@@ -64,4 +64,5 @@ hidden:
   created: true
   field_group_address: true
   langcode: true
+  search_api_excerpt: true
   uid: true

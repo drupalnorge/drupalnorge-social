@@ -16,7 +16,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: fvnV1FD8J0vpiQ30A86PeeMlepyrELqZ_fvPC7SZc10
+  default_config_hash: 9sTjSemSHaUnHQeBsGy479G03O1t-_i_tHF7IHFPEO0
 id: node.page.teaser
 targetEntityType: node
 bundle: page
@@ -55,3 +55,4 @@ hidden:
   groups_type_open_group: true
   groups_type_public_group: true
   langcode: true
+  search_api_excerpt: true
