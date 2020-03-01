@@ -171,7 +171,7 @@
             "version": "v3.5.17",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mbostock-bower/d3-bower.git",
+                "url": "git@github.com:mbostock-bower/d3-bower.git",
                 "reference": "7a826d211d5067867debf9ce24a9987e0cb02b6e"
             },
             "dist": {
@@ -222,7 +222,7 @@
             "version": "3.4.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
+                "url": "https://github.com/jquery/jquery-dist.git",
                 "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
             },
             "dist": {
@@ -296,12 +296,12 @@
             "version": "4.0.13",
             "source": {
                 "type": "git",
-                "url": "https://github.com/select2/select2.git",
+                "url": "git@github.com:ivaynberg/select2.git",
                 "reference": "45f2b83ceed5231afa7b3d5b12b58ad335edd82e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/select2/select2/zipball/45f2b83ceed5231afa7b3d5b12b58ad335edd82e",
+                "url": "https://api.github.com/repos/ivaynberg/select2/zipball/45f2b83ceed5231afa7b3d5b12b58ad335edd82e",
                 "reference": "45f2b83ceed5231afa7b3d5b12b58ad335edd82e"
             },
             "type": "bower-asset",
@@ -557,16 +557,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.7.0",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "141b272484481432cda342727a427dc1e206bfa0"
+                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/141b272484481432cda342727a427dc1e206bfa0",
-                "reference": "141b272484481432cda342727a427dc1e206bfa0",
+                "url": "https://api.github.com/repos/composer/installers/zipball/7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
+                "reference": "7d610d50aae61ae7ed6675e58efeabdf279bb5e3",
                 "shasum": ""
             },
             "require": {
@@ -614,6 +614,7 @@
                 "Kanboard",
                 "Lan Management System",
                 "MODX Evo",
+                "MantisBT",
                 "Mautic",
                 "Maya",
                 "OXID",
@@ -668,6 +669,7 @@
                 "shopware",
                 "silverstripe",
                 "sydes",
+                "sylius",
                 "symfony",
                 "typo3",
                 "wordpress",
@@ -675,7 +677,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2019-08-12T15:00:31+00:00"
+            "time": "2020-02-07T10:39:20+00:00"
         },
         {
             "name": "composer/semver",
