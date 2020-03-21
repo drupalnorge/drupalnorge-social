@@ -9,7 +9,7 @@
         "composer/installers": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "^1.0",
-        "goalgorilla/open_social": "7.3",
+        "goalgorilla/open_social": "7.5.0",
         "drupal/coffee": "1.x-dev",
         "drupal/sparkpost": "2.0-rc1",
         "drupal/reroute_email": "^1.0",
