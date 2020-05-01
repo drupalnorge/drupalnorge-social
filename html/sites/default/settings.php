@@ -755,22 +755,14 @@ $config_directories['sync'] = '../config';
  * Keep this code block at the end of this file to take full effect.
  */
 #
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
+
+// Automatically generated include for settings managed by ddev.
+if (file_exists($app_root . '/' . $site_path . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 'true') {
+  include $app_root . '/' . $site_path . '/settings.ddev.php';
 }
 
-if (getenv('LANDO_INFO')) {
-  $lando_info = json_decode(getenv('LANDO_INFO'), TRUE);
-  $databases['default']['default'] = [
-    'driver' => 'mysql',
-    'database' => $lando_info['database']['creds']['database'],
-    'username' => $lando_info['database']['creds']['user'],
-    'password' => $lando_info['database']['creds']['password'],
-    'host' => $lando_info['database']['internal_connection']['host'],
-    'port' => $lando_info['database']['internal_connection']['port'],
-  ];
-
-  $settings['hash_salt'] = md5(getenv('LANDO_HOST_IP'));
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
 }
 
 $settings['install_profile'] = 'social';
