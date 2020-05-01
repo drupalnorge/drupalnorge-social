@@ -18,30 +18,21 @@ If you want a database dump, here is one: [https://drupalnorge.no/sanitized.db](
 3. Install drupal. You can do this however you want. One way is to use drush: `drush site-install --db-url=mysql://USER:PASS@HOST/DATABASE`
 
 
+### b) Using *DDEV* as a development environment
 
-### b) Using *Lando* as a development environment
+We have a ready configuration file for _[DDEV development environment](https://ddev.readthedocs.io)_ for you. However, you can modify the DDEV-configuration on `.ddev/.config.yaml`-file.
 
-We have a ready configuration file for _[Lando development environment](https://docs.devwithlando.io)_ for you. However, you can change the configuration `.lando.yml`-file you want.
+```bash
+git clone git@github.com:drupalnorge/drupalnorge-social.git dnorge
+cd dnorge
+ddev auth ssh && ddev start && ddev composer install
+```
 
-1. Clone this repository. For example with: `git clone git@github.com:drupalnorge/drupalnorge-social.git`
+# Copy database or files from the production environment.
+- Database: `drush sql-sync @prod @self -y` or use the sanitized database above. 
+- Files: `drush rsync @prod:%files @self:%files -y`
 
-2. `cd` into the repository root and start the development environment by `lando start`.
-_(NOTE: The configuration file has already included a step automatic such as `composer install` right after starting the development environment)_
-
-3. Install drupal. You can do this however you want. One way is to use drush: `lando drush site-install --db-url=mysql://USER:PASS@HOST/DATABASE`
-
-
-
-### c) Using *DDEV* as a development environment
-
-We have a ready configuration file for _[DDEV development environment](https://ddev.readthedocs.io)_ for you. However, you can change the configuration `.ddev/.config.yaml`-file you want.
-
-1. Clone this repository. For example with: `git clone git@github.com:drupalnorge/drupalnorge-social.git`
-
-2. `cd` into the repository root and start the development environment by `ddev start`.
-_(NOTE: The configuration file has already included a step automatic such as `composer install` right after starting the development environment)_
-
-3. Install drupal. You can do this however you want. One way is to use drush: `ddev exec drush site-install --db-url=mysql://USER:PASS@HOST/DATABASE`
+Or you can spin up as a new one by Drush: `ddev drush site-install -y`
 
 ## Upgrading open social
 
