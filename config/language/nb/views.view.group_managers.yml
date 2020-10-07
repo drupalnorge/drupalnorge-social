@@ -1,15 +1,15 @@
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Bruk
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       arguments:
         gid:
           exception:
-            title: Alle
+            title: All

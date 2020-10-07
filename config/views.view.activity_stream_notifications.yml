@@ -1,5 +1,5 @@
 uuid: 160c5fef-f83e-4ec7-9735-0e6501f3c274
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -12,7 +12,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: ttxaKuxOXNBOVRhBP19lSnXWA1LFxjYkmqqlkNX6mWE
+  default_config_hash: M-o2wxGWCStFnJRxyAXkfodg1RG9tYWYIDAekgwAvi4
 id: activity_stream_notifications
 label: 'Activity stream notifications'
 module: views
@@ -20,7 +20,6 @@ description: 'Activity stream notifications on a profile'
 tag: ''
 base_table: activity_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -147,6 +146,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -186,6 +187,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -223,6 +226,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

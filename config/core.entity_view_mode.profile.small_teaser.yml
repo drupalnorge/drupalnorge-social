@@ -1,11 +1,11 @@
 uuid: d164c092-2abe-4468-acfe-cc5ebf0e4056
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - profile
 _core:
-  default_config_hash: 1pGJP3tKJXIdHu3fWL9HU-hTPEXcKpqxsWadT9Wdh8s
+  default_config_hash: Yp6SgqzstA--gDA6fPPSX5wk9oakxwESaj__Ix05QPs
 id: profile.small_teaser
 label: 'Small Teaser'
 targetEntityType: profile

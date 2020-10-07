@@ -1,5 +1,5 @@
 uuid: 5b6d3c74-4561-4b12-878c-d3053c79fc41
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -20,11 +20,11 @@ third_party_settings:
     activity_destinations:
       notifications: notifications
       email: email
-    activity_create_direct: 0
-    activity_aggregate: 0
+    activity_create_direct: false
+    activity_aggregate: false
     activity_entity_condition: ''
 _core:
-  default_config_hash: HJQPSAtPJVu2yXl_X1EKoBuGoEohBpgyY9B-qH4S_oM
+  default_config_hash: zRkw-huT2WCpKopvlBjpzpDJRjCQyAyRzMTohKAJbA0
 template: create_content_in_joined_group
 label: 'Create a post, topic or event in a joined group'
 description: 'A person created a post, event or topic in a group I joined'

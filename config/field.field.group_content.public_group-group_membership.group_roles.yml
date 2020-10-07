@@ -1,12 +1,12 @@
 uuid: b16eeaf0-bc01-44c6-be18-e6e14a13578c
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - field.storage.group_content.group_roles
     - group.content_type.public_group-group_membership
 _core:
-  default_config_hash: rohsVmlG9rS-yMNboNOkLmPNsPMl8NmWNDFHzEmSCUg
+  default_config_hash: LCEyUolRPHiGGbWl_x0YugubwCGW_NMtDsbs4_Kum-s
 id: group_content.public_group-group_membership.group_roles
 field_name: group_roles
 entity_type: group_content

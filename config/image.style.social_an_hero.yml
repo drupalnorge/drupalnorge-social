@@ -1,5 +1,5 @@
 uuid: 988a13cb-3d9f-47b1-af3b-b918ffe1b2dd
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
     - crop
     - image_effects
 _core:
-  default_config_hash: x6JAV-s7L13C_dpDjAiZCXcPWzq6W2G8mgnTIFjqDRk
+  default_config_hash: UI05B-pUvbZVhhT4wdEN6Y2MMIbGidnPcWnaXjauNe8
 name: social_an_hero
 label: 'social an hero image (1200 x 490)'
 effects:

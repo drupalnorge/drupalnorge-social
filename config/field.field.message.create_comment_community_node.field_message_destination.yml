@@ -1,5 +1,5 @@
 uuid: e49db452-adb0-4532-9c81-cc45c896ce4f
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: NPpXuuhlOUCVQ62aG8hZ_zoOreetRZrtxlUy7a-Mjq8
+  default_config_hash: gPsiq0ZAvgcVBMqRrW5m_RDduZnAaHUPlIs9_vWE-bQ
 id: message.create_comment_community_node.field_message_destination
 field_name: field_message_destination
 entity_type: message

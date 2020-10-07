@@ -1,5 +1,5 @@
 uuid: ec13eda2-f106-46d4-a3a4-d110704f8daa
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: 8nYM-KRF7ztUhF8jlTySNZtcnN4sABUWGVfH_UlA0kc
+  default_config_hash: AUPKuzDpFChXT26KwSTjCkfbayqb_oZa5vdMs6dSzKQ
 id: group.public_group.field_group_image
 field_name: field_group_image
 entity_type: group

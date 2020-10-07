@@ -1,5 +1,5 @@
 uuid: a6bf77e5-ea4e-4e7d-ab69-d437324e0e4f
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -14,7 +14,7 @@ dependencies:
     - address
     - image
 _core:
-  default_config_hash: zno14GBDQfRxTONPPd-BEf91KcbNba23a1XpOdpIfJQ
+  default_config_hash: CqPvhIsKHqHRv1uIMAKGIMAnMBBJAOFBjvZogbHBU6A
 id: group.closed_group.teaser
 targetEntityType: group
 bundle: closed_group

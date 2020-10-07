@@ -1,11 +1,11 @@
 uuid: c0b605a1-4184-40a1-8340-439cab433490
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - profile
 _core:
-  default_config_hash: JH3nv505iN4UqNbGtEugpWqpm3_rIery4SKKuY7m70w
+  default_config_hash: dID3i90is7-PBvN7KYMyvwD0ZiD-XPDSdrsEjNyRPI4
 id: profile.autocomplete_item
 label: 'Autocomplete Item'
 targetEntityType: profile

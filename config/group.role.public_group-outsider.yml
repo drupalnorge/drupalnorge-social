@@ -1,11 +1,11 @@
 uuid: 79dddb2b-6f05-4f58-8d63-b13fe8d07e1c
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - group.type.public_group
 _core:
-  default_config_hash: EKNx2oP4Q3v4ILh08JN3oLLv0LaYwGeko0WKDBM1R7U
+  default_config_hash: 2ihsuaETq8qmdwVNBlUMHGFf_SVU88f_YMR9ori-ox4
 id: public_group-outsider
 label: Outsider
 weight: -101

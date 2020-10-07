@@ -1,5 +1,5 @@
 uuid: 36eaf707-098b-4804-9a16-b639652afe50
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -7,7 +7,7 @@ dependencies:
     - profile.type.profile
     - taxonomy.vocabulary.expertise
 _core:
-  default_config_hash: 6rQZDIIzqv6dn5rfNV1R_uVO1uSISsC5Bb33ZX7WHfg
+  default_config_hash: '-BH2Gv2uSUuEjAJIOhm_8dAGWLl_d0JApm5Oq-5cTMQ'
 id: profile.profile.field_profile_expertise
 field_name: field_profile_expertise
 entity_type: profile

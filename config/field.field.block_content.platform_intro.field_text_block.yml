@@ -1,5 +1,5 @@
 uuid: 13c6676b-cd14-4988-987a-dc95ffa29271
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: 2M4dO9Gms17T3Nnnum_SDoxy3-PK1rORGcU9yA_AoR8
+  default_config_hash: NR7OMmKFixR-JQzKp1Bj7dEF7T2ycI8AOsM10p7w6lc
 id: block_content.platform_intro.field_text_block
 field_name: field_text_block
 entity_type: block_content

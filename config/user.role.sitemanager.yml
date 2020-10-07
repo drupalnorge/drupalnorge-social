@@ -1,5 +1,5 @@
 uuid: dc451326-6f51-4efb-b430-fa4b401fdbc1
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 id: sitemanager
@@ -12,6 +12,7 @@ permissions:
   - 'access content'
   - 'access content overview'
   - 'access content search'
+  - 'access contextual links'
   - 'access font overview'
   - 'access group overview'
   - 'access group search'
@@ -29,7 +30,9 @@ permissions:
   - 'add or remove like votes on post_comment of comment'
   - 'add or remove like votes on topic of node'
   - 'add own profile profile'
+  - 'add photo post entities'
   - 'add post entities'
+  - 'add post post entities'
   - 'administer account settings'
   - 'administer blocks'
   - 'administer comments'
@@ -48,6 +51,8 @@ permissions:
   - 'administer themes'
   - 'administer users'
   - 'administer visibility settings'
+  - 'assign contentmanager role'
+  - 'assign sitemanager role'
   - 'block users'
   - 'cancel account'
   - 'change own username'
@@ -136,6 +141,7 @@ permissions:
   - 'use text format simple_text'
   - 'view all revisions'
   - 'view any profile profile'
+  - 'view blocked user'
   - 'view community posts'
   - 'view event revisions'
   - 'view events on my profile'
@@ -159,6 +165,7 @@ permissions:
   - 'view own unpublished content'
   - 'view page revisions'
   - 'view profile email'
+  - 'view profile language'
   - 'view public posts'
   - 'view published font entities'
   - 'view published post entities'

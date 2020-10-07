@@ -1,12 +1,12 @@
 uuid: 5c8b1ebd-a004-4b7b-9f71-6e4b0d9b1a10
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - field.storage.group.field_group_location
     - group.type.public_group
 _core:
-  default_config_hash: cBgTQg7_F-v-hpcwm3Yeh_Us6hv8q4MDs1aBcy22iMs
+  default_config_hash: dRb-QbLtV2mIpPctoMJ6QlLbNUjZ4Cnu_1qdwA6_NT4
 id: group.public_group.field_group_location
 field_name: field_group_location
 entity_type: group

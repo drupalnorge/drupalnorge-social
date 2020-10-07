@@ -1,5 +1,5 @@
 uuid: eefed9ed-9131-43fa-ac91-7c610816d589
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -22,7 +22,7 @@ dependencies:
     - image
     - user
 _core:
-  default_config_hash: jcpmEHirVr2G2agWjRgug3ZLvc69HVBRWCBeYWqHdX8
+  default_config_hash: GrxBdGQqONL883C-2VMKy3cm7ewBpA2VHe1UHcF_TLA
 id: node.event.hero
 targetEntityType: node
 bundle: event
@@ -77,6 +77,11 @@ content:
     third_party_settings: {  }
   like_and_dislike:
     weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }

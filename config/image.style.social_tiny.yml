@@ -1,11 +1,11 @@
 uuid: d0d6c91d-4ef5-4b3b-98cb-cddc6ad984a1
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - image_effects
 _core:
-  default_config_hash: H0KZbkHErovOlL5g4WyfsMaBiGeQoXKJ5xt17zJ9fYc
+  default_config_hash: 7FcTkxvtdAIUb5zmj_WN12WJfmZoVhMjsEMd7prLsFs
 name: social_tiny
 label: 'social tiny (16 x 16)'
 effects:

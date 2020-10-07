@@ -1,5 +1,5 @@
 uuid: 2323c711-cd4c-4f4a-bdea-8acbf4fd4d30
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -22,8 +22,9 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: content
 _core:
-  default_config_hash: 8TUFmFkJcvfyHRGY8yfnwsKNbxxgLXHZM021Bc1Rs30
+  default_config_hash: mKGN78KqxaGzS-rQVTi-mAbP9SPnELXjv_P8k--1HcQ
 id: block_content.platform_intro.default
 targetEntityType: block_content
 bundle: platform_intro

@@ -1,27 +1,29 @@
-label: Aktivitetsstrøm
+label: 'Activity Stream'
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Bruk
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
             previous: ‹‹
             next: ››
           expose:
-            items_per_page_label: 'Elementer per side'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskyving
-      title: Strøm
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      title: Stream
   page_activity_stream:
-    display_title: Side
+    display_title: Page
   page_explore:
+    display_title: Explore
     display_options:
-      title: 'Se aktivitet'
+      display_description: 'Explore page for LU'
+      title: 'Explore Stream'

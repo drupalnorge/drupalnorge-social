@@ -1,5 +1,5 @@
 uuid: ca9c0c3b-3e43-40ad-bcd8-82120dfe51de
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -30,7 +30,7 @@ tips:
   search-api-server-backend:
     id: search-api-server-backend
     plugin: text
-    label: 'Backend class'
+    label: Baksideklasse
     body: 'The backend plugin used for this server. The backend plugin determines how items are indexed and searched – for example, using the database or an Apache Solr server.'
     weight: 3
     attributes:

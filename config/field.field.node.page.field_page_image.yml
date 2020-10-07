@@ -1,5 +1,5 @@
 uuid: 150fe89a-538d-4a0e-9f02-7a28b61d5ba1
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: U8I1NkTJdcp2XhHbBStFMbuSw94jfetwCVz_GnKEZQQ
+  default_config_hash: qzstvdhQFyliKu4a4N_tlYXuPf5d-dhOyZ7WNje5bUM
 id: node.page.field_page_image
 field_name: field_page_image
 entity_type: node

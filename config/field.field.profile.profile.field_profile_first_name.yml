@@ -1,12 +1,12 @@
 uuid: 0363e293-81a3-4740-be15-0f126aff462a
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - field.storage.profile.field_profile_first_name
     - profile.type.profile
 _core:
-  default_config_hash: AJUjf-s01_Y0pXAPGUHoSxHIQop4_nSV4suqed6qRAg
+  default_config_hash: dDdqb6bA9hos0PUC7W7yKjA2sgjQM8wWPRbKno15n-M
 id: profile.profile.field_profile_first_name
 field_name: field_profile_first_name
 entity_type: profile

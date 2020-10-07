@@ -1,5 +1,5 @@
 uuid: f5688a84-2fff-4088-9f68-67b4f6a1e5e4
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - socialblue
 _core:
-  default_config_hash: 7gOwRKXY4A_b3Z2j-rC_uWgsGUJpsTFuB-wArf8T5as
+  default_config_hash: cIw0QpIkqJFn-1MCa-1Zjc9eKr1-uRr7mLS91_-wVU8
 id: socialblue_local_actions
 theme: socialblue
 region: complementary_top
@@ -22,6 +22,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/admin/reports/*\r\n/group/*/membership\r\n/node/*/all-enrollments"
+    pages: "/admin/reports/*\r\n/group/*/membership\r\n/group/*/join\r\n/group/*/leave\r\n/group/*/delete\r\n/group/*/content/*\r\n/node/*/all-enrollments\r\n/node/*/delete\r\n/user/*/edit"
     negate: true
     context_mapping: {  }

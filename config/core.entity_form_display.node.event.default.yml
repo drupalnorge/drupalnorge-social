@@ -1,5 +1,5 @@
 uuid: ca17917d-c898-4a08-9aa5-d0898b998ff2
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -23,6 +23,7 @@ dependencies:
     - file
     - image_widget_crop
     - path
+    - social_group
     - text
 third_party_settings:
   field_group:
@@ -39,6 +40,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: content
     group_date_time:
       children:
         - field_event_date
@@ -52,6 +54,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: content
     group_location:
       children:
         - field_event_location
@@ -65,6 +68,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: content
     group_description:
       children:
         - body
@@ -77,6 +81,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: content
     group_event_visibility:
       children:
         - groups
@@ -90,6 +95,7 @@ third_party_settings:
         required_fields: true
         id: visibility
         classes: 'card '
+      region: content
     group_attachments:
       children:
         - field_files
@@ -102,6 +108,7 @@ third_party_settings:
         required_fields: true
         id: attachments
         classes: card
+      region: content
     group_enrollment:
       children:
         - field_event_enroll
@@ -114,8 +121,9 @@ third_party_settings:
         required_fields: true
         id: enrollment
         classes: card
+      region: content
 _core:
-  default_config_hash: qKBzdABwV4xgosxvvpPa9VD-XmjoctFRVihQvmMs2a4
+  default_config_hash: Q96etTO0MCux6qGbqUd3feJnCmtYC1HDhCqeXL58ouA
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -128,6 +136,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -205,7 +214,7 @@ content:
     type: file_generic
     region: content
   groups:
-    type: options_select
+    type: social_group_selector_widget
     settings: {  }
     weight: 16
     region: content
@@ -259,6 +268,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
 hidden: {  }

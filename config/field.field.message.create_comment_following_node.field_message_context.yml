@@ -1,5 +1,5 @@
 uuid: a07ffb04-1092-46a8-a272-dfa0a8eb4b3a
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: Piuz2n5ougkqE7XjHlgbG-Mp_hpR_uV1i8c7_FaNI88
+  default_config_hash: 9B9QrxBSGBdA_Yik6Tt-L6-5SnqI0NnIiJT8koWkids
 id: message.create_comment_following_node.field_message_context
 field_name: field_message_context
 entity_type: message

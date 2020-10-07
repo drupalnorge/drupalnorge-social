@@ -1,5 +1,5 @@
 uuid: bc08112e-3199-4433-b4a2-a8217bdaee2b
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -17,7 +17,7 @@ third_party_settings:
     activity_aggregate: false
     activity_entity_condition: comment_reply
 _core:
-  default_config_hash: x362ycPU3LkbbzQjL1AYFA4vHeyupoa9d5hjmfUjZjA
+  default_config_hash: K0cI0i8tgWblToQufwk4fZJhe_VTfOGCasFfwiIymdU
 template: create_comment_reply
 label: 'Create reply on my comment'
 description: 'A person replied on my comments'

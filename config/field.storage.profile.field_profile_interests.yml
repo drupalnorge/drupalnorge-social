@@ -1,12 +1,12 @@
 uuid: 0a350a79-9c2e-49b8-afbd-7019aaefbcc6
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - profile
     - taxonomy
 _core:
-  default_config_hash: _dW0wlwL1YwfblcR4pQeVLiJzix15duG4bBA1P0IW2w
+  default_config_hash: kwI8ge0kFptY7Z07D7V00SKLOmoBAK0SaQwyP9bXctg
 id: profile.field_profile_interests
 field_name: field_profile_interests
 entity_type: profile

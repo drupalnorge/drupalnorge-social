@@ -1,9 +1,9 @@
 uuid: 0e274b6e-2056-44a0-8406-f47d97d97451
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: Uk_6UORiObPWyRN59-gp0zB8x7xIBXd3az6L65RXeGE
+  default_config_hash: zTX0b046Qkhpu_DAqU9ie1CocNfgA-0OnxP3Nt04jXs
 id: open_group
 label: 'Open group'
 description: 'This is an open group. Users may join without approval and all content added in this group will be visible to all community members.'

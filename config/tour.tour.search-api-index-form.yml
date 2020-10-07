@@ -1,5 +1,5 @@
 uuid: c9afd97f-edf5-45f6-b0bb-568ef1824f75
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: TK3PjpP4I6WFh5JDY_L_c5XCiTyAZBBA9z0M9pcGjzo
 id: search-api-index-form
-label: 'Add or edit a Search API index'
+label: 'Legg til eller rediger en indeks for søkebibliotek'
 module: search_api
 routes:
   -
@@ -18,7 +18,7 @@ tips:
   search-api-index-form-introduction:
     id: search-api-index-form-introduction
     plugin: text
-    label: 'Adding or editing an index'
+    label: 'Legger til eller redigerer en indkes'
     body: 'This form can be used to edit an existing index or add a new index to your site. Indexes define a set of data that will be indexed and can then be searched.'
     weight: 1
   search-api-index-form-name:

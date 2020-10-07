@@ -1,5 +1,5 @@
 uuid: 14805a30-3f3d-4e25-8080-264f00464665
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: xDNbbtwO2Cx6YOYqQTNvJ62wm1DB2NC8k7u9k2ZMpYU
+  default_config_hash: ulSoYUneBYrFubWX-bGGHEW8Mesgyd0xQ0420F1qV1w
 id: group.closed_group.field_group_description
 field_name: field_group_description
 entity_type: group

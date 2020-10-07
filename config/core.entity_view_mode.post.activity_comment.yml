@@ -1,11 +1,11 @@
 uuid: 53accfd7-86e3-420b-ae76-75a139cd79ac
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - social_post
 _core:
-  default_config_hash: cCy_sVSMi5Y7Emunx-Us8Qb9yzlw-GSrnkpW8LRWoD8
+  default_config_hash: QzM-mCb1ox5EHw2RYZv99M2JujHU4_B_8MCXPRn2Dcg
 id: post.activity_comment
 label: 'Activity comment'
 targetEntityType: post

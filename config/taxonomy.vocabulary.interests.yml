@@ -1,9 +1,9 @@
 uuid: c414f752-e33c-41b5-90c4-4e5e4af94705
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 0oDKR41_MvDHVtKzJwxUv877N6E6vHBi5_yCMu7Vo8s
+  default_config_hash: cj8s-Y9rbdZsFoEu8E_Oz9SZWtNZsDh1XFLgFeZXuMg
 name: Interests
 vid: interests
 description: 'A users interests for their profile.'

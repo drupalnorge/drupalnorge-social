@@ -1,5 +1,5 @@
 uuid: 86ff9784-aea6-4a65-b160-73a1fbe5ea99
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -7,7 +7,7 @@ dependencies:
     - profile.type.profile
     - taxonomy.vocabulary.interests
 _core:
-  default_config_hash: 3lITbyDH8RJ0nmopxGSVhcW4u3Nd2WGIqbcj5xyZ2gg
+  default_config_hash: xbA9zUH--ckZQBMsENiLW0KhCihkRhxmn_2VilhO_hc
 id: profile.profile.field_profile_interests
 field_name: field_profile_interests
 entity_type: profile

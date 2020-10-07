@@ -1,11 +1,11 @@
 uuid: acb751bc-c560-4305-bf72-b12309be2e82
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - group.type.closed_group
 _core:
-  default_config_hash: NYhZOTXP27ZKkLdCk5Af5GMrgbuqIjeQu1fJuZdhI1s
+  default_config_hash: L-VvSC-v7iZlLB70aBs2GBr2GAoZYHOywbewyWcPof8
 id: closed_group-member
 label: Member
 weight: -100

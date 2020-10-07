@@ -1,12 +1,12 @@
 uuid: e0807112-4afe-402a-ad9f-ca1e1f0d4d9e
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - dropdown
     - social_post
 _core:
-  default_config_hash: 9IChKT1xRW3I7-oWdWMhAXoRYjpyJzG7PIVhkHaOlzU
+  default_config_hash: uIt1hEpE1gFewNJcEPN3ikV98Gg_IZetHB2SVd3_LE4
 id: post.field_visibility
 field_name: field_visibility
 entity_type: post

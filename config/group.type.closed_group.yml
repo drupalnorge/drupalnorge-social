@@ -1,9 +1,9 @@
 uuid: 80f9d087-2954-492f-804d-bacaa0972e1e
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: xroGCpvSEB-Z8oEpr64RsyjOZ2T4BnXvgTpvgo_O5DY
+  default_config_hash: 4WFYwmcnzOEXNkvgunZkvjXnjR6_JxH7iuvQB0horNs
 id: closed_group
 label: 'Closed group'
 description: 'This is a closed group. Users can only join by invitation and the content in the group is hidden from non members.'

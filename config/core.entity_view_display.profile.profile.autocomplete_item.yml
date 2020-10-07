@@ -1,5 +1,5 @@
 uuid: acf1ef0c-9ccb-45e5-b40f-d4386523113b
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -25,7 +25,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: oNo6GVuWY51XV_kPfrCRA1KeS3kXk962ToYNhRSLY6Y
+  default_config_hash: FQ6fJkO4JAO07QJHRlvlxaN6tEFjVJ4bpmYACS0C3WY
 id: profile.profile.autocomplete_item
 targetEntityType: profile
 bundle: profile

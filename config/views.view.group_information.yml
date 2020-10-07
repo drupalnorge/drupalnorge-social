@@ -1,11 +1,11 @@
 uuid: e27fa5bf-d836-43b6-a75a-2d7cd80076f3
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - group
 _core:
-  default_config_hash: q8BMTefPMCErqS5j7G979LlY7p_6EvQeBHiSR7cooWY
+  default_config_hash: ibwsThar3S0ItnR3r1fZVk4-fIjavLDZNIjPMyxawOg
 id: group_information
 label: 'Group Information'
 module: views
@@ -13,7 +13,6 @@ description: ''
 tag: ''
 base_table: groups_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -169,10 +168,11 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - user.group_permissions
         - 'languages:language_content'
         - 'languages:language_interface'
+        - route.group
         - url
+        - user.group_permissions
       tags: {  }
   page_group_about:
     display_plugin: page
@@ -185,8 +185,9 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - user.group_permissions
         - 'languages:language_content'
         - 'languages:language_interface'
+        - route.group
         - url
+        - user.group_permissions
       tags: {  }

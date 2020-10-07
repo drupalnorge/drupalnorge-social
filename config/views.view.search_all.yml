@@ -1,5 +1,5 @@
 uuid: 580b3f55-066d-4fe1-8887-dd46d2c92fe0
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -7,7 +7,7 @@ dependencies:
   module:
     - search_api
 _core:
-  default_config_hash: M4Tk3dGtX7YSFAk0rzvxZy5zc0sL_8X44RcnCdrn1SA
+  default_config_hash: oUUjUMm1qmVwbQzMg-o18IxH0dDQl45_KEV6dvnOKs0
 id: search_all
 label: 'Search All'
 module: views
@@ -15,7 +15,6 @@ description: ''
 tag: ''
 base_table: search_api_index_social_all
 base_field: search_api_id
-core: 8.x
 display:
   default:
     display_plugin: default

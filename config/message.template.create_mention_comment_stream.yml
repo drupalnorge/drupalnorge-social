@@ -1,5 +1,5 @@
 uuid: a582bcb9-3df7-42fa-9440-0db8dd455205
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -12,11 +12,11 @@ third_party_settings:
     activity_context: mention_activity_context
     activity_destinations:
       stream_profile: stream_profile
-    activity_create_direct: 1
-    activity_aggregate: 0
+    activity_create_direct: true
+    activity_aggregate: false
     activity_entity_condition: mention_comment
 _core:
-  default_config_hash: 9hCeIXvZlJrHgwBEsHzlSrMEtrVty8m0xSywwuAOAHI
+  default_config_hash: e9ySGUwNAUGgzw1TUY_26COAaAcxyFrTJvMaM9nYdOw
 template: create_mention_comment_stream
 label: 'Create mention in a comment (stream: profile)'
 description: 'A person mentioned me in a comment (stream: profile)'

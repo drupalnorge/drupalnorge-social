@@ -1,11 +1,11 @@
 uuid: 3cbd47d2-cfb0-47d3-8973-56b3d5e29686
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - group
 _core:
-  default_config_hash: IVSyQ6fjaMOZdEEqizw220YWT0vtcXW_LOgOP6a2Ies
+  default_config_hash: eeQkNvfZA_Z_-u0FGgraDMevKdfjXyT3llx5ZepARiE
 id: group.small_teaser
 label: 'Small teaser'
 targetEntityType: group

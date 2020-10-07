@@ -1,2 +1,3 @@
-label: Følg
-flag_short: Følg
+label: 'Follow content'
+flag_short: 'Follow content'
+unflag_short: 'Unfollow content'

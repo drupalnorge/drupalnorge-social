@@ -1,5 +1,5 @@
 uuid: d81b1842-e64b-4c2f-a3df-26978f5857a8
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -15,11 +15,11 @@ third_party_settings:
     activity_destinations:
       notifications: notifications
       email: email
-    activity_create_direct: 0
-    activity_aggregate: 0
+    activity_create_direct: false
+    activity_aggregate: false
     activity_entity_condition: ''
 _core:
-  default_config_hash: Ec3_5IyNhcMOlY0h_xEJ5CtGv-XWJoRcdEVpnzgtUU4
+  default_config_hash: OvXrZwb01RJEPwsy3e2YTu00zv4jLO7MdwBS5g7VuYI
 template: join_to_group
 label: 'Join to group'
 description: 'A person joins a group I am managing'

@@ -1,5 +1,5 @@
 uuid: 60f3c1c9-89ac-425a-967e-919b74dbf141
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
     config:
       - user.role.administrator
 _core:
-  default_config_hash: RPwoMLing5lOczeeNe2fQvsJo2_iLYF6R1EkXOJBItc
+  default_config_hash: zmsA9mFIWaoCWfQYWeresXMzM-4-N_HY9GW3qm7u2ZA
 id: closed_group-a416e6833
 label: Administrator
 weight: 2

@@ -1,9 +1,9 @@
 uuid: 26a56004-fe07-4f9d-825e-17a54ce8c17e
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: vyCdkkefvOpkZ7JeB2BoNPPPIT2tyd8DmKJI-Zc0bro
+  default_config_hash: mYXaobSn0HnXzQgZvKfwbpCuXiE2Pdg4xkOSuf0Hpw4
 label: Small
 id: teaser
 description: 'Teaser image in overviews'

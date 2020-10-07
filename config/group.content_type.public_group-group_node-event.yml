@@ -1,5 +1,5 @@
 uuid: f73ddcdc-b187-4a82-97be-1afc10057004
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -9,7 +9,7 @@ dependencies:
     - gnode
     - node
 _core:
-  default_config_hash: DB32pK5lspppyPygfjvqIGia8rzGF0kI-YxAHcRKMVg
+  default_config_hash: 3GjJeyjU7xOOmkaI7IWKuhyIPh7jg_iFaupXFirY5Hs
 id: public_group-group_node-event
 label: event
 description: 'Adds <em class="placeholder">Event</em> content to groups both publicly and privately.'

@@ -1,12 +1,12 @@
 uuid: bb9eccf8-ee3c-4e62-afc2-36a1077989b7
-langcode: en
+langcode: nb
 status: true
 dependencies:
   enforced:
     module:
       - like_and_dislike
 _core:
-  default_config_hash: 1lOXAbn1o0s2sOuDOLUXr-ipWaZrxsGq8GiJfxHN8Mg
+  default_config_hash: t-2hQleHC6E274OBNGFY7kjmq1LNW3VCYpj7htcgidc
 id: like
 label: 'Like vote'
 value_type: points

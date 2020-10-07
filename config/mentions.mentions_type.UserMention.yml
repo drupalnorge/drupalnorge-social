@@ -1,16 +1,16 @@
 uuid: 04c37c10-da99-4515-b28e-239806a41f1d
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: NB-WRkiPnJMofk3ncSOZzU9fH3bKeypiMghNwymeVuw
+  default_config_hash: IhPVX3OijP4FXbN9OPUM8CIvbm4PRzN7QjXFHdmCHss
 id: UserMention
 name: UserMention
 description: 'User mentions'
 mention_type: entity
 input:
-  prefix: '[~'
-  suffix: ']'
+  prefix: '@'
+  suffix: ''
   entity_type: user
   inputvalue: name
 output:

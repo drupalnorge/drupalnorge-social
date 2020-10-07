@@ -1,12 +1,12 @@
 uuid: 8fbf2cbb-e490-4186-af64-8ca7c7442805
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - comment.type.post_comment
     - field.field.comment.post_comment.field_comment_body
 _core:
-  default_config_hash: nnUo3hAW_J-kEuqqWBEFSm2wzQU48NaKnBCGecPtvK0
+  default_config_hash: 2UxokzR_phIGQRgAuNPHZtmipVpKcs20gTIjWmNx0QQ
 id: comment.post_comment.default
 targetEntityType: comment
 bundle: post_comment

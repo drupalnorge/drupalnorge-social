@@ -1,12 +1,12 @@
 uuid: ec5304ca-b61d-46d1-8009-f4debd6e2094
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - field.storage.node.field_event_location
     - node.type.event
 _core:
-  default_config_hash: R7kQhajFTZvuITuttlDeba23FJCn-RaUX5SgRSixO_4
+  default_config_hash: lgyTVvhqH9Bt6Ri23-uWB79R7ogaXWHqkxjsv1v8uH4
 id: node.event.field_event_location
 field_name: field_event_location
 entity_type: node

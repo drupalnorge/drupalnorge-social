@@ -1,0 +1,35 @@
+langcode: nb
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.field.block_content.basic.field_basic_link
+    - field.field.block_content.basic.field_text_block
+  module:
+    - text
+    - link
+id: block_content.basic.default
+targetEntityType: block_content
+bundle: basic
+mode: default
+content:
+  field_basic_link:
+    label: hidden
+    region: content
+    settings:
+      rel: ''
+      target: ''
+      trim_length: 80
+      url_only: false
+      url_plain: false
+    third_party_settings: {  }
+    type: link
+    weight: 1
+  field_text_block:
+    label: hidden
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    weight: 0
+hidden: {  }

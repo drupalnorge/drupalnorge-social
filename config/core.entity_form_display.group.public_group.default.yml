@@ -1,5 +1,5 @@
 uuid: 1301ed1f-7ce5-44b0-a274-fb64cfb414ee
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -31,6 +31,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: content
     group_location:
       children:
         - field_group_location
@@ -44,6 +45,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: content
     group_settings:
       children: {  }
       parent_name: ''
@@ -57,7 +59,7 @@ third_party_settings:
       label: Settings
       region: content
 _core:
-  default_config_hash: jP1xtfSYzLbG5kwQ53MOz2hWETJCNioarzuiECckYkQ
+  default_config_hash: jHk9D2HeN8PO8pzA91TOL8829QgZhRFx3R0YbS91kZY
 id: group.public_group.default
 targetEntityType: group
 bundle: public_group

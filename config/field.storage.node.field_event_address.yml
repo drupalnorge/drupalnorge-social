@@ -1,12 +1,12 @@
 uuid: 75459cc4-019a-4cc9-82c4-e98602dced2f
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - address
     - node
 _core:
-  default_config_hash: Cw4zMPX5baU9ygQFDu_ym2hMezfWv58GV6wdaAjHUXk
+  default_config_hash: tbOgqwROFQJzF0ahYciBO8Ohed12ireryFinZQCg0yk
 id: node.field_event_address
 field_name: field_event_address
 entity_type: node

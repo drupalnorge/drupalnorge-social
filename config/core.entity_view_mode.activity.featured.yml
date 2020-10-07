@@ -1,0 +1,10 @@
+uuid: 12d2b601-eb0d-49b0-add5-08b7ee4153c0
+langcode: nb
+status: true
+dependencies:
+  module:
+    - activity_creator
+id: activity.featured
+label: Fremhevet
+targetEntityType: activity
+cache: true

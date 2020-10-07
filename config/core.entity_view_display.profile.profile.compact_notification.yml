@@ -1,5 +1,5 @@
 uuid: dc867764-bc15-414e-8649-d5838a70f4ec
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -25,7 +25,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: iVNq3S4Ce_YQ5DPG4GOSyEm-BWVHZrLa0GEBpCbCAU4
+  default_config_hash: WV4gkph8wKk_kBqnc0RyPqT-rKIFlLcNpQFCjDCoKB0
 id: profile.profile.compact_notification
 targetEntityType: profile
 bundle: profile

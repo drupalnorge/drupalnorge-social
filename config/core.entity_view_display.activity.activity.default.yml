@@ -1,5 +1,5 @@
 uuid: 11de1013-324d-470f-b931-e131be20b8be
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -15,7 +15,7 @@ dependencies:
     - dynamic_entity_reference
     - text
 _core:
-  default_config_hash: y_2SHS8OAIsFjn4ETtAi29RP1NIAdqZ_xD4ZqZi6ZOY
+  default_config_hash: sRAalEAoK4944DDyniVLkPCmArel-CO216YmoCVAtLo
 id: activity.activity.default
 targetEntityType: activity
 bundle: activity
@@ -25,46 +25,72 @@ content:
     weight: 1
     label: hidden
     settings:
-      comment:
-        view_mode: activity
-      node:
-        view_mode: activity
-      crop:
-        view_mode: default
-      event_enrollment:
-        view_mode: default
-      flagging:
-        view_mode: default
-      group:
-        view_mode: stream
-      message:
-        view_mode: default
       post:
         view_mode: activity
-      search_api_task:
-        view_mode: default
       activity:
         view_mode: default
         link: false
-      block_content:
+      crop:
         view_mode: default
         link: false
-      menu_link_content:
+      user:
+        view_mode: default
+        link: false
+      comment:
+        view_mode: activity
+        link: false
+      node:
+        view_mode: activity
+        link: false
+      block_content:
         view_mode: default
         link: false
       file:
         view_mode: default
         link: false
+      flagging:
+        view_mode: default
+        link: false
+      font:
+        view_mode: default
+        link: false
+      group:
+        view_mode: default
+        link: false
       group_content:
+        view_mode: default
+        link: false
+      mentions:
+        view_mode: default
+        link: false
+      message:
         view_mode: default
         link: false
       profile:
         view_mode: default
         link: false
+      event_enrollment:
+        view_mode: default
+        link: false
+      vote:
+        view_mode: default
+        link: false
+      vote_result:
+        view_mode: default
+        link: false
+      search_api_task:
+        view_mode: default
+        link: false
       taxonomy_term:
         view_mode: default
         link: false
-      user:
+      menu_link_content:
+        view_mode: default
+        link: false
+      queue_storage_entity:
+        view_mode: default
+        link: false
+      path_alias:
         view_mode: default
         link: false
     third_party_settings: {  }

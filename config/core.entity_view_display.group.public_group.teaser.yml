@@ -1,5 +1,5 @@
 uuid: 331410ec-9a89-4742-9bf3-6e2fa505d42b
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -14,7 +14,7 @@ dependencies:
     - address
     - image
 _core:
-  default_config_hash: p9JiSsEAYPkRZhNky8ssHIcyQH9W8TbAb5lsH-SrLeM
+  default_config_hash: v2GTfvlB8RSwGjX-Qga-pagIiIMqUV7iuc8ycA2a37Y
 id: group.public_group.teaser
 targetEntityType: group
 bundle: public_group

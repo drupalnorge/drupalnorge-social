@@ -1,5 +1,5 @@
 uuid: 762f0253-b659-4a1a-9c35-5bc8708a3264
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -12,7 +12,7 @@ dependencies:
     - social_search
     - user
 _core:
-  default_config_hash: 3t4oQs-q-RDi9JCtaFfnkv9PqGB-X0K8kj1U1nELHn0
+  default_config_hash: SC6NdYYihc2V9eiiAPGgm9WcoxTWHmXSJKA5XflPh-8
 id: search_users
 label: 'Search Users'
 module: views
@@ -20,7 +20,6 @@ description: ''
 tag: ''
 base_table: search_api_index_social_users
 base_field: search_api_id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -44,7 +43,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrer
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -163,6 +162,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -208,6 +209,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -255,6 +258,8 @@ display:
               contentmanager: '0'
               sitemanager: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -308,6 +313,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

@@ -1,5 +1,5 @@
 uuid: ddd8370e-2c11-4afd-bf57-153ac9a6b863
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -19,6 +19,7 @@ third_party_settings:
         required_fields: true
         id: ''
         classes: ''
+      region: content
     group_locale_settings:
       children:
         - timezone
@@ -31,8 +32,9 @@ third_party_settings:
         description: ''
         required_fields: true
       label: 'Locale settings'
+      region: content
 _core:
-  default_config_hash: pRQ6ymdA2LS1Ssy6jQIpcFyAkOgrFCOfnW5S1j_knPE
+  default_config_hash: 0nZ2z-1drifgtazQ7sCHMq5tzD4JvQ5oYqoHa0z3koI
 id: user.user.default
 targetEntityType: user
 bundle: user

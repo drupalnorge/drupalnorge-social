@@ -1,0 +1,8 @@
+uuid: b995a856-0d63-4c78-857c-17fdcc76742c
+langcode: nb
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Cf0l0EFMZpWO3yDYlbx2cA5Ug_Y7TkCUjZW0aM0q1jM
+id: email
+label: Email

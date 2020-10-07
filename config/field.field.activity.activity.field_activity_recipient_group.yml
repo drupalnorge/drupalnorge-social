@@ -1,14 +1,13 @@
 uuid: 452fb17e-3a6a-49ff-9efd-24cffc2695bc
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - field.storage.activity.field_activity_recipient_group
-    - group.type.open_group
   module:
     - activity_creator
 _core:
-  default_config_hash: vVYX8_Uu4InegkWtd9PNs_inN5CFXF17EhZoCTcPrgE
+  default_config_hash: GlGXvJdEAy6WuOe6x-V8yYH4YpbOIzoXIDlV7EqPxs8
 id: activity.activity.field_activity_recipient_group
 field_name: field_activity_recipient_group
 entity_type: activity
@@ -22,8 +21,7 @@ default_value_callback: ''
 settings:
   handler: 'default:group'
   handler_settings:
-    target_bundles:
-      open_group: open_group
+    target_bundles: {  }
     sort:
       field: _none
     auto_create: false

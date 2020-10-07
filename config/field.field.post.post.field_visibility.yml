@@ -1,5 +1,5 @@
 uuid: ed961ad5-5d2d-4582-9835-22aecbd8421d
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - dropdown
 _core:
-  default_config_hash: f_3E2Rlb8_M1NISovsA7IV5mWI4PbELyomXNVllV05A
+  default_config_hash: O33YpsHb9tGrtmBQWtoV7DkmL9GizcjRhDtgBpcWp5U
 id: post.post.field_visibility
 field_name: field_visibility
 entity_type: post

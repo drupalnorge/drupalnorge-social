@@ -1,5 +1,5 @@
 uuid: 1c1faa8b-5eb4-47c7-aed3-6300a3075183
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -15,7 +15,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: b44BGhIgbu5CKjG8HZzvz1Ecdls6TA5KaBHBOzRJFso
+  default_config_hash: pXOzM38q19Hls2ftL6zJa9GNZVZsElmbH48ax0HQEtw
 id: post.post.activity
 targetEntityType: post
 bundle: post
@@ -30,7 +30,7 @@ content:
     region: content
   field_post_comments:
     type: comment_post_activity
-    weight: 3
+    weight: 2
     label: hidden
     settings:
       num_comments: '2'
@@ -38,10 +38,10 @@ content:
     third_party_settings: {  }
     region: content
   like_and_dislike:
-    weight: 2
+    weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   user_id:
     label: hidden
     type: author

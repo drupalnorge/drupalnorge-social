@@ -1,8 +1,14 @@
 settings:
   allowed_values:
-    0:
+    -
       label: Community
-    2:
+      description: 'Visible only to members who are logged in'
+    -
+      label: Public
+      description: 'Visible to all visitors of the site'
+    -
       label: Community
-    3:
-      label: Gruppemedlemmer
+      description: 'Visible only to members who are logged in'
+    -
+      label: 'Group members'
+      description: 'Visible only to group members'

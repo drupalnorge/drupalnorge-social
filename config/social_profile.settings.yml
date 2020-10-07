@@ -1,1 +1,3 @@
-social_profile_show_email: 1
+social_profile_show_email: true
+langcode: nb
+social_profile_show_language: true

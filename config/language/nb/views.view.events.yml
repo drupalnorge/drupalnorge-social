@@ -1,58 +1,60 @@
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Filtrer
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Elementer per side'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskyving
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
-            first: '« Første'
-            last: 'Siste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         title:
           separator: ', '
       filters:
         status:
           expose:
-            label: Publiseringsstatus
-      title: 'Hendelser for denne brukeren'
+            label: 'Publish status'
+      title: 'Events for this user'
       empty:
         area_text_custom:
-          content: 'Ingen hendelser funnet for denne brukeren.'
+          content: 'No events found for this user'
   block_events_on_profile:
     display_options:
       filters:
         status:
           expose:
-            label: Publiseringsstatus
-      title: 'Kommende hendelser'
+            label: 'Publish status'
+      title: 'Upcoming events'
   events_overview:
     display_options:
       menu:
-        title: Hendelser
+        title: Events
       tab_options:
-        title: Emner
+        title: Topics
       filters:
         status:
           expose:
-            label: Publiseringsstatus
+            label: 'Publish status'
         field_event_date_value:
           expose:
-            label: Startdato
+            label: 'Start date'
           group_info:
-            label: 'Status for hendelse'
+            label: 'Event status'
             group_items:
               1:
-                title: 'Kommende hendelser'
+                title: 'Upcoming events'
               2:
-                title: 'Hendelser som har startet eller er ferdige'
+                title: 'Events that have started or are finished'

@@ -1,5 +1,5 @@
 uuid: d99220c8-b390-4053-ae1a-206d5ebbc0e9
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: sUX2_dxeeJimo4x6wVqZHLWYx4h84vzdoVGutY77_lc
+  default_config_hash: g1D4y27OouvyZnSMYVpxIiDtco7omtIzOLPaI74gHmY
 id: message.create_comment_group_node.field_message_context
 field_name: field_message_context
 entity_type: message

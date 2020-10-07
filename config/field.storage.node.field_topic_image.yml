@@ -1,5 +1,5 @@
 uuid: 3441c0a2-520b-47e6-9162-35678492cbb2
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
     - image
     - node
 _core:
-  default_config_hash: p-l4-A2XLI2AChXR9bN6T4oZycn-9WMVcbTkwP4PHTo
+  default_config_hash: sXzvmGNBaLqm8_ZHws8jF7mRDrNMZwejdWKjQGdLxlI
 id: node.field_topic_image
 field_name: field_topic_image
 entity_type: node

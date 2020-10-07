@@ -1,5 +1,5 @@
 uuid: e486a62c-7419-4935-b37b-673d5361710e
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: 1fb6Z78K1xvRoc6lIFSEsMZU_nxQY4Qp4e_XM3_WnJw
+  default_config_hash: Hsj-viKK0PGJu5xm-y_-TbyoXMGg5HsR87Xk67ERsSw
 id: post.post.field_post
 field_name: field_post
 entity_type: post

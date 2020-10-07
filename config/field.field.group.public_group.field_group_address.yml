@@ -1,5 +1,5 @@
 uuid: 0f96862b-0fca-404a-88b1-4ba11886e7ac
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - address
 _core:
-  default_config_hash: lbzxes7SH5SUIf50CoWhOpEQMjHU7kuC2HYf_UyBqeo
+  default_config_hash: XbAJ3XMw-KNWDnP110GerWplXF2walwlqfEdKZUxwb8
 id: group.public_group.field_group_address
 field_name: field_group_address
 entity_type: group

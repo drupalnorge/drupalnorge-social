@@ -1,11 +1,11 @@
 uuid: 14428861-b73d-4e0a-90ac-b04ed6cae41e
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - activity_creator
 _core:
-  default_config_hash: g0xG6W1yMrC3-0MmqSGi4TS3cI962yWsynMHyWz0LC0
+  default_config_hash: qpboYfEsLuuwAnAqDB0o_vZJX33mUbr_tUjP-an6q2o
 id: activity.notification_archive
 label: 'Notification archive'
 targetEntityType: activity

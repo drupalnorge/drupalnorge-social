@@ -1,5 +1,5 @@
 uuid: dae1f003-0d3f-4f53-a36b-4a30ae9c9159
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - dynamic_entity_reference
 _core:
-  default_config_hash: iaG_kZr_BA8JPVuTI3oumeBKrJaPet1INbUOQ9xJNko
+  default_config_hash: SZALarOaepE_LW0_RL2XuLJqu9AkH5nPsCTWwnU12gE
 id: message.moved_content_between_groups.field_message_related_object
 field_name: field_message_related_object
 entity_type: message

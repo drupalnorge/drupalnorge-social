@@ -1,12 +1,12 @@
 uuid: 225afbf2-4577-4b99-b238-8f8f8aaa4278
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - address
     - profile
 _core:
-  default_config_hash: l2okytkJohIWmU2T2NmxRzna88wCBVluBofI9VURZ4k
+  default_config_hash: lkQAxO_8YOKXBEYTyolkPpKysoEvlWtqJwllyGjTCBo
 id: profile.field_profile_address
 field_name: field_profile_address
 entity_type: profile

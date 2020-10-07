@@ -1,5 +1,5 @@
 uuid: 189c513c-58ac-4719-90e7-a8ff7887eb11
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -17,7 +17,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: HdMaBP6yLx8r9k6vWAUjts9P4E-7i2AGstV4nmTf6EY
+  default_config_hash: 04NtMjR4-qurYxwI_s6nPsYd-Itjk0nTzjcA0ykdtfI
 id: node.topic.teaser
 targetEntityType: node
 bundle: topic

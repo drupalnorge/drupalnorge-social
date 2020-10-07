@@ -1,12 +1,12 @@
 uuid: d13aa976-e046-405d-860b-b092cbf8a6f6
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - social_event
     - user
 _core:
-  default_config_hash: _aXXBgWq3i2pnCB-pysXTS-g8QpHXnROSx0bhN8nyZw
+  default_config_hash: akSS6UebD6asM4spHBslOjMsxIssqRcMvpKrfsdgmP8
 id: event_enrollment.field_account
 field_name: field_account
 entity_type: event_enrollment

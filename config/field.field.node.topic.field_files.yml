@@ -1,5 +1,5 @@
 uuid: 4c19589b-aadb-499f-bc17-5feb64769d12
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - file
 _core:
-  default_config_hash: gqYN8SEYCh20SklV9WEx7kQt5vlRnNLbDw2Lose7wTY
+  default_config_hash: 60yftPxc_EYt-k1QzKIvG9htqt_yeyC0jKCKOIZ87iQ
 id: node.topic.field_files
 field_name: field_files
 entity_type: node

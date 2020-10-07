@@ -1,12 +1,12 @@
 uuid: f22ce856-9aff-4373-ae23-7e2efaaf9187
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - datetime
     - node
 _core:
-  default_config_hash: Wy89Y-RqThburQ0cZc-SH08AgwXkjSxEba7sBkw1034
+  default_config_hash: s_jwJlhSrrHNbhfJll-UKbJHtMy4UtOTvVRTqtanI48
 id: node.field_event_date
 field_name: field_event_date
 entity_type: node

@@ -1,5 +1,5 @@
 uuid: 9da956f4-929c-47c8-a0d2-9fc9ceb14b7e
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -7,7 +7,7 @@ dependencies:
   module:
     - user
 _core:
-  default_config_hash: 5XmB0TdrQv500vSDploRnCfyrbBrMfB975V9S17CRaQ
+  default_config_hash: q2q1Ylfh4nQOHKbKS9jCKipcNXijytSip0H1DBqyjNE
 id: user.user.register
 targetEntityType: user
 bundle: user

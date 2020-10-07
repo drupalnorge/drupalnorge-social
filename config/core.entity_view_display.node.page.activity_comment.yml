@@ -1,5 +1,5 @@
 uuid: fb43e1d6-519d-4add-8bee-3829226880bd
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -15,7 +15,7 @@ dependencies:
     - image
     - user
 _core:
-  default_config_hash: vNN88EYaSfziM9dykYGOUaM_EzdH6WlkIWmbxwktnJQ
+  default_config_hash: OlJDBqvBFFZ5eOB7fQfMDslmf1g0hXsEjVOmbmrA7Os
 id: node.page.activity_comment
 targetEntityType: node
 bundle: page

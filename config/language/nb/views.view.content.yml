@@ -1,69 +1,69 @@
-label: Innhold
-description: 'Finne og behandle innhold.'
+label: Content
+description: 'Find and manage content.'
 display:
   default:
     display_options:
       exposed_form:
         options:
           submit_button: Filtrer
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
-            first: '« Første'
-            last: 'Siste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         title:
-          label: Tittel
+          label: Title
         type:
-          label: Innholdstype
+          label: 'Content Type'
           separator: ', '
         name:
-          label: Forfatter
+          label: Author
         status:
           label: Status
           settings:
-            format_custom_true: Publisert
-            format_custom_false: Avpublisert
+            format_custom_true: Published
+            format_custom_false: Unpublished
         changed:
-          label: Oppdatert
+          label: Updated
         operations:
-          label: Handlinger
+          label: Operations
       filters:
         status:
           expose:
             label: Status
           group_info:
-            label: Publiseringsstatus
+            label: 'Published status'
             group_items:
               1:
-                title: Publisert
+                title: Published
               2:
-                title: Avpublisert
+                title: Unpublished
         type:
           expose:
             label: Type
         title:
           expose:
-            label: Tittel
+            label: Title
         langcode:
           expose:
             label: Language
-      title: Innhold
+      title: Content
       empty:
         area_text_custom:
-          content: 'Intet innhold tilgjengelig.'
-    display_title: Hoved
+          content: 'No content available.'
+    display_title: Master
   page_1:
     display_options:
       menu:
-        title: Innhold
+        title: Content
       tab_options:
-        title: Innhold
-        description: 'Finn og administrer innhold'
-    display_title: Side
+        title: Content
+        description: 'Find and manage content'
+    display_title: Page

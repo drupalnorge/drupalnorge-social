@@ -1,5 +1,5 @@
 uuid: bc8b8ea4-ef6f-4d0d-b362-899279c3c482
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ dependencies:
     - link
     - text
 _core:
-  default_config_hash: KkxvZs-jt05xqKx9mYUXEaFQ0HRs1wr3o8DQNIRN6K0
+  default_config_hash: VqOzJfgMjomNl77IaV0TDOoWYa7WX3-lrNfolb8U4rs
 id: block_content.hero_call_to_action_block.default
 targetEntityType: block_content
 bundle: hero_call_to_action_block

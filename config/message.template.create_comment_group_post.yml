@@ -1,5 +1,5 @@
 uuid: 51b47879-95cb-4ddb-8d7f-4f73e1bc0642
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -13,11 +13,11 @@ third_party_settings:
     activity_destinations:
       stream_explore: stream_explore
       stream_profile: stream_profile
-    activity_create_direct: 1
-    activity_aggregate: 1
+    activity_create_direct: true
+    activity_aggregate: true
     activity_entity_condition: comment_not_reply
 _core:
-  default_config_hash: M8MzlG1Oa8UNBJnMxdrjHclBuWwjUEOeMndsgJ3A0as
+  default_config_hash: on-RJ-ruWfmVRJ51LRpkvjmQawj8wIMh6LCkpFP7Ht8
 template: create_comment_group_post
 label: 'Create comment on post in the group'
 description: 'A user add a comment to post in the group'

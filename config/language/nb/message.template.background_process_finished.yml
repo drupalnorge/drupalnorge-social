@@ -1,0 +1,10 @@
+text:
+  -
+    value: '<p>Background process "[queue_storage_entity:mail_task_subject]" has finished.</p>'
+    format: basic_html
+  -
+    value: '<p>Background process "[queue_storage_entity:mail_task_subject]" has finished.</p>'
+    format: basic_html
+  -
+    value: '<p>Background process "[queue_storage_entity:mail_task_subject]" has finished.</p>'
+    format: basic_html

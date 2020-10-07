@@ -1,5 +1,5 @@
 uuid: de9527f3-c332-4ab6-b02a-fcc721d574ee
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -14,7 +14,7 @@ dependencies:
     - text
     - user
 _core:
-  default_config_hash: 7BdNcT77pVzRbWjS9ayAQkUnpTURDGrrTF5Jsoj8iTI
+  default_config_hash: R9IASIN5D6Q0lIdSeULDo3CP75yChfLVk7y5cafCt9Y
 id: post.post.activity_comment
 targetEntityType: post
 bundle: post
@@ -27,6 +27,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  like_and_dislike:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   user_id:
     label: hidden
     type: author
@@ -39,5 +44,4 @@ hidden:
   field_recipient_group: true
   field_recipient_user: true
   field_visibility: true
-  like_and_dislike: true
   search_api_excerpt: true

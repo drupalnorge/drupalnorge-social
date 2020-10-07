@@ -1,5 +1,5 @@
 uuid: bd593415-d330-4062-a898-e66f7a654226
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -44,6 +44,7 @@ third_party_settings:
         required_fields: true
         id: name
         classes: scrollspy
+      region: content
     group_profile_funct_organization:
       children:
         - field_profile_function
@@ -57,6 +58,7 @@ third_party_settings:
         required_fields: true
         id: work
         classes: scollspy
+      region: content
     group_profile_self_intro:
       children:
         - field_profile_self_introduction
@@ -72,6 +74,7 @@ third_party_settings:
         required_fields: true
         id: details
         classes: scrollspy
+      region: content
     group_profile_contact_info:
       children:
         - field_profile_phone_number
@@ -85,8 +88,9 @@ third_party_settings:
         required_fields: true
         id: contact
         classes: scollspy
+      region: content
 _core:
-  default_config_hash: q5dRMlfrlHczeboqgnggDsIvBp1Z0aun2cMsa4qIDbQ
+  default_config_hash: SWFMmrj2JnJ86oE3KHqTojFn5tWoarYSUbplbYYbxJQ
 id: profile.profile.default
 targetEntityType: profile
 bundle: profile
@@ -119,6 +123,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete_tags
     region: content
@@ -160,6 +165,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete_tags
     region: content
@@ -205,3 +211,4 @@ hidden:
   field_profile_facebook_url: true
   field_profile_show_email: true
   field_profile_twitter_url: true
+  is_default: true

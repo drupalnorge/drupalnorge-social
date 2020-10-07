@@ -1,42 +1,66 @@
-label: 'Søk innhold'
+label: 'Search Content'
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Filtrer
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          text_input_required: 'Velg et filter og klikk «Bruk» for å se resultater'
+          bef:
+            general:
+              secondary_label: 'Advanced options'
+            sort:
+              advanced:
+                collapsible_label: 'Sort by'
       pager:
         options:
           expose:
-            items_per_page_label: 'Elementer per side'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskyving
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
-            first: '« Første'
-            last: 'Siste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       filters:
         type:
           expose:
-            label: Innholdstype
-      title: 'Søk i innhold'
+            label: 'Content type'
+        field_event_date:
+          expose:
+            label: Start
+          group_info:
+            label: Start
+            group_items:
+              2:
+                title: Før
+              3:
+                title: Etter
+      sorts:
+        created:
+          expose:
+            label: 'Dato opprettet'
+        title:
+          expose:
+            label: Title
+      title: 'Search content'
       empty:
         area:
           content:
-            value: 'Ingen resultater funnet.'
+            value: 'No results found.'
       arguments:
         search_api_fulltext:
           exception:
-            title: Alle
+            title: All
   page:
-    display_title: Side
+    display_title: Page
   page_no_value:
     display_options:
       menu:
-        title: Innhold
+        title: Content

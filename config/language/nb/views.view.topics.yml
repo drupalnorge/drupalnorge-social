@@ -1,49 +1,58 @@
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:
           submit_button: Filtrer
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           expose:
-            items_per_page_label: 'Elementer per side'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskyving
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
           tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
-            first: '« Første'
-            last: 'Siste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
       fields:
         title:
           separator: ', '
-      title: Emner
+      filters:
+        field_topic_type_target_id:
+          expose:
+            label: 'is the type of'
+        status:
+          expose:
+            label: 'has the publish status of'
+      title: Topics
       empty:
         area:
           content:
-            value: 'Ingen innlegg funnet for denne brukeren'
+            value: 'No topics found for this user'
       arguments:
         uid:
           exception:
-            title: Alle
+            title: All
   block_user_topics:
-    display_title: Blokk
+    display_title: Block
     display_options:
-      title: 'Nylig opprettede emner'
-      block_description: 'Nylig opprettede emner'
+      title: 'Recently created topics'
+      block_description: 'Recently created topics'
       arguments:
         uid:
           exception:
-            title: Alle
-      use_more_text: 'Alle emner'
+            title: All
+      use_more_text: 'All topics'
   page_profile:
-    display_title: Side
+    display_title: Page
     display_options:
       menu:
-        title: Emner
+        title: Topics
       tab_options:
-        title: Emner
+        title: Topics

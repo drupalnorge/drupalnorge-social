@@ -1,5 +1,5 @@
 uuid: 4d721f59-2cc6-494c-9c2c-9d5140c29b7b
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -9,17 +9,29 @@ dependencies:
     - field.field.group.closed_group.field_group_image
     - field.field.group.closed_group.field_group_location
     - group.type.closed_group
+    - image.style.social_medium
+  module:
+    - image
 _core:
-  default_config_hash: h2hSwa9vROk4V2O46HJyQ8vfHItztbYGPfaAZcaFls8
+  default_config_hash: 8CIbysxi66zNObTbsQ3uV5wwEddkabenp8Xs5v6Hn_U
 id: group.closed_group.small_teaser
 targetEntityType: group
 bundle: closed_group
 mode: small_teaser
 content:
+  field_group_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: social_medium
+      image_link: content
+    third_party_settings: {  }
   label:
     label: hidden
     type: string
-    weight: -5
+    weight: 1
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -29,7 +41,6 @@ hidden:
   created: true
   field_group_address: true
   field_group_description: true
-  field_group_image: true
   field_group_location: true
   langcode: true
   search_api_excerpt: true

@@ -1,5 +1,5 @@
 uuid: 7b16ebe7-c07d-444e-a197-b16a0a2ed437
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: 1voReQy0M0g_Q37FfXnf_P79HHYR3refXZGStPgnE6s
+  default_config_hash: Me4_laexdcrUwu1sfbQN5iE67zU0R5YjXtbbt_M_WUU
 id: node.event.field_event_image
 field_name: field_event_image
 entity_type: node

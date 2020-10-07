@@ -1,35 +1,35 @@
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Bruk
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
-      title: Aktivitetsstrøm
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      title: Notifications
       empty:
         area:
           content:
-            value: 'Du har ingen varslinger.'
+            value: 'You do not have any notifications.'
       arguments:
         field_activity_recipient_user_target_id:
           exception:
-            title: Alle
-      use_more_text: 'Alle varslinger'
+            title: All
+      use_more_text: 'All notifications'
   block_1:
-    display_title: Blokk
+    display_title: Block
   page_1:
-    display_title: Side
+    display_title: Page
     display_options:
       pager:
         options:
           tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
+            previous: ‹‹
+            next: ››
           expose:
-            items_per_page_label: 'Elementer per side'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskyving
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset

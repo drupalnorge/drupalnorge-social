@@ -1,11 +1,11 @@
 uuid: beb0ad13-d55e-47a5-b9cd-d85bcb6638db
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - group.type.public_group
 _core:
-  default_config_hash: KYZC4Itvc_DW3-sTNLwD-vhwzO5pN0u7K14vN9gauSw
+  default_config_hash: t754-uHnGl4hphZFkeV749LvVjoIwHAW1y_GGDZiJEo
 id: public_group-anonymous
 label: Anonymous
 weight: -102
@@ -14,7 +14,6 @@ audience: anonymous
 group_type: public_group
 permissions_ui: true
 permissions:
-  - 'access comments'
   - 'view group'
   - 'view group stream page'
   - 'view group_membership content'

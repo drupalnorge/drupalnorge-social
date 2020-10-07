@@ -1,11 +1,11 @@
 uuid: 3059eada-b6e6-492c-a2d0-1165ac69e3c7
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - group
 _core:
-  default_config_hash: 4ovumvZuS5UXl_YkuAM0Pu2wB4n5ho7R4amUxJLf2jQ
+  default_config_hash: U437HkTwkBjZMlqdOKjG9OMXnCjsc96Qho5a-nd1MaE
 id: group_content.teaser
 label: Teaser
 targetEntityType: group_content

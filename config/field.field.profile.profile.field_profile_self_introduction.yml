@@ -1,5 +1,5 @@
 uuid: 07d32f86-b63b-4be5-9758-2ba7110588eb
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - text
 _core:
-  default_config_hash: EtzFYMBWMlgHvlBDKsZJubuEqQtKgMFRdNdTOd9C7Gc
+  default_config_hash: JFL3MPpe_46orf2OKBvCnMCp-veKkax7hOJSok9uMxA
 id: profile.profile.field_profile_self_introduction
 field_name: field_profile_self_introduction
 entity_type: profile

@@ -1,11 +1,11 @@
 uuid: 4e69da9b-2e23-480c-b2b3-3a0451e8a41e
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - group.type.public_group
 _core:
-  default_config_hash: 2S3YLMrJUx1O3lHyT_MAs6FidhHFEapF8cm1T3yOwhI
+  default_config_hash: zuym7ZLKvqU5qCS_eA0HBNIoHwduAu-sA48Gd8lJ3zw
 id: public_group-group_admin
 label: 'Group Admin'
 weight: 5

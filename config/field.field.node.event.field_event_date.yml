@@ -1,5 +1,5 @@
 uuid: af0863cb-1a55-44d1-8625-2fdcca2bee65
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - datetime
 _core:
-  default_config_hash: pPHPELeLXbiNq458ZjX_PF5-6oEJjCG6vowOqiVjA4g
+  default_config_hash: 5xEhYWCV8ixfC7fKPJV-hllq1e_pYAZlkvNsQllWQ9c
 id: node.event.field_event_date
 field_name: field_event_date
 entity_type: node

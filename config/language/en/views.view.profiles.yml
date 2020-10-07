@@ -21,7 +21,3 @@ display:
           exception:
             title: All
       title: Profiles
-  profile_type_listing:
-    display_title: 'Profile type listing'
-  user_view:
-    display_title: 'User view'

@@ -1,5 +1,5 @@
 uuid: f55b7967-4939-4c1a-9583-e49c450da0ef
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -7,7 +7,7 @@ dependencies:
     - profile.type.profile
     - taxonomy.vocabulary.profile_tag
 _core:
-  default_config_hash: 9nuh7_PtQan2tfsC1n-tRhfasDLLygRLrIGk5eB4mhg
+  default_config_hash: 8nuX_jhZRhXhlPdmacsjN09fv0l4QfIRs4rspudr5rI
 id: profile.profile.field_profile_profile_tag
 field_name: field_profile_profile_tag
 entity_type: profile

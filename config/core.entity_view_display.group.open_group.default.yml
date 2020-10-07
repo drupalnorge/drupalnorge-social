@@ -1,5 +1,5 @@
 uuid: 50ba9509-b2b7-4add-89ec-a2c01e83c550
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -9,7 +9,7 @@ dependencies:
     - field.field.group.open_group.field_group_location
     - group.type.open_group
 _core:
-  default_config_hash: clf8xhH6T-dbKfoHVmLHi19n25BDMGz-lWZbBPpCOIA
+  default_config_hash: NPxQIhk3gaqgl0G7UeSWhZSdYCGyyTItgVoXuP_IKmY
 id: group.open_group.default
 targetEntityType: group
 bundle: open_group

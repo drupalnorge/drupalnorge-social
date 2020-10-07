@@ -1,5 +1,5 @@
 uuid: 22226abb-711b-40f8-bbd6-e2614fd09be5
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -8,7 +8,7 @@ dependencies:
   theme:
     - socialblue
 _core:
-  default_config_hash: Y-xDI9TVJJWizoKNii4wo2BaW-U0Q5oBhYb70Cv5nvo
+  default_config_hash: DI3Pt8FWvvY7-xgU5TxTyM5chclowx82bUbSX3CYgZk
 id: socialblue_local_tasks
 theme: socialblue
 region: secondary_navigation
@@ -33,6 +33,6 @@ visibility:
       user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: "post/*/edit\r\npost/*/delete\r\n/post/*/edit\r\n/post/*/delete\r\n/user/*/edit\r\n/group/*/edit"
+    pages: "/post/*/edit\r\n/post/*/delete\r\n/user/*/edit\r\n/user/*/profile\r\n/group/*/edit"
     negate: true
     context_mapping: {  }

@@ -1,5 +1,5 @@
 uuid: 7019724d-9a22-4553-92c2-5f9aa11d6ce3
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -16,7 +16,7 @@ dependencies:
     - node
     - taxonomy
 _core:
-  default_config_hash: w68Lg24lxOIZS50lCZN4ldYaaotGC6Zf5hvGlTC7uOg
+  default_config_hash: QfYYx-ckbKscwFS5Uy5F8QSkZx1T0fqPvxC_T-sUwtE
 id: group_topics
 label: 'Group Topics'
 module: views
@@ -24,7 +24,6 @@ description: ''
 tag: ''
 base_table: group_content_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -50,13 +49,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrer
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: ascending
-          sort_desc_label: descending
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: mini
         options:
@@ -175,6 +174,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -218,6 +219,8 @@ display:
               contentmanager: '0'
               sitemanager: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -264,6 +267,8 @@ display:
               administrator: '0'
               contentmanager: '0'
               sitemanager: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -302,6 +307,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -414,14 +421,15 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - user.group_permissions
         - 'languages:language_content'
         - 'languages:language_interface'
+        - route.group
         - url
         - url.query_args
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
         - user
+        - user.group_permissions
         - 'user.node_grants:view'
       tags: {  }
   page_group_topics:
@@ -436,13 +444,14 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - user.group_permissions
         - 'languages:language_content'
         - 'languages:language_interface'
+        - route.group
         - url
         - url.query_args
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
         - user
+        - user.group_permissions
         - 'user.node_grants:view'
       tags: {  }

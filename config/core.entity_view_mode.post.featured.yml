@@ -1,0 +1,10 @@
+uuid: 3cae4059-5fee-465e-a926-0de11d72f345
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_post
+id: post.featured
+label: Fremhevet
+targetEntityType: post
+cache: true

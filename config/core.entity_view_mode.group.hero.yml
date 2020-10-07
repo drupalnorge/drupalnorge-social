@@ -1,11 +1,11 @@
 uuid: 0ab9bf71-74b8-48a4-84ec-800ad809fbe8
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - group
 _core:
-  default_config_hash: MPXuZOzK4bIORWlIavYvxuvIcrB35y7_WPzKKxjvtAg
+  default_config_hash: XoLMQMn1kKDzkeYyS_qWaEk3tpBvWHF93svFPmFvvNo
 id: group.hero
 label: Hero
 targetEntityType: group

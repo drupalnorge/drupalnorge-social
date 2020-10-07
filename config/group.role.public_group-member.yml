@@ -1,11 +1,11 @@
 uuid: fc69c34f-335a-454c-9980-d486b6e073f0
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - group.type.public_group
 _core:
-  default_config_hash: 7SovxMOzfqK536uzQ2Y0QMLu48DHZoGsO-ws2sQhaAw
+  default_config_hash: NcFE9ebCHoVd-TtSPiI2bL777R-or4wqY8Vw__SmuZY
 id: public_group-member
 label: Member
 weight: -100

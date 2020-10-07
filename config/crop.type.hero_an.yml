@@ -1,9 +1,9 @@
 uuid: 2f201093-6513-43b0-8709-d594a53f4256
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: j5YPnaCyl47xAY39R53lJJnPGilTYlERuPS9ORto4D8
+  default_config_hash: 9OPXtH_Z_jAXVhzgR1LVM0NUfCgJESFs_zSLHYUkAas
 label: 'Hero AN'
 id: hero_an
 description: 'Header image in the AN hero region'
