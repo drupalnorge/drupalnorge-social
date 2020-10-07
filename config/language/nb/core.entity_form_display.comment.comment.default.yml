@@ -1,0 +1,4 @@
+content:
+  field_comment_body:
+    settings:
+      placeholder: 'Add a comment'

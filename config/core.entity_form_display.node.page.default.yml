@@ -1,5 +1,5 @@
 uuid: 2f60b484-0abe-4011-a930-c3c88e3b7f5d
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -32,6 +32,7 @@ third_party_settings:
         required_fields: true
         id: content
         classes: 'card '
+      region: content
     group_page_description:
       children:
         - body
@@ -44,6 +45,7 @@ third_party_settings:
         required_fields: true
         id: description
         classes: 'card '
+      region: content
     group_attachments:
       children:
         - field_files
@@ -56,6 +58,7 @@ third_party_settings:
         required_fields: true
         id: attachments
         classes: 'card '
+      region: content
     group_page_visibility:
       children:
         - field_content_visibility
@@ -68,8 +71,9 @@ third_party_settings:
         required_fields: true
         id: visibility
         classes: 'card '
+      region: content
 _core:
-  default_config_hash: 3Z-1RH4Ygf-ZS11i1tHHb08h_tsEQ6BwTPx3gUUH3Wo
+  default_config_hash: CKl-Z0PoQkJ3FUGjZNwyNd8cjqpjAJbtSaeXPkXKhT8
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -82,6 +86,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -158,6 +163,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
 hidden:

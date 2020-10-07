@@ -1,0 +1,21 @@
+uuid: 02aee26c-e0e8-4a2a-b241-409e81a0fffd
+langcode: nb
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_text_block
+  module:
+    - text
+id: block_content.basic.field_text_block
+field_name: field_text_block
+entity_type: block_content
+bundle: basic
+label: 'Text block'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,12 +1,12 @@
 uuid: f87a0e57-31b2-4cc6-900e-0cdcf3d4b890
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - block_content
     - text
 _core:
-  default_config_hash: bKn73jUZ6znmFyAFqeHp0ZU7_62ZyLR_inMVBNCboaU
+  default_config_hash: ObHFhZ4Zmgmh5dAORZGEdF3jx-W5NcBmNq2MQeX41x8
 id: block_content.field_text_block
 field_name: field_text_block
 entity_type: block_content

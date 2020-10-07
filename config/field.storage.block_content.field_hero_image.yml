@@ -1,5 +1,5 @@
 uuid: 131d69ec-5e81-4bef-830e-f9a1b723bd2e
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
     - file
     - image
 _core:
-  default_config_hash: luHEf-HUEp2GWRiQv0baeG3kja-o-UQvnET1eU-fdqs
+  default_config_hash: x-68V5M_HxovdrgjjLRNnw0MHAAG3soKNpZkI4GrJqQ
 id: block_content.field_hero_image
 field_name: field_hero_image
 entity_type: block_content

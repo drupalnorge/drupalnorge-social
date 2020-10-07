@@ -1,45 +1,53 @@
-label: 'Siste emner'
+label: 'Latest topics'
+description: 'Displays the newest topics in the community'
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Bruk
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       fields:
         title:
           separator: ', '
-      title: 'Alle emner'
-  block_latest_topics:
-    display_options:
-      title: 'Nyeste emner'
-      use_more_text: 'Alle emner'
-  group_topics_block:
-    display_options:
-      block_description: 'Siste emner for gruppa'
+      title: 'All topics'
       empty:
         area_text_custom:
-          content: 'Ingen emner i denne gruppa'
+          content: 'No topics found'
+  block_latest_topics:
+    display_options:
+      title: 'Newest topics'
+      use_more_text: 'All topics'
+  group_topics_block:
+    display_options:
+      block_description: 'Latest group topics'
+      empty:
+        area_text_custom:
+          content: 'No topics in this group'
       arguments:
         gid:
           exception:
-            title: Alle
-      title: 'Nyeste emner'
-      use_more_text: 'Alle emner'
+            title: All
+      title: 'Newest topics'
+      use_more_text: 'All topics'
   page_latest_topics:
     display_options:
       pager:
         options:
           tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
-            first: '« Første'
-            last: 'Siste »'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Elementer per side'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskyving
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      filters:
+        field_topic_type_target_id:
+          expose:
+            label: 'is the type of'

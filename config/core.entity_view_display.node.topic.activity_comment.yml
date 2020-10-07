@@ -1,5 +1,5 @@
 uuid: f44bbebc-2019-4fd8-ad4c-144017b24f27
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -16,7 +16,7 @@ dependencies:
     - image
     - user
 _core:
-  default_config_hash: 4AnPBOFQOdlyi6zQcSuNt7j2_IqZQO3V9I5JRFaH94M
+  default_config_hash: aJNTou3jlGcYFwktrM0NmG5Uq9rJVmwZUHsvhRe8JPc
 id: node.topic.activity_comment
 targetEntityType: node
 bundle: topic

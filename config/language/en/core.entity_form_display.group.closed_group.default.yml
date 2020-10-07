@@ -1,0 +1,8 @@
+third_party_settings:
+  field_group:
+    group_content:
+      label: Content
+    group_location:
+      label: Location
+    group_settings:
+      label: Settings

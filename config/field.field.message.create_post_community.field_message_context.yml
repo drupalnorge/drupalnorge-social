@@ -1,5 +1,5 @@
 uuid: 94e786d9-87f8-4e50-8997-428f356b0765
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: 5KfIuTF_y3KpelJrihbTEQxlbUGWM-371m0NmR43epA
+  default_config_hash: eV0vTJhfBeixEzjIwDlfn5TyntSHwqvbE9BpTDeKTDE
 id: message.create_post_community.field_message_context
 field_name: field_message_context
 entity_type: message

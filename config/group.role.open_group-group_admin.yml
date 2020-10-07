@@ -1,11 +1,11 @@
 uuid: 13ed4532-ab11-4960-938d-6ac30c5cacd3
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - group.type.open_group
 _core:
-  default_config_hash: CIgp_eD-zKvSFyyRmx7xQeslDr_3u9GJFpRQ-o-_CJs
+  default_config_hash: khIUiKZo5qLaKikYVNAobOpZ8LHaFRMPDCn1flHvPfA
 id: open_group-group_admin
 label: 'Group Admin'
 weight: 5

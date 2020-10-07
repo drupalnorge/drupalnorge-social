@@ -1,9 +1,9 @@
 uuid: 29d4d1ce-72fd-4298-9f47-1db641d45030
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: oNz650PO1orDMqoiW9r-X59cklOJFD8KjFJoHu3h5PA
+  default_config_hash: '-poUezuEvyj2AhUL2WRjzIRRth7aObHwOXqbiQVCzUI'
 id: social_time
 label: 'Social time'
 locked: false

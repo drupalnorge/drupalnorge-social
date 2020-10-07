@@ -1,5 +1,5 @@
 uuid: 4720a70a-a1ec-40e7-b7ad-b56496365d46
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -9,7 +9,7 @@ dependencies:
     - field.field.group.closed_group.field_group_location
     - group.type.closed_group
 _core:
-  default_config_hash: QINyh7YnF9AP4gx-KHy-mUPDUoov06tQz57VkM1YpPE
+  default_config_hash: isMnBU3AQ5AEIX1WIqi7UXzI2N-Tz27l97Xibim2cRY
 id: group.closed_group.default
 targetEntityType: group
 bundle: closed_group

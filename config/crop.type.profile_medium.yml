@@ -1,9 +1,9 @@
 uuid: 82d9f46b-8088-4eec-88ae-431b4ddf37bb
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: UiiDzWwsv6XOpSmO4iIT1PB8aaXWNq_fdJWki4TlE6I
+  default_config_hash: KylZuSP5ti_tZ6ThtzBcv32mo5qpiEjeci9XQZHZuUo
 label: 'Profile medium'
 id: profile_medium
 description: 'Medium sized profile image'

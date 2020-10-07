@@ -1,5 +1,5 @@
 uuid: f3889082-3ced-477a-a366-fc4922a56373
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -17,7 +17,7 @@ third_party_settings:
     activity_aggregate: false
     activity_entity_condition: comment_all
 _core:
-  default_config_hash: eoiFOMPHdOLwaN-IdH5cE9nLcspVTmvjdVjJCSfmwnI
+  default_config_hash: gwV9Oaw03B40RVpZW7oXc3tfQ45i6WWiD7HQvFjyjwI
 template: create_comment_following_node
 label: 'Create comment on following node'
 description: 'A person commented on content I am following'

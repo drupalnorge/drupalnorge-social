@@ -1,5 +1,5 @@
 uuid: a448c8de-4fdb-4c47-92d1-2f812232d687
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -13,12 +13,12 @@ third_party_settings:
       stream_group: stream_group
       stream_home: stream_home
       stream_profile: stream_profile
-    activity_create_direct: 0
+    activity_create_direct: false
     activity_action: create_entitiy_action
     activity_bundle_entities:
       node-event: node-event
 _core:
-  default_config_hash: d80x8W0Bqnzm4i700qKLolEydxxoxsZZE9ULbgs6ZBY
+  default_config_hash: X4VHlsdq3ub9gMMjzhHmtc9AHZvPc9C54coZEJcuYuc
 template: create_event_group
 label: 'Create event in group'
 description: 'A user created an event in a group'

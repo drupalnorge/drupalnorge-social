@@ -1,5 +1,5 @@
 uuid: 2936fa7c-43d7-42f0-a7ec-293292e0196e
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -14,7 +14,7 @@ dependencies:
     - address
     - image
 _core:
-  default_config_hash: 5awF-p4gmAsVt6eT-8I31agN8iFVXK7UmZSQzwvlz84
+  default_config_hash: X-GxgJtASaBF0TyU7DP8TGzbkaWnx4kybUvrpecSwsY
 id: group.closed_group.hero
 targetEntityType: group
 bundle: closed_group

@@ -1,5 +1,5 @@
 uuid: 24cb5995-f57c-4ebe-b0e0-d84350768e85
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
     config:
       - user.role.administrator
 _core:
-  default_config_hash: iV7JOI9aWQVkGk-i-h0fQ4jabPbkckcdnaqa-VqqLqM
+  default_config_hash: SFdenHw21wwLB6Tq8jcFC-hVPmRYNUa5iu3NXuNgd20
 id: open_group-a416e6833
 label: Administrator
 weight: 2

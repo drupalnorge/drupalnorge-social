@@ -1,11 +1,11 @@
 uuid: 6cf07b3a-05cd-4a30-97f0-29090a9e8730
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - profile
 _core:
-  default_config_hash: n12lIObk4emC0lDI24D8lc8yzDP9t1R5IbQ29HHGL-M
+  default_config_hash: Nypcne34bIOGMtxAJk5Xc0YD9YATiqy8ZrRYcf6JXYc
 id: profile.compact_notification
 label: 'Compact Notifcation'
 targetEntityType: profile

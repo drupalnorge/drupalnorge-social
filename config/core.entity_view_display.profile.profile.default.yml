@@ -1,5 +1,5 @@
 uuid: 36dbdd9e-248d-4e14-96b7-2bef81d84ac8
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -24,7 +24,7 @@ dependencies:
     - address
     - text
 _core:
-  default_config_hash: 58km7VIH-fzAz4VoS-3UD6-va3DXkuyuCg7Q5n0jPdQ
+  default_config_hash: dnjwto7vi1Xhb0sx5KL_Oexy3UD6Q3LbxkPfS5uvZNw
 id: profile.profile.default
 targetEntityType: profile
 bundle: profile

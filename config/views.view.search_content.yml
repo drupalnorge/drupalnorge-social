@@ -1,5 +1,5 @@
 uuid: 9c9162c0-926c-4896-8fad-ad90096b8c97
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -10,7 +10,7 @@ dependencies:
     - social_search
     - user
 _core:
-  default_config_hash: a19IcAteq_kDlYZTbWZgPHGMlmh_tGlBa_F0086x3bw
+  default_config_hash: MPmh7Lkf-WDCB5BO9mTGkrQHLIozwXVFIA-o6y6FpUQ
 id: search_content
 label: 'Search Content'
 module: views
@@ -18,7 +18,6 @@ description: ''
 tag: ''
 base_table: search_api_index_social_content
 base_field: search_api_id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -45,12 +44,12 @@ display:
           submit_button: Apply
           reset_button: true
           reset_button_label: Reset
-          exposed_sorts_label: Sort
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: (ascending)
-          sort_desc_label: (descending)
+          sort_asc_label: Asc
+          sort_desc_label: Desc
           input_required: false
-          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required: 'Velg et filter og klikk «Bruk» for å se resultater'
           bef:
             general:
               allow_secondary: false
@@ -62,7 +61,7 @@ display:
               bef_format: default
               advanced:
                 collapsible: false
-                collapsible_label: Sort
+                collapsible_label: 'Sort by'
                 combine: true
                 combine_rewrite: "Relevance (ascending)|Least relevant first\r\nRelevance (descending)|Most relevant first\r\nCreated date (ascending)|Least recent first\r\nCreated date (descending)|Most recent first\r\nTitle (ascending)|A - Z\r\nTitle (descending)|Z - A"
                 reset: false
@@ -195,6 +194,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -243,6 +244,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: Start
@@ -264,7 +267,7 @@ display:
                   min: now
                   max: 'now +1 day'
               2:
-                title: Before
+                title: Før
                 operator: '<'
                 value:
                   type: date
@@ -272,7 +275,7 @@ display:
                   min: ''
                   max: ''
               3:
-                title: After
+                title: Etter
                 operator: '>'
                 value:
                   type: date
@@ -303,7 +306,7 @@ display:
           order: DESC
           exposed: true
           expose:
-            label: 'Created date'
+            label: 'Dato opprettet'
           plugin_id: search_api
         title:
           id: title

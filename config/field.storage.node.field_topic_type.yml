@@ -1,12 +1,12 @@
 uuid: b755bc0a-51f0-48e5-b470-10fee0acb5b8
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - node
     - taxonomy
 _core:
-  default_config_hash: WJQoLs3aSY75uYW0p28m8m5_yTSDmyIqCm8kBupXCZc
+  default_config_hash: zduhlNsrKHxKBCpzQezljfz5aYxEsP9PQD2HfG68-pg
 id: node.field_topic_type
 field_name: field_topic_type
 entity_type: node

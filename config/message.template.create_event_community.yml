@@ -1,5 +1,5 @@
 uuid: 51bebb0a-eb6d-4f6a-af17-09f1093a27db
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -13,12 +13,12 @@ third_party_settings:
       stream_group: stream_group
       stream_home: stream_home
       stream_profile: stream_profile
-    activity_create_direct: 0
+    activity_create_direct: false
     activity_action: create_entitiy_action
     activity_bundle_entities:
       node-event: node-event
 _core:
-  default_config_hash: d_hYLyzo043jYPuyxksHaDanlpT5yoICTkQSdCnSyJA
+  default_config_hash: s1MpTn9zFkt9GaS5LPqEJfh9KjvdPzltKHLqk-1JmIQ
 template: create_event_community
 label: 'Create event'
 description: 'A user created an event in the community'

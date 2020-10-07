@@ -1,9 +1,9 @@
 uuid: d0321f9a-a513-41a2-a2e7-6d120d126dfd
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: dl-Ya4SNTwMX8SiI0S2LSGnCFr4Avni9NnjxaFwy0bo
+  default_config_hash: NBJEzHI2GFP-Amt4cj9j1OUTMuG6KRS98GXTq2mzJKc
 id: day_month_time
 label: 'Day Month Time'
 locked: false

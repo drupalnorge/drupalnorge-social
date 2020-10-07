@@ -1,5 +1,5 @@
 uuid: 669856d5-9e0d-4cfe-af63-5ece3e359892
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -22,7 +22,7 @@ dependencies:
     - image
     - user
 _core:
-  default_config_hash: psOy9JYXqH1kjMmGPXNIsB_qmfjt_8eKxTJRH-FiG1s
+  default_config_hash: Sp-i_sjo5MTn_lytgUXUCpEyD6hAMw-hVSnUPOXa8hY
 id: node.event.activity_comment
 targetEntityType: node
 bundle: event

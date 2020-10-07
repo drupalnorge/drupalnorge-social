@@ -1,5 +1,5 @@
 uuid: fb9ce831-471f-4090-8ee9-4c955954868e
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -7,7 +7,7 @@ dependencies:
   module:
     - user
 _core:
-  default_config_hash: u8h2r1BrUH6OfI_yTrgSWFmrdtrXHD2Dp82nuImJ8XY
+  default_config_hash: F2EB2PBNiHihT4szX0vpDt2xvk3oyeu2l9NnrPRUtt0
 id: closed_group-group_membership
 label: 'Closed group: Group membership'
 description: 'Adds users to groups as members.'

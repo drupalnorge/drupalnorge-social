@@ -1,9 +1,9 @@
 uuid: 51abf984-19c3-491a-a3b0-dc31b9165235
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: LlQFf1W77EmhdUzLeOoaMExT1oXPNKa9BhrpW3hMgVs
+  default_config_hash: G6npA3Wl7zD7HUB-Sh_bqlPGQraWf2a0g1iGenzgAQU
 name: 'Topic types'
 vid: topic_types
 description: 'Topic types'

@@ -1,5 +1,5 @@
 uuid: 22e3d1d7-a467-4587-beff-216f6f49c32a
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
     config:
       - user.role.contentmanager
 _core:
-  default_config_hash: ARmhcIpEs-1zCYeHsJUHaZ3YKAj_qwRzVBgmpgUZkP8
+  default_config_hash: socyU0STqBfsszkpGVumjp4Qbfq_aIrr0vztlBuWseM
 id: closed_group-83776d798
 label: 'Content manager'
 weight: 3

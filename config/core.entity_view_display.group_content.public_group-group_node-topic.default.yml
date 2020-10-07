@@ -1,11 +1,11 @@
 uuid: 56cdf032-7683-4ec9-9e80-81587578b661
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - group.content_type.public_group-group_node-topic
 _core:
-  default_config_hash: R9IBZWmuO7f-K10CeMq2nOCf91RYGbqW2YEMD8OdSdg
+  default_config_hash: DKKTsjcJBb70LYKiEa7JxH8NGmb7dbirLr5Nbg3GHC0
 id: group_content.public_group-group_node-topic.default
 targetEntityType: group_content
 bundle: public_group-group_node-topic

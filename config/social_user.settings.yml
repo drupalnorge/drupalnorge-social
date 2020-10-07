@@ -1,4 +1,4 @@
-langcode: en
+langcode: nb
 signup_help: 'A welcome message with further instructions will be sent to your email address after you successfully enter your email address and a username.'
 login_help: ''
 _core:

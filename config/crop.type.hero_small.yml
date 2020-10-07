@@ -1,9 +1,9 @@
 uuid: 9a878493-9a98-4fad-a1bf-19aef5242675
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: XhgGhzh4Elr2gujmY6Fr0fsTKh4yCp5IYBIDbGzA8Os
+  default_config_hash: ZetiO1I3gg3B9QAfCo4OtzgdBx0i7KI7K1Y7vfgd3nE
 label: 'Small hero'
 id: hero_small
 description: 'A smaller variant for the hero region'

@@ -1,11 +1,11 @@
 uuid: e055c148-e277-42b4-bada-cd5c3d554ccf
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - group.content_type.closed_group-group_node-event
 _core:
-  default_config_hash: 7N2nmZjtJWnzknwB0_r7apApsb7HgzBQMwHPQ8sLy3Q
+  default_config_hash: RD5WwTazQrNVhh1_SJB1YiAciDpbo89-iDwLHGlfsFM
 id: group_content.closed_group-group_node-event.default
 targetEntityType: group_content
 bundle: closed_group-group_node-event

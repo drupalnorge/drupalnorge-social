@@ -1,5 +1,5 @@
 uuid: 2248a229-3386-438d-8d24-37b577304448
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
     - profile
     - user
 _core:
-  default_config_hash: IcO0jdveNQfm7V73VxfEkOwhoc1Es3Dtd3QJaqxGtAk
+  default_config_hash: ojNY76gLpqe79gCuu9dBMz0DVa_SdL2dHiso04fyPpU
 id: user_information
 label: 'User information'
 module: views
@@ -16,7 +16,6 @@ description: ''
 tag: ''
 base_table: profile
 base_field: profile_id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -124,6 +123,9 @@ display:
           entity_type: profile
           entity_field: type
           plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
       sorts: {  }
       title: Information
       header: {  }

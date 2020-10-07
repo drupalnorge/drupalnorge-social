@@ -1,5 +1,5 @@
 uuid: 433490ee-d741-4200-a997-cafd2ffa98fc
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -9,13 +9,13 @@ third_party_settings:
     activity_context: profile_activity_context
     activity_destinations:
       stream_profile: stream_profile
-    activity_create_direct: 1
+    activity_create_direct: true
     activity_bundle_entities:
       post-post: post-post
     activity_action: create_entitiy_action
-    activity_aggregate: 0
+    activity_aggregate: false
 _core:
-  default_config_hash: U5d0ddvvE-svRyes1CxU9oJRpxIPS3D6tB8iZGb2FMo
+  default_config_hash: nWPJvxp7-QxxKj9ytIlxuI_ITZ72M2a50dMEjmbkw6w
 template: create_post_profile_stream
 label: 'Create post on profile stream output'
 description: 'A person created a post on my profile and I see it on the stream'

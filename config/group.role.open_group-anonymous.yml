@@ -1,11 +1,11 @@
 uuid: 93b8b9fe-5e4a-4d07-9c28-ffb3a3de8e6c
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - group.type.open_group
 _core:
-  default_config_hash: BUh83uMuawEc3R9mSPg6fJfJdlMDVmTVH7vpiJy-tFA
+  default_config_hash: H68x_1aJkYpFesLf_F8sNomP2DBNJekeQlIBSd2ANTE
 id: open_group-anonymous
 label: Anonymous
 weight: -102
@@ -13,11 +13,4 @@ internal: true
 audience: anonymous
 group_type: open_group
 permissions_ui: true
-permissions:
-  - 'access comments'
-  - 'view group'
-  - 'view group stream page'
-  - 'view group_node:event content'
-  - 'view group_node:event entity'
-  - 'view group_node:topic content'
-  - 'view group_node:topic entity'
+permissions: {  }

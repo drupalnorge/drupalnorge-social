@@ -1,5 +1,5 @@
 uuid: 1c633a3a-fac6-4d30-8b3c-a9aadfd15171
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: I62J1u1wcexWjosRcIpl0pf_6RPrAJ4cWlPMxBUecHA
+  default_config_hash: gTnt6YsRaRYnrGwLdcTl8_HvqpzNUFt6y5BHrzMZs9g
 id: message.create_comment_post_profile.field_message_destination
 field_name: field_message_destination
 entity_type: message

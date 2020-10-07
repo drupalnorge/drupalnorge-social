@@ -1,5 +1,5 @@
 uuid: 9e714b49-c44f-4f14-aece-d97515d3ee41
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -13,11 +13,11 @@ third_party_settings:
     activity_destinations:
       stream_explore: stream_explore
       stream_profile: stream_profile
-    activity_create_direct: 1
-    activity_aggregate: 1
+    activity_create_direct: true
+    activity_aggregate: true
     activity_entity_condition: comment_not_reply
 _core:
-  default_config_hash: dL6ebaOTtEEseLIn2aJePZCssDoJ2TF2ws6LhkNEMTc
+  default_config_hash: xmVhFYSa1bt6h0utu9X8hjNw0dyYAuurwoju_vGwEeg
 template: create_comment_community_node
 label: 'Create comment on node in the community'
 description: 'A user add a comment to content in the community'

@@ -1,5 +1,5 @@
 uuid: 7cc2feb8-ae28-4731-9155-01409c307f09
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - path
 _core:
-  default_config_hash: varQuDQHL_XXfXpFeRrCSQH-foOy3aP0yC1XFXrfc9s
+  default_config_hash: QDogkrdmXzRbFVKAvMt5ULhPpqq_bMwUxvwGGC1NfnY
 id: group_content.public_group-group_membership.default
 targetEntityType: group_content
 bundle: public_group-group_membership
@@ -21,6 +21,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
   group_roles:

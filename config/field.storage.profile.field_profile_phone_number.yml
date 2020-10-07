@@ -1,12 +1,12 @@
 uuid: 968b41dd-a52f-4c78-80cc-a824360f585a
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - profile
     - telephone
 _core:
-  default_config_hash: QWiaI2rMrX0hNgal4fCWX_9RIR14UD--KDQKhInEmtc
+  default_config_hash: zaEMedj8WrB-79vF7mQtEcQPXcjUyJCY-LfFyxMoMZ8
 id: profile.field_profile_phone_number
 field_name: field_profile_phone_number
 entity_type: profile

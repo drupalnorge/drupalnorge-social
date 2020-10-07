@@ -1,12 +1,12 @@
 uuid: 8eb9b226-1a0d-47cb-9c74-b800db36e965
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - field.storage.group.field_group_location
     - group.type.open_group
 _core:
-  default_config_hash: J1paJHIS9R08olEYxw0uLNro5bI6KEaj8sheWGHWCW0
+  default_config_hash: cU1qKzItFPtafMfdmpTaOxGnUVUpoFG_6Rwj4suv-fE
 id: group.open_group.field_group_location
 field_name: field_group_location
 entity_type: group

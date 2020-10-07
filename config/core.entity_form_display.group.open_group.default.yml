@@ -1,5 +1,5 @@
 uuid: 46937afb-e2d3-4fd3-89a4-e71591a24a09
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -31,6 +31,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: content
     group_location:
       children:
         - field_group_location
@@ -44,6 +45,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: content
     group_settings:
       children: {  }
       parent_name: ''
@@ -57,7 +59,7 @@ third_party_settings:
       label: Settings
       region: content
 _core:
-  default_config_hash: Ip_OKGrmJhw6_2IIz5s_KGBETX59Snsxlt3p3hZxIKQ
+  default_config_hash: 0HmeHEUhBpg1HhFcX8aE7LzbgO2tWGRCDKpUMJl6uMY
 id: group.open_group.default
 targetEntityType: group
 bundle: open_group

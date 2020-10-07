@@ -1,9 +1,9 @@
 uuid: 80dc376c-2741-409e-99e0-0b106dd92088
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: XR_f0lfXIV2PJVpU4QEFgePYCLxpxC6QfoA03cGVYDw
+  default_config_hash: QS5ySiw68Hp2Nwog9pxCYrK6dHL-ODkCXytg-WNr_mI
 id: hero_call_to_action_block
 label: 'Hero call to action block'
 revision: 0

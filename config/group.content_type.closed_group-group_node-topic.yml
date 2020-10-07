@@ -1,5 +1,5 @@
 uuid: 10fda780-278a-4823-a478-4bf169d6a6be
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -9,7 +9,7 @@ dependencies:
     - gnode
     - node
 _core:
-  default_config_hash: epw4DZ0eXhrFncFtPdG524rOwJImLLuWSg2Lyh6NOYE
+  default_config_hash: Fz4EZTuBDAIYY46oUbDEipsBPN-3LIuyEC9lhX24D6U
 id: closed_group-group_node-topic
 label: topic
 description: 'Adds <em class="placeholder">Topic</em> content to groups both publicly and privately.'

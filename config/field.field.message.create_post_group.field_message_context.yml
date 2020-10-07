@@ -1,5 +1,5 @@
 uuid: adb5db54-5cf1-487d-9944-d85f680d5c41
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: EMMftMafkVbQGFljBGHQvZ1xuHqC-SGaUvuYMhU2d_U
+  default_config_hash: PHFL5ZdVYb9HbQXBt3AFNQ-Iyu7fOr1mmQJ_F0LMP_Q
 id: message.create_post_group.field_message_context
 field_name: field_message_context
 entity_type: message

@@ -1,12 +1,12 @@
 uuid: 12f5c31f-2564-4504-a0a7-ea4817480d34
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - profile
     - taxonomy
 _core:
-  default_config_hash: 0wGajjKhaMA7cSwI9XvyWSqeLIeaKB_PjWOo-TIo8lw
+  default_config_hash: fDLSxTyhsecB4CuNtYK0DRIwWl-peoVKasaNBrX2Oio
 id: profile.field_profile_profile_tag
 field_name: field_profile_profile_tag
 entity_type: profile

@@ -1,5 +1,5 @@
 uuid: 76f0a15e-11f6-4c5f-877d-64c360e88e8a
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
     - crop
     - image_effects
 _core:
-  default_config_hash: dMVU_VJ-WM9yHKsH2NGsNClFxlYuIb5idL_DAJbGVdc
+  default_config_hash: yo-h-gho_wVhfc1O8OkDTJM55ndloc89bfoUieS83sI
 name: social_hero_small
 label: 'social hero small (1200 x 193)'
 effects:

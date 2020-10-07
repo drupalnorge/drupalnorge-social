@@ -1,11 +1,11 @@
 uuid: cbbefcff-f26f-4dd0-b707-e2c7b00cc29d
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - group
 _core:
-  default_config_hash: XwB1tiTp_9hTMfUH0z-CjJOB-tVgjrvHu_7hRDrOcQw
+  default_config_hash: 49qmCXWLzSPm72eWn-XW5ccs65cwemyj4wGkil0x6Lc
 id: recipient_group_reference
 label: recipient_group_reference
 module: views
@@ -13,7 +13,6 @@ description: 'A view to be used by machines only to limit the group selection fo
 tag: ''
 base_table: groups_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default

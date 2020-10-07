@@ -1,9 +1,9 @@
 uuid: 905e2a9e-8935-4ffe-b398-58038850835b
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: M7gu0hM5eQSjsQOYu7Dr2RFyItlWKYgKPQIfGbhVo1Q
+  default_config_hash: _9Re886OsLYzeT3UAmkWDYS0OBWyLN0Z4gsH5Iv0kWM
 label: Large
 id: hero
 description: 'Header image in the hero region'

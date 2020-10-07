@@ -1,5 +1,5 @@
 uuid: 32eac116-82eb-426e-8cd4-3cff4db1e568
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -13,11 +13,11 @@ third_party_settings:
     activity_destinations:
       notifications: notifications
       email: email
-    activity_create_direct: 0
-    activity_aggregate: 0
+    activity_create_direct: false
+    activity_aggregate: false
     activity_entity_condition: comment_reply
 _core:
-  default_config_hash: 2o1nYXUEaNMlXq1DNTHGO58kbvC4MY_o4i6i7W_l3ZU
+  default_config_hash: hSrk9Dv4YWPi1UaoDFpdkp-IfFjKBYTMzo_TkGPFZns
 template: create_comment_reply_mention
 label: 'Create reply on comment with mentions'
 description: 'A person replied to a comment where I am mentioned'

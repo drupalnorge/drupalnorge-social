@@ -1,5 +1,5 @@
 uuid: 84803ffc-aa5c-400f-af01-7b80c1a519f9
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -7,7 +7,7 @@ dependencies:
     - image
     - profile
 _core:
-  default_config_hash: 8OO_sIuv7nQOIZRI03qMSZmDzW0zINwN6nM4j4v4XrM
+  default_config_hash: m4LA71vG5Hi0TtBE3UU6OIaCJASIgM4EbqJeO40PIOI
 id: profile.field_profile_image
 field_name: field_profile_image
 entity_type: profile

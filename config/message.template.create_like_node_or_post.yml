@@ -1,5 +1,5 @@
 uuid: 40ac3410-cab5-4279-bc12-c86aca789212
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -13,11 +13,11 @@ third_party_settings:
     activity_destinations:
       notifications: notifications
       email: email
-    activity_create_direct: 0
-    activity_aggregate: 0
+    activity_create_direct: false
+    activity_aggregate: false
     activity_entity_condition: ''
 _core:
-  default_config_hash: mhEYhJvbKkGB-A56aWNgx_6_CTv88nIPQ2l2if3JS1s
+  default_config_hash: kim6DZ0vijq6vn76LASXJbCrnCgkLJbtnrSrHhFzZgI
 template: create_like_node_or_post
 label: 'Create like on node or post'
 description: 'A person likes a post, topic, comment or event created by me'

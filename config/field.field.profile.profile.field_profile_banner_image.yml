@@ -1,5 +1,5 @@
 uuid: 08169eca-f76f-4ccf-8fb6-4d4b55baf282
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: UawMZhFSdMC2-AAWiIopNZcwbmXdudFfo1gRND_A7Qg
+  default_config_hash: puxv2IZKKu8hjVdrKzAoQfOrKFouBe30mmf569GjHp0
 id: profile.profile.field_profile_banner_image
 field_name: field_profile_banner_image
 entity_type: profile

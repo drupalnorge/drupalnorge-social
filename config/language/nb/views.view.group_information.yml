@@ -1,22 +1,23 @@
+label: 'Group Information'
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Bruk
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       fields:
         label:
           separator: ', '
-      title: 'Om gruppa'
+      title: 'About Group'
       arguments:
         id:
           exception:
-            title: Alle
-          title: 'Om {{ arguments.id }}'
+            title: All
+          title: 'About {{ arguments.id }}'
   page_group_about:
-    display_title: Side
+    display_title: Page

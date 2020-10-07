@@ -1,11 +1,11 @@
 uuid: ed15151f-d841-43b2-810d-828fd03da6c0
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - profile
 _core:
-  default_config_hash: hmyLw8np1Uh1v6B6ByZqIwItE1yXHrT1khezvyTEoOk
+  default_config_hash: 4lInhzLVz5dSZKcGTnOKNjFvEQMm53rKq9gq9ZCcXZY
 id: profile.compact_teaser
 label: 'Compact Teaser'
 targetEntityType: profile

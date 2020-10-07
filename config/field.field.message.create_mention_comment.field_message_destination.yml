@@ -1,5 +1,5 @@
 uuid: d6ec8888-ab12-4c9d-b533-0a0660e55db6
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: 4ZpwlYKwHYWKQp3tYTBrt1Nq-cmvaufPjxX8F6pDkIA
+  default_config_hash: TDSL-PijYnr0YP-UiRYg3kYvAvKKDm8-l263EXg67vo
 id: message.create_mention_comment.field_message_destination
 field_name: field_message_destination
 entity_type: message

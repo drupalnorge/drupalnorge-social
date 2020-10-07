@@ -1,5 +1,5 @@
 uuid: f270f5df-4626-40c8-b72a-703682bf4cf5
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -9,7 +9,7 @@ dependencies:
   module:
     - social_event
 _core:
-  default_config_hash: NMbvfZgCd0-cBojlZ5n_KDJOjX69vRHjnCw-i5a_hMc
+  default_config_hash: suCx7QaD0rD4sqRZeuBpKqaUGBPYd5eCliivc1cYZtk
 id: event_enrollment.event_enrollment.default
 targetEntityType: event_enrollment
 bundle: event_enrollment
@@ -27,6 +27,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
@@ -51,6 +52,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
     region: content
 hidden:

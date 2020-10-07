@@ -1,5 +1,5 @@
 uuid: 3c80246a-8693-4e6d-b64c-3cee431cc428
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
     - crop
     - image_effects
 _core:
-  default_config_hash: jQGw92zx4a6kuLl6UifCoNFmTCL2637hvKR8TaiMYCI
+  default_config_hash: mQSnm1ZzlIY8HzZE22uteHYlueTN-MNlSJ0gnyE8d2c
 name: social_small
 label: 'social small (24 x 24)'
 effects:

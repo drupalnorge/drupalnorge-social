@@ -1,11 +1,11 @@
 uuid: 819e5801-234b-4554-8999-3ff1678c91db
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - profile
 _core:
-  default_config_hash: xdbH1V3Bt9GEL2CC6M60aOSNjKeK1jpRpWoB6_OZl80
+  default_config_hash: FWE12hMqTGJASFckls63LM5nbY2mJwiQRlHRUC3sym8
 id: profile.hero
 label: Hero
 targetEntityType: profile

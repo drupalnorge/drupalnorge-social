@@ -1,9 +1,9 @@
 uuid: e3caa5d9-c2ac-401a-ba87-240f88d264bf
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: dlzhxhc9R3WQnyWJ8TkCz2Ekote8VmPbaRRfj2wNtpM
+  default_config_hash: DQ4klmx8uarptPK3_0Isis3qSYywr_FRWuuKtYM1J5M
 label: 'Profile small'
 id: profile_small
 description: 'Small sized profile image'

@@ -1,11 +1,11 @@
 uuid: a4219ad2-3c77-4138-8e1b-b7b1c8d6f9f1
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - node
 _core:
-  default_config_hash: e1C4rmrO-3L1I0l2J5EP0LneHwi2Ts398GxTX40rLIM
+  default_config_hash: gdRum7178bRnAxWW_ngDLctLIvy-eNRVJ39ubufYF_E
 id: node.field_event_location
 field_name: field_event_location
 entity_type: node

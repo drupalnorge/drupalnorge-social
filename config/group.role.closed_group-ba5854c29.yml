@@ -1,5 +1,5 @@
 uuid: d86092f1-6e94-4104-89f6-d0e6479d0ab5
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
     config:
       - user.role.sitemanager
 _core:
-  default_config_hash: 0xDzd7F3UbEGEimFYiU16gYob8Dq-RbDLnBffery69w
+  default_config_hash: zLSUpVFs3SDl7jn89G-zUiJHbD_aw_N-eVPjHa-2Esg
 id: closed_group-ba5854c29
 label: 'Site manager'
 weight: 4

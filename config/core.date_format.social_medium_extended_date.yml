@@ -1,9 +1,9 @@
 uuid: a7f8e2b8-598c-41aa-b986-36e23c6ba05f
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: bOLSR3np9VWFHJ5bmOIQVvyJfxKrfRSOle0J97qTQfQ
+  default_config_hash: FsVvbVWprtQQPrHHn6L7tJasFmFbJNHZF4gYrQaZpQI
 id: social_medium_extended_date
 label: 'Social medium extended date'
 locked: false

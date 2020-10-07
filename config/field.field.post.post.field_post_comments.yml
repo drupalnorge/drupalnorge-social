@@ -1,5 +1,5 @@
 uuid: 54623668-99ba-4374-b451-d3de5f30fe0f
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - comment
 _core:
-  default_config_hash: AQ9iC2hR5QGEr6dkImYd5RVm0egxSfZEDDaHShMANws
+  default_config_hash: IsD12_D33EVKPsX8H90B32pIE1cZHAuQmf_WU1ow1ng
 id: post.post.field_post_comments
 field_name: field_post_comments
 entity_type: post

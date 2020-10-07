@@ -1,11 +1,11 @@
 uuid: 3b88c986-c5a9-45d2-bf7b-bf1f5f59a028
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - profile
 _core:
-  default_config_hash: YcYEl_VJgKpEnxk1iIM85ybbcVWyZHCzgsxjh_DAtuk
+  default_config_hash: QnVPm4ArLvBo4W12GVjC3TKNAoRwwR2BGU9A_gRw7YM
 id: profile.table
 label: Table
 targetEntityType: profile

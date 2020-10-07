@@ -1,5 +1,5 @@
 uuid: 07acb056-f2f3-4772-aab6-9f441574bca0
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -10,7 +10,7 @@ dependencies:
   module:
     - dynamic_entity_reference
 _core:
-  default_config_hash: gCEJvp5mXPQH3s73iMUNhMc8NisjH9IlB7RfLPYTUiM
+  default_config_hash: NWU5c0mVLlyqVK-5NWHosyVnmcrfbEMf4mAIHd_-4nA
 id: message.create_post_profile.field_message_related_object
 field_name: field_message_related_object
 entity_type: message

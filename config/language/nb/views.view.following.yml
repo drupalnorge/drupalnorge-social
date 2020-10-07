@@ -1,41 +1,43 @@
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:
-          submit_button: Bruk
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér på'
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         options:
           tags:
             previous: ‹‹
             next: ››
-            first: '« Første'
-            last: 'Siste »'
+            first: '« First'
+            last: 'Last »'
           expose:
-            items_per_page_label: 'Elementer per side'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskyving
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
       fields:
         title:
-          label: Tittel
+          label: Title
           separator: ', '
         type:
           label: Type
           separator: ', '
         link_flag:
-          label: Handlinger
+          label: Operations
+          alter:
+            text: '<div class="btn btn-sm"> {{ link_flag }} </div>'
       filters:
         type:
           expose:
-            label: Innholdstype
+            label: 'Content type'
       arguments:
         uid:
           exception:
-            title: Alle
+            title: All
   following:
-    display_title: Side
+    display_title: Page

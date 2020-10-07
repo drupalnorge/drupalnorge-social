@@ -1,5 +1,5 @@
 uuid: e5c401ec-c950-4f15-8c5c-827eef59f5f5
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -25,7 +25,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: qqDHRFDvMQktSEGNvGvxXzY-4YeVspZEAwOwADcHMw0
+  default_config_hash: m_qG_MqcFD-QUKL0-UrU11N0fPu892HwJuWABZbSziY
 id: profile.profile.hero
 targetEntityType: profile
 bundle: profile

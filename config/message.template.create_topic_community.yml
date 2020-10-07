@@ -1,5 +1,5 @@
 uuid: aa26f842-285f-4da7-9be8-74b3c87f9192
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -13,12 +13,12 @@ third_party_settings:
       stream_group: stream_group
       stream_home: stream_home
       stream_profile: stream_profile
-    activity_create_direct: 0
+    activity_create_direct: false
     activity_action: create_entitiy_action
     activity_bundle_entities:
       node-topic: node-topic
 _core:
-  default_config_hash: fUIQO9Lm_XhSfzcT-ae10YmFY4YdMea1rMIFMfUjI0M
+  default_config_hash: Bw5yVJRJ-EanAEt1N7mO67u9Nn3keT9dkMLSgBeAOJ8
 template: create_topic_community
 label: 'Create topic'
 description: 'A user created a topic in the community'

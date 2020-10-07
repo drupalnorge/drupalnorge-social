@@ -1,11 +1,11 @@
 uuid: a1675838-cffa-4eab-a59e-2a25a1fbd10f
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - group.type.open_group
 _core:
-  default_config_hash: 3dIDvIKQyZdxNW0UYBa2yWt4F5h7QksLn8mce_sx_bY
+  default_config_hash: 5aG9kh50pb8pR5Ym1S-5Lqt_UKTu4HfWrSz8iUWOIP0
 id: open_group-group_manager
 label: 'Group Manager'
 weight: -99

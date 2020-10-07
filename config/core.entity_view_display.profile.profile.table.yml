@@ -1,5 +1,5 @@
 uuid: 4fe70e44-5636-409e-8947-112b381a56a1
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -25,7 +25,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: 4f-ZYQ9uYrTOn0BSa6jh5zXspIBGi5mT1JqTOLJpJ8c
+  default_config_hash: O0d0cYyWsi7bp5bt3OWyVBjwBy0hqHZPmEuh2TLdvvQ
 id: profile.profile.table
 targetEntityType: profile
 bundle: profile

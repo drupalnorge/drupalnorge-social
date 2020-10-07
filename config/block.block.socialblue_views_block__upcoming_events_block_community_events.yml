@@ -1,5 +1,5 @@
 uuid: ea5fadbd-b558-404b-8f1f-f1f333bc849a
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -24,6 +24,7 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
+  type: none
 visibility:
   request_path:
     id: request_path

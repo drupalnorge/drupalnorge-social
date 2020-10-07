@@ -1,12 +1,12 @@
 uuid: 0064072e-8f0d-48ed-8cf0-8e6799e68da6
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - comment
     - social_post
 _core:
-  default_config_hash: 53vimJ-4WkdX5lHYUperAG-hJK0_g6Y4EPuhj7_Dp_A
+  default_config_hash: yPBZ_8gt5KU5pB3bNoGNUIP1qLLDd2paFehF1n4JiR4
 id: post.field_post_comments
 field_name: field_post_comments
 entity_type: post

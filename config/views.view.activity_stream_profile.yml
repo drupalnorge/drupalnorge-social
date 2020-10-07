@@ -1,5 +1,5 @@
 uuid: 6d23d1c6-dd01-4b4e-a5b7-3e97a923a681
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -11,7 +11,7 @@ dependencies:
     - options
     - user
 _core:
-  default_config_hash: vFW30BSSL9R69dLaBcCqJ25jrWGBw5nKxwEv5AySm00
+  default_config_hash: KfMZUHyrR6BrQQdOfvpKbeOJFJMuAVtH33VVhlcrFqE
 id: activity_stream_profile
 label: activity_stream_profile
 module: views
@@ -19,7 +19,6 @@ description: 'Activity stream on a profile'
 tag: ''
 base_table: activity_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -152,6 +151,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -191,6 +192,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -228,6 +231,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

@@ -1,5 +1,5 @@
 uuid: 7f5297f9-474e-46ad-a02d-ccaaeaa199b5
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -13,12 +13,12 @@ third_party_settings:
       stream_group: stream_group
       stream_home: stream_home
       stream_profile: stream_profile
-    activity_create_direct: 0
+    activity_create_direct: false
     activity_action: create_entitiy_action
     activity_bundle_entities:
       node-topic: node-topic
 _core:
-  default_config_hash: OrkUYYKXIRasMwuzGHiVq927BlFg0vX1kMV6f2NDI0Q
+  default_config_hash: 1m-4pe3-yspP6lmDB-jJNJXg1QwsKDZ97TN0asd-ILc
 template: create_topic_group
 label: 'Create topic in group'
 description: 'A user created a topic in a group'

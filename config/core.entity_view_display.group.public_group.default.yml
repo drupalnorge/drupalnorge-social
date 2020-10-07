@@ -1,5 +1,5 @@
 uuid: f35e96e0-aa08-4db5-86fe-dc504ca2704b
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -9,7 +9,7 @@ dependencies:
     - field.field.group.public_group.field_group_location
     - group.type.public_group
 _core:
-  default_config_hash: LUlT3cNG0k8QOivaMahrt4lb_3ea_a3GMKNI73EAhS0
+  default_config_hash: MaRO1E0Egt6QiPIC8Pjgs-_MTJGreH2JOeJEA7jaXPA
 id: group.public_group.default
 targetEntityType: group
 bundle: public_group

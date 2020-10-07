@@ -1,5 +1,5 @@
 uuid: f67f40e8-e051-4a01-b277-b43a068d88e5
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -9,7 +9,7 @@ dependencies:
     - group
     - user
 _core:
-  default_config_hash: m59mmgLMtOnt0MSyksk0IBtUNeEDnRLhyjKNf_aUWSU
+  default_config_hash: OL21L2xjoXlc_17Fycs9SNyTwcbxw4axjRciaZOzl9Q
 id: newest_groups
 label: 'Newest groups'
 module: views
@@ -17,7 +17,6 @@ description: ''
 tag: ''
 base_table: groups_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -43,7 +42,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrer
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -254,6 +253,8 @@ display:
               contentmanager: '0'
               sitemanager: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

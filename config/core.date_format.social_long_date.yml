@@ -1,9 +1,9 @@
 uuid: feb07e52-11b1-4b88-afca-5b2b34b5fdb3
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: yn7hJ7aKHaqAB7NobQ5AvSonDaKip1njklGDp6I6yN4
+  default_config_hash: FkeMYejf_N2ByATJTBSZUhOe3sLFKkvGpyTvu8JLoc8
 id: social_long_date
 label: 'Social long date'
 locked: false

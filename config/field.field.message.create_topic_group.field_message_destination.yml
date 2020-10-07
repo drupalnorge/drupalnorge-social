@@ -1,5 +1,5 @@
 uuid: a9a05873-16cd-4591-9782-d7360bb3c2f0
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: 1o6xbwIeI5jYVQc8XcHSwZGuBBopUJbF3Uzu5bEcymg
+  default_config_hash: DkZvxfGLQAPgRyOw6AEVkLmms2kCZMa-mZwqZEpeQGY
 id: message.create_topic_group.field_message_destination
 field_name: field_message_destination
 entity_type: message

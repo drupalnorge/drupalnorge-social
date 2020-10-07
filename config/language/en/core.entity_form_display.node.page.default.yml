@@ -1,0 +1,18 @@
+third_party_settings:
+  field_group:
+    group_page_content:
+      label: Content
+      format_settings:
+        label: Content
+    group_page_description:
+      label: 'Page description'
+      format_settings:
+        label: 'Page description'
+    group_attachments:
+      label: Attachments
+      format_settings:
+        label: Attachments
+    group_page_visibility:
+      label: Visibility
+      format_settings:
+        label: Visibility

@@ -1,6 +1,6 @@
 uuid: a7242103-0fdd-466b-ae93-178b40551e0c
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - slack_invite

@@ -1,0 +1,40 @@
+langcode: nb
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.field.block_content.basic.field_basic_link
+    - field.field.block_content.basic.field_text_block
+  module:
+    - text
+    - link
+id: block_content.basic.default
+targetEntityType: block_content
+bundle: basic
+mode: default
+content:
+  info:
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    type: string_textfield
+    weight: -5
+  field_basic_link:
+    region: content
+    settings:
+      placeholder_title: ''
+      placeholder_url: ''
+    third_party_settings: {  }
+    type: link_default
+    weight: 1
+  field_text_block:
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+    type: text_textarea
+    weight: 0
+hidden: {  }

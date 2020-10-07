@@ -1,11 +1,11 @@
 uuid: e30e610b-d233-4bbe-bfc1-b27f2ebad39a
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - profile
 _core:
-  default_config_hash: D7EZM3YkqZXzO7eZ6aJNbAwQ4ETNy-yMk3N0lo49iPM
+  default_config_hash: bU3-BxnWANSAHqMUHQIh-xCJxBiX9Ye37lWRt9pvxP0
 id: profile.field_profile_organization
 field_name: field_profile_organization
 entity_type: profile

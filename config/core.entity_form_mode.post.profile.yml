@@ -1,11 +1,11 @@
 uuid: f2bab24d-d10e-431c-815a-136c051e551d
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - social_post
 _core:
-  default_config_hash: XqND3WmnPUGOb_j_NqRg7_of_gaSstrJ4iIJg3wD9TI
+  default_config_hash: ERBMKirHXtUqCETCrqcxliBrrgzytNmDUbDEzsfNP84
 id: post.profile
 label: 'Profile of others'
 targetEntityType: post

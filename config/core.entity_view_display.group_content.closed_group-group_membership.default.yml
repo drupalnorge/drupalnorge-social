@@ -1,12 +1,12 @@
 uuid: cd017717-523c-4789-95d8-d51a7c28cc2d
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - field.field.group_content.closed_group-group_membership.group_roles
     - group.content_type.closed_group-group_membership
 _core:
-  default_config_hash: JvPWmhPxCZqE_JAaXc1jXANcZtzQOeudVFjv9GFePLk
+  default_config_hash: TPNTm53CtHf9dVSuHM1ewvdvF4p9YqixqB2xCYKXoFc
 id: group_content.closed_group-group_membership.default
 targetEntityType: group_content
 bundle: closed_group-group_membership

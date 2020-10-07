@@ -1,5 +1,5 @@
 uuid: 2386ab28-7541-4831-9ac7-5db9fde38864
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - comment
 _core:
-  default_config_hash: vwf3UG4AfeKtuNSWPqZPy509jLIrUDCvWjyoknc7B08
+  default_config_hash: VfBCTicBpnR5zXM5x1s0-gBedeImspalPJRzSIzJN8c
 id: node.event.field_event_comments
 field_name: field_event_comments
 entity_type: node

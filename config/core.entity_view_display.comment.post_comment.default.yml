@@ -1,12 +1,14 @@
 uuid: 7de9aa4a-421b-431f-aca0-3af821ecf2ea
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - comment.type.post_comment
     - field.field.comment.post_comment.field_comment_body
+  module:
+    - text
 _core:
-  default_config_hash: FofkEbCSl5bmiwsIkBnLEdy9UzgZh3vsNmwNyOVPshw
+  default_config_hash: NANhQIZe6YsNWEd9vP0qi1gObNJFxlpOSBo5Y6DUo10
 id: comment.post_comment.default
 targetEntityType: comment
 bundle: post_comment
@@ -17,18 +19,18 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: text_default
     region: content
   like_and_dislike:
     weight: 2
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   links:
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   langcode: true
   search_api_excerpt: true

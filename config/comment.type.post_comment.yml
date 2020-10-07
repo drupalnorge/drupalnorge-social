@@ -1,9 +1,9 @@
 uuid: 6987c118-1a43-4d7d-8b6b-6c4e5f15deab
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: hGHnIBzGy-ezfVmmfzoO6FbC-fhM8_KKG_Ysyae9xtk
+  default_config_hash: flofQ1DseZr_pldPg97CW8mMUjWACO6IzEAUVqqz6kg
 id: post_comment
 label: 'Post comment'
 target_entity_type_id: post

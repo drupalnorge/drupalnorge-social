@@ -1,11 +1,11 @@
 uuid: 382e89ab-8b30-4217-b405-8d3c7c0227de
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - profile
 _core:
-  default_config_hash: QwHKCTpE1suKE_XELJtpxPdCy6856mg2nrGY2GQI6tw
+  default_config_hash: Ycccdw-nAl0gw226CryW3vzPHYz7npRds2lE7fOoDhs
 id: profile.teaser
 label: Teaser
 targetEntityType: profile

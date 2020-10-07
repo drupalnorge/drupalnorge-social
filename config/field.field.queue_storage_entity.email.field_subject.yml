@@ -1,0 +1,21 @@
+uuid: 6ae5cc66-a77e-4a3d-9ab5-4bd96ce08afc
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.queue_storage_entity.field_subject
+    - social_queue_storage.queue_storage_entity_type.email
+_core:
+  default_config_hash: VXIxOrq_0BHfDR-tcNfslgy6JgwwkIjQAxIstg7dmp8
+id: queue_storage_entity.email.field_subject
+field_name: field_subject
+entity_type: queue_storage_entity
+bundle: email
+label: subject
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

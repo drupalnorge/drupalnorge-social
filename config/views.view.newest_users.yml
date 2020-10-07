@@ -1,5 +1,5 @@
 uuid: a2825d84-5f2a-48b1-937b-f9696375222a
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -10,7 +10,7 @@ dependencies:
     - profile
     - user
 _core:
-  default_config_hash: 7buHn5i4wy753bx_Q2g9CtIjfu74pZ1uv7L_9GifXlA
+  default_config_hash: SlAMRn2rJmSqEkve9jDS-pvzMGbPEn2SblQTyswz5F8
 id: newest_users
 label: 'Newest users'
 module: views
@@ -18,7 +18,6 @@ description: 'Displays a block and page for the newest users on the platform bas
 tag: ''
 base_table: profile
 base_field: profile_id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -139,6 +138,9 @@ display:
           entity_type: profile
           entity_field: type
           plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
         status:
           id: status
           table: users_field_data
@@ -162,6 +164,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -203,6 +207,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

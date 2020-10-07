@@ -1,9 +1,9 @@
 uuid: df6bdae2-02a5-4044-8aa8-d82d898780a2
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: FK1aIcm7WNB5LxKEQikPArccHbZ_kJKneTr1oXhNar8
+  default_config_hash: FbUUn5CvxvsYhmk9aJh0FPhz-uwJMvxjlSlImInJrpU
 id: ProfileMention
 name: ProfileMention
 description: 'Mention by Profile entity'

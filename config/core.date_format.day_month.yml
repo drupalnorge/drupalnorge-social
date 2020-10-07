@@ -1,9 +1,9 @@
 uuid: 4a008cbe-ee63-4394-9139-317e402b4f8b
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: 3_efTeruTseDKsX25lEwhNav7kRJcb908WGKYAifNTk
+  default_config_hash: iSIk_H8ZV95HabvWumZWo4OSccuGB8-T8hXV3l6GhGI
 id: day_month
 label: 'Day Month'
 locked: false

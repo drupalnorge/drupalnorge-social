@@ -1,5 +1,5 @@
 uuid: 3423d7c4-4d5b-457e-b926-6d2da289ba35
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -13,7 +13,7 @@ dependencies:
   module:
     - dropdown
 _core:
-  default_config_hash: WU5RP0OlbkLrfULjyeVIbzVODVg_PS3g5tpwmtH06X0
+  default_config_hash: xUAASellzoAFb-FN2_bDBzYYyPEQ93N-cQ1B7F7AfYQ
 id: post.post.profile
 targetEntityType: post
 bundle: post

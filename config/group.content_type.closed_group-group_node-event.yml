@@ -1,5 +1,5 @@
 uuid: f3892f04-9e98-4acc-aabf-c3e9df1a2c92
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -9,7 +9,7 @@ dependencies:
     - gnode
     - node
 _core:
-  default_config_hash: hZlsNQO2vMpaRKx_BN_ndP2Y7bkGKo7VAGFkdxT77-Y
+  default_config_hash: tX4Hh9jAWBH2NDtauWJpsEhzY9cU1HwFBcR6PG44vjM
 id: closed_group-group_node-event
 label: event
 description: 'Adds <em class="placeholder">Event</em> content to groups both publicly and privately.'

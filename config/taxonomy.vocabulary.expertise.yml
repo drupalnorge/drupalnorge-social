@@ -1,9 +1,9 @@
 uuid: 672390c6-a8d2-44a1-93f6-2d5d5d4b83c9
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: epRs57Sw7vhbWAgfsdT8AlIC3DXa3rfauWFlgQKo10I
+  default_config_hash: fYqTgOn5N__1Uzeq76TinRf29oxTe63yP_zq70EQcDU
 name: Expertise
 vid: expertise
 description: 'A users expertises'

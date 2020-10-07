@@ -3,3 +3,5 @@ tips:
     label: Status
   search-api-index-tracker:
     label: Tracker
+  search-api-index-server-index-status:
+    body: 'For enabled indexes, the number of items that can actually be retrieved from the server is listed here. For reasons why this number might differ from the number under "Index status", <a href="https://www.drupal.org/docs/8/modules/search-api/getting-started/frequently-asked-questions#server-index-status">see the module''s documentation</a>.'

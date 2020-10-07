@@ -1,5 +1,5 @@
 uuid: ca150e67-515e-440c-bca3-173e9d6f2c06
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -25,6 +25,7 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
+  type: none
 visibility:
   request_path:
     id: request_path

@@ -1,5 +1,5 @@
 uuid: 28ffb1b7-c601-4326-831a-2ecd19d6c8f1
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
@@ -12,12 +12,12 @@ third_party_settings:
       stream_group: stream_group
       stream_home: stream_home
       stream_profile: stream_profile
-    activity_create_direct: 1
+    activity_create_direct: true
     activity_action: create_entitiy_action
     activity_bundle_entities:
       post-post: post-post
 _core:
-  default_config_hash: FSiWpXVjHWQe6wjHZyrDbvmAS-QZJh3bkKx9DllyP7E
+  default_config_hash: 93dI7ty4qW1rNQwwKFpjp3-Lsyk3JmaSMxVnMLt1vLw
 template: create_post_group
 label: 'Create post in a group'
 description: 'A user created a post in a group'

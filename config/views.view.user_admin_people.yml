@@ -1,5 +1,5 @@
 uuid: 9d5b34d3-64b8-415f-988e-b51aa7770578
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -12,7 +12,7 @@ dependencies:
     - user
     - views_bulk_operations
 _core:
-  default_config_hash: l6kPjP6UEcgKd3sAfozWD9fqcKqYhOdNIKFaJ8WmxU8
+  default_config_hash: HnlK_0ROWxcBuGyD-u-X4aPf6q4NvOBOKmYlV9HwXAU
 id: user_admin_people
 label: People
 module: user
@@ -20,7 +20,6 @@ description: 'Find and manage people interacting with your site.'
 tag: default
 base_table: users_field_data
 base_field: uid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -44,7 +43,7 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrer
           reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -230,6 +229,7 @@ display:
             vbo_cancel_user_action: vbo_cancel_user_action
             views_bulk_operations_delete_entity: 0
             'entity:save_action:user': 0
+            social_group_add_members_to_group_action: social_group_add_members_to_group_action
           preconfiguration:
             user_unblock_user_action:
               label_override: ''
@@ -783,6 +783,8 @@ display:
               contentmanager: '0'
               sitemanager: '0'
             placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -824,6 +826,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -865,6 +869,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -905,6 +911,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -944,6 +952,8 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: true
           group_info:
             label: Status
@@ -1000,6 +1010,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ID
@@ -1044,6 +1056,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1093,6 +1107,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -1142,6 +1158,8 @@ display:
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

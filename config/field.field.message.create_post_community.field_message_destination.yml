@@ -1,5 +1,5 @@
 uuid: db44a2bc-a27e-4aee-b6e0-a185cf905c1f
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - options
 _core:
-  default_config_hash: _QtTu2mntihqrHFEAVSb3CJMxtco8UYqdqcU-D2em38
+  default_config_hash: xv5AKH8pt3XAkhhZ3h4rLfC2pu9y33QLo-Zm8Gk9qzk
 id: message.create_post_community.field_message_destination
 field_name: field_message_destination
 entity_type: message

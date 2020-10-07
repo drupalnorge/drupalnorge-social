@@ -1,11 +1,11 @@
 uuid: 76c28f5c-52ad-4654-a64d-820f34a0057c
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - node
 _core:
-  default_config_hash: q1L5aaKA7giAB3zZyc_ZiihldYteLZkEvut6Pi0jhPQ
+  default_config_hash: BGXPDa8Mbk529tM3eaakKXZvKWUl86FqXDr6Vb9HJzE
 id: node.field_event_enroll
 field_name: field_event_enroll
 entity_type: node

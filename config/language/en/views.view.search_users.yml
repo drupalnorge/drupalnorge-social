@@ -33,6 +33,9 @@ display:
         field_profile_profile_tag:
           expose:
             label: 'Profile tag'
+        created:
+          expose:
+            label: 'Registration Date'
       title: 'Search users'
       header:
         area:

@@ -1,5 +1,5 @@
 uuid: 6dc67de8-6436-483c-87de-392df32a9353
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -8,7 +8,7 @@ dependencies:
   module:
     - file
 _core:
-  default_config_hash: X7oF_vls-1z6d5kzBBjQfYuCq-zuJvrZFhZanIIf7RM
+  default_config_hash: BxKIKXZeuiVxnPa4FgF8IsBF0xcXVXdwNe-qwlisyaQ
 id: node.page.field_files
 field_name: field_files
 entity_type: node

@@ -1,12 +1,12 @@
 uuid: 273dee6b-33ab-4501-af79-9cf836aadd96
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - field.storage.profile.field_profile_last_name
     - profile.type.profile
 _core:
-  default_config_hash: csNjl3bGScQ3rN5gozhGKMxRo1RKmw0EfFRjEEOEzK4
+  default_config_hash: 9_xxOGMtmW5HZp6oTwFAUJtHSpgQLf5dFBeuYmkKQ9Y
 id: profile.profile.field_profile_last_name
 field_name: field_profile_last_name
 entity_type: profile

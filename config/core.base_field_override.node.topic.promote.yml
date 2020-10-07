@@ -1,11 +1,11 @@
 uuid: 68063929-7c95-4f0c-aadb-2a8ba1df8586
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
     - node.type.topic
 _core:
-  default_config_hash: 7w8fdz8qR86mEWrTpLV1mMI6vhRjAgGCkukABGM73c0
+  default_config_hash: BewBDZJhS6h3_8wegi8hznkkeNfhkB5BrZppZx9iSYU
 id: node.topic.promote
 field_name: promote
 entity_type: node

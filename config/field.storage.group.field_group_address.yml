@@ -1,12 +1,12 @@
 uuid: 2926cd9e-6b41-4f96-b294-9a8f313ff55a
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - address
     - group
 _core:
-  default_config_hash: SThhVdsoT2cGEl1WixzKDeTriPp9zTmXWBNcUrUwIgs
+  default_config_hash: wl_XkhiXwWFvdDPmQSkfIEdcpgejjhOuKhuRUvA0QMo
 id: group.field_group_address
 field_name: field_group_address
 entity_type: group

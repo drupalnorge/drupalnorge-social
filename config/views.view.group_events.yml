@@ -1,5 +1,5 @@
 uuid: 2dda40cf-294e-438c-bc23-c95b50f2f86d
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -16,7 +16,7 @@ dependencies:
     - node
     - social_event
 _core:
-  default_config_hash: U1m7im0n_LIf-xAersIh9IgiJ-tRm2iZ9odxkEOxeBU
+  default_config_hash: ayyzZSZqxgqYWQ5O4j1FONP61Z78yXu25ir4TuyZqDg
 id: group_events
 label: 'Group Events'
 module: views
@@ -24,7 +24,6 @@ description: ''
 tag: ''
 base_table: group_content_field_data
 base_field: id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -159,6 +158,9 @@ display:
           entity_type: group_content
           entity_field: type
           plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
         field_event_date_value:
           id: field_event_date_value
           table: node__field_event_date
@@ -186,6 +188,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: true
           group_info:
             label: 'Event status'
@@ -238,6 +242,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -345,11 +351,12 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - user.group_permissions
         - 'languages:language_content'
         - 'languages:language_interface'
+        - route.group
         - url
         - url.query_args
+        - user.group_permissions
         - 'user.node_grants:view'
       tags: {  }
   page_group_events:
@@ -364,10 +371,11 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-        - user.group_permissions
         - 'languages:language_content'
         - 'languages:language_interface'
+        - route.group
         - url
         - url.query_args
+        - user.group_permissions
         - 'user.node_grants:view'
       tags: {  }

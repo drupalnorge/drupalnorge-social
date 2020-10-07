@@ -1,12 +1,12 @@
 uuid: 89c785d7-ff06-428c-9817-e0bb50e8dcd9
-langcode: en
+langcode: nb
 status: true
 dependencies:
   module:
     - group
     - text
 _core:
-  default_config_hash: X3uqFg12E2rJ3gtTAeDlxLm6xjW8zFqFHKCZkdG-UU8
+  default_config_hash: oIT_Z_eHdoTZQS_rqmfvnH8oxmIv0_KvUJMD7nKE9uU
 id: group.field_group_description
 field_name: field_group_description
 entity_type: group

@@ -1,9 +1,9 @@
 uuid: 0b89f390-963c-4f72-8959-bad02969b42a
-langcode: en
+langcode: nb
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: XknqMjXmay6Ivp8iiMAhawIM4idlyWLmoGLuNZtPyBA
+  default_config_hash: NvHTnZn-Y85aABkQEsCNty0XMRlwGDluZy3-KdImiiQ
 id: profile
 label: Profile
 display_label: null

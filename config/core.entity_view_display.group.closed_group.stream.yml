@@ -1,5 +1,5 @@
 uuid: 5a4cdd5d-c95f-4633-8a54-672f21e12bbd
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -10,7 +10,7 @@ dependencies:
     - field.field.group.closed_group.field_group_location
     - group.type.closed_group
 _core:
-  default_config_hash: IW9GutftuvaGiBVaBcWunM-yPg40z4RS0sK3riTWykc
+  default_config_hash: U54lfToqSZxEiP0GdxNmfMuBSHLdoJRyQ16NALjYS1E
 id: group.closed_group.stream
 targetEntityType: group
 bundle: closed_group
