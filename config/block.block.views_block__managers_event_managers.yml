@@ -1,0 +1,35 @@
+uuid: 5e0bbb4e-c61b-48d9-9641-44438631ca45
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.managers
+  module:
+    - node
+    - views
+  theme:
+    - socialbase
+_core:
+  default_config_hash: ySiR0TuJ7Ge_hLptiPlVqHJupCtwm05QVqICK8GulO0
+id: views_block__managers_event_managers
+theme: socialbase
+region: complementary_bottom
+weight: 0
+provider: null
+plugin: 'views_block:managers-event_managers'
+settings:
+  id: 'views_block:managers-event_managers'
+  label: 'Event Organisers'
+  provider: views
+  label_display: visible
+  views_label: 'Event Organisers'
+  items_per_page: none
+  type: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,19 @@
+uuid: b4de76c2-031c-421b-9432-ebaff73a6cb3
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.group_content.invitee_mail
+    - group.content_type.closed_group-group_invitation
+id: group_content.closed_group-group_invitation.invitee_mail
+field_name: invitee_mail
+entity_type: group_content
+bundle: closed_group-group_invitation
+label: 'Invitee mail'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -29,3 +29,8 @@ visibility:
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+  request_path:
+    context_mapping: {  }
+    id: request_path
+    negate: true
+    pages: "/node/*/all-enrollment-requests\r\n/node/*/all-enrollment-invites"

@@ -11,6 +11,7 @@ dependencies:
     - social_post.post_type.post
   module:
     - dropdown
+    - text
 _core:
   default_config_hash: w-cBY1XooNNFOa3XgJA63rl8DUId2ydpkjg-aJMSA0k
 id: post.post.default
@@ -19,7 +20,7 @@ bundle: post
 mode: default
 content:
   field_post:
-    type: string_textarea
+    type: text_textarea
     weight: 0
     label: hidden
     settings:

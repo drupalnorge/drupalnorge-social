@@ -6,13 +6,16 @@ dependencies:
     - core.entity_view_mode.node.activity_comment
     - field.field.node.event.body
     - field.field.node.event.field_content_visibility
+    - field.field.node.event.field_enroll_method
     - field.field.node.event.field_event_address
     - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
     - field.field.node.event.field_event_enroll
+    - field.field.node.event.field_event_enroll_outside_group
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
+    - field.field.node.event.field_event_managers
     - field.field.node.event.field_files
     - image.style.social_x_large
     - node.type.event
@@ -89,8 +92,11 @@ content:
 hidden:
   body: true
   field_content_visibility: true
+  field_enroll_method: true
   field_event_comments: true
   field_event_enroll: true
+  field_event_enroll_outside_group: true
+  field_event_managers: true
   field_files: true
   groups: true
   groups_type_closed_group: true

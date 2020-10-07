@@ -20,3 +20,7 @@ third_party_settings:
       label: 'Enrollment options'
       format_settings:
         label: 'Enrollment options'
+    group_enrollment_methods:
+      format_settings:
+        label: 'Enrollment options fieldset'
+      label: 'Enrollment options fieldset'

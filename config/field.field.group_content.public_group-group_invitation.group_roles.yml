@@ -1,0 +1,22 @@
+uuid: b95a8892-1b74-4e87-b197-b7e28d01e3f6
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.group_content.group_roles
+    - group.content_type.public_group-group_invitation
+id: group_content.public_group-group_invitation.group_roles
+field_name: group_roles
+entity_type: group_content
+bundle: public_group-group_invitation
+label: Roles
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'group_type:group_role'
+  handler_settings:
+    group_type_id: public_group
+field_type: entity_reference

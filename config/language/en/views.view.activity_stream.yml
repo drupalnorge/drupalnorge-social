@@ -20,6 +20,10 @@ display:
             items_per_page_options_all_label: '- All -'
             offset_label: Offset
       title: Stream
+  block_stream_explore:
+    display_title: 'Explore Stream Block'
+    display_options:
+      title: Stream
   block_stream_homepage:
     display_title: 'Homepage stream block'
   block_stream_homepage_without_post:

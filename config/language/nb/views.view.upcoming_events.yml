@@ -40,17 +40,6 @@ display:
       use_more_text: 'All my upcoming events'
   page_community_events:
     display_options:
-      filters:
-        field_event_date_value:
-          expose:
-            label: 'Start date'
-          group_info:
-            label: 'Event status'
-            group_items:
-              1:
-                title: 'Upcoming events'
-              2:
-                title: 'Events that have started or are finished'
       title: 'All events'
   upcoming_events_group:
     display_options:

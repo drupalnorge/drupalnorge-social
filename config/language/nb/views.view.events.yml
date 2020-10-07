@@ -48,13 +48,3 @@ display:
         status:
           expose:
             label: 'Publish status'
-        field_event_date_value:
-          expose:
-            label: 'Start date'
-          group_info:
-            label: 'Event status'
-            group_items:
-              1:
-                title: 'Upcoming events'
-              2:
-                title: 'Events that have started or are finished'

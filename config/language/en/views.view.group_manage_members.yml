@@ -22,8 +22,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset_label: Offset
       fields:
-        rendered_entity:
-          label: Member
         field_profile_organization:
           label: Organization
           separator: ', '

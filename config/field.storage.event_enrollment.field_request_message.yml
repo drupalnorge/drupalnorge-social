@@ -1,0 +1,19 @@
+uuid: a4d02fed-e541-4ba8-b185-40a817eb0c93
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_event
+id: event_enrollment.field_request_message
+field_name: field_request_message
+entity_type: event_enrollment
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

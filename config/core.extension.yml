@@ -27,6 +27,7 @@ module:
   drupalnorge_custom: 0
   dynamic_entity_reference: 0
   editor: 0
+  editor_advanced_link: 0
   entity: 0
   entity_access_by_field: 0
   exif_orientation: 0
@@ -41,8 +42,11 @@ module:
   file_mdm_font: 0
   filter: 0
   flag: 0
+  gin_toolbar: 0
+  ginvite: 0
   gnode: 0
   google_analytics: 0
+  grequest: 0
   group: 0
   group_core_comments: 0
   gvbo: 0
@@ -80,10 +84,14 @@ module:
   social_core: 0
   social_editor: 0
   social_event: 0
+  social_event_addtocal: 0
+  social_event_invite: 0
+  social_event_managers: 0
   social_file_private: 0
   social_follow_content: 0
   social_font: 0
   social_group_gvbo: 0
+  social_group_invite: 0
   social_lets_connect: 0
   social_lets_connect_usage: 0
   social_like: 0
@@ -118,6 +126,7 @@ module:
   views_ui: 0
   votingapi: 0
   social_group: 2
+  social_group_request: 6
   content_translation: 10
   views: 10
   improved_theme_settings: 50
@@ -130,6 +139,8 @@ theme:
   seven: 0
   socialblue: 0
   drupalnorge_theme: 0
+  claro: 0
+  gin: 0
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
 langcode: nb

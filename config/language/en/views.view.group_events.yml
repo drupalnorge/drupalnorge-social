@@ -23,16 +23,15 @@ display:
         label:
           separator: ', '
       filters:
-        field_event_date_value:
+        event_date:
           expose:
-            label: 'Start date (field_event_date)'
+            label: 'Event date'
           group_info:
-            label: 'Event status'
             group_items:
               1:
-                title: 'Upcoming events'
+                title: 'Ongoing and upcoming events'
               2:
-                title: 'Events that have started or are finished'
+                title: 'Past events'
       title: 'Group Events'
       empty:
         area_text_custom:
