@@ -8,3 +8,4 @@ debug: true
 format: restricted_html
 async: false
 skip_cron: false
+api_hostname: api.sparkpost.com
