@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.event_enrollment.event_enrollment.field_account
+    - field.field.event_enrollment.event_enrollment.field_email
     - field.field.event_enrollment.event_enrollment.field_enrollment_status
     - field.field.event_enrollment.event_enrollment.field_event
+    - field.field.event_enrollment.event_enrollment.field_request_message
+    - field.field.event_enrollment.event_enrollment.field_request_or_invite_status
   module:
     - options
     - social_event
@@ -49,4 +52,7 @@ content:
     region: content
 hidden:
   field_account: true
+  field_email: true
+  field_request_message: true
+  field_request_or_invite_status: true
   search_api_excerpt: true

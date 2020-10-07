@@ -1,0 +1,21 @@
+uuid: dd388da3-7dd9-44e2-9700-d2eea4020c75
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.event_enrollment.field_request_or_invite_status
+  module:
+    - options
+    - social_event
+id: event_enrollment.event_enrollment.field_request_or_invite_status
+field_name: field_request_or_invite_status
+entity_type: event_enrollment
+bundle: event_enrollment
+label: 'Request or invite status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

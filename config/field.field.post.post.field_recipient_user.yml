@@ -26,4 +26,5 @@ settings:
     target_bundles: null
     sort:
       field: _none
+    auto_create: false
 field_type: entity_reference

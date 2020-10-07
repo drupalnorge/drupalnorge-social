@@ -21,14 +21,19 @@ node_modules
 # Ignore other things
 .DS_Store
 
-# Ignore local settings.php
-html/sites/default/settings.local.php
-
 # Ignore local behat.yml
 behat.yml
 
-# Ingore Lando-files
-/app
+# Ignore paths that contain user-generated content.
+html/sites/*/files
+html/sites/*/private
+files
+private
+tmp
 
-# Ingore DDEV-files
-.ddev/docker-compose.yaml
+# Ignore configuration files that may contain sensitive information.
+html/sites/*/settings.*.php
+html/sites/*/services*.yml
+
+# Ignore SSL well-known
+html/.well-known/

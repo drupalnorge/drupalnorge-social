@@ -15,6 +15,7 @@ group_type: closed_group
 permissions_ui: true
 permissions:
   - 'access comments'
+  - 'request group membership'
   - 'update own group_node:event entity'
   - 'update own group_node:topic entity'
   - 'view group'

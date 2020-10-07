@@ -1,0 +1,46 @@
+label: 'User Event Invites'
+description: 'Shows invites to events for a user.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      fields:
+        field_event:
+          label: Event
+          separator: ', '
+        created:
+          label: 'Invite date'
+          separator: ', '
+        operations:
+          label: Action
+      title: 'Invites overview'
+      header:
+        result:
+          content: '<h1 class="h4 section-title">@total Event invites</h1>'
+      empty:
+        area_text_custom:
+          content: 'You don''t have any event invites yet.'
+      arguments:
+        uid:
+          exception:
+            title: All
+  page_user_event_invites:
+    display_title: Page

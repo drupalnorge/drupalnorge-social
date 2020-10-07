@@ -50,16 +50,18 @@ display:
     display_title: 'Community events page'
     display_options:
       filters:
-        field_event_date_value:
+        event_date:
           expose:
-            label: 'Start date'
+            label: 'Event date'
           group_info:
-            label: 'Event status'
             group_items:
               1:
-                title: 'Upcoming events'
+                title: 'Ongoing and upcoming events'
               2:
-                title: 'Events that have started or are finished'
+                title: 'Past events'
+        field_enroll_method_value:
+          expose:
+            label: 'Enroll Method'
       title: 'All events'
   upcoming_events_group:
     display_title: 'Upcoming events group block'

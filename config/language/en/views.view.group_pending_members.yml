@@ -1,0 +1,60 @@
+label: 'Group pending members'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+          tags:
+            previous: â€¹â€¹
+            next: â€ºâ€º
+      fields:
+        name:
+          label: Name
+          separator: ', '
+        created:
+          label: 'Requested on'
+          separator: ', '
+        gid:
+          label: 'Parent group'
+          separator: ', '
+        id:
+          label: ID
+          separator: ', '
+        nothing_1:
+          label: 'Reject Membership'
+          alter:
+            text: '<a href="/group/{{ gid }}/content/{{ id }}/reject-membership?destination=/group/{{ gid }}/members-pending">Reject Membership</a>'
+            alt: 'Reject Membership'
+        nothing:
+          label: 'Approve membership'
+          alter:
+            text: '<a href="/group/{{ gid }}/content/{{ id }}/approve-membership?destination=/group/{{ gid }}/members-pending">Approve membership</a>'
+            alt: 'Approve membership'
+        dropbutton:
+          label: Operations
+      title: 'Group pending members'
+      empty:
+        area_text_custom:
+          content: 'No membership requests available.'
+      arguments:
+        gid:
+          exception:
+            title: All
+          title: '{{ arguments.gid|placeholder }} pending members'
+  page_1:
+    display_title: Page
+    display_options:
+      menu:
+        title: 'Membership requests'

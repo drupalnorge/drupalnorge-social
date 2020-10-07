@@ -73,5 +73,6 @@ permissions:
   - 'view own unpublished content'
   - 'view public posts'
   - 'view published post entities'
+  - 'view the administration theme'
   - 'view topics on my profile'
   - 'view topics on other profiles'

@@ -1,0 +1,59 @@
+label: 'Group invitations'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        options:
+          tags:
+            previous: â€¹â€¹
+            next: â€ºâ€º
+            first: 'Â« First'
+            last: 'Last Â»'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+            offset_label: Offset
+      fields:
+        invitee_mail:
+          label: Email
+          separator: ', '
+        name:
+          label: Invitee
+          separator: ', '
+        group_roles:
+          label: Roles
+          separator: ', '
+        uid:
+          label: 'Invited by'
+          separator: ', '
+        created:
+          label: 'Invited on'
+          separator: ', '
+        delete_group_content:
+          admin_label: 'Remove member link'
+          text: 'Remove invitation'
+        dropbutton:
+          label: Operations
+      empty:
+        area_text_custom:
+          content: 'No invitations available.'
+      arguments:
+        gid:
+          exception:
+            title: All
+          title: '{{ arguments.gid|placeholder }} invitations'
+      title: Invitations
+  page_1:
+    display_title: Page
+    display_options:
+      menu:
+        title: Invitations
+        description: 'Group invitations'

@@ -72,6 +72,8 @@ permissions:
   - 'edit profile tags'
   - 'flag follow_content'
   - 'manage all groups'
+  - 'manage event enrollment requests'
+  - 'manage everything enrollments'
   - 'override disabled public visibility'
   - 'override event authored by option'
   - 'override event authored on option'

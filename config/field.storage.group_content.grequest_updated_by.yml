@@ -1,0 +1,22 @@
+uuid: b05c258b-1b48-4a21-9a9c-2d7f79220632
+langcode: nb
+status: true
+dependencies:
+  module:
+    - group
+    - user
+_core:
+  default_config_hash: TlXJmcOmHrVFzc6A_QdXBjsRasK_nNTrIxWtBFr_C2I
+id: group_content.grequest_updated_by
+field_name: grequest_updated_by
+entity_type: group_content
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: true
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: true
+custom_storage: false
