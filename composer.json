@@ -10,20 +10,19 @@
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "^1.0",
         "goalgorilla/open_social": "9.3.0",
-        "drupal/coffee": "1.x-dev",
-        "drupal/sparkpost": "2.0-rc1",
+        "drupal/coffee": "1.0",
+        "drupal/sparkpost": "^2.0",
         "drupal/reroute_email": "^1.0",
         "drupal/slack_invite": "^1.1",
-        "drupal/honeypot": "~1.29.0",
+        "drupal/honeypot": "^2.0",
         "drupal/google_analytics": "^2.1",
         "drupal/config_ignore": "^2.1",
         "drupal/slack": "^1.2",
         "drush/drush": "^9.7.1",
-        "drupal/recaptcha": "^2.3"
+        "drupal/recaptcha": "^3.0"
     },
     "require-dev": {
         "drupal/coder": "^8.2",
-        "squizlabs/php_codesniffer": "~2.9.1",
         "drupal/drupal-extension": "~3.0",
         "drupal/stage_file_proxy": "^1.0@alpha",
         "eiriksm/wait-for-listen": "^1.0"
