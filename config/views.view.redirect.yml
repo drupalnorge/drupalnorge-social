@@ -1,35 +1,47 @@
-uuid: d3e19cd9-4961-4e36-a5fc-5928915b8e7b
+uuid: f7affa3c-582b-4951-bf7c-7fd74be033c3
 langcode: nb
 status: true
 dependencies:
   module:
-    - node
+    - link
+    - redirect
     - user
 _core:
-  default_config_hash: 0a14mVVCnnJaHe3k6iFyp_GAY3ZSdmKDyL77A1LEpp8
-id: content
-label: Content
-module: node
-description: 'Find and manage content.'
-tag: default
-base_table: node_field_data
-base_field: nid
+  default_config_hash: szL-A_Er9yaiA51EXGl3yYAj1T_LnNrYdxxY6UwRisU
+id: redirect
+label: Videresending
+module: views
+description: 'List of redirects'
+tag: ''
+base_table: redirect
+base_field: rid
 display:
   default:
+    display_plugin: default
+    id: default
+    display_title: Master
+    position: 0
     display_options:
       access:
         type: perm
         options:
-          perm: 'access content overview'
+          perm: 'administer redirects'
       cache:
         type: tag
+        options: {  }
       query:
         type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
       exposed_form:
         type: basic
         options:
           submit_button: Filter
-          reset_button: true
+          reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
@@ -39,11 +51,23 @@ display:
         type: full
         options:
           items_per_page: 50
+          offset: 0
+          id: 0
+          total_pages: null
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
       style:
         type: table
         options:
@@ -51,139 +75,126 @@ display:
           row_class: ''
           default_row_class: true
           override: true
-          sticky: true
+          sticky: false
           caption: ''
           summary: ''
           description: ''
           columns:
-            node_bulk_form: node_bulk_form
-            title: title
-            type: type
-            name: name
-            status: status
-            changed: changed
-            edit_node: edit_node
-            delete_node: delete_node
-            dropbutton: dropbutton
-            timestamp: title
+            redirect_source__path: redirect_source__path
+            redirect_redirect__uri: redirect_redirect__uri
+            status_code: status_code
+            language: language
+            created: created
+            operations: operations
           info:
-            node_bulk_form:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            title:
+            redirect_source__path:
               sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            type:
+            redirect_redirect__uri:
               sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            name:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: priority-low
-            status:
+            status_code:
               sortable: true
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            changed:
+            language:
               sortable: true
-              default_sort_order: desc
+              default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
-              responsive: priority-low
-            edit_node:
+              responsive: ''
+            created:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            operations:
               sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            delete_node:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            dropbutton:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            timestamp:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          default: changed
-          empty_table: true
+          default: created
+          empty_table: false
       row:
         type: fields
       fields:
-        node_bulk_form:
-          id: node_bulk_form
-          table: node
-          field: node_bulk_form
+        redirect_bulk_form:
+          id: redirect_bulk_form
+          table: redirect
+          field: redirect_bulk_form
+          relationship: none
+          group_type: group
+          admin_label: ''
           label: ''
           exclude: false
           alter:
             alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
           element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          plugin_id: node_bulk_form
-          entity_type: node
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          label: Title
-          exclude: false
-          alter:
-            alter_text: false
-          element_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          entity_type: node
-          entity_field: title
-          type: string
-          settings:
-            link_to_entity: true
-          plugin_id: field
-        type:
-          id: type
-          table: node_field_data
-          field: type
+          action_title: 'With selection'
+          include_exclude: exclude
+          selected_actions: {  }
+          entity_type: redirect
+          plugin_id: redirect_bulk_form
+        redirect_source__path:
+          id: redirect_source__path
+          table: redirect
+          field: redirect_source__path
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Content Type'
+          label: From
           exclude: false
           alter:
             alter_text: false
@@ -224,11 +235,10 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
+          click_sort_column: path
+          type: redirect_source
+          settings: {  }
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -238,80 +248,38 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: node
-          entity_field: type
+          entity_type: redirect
+          entity_field: redirect_source
           plugin_id: field
-        name:
-          id: name
-          table: users_field_data
-          field: name
-          relationship: uid
-          label: Author
-          exclude: false
-          alter:
-            alter_text: false
-          element_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
+        redirect_redirect__uri:
+          id: redirect_redirect__uri
+          table: redirect
+          field: redirect_redirect__uri
+          entity_type: redirect
+          entity_field: redirect_redirect
           plugin_id: field
-          type: user_name
-          entity_type: user
-          entity_field: name
-        status:
-          id: status
-          table: node_field_data
-          field: status
-          label: Status
-          exclude: false
-          alter:
-            alter_text: false
-          element_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          type: boolean
-          settings:
-            format: custom
-            format_custom_true: Published
-            format_custom_false: Unpublished
+        status_code:
+          id: status_code
+          table: redirect
+          field: status_code
+          entity_type: redirect
+          entity_field: status_code
           plugin_id: field
-          entity_type: node
-          entity_field: status
-        changed:
-          id: changed
-          table: node_field_data
-          field: changed
-          label: Updated
-          exclude: false
-          alter:
-            alter_text: false
-          element_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          type: timestamp
-          settings:
-            date_format: short
-            custom_date_format: ''
-            timezone: ''
+        language:
+          id: language
+          table: redirect
+          field: language
+          entity_type: redirect
+          entity_field: language
           plugin_id: field
-          entity_type: node
-          entity_field: changed
-        operations:
-          id: operations
-          table: node
-          field: operations
+        created:
+          id: created
+          table: redirect
+          field: created
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Created
           exclude: false
           alter:
             alter_text: false
@@ -352,116 +320,23 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          destination: true
+          date_format: fallback
+          custom_date_format: ''
+          timezone: ''
+          entity_type: redirect
+          entity_field: created
+          plugin_id: date
+        operations:
+          id: operations
+          table: redirect
+          field: operations
+          entity_type: redirect
           plugin_id: entity_operations
       filters:
-        status_extra:
-          id: status_extra
-          table: node_field_data
-          field: status_extra
-          operator: '='
-          value: false
-          plugin_id: node_status
-          group: 1
-          entity_type: node
-          expose:
-            operator_limit_selection: false
-            operator_list: {  }
-        status:
-          id: status
-          table: node_field_data
-          field: status
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value: '1'
-          group: 1
-          exposed: true
-          expose:
-            operator_id: ''
-            label: Status
-            description: ''
-            use_operator: false
-            operator: status_op
-            identifier: status
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
-          is_grouped: true
-          group_info:
-            label: 'Published status'
-            description: ''
-            identifier: status
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items:
-              1:
-                title: Published
-                operator: '='
-                value: '1'
-              2:
-                title: Unpublished
-                operator: '='
-                value: '0'
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value: {  }
-          group: 1
-          exposed: true
-          expose:
-            operator_id: type_op
-            label: Type
-            description: ''
-            use_operator: false
-            operator: type_op
-            identifier: type
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-            reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: bundle
-          entity_type: node
-          entity_field: type
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        redirect_source__path:
+          id: redirect_source__path
+          table: redirect
+          field: redirect_source__path
           relationship: none
           group_type: group
           admin_label: ''
@@ -470,12 +345,12 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: title_op
-            label: Title
+            operator_id: redirect_source__path_op
+            label: From
             description: ''
             use_operator: false
-            operator: title_op
-            identifier: title
+            operator: redirect_source__path_op
+            identifier: redirect_source__path
             required: false
             remember: false
             multiple: false
@@ -497,13 +372,149 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+          entity_type: redirect
+          entity_field: redirect_source
           plugin_id: string
-          entity_type: node
-          entity_field: title
-        langcode:
-          id: langcode
-          table: node_field_data
-          field: langcode
+        redirect_redirect__uri:
+          id: redirect_redirect__uri
+          table: redirect
+          field: redirect_redirect__uri
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: redirect_redirect__uri_op
+            label: To
+            description: ''
+            use_operator: false
+            operator: redirect_redirect__uri_op
+            identifier: redirect_redirect__uri
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: redirect
+          entity_field: redirect_redirect
+          plugin_id: string
+        status_code:
+          id: status_code
+          table: redirect
+          field: status_code
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: '='
+          value:
+            min: ''
+            max: ''
+            value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: status_code_op
+            label: Statuskode
+            description: ''
+            use_operator: false
+            operator: status_code_op
+            identifier: status_code
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
+          is_grouped: true
+          group_info:
+            label: Statuskode
+            description: ''
+            identifier: status_code
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items:
+              1:
+                title: '300 Flere valg'
+                operator: '='
+                value:
+                  value: '300'
+                  min: ''
+                  max: ''
+              2:
+                title: '301 Moved Permanently'
+                operator: '='
+                value:
+                  value: '301'
+                  min: ''
+                  max: ''
+              3:
+                title: '302 Found'
+                operator: '='
+                value:
+                  value: '302'
+                  min: ''
+                  max: ''
+              4:
+                title: '303 Se annet'
+                operator: '='
+                value:
+                  value: '303'
+                  min: ''
+                  max: ''
+              5:
+                title: '304 Ikke endret'
+                operator: '='
+                value:
+                  value: '304'
+                  min: ''
+                  max: ''
+              6:
+                title: '305 Bruk proxy'
+                operator: '='
+                value:
+                  value: '305'
+                  min: ''
+                  max: ''
+              7:
+                title: '307 Midlertidig omdirigering'
+                operator: '='
+                value:
+                  value: '307'
+                  min: ''
+                  max: ''
+          entity_type: redirect
+          entity_field: status_code
+          plugin_id: numeric
+        language:
+          id: language
+          table: redirect
+          field: language
           relationship: none
           group_type: group
           admin_label: ''
@@ -512,12 +523,12 @@ display:
           group: 1
           exposed: true
           expose:
-            operator_id: langcode_op
-            label: Language
+            operator_id: language_op
+            label: 'Original language'
             description: ''
             use_operator: false
-            operator: langcode_op
-            identifier: langcode
+            operator: language_op
+            identifier: language
             required: false
             remember: false
             multiple: false
@@ -540,78 +551,57 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+          entity_type: redirect
+          entity_field: language
           plugin_id: language
-          entity_type: node
-          entity_field: langcode
       sorts: {  }
-      title: Content
+      title: Videresending
+      header: {  }
+      footer: {  }
       empty:
         area_text_custom:
           id: area_text_custom
           table: views
           field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
           empty: true
-          content: 'No content available.'
+          tokenize: false
+          content: 'There is no redirect yet.'
           plugin_id: text_custom
+      relationships: {  }
       arguments: {  }
-      relationships:
-        uid:
-          id: uid
-          table: node_field_data
-          field: uid
-          admin_label: author
-          required: true
-          plugin_id: standard
-      show_admin_links: false
+      display_extenders: {  }
       filter_groups:
         operator: AND
         groups:
           1: AND
-      display_extenders: {  }
-    display_plugin: default
-    display_title: Master
-    id: default
-    position: 0
     cache_metadata:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user
-        - 'user.node_grants:view'
         - user.permissions
+      cacheable: false
       max-age: 0
       tags: {  }
   page_1:
-    display_options:
-      path: admin/content/node
-      menu:
-        type: 'default tab'
-        title: Content
-        description: ''
-        menu_name: admin
-        weight: -10
-        context: ''
-      tab_options:
-        type: normal
-        title: Content
-        description: 'Find and manage content'
-        menu_name: admin
-        weight: -10
-      display_extenders: {  }
     display_plugin: page
-    display_title: Page
     id: page_1
+    display_title: Page
     position: 1
+    display_options:
+      display_extenders: {  }
+      path: admin/config/search/redirect
     cache_metadata:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
         - url.query_args
-        - user
-        - 'user.node_grants:view'
         - user.permissions
+      cacheable: false
       max-age: 0
       tags: {  }
