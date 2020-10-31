@@ -4,3 +4,4 @@ slack_username: 'Drupal Norge'
 slack_icon_type: none
 slack_icon_emoji: ''
 slack_icon_url: ''
+langcode: nb

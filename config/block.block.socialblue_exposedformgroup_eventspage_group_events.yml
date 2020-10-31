@@ -22,7 +22,7 @@ settings:
   label: ''
   provider: views
   label_display: '0'
-  views_label: Filtrer
+  views_label: Filter
 visibility:
   request_path:
     id: request_path

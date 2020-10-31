@@ -72,6 +72,7 @@ module:
   profile: 0
   r4032login: 0
   recaptcha: 0
+  redirect: 0
   reroute_email: 0
   role_delegation: 0
   search_api: 0
