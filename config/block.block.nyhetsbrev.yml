@@ -1,0 +1,25 @@
+uuid: 2280a4f6-ae9d-4b21-a3c5-b14212855de7
+langcode: nb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:90bb76d2-426e-4789-91d5-1fe8b661b816'
+  module:
+    - block_content
+  theme:
+    - drupalnorge_theme
+id: nyhetsbrev
+theme: drupalnorge_theme
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'block_content:90bb76d2-426e-4789-91d5-1fe8b661b816'
+settings:
+  id: 'block_content:90bb76d2-426e-4789-91d5-1fe8b661b816'
+  label: Nyhetsbrev
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
