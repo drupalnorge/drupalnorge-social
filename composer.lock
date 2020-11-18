@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94fa01c31821a918abacaea01b4ae46f",
+    "content-hash": "50fa96484c0a987e4182a42e4e97d643",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -150,7 +150,7 @@
             "version": "v3.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
+                "url": "git@github.com:twbs/bootstrap.git",
                 "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
             },
             "dist": {
@@ -222,7 +222,7 @@
             "version": "3.5.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
+                "url": "https://github.com/jquery/jquery-dist.git",
                 "reference": "4c0e4becb8263bb5b3e6dadc448d8e7305ef8215"
             },
             "dist": {
@@ -329,7 +329,7 @@
             "version": "1.11.15",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jonthornton/jquery-timepicker.git",
+                "url": "https://github.com/jonthornton/jquery-timepicker.git",
                 "reference": "f3c122dbbf0b77642e43a2ea3f6181c9bac2d334"
             },
             "dist": {
@@ -12667,16 +12667,16 @@
         },
         {
             "name": "composer/xdebug-handler",
-            "version": "1.4.4",
+            "version": "1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "6e076a124f7ee146f2487554a94b6a19a74887ba"
+                "reference": "f28d44c286812c714741478d968104c5e604a1d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/6e076a124f7ee146f2487554a94b6a19a74887ba",
-                "reference": "6e076a124f7ee146f2487554a94b6a19a74887ba",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/f28d44c286812c714741478d968104c5e604a1d4",
+                "reference": "f28d44c286812c714741478d968104c5e604a1d4",
                 "shasum": ""
             },
             "require": {
@@ -12721,40 +12721,35 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-24T12:39:10+00:00"
+            "time": "2020-11-13T08:04:11+00:00"
         },
         {
             "name": "doctrine/instantiator",
-            "version": "1.3.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "f350df0268e904597e3bd9c4685c53e0e333feea"
+                "reference": "d56bf6102915de5702778fe20f2de3b2fe570b5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/f350df0268e904597e3bd9c4685c53e0e333feea",
-                "reference": "f350df0268e904597e3bd9c4685c53e0e333feea",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/d56bf6102915de5702778fe20f2de3b2fe570b5b",
+                "reference": "d56bf6102915de5702778fe20f2de3b2fe570b5b",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1 || ^8.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^6.0",
+                "doctrine/coding-standard": "^8.0",
                 "ext-pdo": "*",
                 "ext-phar": "*",
-                "phpbench/phpbench": "^0.13",
-                "phpstan/phpstan-phpunit": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpunit/phpunit": "^7.0"
+                "phpbench/phpbench": "^0.13 || 1.0.0-alpha2",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
@@ -12768,7 +12763,7 @@
                 {
                     "name": "Marco Pivetta",
                     "email": "ocramius@gmail.com",
-                    "homepage": "http://ocramius.github.com/"
+                    "homepage": "https://ocramius.github.io/"
                 }
             ],
             "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
@@ -12791,15 +12786,15 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-29T17:27:14+00:00"
+            "time": "2020-11-10T18:47:58+00:00"
         },
         {
             "name": "drupal/coder",
-            "version": "8.3.10",
+            "version": "8.3.11",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/coder.git",
-                "reference": "e1d71c6bb75b94f9ed00dceb2f4f6cb7e044723d"
+                "reference": "67c1bcf2d6860237ce4b176fd55ef4c7c014d84e"
             },
             "require": {
                 "ext-mbstring": "*",
@@ -12809,7 +12804,7 @@
                 "symfony/yaml": ">=2.0.5"
             },
             "require-dev": {
-                "phpstan/phpstan": "^0.12.31",
+                "phpstan/phpstan": "^0.12.51",
                 "phpunit/phpunit": "^6.0 || ^7.0"
             },
             "type": "phpcodesniffer-standard",
@@ -12830,20 +12825,20 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2020-09-03T19:59:53+00:00"
+            "time": "2020-11-04T14:55:07+00:00"
         },
         {
             "name": "drupal/core-dev",
-            "version": "8.8.10",
+            "version": "8.9.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
-                "reference": "edeec67c12be4b459d2873ac99044787b51ebe42"
+                "reference": "36370b3f42911c09ffb35f08fc72853d20e6efd7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-dev/zipball/edeec67c12be4b459d2873ac99044787b51ebe42",
-                "reference": "edeec67c12be4b459d2873ac99044787b51ebe42",
+                "url": "https://api.github.com/repos/drupal/core-dev/zipball/36370b3f42911c09ffb35f08fc72853d20e6efd7",
+                "reference": "36370b3f42911c09ffb35f08fc72853d20e6efd7",
                 "shasum": ""
             },
             "require": {
@@ -12851,7 +12846,7 @@
                 "behat/mink-goutte-driver": "^1.2",
                 "behat/mink-selenium2-driver": "^1.4",
                 "composer/composer": "^1.9.1",
-                "drupal/coder": "^8.3.2",
+                "drupal/coder": "^8.3.7",
                 "jcalderonzumba/gastonjs": "^1.0.2",
                 "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
                 "justinrainbow/json-schema": "^5.2",
@@ -12861,6 +12856,7 @@
                 "symfony/browser-kit": "^3.4.0",
                 "symfony/css-selector": "^3.4.0",
                 "symfony/debug": "^3.4.0",
+                "symfony/dom-crawler": "^3.4.0 !=3.4.38",
                 "symfony/filesystem": "~3.4.0",
                 "symfony/finder": "~3.4.0",
                 "symfony/lock": "~3.4.0",
@@ -12875,7 +12871,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
-            "time": "2020-05-19T10:05:59+00:00"
+            "time": "2020-05-09T07:53:22+00:00"
         },
         {
             "name": "drupal/drupal-driver",
@@ -13466,16 +13462,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.10.1",
+            "version": "1.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "969b211f9a51aa1f6c01d1d2aef56d3bd91598e5"
+                "reference": "776f831124e9c62e1a2c601ecc52e776d8bb7220"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/969b211f9a51aa1f6c01d1d2aef56d3bd91598e5",
-                "reference": "969b211f9a51aa1f6c01d1d2aef56d3bd91598e5",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/776f831124e9c62e1a2c601ecc52e776d8bb7220",
+                "reference": "776f831124e9c62e1a2c601ecc52e776d8bb7220",
                 "shasum": ""
             },
             "require": {
@@ -13516,7 +13512,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-29T13:22:24+00:00"
+            "time": "2020-11-13T09:40:50+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -14734,16 +14730,16 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.8.2",
+            "version": "1.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/jsonlint.git",
-                "reference": "590cfec960b77fd55e39b7d9246659e95dd6d337"
+                "reference": "9ad6ce79c342fbd44df10ea95511a1b24dee5b57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/590cfec960b77fd55e39b7d9246659e95dd6d337",
-                "reference": "590cfec960b77fd55e39b7d9246659e95dd6d337",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/9ad6ce79c342fbd44df10ea95511a1b24dee5b57",
+                "reference": "9ad6ce79c342fbd44df10ea95511a1b24dee5b57",
                 "shasum": ""
             },
             "require": {
@@ -14789,7 +14785,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-25T06:56:57+00:00"
+            "time": "2020-11-11T09:19:24+00:00"
         },
         {
             "name": "seld/phar-utils",
@@ -15137,35 +15133,30 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v4.2.12",
+            "version": "v3.4.46",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "ba1da8fb10291714b8db153fcf7ac515e1a217bb"
+                "reference": "ef97bcfbae5b384b4ca6c8d57b617722f15241a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/ba1da8fb10291714b8db153fcf7ac515e1a217bb",
-                "reference": "ba1da8fb10291714b8db153fcf7ac515e1a217bb",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/ef97bcfbae5b384b4ca6c8d57b617722f15241a6",
+                "reference": "ef97bcfbae5b384b4ca6c8d57b617722f15241a6",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3",
+                "php": "^5.5.9|>=7.0.8",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "require-dev": {
-                "symfony/css-selector": "~3.4|~4.0"
+                "symfony/css-selector": "~2.8|~3.0|~4.0"
             },
             "suggest": {
                 "symfony/css-selector": ""
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.2-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\DomCrawler\\": ""
@@ -15190,7 +15181,21 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2019-06-13T10:57:15+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-10-24T10:57:07+00:00"
         },
         {
             "name": "symfony/lock",
