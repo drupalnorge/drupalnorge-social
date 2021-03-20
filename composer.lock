@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94fa01c31821a918abacaea01b4ae46f",
+    "content-hash": "0ef8ca9dfd8b4ae23139fe8df41f42cd",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -150,7 +150,7 @@
             "version": "v3.4.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:twbs/bootstrap.git",
+                "url": "https://github.com/twbs/bootstrap.git",
                 "reference": "68b0d231a13201eb14acd3dc84e51543d16e5f7e"
             },
             "dist": {
@@ -240,7 +240,7 @@
             "version": "1.17.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:mochajs/mocha.git",
+                "url": "https://github.com/mochajs/mocha.git",
                 "reference": "7fc565ee3e225cb7a66bf39ae9c2c05b346675c1"
             },
             "dist": {
@@ -413,12 +413,12 @@
             "version": "v1.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/clue/php-stream-filter.git",
+                "url": "https://github.com/clue/stream-filter.git",
                 "reference": "aeb7d8ea49c7963d3b581378955dbf5bc49aa320"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/clue/php-stream-filter/zipball/aeb7d8ea49c7963d3b581378955dbf5bc49aa320",
+                "url": "https://api.github.com/repos/clue/stream-filter/zipball/aeb7d8ea49c7963d3b581378955dbf5bc49aa320",
                 "reference": "aeb7d8ea49c7963d3b581378955dbf5bc49aa320",
                 "shasum": ""
             },
@@ -2658,17 +2658,17 @@
         },
         {
             "name": "drupal/coffee",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/coffee.git",
-                "reference": "8.x-1.0"
+                "reference": "8.x-1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/coffee-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "55ae2303a5a125fb1b6a2d2c32ef41c05c905e8a"
+                "url": "https://ftp.drupal.org/files/projects/coffee-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "8b4314bc826a1b86e8272a6b3d0766ba5bf465b1"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -2676,8 +2676,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1586890651",
+                    "version": "8.x-1.1",
+                    "datestamp": "1616167409",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11581,12 +11581,12 @@
             "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },

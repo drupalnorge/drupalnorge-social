@@ -8,7 +8,7 @@
     "require": {
         "goalgorilla/open_social": "9.4.0",
         "drupal/core-recommended": "~8.8.8",
-        "drupal/coffee": "1.0",
+        "drupal/coffee": "1.1.0",
         "drupal/sparkpost": "^2.0",
         "drupal/reroute_email": "^1.0",
         "drupal/slack_invite": "^1.1",
