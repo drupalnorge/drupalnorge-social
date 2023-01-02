@@ -1,0 +1,31 @@
+uuid: 88df6346-f06e-4d5e-8ea6-ade9b8eb4a11
+langcode: nb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7d7c274f-d6f4-4ac6-b5a6-feb0ab6fee93'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupalnorge_theme
+id: drupicalevents
+theme: drupalnorge_theme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:7d7c274f-d6f4-4ac6-b5a6-feb0ab6fee93'
+settings:
+  id: 'block_content:7d7c274f-d6f4-4ac6-b5a6-feb0ab6fee93'
+  label: 'Other Drupal events'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /community-events
+    negate: false
+    context_mapping: {  }

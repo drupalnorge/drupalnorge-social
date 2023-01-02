@@ -31,6 +31,6 @@ visibility:
       user: '@user.current_user_context:current_user'
   request_path:
     id: request_path
-    pages: "post/*/edit\r\npost/*/delete\r\n/post/*/edit\r\n/post/*/delete\r\n/group/*/membership-requests"
+    pages: "post/*/edit\r\npost/*/delete\r\n/post/*/edit\r\n/post/*/delete\r\n/group/*/membership-requests\r\n/group/*/membership-requests"
     negate: true
     context_mapping: {  }

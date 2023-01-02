@@ -25,10 +25,10 @@ third_party_settings:
         - field_page_image
       parent_name: ''
       weight: 0
-      label: Content
+      label: Innhold
       format_type: fieldset
       format_settings:
-        label: Content
+        label: Innhold
         required_fields: true
         id: content
         classes: 'card '

@@ -181,7 +181,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Content type'
+            label: Innholdstype
             description: ''
             use_operator: false
             operator: type_op
@@ -347,7 +347,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'No results found.'
+            value: 'Søket ditt gav ingen resultater.'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -447,7 +447,7 @@ display:
       exposed_block: true
       menu:
         type: tab
-        title: Content
+        title: Innhold
         description: ''
         expanded: false
         parent: ''

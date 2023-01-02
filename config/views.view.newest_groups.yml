@@ -159,7 +159,7 @@ display:
           entity_type: group
           entity_field: created
           plugin_id: date
-      title: 'All groups'
+      title: 'Alle grupper'
       header: {  }
       footer: {  }
       empty: {  }
@@ -207,7 +207,7 @@ display:
       display_description: ''
       use_more: true
       use_more_always: true
-      use_more_text: 'All groups'
+      use_more_text: 'Alle grupper'
     cache_metadata:
       max-age: -1
       contexts:

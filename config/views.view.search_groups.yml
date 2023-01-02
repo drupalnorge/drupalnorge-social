@@ -218,7 +218,7 @@ display:
           empty: true
           tokenize: true
           content:
-            value: '<h4>Group results</h4>'
+            value: '<h4>Resultater for grupper</h4>'
             format: basic_html
           plugin_id: text
       footer: {  }
@@ -233,7 +233,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'No results found.'
+            value: 'Søket ditt gav ingen resultater.'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -308,7 +308,7 @@ display:
       display_description: ''
       menu:
         type: tab
-        title: Groups
+        title: Grupper
         description: ''
         expanded: false
         parent: ''
@@ -326,7 +326,7 @@ display:
           empty: true
           tokenize: true
           content:
-            value: '<h4>Group results</h4>'
+            value: '<h4>Resultater for grupper</h4>'
             format: basic_html
           plugin_id: text
       defaults:
