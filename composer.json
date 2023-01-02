@@ -3,28 +3,6 @@
     "description": "Social project template for composer based Open Social projects.",
     "type": "project",
     "license": "GPL-2.0+",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-        "goalgorilla/open_social": "9.4.0",
-        "drupal/core-recommended": "~8.8.8",
-        "drupal/coffee": "1.0",
-        "drupal/sparkpost": "^2.0",
-        "drupal/reroute_email": "^1.0",
-        "drupal/slack_invite": "^1.1",
-        "drupal/honeypot": "^2.0",
-        "drupal/google_analytics": "^2.1",
-        "drupal/config_ignore": "^2.1",
-        "drupal/slack": "^1.2",
-        "drush/drush": "^9.7.1",
-        "drupal/recaptcha": "^3.0"
-    },
-    "require-dev": {
-        "drupal/core-dev": "~8.8.8",
-        "drupal/drupal-extension": "~3.0",
-        "drupal/stage_file_proxy": "^1.0@alpha",
-        "eiriksm/wait-for-listen": "^1.0"
-    },
     "repositories": [
         {
             "type": "composer",
@@ -35,6 +13,34 @@
             "url": "https://asset-packagist.org"
         }
     ],
+    "require": {
+        "php": ">=7.2",
+        "drupal/coffee": "^1.0",
+        "drupal/config_ignore": "^2.1",
+        "drupal/core-recommended": "~8.8.8",
+        "drupal/google_analytics": "^3.1",
+        "drupal/honeypot": "^2.0",
+        "drupal/recaptcha": "^3.0",
+        "drupal/reroute_email": "^2.0",
+        "drupal/slack": "^1.2",
+        "drupal/slack_invite": "^2.0",
+        "drupal/sparkpost": "^2.0",
+        "drush/drush": "^9.7.1",
+        "goalgorilla/open_social": "9.4.0",
+        "hirak/prestissimo": "^0.3.10"
+    },
+    "require-dev": {
+        "drupal/core-dev": "~8.8.8",
+        "drupal/drupal-extension": "~3.0",
+        "drupal/stage_file_proxy": "^1.0",
+        "eiriksm/wait-for-listen": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "discard-changes": true,
+        "sort-packages": true
+    },
     "autoload": {
         "psr-4": { "DrupalNorge\\DrupalNorgeSocial\\Tests\\": "tests/src" }
     },
