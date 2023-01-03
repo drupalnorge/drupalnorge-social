@@ -1,18 +1,17 @@
-uuid: 0c66ddb4-0a9c-49e2-b8d7-a62ccb413fdc
-langcode: nb
+langcode: en
 status: true
 dependencies:
   config:
     - field.storage.group_content.invitation_status
     - field.storage.group_content.invitee_mail
-  enforced:
-    module:
-      - social_group_invite
   module:
     - group
     - user
-_core:
-  default_config_hash: wir9I59hxUAzGwb-PCfMCWo5VUGTwPgM9zgg7uAkjYQ
+    - social_group_invite
+    - ginvite
+  enforced:
+    module:
+      - social_group_invite
 id: social_group_invitations
 label: 'Social Group invitations'
 module: group
@@ -60,10 +59,10 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: â€¹â€¹
-            next: â€ºâ€º
-            first: 'Â« First'
-            last: 'Last Â»'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'

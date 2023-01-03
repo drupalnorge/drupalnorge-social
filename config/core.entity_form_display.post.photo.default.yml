@@ -28,7 +28,7 @@ content:
     region: content
     settings:
       rows: 5
-      placeholder: 'Say something about this photo'
+      placeholder: 'Say something about these image(s)'
     third_party_settings: {  }
   field_post_image:
     weight: 1

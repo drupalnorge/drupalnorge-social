@@ -5,6 +5,7 @@ dependencies:
   config:
     - comment.type.comment
     - field.field.comment.comment.field_comment_body
+    - field.field.comment.comment.field_comment_files
 _core:
   default_config_hash: 3tOK5PxzfojSpjhsO75OfLbAPAo87idRigAPn_ZW_wc
 id: comment.comment.default
@@ -33,4 +34,5 @@ content:
       include_locked: true
     third_party_settings: {  }
 hidden:
+  field_comment_files: true
   subject: true

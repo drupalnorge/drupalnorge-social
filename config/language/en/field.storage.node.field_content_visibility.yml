@@ -1,8 +1,8 @@
 settings:
   allowed_values:
     -
-      label: 'Public - visible to everyone including people who are not a member'
+      label: Public
     -
-      label: 'Community - visible only to logged in members'
+      label: Community
     -
-      label: 'Group members - visible only to group members'
+      label: 'Group members'

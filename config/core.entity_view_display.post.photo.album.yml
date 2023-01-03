@@ -1,60 +1,58 @@
-uuid: c127fbb0-e44d-4c56-be6e-2df5c3d41ea4
+uuid: f33163b7-1190-4424-b41f-6dc20d78ef52
 langcode: nb
 status: true
 dependencies:
   config:
-    - core.entity_form_mode.post.profile
+    - core.entity_view_mode.post.album
     - field.field.post.photo.field_post
     - field.field.post.photo.field_post_comments
     - field.field.post.photo.field_post_image
     - field.field.post.photo.field_recipient_group
     - field.field.post.photo.field_recipient_user
     - field.field.post.photo.field_visibility
-    - image.style.social_post_photo
     - social_post.post_type.photo
   module:
-    - dropdown
-    - image
+    - social_post
     - text
+    - user
 _core:
-  default_config_hash: XAsri8VseJBrRsYHoMGdgh4jVDR4SHsVJf70efq6hn8
-id: post.photo.profile
+  default_config_hash: pVeOWgIAeXbkx1B_zZ1eqGi1CXMhiuUsmt-lX6T5heY
+id: post.photo.album
 targetEntityType: post
 bundle: photo
-mode: profile
+mode: album
 content:
   field_post:
-    type: text_textarea
-    weight: 0
-    region: content
-    settings:
-      rows: 5
-      placeholder: 'Say something about these image(s)'
-    third_party_settings: {  }
-  field_post_image:
+    type: text_default
     weight: 1
-    settings:
-      preview_image_style: social_post_photo
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: image_image
     region: content
-  field_visibility:
-    type: dropdown_widget_type
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_post_comments:
+    type: comment_post
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      num_comments: '0'
+      order: ASC
+    third_party_settings: {  }
+  like_and_dislike:
     weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
-  status:
+  user_id:
+    type: author
+    weight: 0
     region: content
-    settings:
-      display_label: true
-    type: boolean_checkbox
-    weight: 20
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
 hidden:
-  field_post_comments: true
+  field_post_image: true
   field_recipient_group: true
   field_recipient_user: true
-  langcode: true
-  user_id: true
+  field_visibility: true
+  search_api_excerpt: true

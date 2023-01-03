@@ -8,43 +8,12 @@ features:
   comment_user_verification: 1
   favicon: 1
   node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: 1
 schemas:
   bootstrap: 8000
   socialbase: 8000
   socialblue: 8000
   drupalnorge_theme: 8000
-table_responsive: '-1'
-region_wells:
-  hidden: ''
-  header: ''
-  breadcrumb: ''
-  hero: ''
-  secondary_navigation: ''
-  content_top: ''
-  title: ''
-  content: ''
-  complementary_top: ''
-  complementary_bottom: ''
-  content_bottom: ''
-  sidebar_first: ''
-  sidebar_second: ''
-  footer: ''
-cdn_theme: ''
-cdn_cache_ttl_versions: 0
-cdn_cache_ttl_themes: 0
-cdn_cache_ttl_assets: 0
-cdn_cache_ttl_library: 0
-reset_http_request_cache: ''
-table: ''
-card_radius: ''
-form_control_radius: ''
-button_radius: ''
-font_primary: '1'
-email_logo:
-  - '453'
-hero_gradient_opacity: '50'
-style: ''
-logo:
-  path: ''
-  url: ''
-  use_default: 1

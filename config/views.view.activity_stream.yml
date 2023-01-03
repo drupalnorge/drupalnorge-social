@@ -603,6 +603,45 @@ display:
             group_items: {  }
           entity_type: activity
           plugin_id: activity_post_visibility_access
+        activity_explore_visibility_access_filter:
+          admin_label: ''
+          entity_type: activity
+          expose:
+            description: ''
+            identifier: ''
+            label: ''
+            multiple: false
+            operator: ''
+            operator_id: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            remember: false
+            remember_roles:
+              authenticated: authenticated
+            required: false
+            use_operator: false
+          exposed: false
+          field: activity_explore_visibility_access_filter
+          group: 1
+          group_info:
+            default_group: All
+            default_group_multiple: {  }
+            description: ''
+            group_items: {  }
+            identifier: ''
+            label: ''
+            multiple: false
+            optional: true
+            remember: false
+            widget: select
+          group_type: group
+          id: activity_explore_visibility_access_filter
+          is_grouped: false
+          operator: '='
+          plugin_id: activity_explore_visibility_access
+          relationship: none
+          table: activity
+          value: ''
       filter_groups:
         operator: AND
         groups:
@@ -704,6 +743,45 @@ display:
             group_items: {  }
           entity_type: activity
           plugin_id: activity_post_visibility_access
+        activity_explore_visibility_access_filter:
+          admin_label: ''
+          entity_type: activity
+          expose:
+            description: ''
+            identifier: ''
+            label: ''
+            multiple: false
+            operator: ''
+            operator_id: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            remember: false
+            remember_roles:
+              authenticated: authenticated
+            required: false
+            use_operator: false
+          exposed: false
+          field: activity_explore_visibility_access_filter
+          group: 1
+          group_info:
+            default_group: All
+            default_group_multiple: {  }
+            description: ''
+            group_items: {  }
+            identifier: ''
+            label: ''
+            multiple: false
+            optional: true
+            remember: false
+            widget: select
+          group_type: group
+          id: activity_explore_visibility_access_filter
+          is_grouped: false
+          operator: '='
+          plugin_id: activity_explore_visibility_access
+          relationship: none
+          table: activity
+          value: ''
       defaults:
         filters: false
         filter_groups: false

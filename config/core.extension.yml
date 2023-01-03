@@ -9,7 +9,6 @@ module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
   better_exposed_filters: 0
-  big_pipe: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -75,16 +74,15 @@ module:
   recaptcha: 0
   redirect: 0
   reroute_email: 0
-  rest: 0
   role_delegation: 0
   search_api: 0
   search_api_db: 0
   select2: 0
-  serialization: 0
   slack: 0
   slack_invite: 0
   social_activity: 0
   social_comment: 0
+  social_comment_upload: 0
   social_core: 0
   social_editor: 0
   social_event: 0
@@ -103,12 +101,11 @@ module:
   social_node: 0
   social_page: 0
   social_post: 0
+  social_post_album: 0
   social_post_photo: 0
   social_profile: 0
   social_queue_storage: 0
-  social_react: 0
   social_search: 0
-  social_search_autocomplete: 0
   social_swiftmail: 0
   social_topic: 0
   social_tour: 0

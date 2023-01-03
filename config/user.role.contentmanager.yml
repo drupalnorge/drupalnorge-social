@@ -35,6 +35,7 @@ permissions:
   - 'administer nodes'
   - 'administer own comments'
   - 'administer post entities'
+  - 'bypass create group access'
   - 'cancel account'
   - 'change own username'
   - 'create closed_group group'
