@@ -17,7 +17,8 @@
         "php": ">=7.2",
         "drupal/coffee": "^1.0",
         "drupal/config_ignore": "^2.1",
-        "drupal/core-recommended": "~8.8.8",
+        "drupal/core-composer-scaffold": "~8.9.20",
+        "drupal/core-recommended": "~8.9.20",
         "drupal/google_analytics": "^3.1",
         "drupal/honeypot": "^2.0",
         "drupal/recaptcha": "^3.0",
@@ -25,12 +26,12 @@
         "drupal/slack": "^1.2",
         "drupal/slack_invite": "^2.0",
         "drupal/sparkpost": "^2.0",
-        "drush/drush": "^9.7.1",
-        "goalgorilla/open_social": "9.4.0",
+        "drush/drush": "^10.0.0",
+        "goalgorilla/open_social": "10.0.18",
         "hirak/prestissimo": "^0.3.10"
     },
     "require-dev": {
-        "drupal/core-dev": "~8.8.8",
+        "drupal/core-dev": "~8.9.20",
         "drupal/drupal-extension": "~3.0",
         "drupal/stage_file_proxy": "^1.0",
         "eiriksm/wait-for-listen": "^1.0"
@@ -45,49 +46,44 @@
         "psr-4": { "DrupalNorge\\DrupalNorgeSocial\\Tests\\": "tests/src" }
     },
     "scripts": {
-        "post-install-cmd": [
-            "@composer drupal-scaffold"
-        ],
-        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "test": [
             "./vendor/bin/phpcs -p",
             "./vendor/bin/behat --colors"
         ],
         "import": [
-            "./vendor/bin/drush --root=$(pwd)/html cc drush",
-            "./vendor/bin/drush --root=$(pwd)/html cim -y"
+            "./vendor/bin/drush --root=$(pwd)/html cache:clear drush",
+            "./vendor/bin/drush --root=$(pwd)/html config:import --yes"
         ],
         "export": [
-            "./vendor/bin/drush --root=$(pwd)/html cex -y"
+            "./vendor/bin/drush --root=$(pwd)/html config:export --yes"
         ],
         "build": [
             "git pull",
-            "@composer install --no-dev",
-            "./vendor/bin/drush --root=$(pwd)/html updb -y",
+            "@composer install --optimize-autoloader --no-dev",
+            "./vendor/bin/drush --root=$(pwd)/html updatedb --yes",
             "@composer import",
-            "./vendor/bin/drush --root=$(pwd)/html cr"
+            "./vendor/bin/drush --root=$(pwd)/html cache:rebuild",
+            "./vendor/bin/drush --root=$(pwd)/html deploy:hook --yes"
         ],
-        "up-site": [
-            "@composer update goalgorilla/open_social --with-all-dependencies",
-            "./vendor/bin/drush cr"
-        ],
-        "up-db": [
-            "./vendor/bin/drush sql-drop --yes",
+        "dl-db": [
+            "./vendor/bin/drush sql:drop --yes",
             "wget --no-check-certificate https://drupalnorge.no/sanitized.db",
-            "./vendor/bin/drush sql-cli < ./sanitized.db",
+            "./vendor/bin/drush sql:cli < ./sanitized.db",
             "rm ./sanitized.db",
-            "./vendor/bin/drush cr"
+            "./vendor/bin/drush cache:rebuild",
+            "./vendor/bin/drush user:login"
         ],
         "install-site": [
             "@composer install",
             "@composer up-db"
-        ],
-        "resetadmin": [
-            "./vendor/bin/drush uli"
         ]
     },
     "extra": {
-        "composer-exit-on-patch-failure": true,
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "html/"
+            }
+        },
         "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
             "html/core": ["drupal/core"],
@@ -98,10 +94,15 @@
             "drush/contrib/{$name}": ["type:drupal-drush"],
             "html/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"]
         },
+        "composer-exit-on-patch-failure": true,
         "enable-patching": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
         "patches": {
             "drupal/core": {
-                "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
+                "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch",
+                "Post update hook naming convention patch": "https://git.drupalcode.org/project/drupal/-/merge_requests/1215.patch"
             }
         }
     }

@@ -3,7 +3,7 @@ drush:
     # Specify config files to load.
     config:
       # Load any personal config files. Is silently skipped if not found. Filename must be drush.yml
-      - ${drush.vendor-dir}/../../drush.yml
+      - ${drush.vendor-dir}/../../../drush.yml
 
 sql:
   # List of tables whose *data* is skipped by the 'sql-dump' and 'sql-sync'
