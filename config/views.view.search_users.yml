@@ -380,7 +380,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'No results found.'
+            value: 'Søket ditt gav ingen resultater.'
             format: basic_html
           plugin_id: text
       relationships: {  }
@@ -458,7 +458,7 @@ display:
       display_description: ''
       menu:
         type: tab
-        title: Users
+        title: Brukere
         description: ''
         expanded: false
         parent: ''

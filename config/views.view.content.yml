@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: 0a14mVVCnnJaHe3k6iFyp_GAY3ZSdmKDyL77A1LEpp8
 id: content
-label: Content
+label: Innhold
 module: node
 description: 'Find and manage content.'
 tag: default
@@ -544,7 +544,7 @@ display:
           entity_type: node
           entity_field: langcode
       sorts: {  }
-      title: Content
+      title: Innhold
       empty:
         area_text_custom:
           id: area_text_custom
@@ -588,14 +588,14 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Content
+        title: Innhold
         description: ''
         menu_name: admin
         weight: -10
         context: ''
       tab_options:
         type: normal
-        title: Content
+        title: Innhold
         description: 'Find and manage content'
         menu_name: admin
         weight: -10

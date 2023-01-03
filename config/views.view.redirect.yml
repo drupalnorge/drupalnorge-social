@@ -9,9 +9,9 @@ dependencies:
 _core:
   default_config_hash: szL-A_Er9yaiA51EXGl3yYAj1T_LnNrYdxxY6UwRisU
 id: redirect
-label: Videresending
+label: Viderekobling
 module: views
-description: 'List of redirects'
+description: 'Oversikt over viderekoblinger'
 tag: ''
 base_table: redirect
 base_field: rid
@@ -555,7 +555,7 @@ display:
           entity_field: language
           plugin_id: language
       sorts: {  }
-      title: Videresending
+      title: Viderekobling
       header: {  }
       footer: {  }
       empty:

@@ -317,7 +317,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Content type'
+            label: Innholdstype
             description: ''
             use_operator: false
             operator: type_op

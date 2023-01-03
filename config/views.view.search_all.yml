@@ -193,7 +193,7 @@ display:
           empty: true
           tokenize: true
           content:
-            value: '<h4>All results</h4>'
+            value: '<h4>Alle resultater</h4>'
             format: basic_html
           plugin_id: text
       footer: {  }
@@ -208,7 +208,7 @@ display:
           empty: true
           tokenize: false
           content:
-            value: 'No results found.'
+            value: 'Søket ditt gav ingen resultater.'
             format: basic_html
           plugin_id: text
       relationships: {  }
