@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
+    - field.field.node.event.field_event_enable_enrollment
     - field.field.node.event.field_event_enroll
     - field.field.node.event.field_event_enroll_outside_group
     - field.field.node.event.field_event_image
@@ -92,6 +93,7 @@ third_party_settings:
       children:
         - field_files
         - field_event_managers
+        - field_event_managers
       parent_name: ''
       weight: 8
       label: 'Additional information'
@@ -107,6 +109,7 @@ third_party_settings:
       children:
         - field_event_enroll
         - group_enrollment_methods
+        - field_event_enable_enrollment
       parent_name: group_event_visibility
       weight: 18
       label: Enrollment
@@ -132,7 +135,9 @@ third_party_settings:
         required_fields: false
         show_label: false
         speed: fast
-      format_type: html_element
+        open: true
+        description: ''
+      format_type: details
       label: 'Enrollment options fieldset'
       parent_name: group_enrollment
       region: content
@@ -332,8 +337,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_event_enable_enrollment:
+    weight: 8
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
 hidden:
   field_enroll_method: true
+  field_event_enable_enrollment: true
   field_event_enroll_outside_group: true
   promote: true
   sticky: true

@@ -8,6 +8,7 @@ module:
   address: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  advancedqueue: 0
   better_exposed_filters: 0
   big_pipe: 0
   block: 0
@@ -84,6 +85,7 @@ module:
   slack: 0
   slack_invite: 0
   social_activity: 0
+  social_advanced_queue: 0
   social_comment: 0
   social_comment_upload: 0
   social_core: 0
@@ -126,6 +128,7 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  ultimate_cron: 0
   update: 0
   update_helper: 0
   user: 0

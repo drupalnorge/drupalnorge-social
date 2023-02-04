@@ -5,6 +5,8 @@ settings:
   crop_list: {  }
   warn_multiple_usages: false
   show_default_crop: true
+  notify_update: true
+  notify_apply: false
 _core:
   default_config_hash: Nu7A-_9XQJ6mwtc1Dfm0ua3mSFoWzG-pC-xEL-SejjA
 langcode: nb

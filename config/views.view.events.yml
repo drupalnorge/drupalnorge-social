@@ -541,6 +541,7 @@ display:
         groups:
           1: AND
       title: 'Upcoming events'
+      rendering_language: '***LANGUAGE_language_interface***'
     cache_metadata:
       max-age: -1
       contexts:
@@ -809,6 +810,7 @@ display:
           plugin_id: social_event_date_sort
           relationship: none
           table: node__field_event_date
+      rendering_language: '***LANGUAGE_language_interface***'
     cache_metadata:
       max-age: -1
       contexts:

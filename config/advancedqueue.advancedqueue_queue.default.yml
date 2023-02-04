@@ -1,0 +1,14 @@
+uuid: fe279b80-5f4d-4769-a9db-51443f0c2059
+langcode: nb
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: mrBML-mSE7gKDkRJdleP7qLpxfldTKlAerb0Bt2MNMA
+id: default
+label: Default
+backend: database
+backend_configuration:
+  lease_time: 300
+processor: cron
+processing_time: 90
+locked: false

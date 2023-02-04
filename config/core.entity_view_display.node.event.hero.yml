@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
+    - field.field.node.event.field_event_enable_enrollment
     - field.field.node.event.field_event_enroll
     - field.field.node.event.field_event_enroll_outside_group
     - field.field.node.event.field_event_image
@@ -97,7 +98,9 @@ hidden:
   body: true
   field_content_visibility: true
   field_enroll_method: true
+  field_event_addtocal: true
   field_event_comments: true
+  field_event_enable_enrollment: true
   field_event_enroll: true
   field_event_enroll_outside_group: true
   field_event_managers: true

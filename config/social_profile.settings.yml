@@ -1,3 +1,4 @@
 social_profile_show_email: true
 langcode: nb
 social_profile_show_language: true
+enable_profile_tagging: true

@@ -4,8 +4,8 @@ status: true
 dependencies:
   module:
     - profile
-    - taxonomy
     - user
+    - taxonomy
     - search_api
     - social_search
   config:
@@ -24,13 +24,14 @@ description: 'Default users index created for the Social distribution.'
 read_only: false
 field_settings:
   created:
-    label: Created
+    label: 'Owner » User » Created'
     datasource_id: 'entity:profile'
-    property_path: created
+    property_path: 'uid:entity:created'
     type: date
     dependencies:
       module:
         - profile
+        - user
   field_profile_expertise:
     label: Expertise
     datasource_id: 'entity:profile'
@@ -48,7 +49,6 @@ field_settings:
       config:
         - field.storage.profile.field_profile_expertise
       module:
-        - taxonomy
         - taxonomy
   field_profile_first_name:
     label: 'First name'
@@ -77,7 +77,6 @@ field_settings:
         - field.storage.profile.field_profile_interests
       module:
         - taxonomy
-        - taxonomy
   field_profile_last_name:
     label: 'Last name'
     datasource_id: 'entity:profile'
@@ -104,7 +103,6 @@ field_settings:
     dependencies:
       module:
         - profile
-        - user
         - user
   rendered_item:
     label: 'Rendered HTML output'
@@ -133,7 +131,6 @@ field_settings:
     dependencies:
       module:
         - profile
-        - user
         - user
 datasource_settings:
   'entity:profile':
@@ -255,6 +252,7 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
+    ignored: ._-
   transliteration:
     plugin_id: transliteration
     all_fields: true
