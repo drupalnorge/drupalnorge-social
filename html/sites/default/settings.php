@@ -15,7 +15,8 @@ $settings['trusted_host_patterns'] = [
   '^(.*)\.ddev\.site$',
   '^drupalnorge\.no$',
   '^www\.drupalnorge\.no$',
-  '^drupal-5616\.bolt54\.servebolt\.com$',
+  '^(.*)\.servebolt\.com$',
+  '^(.*)\.servebolt\.cloud$',
 ];
 
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {

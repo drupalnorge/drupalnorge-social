@@ -14,7 +14,7 @@
         }
     ],
     "require": {
-        "php": ">=7.2",
+        "php": ">=7.4",
         "drupal/coffee": "^1.0",
         "drupal/config_ignore": "^2.1",
         "drupal/core-composer-scaffold": "~8.9.20",
@@ -28,8 +28,8 @@
         "drupal/social_search_autocomplete": "^1.2",
         "drupal/sparkpost": "^2.0",
         "drush/drush": "^10.0.0",
-        "goalgorilla/open_social": "10.0.18",
-        "hirak/prestissimo": "^0.3.10"
+        "goalgorilla/open_social": "10.2.11",
+        "monolog/monolog": "^1.17"
     },
     "require-dev": {
         "behatch/contexts": "^3.3",
@@ -43,7 +43,15 @@
     "prefer-stable": true,
     "config": {
         "discard-changes": true,
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "oomphinc/composer-installers-extender": true,
+            "zaporylie/composer-drupal-optimizations": true
+        }
     },
     "autoload": {
         "psr-4": { "DrupalNorge\\DrupalNorgeSocial\\Tests\\": "tests/src" }
