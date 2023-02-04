@@ -1,14 +1,14 @@
-@api @javascript
+@api @javascript @mentions
 Feature: Mentions
   Background:
     Given users:
-      | name     | mail         |
+      | name         | mail              |
       | testreceiver | test1@example.com |
       | testsender   | test2@example.com |
   Scenario: When posting a post, a user should be able to do a mention
     Given I am logged in as "testsender"
     When I am on the homepage
-    And I fill in "edit-field-post-0-value" with "test @testreceive"
+    And I fill in "edit-field-post-0-value" with "test @testreceiver"
     # Trigger keydown.
     And I trigger "keydown" on "#edit-field-post-0-value"
     And I wait for AJAX to finish
