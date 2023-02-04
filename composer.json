@@ -31,6 +31,8 @@
         "hirak/prestissimo": "^0.3.10"
     },
     "require-dev": {
+        "behatch/contexts": "^3.3",
+        "bex/behat-screenshot": "^2.1",
         "drupal/core-dev": "~8.9.20",
         "drupal/drupal-extension": "~3.0",
         "drupal/stage_file_proxy": "^1.0",

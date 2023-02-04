@@ -11,6 +11,7 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
 }
 
 $settings['trusted_host_patterns'] = [
+  '^web$',
   '^(.*)\.ddev\.site$',
   '^drupalnorge\.no$',
   '^www\.drupalnorge\.no$',

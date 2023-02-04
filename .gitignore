@@ -57,3 +57,6 @@ behat.yml
 
 # Ignore SSL well-known
 /html/.well-known/
+
+# Ignore Behats screenshots
+/screenshots
