@@ -10,17 +10,40 @@ favicon:
   path: ''
   url: 'https://www.drupalnorge.no/profiles/contrib/social/themes/socialblue/favicon.ico'
   use_default: true
+schemas:
+  bootstrap: 8000
+  socialbase: 8000
+  socialblue: 8000
 features:
   comment_user_picture: true
   comment_user_verification: false
   favicon: true
   node_user_picture: true
+table_responsive: '-1'
+region_wells:
+  hidden: ''
+  header: ''
+  breadcrumb: ''
+  hero: ''
+  secondary_navigation: ''
+  content_top: ''
+  title: ''
+  content: ''
+  complementary_top: ''
+  complementary_bottom: ''
+  content_bottom: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+cdn_theme: ''
+cdn_cache_ttl_versions: 0
+cdn_cache_ttl_themes: 0
+cdn_cache_ttl_assets: 0
+cdn_cache_ttl_library: 0
+reset_http_request_cache: ''
+table: ''
 logo:
   path: ''
   url: ''
   use_default: true
-schemas:
-  bootstrap: 8000
-  socialbase: 8000
-  socialblue: 8000
 langcode: nb

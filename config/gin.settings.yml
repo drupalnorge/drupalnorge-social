@@ -1,5 +1,5 @@
-preset_accent_color: blue
-preset_focus_color: gin
+preset_accent_color: custom
+preset_focus_color: custom
 enable_darkmode: false
 classic_toolbar: vertical
 icon_default: true
@@ -7,3 +7,5 @@ icon_path: ''
 _core:
   default_config_hash: n_qpss6W5gVA3e38uErsrMTfKQDnBNhmW2U9qPl9b5w
 langcode: nb
+accent_color: '#29abe2'
+focus_color: '#1f80aa'

@@ -10,3 +10,4 @@ log_wrong_responses: false
 _core:
   default_config_hash: pfrv6lPS72f5WG1UB4wHkgQV2invlHwVpaCy_mY-ClQ
 langcode: nb
+enabled_default: 0

@@ -1,0 +1,86 @@
+label: 'Search All autocomplete'
+description: 'Provides a REST endpoint for the Search API to be used for autocomplete.'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        type:
+          admin_label: 'Group type'
+          separator: ', '
+        type_1:
+          admin_label: 'Node type'
+          separator: ', '
+        uid_1:
+          admin_label: 'User type (rewritten User ID)'
+          alter:
+            text: User
+          separator: ', '
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQ=
+        nothing:
+          admin_label: 'Entity Type'
+          alter:
+            text: '{{ type }}{{ type_1 }}{{ uid_1 }}'
+        title:
+          admin_label: 'Node title'
+          separator: ', '
+        label:
+          admin_label: 'Group title'
+          separator: ', '
+        name:
+          admin_label: 'User name'
+          separator: ', '
+        nothing_1:
+          admin_label: 'Entity Label'
+          alter:
+            text: '{{ title }}{{ label }}{{ name }}'
+        nid:
+          admin_label: 'Node Path'
+          alter:
+            text: 'node/{{ nid }}'
+          separator: ', '
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQ=
+        uid:
+          admin_label: 'User Path'
+          alter:
+            text: 'user/{{ uid }}'
+          separator: ', '
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQ=
+        id:
+          admin_label: 'Group Path'
+          alter:
+            text: 'group/{{ id }}'
+          separator: ', '
+          fallback_options:
+            format_plural_string: !!binary MQNAY291bnQ=
+        nothing_2:
+          admin_label: 'Entity Path'
+          alter:
+            text: '{{ nid }}{{ uid }}{{ id }}'
+        field_event_type:
+          admin_label: 'Event type'
+          separator: ', '
+        field_topic_type:
+          admin_label: 'Topic type'
+          separator: ', '
+        nothing_3:
+          admin_label: Type
+          alter:
+            text: '{{ field_event_type }}{{ field_topic_type }}'
+      arguments:
+        search_api_fulltext:
+          exception:
+            title: All
+      use_more_text: 'See all results'
+  rest_export_1:
+    display_title: 'REST export'
