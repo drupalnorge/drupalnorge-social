@@ -25,6 +25,7 @@
         "drupal/reroute_email": "^2.0",
         "drupal/slack": "^1.2",
         "drupal/slack_invite": "^2.0",
+        "drupal/social_search_autocomplete": "^1.2",
         "drupal/sparkpost": "^2.0",
         "drush/drush": "^10.0.0",
         "goalgorilla/open_social": "10.0.18",

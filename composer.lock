@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f9032e52b92ddffcae30975ba85ff103",
+    "content-hash": "90f09c129ef546291ebb5bec36d17bbc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5753,6 +5753,70 @@
             "homepage": "https://www.drupal.org/project/slack_invite",
             "support": {
                 "source": "https://git.drupalcode.org/project/slack_invite"
+            }
+        },
+        {
+            "name": "drupal/social_search_autocomplete",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/social_search_autocomplete.git",
+                "reference": "1.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/social_search_autocomplete-1.2.1.zip",
+                "reference": "1.2.1",
+                "shasum": "d009c69510fe92f0243615a7b18551eaf733606a"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "drupal/update_helper": "*"
+            },
+            "require-dev": {
+                "drupal/update_helper": "^2.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.2.1",
+                    "datestamp": "1626434611",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Kingdutch",
+                    "homepage": "https://www.drupal.org/user/1868952"
+                },
+                {
+                    "name": "Open Social",
+                    "homepage": "https://www.drupal.org/user/272162"
+                },
+                {
+                    "name": "navneet0693",
+                    "homepage": "https://www.drupal.org/user/3200545"
+                },
+                {
+                    "name": "ronaldtebrake",
+                    "homepage": "https://www.drupal.org/user/2314038"
+                },
+                {
+                    "name": "tbsiqueira",
+                    "homepage": "https://www.drupal.org/user/2822445"
+                }
+            ],
+            "description": "Adds autocomplete suggestions to the site search of Open Social",
+            "homepage": "http://drupal.org/project/social_search_autocomplete",
+            "support": {
+                "source": "https://git.drupalcode.org/project/social_search_autocomplete"
             }
         },
         {
