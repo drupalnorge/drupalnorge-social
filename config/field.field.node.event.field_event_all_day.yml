@@ -1,21 +1,21 @@
-uuid: 2aa8f0b7-65c8-498c-8e59-ea4407977f4d
-langcode: nb
+uuid: 8b3f4ea8-04c3-4056-83b0-7df49fab6363
+langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_event_enable_enrollment
+    - field.storage.node.field_event_all_day
     - node.type.event
-id: node.event.field_event_enable_enrollment
-field_name: field_event_enable_enrollment
+id: node.event.field_event_all_day
+field_name: field_event_all_day
 entity_type: node
 bundle: event
-label: 'Enable event enrollment'
+label: 'All day'
 description: ''
 required: false
 translatable: false
 default_value:
   -
-    value: 1
+    value: 0
 default_value_callback: ''
 settings:
   on_label: 'On'

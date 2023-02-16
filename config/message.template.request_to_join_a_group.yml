@@ -1,5 +1,4 @@
-uuid: 38f791d1-0a23-48ae-a25a-388712b5a109
-langcode: nb
+langcode: en
 status: true
 dependencies:
   enforced:
@@ -20,20 +19,18 @@ third_party_settings:
     activity_create_direct: true
     activity_aggregate: false
     activity_entity_condition: ''
-_core:
-  default_config_hash: C8zK2D8RZQAPEr69eJ0l4vxlumyO8fT-jI1lh0e9rhE
 template: request_to_join_a_group
 label: 'Request to join a group'
 description: 'A person requests membership to a group I manage'
 text:
   -
-    value: "<p><a href=\"[message:recipient-user:url:absolute]\">[message:recipient-user:display-name]</a> has requested membership to the <a href=\"[message:gurl]\">[message:gtitle]</a> group</p>\r\n"
+    value: "<p><a href=\"absolute]\">[message:recipient-user:display-name]</a> has requested membership to the <a href=\"gurl]\">[message:gtitle]</a> group</p>\r\n"
     format: basic_html
   -
-    value: "<p><a href=\"[message:recipient-user:url:absolute]\">[message:recipient-user:display-name]</a> has requested membership to the <a href=\"[message:gurl]\">[message:gtitle]</a> group</p>\r\n"
+    value: "<p><a href=\"absolute]\">[message:recipient-user:display-name]</a> has requested membership to the <a href=\"gurl]\">[message:gtitle]</a> group</p>\r\n"
     format: basic_html
   -
-    value: "<p><a href=\"[message:recipient-user:url:absolute]\">[message:recipient-user:display-name]</a> has requested membership to the <a href=\"[message:gurl]\">[message:gtitle]</a> group</p>\r\n\r\n<table class=\"btn-wrapp\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td class=\"align-center\"><a class=\"btn-link btn-link-bg btn-link-one\" href=\"[social_group_request:request_page_link]\">View request</a></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n"
+    value: "<p><a href=\"[message:recipient-user:url:absolute]\">[message:recipient-user:display-name]</a> has requested to join your group&nbsp;<a href=\"[message:gurl]\">[message:gtitle]</a></p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"
     format: full_html
 settings:
   'token options':

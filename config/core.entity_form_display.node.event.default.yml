@@ -7,10 +7,10 @@ dependencies:
     - field.field.node.event.field_content_visibility
     - field.field.node.event.field_enroll_method
     - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_all_day
     - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
-    - field.field.node.event.field_event_enable_enrollment
     - field.field.node.event.field_event_enroll
     - field.field.node.event.field_event_enroll_outside_group
     - field.field.node.event.field_event_image
@@ -50,6 +50,7 @@ third_party_settings:
       children:
         - field_event_date
         - field_event_date_end
+        - field_event_all_day
       parent_name: ''
       weight: 1
       label: 'Date & time'
@@ -92,6 +93,7 @@ third_party_settings:
     group_attachments:
       children:
         - field_files
+        - field_event_managers
         - field_event_managers
         - field_event_managers
       parent_name: ''
@@ -220,6 +222,13 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
+  field_event_enable_enrollment:
+    weight: 8
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_event_enroll:
     region: content
     settings:
@@ -337,8 +346,8 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_event_enable_enrollment:
-    weight: 8
+  field_event_all_day:
+    weight: 9
     settings:
       display_label: true
     third_party_settings: {  }
@@ -346,7 +355,7 @@ content:
     region: content
 hidden:
   field_enroll_method: true
-  field_event_enable_enrollment: true
+  field_event_all_day: true
   field_event_enroll_outside_group: true
   promote: true
   sticky: true

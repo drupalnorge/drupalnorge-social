@@ -58,7 +58,7 @@ content:
         view_mode: default
         link: false
       group_content:
-        view_mode: default
+        view_mode: activity
         link: false
       mentions:
         view_mode: default
@@ -91,6 +91,9 @@ content:
         view_mode: default
         link: false
       path_alias:
+        view_mode: default
+        link: false
+      redirect:
         view_mode: default
         link: false
     third_party_settings: {  }

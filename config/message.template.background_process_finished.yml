@@ -16,6 +16,7 @@ third_party_settings:
     activity_create_direct: true
     activity_aggregate: false
     activity_entity_condition: queue_store_entity_send_activity_condition
+    email_subject: 'A background task has been finished'
 _core:
   default_config_hash: FGWTZUl78Qd4E3oodEaIhN7VVEHV3f_zs65mte-npPs
 template: background_process_finished

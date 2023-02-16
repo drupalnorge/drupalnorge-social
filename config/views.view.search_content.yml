@@ -49,7 +49,7 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
           input_required: false
-          text_input_required: 'Velg et filter og klikk «Bruk» for å se resultater'
+          text_input_required: 'Select any filter and click on Apply to see results'
           bef:
             general:
               allow_secondary: false

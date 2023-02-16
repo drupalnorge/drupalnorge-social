@@ -1,9 +1,9 @@
-uuid: 70af370a-d51c-4957-a3bc-459dc6c0ac0c
-langcode: nb
+langcode: en
 status: true
 dependencies:
   module:
     - activity_logger
+    - social_event_managers
 third_party_settings:
   activity_logger:
     activity_bundle_entities:
@@ -16,20 +16,18 @@ third_party_settings:
     activity_create_direct: false
     activity_aggregate: false
     activity_entity_condition: ''
-_core:
-  default_config_hash: 1Tzc_4SfrpKngfm00ozreffKQbKiRzQ4bbmPhrERVIs
 template: member_added_by_event_organiser
 label: 'A organizer added me to a Event'
 description: 'A organizer added me to a Event'
 text:
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> added you to the event [social_event:event_iam_organizing]</p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> added you to the event [social_event:event_iam_organizing]</p>\r\n"
     format: full_html
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> added you to the event [social_event:event_iam_organizing]</p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> added you to the event [social_event:event_iam_organizing]</p>\r\n"
     format: full_html
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> added you to the event [social_event:event_iam_organizing]</p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> added you to the event [social_event:event_iam_organizing]</p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"
     format: full_html
 settings:
   'token options':

@@ -17,6 +17,7 @@ third_party_settings:
     activity_create_direct: true
     activity_aggregate: false
     activity_entity_condition: ''
+    email_subject: 'You have been invited to join a group'
 _core:
   default_config_hash: JHC8qDlq6DgXcvsUMVb0wm15WJlL-4R3ID5Qc3baBtc
 template: invited_to_join_group

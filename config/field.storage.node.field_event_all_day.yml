@@ -1,5 +1,5 @@
-uuid: e9ef51bc-2ae9-439e-940d-34991fee3d4f
-langcode: nb
+uuid: d134744a-3d4b-4a2c-ad94-5262b10bec77
+langcode: en
 status: true
 dependencies:
   enforced:
@@ -7,8 +7,8 @@ dependencies:
       - social_event
   module:
     - node
-id: node.field_event_enable_enrollment
-field_name: field_event_enable_enrollment
+id: node.field_event_all_day
+field_name: field_event_all_day
 entity_type: node
 type: boolean
 settings: {  }
