@@ -18,11 +18,11 @@ plugin: search_hero_block
 settings:
   id: search_hero_block
   label: Search
-  provider: social_search
   label_display: visible
+  provider: social_search
 visibility:
   request_path:
     id: request_path
-    pages: "/search/content\r\n/search/content/*\r\n/search/users\r\n/search/users/*\r\n/search/groups\r\n/search/groups/*\r\n/search/all\r\n/search/all/*"
     negate: false
     context_mapping: {  }
+    pages: "/search/content\r\n/search/content/*\r\n/search/users\r\n/search/users/*\r\n/search/groups\r\n/search/groups/*\r\n/search/all\r\n/search/all/*"

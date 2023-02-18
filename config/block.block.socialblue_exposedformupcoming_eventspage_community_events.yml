@@ -20,12 +20,12 @@ plugin: 'views_exposed_filter_block:upcoming_events-page_community_events'
 settings:
   id: 'views_exposed_filter_block:upcoming_events-page_community_events'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: Filter
 visibility:
   request_path:
     id: request_path
-    pages: /community-events
     negate: false
     context_mapping: {  }
+    pages: /community-events

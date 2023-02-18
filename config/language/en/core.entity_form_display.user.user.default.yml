@@ -4,5 +4,7 @@ third_party_settings:
       label: 'Account information'
       format_settings:
         label: 'Account information'
+    group_privacy:
+      label: Privacy
     group_locale_settings:
       label: 'Locale settings'

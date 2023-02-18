@@ -17,11 +17,11 @@ plugin: local_actions_block
 settings:
   id: local_actions_block
   label: 'Primary admin actions'
-  provider: core
   label_display: '0'
+  provider: core
 visibility:
   request_path:
     id: request_path
-    pages: "/admin/reports/*\r\n/group/*/membership\r\n/group/*/join\r\n/group/*/leave\r\n/group/*/delete\r\n/group/*/content/*\r\n/group/*/invite-members\r\n/node/*/all-enrollments\r\n/node/*/all-enrollment-requests\r\n/node/*/delete\r\n/user/*/edit"
     negate: true
     context_mapping: {  }
+    pages: "/admin/reports/*\r\n/group/*/membership\r\n/group/*/join\r\n/group/*/leave\r\n/group/*/delete\r\n/group/*/content/*\r\n/group/*/invite-members\r\n/node/*/all-enrollments\r\n/node/*/all-enrollment-requests\r\n/node/*/delete\r\n/user/*/edit"

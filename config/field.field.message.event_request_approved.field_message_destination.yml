@@ -1,0 +1,21 @@
+uuid: 3dd86dc3-dd9b-4ddb-9feb-b0a7cd014186
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_destination
+    - message.template.event_request_approved
+  module:
+    - options
+id: message.event_request_approved.field_message_destination
+field_name: field_message_destination
+entity_type: message
+bundle: event_request_approved
+label: field_message_destination
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -7,6 +7,7 @@ _core:
 id: public_group
 label: 'Helt åpen gruppe'
 description: 'This is a public group. Users may join without approval and all content added in this group will be visible to all community members and anonymous users.'
+new_revision: false
 creator_membership: true
 creator_wizard: false
 creator_roles:

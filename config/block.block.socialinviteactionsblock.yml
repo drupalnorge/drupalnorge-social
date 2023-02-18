@@ -18,11 +18,11 @@ plugin: social_invite_actions_block
 settings:
   id: social_invite_actions_block
   label: 'Social Invite Actions block'
-  provider: social_group_invite
   label_display: '0'
+  provider: social_group_invite
 visibility:
   request_path:
     id: request_path
-    pages: '/group/*/membership'
     negate: false
     context_mapping: {  }
+    pages: '/group/*/membership'

@@ -20,72 +20,23 @@ base_table: profile
 base_field: profile_id
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'view any profile profile'
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: true
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: mini
-        options:
-          items_per_page: 4
-          offset: 0
-          id: 0
-          total_pages: null
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
-      style:
-        type: default
-      row:
-        type: 'entity:profile'
-        options:
-          relationship: none
-          view_mode: teaser
+      title: 'Newest members'
       fields:
         rendered_entity:
+          id: rendered_entity
           table: profile
           field: rendered_entity
-          id: rendered_entity
-          entity_type: null
-          entity_field: null
-          plugin_id: rendered_entity
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: null
+          entity_field: null
+          plugin_id: rendered_entity
           label: ''
           exclude: false
           alter:
@@ -128,16 +79,70 @@ display:
           empty_zero: false
           hide_alter_empty: true
           view_mode: default
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 4
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Filter
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'view any profile profile'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        created:
+          id: created
+          table: profile
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: profile
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: minute
+      arguments: {  }
       filters:
         type:
           id: type
           table: profile
           field: type
-          value:
-            profile: profile
           entity_type: profile
           entity_field: type
           plugin_id: bundle
+          value:
+            profile: profile
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -148,6 +153,9 @@ display:
           relationship: uid
           group_type: group
           admin_label: ''
+          entity_type: user
+          entity_field: status
+          plugin_id: boolean
           operator: '='
           value: '1'
           group: 1
@@ -158,14 +166,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -178,9 +186,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: user
-          entity_field: status
-          plugin_id: boolean
         uid_raw:
           id: uid_raw
           table: users_field_data
@@ -188,6 +193,8 @@ display:
           relationship: uid
           group_type: group
           admin_label: filter_no_admin
+          entity_type: user
+          plugin_id: numeric
           operator: '>'
           value:
             min: ''
@@ -201,14 +208,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -221,28 +228,63 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: user
-          plugin_id: numeric
-      sorts:
-        created:
-          id: created
-          table: profile
-          field: created
-          relationship: none
+        roles_target_id:
+          id: roles_target_id
+          table: user__roles
+          field: roles_target_id
+          relationship: uid
           group_type: group
           admin_label: ''
-          order: DESC
+          entity_type: user
+          entity_field: roles
+          plugin_id: user_roles
+          operator: 'not empty'
+          value: {  }
+          group: 1
           exposed: false
           expose:
+            operator_id: ''
             label: ''
-          granularity: minute
-          entity_type: profile
-          entity_field: created
-          plugin_id: date
-      title: 'Newest members'
-      header: {  }
-      footer: {  }
-      empty: {  }
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+      style:
+        type: default
+      row:
+        type: 'entity:profile'
+        options:
+          relationship: none
+          view_mode: teaser
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: true
+          replica: false
+          query_tags: {  }
       relationships:
         uid:
           id: uid
@@ -251,11 +293,12 @@ display:
           relationship: none
           group_type: group
           admin_label: User
-          required: true
           entity_type: profile
           entity_field: uid
           plugin_id: standard
-      arguments: {  }
+          required: true
+      header: {  }
+      footer: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -270,32 +313,25 @@ display:
         - 'config:core.entity_view_display.profile.profile.compact_teaser'
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
+        - 'config:core.entity_view_display.profile.profile.medium_teaser'
         - 'config:core.entity_view_display.profile.profile.search_index'
         - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'
+        - 'config:core.entity_view_display.profile.profile.statistic'
         - 'config:core.entity_view_display.profile.profile.table'
         - 'config:core.entity_view_display.profile.profile.teaser'
   block_newest_users:
-    display_plugin: block
     id: block_newest_users
     display_title: 'Newest users block'
+    display_plugin: block
     position: 2
     display_options:
-      display_extenders: {  }
       title: 'Newest members'
-      defaults:
-        title: false
-        pager: false
-        style: false
-        row: false
-        use_more: false
-        use_more_always: false
-        use_more_text: false
       pager:
         type: some
         options:
-          items_per_page: 2
           offset: 0
+          items_per_page: 2
       style:
         type: default
         options: {  }
@@ -304,11 +340,20 @@ display:
         options:
           relationship: none
           view_mode: small_teaser
+      defaults:
+        title: false
+        pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        style: false
+        row: false
       display_description: ''
-      block_description: 'Newest users block'
       use_more: true
       use_more_always: true
       use_more_text: 'All members'
+      display_extenders: {  }
+      block_description: 'Newest users block'
     cache_metadata:
       max-age: -1
       contexts:
@@ -321,29 +366,30 @@ display:
         - 'config:core.entity_view_display.profile.profile.compact_teaser'
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
+        - 'config:core.entity_view_display.profile.profile.medium_teaser'
         - 'config:core.entity_view_display.profile.profile.search_index'
         - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'
+        - 'config:core.entity_view_display.profile.profile.statistic'
         - 'config:core.entity_view_display.profile.profile.table'
         - 'config:core.entity_view_display.profile.profile.teaser'
   page_newest_users:
-    display_plugin: page
     id: page_newest_users
     display_title: 'Newest users page'
+    display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: all-members
+      title: 'All members'
       pager:
         type: full
         options:
-          items_per_page: 10
           offset: 0
-          id: 0
+          items_per_page: 10
           total_pages: null
+          id: 0
           tags:
-            previous: ‹‹
             next: ››
+            previous: ‹‹
             first: '« First'
             last: 'Last »'
           expose:
@@ -356,11 +402,12 @@ display:
             offset_label: Offset
           quantity: 9
       defaults:
-        pager: false
         title: false
+        pager: false
       display_description: ''
-      title: 'All members'
       exposed_block: true
+      display_extenders: {  }
+      path: all-members
     cache_metadata:
       max-age: -1
       contexts:
@@ -374,8 +421,10 @@ display:
         - 'config:core.entity_view_display.profile.profile.compact_teaser'
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
+        - 'config:core.entity_view_display.profile.profile.medium_teaser'
         - 'config:core.entity_view_display.profile.profile.search_index'
         - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'
+        - 'config:core.entity_view_display.profile.profile.statistic'
         - 'config:core.entity_view_display.profile.profile.table'
         - 'config:core.entity_view_display.profile.profile.teaser'

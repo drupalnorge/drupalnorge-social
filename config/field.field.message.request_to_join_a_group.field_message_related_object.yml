@@ -5,11 +5,11 @@ dependencies:
   config:
     - field.storage.message.field_message_related_object
     - message.template.request_to_join_a_group
+  module:
+    - dynamic_entity_reference
   enforced:
     module:
       - social_group_request
-  module:
-    - dynamic_entity_reference
 _core:
   default_config_hash: cciXyJ78efvvo-cOx1JGehvO1Qm28KkulZKjdvttPo4
 id: message.request_to_join_a_group.field_message_related_object

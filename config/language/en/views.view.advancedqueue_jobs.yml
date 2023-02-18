@@ -31,7 +31,10 @@ display:
         state:
           label: State
           alter:
-            text: "{{ state }}\n\n{{ num_retries }}"
+            text: |-
+              {{ state }}
+
+              {{ num_retries }}
         type:
           label: 'Job type'
         payload:
@@ -43,7 +46,10 @@ display:
         processed:
           label: 'Processed date'
           alter:
-            text: "{{ processed }}\n\n{{ message }}"
+            text: |-
+              {{ processed }}
+
+              {{ message }}
         message:
           label: Message
           alter:

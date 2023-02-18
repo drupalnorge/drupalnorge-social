@@ -5,11 +5,11 @@ dependencies:
   config:
     - field.storage.message.field_message_destination
     - message.template.request_to_join_a_group
+  module:
+    - options
   enforced:
     module:
       - social_group_request
-  module:
-    - options
 _core:
   default_config_hash: GAoGAEpNJMisZKKbqnqh61EnIgAvfNcw0OQyhGKWDbA
 id: message.request_to_join_a_group.field_message_destination

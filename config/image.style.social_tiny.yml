@@ -14,12 +14,18 @@ effects:
     id: image_scale_and_crop
     weight: 2
     data:
-      anchor: center-center
       width: 16
       height: 16
+      anchor: center-center
   2b600be6-28ba-4206-85c7-ea5a6e71e934:
     uuid: 2b600be6-28ba-4206-85c7-ea5a6e71e934
     id: image_effects_auto_orient
     weight: 2
     data:
       scan_exif: true
+  4c89a583-763a-40f1-8761-674764190b1e:
+    uuid: 4c89a583-763a-40f1-8761-674764190b1e
+    id: image_convert
+    weight: 3
+    data:
+      extension: webp

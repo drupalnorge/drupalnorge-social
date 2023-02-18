@@ -18,11 +18,11 @@ plugin: social_page_title_block
 settings:
   id: social_page_title_block
   label: 'Page title for enrollments'
-  provider: social_core
   label_display: '0'
+  provider: social_core
 visibility:
   request_path:
     id: request_path
-    pages: "*/enrollments\r\n*/organisers\r\n*/manage-enrollments\r\n*/all-enrollments"
     negate: false
     context_mapping: {  }
+    pages: "*/enrollments\r\n*/organisers\r\n*/manage-enrollments\r\n*/all-enrollments"

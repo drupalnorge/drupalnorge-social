@@ -18,11 +18,11 @@ plugin: event_add_block
 settings:
   id: event_add_block
   label: 'Event add block'
-  provider: social_event
   label_display: '0'
+  provider: social_event
 visibility:
   request_path:
     id: request_path
-    pages: '/user/*/events'
     negate: false
     context_mapping: {  }
+    pages: '/user/*/events'

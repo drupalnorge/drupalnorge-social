@@ -2,6 +2,8 @@ uuid: 05b3078d-20f4-4c12-ad68-64e0e5a799c6
 langcode: nb
 status: true
 dependencies:
+  config:
+    - filter.format.full_html
   module:
     - activity_logger
 third_party_settings:

@@ -24,43 +24,43 @@ third_party_settings:
         - title
         - field_page_image
         - body
+      label: 'Basic information'
+      region: hidden
       parent_name: ''
       weight: 0
-      label: 'Basic information'
       format_type: fieldset
       format_settings:
-        required_fields: true
-        id: content
         classes: 'card '
+        id: content
         description: ''
-      region: hidden
+        required_fields: true
     group_attachments:
       children:
         - field_files
+      label: 'Additional information'
+      region: hidden
       parent_name: ''
       weight: 3
-      label: 'Additional information'
       format_type: details
       format_settings:
-        required_fields: true
-        id: attachments
         classes: social-collapsible-fieldset
-        description: ''
+        id: attachments
         open: false
-      region: hidden
+        description: ''
+        required_fields: true
     group_page_visibility:
       children:
         - field_content_visibility
+      label: 'Access permissions'
+      region: hidden
       parent_name: ''
       weight: 1
-      label: 'Access permissions'
       format_type: fieldset
       format_settings:
-        required_fields: true
-        id: visibility
         classes: 'card '
+        id: visibility
         description: ''
-      region: hidden
+        required_fields: true
     group_settings:
       children:
         - uid
@@ -68,17 +68,17 @@ third_party_settings:
         - field_page_comments
         - path
         - status
+      label: Settings
+      region: hidden
+      parent_name: ''
+      weight: 20
+      format_type: details
       format_settings:
         classes: social-collapsible-fieldset
-        description: ''
         id: ''
         open: false
+        description: ''
         required_fields: true
-      format_type: details
-      label: Settings
-      parent_name: ''
-      region: hidden
-      weight: 20
 _core:
   default_config_hash: CKl-Z0PoQkJ3FUGjZNwyNd8cjqpjAJbtSaeXPkXKhT8
 id: node.page.default
@@ -89,54 +89,54 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 3
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 8
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_content_visibility:
+    type: options_buttons
     weight: 27
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_files:
+    type: file_generic
     weight: 26
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   field_page_comments:
+    type: comment_default
     weight: 5
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: comment_default
-    region: content
   field_page_image:
+    type: image_widget_crop
     weight: 2
+    region: content
     settings:
-      show_crop_area: true
-      show_default_crop: true
+      progress_indicator: throbber
       preview_image_style: social_x_large
       crop_preview_image_style: crop_thumbnail
       crop_list:
         - hero
         - teaser
-      progress_indicator: throbber
       crop_types_required: {  }
       warn_multiple_usages: true
+      show_crop_area: true
+      show_default_crop: true
     third_party_settings: {  }
-    type: image_widget_crop
-    region: content
   langcode:
     type: language_select
     weight: 2
@@ -147,39 +147,39 @@ content:
   path:
     type: path
     weight: 6
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   status:
+    type: boolean_checkbox
+    weight: 120
     region: content
     settings:
       display_label: true
-    type: boolean_checkbox
-    weight: 120
     third_party_settings: {  }
   title:
     type: string_textfield
     weight: 1
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 7
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
-    region: content
   url_redirects:
+    weight: 50
     region: content
     settings: {  }
     third_party_settings: {  }
-    weight: 50
 hidden:
   groups: true
   promote: true

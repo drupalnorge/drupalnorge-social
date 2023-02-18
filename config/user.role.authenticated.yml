@@ -1,7 +1,20 @@
 uuid: c0ceee89-d638-44e1-9359-372e7991ad51
 langcode: nb
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.simple_text
+  module:
+    - comment
+    - entity_access_by_field
+    - filter
+    - node
+    - profile
+    - social_like
+    - social_post
+    - social_search
+    - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
@@ -13,68 +26,19 @@ permissions:
   - 'access content'
   - 'access content search'
   - 'access group search'
-  - 'access mentions'
-  - 'access tour'
-  - 'access user profiles'
-  - 'access users search'
-  - 'add or remove like votes on comment of comment'
-  - 'add or remove like votes on event of node'
-  - 'add or remove like votes on post'
-  - 'add or remove like votes on post_comment of comment'
-  - 'add or remove like votes on topic of node'
   - 'add own profile profile'
-  - 'add photo post entities'
-  - 'add post entities'
-  - 'add post post entities'
-  - 'administer own comments'
   - 'cancel account'
   - 'change own username'
-  - 'create closed_group group'
-  - 'create event content'
-  - 'create open_group group'
-  - 'create public_group group'
-  - 'create topic content'
-  - 'delete own comments'
-  - 'delete own event content'
-  - 'delete own post entities'
-  - 'delete own topic content'
-  - 'edit own comments'
-  - 'edit own event content'
-  - 'edit own post entities'
-  - 'edit own profile profile'
-  - 'edit own topic content'
-  - 'flag follow_content'
-  - 'flag mute_group_notifications'
-  - 'override event published option'
-  - 'override topic published option'
-  - 'post comments'
-  - 'select account cancellation method'
-  - 'skip comment approval'
-  - 'unflag follow_content'
-  - 'unflag mute_group_notifications'
   - 'update own profile profile'
   - 'use text format basic_html'
-  - 'use text format mail_html'
   - 'use text format simple_text'
-  - 'view any profile profile'
-  - 'view community posts'
-  - 'view events on my profile'
-  - 'view events on other profiles'
-  - 'view group stream page'
-  - 'view groups on my profile'
-  - 'view groups on other profiles'
   - 'view like widget'
-  - 'view node.event.field_content_visibility:community content'
   - 'view node.event.field_content_visibility:public content'
-  - 'view node.page.field_content_visibility:community content'
   - 'view node.page.field_content_visibility:public content'
-  - 'view node.topic.field_content_visibility:community content'
   - 'view node.topic.field_content_visibility:public content'
-  - 'view own profile'
   - 'view own profile profile'
   - 'view own unpublished content'
+  - 'view profile'
   - 'view public posts'
   - 'view published post entities'
   - 'view the administration theme'
-  - 'view topics on my profile'
-  - 'view topics on other profiles'

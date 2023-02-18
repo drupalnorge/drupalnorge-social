@@ -13,16 +13,16 @@ third_party_settings:
     group_block_content:
       children:
         - field_text_block
+      label: 'Block content'
+      region: content
       parent_name: ''
       weight: 0
-      label: 'Block content'
       format_type: fieldset
       format_settings:
-        description: ''
         classes: ''
         id: ''
+        description: ''
         required_fields: true
-      region: content
 _core:
   default_config_hash: mKGN78KqxaGzS-rQVTi-mAbP9SPnELXjv_P8k--1HcQ
 id: block_content.platform_intro.default
@@ -33,19 +33,19 @@ content:
   field_text_block:
     type: text_textarea
     weight: 2
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    region: content
   info:
     type: string_textfield
     weight: 1
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
   langcode:
     type: language_select
     weight: 2

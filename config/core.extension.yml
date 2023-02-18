@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
+langcode: nb
 module:
   activity_basics: 0
   activity_creator: 0
@@ -7,6 +10,7 @@ module:
   activity_viewer: 0
   address: 0
   admin_toolbar: 0
+  admin_toolbar_search: 0
   admin_toolbar_tools: 0
   advancedqueue: 0
   better_exposed_filters: 0
@@ -33,8 +37,6 @@ module:
   entity: 0
   entity_access_by_field: 0
   exif_orientation: 0
-  features: 0
-  features_ui: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -57,6 +59,11 @@ module:
   image: 0
   image_effects: 0
   image_widget_crop: 0
+  jquery_ui: 0
+  jquery_ui_accordion: 0
+  jquery_ui_datepicker: 0
+  jquery_ui_slider: 0
+  jquery_ui_touch_punch: 0
   language: 0
   like_and_dislike: 0
   link: 0
@@ -66,6 +73,8 @@ module:
   menu_link_content: 0
   menu_ui: 0
   message: 0
+  message_notify: 0
+  mysql: 0
   node: 0
   options: 0
   override_node_options: 0
@@ -132,6 +141,7 @@ module:
   update: 0
   update_helper: 0
   user: 0
+  variationcache: 0
   views_bulk_operations: 0
   views_infinite_scroll: 0
   views_ui: 0
@@ -152,7 +162,4 @@ theme:
   drupalnorge_theme: 0
   claro: 0
   gin: 0
-_core:
-  default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
-langcode: nb
 profile: social

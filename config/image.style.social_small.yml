@@ -17,9 +17,9 @@ effects:
     id: image_scale_and_crop
     weight: 2
     data:
-      anchor: center-center
       width: 24
       height: 24
+      anchor: center-center
   3da54178-876f-4602-a245-60f035dc3c66:
     uuid: 3da54178-876f-4602-a245-60f035dc3c66
     id: crop_crop
@@ -33,3 +33,9 @@ effects:
     weight: 3
     data:
       scan_exif: true
+  3b3d9f65-402b-4ec1-a1aa-f0f95aa47253:
+    uuid: 3b3d9f65-402b-4ec1-a1aa-f0f95aa47253
+    id: image_convert
+    weight: 4
+    data:
+      extension: webp

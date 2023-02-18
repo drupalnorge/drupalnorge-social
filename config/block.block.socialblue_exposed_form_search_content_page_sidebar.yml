@@ -20,12 +20,12 @@ plugin: 'views_exposed_filter_block:search_content-page'
 settings:
   id: 'views_exposed_filter_block:search_content-page'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: 'Sort and Filter'
 visibility:
   request_path:
     id: request_path
-    pages: "/search/content\r\n/search/content/*"
     negate: false
     context_mapping: {  }
+    pages: "/search/content\r\n/search/content/*"

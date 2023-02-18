@@ -1,9 +1,35 @@
-label: People
-description: 'Find and manage people interacting with your site.'
 display:
   default:
-    display_title: Master
     display_options:
+      filters:
+        id:
+          group_info:
+            label: ID
+          expose:
+            label: Group
+        combine:
+          expose:
+            label: 'Name or email contains'
+        roles_target_id:
+          expose:
+            label: Role
+        permission:
+          expose:
+            label: Permission
+        status:
+          group_info:
+            label: Status
+            group_items:
+              1:
+                title: Active
+              2:
+                title: Blocked
+        created:
+          expose:
+            label: 'Registration date'
+        login:
+          expose:
+            label: 'Last login'
       exposed_form:
         options:
           submit_button: Filter
@@ -36,8 +62,14 @@ display:
           label: Roles
         created:
           label: 'Member for'
+          settings:
+            future_format: '@interval'
+            past_format: '@interval'
         access:
           label: 'Last access'
+          settings:
+            future_format: '@interval hence'
+            past_format: '@interval ago'
         operations:
           label: Operations
         mail:
@@ -48,40 +80,12 @@ display:
         field_profile_last_name:
           label: 'Last name'
           separator: ', '
-      filters:
-        combine:
-          expose:
-            label: 'Name or email contains'
-        roles_target_id:
-          expose:
-            label: Role
-        permission:
-          expose:
-            label: Permission
-        status:
-          group_info:
-            label: Status
-            group_items:
-              1:
-                title: Active
-              2:
-                title: Blocked
-        id:
-          expose:
-            label: Group
-          group_info:
-            label: ID
-        created:
-          expose:
-            label: 'Registration date'
-        login:
-          expose:
-            label: 'Last login'
       title: People
       empty:
         area_text_custom:
           content: 'No people available.'
       use_more_text: more
+    display_title: Master
   page_1:
     display_title: Page
     display_options:
@@ -91,3 +95,5 @@ display:
       tab_options:
         title: People
         description: 'Manage user accounts, roles, and permissions.'
+label: People
+description: 'Find and manage people interacting with your site.'

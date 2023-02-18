@@ -20,12 +20,12 @@ plugin: 'views_exposed_filter_block:search_users-page'
 settings:
   id: 'views_exposed_filter_block:search_users-page'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: Filter
 visibility:
   request_path:
     id: request_path
-    pages: "/search/users\r\n/search/users/*"
     negate: false
     context_mapping: {  }
+    pages: "/search/users\r\n/search/users/*"

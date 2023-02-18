@@ -24,46 +24,70 @@ base_table: node_field_data
 base_field: nid
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: true
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Filter
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+      title: 'Upcoming events'
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            trim: false
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
       pager:
         type: full
         options:
-          items_per_page: 10
           offset: 0
-          id: 0
+          items_per_page: 10
           total_pages: null
+          id: 0
           tags:
-            previous: '‹ Previous'
             next: 'Next ›'
+            previous: '‹ Previous'
             first: '« First'
             last: 'Last »'
           expose:
@@ -75,84 +99,73 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
-      style:
-        type: default
-      row:
-        type: 'entity:node'
+      exposed_form:
+        type: basic
         options:
-          relationship: none
-          view_mode: teaser
-      fields:
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          entity_type: node
-          entity_field: title
-          label: ''
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            trim: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            html: false
-          hide_empty: false
-          empty_zero: false
-          settings:
-            link_to_entity: true
-          plugin_id: field
+          submit_button: Filter
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
           relationship: none
           group_type: group
           admin_label: ''
-          exclude: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
+          plugin_id: text_custom
+          empty: true
+          content: 'No events found'
+          tokenize: false
+      sorts:
+        field_event_date_value:
+          id: field_event_date_value
+          table: node__field_event_date
+          field: field_event_date_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: datetime
+          order: ASC
+          expose:
+            label: ''
+          exposed: false
+          granularity: minute
+      arguments: {  }
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            event: event
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            event: event
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -163,6 +176,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: datetime
           operator: '>='
           value:
             min: ''
@@ -177,14 +191,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -197,7 +211,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: datetime
         nid:
           id: nid
           table: node_access
@@ -205,6 +218,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: node_access
           operator: '='
           value: ''
           group: 1
@@ -215,14 +229,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -235,38 +249,24 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: node_access
-      sorts:
-        field_event_date_value:
-          id: field_event_date_value
-          table: node__field_event_date
-          field: field_event_date_value
+      style:
+        type: default
+      row:
+        type: 'entity:node'
+        options:
           relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          granularity: minute
-          plugin_id: datetime
-      title: 'Upcoming events'
+          view_mode: teaser
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: true
+          replica: false
+          query_tags: {  }
+      relationships: {  }
       header: {  }
       footer: {  }
-      empty:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content: 'No events found'
-          plugin_id: text_custom
-      relationships: {  }
-      arguments: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -278,23 +278,16 @@ display:
         - user.permissions
       tags: {  }
   block_community_events:
-    display_plugin: block
     id: block_community_events
     display_title: 'Community events block'
+    display_plugin: block
     position: 1
     display_options:
-      display_extenders: {  }
-      display_description: ''
-      block_description: 'Community events block'
       pager:
         type: some
         options:
-          items_per_page: 2
           offset: 0
-      defaults:
-        pager: false
-        style: false
-        row: false
+          items_per_page: 2
       style:
         type: default
         options: {  }
@@ -303,7 +296,14 @@ display:
         options:
           relationship: none
           view_mode: small_teaser
+      defaults:
+        pager: false
+        style: false
+        row: false
+      display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders: {  }
+      block_description: 'Community events block'
     cache_metadata:
       max-age: -1
       contexts:
@@ -313,43 +313,33 @@ display:
         - user.permissions
       tags: {  }
   block_my_upcoming_events:
-    display_plugin: block
     id: block_my_upcoming_events
     display_title: 'My upcoming events block'
+    display_plugin: block
     position: 3
     display_options:
-      display_extenders: {  }
-      display_description: ''
-      block_description: 'My upcoming events block'
+      title: 'My upcoming events'
       pager:
         type: some
         options:
-          items_per_page: 2
           offset: 0
-      defaults:
-        pager: false
-        relationships: false
-        arguments: false
-        filters: false
-        filter_groups: false
-        style: false
-        row: false
-        empty: false
-        title: false
-        use_more: false
-        use_more_always: false
-        use_more_text: false
-      relationships:
-        reverse__event_enrollment__field_event:
-          id: reverse__event_enrollment__field_event
-          table: node_field_data
-          field: reverse__event_enrollment__field_event
+          items_per_page: 2
+      access:
+        type: perm
+        options:
+          perm: 'create event content'
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
           relationship: none
           group_type: group
-          admin_label: field_event
-          required: true
-          entity_type: node
-          plugin_id: entity_reverse
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: 'No upcoming events you have enrolled for'
+          tokenize: false
       arguments:
         field_account_target_id:
           id: field_account_target_id
@@ -358,6 +348,7 @@ display:
           relationship: reverse__event_enrollment__field_event
           group_type: group
           admin_label: ''
+          plugin_id: numeric
           default_action: default
           exception:
             value: all
@@ -371,8 +362,8 @@ display:
           summary_options:
             base_path: ''
             count: true
-            items_per_page: 25
             override: false
+            items_per_page: 25
           summary:
             sort_order: asc
             number_of_records: 0
@@ -384,30 +375,29 @@ display:
           validate_options: {  }
           break_phrase: false
           not: false
-          plugin_id: numeric
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            event: event
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            event: event
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -418,6 +408,7 @@ display:
           relationship: reverse__event_enrollment__field_event
           group_type: group
           admin_label: ''
+          plugin_id: list_field
           operator: or
           value:
             1: '1'
@@ -429,6 +420,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -436,8 +429,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -451,7 +442,6 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          plugin_id: list_field
         field_event_date_value:
           id: field_event_date_value
           table: node__field_event_date
@@ -459,6 +449,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: datetime
           operator: '>='
           value:
             min: ''
@@ -473,14 +464,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -493,7 +484,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: datetime
         nid:
           id: nid
           table: node_access
@@ -501,6 +491,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: node_access
           operator: '='
           value: ''
           group: 1
@@ -511,14 +502,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -531,15 +522,10 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: node_access
       filter_groups:
         operator: AND
         groups:
           1: AND
-      access:
-        type: perm
-        options:
-          perm: 'create event content'
       style:
         type: default
         options: {  }
@@ -548,23 +534,37 @@ display:
         options:
           relationship: none
           view_mode: small_teaser
-      empty:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
+      defaults:
+        empty: false
+        title: false
+        pager: false
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        style: false
+        row: false
+        relationships: false
+        arguments: false
+        filters: false
+        filter_groups: false
+      relationships:
+        reverse__event_enrollment__field_event:
+          id: reverse__event_enrollment__field_event
+          table: node_field_data
+          field: reverse__event_enrollment__field_event
           relationship: none
           group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content: 'No upcoming events you have enrolled for'
-          plugin_id: text_custom
-      title: 'My upcoming events'
+          admin_label: field_event
+          entity_type: node
+          plugin_id: entity_reverse
+          required: true
+      display_description: ''
       use_more: false
       use_more_always: true
       use_more_text: 'All my upcoming events'
       rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders: {  }
+      block_description: 'My upcoming events block'
     cache_metadata:
       max-age: -1
       contexts:
@@ -576,45 +576,65 @@ display:
         - user.permissions
       tags: {  }
   page_community_events:
-    display_plugin: page
     id: page_community_events
     display_title: 'Community events page'
+    display_plugin: page
     position: 2
     display_options:
-      display_extenders: {  }
-      display_description: ''
-      path: community-events
+      title: 'All events'
+      sorts:
+        event_date:
+          id: event_date
+          table: node__field_event_date
+          field: event_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: social_event_date_sort
+          order: ASC
+          expose:
+            label: ''
+          exposed: false
+          granularity: minute
       filters:
         event_date:
+          id: event_date
+          table: node__field_event_date
+          field: event_date
+          relationship: none
+          group_type: group
           admin_label: ''
+          plugin_id: social_event_date_filter
+          operator: in
+          value: null
+          group: 1
+          exposed: true
           expose:
-            description: null
-            identifier: field_event_date_value
-            label: 'Event date'
-            multiple: false
-            operator: event_date_op
             operator_id: event_date_op
+            label: 'Event date'
+            description: null
+            use_operator: false
+            operator: event_date_op
             operator_limit_selection: false
             operator_list: {  }
-            reduce: false
+            identifier: field_event_date_value
+            required: false
             remember: false
+            multiple: false
             remember_roles:
               authenticated: authenticated
-            required: false
-            use_operator: false
-          exposed: true
-          field: event_date
-          group: 1
+            reduce: false
+          is_grouped: true
           group_info:
-            default_group: '1'
-            default_group_multiple: {  }
+            label: ''
             description: ''
             identifier: field_event_date_value
-            label: ''
-            multiple: false
             optional: false
-            remember: false
             widget: radios
+            multiple: false
+            remember: false
+            default_group: '1'
+            default_group_multiple: {  }
             group_items:
               1:
                 title: 'Ongoing and upcoming events'
@@ -628,23 +648,15 @@ display:
                 title: ''
                 operator: in
                 value: null
-          group_type: group
-          id: event_date
-          is_grouped: true
-          operator: in
-          plugin_id: social_event_date_filter
-          relationship: none
-          table: node__field_event_date
-          value: null
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            event: event
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            event: event
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -655,6 +667,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: node_access
           operator: '='
           value: ''
           group: 1
@@ -665,14 +678,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -685,77 +698,64 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: node_access
         field_enroll_method_value:
+          id: field_enroll_method_value
+          table: node__field_enroll_method
+          field: field_enroll_method_value
+          relationship: none
+          group_type: group
           admin_label: ''
+          plugin_id: list_field
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
           expose:
-            description: ''
-            identifier: field_enroll_method_value
-            label: 'Enroll Method'
-            multiple: false
-            operator: field_enroll_method_value_op
             operator_id: field_enroll_method_value_op
+            label: 'Enroll Method'
+            description: ''
+            use_operator: false
+            operator: field_enroll_method_value_op
             operator_limit_selection: false
             operator_list: {  }
-            reduce: false
+            identifier: field_enroll_method_value
+            required: false
             remember: false
+            multiple: false
             remember_roles:
               administrator: '0'
               anonymous: '0'
               authenticated: authenticated
               contentmanager: '0'
               sitemanager: '0'
-            required: false
-            use_operator: false
-          exposed: true
-          field: field_enroll_method_value
-          group: 1
+            reduce: false
+          is_grouped: false
           group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
             default_group: All
             default_group_multiple: {  }
-            description: ''
             group_items: {  }
-            identifier: ''
-            label: ''
-            multiple: false
-            optional: true
-            remember: false
-            widget: select
-          group_type: group
-          id: field_enroll_method_value
-          is_grouped: false
-          operator: or
-          plugin_id: list_field
           reduce_duplicates: false
-          relationship: none
-          table: node__field_enroll_method
-          value: {  }
-      defaults:
-        filters: false
-        filter_groups: false
-        title: false
-        sorts: false
       filter_groups:
         operator: AND
         groups:
           1: AND
-      exposed_block: true
-      title: 'All events'
-      sorts:
-        event_date:
-          admin_label: ''
-          expose:
-            label: ''
-          exposed: false
-          field: event_date
-          granularity: minute
-          group_type: group
-          id: event_date
-          order: ASC
-          plugin_id: social_event_date_sort
-          relationship: none
-          table: node__field_event_date
+      defaults:
+        title: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
+      exposed_block: true
+      display_extenders: {  }
+      path: community-events
     cache_metadata:
       max-age: -1
       contexts:
@@ -767,43 +767,33 @@ display:
         - user.permissions
       tags: {  }
   upcoming_events_group:
-    display_plugin: block
     id: upcoming_events_group
     display_title: 'Upcoming events group block'
+    display_plugin: block
     position: 3
     display_options:
-      display_extenders: {  }
-      display_description: ''
-      block_description: 'Upcoming events group block'
+      title: 'Upcoming events'
       pager:
         type: some
         options:
-          items_per_page: 2
           offset: 0
-      defaults:
-        pager: false
-        relationships: false
-        arguments: false
-        filters: false
-        filter_groups: false
-        style: false
-        row: false
-        empty: false
-        title: false
-      relationships:
-        group_content:
-          id: group_content
-          table: node_field_data
-          field: group_content
+          items_per_page: 2
+      access:
+        type: perm
+        options:
+          perm: 'create event content'
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
           relationship: none
           group_type: group
-          admin_label: group_events
-          required: true
-          group_content_plugins:
-            'group_node:event': 'group_node:event'
-            'group_node:topic': '0'
-          entity_type: node
-          plugin_id: group_content_to_entity_reverse
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: 'No upcoming events in this group'
+          tokenize: false
       arguments:
         gid:
           id: gid
@@ -812,6 +802,9 @@ display:
           relationship: group_content
           group_type: group
           admin_label: group_contextual
+          entity_type: group_content
+          entity_field: gid
+          plugin_id: numeric
           default_action: default
           exception:
             value: all
@@ -825,8 +818,8 @@ display:
           summary_options:
             base_path: ''
             count: true
-            items_per_page: 25
             override: false
+            items_per_page: 25
           summary:
             sort_order: asc
             number_of_records: 0
@@ -838,32 +831,29 @@ display:
           validate_options: {  }
           break_phrase: false
           not: false
-          entity_type: group_content
-          entity_field: gid
-          plugin_id: numeric
       filters:
         status:
-          value: '1'
+          id: status
           table: node_field_data
           field: status
-          plugin_id: boolean
           entity_type: node
           entity_field: status
-          id: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
-          value:
-            event: event
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          value:
+            event: event
           expose:
             operator_limit_selection: false
             operator_list: {  }
@@ -874,6 +864,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: datetime
           operator: '>='
           value:
             min: ''
@@ -888,14 +879,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -908,7 +899,6 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: datetime
         nid:
           id: nid
           table: node_access
@@ -916,6 +906,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: node_access
           operator: '='
           value: ''
           group: 1
@@ -926,14 +917,14 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -946,15 +937,10 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: node_access
       filter_groups:
         operator: AND
         groups:
           1: AND
-      access:
-        type: perm
-        options:
-          perm: 'create event content'
       style:
         type: default
         options: {  }
@@ -963,20 +949,34 @@ display:
         options:
           relationship: none
           view_mode: small_teaser
-      empty:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
+      defaults:
+        empty: false
+        title: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        arguments: false
+        filters: false
+        filter_groups: false
+      relationships:
+        group_content:
+          id: group_content
+          table: node_field_data
+          field: group_content
           relationship: none
           group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content: 'No upcoming events in this group'
-          plugin_id: text_custom
-      title: 'Upcoming events'
+          admin_label: group_events
+          entity_type: node
+          plugin_id: group_content_to_entity_reverse
+          required: true
+          group_content_plugins:
+            'group_node:event': 'group_node:event'
+            'group_node:topic': '0'
+      display_description: ''
       rendering_language: '***LANGUAGE_language_interface***'
+      display_extenders: {  }
+      block_description: 'Upcoming events group block'
     cache_metadata:
       max-age: -1
       contexts:

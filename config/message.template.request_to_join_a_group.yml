@@ -1,11 +1,11 @@
-langcode: en
+langcode: nb
 status: true
 dependencies:
+  module:
+    - activity_logger
   enforced:
     module:
       - social_group_request
-  module:
-    - activity_logger
 third_party_settings:
   activity_logger:
     activity_bundle_entities:

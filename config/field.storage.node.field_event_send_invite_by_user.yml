@@ -1,0 +1,21 @@
+uuid: 97cc4278-b28d-416f-ac1a-7b60eeb8a65f
+langcode: nb
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - social_event_invite
+id: node.field_event_send_invite_by_user
+field_name: field_event_send_invite_by_user
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

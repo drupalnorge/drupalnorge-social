@@ -2,12 +2,6 @@ uuid: 67f604f7-783b-4f00-81b8-c51a840fa027
 langcode: nb
 status: true
 dependencies:
-  module:
-    - profile
-    - user
-    - taxonomy
-    - search_api
-    - social_search
   config:
     - field.storage.profile.field_profile_expertise
     - field.storage.profile.field_profile_first_name
@@ -16,6 +10,12 @@ dependencies:
     - field.storage.profile.field_profile_profile_tag
     - search_api.server.social_database
     - core.entity_view_mode.profile.search_index
+  module:
+    - profile
+    - user
+    - taxonomy
+    - search_api
+    - social_search
 _core:
   default_config_hash: pl4l7Ocfgj8DA_fBIuyWrVYPJI-k0JeRNZ6iSwtvgTU
 id: social_users
@@ -110,7 +110,7 @@ field_settings:
     type: text
     configuration:
       roles:
-        authenticated: authenticated
+        - authenticated
       view_mode:
         'entity:profile':
           main: ''
@@ -134,24 +134,27 @@ field_settings:
         - user
 datasource_settings:
   'entity:profile':
-    plugin_id: 'entity:profile'
     bundles:
       default: true
       selected: {  }
+    plugin_id: 'entity:profile'
 processor_settings:
   add_url:
-    plugin_id: add_url
     weights:
       preprocess_index: -30
+    plugin_id: add_url
   aggregated_field:
-    plugin_id: aggregated_field
     weights:
       add_properties: 20
+    plugin_id: aggregated_field
   blocked_users:
     weights:
       preprocess_query: -30
+  entity_type: {  }
   html_filter:
-    plugin_id: html_filter
+    weights:
+      preprocess_index: -15
+      preprocess_query: -10
     all_fields: false
     fields:
       - name
@@ -166,11 +169,11 @@ processor_settings:
       h3: 2
       strong: 2
       u: 1
-    weights:
-      preprocess_index: -15
-      preprocess_query: -10
+    plugin_id: html_filter
   ignorecase:
-    plugin_id: ignorecase
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
     all_fields: true
     fields:
       - field_profile_expertise_name
@@ -179,17 +182,17 @@ processor_settings:
       - field_profile_last_name
       - name
       - rendered_item
-    weights:
-      preprocess_index: -10
-      preprocess_query: -10
+    plugin_id: ignorecase
   language_with_fallback: {  }
   rendered_item:
-    plugin_id: rendered_item
     weights:
       add_properties: 0
       pre_index_save: -10
+    plugin_id: rendered_item
   stopwords:
-    plugin_id: stopwords
+    weights:
+      preprocess_index: -5
+      preprocess_query: -2
     all_fields: false
     fields:
       - name
@@ -230,14 +233,14 @@ processor_settings:
       - was
       - will
       - with
-    weights:
-      preprocess_index: -5
-      preprocess_query: -2
+    plugin_id: stopwords
   super_user:
     weights:
       preprocess_query: 30
   tokenizer:
-    plugin_id: tokenizer
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
     all_fields: true
     fields:
       - field_profile_expertise_name
@@ -247,14 +250,14 @@ processor_settings:
       - name
       - rendered_item
     spaces: ''
+    ignored: ._-
     overlap_cjk: 1
     minimum_word_size: '3'
-    weights:
-      preprocess_index: -6
-      preprocess_query: -6
-    ignored: ._-
+    plugin_id: tokenizer
   transliteration:
-    plugin_id: transliteration
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
     all_fields: true
     fields:
       - field_profile_expertise_name
@@ -263,13 +266,15 @@ processor_settings:
       - field_profile_last_name
       - name
       - rendered_item
+    plugin_id: transliteration
+  verified_users:
     weights:
-      preprocess_index: -10
-      preprocess_query: -10
+      preprocess_query: 30
 tracker_settings:
   default:
     indexing_order: fifo
 options:
-  index_directly: false
   cron_limit: 50
+  index_directly: false
+  track_changes_in_references: true
 server: social_database

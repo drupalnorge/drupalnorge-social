@@ -1,7 +1,52 @@
 uuid: dc451326-6f51-4efb-b430-fa4b401fdbc1
 langcode: nb
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.mail_html
+    - filter.format.simple_text
+    - node.type.event
+    - node.type.page
+    - node.type.topic
+    - taxonomy.vocabulary.expertise
+    - taxonomy.vocabulary.interests
+    - taxonomy.vocabulary.profile_tag
+    - taxonomy.vocabulary.topic_types
+  module:
+    - block
+    - comment
+    - entity_access_by_field
+    - filter
+    - flag
+    - group
+    - group_core_comments
+    - like_and_dislike
+    - mentions
+    - node
+    - path
+    - profile
+    - role_delegation
+    - social_comment
+    - social_comment_upload
+    - social_core
+    - social_event
+    - social_event_managers
+    - social_font
+    - social_group
+    - social_like
+    - social_post
+    - social_profile
+    - social_search
+    - social_swiftmail
+    - social_topic
+    - social_tour
+    - social_user
+    - system
+    - taxonomy
+    - toolbar
+    - tour
 id: sitemanager
 label: 'Site manager'
 weight: 4
@@ -19,6 +64,7 @@ permissions:
   - 'access group search'
   - 'access mentions'
   - 'access site reports'
+  - 'access social_core dashboard'
   - 'access toolbar'
   - 'access tour'
   - 'access user profiles'
@@ -55,6 +101,7 @@ permissions:
   - 'administer visibility settings'
   - 'assign contentmanager role'
   - 'assign sitemanager role'
+  - 'assign verified role'
   - 'block users'
   - 'bypass create group access'
   - 'cancel account'

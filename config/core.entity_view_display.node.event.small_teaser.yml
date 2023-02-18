@@ -17,7 +17,10 @@ dependencies:
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_managers
+    - field.field.node.event.field_event_send_confirmation
+    - field.field.node.event.field_event_send_invite_by_user
     - field.field.node.event.field_files
+    - field.field.node.event.field_hide_enrollments
     - image.style.social_medium
     - node.type.event
   module:
@@ -33,22 +36,24 @@ mode: small_teaser
 content:
   field_event_date:
     type: datetime_default
-    weight: 1
     label: hidden
     settings:
       timezone_override: ''
       format_type: day_month_time
     third_party_settings: {  }
+    weight: 1
     region: content
   field_event_image:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: social_medium
       image_link: content
+      image_style: social_medium
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 0
+    region: content
   flag_follow_content:
     weight: 10
     region: content
@@ -65,7 +70,10 @@ hidden:
   field_event_enroll_outside_group: true
   field_event_location: true
   field_event_managers: true
+  field_event_send_confirmation: true
+  field_event_send_invite_by_user: true
   field_files: true
+  field_hide_enrollments: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true

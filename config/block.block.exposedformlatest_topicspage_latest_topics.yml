@@ -20,12 +20,12 @@ plugin: 'views_exposed_filter_block:latest_topics-page_latest_topics'
 settings:
   id: 'views_exposed_filter_block:latest_topics-page_latest_topics'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: Filter
 visibility:
   request_path:
     id: request_path
-    pages: /all-topics
     negate: false
     context_mapping: {  }
+    pages: /all-topics

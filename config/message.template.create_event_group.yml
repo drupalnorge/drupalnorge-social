@@ -2,10 +2,15 @@ uuid: a448c8de-4fdb-4c47-92d1-2f812232d687
 langcode: nb
 status: true
 dependencies:
+  config:
+    - filter.format.full_html
   module:
     - activity_logger
 third_party_settings:
   activity_logger:
+    activity_bundle_entities:
+      node-event: node-event
+    activity_action: create_entitiy_action
     activity_context: group_activity_context
     activity_destinations:
       notifications: notifications
@@ -13,15 +18,16 @@ third_party_settings:
       stream_home: stream_home
       stream_profile: stream_profile
     activity_create_direct: false
-    activity_action: create_entitiy_action
-    activity_bundle_entities:
-      node-event: node-event
     email_subject: ''
 _core:
   default_config_hash: X4VHlsdq3ub9gMMjzhHmtc9AHZvPc9C54coZEJcuYuc
 template: create_event_group
 label: 'Create event in group'
 description: 'A user created an event in a group'
+text:
+  -
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created an event in <a href="[message:gurl]">[message:gtitle]</a> [message:count_groups_per_node]</p>'
+    format: full_html
 settings:
   'token options':
     clear: false
@@ -31,7 +37,3 @@ settings:
     enabled: false
     quota: null
     days: null
-text:
-  -
-    format: full_html
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created an event in <a href="[message:gurl]">[message:gtitle]</a> [message:count_groups_per_node]</p>'

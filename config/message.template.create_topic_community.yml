@@ -6,6 +6,9 @@ dependencies:
     - activity_logger
 third_party_settings:
   activity_logger:
+    activity_bundle_entities:
+      node-topic: node-topic
+    activity_action: create_entitiy_action
     activity_context: community_activity_context
     activity_destinations:
       notifications: notifications
@@ -14,9 +17,6 @@ third_party_settings:
       stream_home: stream_home
       stream_profile: stream_profile
     activity_create_direct: false
-    activity_action: create_entitiy_action
-    activity_bundle_entities:
-      node-topic: node-topic
     email_subject: ''
 _core:
   default_config_hash: Bw5yVJRJ-EanAEt1N7mO67u9Nn3keT9dkMLSgBeAOJ8
@@ -25,8 +25,8 @@ label: 'Create topic'
 description: 'A user created a topic in the community'
 text:
   -
-    format: full_html
     value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> created a topic</p>'
+    format: full_html
 settings:
   'token options':
     clear: false

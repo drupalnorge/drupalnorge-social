@@ -1,3 +1,6 @@
+third_party_settings:
+  activity_logger:
+    email_subject: 'You have been invited to join a group'
 label: 'Invited to join a group'
 description: 'You have been invited to join a group'
 text:

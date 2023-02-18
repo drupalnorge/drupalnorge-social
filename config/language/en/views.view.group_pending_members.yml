@@ -5,7 +5,7 @@ display:
     display_options:
       exposed_form:
         options:
-          submit_button: Apply
+          submit_button: Filter
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           sort_asc_label: Asc
@@ -36,11 +36,13 @@ display:
           label: 'Reject Membership'
           alter:
             text: '<a href="/group/{{ gid }}/content/{{ id }}/reject-membership?destination=/group/{{ gid }}/members-pending">Reject Membership</a>'
+            path: '/group/{{ gid }}/content/{{ id }}/reject-membership'
             alt: 'Reject Membership'
         nothing:
           label: 'Approve membership'
           alter:
             text: '<a href="/group/{{ gid }}/content/{{ id }}/approve-membership?destination=/group/{{ gid }}/members-pending">Approve membership</a>'
+            path: '/group/{{ gid }}/content/{{ id }}/approve-membership'
             alt: 'Approve membership'
         dropbutton:
           label: Operations

@@ -7,6 +7,12 @@ dependencies:
     - node.type.topic
   module:
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      file: '0'
+      title: title
 _core:
   default_config_hash: sF0ZBTyy2Xff0eA_neMRpnXL7ChJHG7VDT05BKElU5c
 id: node.topic.field_topic_image
@@ -20,6 +26,8 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:file'
+  handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
@@ -35,12 +43,4 @@ settings:
     title: ''
     width: null
     height: null
-  handler: 'default:file'
-  handler_settings: {  }
 field_type: image
-third_party_settings:
-  content_translation:
-    translation_sync:
-      alt: alt
-      file: '0'
-      title: title

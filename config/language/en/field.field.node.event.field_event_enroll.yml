@@ -1,4 +1,4 @@
-label: 'Allow users to enroll in event'
+label: 'Enable event enrollment'
 settings:
   on_label: 'On'
   off_label: 'Off'

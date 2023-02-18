@@ -23,3 +23,9 @@ effects:
     weight: 2
     data:
       scan_exif: true
+  24585c4b-1237-4873-8fe3-5cf2e727498c:
+    uuid: 24585c4b-1237-4873-8fe3-5cf2e727498c
+    id: image_convert
+    weight: 3
+    data:
+      extension: webp

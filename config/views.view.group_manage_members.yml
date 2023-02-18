@@ -1,3 +1,4 @@
+uuid: null
 langcode: nb
 status: true
 dependencies:
@@ -23,115 +24,12 @@ base_table: group_content_field_data
 base_field: id
 display:
   default:
-    display_plugin: default
     id: default
     display_title: Master
+    display_plugin: default
     position: 0
     display_options:
-      access:
-        type: group_managers_only
-        options: {  }
-      cache:
-        type: tag
-        options: {  }
-      query:
-        type: views_query
-        options:
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_comment: ''
-          query_tags: {  }
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Apply
-          reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      pager:
-        type: full
-        options:
-          items_per_page: 10
-          offset: 0
-          id: 0
-          total_pages: null
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          quantity: 9
-      style:
-        type: table
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          override: true
-          sticky: false
-          caption: ''
-          summary: ''
-          description: ''
-          columns:
-            social_views_bulk_operations_bulk_form_group: social_views_bulk_operations_bulk_form_group
-            profile_entity_sortable: profile_entity_sortable
-            field_profile_organization: field_profile_organization
-            group_roles: group_roles
-            created: created
-            operations: operations
-          info:
-            social_views_bulk_operations_bulk_form_group:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            profile_entity_sortable:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_profile_organization:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            group_roles:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            created:
-              sortable: true
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            operations:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          default: '-1'
-          empty_table: false
-      row:
-        type: fields
+      title: 'Group Manage Members'
       fields:
         social_views_bulk_operations_bulk_form_group:
           id: social_views_bulk_operations_bulk_form_group
@@ -140,6 +38,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: social_views_bulk_operations_bulk_form_group
           label: ''
           exclude: false
           alter:
@@ -185,21 +84,19 @@ display:
           batch_size: 10
           form_step: true
           buttons: false
-          clear_on_exposed: false
           action_title: Action
           selected_actions:
-            comment_delete_action: 0
-            views_bulk_operations_delete_entity: 0
-            social_group_change_member_role_action: social_group_change_member_role_action
-            social_group_delete_group_content_action: social_group_delete_group_content_action
-            social_group_send_email_action: social_group_send_email_action
-            'entity:save_action:group_content': 0
-          preconfiguration:
-            social_group_change_member_role_action:
-              label_override: 'Change the role'
-            social_group_delete_group_content_action:
-              label_override: Remove
-          plugin_id: social_views_bulk_operations_bulk_form_group
+            -
+              action_id: social_group_change_member_role_action
+              preconfiguration:
+                label_override: 'Change the role'
+            -
+              action_id: social_group_delete_group_content_action
+              preconfiguration:
+                label_override: Remove
+            -
+              action_id: social_group_send_email_action
+          clear_on_exposed: false
         profile_entity_sortable:
           id: profile_entity_sortable
           table: profile
@@ -207,6 +104,8 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
+          entity_type: profile
+          plugin_id: profile_entity_sortable
           label: Member
           exclude: false
           alter:
@@ -249,8 +148,6 @@ display:
           empty_zero: false
           hide_alter_empty: true
           view_mode: table
-          entity_type: profile
-          plugin_id: profile_entity_sortable
         field_profile_organization:
           id: field_profile_organization
           table: profile__field_profile_organization
@@ -258,6 +155,7 @@ display:
           relationship: profile
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: Organization
           exclude: false
           alter:
@@ -313,7 +211,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         group_roles:
           id: group_roles
           table: group_content__group_roles
@@ -321,6 +218,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: field
           label: Role
           exclude: false
           alter:
@@ -376,7 +274,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          plugin_id: field
         created:
           id: created
           table: group_content_field_data
@@ -384,6 +281,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: group_content
+          entity_field: created
+          plugin_id: field
           label: 'Joined date'
           exclude: false
           alter:
@@ -441,9 +341,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: group_content
-          entity_field: created
-          plugin_id: field
         operations:
           id: operations
           table: group_content
@@ -451,6 +348,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: group_content
+          plugin_id: entity_operations
           label: Operation
           exclude: false
           alter:
@@ -493,82 +392,43 @@ display:
           empty_zero: false
           hide_alter_empty: true
           destination: true
-          entity_type: group_content
-          plugin_id: entity_operations
-      filters:
-        type:
-          id: type
-          table: group_content_field_data
-          field: type
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: in
-          value:
-            closed_group-group_membership: closed_group-group_membership
-            open_group-group_membership: open_group-group_membership
-            public_group-group_membership: public_group-group_membership
-          group: 1
-          exposed: false
+      pager:
+        type: full
+        options:
+          offset: 0
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: 'Next ›'
+            previous: '‹ Previous'
+            first: '« First'
+            last: 'Last »'
           expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          entity_type: group_content
-          entity_field: type
-          plugin_id: bundle
-      sorts:
-        created:
-          id: created
-          table: group_content_field_data
-          field: created
-          relationship: none
-          group_type: group
-          admin_label: ''
-          order: ASC
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
-          entity_type: group_content
-          entity_field: created
-          plugin_id: date
-      title: 'Group Manage Members'
-      header:
-        result:
-          id: result
-          table: views
-          field: result
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          content: '@total members'
-          plugin_id: result
-      footer: {  }
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Filter
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: group_managers_only
+        options: {  }
+      cache:
+        type: tag
+        options: {  }
       empty:
         area:
           id: area
@@ -577,35 +437,29 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          plugin_id: text
           empty: true
-          tokenize: false
           content:
             value: 'There are no members yet.'
             format: basic_html
-          plugin_id: text
-      relationships:
-        gc__user:
-          id: gc__user
+          tokenize: false
+      sorts:
+        created:
+          id: created
           table: group_content_field_data
-          field: gc__user
+          field: created
           relationship: none
           group_type: group
-          admin_label: 'Group content User'
-          required: true
-          group_content_plugins:
-            group_membership: group_membership
+          admin_label: ''
           entity_type: group_content
-          plugin_id: group_content_to_entity
-        profile:
-          id: profile
-          table: users_field_data
-          field: profile
-          relationship: gc__user
-          group_type: group
-          admin_label: Profile
-          required: true
-          entity_type: user
-          plugin_id: standard
+          entity_field: created
+          plugin_id: date
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: created
+          exposed: false
+          granularity: second
       arguments:
         gid:
           id: gid
@@ -614,6 +468,9 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: group_content
+          entity_field: gid
+          plugin_id: group_id
           default_action: default
           exception:
             value: all
@@ -627,8 +484,8 @@ display:
           summary_options:
             base_path: ''
             count: true
-            items_per_page: 25
             override: false
+            items_per_page: 25
           summary:
             sort_order: asc
             number_of_records: 0
@@ -640,9 +497,153 @@ display:
           validate_options: {  }
           break_phrase: false
           not: false
+      filters:
+        type:
+          id: type
+          table: group_content_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
           entity_type: group_content
-          entity_field: gid
-          plugin_id: group_id
+          entity_field: type
+          plugin_id: bundle
+          operator: in
+          value:
+            closed_group-group_membership: closed_group-group_membership
+            open_group-group_membership: open_group-group_membership
+            public_group-group_membership: public_group-group_membership
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      style:
+        type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          columns:
+            social_views_bulk_operations_bulk_form_group: social_views_bulk_operations_bulk_form_group
+            profile_entity_sortable: profile_entity_sortable
+            field_profile_organization: field_profile_organization
+            group_roles: group_roles
+            created: created
+            operations: operations
+          default: '-1'
+          info:
+            social_views_bulk_operations_bulk_form_group:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            profile_entity_sortable:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_profile_organization:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            group_roles:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            created:
+              sortable: true
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            operations:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          override: true
+          sticky: false
+          summary: ''
+          empty_table: false
+          caption: ''
+          description: ''
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships:
+        gc__user:
+          id: gc__user
+          table: group_content_field_data
+          field: gc__user
+          relationship: none
+          group_type: group
+          admin_label: 'Group content User'
+          entity_type: group_content
+          plugin_id: group_content_to_entity
+          required: true
+          group_content_plugins:
+            group_membership: group_membership
+        profile:
+          id: profile
+          table: users_field_data
+          field: profile
+          relationship: gc__user
+          group_type: group
+          admin_label: Profile
+          entity_type: user
+          plugin_id: standard
+          required: true
+      header:
+        result:
+          id: result
+          table: views
+          field: result
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: result
+          empty: false
+          content: '@total members'
+      footer: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: 0
@@ -660,6 +661,7 @@ display:
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
         - 'config:core.entity_view_display.profile.profile.medium_teaser'
+        - 'config:core.entity_view_display.profile.profile.name'
         - 'config:core.entity_view_display.profile.profile.search_index'
         - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'
@@ -669,9 +671,9 @@ display:
         - 'config:field.storage.group_content.group_roles'
         - 'config:field.storage.profile.field_profile_organization'
   page_group_manage_members:
-    display_plugin: page
     id: page_group_manage_members
     display_title: Page
+    display_plugin: page
     position: 1
     display_options:
       display_extenders: {  }
@@ -692,6 +694,7 @@ display:
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
         - 'config:core.entity_view_display.profile.profile.medium_teaser'
+        - 'config:core.entity_view_display.profile.profile.name'
         - 'config:core.entity_view_display.profile.profile.search_index'
         - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'

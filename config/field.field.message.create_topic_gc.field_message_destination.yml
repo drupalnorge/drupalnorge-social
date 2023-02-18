@@ -1,0 +1,21 @@
+uuid: ff993d0d-a30e-42b0-acbc-baf9091f5778
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_destination
+    - message.template.create_topic_gc
+  module:
+    - options
+id: message.create_topic_gc.field_message_destination
+field_name: field_message_destination
+entity_type: message
+bundle: create_topic_gc
+label: field_message_destination
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
