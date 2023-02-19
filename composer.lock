@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2568d958c3cb6574f412474da08a2fd0",
+    "content-hash": "c41ae0df1fb05e3c693bd825c36e14eb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7326,6 +7326,38 @@
                 }
             ],
             "time": "2023-01-02T17:26:14+00:00"
+        },
+        {
+            "name": "eiriksm/site-schema",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eiriksm/drush-site-schema.git",
+                "reference": "65eacad506a120bf913027a789f61ec07af0e9e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eiriksm/drush-site-schema/zipball/65eacad506a120bf913027a789f61ec07af0e9e3",
+                "reference": "65eacad506a120bf913027a789f61ec07af0e9e3",
+                "shasum": ""
+            },
+            "require": {
+                "drush/drush": "~9||~10||~11"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5||^7||^8||^9"
+            },
+            "type": "drupal-drush",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Allows you to get the complete picture of a site schema, to use for CI for example",
+            "support": {
+                "issues": "https://github.com/eiriksm/drush-site-schema/issues",
+                "source": "https://github.com/eiriksm/drush-site-schema/tree/1.1.1"
+            },
+            "time": "2022-07-15T09:08:17+00:00"
         },
         {
             "name": "eluceo/ical",
