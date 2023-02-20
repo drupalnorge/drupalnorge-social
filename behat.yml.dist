@@ -1,7 +1,7 @@
 default:
   autoload:
-    - '%paths.base%/html/profiles/contrib/social/tests/behat/features/bootstrap'
-    - '%paths.base%/tests/src/Context'
+    - './html/profiles/contrib/social/tests/behat/features/bootstrap'
+    - './tests/src/Context'
   suites:
     default:
       paths:
@@ -10,33 +10,42 @@ default:
       filters:
         tags: "~@todo"
       contexts:
+        - Drupal\social\Behat\EmailContext
         - Drupal\social\Behat\FeatureContext
+        - Drupal\social\Behat\PostContext
         - Drupal\social\Behat\SocialMinkContext
         - Drupal\DrupalExtension\Context\BatchContext
         - Drupal\DrupalExtension\Context\ConfigContext
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\MarkupContext
         - Drupal\DrupalExtension\Context\DrushContext
-        - Drupal\social\Behat\PostContext
-        - Drupal\social\Behat\EmailContext
+        - Behatch\Context\BrowserContext
         - DrupalNorge\DrupalNorgeSocial\Tests\Context\DrupalNorgeContext
   extensions:
+    Bex\Behat\ScreenshotExtension:
+      image_drivers:
+        local:
+          screenshot_directory: "%paths.base%/screenshots"
     Behat\MinkExtension:
-      files_path: %paths.base%/tests/files
-      base_url: http://127.0.0.1:8888
+      base_url: http://web
+      files_path: '%paths.base%/tests/files'
+      goutte: ~
       selenium2:
-        # This will probably be the same always, if you follow the guide for browsers below.
-        wd_host: http://localhost:8643/wd/hub
+        wd_host: http://chromedriver:8643/wd/hub
         capabilities:
+          extra_capabilities:
+            goog:chromeOptions:
+              w3c: false
+          marionette: null
           chrome:
             switches:
               - "--headless"
               - "--disable-gpu"
               - "--no-sandbox"
-      javascript_session: selenium2
-      browser_name: chrome
-      goutte: ~
+              - "--disable-dev-shm-usage"
     Drupal\DrupalExtension:
+      drush:
+        root: ./html
       blackbox: ~
       drupal:
         drupal_root: %paths.base%/html

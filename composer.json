@@ -14,23 +14,29 @@
         }
     ],
     "require": {
-        "php": ">=7.2",
+        "php": ">=7.4",
         "drupal/coffee": "^1.0",
         "drupal/config_ignore": "^2.1",
-        "drupal/core-recommended": "~8.8.8",
-        "drupal/google_analytics": "^3.1",
+        "drupal/core-composer-scaffold": "~8.9.20",
+        "drupal/core-recommended": "~8.9.20",
+        "drupal/google_analytics": "^3.0",
         "drupal/honeypot": "^2.0",
+        "drupal/message_notify": "^1.2",
         "drupal/recaptcha": "^3.0",
         "drupal/reroute_email": "^2.0",
         "drupal/slack": "^1.2",
         "drupal/slack_invite": "^2.0",
+        "drupal/social_search_autocomplete": "^1.2",
         "drupal/sparkpost": "^2.0",
-        "drush/drush": "^9.7.1",
-        "goalgorilla/open_social": "9.4.0",
-        "hirak/prestissimo": "^0.3.10"
+        "drush/drush": "^10.0",
+        "eiriksm/site-schema": "^1.1",
+        "goalgorilla/open_social": "~10.3.9",
+        "monolog/monolog": "^1.17"
     },
     "require-dev": {
-        "drupal/core-dev": "~8.8.8",
+        "behatch/contexts": "^3.3",
+        "bex/behat-screenshot": "^2.1",
+        "drupal/core-dev": "~8.9.20",
         "drupal/drupal-extension": "~3.0",
         "drupal/stage_file_proxy": "^1.0",
         "eiriksm/wait-for-listen": "^1.0"
@@ -39,66 +45,79 @@
     "prefer-stable": true,
     "config": {
         "discard-changes": true,
-        "sort-packages": true
+        "sort-packages": true,
+        "bin-dir": "bin/",
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "zaporylie/composer-drupal-optimizations": true,
+            "php-http/discovery": true,
+            "drupal/core-composer-scaffold": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "oomphinc/composer-installers-extender": true
+        }
     },
     "autoload": {
         "psr-4": { "DrupalNorge\\DrupalNorgeSocial\\Tests\\": "tests/src" }
     },
     "scripts": {
-        "post-install-cmd": [
-            "@composer drupal-scaffold"
-        ],
-        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "test": [
-            "./vendor/bin/phpcs -p",
-            "./vendor/bin/behat --colors"
+            "./bin/phpcs -p -n",
+            "./bin/behat --colors --strict"
         ],
         "import": [
-            "./vendor/bin/drush --root=$(pwd)/html cc drush",
-            "./vendor/bin/drush --root=$(pwd)/html cim -y"
+            "./bin/drush cache:clear drush",
+            "./bin/drush config:import --yes",
+            "./bin/drush cache:rebuild"
         ],
         "export": [
-            "./vendor/bin/drush --root=$(pwd)/html cex -y"
+            "./bin/drush cache:clear drush",
+            "./bin/drush config:export --yes"
+        ],
+        "update-site": [
+            "./bin/drush state:set system.maintenance_mode 1 --yes",
+            "./bin/drush updatedb --yes",
+            "./bin/drush cache:rebuild",
+            "@composer import",
+            "./bin/drush deploy:hook --yes",
+            "./bin/drush state:set system.maintenance_mode 0 --yes",
+            "./bin/drush cache:rebuild"
         ],
         "build": [
             "git pull",
             "@composer install --no-dev",
-            "./vendor/bin/drush --root=$(pwd)/html updb -y",
-            "@composer import",
-            "./vendor/bin/drush --root=$(pwd)/html cr"
+            "@composer update-site"
         ],
-        "up-site": [
-            "@composer update goalgorilla/open_social --with-all-dependencies",
-            "./vendor/bin/drush cr"
-        ],
-        "up-db": [
-            "./vendor/bin/drush sql-drop --yes",
+        "import-sanitized": [
+            "./bin/drush sql:drop --yes",
             "wget --no-check-certificate https://drupalnorge.no/sanitized.db",
-            "./vendor/bin/drush sql-cli < ./sanitized.db",
-            "rm ./sanitized.db",
-            "./vendor/bin/drush cr"
-        ],
-        "install-site": [
-            "@composer install",
-            "@composer up-db"
-        ],
-        "resetadmin": [
-            "./vendor/bin/drush uli"
+            "./bin/drush sql:cli < ./sanitized.db",
+            "rm -f ./sanitized.db",
+            "./bin/drush cache:rebuild",
+            "./bin/drush user:login"
         ]
     },
     "extra": {
-        "composer-exit-on-patch-failure": true,
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "html/"
+            }
+        },
         "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
             "html/core": ["drupal/core"],
+            "html/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"],
             "html/modules/contrib/{$name}": ["type:drupal-module"],
             "html/profiles/contrib/social": ["goalgorilla/open_social"],
             "html/profiles/contrib/{$name}": ["type:drupal-profile"],
             "html/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"],
-            "html/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"]
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
         },
+        "composer-exit-on-patch-failure": true,
         "enable-patching": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
         "patches": {
             "drupal/core": {
                 "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"

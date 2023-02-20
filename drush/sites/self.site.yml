@@ -2,4 +2,4 @@ prod:
   host: bolt54.servebolt.com
   user: drupal_5616
   root: /kunder/drupal_3361/drupal_5616/drupalnorge-social/html
-  uri: https://drupalnorge.no
+  uri: https://www.drupalnorge.no

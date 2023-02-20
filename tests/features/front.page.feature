@@ -1,4 +1,4 @@
-@api @javascript
+@api @javascript @frontpage
 Feature: Front page
   Scenario: An anonymous user can access the front page
     Given I am an anonymous user

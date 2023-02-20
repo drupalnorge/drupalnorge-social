@@ -1,0 +1,12 @@
+version: '3.6'
+services:
+  chromedriver:
+    container_name: ddev-${DDEV_SITENAME}-chromedriver
+    image: selenium/standalone-chrome:104.0-chromedriver-104.0
+    environment:
+      SE_OPTS: "--port 8643"
+    external_links:
+      - ddev-router:${DDEV_SITENAME}.${DDEV_TLD}
+    labels:
+      com.ddev.site-name: ${DDEV_SITENAME}
+      com.ddev.approot: $DDEV_APPROOT

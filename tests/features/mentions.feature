@@ -1,4 +1,4 @@
-@api @javascript
+@api @javascript @mentions
 Feature: Mentions
   Background:
     Given users:
