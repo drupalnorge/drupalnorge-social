@@ -18,16 +18,16 @@ plugin: account_header_block
 settings:
   id: account_header_block
   label: 'Account header block'
-  provider: social_user
   label_display: '0'
+  provider: social_user
   context_mapping:
     user: '@user.current_user_context:current_user'
 visibility:
   user_role:
     id: user_role
-    roles:
-      authenticated: authenticated
-      administrator: administrator
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      administrator: administrator

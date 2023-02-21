@@ -2,11 +2,11 @@ uuid: e6a15d54-6dca-41ad-8733-98d1caa1e8d7
 langcode: nb
 status: true
 dependencies:
+  module:
+    - redirect
   enforced:
     module:
       - redirect
-  module:
-    - redirect
 _core:
   default_config_hash: vcnRZRvBqTbK3nZ2M4_lKPlEGc8GjPzgaqapYUfyX8M
 id: redirect_delete_action

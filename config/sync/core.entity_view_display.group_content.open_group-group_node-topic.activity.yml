@@ -1,4 +1,4 @@
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -11,12 +11,12 @@ mode: activity
 content:
   entity_id:
     type: entity_reference_entity_view
-    weight: 0
     label: hidden
     settings:
       view_mode: activity
       link: false
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   langcode: true

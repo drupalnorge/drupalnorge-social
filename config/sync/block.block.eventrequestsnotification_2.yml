@@ -14,6 +14,6 @@ plugin: event_requests_notification
 settings:
   id: event_requests_notification
   label: 'Event requests notification'
-  provider: social_event
   label_display: '0'
+  provider: social_event
 visibility: {  }

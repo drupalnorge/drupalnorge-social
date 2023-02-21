@@ -1,3 +1,6 @@
+third_party_settings:
+  activity_logger:
+    email_subject: 'A background task has been finished'
 label: 'Background process finished'
 description: 'A background process (e.g. sending bulk emails) has finished'
 text:

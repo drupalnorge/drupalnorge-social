@@ -25,11 +25,14 @@ settings:
           items:
             - DrupalLink
             - DrupalUnlink
-  plugins:
-    language:
-      language_list: un
-    stylescombo:
-      styles: ''
+        -
+          name: Aligment
+          items:
+            - JustifyBlock
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+  plugins: {  }
 image_upload:
   status: false
   scheme: public

@@ -20,14 +20,14 @@ plugin: 'views_block:activity_stream_group-block_stream_group'
 settings:
   id: 'views_block:activity_stream_group-block_stream_group'
   label: ''
-  provider: views
   label_display: '0'
+  provider: views
   views_label: ''
   items_per_page: none
   type: none
 visibility:
   request_path:
     id: request_path
-    pages: '/group/*/stream'
     negate: false
     context_mapping: {  }
+    pages: '/group/*/stream'

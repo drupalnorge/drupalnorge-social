@@ -22,44 +22,44 @@ third_party_settings:
         - label
         - field_group_description
         - field_group_image
+      label: 'Basic information'
+      region: content
       parent_name: ''
       weight: 0
-      label: 'Basic information'
       format_type: fieldset
       format_settings:
-        description: ''
         classes: ''
         id: ''
+        description: ''
         required_fields: true
-      region: content
     group_location:
       children:
         - field_group_location
         - field_group_address
+      label: Location
+      region: content
       parent_name: ''
       weight: 4
-      label: Location
       format_type: fieldset
       format_settings:
-        description: ''
         classes: ''
         id: ''
+        description: ''
         required_fields: true
-      region: content
     group_settings:
       children:
         - path
+      label: Settings
+      region: content
       parent_name: ''
       weight: 10
       format_type: details
       format_settings:
-        id: ''
         classes: social-collapsible-fieldset
+        id: ''
+        open: false
         description: ''
         required_fields: true
-        open: false
-      label: Settings
-      region: content
 _core:
   default_config_hash: jHk9D2HeN8PO8pzA91TOL8829QgZhRFx3R0YbS91kZY
 id: group.public_group.default
@@ -68,53 +68,53 @@ bundle: public_group
 mode: default
 content:
   field_group_address:
+    type: address_default
     weight: 33
+    region: content
     settings:
       default_country: null
     third_party_settings: {  }
-    type: address_default
-    region: content
   field_group_description:
+    type: text_textarea
     weight: 2
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_group_image:
+    type: image_widget_crop
     weight: 3
+    region: content
     settings:
-      show_crop_area: true
-      show_default_crop: true
-      warn_multiple_usages: true
+      progress_indicator: throbber
       preview_image_style: social_x_large
       crop_preview_image_style: crop_thumbnail
-      progress_indicator: throbber
       crop_list:
         - hero
         - hero_small
         - teaser
       crop_types_required: {  }
+      warn_multiple_usages: true
+      show_crop_area: true
+      show_default_crop: true
     third_party_settings: {  }
-    type: image_widget_crop
-    region: content
   field_group_location:
+    type: string_textfield
     weight: 32
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   label:
     type: string_textfield
     weight: 1
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
   langcode:
     type: language_select
     weight: 2
@@ -125,8 +125,8 @@ content:
   path:
     type: path
     weight: 30
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   uid: true

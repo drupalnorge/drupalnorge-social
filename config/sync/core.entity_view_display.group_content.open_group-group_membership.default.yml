@@ -14,10 +14,10 @@ mode: default
 content:
   entity_id:
     type: entity_reference_entity_id
-    weight: 0
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   group_roles: true

@@ -20,16 +20,16 @@ plugin: 'views_block:managers-event_managers'
 settings:
   id: 'views_block:managers-event_managers'
   label: 'Event Organisers'
-  provider: views
   label_display: visible
+  provider: views
   views_label: 'Event Organisers'
   items_per_page: none
   type: none
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      event: event
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+    bundles:
+      event: event

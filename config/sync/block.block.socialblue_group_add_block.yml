@@ -18,11 +18,11 @@ plugin: group_add_block
 settings:
   id: group_add_block
   label: 'Group add block'
-  provider: social_group
   label_display: '0'
+  provider: social_group
 visibility:
   request_path:
     id: request_path
-    pages: '/user/*/groups'
     negate: false
     context_mapping: {  }
+    pages: '/user/*/groups'

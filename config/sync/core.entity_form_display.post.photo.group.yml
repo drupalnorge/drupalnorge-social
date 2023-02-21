@@ -32,13 +32,13 @@ content:
       placeholder: 'Say something about these image(s)'
     third_party_settings: {  }
   field_post_image:
-    weight: 1
-    settings:
-      preview_image_style: social_post_photo
-      progress_indicator: throbber
-    third_party_settings: {  }
     type: image_image
+    weight: 1
     region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: social_post_photo
+    third_party_settings: {  }
   field_visibility:
     type: dropdown_widget_type
     weight: 2
@@ -46,11 +46,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   status:
+    type: boolean_checkbox
+    weight: 20
     region: content
     settings:
       display_label: true
-    type: boolean_checkbox
-    weight: 20
     third_party_settings: {  }
 hidden:
   field_post_comments: true

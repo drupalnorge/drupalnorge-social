@@ -18,11 +18,11 @@ plugin: post_profile_block
 settings:
   id: post_profile_block
   label: 'Post on profile block'
-  provider: social_post
   label_display: '0'
+  provider: social_post
 visibility:
   request_path:
     id: request_path
-    pages: '/user/*/stream'
     negate: false
     context_mapping: {  }
+    pages: '/user/*/stream'

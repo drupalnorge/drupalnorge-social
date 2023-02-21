@@ -40,10 +40,12 @@ display:
           label: Accept
           alter:
             text: Accept
+            path: 'ginvite/{{ id }}/accept?destination=/user/{{ uid }}/invitations'
         nothing_1:
           label: Decline
           alter:
             text: Decline
+            path: 'ginvite/{{ id }}/decline?destination=/user/{{ uid }}/invitations'
         dropbutton:
           label: Operations
       empty:

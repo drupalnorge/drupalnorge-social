@@ -24,32 +24,32 @@ mode: album
 content:
   field_post:
     type: text_default
-    weight: 1
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_post_comments:
     type: comment_post
-    weight: 3
-    region: content
     label: hidden
     settings:
       num_comments: '0'
       order: ASC
     third_party_settings: {  }
-  like_and_dislike:
-    weight: 2
+    weight: 3
     region: content
+  like_and_dislike:
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
   user_id:
     type: author
-    weight: 0
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_post_image: true
   field_recipient_group: true

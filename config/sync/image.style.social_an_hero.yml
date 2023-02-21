@@ -30,6 +30,12 @@ effects:
     id: image_scale_and_crop
     weight: 2
     data:
-      anchor: center-center
       width: 1200
       height: 490
+      anchor: center-center
+  21750d96-37dd-499b-a27a-78b5495b8320:
+    uuid: 21750d96-37dd-499b-a27a-78b5495b8320
+    id: image_convert
+    weight: 4
+    data:
+      extension: webp

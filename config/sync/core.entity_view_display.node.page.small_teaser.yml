@@ -1,3 +1,4 @@
+uuid: null
 langcode: nb
 status: true
 dependencies:
@@ -12,8 +13,8 @@ dependencies:
     - node.type.page
   module:
     - image
+    - lazy
     - user
-third_party_settings: {  }
 id: node.page.small_teaser
 targetEntityType: node
 bundle: page
@@ -21,15 +22,22 @@ mode: small_teaser
 content:
   field_page_image:
     type: image
-    weight: 4
-    region: content
     label: hidden
     settings:
-      image_style: social_medium
       image_link: content
+      image_style: social_medium
+      image_loading:
+        attribute: lazy
     third_party_settings:
       lazy:
         lazy_image: 0
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
 hidden:
   body: true
   field_content_visibility: true
@@ -40,3 +48,5 @@ hidden:
   groups_type_closed_group: true
   groups_type_open_group: true
   groups_type_public_group: true
+  langcode: true
+  search_api_excerpt: true

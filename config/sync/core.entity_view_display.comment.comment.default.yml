@@ -16,21 +16,21 @@ bundle: comment
 mode: default
 content:
   field_comment_body:
-    weight: 0
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 0
     region: content
   like_and_dislike:
-    weight: 3
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   links:
-    weight: 2
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   field_comment_files: true

@@ -22,40 +22,40 @@ content:
   field_call_to_action_link:
     type: link_default
     weight: 0
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    region: content
   field_hero_image:
     type: image_widget_crop
     weight: 0
+    region: content
     settings:
-      show_crop_area: true
-      show_default_crop: true
+      progress_indicator: throbber
       preview_image_style: social_an_hero
       crop_preview_image_style: crop_thumbnail
       crop_list:
         - hero_an
-      progress_indicator: throbber
+      show_crop_area: true
+      show_default_crop: true
     third_party_settings: {  }
-    region: content
   field_text_block:
     type: text_textarea
     weight: 0
-    settings:
-      placeholder: ''
-      rows: 5
-    third_party_settings: {  }
     region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   info:
     type: string_textfield
     weight: -5
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    region: content
   langcode:
     type: language_select
     weight: 2

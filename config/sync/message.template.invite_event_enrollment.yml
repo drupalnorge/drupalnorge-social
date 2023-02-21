@@ -2,11 +2,11 @@ uuid: 290c728d-a7b2-44f0-94d3-a54708f7a0b6
 langcode: nb
 status: true
 dependencies:
+  module:
+    - activity_logger
   enforced:
     module:
       - social_event_invite
-  module:
-    - activity_logger
 third_party_settings:
   activity_logger:
     activity_bundle_entities:

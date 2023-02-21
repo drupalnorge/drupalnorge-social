@@ -15,14 +15,14 @@ mode: register
 content:
   account:
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   google_analytics:
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   contact: true
   groups: true

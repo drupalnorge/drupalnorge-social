@@ -22,22 +22,22 @@ mode: activity_comment
 content:
   field_post:
     type: text_default
-    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   like_and_dislike:
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
-    settings: {  }
-    third_party_settings: {  }
   user_id:
-    label: hidden
     type: author
-    weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   field_post_comments: true

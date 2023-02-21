@@ -10,9 +10,9 @@ description: 'User mentions'
 mention_type: entity
 input:
   prefix: '@'
-  suffix: ''
   entity_type: user
   inputvalue: name
+  suffix: ''
 output:
   outputvalue: '[user:name]'
   renderlink: 1

@@ -16,7 +16,6 @@ tips:
   filter_tooltip_topic:
     id: filter_tooltip_topic
     plugin: text
-    location: left
     body: 'Use the topic filter to filter on topic type.'
-    attributes:
-      data-id: block-socialblue-exposedformlatest-topicspage-latest-topics
+    selector: '#block-socialblue-exposedformlatest-topicspage-latest-topics'
+    position: left-start

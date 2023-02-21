@@ -1,3 +1,4 @@
+uuid: null
 langcode: nb
 status: true
 dependencies:
@@ -21,13 +22,15 @@ mode: small_teaser
 content:
   field_topic_image:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: social_medium
       image_link: content
+      image_style: social_medium
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   body: true
   field_content_visibility: true
@@ -35,6 +38,8 @@ hidden:
   field_topic_comments: true
   field_topic_type: true
   flag_follow_content: true
+  groups: true
+  langcode: true
   like_and_dislike: true
   links: true
   search_api_excerpt: true

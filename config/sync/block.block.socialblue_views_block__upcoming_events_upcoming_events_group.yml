@@ -20,14 +20,14 @@ plugin: 'views_block:upcoming_events-upcoming_events_group'
 settings:
   id: 'views_block:upcoming_events-upcoming_events_group'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
   items_per_page: none
   type: none
 visibility:
   request_path:
     id: request_path
-    pages: "/group/*/stream\r\n/group/*/about"
     negate: false
     context_mapping: {  }
+    pages: "/group/*/stream\r\n/group/*/about"

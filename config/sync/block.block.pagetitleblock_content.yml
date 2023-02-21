@@ -18,11 +18,11 @@ plugin: social_page_title_block
 settings:
   id: social_page_title_block
   label: 'Page title block'
-  provider: social_core
   label_display: '0'
+  provider: social_core
 visibility:
   request_path:
     id: request_path
-    pages: '/search/*'
     negate: true
     context_mapping: {  }
+    pages: '/search/*'

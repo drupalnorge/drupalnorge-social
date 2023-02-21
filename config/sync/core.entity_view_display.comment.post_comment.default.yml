@@ -15,22 +15,22 @@ bundle: post_comment
 mode: default
 content:
   field_comment_body:
-    weight: 1
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 1
     region: content
   like_and_dislike:
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 0
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   langcode: true
   search_api_excerpt: true

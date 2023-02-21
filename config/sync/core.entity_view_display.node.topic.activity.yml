@@ -24,38 +24,40 @@ bundle: topic
 mode: activity
 content:
   field_topic_comments:
-    weight: 3
+    type: comment_node
     label: hidden
     settings:
       num_comments: 2
       always_show_all_comments: true
     third_party_settings: {  }
-    type: comment_node
+    weight: 3
     region: content
   field_topic_image:
     type: image
-    weight: 0
     label: hidden
     settings:
-      image_style: social_x_large
       image_link: content
+      image_style: social_x_large
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 0
     region: content
   field_topic_type:
     type: entity_reference_label
-    weight: 2
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 2
     region: content
   flag_follow_content:
     weight: 10
     region: content
   links:
-    weight: 1
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   body: true

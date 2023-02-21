@@ -23,27 +23,29 @@ bundle: page
 mode: activity
 content:
   field_page_comments:
-    weight: 3
+    type: comment_node
     label: above
     settings:
       num_comments: 2
       always_show_all_comments: false
     third_party_settings: {  }
-    type: comment_node
+    weight: 3
     region: content
   field_page_image:
     type: image
-    weight: 0
     label: above
     settings:
-      image_style: social_x_large
       image_link: content
+      image_style: social_x_large
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 0
     region: content
   links:
-    weight: 2
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   body: true

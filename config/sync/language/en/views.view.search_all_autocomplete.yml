@@ -46,6 +46,7 @@ display:
           admin_label: 'Node Path'
           alter:
             text: 'node/{{ nid }}'
+            path: '/node/{{ nid }}'
           separator: ', '
           fallback_options:
             format_plural_string: !!binary MQNAY291bnQ=
@@ -53,6 +54,7 @@ display:
           admin_label: 'User Path'
           alter:
             text: 'user/{{ uid }}'
+            path: '/user/{{ uid }}'
           separator: ', '
           fallback_options:
             format_plural_string: !!binary MQNAY291bnQ=
@@ -60,6 +62,7 @@ display:
           admin_label: 'Group Path'
           alter:
             text: 'group/{{ id }}'
+            path: '/group/{{ id }}'
           separator: ', '
           fallback_options:
             format_plural_string: !!binary MQNAY291bnQ=

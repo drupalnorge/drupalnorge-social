@@ -1,10 +1,10 @@
-delete_cron_limit: 100
-purge_methods: {  }
+_core:
+  default_config_hash: 2yMXoiFmM0FAZsmvvnbCynhRZBrDxmeWyoWba-6kQPM
+langcode: nb
 delete_on_entity_delete:
   comment: comment
   node: node
   taxonomy_term: taxonomy_term
   user: user
-_core:
-  default_config_hash: 2yMXoiFmM0FAZsmvvnbCynhRZBrDxmeWyoWba-6kQPM
-langcode: nb
+purge_methods: {  }
+delete_cron_limit: 100

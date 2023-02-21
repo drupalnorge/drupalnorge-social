@@ -17,21 +17,21 @@ bundle: comment
 mode: activity
 content:
   field_comment_body:
-    weight: 0
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 0
     region: content
   like_and_dislike:
-    weight: 2
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   links:
-    weight: 1
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   field_comment_files: true

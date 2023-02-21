@@ -1,3 +1,6 @@
+third_party_settings:
+  activity_logger:
+    email_subject: 'You have been invited to an event'
 label: 'Invite event enrollment'
 description: 'A user got an invite for an event'
 text:

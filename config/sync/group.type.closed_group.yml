@@ -7,6 +7,7 @@ _core:
 id: closed_group
 label: 'Lukket gruppe'
 description: 'This is a closed group. Users can only join by invitation and the content in the group is hidden from non members.'
+new_revision: false
 creator_membership: true
 creator_wizard: false
 creator_roles:

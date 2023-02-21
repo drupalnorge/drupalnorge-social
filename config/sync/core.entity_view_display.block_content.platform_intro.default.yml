@@ -16,10 +16,10 @@ mode: default
 content:
   field_text_block:
     type: text_default
-    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   langcode: true

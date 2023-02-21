@@ -21,21 +21,21 @@ plugin: 'views_block:upcoming_events-block_my_upcoming_events'
 settings:
   id: 'views_block:upcoming_events-block_my_upcoming_events'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
   items_per_page: none
   type: none
 visibility:
   request_path:
     id: request_path
-    pages: /stream
     negate: false
     context_mapping: {  }
+    pages: /stream
   user_role:
     id: user_role
-    roles:
-      authenticated: authenticated
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

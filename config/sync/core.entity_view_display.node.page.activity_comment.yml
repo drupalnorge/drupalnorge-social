@@ -23,17 +23,19 @@ mode: activity_comment
 content:
   field_page_image:
     type: image
-    weight: 0
     label: above
     settings:
-      image_style: social_x_large
       image_link: content
+      image_style: social_x_large
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 0
     region: content
   links:
-    weight: 1
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   body: true

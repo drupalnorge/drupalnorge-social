@@ -6,6 +6,9 @@ dependencies:
     - activity_logger
 third_party_settings:
   activity_logger:
+    activity_bundle_entities:
+      post-post: post-post
+    activity_action: create_entitiy_action
     activity_context: group_activity_context
     activity_destinations:
       stream_explore: stream_explore
@@ -13,9 +16,6 @@ third_party_settings:
       stream_home: stream_home
       stream_profile: stream_profile
     activity_create_direct: true
-    activity_action: create_entitiy_action
-    activity_bundle_entities:
-      post-post: post-post
     email_subject: ''
 _core:
   default_config_hash: 93dI7ty4qW1rNQwwKFpjp3-Lsyk3JmaSMxVnMLt1vLw
@@ -24,8 +24,8 @@ label: 'Create post in a group'
 description: 'A user created a post in a group'
 text:
   -
-    format: full_html
     value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> posted in <a href="[message:gurl]">[message:gtitle]</a></p>'
+    format: full_html
 settings:
   'token options':
     clear: false

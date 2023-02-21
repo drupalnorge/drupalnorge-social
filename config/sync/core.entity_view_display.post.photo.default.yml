@@ -25,36 +25,43 @@ mode: default
 content:
   field_post:
     type: text_default
-    weight: 2
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
   field_post_comments:
     type: comment_post
-    weight: 3
-    region: content
     label: hidden
     settings:
       num_comments: '0'
       order: ASC
     third_party_settings: {  }
+    weight: 3
+    region: content
   field_post_image:
-    weight: 1
+    type: image
     label: hidden
     settings:
-      image_style: social_post_photo
       image_link: ''
+      image_style: social_post_photo
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 1
+    region: content
+  like_and_dislike:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
     region: content
   user_id:
     type: author
-    weight: 0
-    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_recipient_group: true
   field_recipient_user: true

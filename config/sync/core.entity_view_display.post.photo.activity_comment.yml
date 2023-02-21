@@ -25,27 +25,29 @@ mode: activity_comment
 content:
   field_post:
     type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     weight: 2
     region: content
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
   field_post_image:
-    weight: 1
+    type: image
     label: hidden
     settings:
-      image_style: social_post_photo
       image_link: content
+      image_style: social_post_photo
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 1
     region: content
   user_id:
-    label: hidden
     type: author
-    weight: 0
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_post_comments: true
   field_recipient_group: true

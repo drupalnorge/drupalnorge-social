@@ -21,40 +21,40 @@ bundle: page
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   field_files:
-    weight: 1
+    type: file_image_default
     label: above
     settings:
-      image_style: social_file_thumbnails
       image_link: file
+      image_style: social_file_thumbnails
     third_party_settings: {  }
-    type: file_image_default
+    weight: 1
     region: content
   field_page_comments:
-    weight: 2
+    type: comment_default
     label: above
     settings:
-      pager_id: 0
       view_mode: default
+      pager_id: 0
     third_party_settings: {  }
-    type: comment_default
+    weight: 2
     region: content
   flag_follow_content:
+    settings: {  }
+    third_party_settings: {  }
     weight: 10
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 11
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_content_visibility: true
   field_page_image: true

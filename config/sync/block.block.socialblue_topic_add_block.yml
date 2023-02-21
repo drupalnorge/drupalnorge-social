@@ -18,11 +18,11 @@ plugin: topic_add_block
 settings:
   id: topic_add_block
   label: 'Topic add block'
-  provider: social_topic
   label_display: '0'
+  provider: social_topic
 visibility:
   request_path:
     id: request_path
-    pages: '/user/*/topics'
     negate: false
     context_mapping: {  }
+    pages: '/user/*/topics'

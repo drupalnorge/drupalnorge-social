@@ -18,21 +18,21 @@ plugin: local_tasks_block
 settings:
   id: local_tasks_block
   label: Tabs
-  provider: core
   label_display: '0'
+  provider: core
   primary: true
   secondary: true
 visibility:
   user_role:
     id: user_role
-    roles:
-      anonymous: anonymous
-      authenticated: authenticated
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
   request_path:
     id: request_path
-    pages: "/post/*/edit\r\n/post/*/delete\r\n/user/*/edit\r\n/user/*/profile\r\n/group/*/edit"
     negate: true
     context_mapping: {  }
+    pages: "/post/*/edit\r\n/post/*/delete\r\n/user/*/edit\r\n/user/*/profile\r\n/group/*/edit"

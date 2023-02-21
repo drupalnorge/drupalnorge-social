@@ -17,16 +17,16 @@ mode: default
 content:
   field_group_description:
     type: basic_string
-    weight: 0
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   flag_mute_group_notifications:
-    weight: 10
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 10
+    region: content
 hidden:
   changed: true
   created: true

@@ -18,6 +18,7 @@ dependencies:
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
     - field.field.profile.profile.field_profile_show_email
+    - field.field.profile.profile.field_profile_summary
     - field.field.profile.profile.field_profile_twitter_url
     - image.style.social_x_large
     - profile.type.profile
@@ -25,6 +26,7 @@ dependencies:
     - address
     - field_group
     - image_widget_crop
+    - social_profile
     - telephone
     - text
 third_party_settings:
@@ -35,60 +37,61 @@ third_party_settings:
         - field_profile_last_name
         - field_profile_image
         - field_profile_banner_image
+      label: 'Names and profile image'
+      region: content
       parent_name: ''
       weight: 0
-      label: 'Names and profile image'
       format_type: fieldset
       format_settings:
         label: 'Names and profile image'
-        required_fields: true
-        id: name
         classes: scrollspy
-      region: content
+        id: name
+        required_fields: true
     group_profile_funct_organization:
       children:
         - field_profile_function
         - field_profile_organization
+      label: 'Function and organization'
+      region: content
       parent_name: ''
       weight: 1
-      label: 'Function and organization'
       format_type: fieldset
       format_settings:
         label: 'Function and organization'
-        required_fields: true
-        id: work
         classes: scollspy
-      region: content
+        id: work
+        required_fields: true
     group_profile_self_intro:
       children:
-        - field_profile_self_introduction
-        - field_profile_expertise
-        - field_profile_interests
-        - field_profile_profile_tag
+        0: field_profile_self_introduction
+        1: field_profile_expertise
+        2: field_profile_interests
+        3: field_profile_profile_tag
+        field_profile_summary: field_profile_summary
+      label: 'Self introduction, expertise and interests'
+      region: content
       parent_name: ''
       weight: 3
-      label: 'Self introduction, expertise and interests'
       format_type: fieldset
       format_settings:
         label: 'Self introduction, expertise and interests'
-        required_fields: true
-        id: details
         classes: scrollspy
-      region: content
+        id: details
+        required_fields: true
     group_profile_contact_info:
       children:
         - field_profile_phone_number
         - field_profile_address
+      label: 'Phone number and location'
+      region: content
       parent_name: ''
       weight: 2
-      label: 'Phone number and location'
       format_type: fieldset
       format_settings:
         label: 'Phone number and location'
-        required_fields: true
-        id: contact
         classes: scollspy
-      region: content
+        id: contact
+        required_fields: true
 _core:
   default_config_hash: SWFMmrj2JnJ86oE3KHqTojFn5tWoarYSUbplbYYbxJQ
 id: profile.profile.default
@@ -97,56 +100,58 @@ bundle: profile
 mode: default
 content:
   field_profile_address:
+    type: address_default
     weight: 7
+    region: content
     settings:
       default_country: site_default
     third_party_settings: {  }
-    type: address_default
-    region: content
   field_profile_banner_image:
+    type: image_widget_crop
     weight: 10
+    region: content
     settings:
-      show_crop_area: true
-      show_default_crop: true
-      warn_multiple_usages: true
+      progress_indicator: throbber
       preview_image_style: social_x_large
       crop_preview_image_style: crop_thumbnail
-      progress_indicator: throbber
       crop_list:
         - hero
+      warn_multiple_usages: true
+      show_crop_area: true
+      show_default_crop: true
     third_party_settings: {  }
-    type: image_widget_crop
-    region: content
   field_profile_expertise:
+    type: entity_reference_autocomplete_tags
     weight: 13
+    region: content
     settings:
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
       match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
-    region: content
   field_profile_first_name:
+    type: string_textfield
     weight: 8
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_profile_function:
+    type: string_textfield
     weight: 16
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_profile_image:
+    type: image_widget_crop
     weight: 11
+    region: content
     settings:
-      show_default_crop: true
+      progress_indicator: throbber
       preview_image_style: social_x_large
       crop_preview_image_style: crop_thumbnail
       crop_list:
@@ -154,61 +159,68 @@ content:
         - teaser
         - profile_medium
         - profile_small
-      progress_indicator: throbber
       show_crop_area: true
+      show_default_crop: true
     third_party_settings: {  }
-    type: image_widget_crop
-    region: content
   field_profile_interests:
+    type: entity_reference_autocomplete_tags
     weight: 14
+    region: content
     settings:
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
       match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
-    region: content
   field_profile_last_name:
+    type: string_textfield
     weight: 9
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_profile_organization:
+    type: string_textfield
     weight: 17
+    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_profile_phone_number:
+    type: telephone_default
     weight: 6
+    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
-    type: telephone_default
-    region: content
   field_profile_profile_tag:
+    type: options_buttons
     weight: 15
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_profile_self_introduction:
+    type: text_textarea
     weight: 12
+    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
+  field_profile_summary:
+    type: social_profile_string_textarea
+    weight: 11
     region: content
+    settings:
+      size: 140
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
   field_profile_drupal_org_profile: true
   field_profile_facebook_url: true
   field_profile_show_email: true
+  field_profile_summary: true
   field_profile_twitter_url: true
   is_default: true

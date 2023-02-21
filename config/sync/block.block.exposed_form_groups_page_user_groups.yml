@@ -1,4 +1,4 @@
-langcode: en
+langcode: nb
 status: true
 dependencies:
   config:
@@ -17,12 +17,12 @@ plugin: 'views_exposed_filter_block:groups-page_user_groups'
 settings:
   id: 'views_exposed_filter_block:groups-page_user_groups'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: Filter
 visibility:
   request_path:
     id: request_path
-    pages: '/user/*/groups'
     negate: false
     context_mapping: {  }
+    pages: '/user/*/groups'

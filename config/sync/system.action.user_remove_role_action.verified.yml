@@ -1,0 +1,14 @@
+uuid: 7cb926df-f516-4c40-b817-45a49eebb09e
+langcode: nb
+status: true
+dependencies:
+  config:
+    - user.role.verified
+  module:
+    - user
+id: user_remove_role_action.verified
+label: 'Remove the Verified User role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: verified

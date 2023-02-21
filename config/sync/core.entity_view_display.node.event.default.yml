@@ -17,7 +17,10 @@ dependencies:
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_managers
+    - field.field.node.event.field_event_send_confirmation
+    - field.field.node.event.field_event_send_invite_by_user
     - field.field.node.event.field_files
+    - field.field.node.event.field_hide_enrollments
     - image.style.social_file_thumbnails
     - node.type.event
   module:
@@ -32,68 +35,68 @@ bundle: event
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_event_address:
     type: address_plain
-    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   field_event_comments:
-    weight: 3
+    type: comment_group_content
     label: above
     settings:
-      pager_id: 0
       view_mode: default
+      pager_id: 0
     third_party_settings: {  }
-    type: comment_group_content
+    weight: 3
     region: content
   field_event_location:
     type: string
-    weight: 0
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
     region: content
   field_files:
-    weight: 4
+    type: file_image_default
     label: above
     settings:
-      image_style: social_file_thumbnails
       image_link: file
+      image_style: social_file_thumbnails
     third_party_settings: {  }
-    type: file_image_default
+    weight: 4
     region: content
   flag_follow_content:
-    weight: 5
-    region: content
     settings: {  }
     third_party_settings: {  }
-  groups_type_public_group:
-    label: above
-    weight: -5
+    weight: 5
     region: content
+  groups_type_public_group:
+    type: entity_reference_label
+    label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: -5
+    region: content
   like_and_dislike:
+    settings: {  }
+    third_party_settings: {  }
     weight: 6
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 7
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   field_content_visibility: true
   field_enroll_method: true
@@ -106,6 +109,9 @@ hidden:
   field_event_enroll_outside_group: true
   field_event_image: true
   field_event_managers: true
+  field_event_send_confirmation: true
+  field_event_send_invite_by_user: true
+  field_hide_enrollments: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true

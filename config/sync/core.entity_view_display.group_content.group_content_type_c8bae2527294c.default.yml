@@ -19,20 +19,20 @@ mode: default
 content:
   grequest_status:
     type: number_integer
-    weight: -4
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
+    weight: -4
     region: content
   grequest_updated_by:
-    label: above
     type: entity_reference_label
+    label: above
     settings:
       link: true
-    weight: -3
     third_party_settings: {  }
+    weight: -3
     region: content
 hidden:
   entity_id: true

@@ -1,7 +1,6 @@
-schemas:
-  bootstrap: 8000
 _core:
   default_config_hash: 1uFogeFphl0Hg6oVCacZZ8mM_0wMZ7PS_RrmLbK5tf0
+langcode: nb
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
@@ -16,4 +15,5 @@ logo:
   path: ''
   url: ''
   use_default: true
-langcode: nb
+schemas:
+  bootstrap: 8000

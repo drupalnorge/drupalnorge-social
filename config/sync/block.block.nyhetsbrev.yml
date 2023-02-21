@@ -17,8 +17,8 @@ plugin: 'block_content:90bb76d2-426e-4789-91d5-1fe8b661b816'
 settings:
   id: 'block_content:90bb76d2-426e-4789-91d5-1fe8b661b816'
   label: Nyhetsbrev
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

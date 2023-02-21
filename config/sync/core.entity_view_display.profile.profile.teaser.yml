@@ -19,11 +19,13 @@ dependencies:
     - field.field.profile.profile.field_profile_profile_tag
     - field.field.profile.profile.field_profile_self_introduction
     - field.field.profile.profile.field_profile_show_email
+    - field.field.profile.profile.field_profile_summary
     - field.field.profile.profile.field_profile_twitter_url
     - image.style.social_x_large
     - profile.type.profile
   module:
     - image
+    - social_profile
 _core:
   default_config_hash: OmqsF8P69Zich5hoSGDvLiGOy_RTFA2eZSv892kVvtk
 id: profile.profile.teaser
@@ -32,53 +34,71 @@ bundle: profile
 mode: teaser
 content:
   field_profile_first_name:
-    weight: 1
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   field_profile_function:
-    weight: 3
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 3
     region: content
   field_profile_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: social_x_large
       image_link: ''
+      image_style: social_x_large
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   field_profile_last_name:
-    weight: 2
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 2
     region: content
   field_profile_organization:
-    weight: 4
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 4
     region: content
   field_profile_profile_tag:
     type: entity_reference_label
-    weight: 5
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
+    weight: 5
+    region: content
+  field_profile_self_introduction:
+    type: social_profile_text
+    label: hidden
+    settings:
+      trim_length: 140
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_profile_summary:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
     region: content
 hidden:
   field_profile_address: true
@@ -88,7 +108,6 @@ hidden:
   field_profile_facebook_url: true
   field_profile_interests: true
   field_profile_phone_number: true
-  field_profile_self_introduction: true
   field_profile_show_email: true
   field_profile_twitter_url: true
   search_api_excerpt: true

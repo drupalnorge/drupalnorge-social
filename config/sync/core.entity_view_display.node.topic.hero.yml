@@ -25,48 +25,50 @@ mode: hero
 content:
   field_content_visibility:
     type: list_default
-    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   field_topic_image:
     type: image
-    weight: 0
     label: hidden
     settings:
-      image_style: social_xx_large
       image_link: ''
+      image_style: social_xx_large
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 0
     region: content
   field_topic_type:
     type: entity_reference_label
-    weight: 2
     label: hidden
     settings:
       link: false
     third_party_settings: {  }
+    weight: 2
     region: content
   flag_follow_content:
+    settings: {  }
+    third_party_settings: {  }
     weight: 4
     region: content
+  like_and_dislike:
     settings: {  }
     third_party_settings: {  }
-  like_and_dislike:
     weight: 1
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
-  links:
     weight: 6
     region: content
+  shariff_field:
     settings: {  }
     third_party_settings: {  }
-  shariff_field:
     weight: 5
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   body: true
   field_files: true

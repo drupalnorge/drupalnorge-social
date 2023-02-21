@@ -16,11 +16,11 @@ plugin: slack_invite_form_block
 settings:
   id: slack_invite_form_block
   label: '#drupalnorge på Slack'
-  provider: slack_invite
   label_display: visible
+  provider: slack_invite
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

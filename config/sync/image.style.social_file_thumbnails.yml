@@ -1,3 +1,4 @@
+uuid: null
 langcode: nb
 status: true
 dependencies:
@@ -30,3 +31,9 @@ effects:
     weight: 3
     data:
       scan_exif: true
+  3887af72-bcd9-43cf-acb3-abadf340cbd0:
+    uuid: 3887af72-bcd9-43cf-acb3-abadf340cbd0
+    id: image_convert
+    weight: 4
+    data:
+      extension: webp

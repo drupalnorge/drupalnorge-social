@@ -18,7 +18,10 @@ dependencies:
     - field.field.node.event.field_event_image
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_managers
+    - field.field.node.event.field_event_send_confirmation
+    - field.field.node.event.field_event_send_invite_by_user
     - field.field.node.event.field_files
+    - field.field.node.event.field_hide_enrollments
     - node.type.event
   module:
     - comment
@@ -32,31 +35,31 @@ bundle: event
 mode: search_index
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   field_event_comments:
-    weight: 1
+    type: comment_default
     label: above
     settings:
       pager_id: 0
     third_party_settings: {  }
-    type: comment_default
+    weight: 1
     region: content
   flag_follow_content:
     weight: 10
     region: content
   groups_type_public_group:
+    type: entity_reference_label
     label: above
-    weight: -5
-    region: content
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: -5
+    region: content
 hidden:
   field_content_visibility: true
   field_enroll_method: true
@@ -70,7 +73,10 @@ hidden:
   field_event_image: true
   field_event_location: true
   field_event_managers: true
+  field_event_send_confirmation: true
+  field_event_send_invite_by_user: true
   field_files: true
+  field_hide_enrollments: true
   groups: true
   groups_type_closed_group: true
   groups_type_open_group: true

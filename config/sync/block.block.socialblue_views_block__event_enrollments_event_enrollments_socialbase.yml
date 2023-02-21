@@ -21,21 +21,21 @@ plugin: 'views_block:event_enrollments-event_enrollments'
 settings:
   id: 'views_block:event_enrollments-event_enrollments'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
   items_per_page: none
   type: none
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      event: event
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/node/*/edit\r\n/node/*/delete\r\n/node/*/translations*"
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
-  request_path:
-    id: request_path
-    pages: "/node/*/edit\r\n/node/*/delete\r\n/node/*/translations*"
-    negate: true
-    context_mapping: {  }
+    bundles:
+      event: event

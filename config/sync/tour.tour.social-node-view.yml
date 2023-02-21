@@ -17,9 +17,9 @@ tips:
     id: follow
     plugin: text
     label: ''
-    body: 'Follow an event or topic so you are always up-to-date! You will receive a notification whenever any activity takes place for this event or topic'
-    location: bottom
     weight: 1
     attributes:
-      data-class: flag-follow_content
       backdrop: '1'
+    body: 'Follow an event or topic so you are always up-to-date! You will receive a notification whenever any activity takes place for this event or topic'
+    selector: .flag-follow_content
+    position: bottom-start

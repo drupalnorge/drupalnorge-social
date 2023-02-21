@@ -17,7 +17,7 @@ tips:
     id: welcome_group
     plugin: text
     label: 'Welcome on this group page!'
-    body: 'Here you can see all the activity in this group and join it.'
     weight: 1
     attributes:
       backdrop: '1'
+    body: 'Here you can see all the activity in this group and join it.'

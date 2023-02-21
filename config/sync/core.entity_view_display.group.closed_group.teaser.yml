@@ -22,48 +22,50 @@ mode: teaser
 content:
   field_group_address:
     type: address_plain
-    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 4
     region: content
   field_group_description:
     type: basic_string
-    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_group_image:
     type: image
-    weight: 1
     label: hidden
     settings:
-      image_style: social_x_large
       image_link: content
+      image_style: social_x_large
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 1
     region: content
   field_group_location:
     type: string
-    weight: 3
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 3
     region: content
   label:
-    label: hidden
     type: string
-    weight: 0
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   changed: true
   created: true
   field_group_address: true
+  flag_mute_group_notifications: true
   langcode: true
   search_api_excerpt: true
   uid: true
-  flag_mute_group_notifications: true

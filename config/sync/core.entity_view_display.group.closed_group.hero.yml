@@ -22,41 +22,43 @@ mode: hero
 content:
   field_group_address:
     type: address_plain
-    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 4
     region: content
   field_group_image:
     type: image
-    weight: 1
     label: hidden
     settings:
-      image_style: social_xx_large
       image_link: ''
+      image_style: social_xx_large
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 1
     region: content
   field_group_location:
     type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 3
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    region: content
-  label:
-    label: hidden
-    type: string
-    weight: 0
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
     region: content
   flag_mute_group_notifications:
-    weight: 10
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 10
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   changed: true
   created: true

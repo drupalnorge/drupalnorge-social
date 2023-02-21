@@ -15,6 +15,6 @@ plugin: search_content_block
 settings:
   id: search_content_block
   label: 'Search content block'
-  provider: social_search
   label_display: '0'
+  provider: social_search
 visibility: {  }
