@@ -1,0 +1,41 @@
+uuid: c5cbbe46-140f-4bbd-8e88-d5aa022a30e0
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.event_enrollments
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - socialblue
+_core:
+  default_config_hash: WoH7kJIJuRWNxIKfVBMMzetSmnHFu2n5YQfpZHZl8zU
+id: socialblue_views_block__event_enrollments_event_enrollments_socialbase
+theme: socialblue
+region: complementary_top
+weight: -20
+provider: null
+plugin: 'views_block:event_enrollments-event_enrollments'
+settings:
+  id: 'views_block:event_enrollments-event_enrollments'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+  type: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/node/*/edit\r\n/node/*/delete\r\n/node/*/translations*"
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      event: event

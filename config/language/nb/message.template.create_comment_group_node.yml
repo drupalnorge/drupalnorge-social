@@ -1,8 +1,0 @@
-text:
-  -
-    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on [social_comment:parent_entity_author]'s [social_comment:commented_content_type] in <a href=\"[message:gurl]\">[message:gtitle]</a></p>\n"
-    format: full_html
-  -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> and @count others commented on [social_comment:parent_entity_author]''s [social_comment:commented_content_type] in <a href="[message:gurl]">[message:gtitle]</a></p>'
-    format: full_html
-description: 'A user add a comment to content in the group'

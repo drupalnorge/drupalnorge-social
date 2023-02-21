@@ -1,0 +1,63 @@
+uuid: 12965a7b-5e1d-428e-a346-eaaa34a8188f
+langcode: nb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.profile.compact
+    - field.field.profile.profile.field_profile_address
+    - field.field.profile.profile.field_profile_banner_image
+    - field.field.profile.profile.field_profile_drupal_org_profile
+    - field.field.profile.profile.field_profile_expertise
+    - field.field.profile.profile.field_profile_facebook_url
+    - field.field.profile.profile.field_profile_first_name
+    - field.field.profile.profile.field_profile_function
+    - field.field.profile.profile.field_profile_image
+    - field.field.profile.profile.field_profile_interests
+    - field.field.profile.profile.field_profile_last_name
+    - field.field.profile.profile.field_profile_organization
+    - field.field.profile.profile.field_profile_phone_number
+    - field.field.profile.profile.field_profile_profile_tag
+    - field.field.profile.profile.field_profile_self_introduction
+    - field.field.profile.profile.field_profile_show_email
+    - field.field.profile.profile.field_profile_summary
+    - field.field.profile.profile.field_profile_twitter_url
+    - image.style.social_medium
+    - profile.type.profile
+  module:
+    - social_profile
+_core:
+  default_config_hash: 94SWj_W_yTpVrYYCebKtO05hwXk8BK6iACQR48paoZ8
+id: profile.profile.compact
+targetEntityType: profile
+bundle: profile
+mode: compact
+content:
+  field_profile_image:
+    type: social_profile_avatar
+    label: hidden
+    settings:
+      image_link: owner
+      image_style: social_medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_profile_address: true
+  field_profile_banner_image: true
+  field_profile_drupal_org_profile: true
+  field_profile_expertise: true
+  field_profile_facebook_url: true
+  field_profile_first_name: true
+  field_profile_function: true
+  field_profile_interests: true
+  field_profile_last_name: true
+  field_profile_organization: true
+  field_profile_phone_number: true
+  field_profile_profile_tag: true
+  field_profile_self_introduction: true
+  field_profile_show_email: true
+  field_profile_summary: true
+  field_profile_twitter_url: true
+  search_api_excerpt: true

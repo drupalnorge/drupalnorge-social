@@ -1,0 +1,9 @@
+label: 'Create comment on authors node or post'
+description: 'A person commented on content created or organised by me'
+text:
+  -
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on your [social_comment:commented_entity_link_html]</p>\r\n"
+  -
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on your [social_comment:commented_entity_link_html]</p>\r\n"
+  -
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> commented on your [social_comment:commented_entity_link_html]</p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"

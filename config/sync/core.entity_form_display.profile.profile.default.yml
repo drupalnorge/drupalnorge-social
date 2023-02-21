@@ -1,0 +1,226 @@
+uuid: bd593415-d330-4062-a898-e66f7a654226
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.field.profile.profile.field_profile_address
+    - field.field.profile.profile.field_profile_banner_image
+    - field.field.profile.profile.field_profile_drupal_org_profile
+    - field.field.profile.profile.field_profile_expertise
+    - field.field.profile.profile.field_profile_facebook_url
+    - field.field.profile.profile.field_profile_first_name
+    - field.field.profile.profile.field_profile_function
+    - field.field.profile.profile.field_profile_image
+    - field.field.profile.profile.field_profile_interests
+    - field.field.profile.profile.field_profile_last_name
+    - field.field.profile.profile.field_profile_organization
+    - field.field.profile.profile.field_profile_phone_number
+    - field.field.profile.profile.field_profile_profile_tag
+    - field.field.profile.profile.field_profile_self_introduction
+    - field.field.profile.profile.field_profile_show_email
+    - field.field.profile.profile.field_profile_summary
+    - field.field.profile.profile.field_profile_twitter_url
+    - image.style.social_x_large
+    - profile.type.profile
+  module:
+    - address
+    - field_group
+    - image_widget_crop
+    - social_profile
+    - telephone
+    - text
+third_party_settings:
+  field_group:
+    group_profile_names_image:
+      children:
+        - field_profile_first_name
+        - field_profile_last_name
+        - field_profile_image
+        - field_profile_banner_image
+      label: 'Names and profile image'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        label: 'Names and profile image'
+        classes: scrollspy
+        id: name
+        required_fields: true
+    group_profile_funct_organization:
+      children:
+        - field_profile_function
+        - field_profile_organization
+      label: 'Function and organization'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        label: 'Function and organization'
+        classes: scollspy
+        id: work
+        required_fields: true
+    group_profile_self_intro:
+      children:
+        0: field_profile_self_introduction
+        1: field_profile_expertise
+        2: field_profile_interests
+        3: field_profile_profile_tag
+        field_profile_summary: field_profile_summary
+      label: 'Self introduction, expertise and interests'
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        label: 'Self introduction, expertise and interests'
+        classes: scrollspy
+        id: details
+        required_fields: true
+    group_profile_contact_info:
+      children:
+        - field_profile_phone_number
+        - field_profile_address
+      label: 'Phone number and location'
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        label: 'Phone number and location'
+        classes: scollspy
+        id: contact
+        required_fields: true
+_core:
+  default_config_hash: SWFMmrj2JnJ86oE3KHqTojFn5tWoarYSUbplbYYbxJQ
+id: profile.profile.default
+targetEntityType: profile
+bundle: profile
+mode: default
+content:
+  field_profile_address:
+    type: address_default
+    weight: 7
+    region: content
+    settings:
+      default_country: site_default
+    third_party_settings: {  }
+  field_profile_banner_image:
+    type: image_widget_crop
+    weight: 10
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: social_x_large
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - hero
+      warn_multiple_usages: true
+      show_crop_area: true
+      show_default_crop: true
+    third_party_settings: {  }
+  field_profile_expertise:
+    type: entity_reference_autocomplete_tags
+    weight: 13
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_profile_first_name:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_profile_function:
+    type: string_textfield
+    weight: 16
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_profile_image:
+    type: image_widget_crop
+    weight: 11
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: social_x_large
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - profile_large
+        - teaser
+        - profile_medium
+        - profile_small
+      show_crop_area: true
+      show_default_crop: true
+    third_party_settings: {  }
+  field_profile_interests:
+    type: entity_reference_autocomplete_tags
+    weight: 14
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_profile_last_name:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_profile_organization:
+    type: string_textfield
+    weight: 17
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_profile_phone_number:
+    type: telephone_default
+    weight: 6
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_profile_profile_tag:
+    type: options_buttons
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_profile_self_introduction:
+    type: text_textarea
+    weight: 12
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_profile_summary:
+    type: social_profile_string_textarea
+    weight: 11
+    region: content
+    settings:
+      size: 140
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_profile_drupal_org_profile: true
+  field_profile_facebook_url: true
+  field_profile_show_email: true
+  field_profile_summary: true
+  field_profile_twitter_url: true
+  is_default: true

@@ -1,0 +1,21 @@
+uuid: fed6abd4-c444-48c5-83e4-8d3d56786b5f
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.message.field_message_destination
+    - message.template.member_added_by_event_organiser
+  module:
+    - options
+id: message.member_added_by_event_organiser.field_message_destination
+field_name: field_message_destination
+entity_type: message
+bundle: member_added_by_event_organiser
+label: field_message_destination
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

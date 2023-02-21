@@ -1,0 +1,41 @@
+uuid: f4dfbe83-cdad-4f93-a05e-3fa241ac6f7b
+langcode: nb
+status: true
+dependencies:
+  module:
+    - group
+    - social_group_invite
+    - system
+  theme:
+    - socialblue
+  enforced:
+    module:
+      - social_group_invite
+_core:
+  default_config_hash: 1uKBLy5T4uDZjgHzH3zCmgCDxHXfILpFHY1QqqWa9aE
+id: membershipinvitenotification
+theme: socialblue
+region: content
+weight: -100
+provider: null
+plugin: membership_invite_notification
+settings:
+  id: membership_invite_notification
+  label: 'Membership invite notification'
+  label_display: '0'
+  provider: social_group_invite
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/group/*/edit\r\n/group/*/delete\r\n/group/*/content/*/approve-membership\r\n/group/*/content/*/reject-membership\r\n/group/*/content/*"
+  group_type:
+    id: group_type
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'
+    group_types:
+      closed_group: closed_group
+      open_group: open_group
+      public_group: public_group

@@ -1,0 +1,31 @@
+uuid: 4d334092-decf-4fb4-8a0f-1c80922cf351
+langcode: nb
+status: true
+dependencies:
+  module:
+    - image_effects
+_core:
+  default_config_hash: OMOIkQqY8F2p9I6chZU18LsIWNdBt8wtFtY0RuYyFmY
+name: crop_thumbnail
+label: 'Crop thumbnail'
+effects:
+  8fc26706-68dc-4eb7-8121-33e3936ed55f:
+    uuid: 8fc26706-68dc-4eb7-8121-33e3936ed55f
+    id: image_scale
+    weight: 1
+    data:
+      width: 400
+      height: null
+      upscale: false
+  cc6640a9-3c13-4371-a9f6-447a90efcce3:
+    uuid: cc6640a9-3c13-4371-a9f6-447a90efcce3
+    id: image_effects_auto_orient
+    weight: 2
+    data:
+      scan_exif: true
+  9d12a742-5838-431a-8dbc-7241dd7c7103:
+    uuid: 9d12a742-5838-431a-8dbc-7241dd7c7103
+    id: image_convert
+    weight: 3
+    data:
+      extension: webp

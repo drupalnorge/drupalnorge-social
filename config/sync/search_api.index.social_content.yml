@@ -1,0 +1,239 @@
+uuid: 4d54987d-8339-4bea-a845-64b54fb0d74a
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_date
+    - field.storage.node.field_event_date_end
+    - search_api.server.social_database
+    - core.entity_view_mode.node.search_index
+  module:
+    - node
+    - search_api
+    - entity_access_by_field
+_core:
+  default_config_hash: i5b5PgQnBCQRIl4RvQI0_D7TZFcMIujMBfSEO1eYWyA
+id: social_content
+name: 'Social Content'
+description: 'Default content index created for the Social distribution.'
+read_only: false
+field_settings:
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
+  field_event_date:
+    label: Start
+    datasource_id: 'entity:node'
+    property_path: field_event_date
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_event_date
+  field_event_date_end:
+    label: End
+    datasource_id: 'entity:node'
+    property_path: field_event_date_end
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_event_date_end
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        - anonymous
+      view_mode:
+        'entity:node':
+          book: search_index
+          event: search_index
+          page: search_index
+          topic: search_index
+  status:
+    label: 'Publishing status'
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    boost: !!float 21
+    dependencies:
+      module:
+        - node
+  type:
+    label: Type
+    datasource_id: 'entity:node'
+    property_path: type
+    type: text
+    boost: !!float 13
+    dependencies:
+      module:
+        - node
+  uid:
+    label: 'Authored by'
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+    plugin_id: 'entity:node'
+processor_settings:
+  add_url:
+    weights:
+      preprocess_index: -30
+    plugin_id: add_url
+  aggregated_field:
+    weights:
+      add_properties: 20
+    plugin_id: aggregated_field
+  content_access:
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+    plugin_id: content_access
+  entity_access_by_field:
+    weights:
+      preprocess_query: -30
+  html_filter:
+    weights:
+      preprocess_index: -15
+      preprocess_query: -10
+    all_fields: false
+    fields:
+      - rendered_item
+    title: true
+    alt: true
+    tags:
+      b: 2
+      em: 1
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      u: 1
+    plugin_id: html_filter
+  ignorecase:
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+    all_fields: true
+    fields:
+      - rendered_item
+      - title
+      - type
+    plugin_id: ignorecase
+  language_with_fallback: {  }
+  rendered_item:
+    weights:
+      add_properties: 0
+      pre_index_save: -10
+    plugin_id: rendered_item
+  stopwords:
+    weights:
+      preprocess_index: -5
+      preprocess_query: -2
+    all_fields: false
+    fields:
+      - rendered_item
+      - title
+    stopwords:
+      - a
+      - an
+      - and
+      - are
+      - as
+      - at
+      - be
+      - but
+      - by
+      - for
+      - if
+      - in
+      - into
+      - is
+      - it
+      - 'no'
+      - not
+      - of
+      - 'on'
+      - or
+      - s
+      - such
+      - t
+      - that
+      - the
+      - their
+      - then
+      - there
+      - these
+      - they
+      - this
+      - to
+      - was
+      - will
+      - with
+    plugin_id: stopwords
+  tokenizer:
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+    all_fields: true
+    fields:
+      - rendered_item
+      - title
+      - type
+    spaces: ''
+    ignored: ._-
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    plugin_id: tokenizer
+  transliteration:
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+    all_fields: true
+    fields:
+      - rendered_item
+      - title
+      - type
+    plugin_id: transliteration
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: false
+  track_changes_in_references: true
+server: social_database

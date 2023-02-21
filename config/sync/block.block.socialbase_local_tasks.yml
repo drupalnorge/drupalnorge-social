@@ -1,0 +1,38 @@
+uuid: 64cb768b-22fb-4931-bf2c-766f8c8c23d3
+langcode: nb
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - socialbase
+_core:
+  default_config_hash: T4-KeiVCp-5V6t594xDGW5IVO6Q7WyFWeEUcjhapnUA
+id: socialbase_local_tasks
+theme: socialbase
+region: secondary_navigation
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/post/*/edit\r\n/post/*/delete\r\n/user/*/edit\r\n/user/*/profile\r\n/group/*/edit"

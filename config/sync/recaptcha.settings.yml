@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: ZKQ03ePk4sH2zESRw4tdZYw__nG2YN4Ru5roPL23g3A
+langcode: nb
+site_key: 6LdjmmMUAAAAAFaEP6RYb5XYzzQVYwn9aIaRrl4D
+secret_key: 6LdjmmMUAAAAAKyIgVMb_jGyuc388N2z1kHmfUTR
+widget:
+  theme: light
+  type: image
+  size: ''
+  tabindex: 0
+  noscript: false

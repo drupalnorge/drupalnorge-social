@@ -1,0 +1,26 @@
+uuid: 309baea9-6fa4-4b48-bb89-15b4cbe720bb
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_group
+    - system
+  theme:
+    - drupalnorge_theme
+id: drupalnorge_theme_group_add_topic_block
+theme: drupalnorge_theme
+region: complementary_top
+weight: -20
+provider: null
+plugin: group_add_topic_block
+settings:
+  id: group_add_topic_block
+  label: 'Group add topic block'
+  label_display: '0'
+  provider: social_group
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/group/*/topics'

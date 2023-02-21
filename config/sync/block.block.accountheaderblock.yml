@@ -1,0 +1,33 @@
+uuid: e1693292-1b92-4a00-8f6c-eb65f595a4fd
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_user
+    - user
+  theme:
+    - socialbase
+_core:
+  default_config_hash: hw-7VqRnZaYIFdTMj7oL8DbEVeE5THhXA3aVAxoiAEc
+id: accountheaderblock
+theme: socialbase
+region: header
+weight: 2
+provider: null
+plugin: account_header_block
+settings:
+  id: account_header_block
+  label: 'Account header block'
+  label_display: '0'
+  provider: social_user
+  context_mapping:
+    user: '@user.current_user_context:current_user'
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      administrator: administrator

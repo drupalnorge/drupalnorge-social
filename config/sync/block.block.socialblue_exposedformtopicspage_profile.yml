@@ -1,0 +1,39 @@
+uuid: 4bf911c0-e9ea-4e8e-b16d-49cfcee06e10
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.topics
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - socialblue
+_core:
+  default_config_hash: 0MO8kRMzukuFcnRLLugyr7OwKplACfFPLV7582vt5Uc
+id: socialblue_exposedformtopicspage_profile
+theme: socialblue
+region: complementary_top
+weight: 3
+provider: null
+plugin: 'views_exposed_filter_block:topics-page_profile'
+settings:
+  id: 'views_exposed_filter_block:topics-page_profile'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: Apply
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/user/*/topics'

@@ -1,0 +1,21 @@
+uuid: 1b98e4bd-b646-4f70-8a92-32519b4460b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_tour
+_core:
+  default_config_hash: 8KzEmlUDFHxUEHhVKAkOX0HTpnfw1qmEDZbqOMomwgM
+id: social-topic-overview
+label: 'Topic Overview functionality.'
+module: social_tour
+routes:
+  -
+    route_name: view.latest_topics.page_latest_topics
+tips:
+  filter_tooltip_topic:
+    id: filter_tooltip_topic
+    plugin: text
+    body: 'Use the topic filter to filter on topic type.'
+    selector: '#block-socialblue-exposedformlatest-topicspage-latest-topics'
+    position: left-start

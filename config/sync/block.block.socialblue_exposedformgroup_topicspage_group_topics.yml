@@ -1,0 +1,31 @@
+uuid: eb0e6f74-a1c0-45ef-b7e4-252a5744e116
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.group_topics
+  module:
+    - system
+    - views
+  theme:
+    - socialblue
+_core:
+  default_config_hash: awPVKI9tiREex_ehHn3hcHv4yrRbcFMnfHRPJQ1J_9Q
+id: socialblue_exposedformgroup_topicspage_group_topics
+theme: socialblue
+region: complementary_top
+weight: -9
+provider: null
+plugin: 'views_exposed_filter_block:group_topics-page_group_topics'
+settings:
+  id: 'views_exposed_filter_block:group_topics-page_group_topics'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: Apply
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/group/*/topics'

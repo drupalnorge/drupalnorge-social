@@ -1,0 +1,30 @@
+uuid: 4909c234-b7f0-4531-a2b0-ad357b9efb60
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_profile
+    - system
+  theme:
+    - socialblue
+_core:
+  default_config_hash: dJJt3qkQQ6s-ogGKHAbMcPCTlcMIUUF8026kdUtlmho
+id: socialblue_profile_hero_block
+theme: socialblue
+region: hero
+weight: -15
+provider: null
+plugin: profile_hero_block
+settings:
+  id: profile_hero_block
+  label: 'Profile hero block'
+  label_display: '0'
+  provider: social_profile
+  context_mapping:
+    user: '@social_user.user_route_context:user'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/user\r\n/user/*/stream\r\n/user/*/events\r\n/user/*/topics\r\n/user/*/groups\r\n/user/*/information"

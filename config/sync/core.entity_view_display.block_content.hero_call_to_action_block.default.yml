@@ -1,0 +1,54 @@
+uuid: 44721677-f799-458e-8c34-f726eccd7b17
+langcode: nb
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_call_to_action_block
+    - field.field.block_content.hero_call_to_action_block.field_call_to_action_link
+    - field.field.block_content.hero_call_to_action_block.field_hero_image
+    - field.field.block_content.hero_call_to_action_block.field_text_block
+    - image.style.social_an_hero
+  module:
+    - image
+    - link
+    - text
+_core:
+  default_config_hash: z0RONUWVX5877U2vWtdyN7HOUm0oOYZSDk-PjtuIlQo
+id: block_content.hero_call_to_action_block.default
+targetEntityType: block_content
+bundle: hero_call_to_action_block
+mode: default
+content:
+  field_call_to_action_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_hero_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: social_an_hero
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text_block:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

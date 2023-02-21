@@ -1,0 +1,36 @@
+uuid: 60893a58-d547-4bad-a3d1-71bceba592e1
+langcode: nb
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - socialblue
+_core:
+  default_config_hash: e_3HKxADJMCzhWIGUnpTkNSn4mQD7KdKKD5eogz3vs4
+id: socialblue_breadcrumbs
+theme: socialblue
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/node/*/all-enrollment-requests\r\n/node/*/all-enrollment-invites"

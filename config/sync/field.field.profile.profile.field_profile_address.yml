@@ -1,0 +1,38 @@
+uuid: 7dec42c4-01ac-4d8d-a0aa-1d0e394bd590
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_address
+    - profile.type.profile
+  module:
+    - address
+_core:
+  default_config_hash: 22noX259rZxoossDwwYIto5hxgX-prFA8jawsu6tg9I
+id: profile.profile.field_profile_address
+field_name: field_profile_address
+entity_type: profile
+bundle: profile
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields:
+    administrativeArea: administrativeArea
+    locality: locality
+    postalCode: postalCode
+    addressLine1: addressLine1
+    dependentLocality: '0'
+    sortingCode: '0'
+    addressLine2: '0'
+    organization: '0'
+    givenName: '0'
+    additionalName: '0'
+    familyName: '0'
+field_type: address

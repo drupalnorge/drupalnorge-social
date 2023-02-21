@@ -1,0 +1,22 @@
+uuid: 19f6f568-45ab-4b89-a6ba-7c18a85ed052
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_tour
+_core:
+  default_config_hash: xjK_suTJgpvupidRa9Y0o2Bu7xk1DVV0GKijFcMm0PY
+id: social-group-overview
+label: 'Group Overview functionality.'
+module: social_tour
+routes:
+  -
+    route_name: view.newest_groups.page_all_groups
+tips:
+  content_tooltip:
+    id: content_tooltip
+    plugin: text
+    weight: 2
+    body: 'Use the plus button in the navigation bar to create a new topic, or to start a new event or group'
+    selector: '#main-navigation'
+    position: bottom-start

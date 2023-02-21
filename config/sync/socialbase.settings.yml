@@ -1,0 +1,33 @@
+_core:
+  default_config_hash: UHZzDbRuYyk87YbgHmeLgP56yuiJFfwyUoKaycEYYm4
+langcode: nb
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://dsoc.dev/profiles/contrib/social/themes/socialbase/favicon.ico'
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: false
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true
+schema: '8000'
+region_wells:
+  breadcrumb: ''
+  hero: ''
+  primary_action: ''
+  secondary_navigation: ''
+  complementary: ''
+forms_smart_descriptions: false
+cdn_provider: ''
+tooltip_enabled: false
+button_colorize: false
+button_iconize: false
+modal_enabled: false
+schemas:
+  bootstrap: 8000
+  socialbase: 8000

@@ -1,0 +1,23 @@
+drush:
+  paths:
+    # Specify config files to load.
+    config:
+      # Load any personal config files. Is silently skipped if not found. Filename must be drush.yml
+      - ${drush.vendor-dir}/../../../drush.yml
+
+sql:
+  # List of tables whose *data* is skipped by the 'sql-dump' and 'sql-sync'
+  # commands when the "--structure-tables-key=common" option is provided.
+  structure-tables:
+    common:
+      - cache
+      - 'cache_*'
+      - sessions
+      - watchdog
+
+command:
+  sql:
+    dump:
+      options:
+        # Omit cache and similar tables (including during a sql:sync).
+        structure-tables-key: common

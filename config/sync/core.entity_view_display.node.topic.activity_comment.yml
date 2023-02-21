@@ -1,0 +1,63 @@
+uuid: f44bbebc-2019-4fd8-ad4c-144017b24f27
+langcode: nb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.activity_comment
+    - field.field.node.topic.body
+    - field.field.node.topic.field_content_visibility
+    - field.field.node.topic.field_files
+    - field.field.node.topic.field_topic_comments
+    - field.field.node.topic.field_topic_image
+    - field.field.node.topic.field_topic_type
+    - image.style.social_x_large
+    - node.type.topic
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: aJNTou3jlGcYFwktrM0NmG5Uq9rJVmwZUHsvhRe8JPc
+id: node.topic.activity_comment
+targetEntityType: node
+bundle: topic
+mode: activity_comment
+content:
+  field_topic_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: social_x_large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_topic_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  flag_follow_content:
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  body: true
+  field_content_visibility: true
+  field_files: true
+  field_topic_comments: true
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
+  groups_type_public_group: true
+  langcode: true
+  like_and_dislike: true
+  search_api_excerpt: true

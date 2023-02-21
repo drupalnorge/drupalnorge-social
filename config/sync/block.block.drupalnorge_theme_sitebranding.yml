@@ -1,0 +1,23 @@
+uuid: 42343ce7-c5d4-497e-bb50-05264800c4fa
+langcode: nb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalnorge_theme
+id: drupalnorge_theme_sitebranding
+theme: drupalnorge_theme
+region: header
+weight: 3
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

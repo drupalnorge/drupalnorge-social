@@ -1,0 +1,12 @@
+_core:
+  default_config_hash: IhwTepsVwtbtbcT5GzQKhCXDCRvbk3MNkWqPiuiZ10s
+langcode: nb
+theme: default
+defaults:
+  sender: social_swiftmailer
+  formatter: social_swiftmailer
+modules:
+  swiftmailer:
+    none:
+      sender: social_swiftmailer
+      formatter: social_swiftmailer

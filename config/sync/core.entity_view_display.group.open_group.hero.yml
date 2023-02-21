@@ -1,0 +1,68 @@
+uuid: 71e85a0b-cbb9-4f78-9018-4cefedeb7b34
+langcode: nb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.group.hero
+    - field.field.group.open_group.field_group_address
+    - field.field.group.open_group.field_group_description
+    - field.field.group.open_group.field_group_image
+    - field.field.group.open_group.field_group_location
+    - group.type.open_group
+    - image.style.social_xx_large
+  module:
+    - address
+    - image
+_core:
+  default_config_hash: 6tQ01x9xDYMt74gOa557lKl5k0OmJGg1muAb3xS84_U
+id: group.open_group.hero
+targetEntityType: group
+bundle: open_group
+mode: hero
+content:
+  field_group_address:
+    type: address_plain
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_group_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: social_xx_large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_group_location:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  flag_mute_group_notifications:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  changed: true
+  created: true
+  field_group_description: true
+  langcode: true
+  search_api_excerpt: true
+  uid: true

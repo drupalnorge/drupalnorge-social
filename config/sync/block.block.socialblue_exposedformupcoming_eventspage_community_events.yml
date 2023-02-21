@@ -1,0 +1,31 @@
+uuid: d81c6cb2-699b-475e-a990-3740012c9608
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.upcoming_events
+  module:
+    - system
+    - views
+  theme:
+    - socialblue
+_core:
+  default_config_hash: oVc0578yoYZdFfQmW3Vrmcf9RFF2MAk5H4T8f22ytyY
+id: socialblue_exposedformupcoming_eventspage_community_events
+theme: socialblue
+region: complementary_top
+weight: 3
+provider: null
+plugin: 'views_exposed_filter_block:upcoming_events-page_community_events'
+settings:
+  id: 'views_exposed_filter_block:upcoming_events-page_community_events'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: Apply
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /community-events

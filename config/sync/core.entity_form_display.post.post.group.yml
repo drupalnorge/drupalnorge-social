@@ -1,0 +1,49 @@
+uuid: dd6f2a9b-f50a-4624-b27d-066c11547de5
+langcode: nb
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.post.group
+    - field.field.post.post.field_post
+    - field.field.post.post.field_post_comments
+    - field.field.post.post.field_recipient_group
+    - field.field.post.post.field_recipient_user
+    - field.field.post.post.field_visibility
+    - social_post.post_type.post
+  module:
+    - dropdown
+_core:
+  default_config_hash: mDn58EZQn9tkwZbMCo9Pp-iSDBq9fyOugpQ499j_Xbc
+id: post.post.group
+targetEntityType: post
+bundle: post
+mode: group
+content:
+  field_post:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 5
+      placeholder: 'What''s on your mind?'
+    third_party_settings: {  }
+    label: hidden
+  field_visibility:
+    type: dropdown_widget_type
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 20
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  field_post_comments: true
+  field_recipient_group: true
+  field_recipient_user: true
+  langcode: true
+  user_id: true

@@ -1,0 +1,28 @@
+uuid: 94655723-0133-495a-9cc1-c8b99e04150b
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_core
+    - system
+  theme:
+    - socialblue
+_core:
+  default_config_hash: yHCG9F_ya0qSUOFA6U3I1rGOC2H7QKYsK3RjZ-YQ1G4
+id: socialblue_pagetitleblock_content
+theme: socialblue
+region: title
+weight: 0
+provider: null
+plugin: social_page_title_block
+settings:
+  id: social_page_title_block
+  label: 'Page title block'
+  label_display: '0'
+  provider: social_core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/search/*\r\n*/stream\r\n*/events\r\n*/topics\r\n*/groups\r\n*/information\r\n*/members\r\n*/membership\r\n*/about\r\n/data-policy\r\n/data-policy/*"

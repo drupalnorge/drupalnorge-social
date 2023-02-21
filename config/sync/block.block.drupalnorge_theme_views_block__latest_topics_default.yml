@@ -1,0 +1,31 @@
+uuid: 93814252-565f-40bd-9d35-543279eaf799
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.latest_topics
+  module:
+    - system
+    - views
+  theme:
+    - drupalnorge_theme
+id: drupalnorge_theme_views_block__latest_topics_default
+theme: drupalnorge_theme
+region: complementary_bottom
+weight: 3
+provider: null
+plugin: 'views_block:latest_topics-block_latest_topics'
+settings:
+  id: 'views_block:latest_topics-block_latest_topics'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+  type: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/stream\r\n/explore"

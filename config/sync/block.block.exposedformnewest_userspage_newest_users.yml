@@ -1,0 +1,28 @@
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.newest_users
+  module:
+    - system
+    - views
+  theme:
+    - socialbase
+id: exposedformnewest_userspage_newest_users
+theme: socialbase
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:newest_users-page_newest_users'
+settings:
+  id: 'views_exposed_filter_block:newest_users-page_newest_users'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: Filter
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /all-members

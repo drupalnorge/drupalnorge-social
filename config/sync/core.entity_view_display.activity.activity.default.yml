@@ -1,0 +1,124 @@
+uuid: 11de1013-324d-470f-b931-e131be20b8be
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.field.activity.activity.field_activity_destinations
+    - field.field.activity.activity.field_activity_entity
+    - field.field.activity.activity.field_activity_message
+    - field.field.activity.activity.field_activity_output_text
+    - field.field.activity.activity.field_activity_recipient_group
+    - field.field.activity.activity.field_activity_recipient_user
+    - field.field.activity.activity.field_activity_status
+  module:
+    - activity_creator
+    - dynamic_entity_reference
+    - text
+_core:
+  default_config_hash: sRAalEAoK4944DDyniVLkPCmArel-CO216YmoCVAtLo
+id: activity.activity.default
+targetEntityType: activity
+bundle: activity
+mode: default
+content:
+  field_activity_entity:
+    type: dynamic_entity_reference_entity_view
+    label: hidden
+    settings:
+      post:
+        view_mode: activity
+      activity:
+        view_mode: default
+        link: false
+      crop:
+        view_mode: default
+        link: false
+      user:
+        view_mode: default
+        link: false
+      comment:
+        view_mode: activity
+        link: false
+      node:
+        view_mode: activity
+        link: false
+      block_content:
+        view_mode: default
+        link: false
+      file:
+        view_mode: default
+        link: false
+      flagging:
+        view_mode: default
+        link: false
+      font:
+        view_mode: default
+        link: false
+      group:
+        view_mode: default
+        link: false
+      group_content:
+        view_mode: activity
+        link: false
+      mentions:
+        view_mode: default
+        link: false
+      message:
+        view_mode: default
+        link: false
+      profile:
+        view_mode: default
+        link: false
+      event_enrollment:
+        view_mode: default
+        link: false
+      vote:
+        view_mode: default
+        link: false
+      vote_result:
+        view_mode: default
+        link: false
+      search_api_task:
+        view_mode: default
+        link: false
+      taxonomy_term:
+        view_mode: default
+        link: false
+      menu_link_content:
+        view_mode: default
+        link: false
+      queue_storage_entity:
+        view_mode: default
+        link: false
+      path_alias:
+        view_mode: default
+        link: false
+      redirect:
+        view_mode: default
+        link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_activity_output_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden:
+  field_activity_destinations: true
+  field_activity_message: true
+  field_activity_recipient_group: true
+  field_activity_recipient_user: true
+  field_activity_status: true
+  search_api_excerpt: true
+  user_id: true

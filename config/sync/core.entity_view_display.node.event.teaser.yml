@@ -1,0 +1,124 @@
+uuid: 9575d7c3-cd53-4fc3-9047-4fb5a2e1a9f7
+langcode: nb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.body
+    - field.field.node.event.field_content_visibility
+    - field.field.node.event.field_enroll_method
+    - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_all_day
+    - field.field.node.event.field_event_comments
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_date_end
+    - field.field.node.event.field_event_enroll
+    - field.field.node.event.field_event_enroll_outside_group
+    - field.field.node.event.field_event_image
+    - field.field.node.event.field_event_location
+    - field.field.node.event.field_event_managers
+    - field.field.node.event.field_event_send_confirmation
+    - field.field.node.event.field_event_send_invite_by_user
+    - field.field.node.event.field_files
+    - field.field.node.event.field_hide_enrollments
+    - image.style.social_x_large
+    - node.type.event
+  module:
+    - address
+    - datetime
+    - image
+    - options
+    - user
+_core:
+  default_config_hash: kulbHRUwdlV5kajZSFurflTfxu3Is72g6ptxNVkj3TE
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  field_content_visibility:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_event_address:
+    type: address_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_event_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_event_date_end:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_event_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: social_x_large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_event_location:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  flag_follow_content:
+    weight: 10
+    region: content
+  groups_type_public_group:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: -5
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  body: true
+  field_enroll_method: true
+  field_event_addtocal: true
+  field_event_all_day: true
+  field_event_comments: true
+  field_event_enroll: true
+  field_event_enroll_outside_group: true
+  field_event_managers: true
+  field_event_send_confirmation: true
+  field_event_send_invite_by_user: true
+  field_files: true
+  field_hide_enrollments: true
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
+  langcode: true
+  like_and_dislike: true
+  search_api_excerpt: true

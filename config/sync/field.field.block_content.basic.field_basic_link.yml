@@ -1,0 +1,23 @@
+uuid: 37914e25-814d-469c-aea0-f99cb6aebc5b
+langcode: nb
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.field_basic_link
+  module:
+    - link
+id: block_content.basic.field_basic_link
+field_name: field_basic_link
+entity_type: block_content
+bundle: basic
+label: 'Read more link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

@@ -1,0 +1,9 @@
+label: 'Approve request to join a group'
+description: 'My group membership request is approved'
+text:
+  -
+    value: "<p>Your membership request for the <a href=\"gurl]\">[message:gtitle]</a> group has been approved</p>\r\n"
+  -
+    value: "<p>Your membership request for the <a href=\"gurl]\">[message:gtitle]</a> group has been approved</p>\r\n"
+  -
+    value: "<p>Your request to join the <a href=\"[message:gurl]\">[message:gtitle]</a> group has been approved! You are now a member of the group and can start posting.</p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"

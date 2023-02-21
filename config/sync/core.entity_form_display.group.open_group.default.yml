@@ -1,0 +1,132 @@
+uuid: 46937afb-e2d3-4fd3-89a4-e71591a24a09
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.field.group.open_group.field_group_address
+    - field.field.group.open_group.field_group_description
+    - field.field.group.open_group.field_group_image
+    - field.field.group.open_group.field_group_location
+    - group.type.open_group
+    - image.style.social_x_large
+  module:
+    - address
+    - field_group
+    - image_widget_crop
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_content:
+      children:
+        - label
+        - field_group_description
+        - field_group_image
+      label: 'Basic information'
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+        required_fields: true
+    group_location:
+      children:
+        - field_group_location
+        - field_group_address
+      label: Location
+      region: content
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+        required_fields: true
+    group_settings:
+      children:
+        - path
+      label: Settings
+      region: content
+      parent_name: ''
+      weight: 10
+      format_type: details
+      format_settings:
+        classes: social-collapsible-fieldset
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: 0HmeHEUhBpg1HhFcX8aE7LzbgO2tWGRCDKpUMJl6uMY
+id: group.open_group.default
+targetEntityType: group
+bundle: open_group
+mode: default
+content:
+  field_group_address:
+    type: address_default
+    weight: 33
+    region: content
+    settings:
+      default_country: site_default
+    third_party_settings: {  }
+  field_group_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_group_image:
+    type: image_widget_crop
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: social_x_large
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - hero_small
+        - hero
+        - teaser
+      crop_types_required: {  }
+      warn_multiple_usages: true
+      show_crop_area: true
+      show_default_crop: true
+    third_party_settings: {  }
+  field_group_location:
+    type: string_textfield
+    weight: 32
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  label:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  uid: true

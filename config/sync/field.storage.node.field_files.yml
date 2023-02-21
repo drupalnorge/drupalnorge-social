@@ -1,0 +1,25 @@
+uuid: 76b2bf10-be27-487e-a212-9fe015da77e4
+langcode: nb
+status: true
+dependencies:
+  module:
+    - file
+    - node
+_core:
+  default_config_hash: 12UNd-mLzWvpZ37ZBG9PLajT3iMOfu2hURxgA4FjDW0
+id: node.field_files
+field_name: field_files
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

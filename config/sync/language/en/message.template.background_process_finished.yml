@@ -1,0 +1,12 @@
+third_party_settings:
+  activity_logger:
+    email_subject: 'A background task has been finished'
+label: 'Background process finished'
+description: 'A background process (e.g. sending bulk emails) has finished'
+text:
+  -
+    value: '<p>Background process "[queue_storage_entity:mail_task_subject]" has finished.</p>'
+  -
+    value: '<p>Background process "[queue_storage_entity:mail_task_subject]" has finished.</p>'
+  -
+    value: '<p>Background process "[queue_storage_entity:mail_task_subject]" has finished.</p>'

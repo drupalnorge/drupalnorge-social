@@ -1,0 +1,29 @@
+uuid: dba84af4-799f-430b-af8f-2063dee80886
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.font.field_fonts
+  module:
+    - file
+    - social_font
+_core:
+  default_config_hash: 2vhz8GVbkTxZLgg0J74iT-ICdhzcMV8DLUL52PvvOJ0
+id: font.font.field_fonts
+field_name: field_fonts
+entity_type: font
+bundle: font
+label: Fonts
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: fonts
+  file_extensions: 'eot svg ttf woff woff2'
+  max_filesize: ''
+  description_field: false
+field_type: file

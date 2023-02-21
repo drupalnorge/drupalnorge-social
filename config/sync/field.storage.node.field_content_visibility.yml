@@ -1,0 +1,32 @@
+uuid: 69647948-3973-43b5-a52c-713cb37eff9f
+langcode: nb
+status: true
+dependencies:
+  module:
+    - entity_access_by_field
+    - node
+_core:
+  default_config_hash: k18u15X2IDEIoQK9WNT_LZH4Nb_JbcEMxsP2KXW3L-0
+id: node.field_content_visibility
+field_name: field_content_visibility
+entity_type: node
+type: entity_access_field
+settings:
+  allowed_values:
+    -
+      value: public
+      label: Public
+    -
+      value: community
+      label: Community
+    -
+      value: group
+      label: 'Group members'
+  allowed_values_function: ''
+module: entity_access_by_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

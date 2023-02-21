@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: 6AEbDZGtCKf9Rgdo1yE2umJy2o1tyhRJ0tnwtj6i690
+langcode: nb
+allow_cancel_vote: true
+hide_vote_widget: false
+enabled_types:
+  comment:
+    - comment
+    - post_comment
+  node:
+    - topic
+    - event
+  post:
+    - post

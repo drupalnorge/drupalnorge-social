@@ -1,0 +1,32 @@
+uuid: 961d1ec2-2b3b-4d08-8330-c2a1fcc2f901
+langcode: nb
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: bZiD6PBFeKVZuGC7jhgGyb5o2v-DSgtA8WaYgesJEXw
+id: follow_content
+label: 'Follow content'
+bundles: {  }
+entity_type: node
+global: false
+flag_short: 'Follow content'
+flag_long: ''
+flag_message: ''
+unflag_short: 'Unfollow content'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+weight: 0
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links:
+    full: full
+  show_as_field: true
+  show_on_form: false
+  show_contextual_link: false
+  extra_permissions: {  }
+  access_author: ''
+linkTypeConfig: {  }

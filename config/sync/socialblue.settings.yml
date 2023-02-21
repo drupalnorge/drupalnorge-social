@@ -1,0 +1,49 @@
+_core:
+  default_config_hash: IlUCYWV3hnjfghFlkuR8OlqQwBgOiOqTMZ5TniqJnqs
+langcode: nb
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'https://www.drupalnorge.no/profiles/contrib/social/themes/socialblue/favicon.ico'
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: false
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true
+font_primary: Montserrat
+color_primary: '#29abe2'
+color_secondary: '#1f80aa'
+color_accents: '#ffc142'
+border_radius: '10'
+schemas:
+  bootstrap: 8000
+  socialbase: 8000
+  socialblue: 8000
+table_responsive: '-1'
+region_wells:
+  hidden: ''
+  header: ''
+  breadcrumb: ''
+  hero: ''
+  secondary_navigation: ''
+  content_top: ''
+  title: ''
+  content: ''
+  complementary_top: ''
+  complementary_bottom: ''
+  content_bottom: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+cdn_theme: ''
+cdn_cache_ttl_versions: 0
+cdn_cache_ttl_themes: 0
+cdn_cache_ttl_assets: 0
+cdn_cache_ttl_library: 0
+reset_http_request_cache: ''
+table: ''

@@ -1,0 +1,13 @@
+text:
+  -
+    format: full_html
+    value: |
+      <p><a href="[message:author:url:absolute]">[message:author:display-name]</a> posted on your profile</p>
+  -
+    format: full_html
+    value: |
+      <p><a href="[message:author:url:absolute]">[message:author:display-name]</a> posted on your profile</p>
+  -
+    format: full_html
+    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> posted on your <a href="[message:recipient-user-url]">profile</a></p><p>[message:additional_information]</p>'
+description: 'A person created a post on my profile'

@@ -1,0 +1,57 @@
+uuid: fcd245c0-ceb0-4bc8-9929-0a324dd94621
+langcode: nb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.post.activity_comment
+    - field.field.post.photo.field_post
+    - field.field.post.photo.field_post_comments
+    - field.field.post.photo.field_post_image
+    - field.field.post.photo.field_recipient_group
+    - field.field.post.photo.field_recipient_user
+    - field.field.post.photo.field_visibility
+    - image.style.social_post_photo
+    - social_post.post_type.photo
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: AIV8kX2w5a5zOKI9hVjfqwZFK66nRtd4486sydPzaPI
+id: post.photo.activity_comment
+targetEntityType: post
+bundle: photo
+mode: activity_comment
+content:
+  field_post:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_post_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: social_post_photo
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  user_id:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_post_comments: true
+  field_recipient_group: true
+  field_recipient_user: true
+  field_visibility: true
+  like_and_dislike: true
+  search_api_excerpt: true

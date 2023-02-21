@@ -1,0 +1,28 @@
+uuid: 8951ea65-5b23-43d5-a1fa-4ca20c06034f
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_post
+    - system
+  theme:
+    - drupalnorge_theme
+_core:
+  default_config_hash: jM4rDaxSleva7mQiyaRj-ESpAcur9wzSXDfeXdGbOjk
+id: drupalnorge_theme_postongroupblock
+theme: drupalnorge_theme
+region: hidden
+weight: -9
+provider: null
+plugin: post_group_block
+settings:
+  id: post_group_block
+  label: 'Post on group block'
+  label_display: '0'
+  provider: social_post
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/group/*/stream'

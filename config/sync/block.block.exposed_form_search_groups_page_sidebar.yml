@@ -1,0 +1,31 @@
+uuid: 825a779c-181b-4753-b4fb-82b05e8f1fb5
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.search_groups
+  module:
+    - system
+    - views
+  theme:
+    - socialbase
+_core:
+  default_config_hash: wffDrUTOGp9BKnp-O5715jCOgZ0V-a0YP0FB2xDS9PA
+id: exposed_form_search_groups_page_sidebar
+theme: socialbase
+region: complementary_top
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:search_groups-page'
+settings:
+  id: 'views_exposed_filter_block:search_groups-page'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: Apply
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/search/groups\r\n/search/groups/*"

@@ -1,0 +1,35 @@
+uuid: 42150c3a-5b3d-4b71-871a-07d0bad87ff6
+langcode: nb
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+    - user
+  theme:
+    - socialbase
+_core:
+  default_config_hash: FjC-IqH0cWjvuwop_2gboIQzIzxqD-GEWaSAMnvahT0
+id: socialbase_account_menu
+theme: socialbase
+region: header
+weight: 1
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

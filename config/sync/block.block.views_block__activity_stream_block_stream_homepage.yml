@@ -1,0 +1,33 @@
+uuid: e7a1faaa-f519-4a5b-8975-e30db17f0c90
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.activity_stream
+  module:
+    - system
+    - views
+  theme:
+    - socialbase
+_core:
+  default_config_hash: M8sjUIqGE_duwOkpGycjuQ0ZH5JAZJccpWKQ9VVgjCU
+id: views_block__activity_stream_block_stream_homepage
+theme: socialbase
+region: content
+weight: null
+provider: null
+plugin: 'views_block:activity_stream-block_stream_homepage'
+settings:
+  id: 'views_block:activity_stream-block_stream_homepage'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+  type: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /stream

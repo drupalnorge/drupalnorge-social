@@ -1,0 +1,14 @@
+uuid: 4ed8e2aa-ea61-4b5a-9286-55fc9015837a
+langcode: nb
+status: true
+dependencies:
+  config:
+    - user.role.verified
+  module:
+    - user
+id: user_add_role_action.verified
+label: 'Add the Verified User role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: verified

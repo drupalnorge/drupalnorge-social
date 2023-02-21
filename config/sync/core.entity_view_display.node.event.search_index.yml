@@ -1,0 +1,86 @@
+uuid: 0edbc65a-c8e9-4624-a1da-c8241375e6db
+langcode: nb
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - core.entity_view_mode.node.search_index
+    - field.field.node.event.body
+    - field.field.node.event.field_content_visibility
+    - field.field.node.event.field_enroll_method
+    - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_all_day
+    - field.field.node.event.field_event_comments
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_date_end
+    - field.field.node.event.field_event_enroll
+    - field.field.node.event.field_event_enroll_outside_group
+    - field.field.node.event.field_event_image
+    - field.field.node.event.field_event_location
+    - field.field.node.event.field_event_managers
+    - field.field.node.event.field_event_send_confirmation
+    - field.field.node.event.field_event_send_invite_by_user
+    - field.field.node.event.field_files
+    - field.field.node.event.field_hide_enrollments
+    - node.type.event
+  module:
+    - comment
+    - text
+    - user
+_core:
+  default_config_hash: VwofvcGJ5GstIT4cx994N4JaaC9JQLo9E1XhOYQkecg
+id: node.event.search_index
+targetEntityType: node
+bundle: event
+mode: search_index
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_event_comments:
+    type: comment_default
+    label: above
+    settings:
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  flag_follow_content:
+    weight: 10
+    region: content
+  groups_type_public_group:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: -5
+    region: content
+hidden:
+  field_content_visibility: true
+  field_enroll_method: true
+  field_event_address: true
+  field_event_addtocal: true
+  field_event_all_day: true
+  field_event_date: true
+  field_event_date_end: true
+  field_event_enroll: true
+  field_event_enroll_outside_group: true
+  field_event_image: true
+  field_event_location: true
+  field_event_managers: true
+  field_event_send_confirmation: true
+  field_event_send_invite_by_user: true
+  field_files: true
+  field_hide_enrollments: true
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
+  langcode: true
+  like_and_dislike: true
+  links: true
+  search_api_excerpt: true

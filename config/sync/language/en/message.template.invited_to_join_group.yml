@@ -1,0 +1,12 @@
+third_party_settings:
+  activity_logger:
+    email_subject: 'You have been invited to join a group'
+label: 'Invited to join a group'
+description: 'You have been invited to join a group'
+text:
+  -
+    value: "<p>You have been invited to join the group <a href=\"gurl]\">[message:gtitle]</a></p>\r\n"
+  -
+    value: "<p>You have been invited to join the group <a href=\"gurl]\">[message:gtitle]</a></p>\r\n"
+  -
+    value: "<p>Hi,</p>\r\n\r\n<p>I would like to invite you to my group [message:gtitle] on [site:name].</p>\r\n\r\n<p>Kind regards,<br />\r\n[message:author:display-name]</p>\r\n\r\n<table class=\"btn-wrap\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td class=\"align-center\"><a class=\"btn-link btn-link-bg btn-link-one\" href=\"[message:gurl]\">Accept invite</a></td>\r\n\t\t\t<td class=\"align-center\"><a class=\"btn-link btn-link-bg btn-link-one\" href=\"[site:url]\">About [site:name]</a></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n"

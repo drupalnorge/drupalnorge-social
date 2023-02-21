@@ -1,0 +1,44 @@
+uuid: df641539-92c9-4e97-b95a-2eb3f36d6b54
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.group_managers
+  module:
+    - group
+    - system
+    - views
+  theme:
+    - socialblue
+_core:
+  default_config_hash: 4a6ND-EfIGeJkT9PyuuoPwBovr9vnDac_0sKmv-RrzM
+id: views_block__group_managers_block_list_managers
+theme: socialblue
+region: content
+weight: -15
+provider: null
+plugin: 'views_block:group_managers-block_list_managers'
+settings:
+  id: 'views_block:group_managers-block_list_managers'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+  type: none
+visibility:
+  group_type:
+    id: group_type
+    negate: false
+    context_mapping:
+      group: '@group.group_route_context:group'
+    group_types:
+      closed_group: closed_group
+      open_group: open_group
+      public_group: public_group
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '/group/*/about'

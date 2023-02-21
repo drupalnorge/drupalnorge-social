@@ -1,8 +1,0 @@
-third_party_settings:
-  field_group:
-    group_information:
-      label: 'Account information'
-      format_settings:
-        label: 'Account information'
-    group_locale_settings:
-      label: 'Locale settings'

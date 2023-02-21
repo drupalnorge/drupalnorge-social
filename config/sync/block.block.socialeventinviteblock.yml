@@ -1,0 +1,30 @@
+uuid: f6b06cd3-9154-4eeb-80c9-db07906d737d
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_event_invite
+    - system
+  theme:
+    - socialblue
+_core:
+  default_config_hash: y0PwSwCPY4oP9IOp1RFKptUoZ339C9q42Rt3-wSFpfM
+id: socialeventinviteblock
+theme: socialblue
+region: hidden
+weight: 0
+provider: null
+plugin: social_event_invite_block
+settings:
+  id: social_event_invite_block
+  label: 'Social Event Invite block'
+  label_display: '0'
+  provider: social_event_invite
+  context_mapping:
+    node: '@node.node_route_context:node'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '*/all-enrollments'

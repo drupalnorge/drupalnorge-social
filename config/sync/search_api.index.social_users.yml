@@ -1,0 +1,280 @@
+uuid: 67f604f7-783b-4f00-81b8-c51a840fa027
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_profile_expertise
+    - field.storage.profile.field_profile_first_name
+    - field.storage.profile.field_profile_interests
+    - field.storage.profile.field_profile_last_name
+    - field.storage.profile.field_profile_profile_tag
+    - search_api.server.social_database
+    - core.entity_view_mode.profile.search_index
+  module:
+    - profile
+    - user
+    - taxonomy
+    - search_api
+    - social_search
+_core:
+  default_config_hash: pl4l7Ocfgj8DA_fBIuyWrVYPJI-k0JeRNZ6iSwtvgTU
+id: social_users
+name: 'Social Users'
+description: 'Default users index created for the Social distribution.'
+read_only: false
+field_settings:
+  created:
+    label: 'Owner » User » Created'
+    datasource_id: 'entity:profile'
+    property_path: 'uid:entity:created'
+    type: date
+    dependencies:
+      module:
+        - profile
+        - user
+  field_profile_expertise:
+    label: Expertise
+    datasource_id: 'entity:profile'
+    property_path: field_profile_expertise
+    type: integer
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_expertise
+  field_profile_expertise_name:
+    label: 'Expertise » Taxonomy term » Name'
+    datasource_id: 'entity:profile'
+    property_path: 'field_profile_expertise:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_expertise
+      module:
+        - taxonomy
+  field_profile_first_name:
+    label: 'First name'
+    datasource_id: 'entity:profile'
+    property_path: field_profile_first_name
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_first_name
+  field_profile_interests:
+    label: Interests
+    datasource_id: 'entity:profile'
+    property_path: field_profile_interests
+    type: integer
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_interests
+  field_profile_interests_name:
+    label: 'Interests » Taxonomy term » Name'
+    datasource_id: 'entity:profile'
+    property_path: 'field_profile_interests:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_interests
+      module:
+        - taxonomy
+  field_profile_last_name:
+    label: 'Last name'
+    datasource_id: 'entity:profile'
+    property_path: field_profile_last_name
+    type: text
+    boost: !!float 2
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_last_name
+  field_profile_profile_tag:
+    label: 'Profile tag'
+    datasource_id: 'entity:profile'
+    property_path: field_profile_profile_tag
+    type: integer
+    dependencies:
+      config:
+        - field.storage.profile.field_profile_profile_tag
+  name:
+    label: 'Owner » User » Name'
+    datasource_id: 'entity:profile'
+    property_path: 'uid:entity:name'
+    type: text
+    boost: !!float 2
+    dependencies:
+      module:
+        - profile
+        - user
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        - authenticated
+      view_mode:
+        'entity:profile':
+          main: ''
+          profile: search_index
+  uid:
+    label: Owner
+    datasource_id: 'entity:profile'
+    property_path: uid
+    type: integer
+    dependencies:
+      module:
+        - profile
+  user_status:
+    label: 'Owner » User » User status'
+    datasource_id: 'entity:profile'
+    property_path: 'uid:entity:status'
+    type: boolean
+    dependencies:
+      module:
+        - profile
+        - user
+datasource_settings:
+  'entity:profile':
+    bundles:
+      default: true
+      selected: {  }
+    plugin_id: 'entity:profile'
+processor_settings:
+  add_url:
+    weights:
+      preprocess_index: -30
+    plugin_id: add_url
+  aggregated_field:
+    weights:
+      add_properties: 20
+    plugin_id: aggregated_field
+  blocked_users:
+    weights:
+      preprocess_query: -30
+  entity_type: {  }
+  html_filter:
+    weights:
+      preprocess_index: -15
+      preprocess_query: -10
+    all_fields: false
+    fields:
+      - name
+      - rendered_item
+    title: true
+    alt: true
+    tags:
+      b: 2
+      em: 1
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      u: 1
+    plugin_id: html_filter
+  ignorecase:
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+    all_fields: true
+    fields:
+      - field_profile_expertise_name
+      - field_profile_first_name
+      - field_profile_interests_name
+      - field_profile_last_name
+      - name
+      - rendered_item
+    plugin_id: ignorecase
+  language_with_fallback: {  }
+  rendered_item:
+    weights:
+      add_properties: 0
+      pre_index_save: -10
+    plugin_id: rendered_item
+  stopwords:
+    weights:
+      preprocess_index: -5
+      preprocess_query: -2
+    all_fields: false
+    fields:
+      - name
+      - rendered_item
+    stopwords:
+      - a
+      - an
+      - and
+      - are
+      - as
+      - at
+      - be
+      - but
+      - by
+      - for
+      - if
+      - in
+      - into
+      - is
+      - it
+      - 'no'
+      - not
+      - of
+      - 'on'
+      - or
+      - s
+      - such
+      - t
+      - that
+      - the
+      - their
+      - then
+      - there
+      - these
+      - they
+      - this
+      - to
+      - was
+      - will
+      - with
+    plugin_id: stopwords
+  super_user:
+    weights:
+      preprocess_query: 30
+  tokenizer:
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+    all_fields: true
+    fields:
+      - field_profile_expertise_name
+      - field_profile_first_name
+      - field_profile_interests_name
+      - field_profile_last_name
+      - name
+      - rendered_item
+    spaces: ''
+    ignored: ._-
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    plugin_id: tokenizer
+  transliteration:
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+    all_fields: true
+    fields:
+      - field_profile_expertise_name
+      - field_profile_first_name
+      - field_profile_interests_name
+      - field_profile_last_name
+      - name
+      - rendered_item
+    plugin_id: transliteration
+  verified_users:
+    weights:
+      preprocess_query: 30
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: false
+  track_changes_in_references: true
+server: social_database

@@ -1,0 +1,31 @@
+uuid: 40647f67-b5a2-4eeb-99e8-92fad7f47935
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.activity.field_activity_recipient_user
+  module:
+    - activity_creator
+_core:
+  default_config_hash: Ptq8d7gbpEhKHRDyRE-H7f_Puj-9V-ZAhjQ_J4IYBhg
+id: activity.activity.field_activity_recipient_user
+field_name: field_activity_recipient_user
+entity_type: activity
+bundle: activity
+label: 'Recipient user'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: true
+field_type: entity_reference

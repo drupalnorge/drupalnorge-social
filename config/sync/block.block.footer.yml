@@ -1,0 +1,27 @@
+uuid: 5476152b-c9f0-4421-9873-8fe2c6639314
+langcode: nb
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - socialbase
+_core:
+  default_config_hash: lqe2jxmkLFkRO6MgBW3274S6F9U5Z2kwCEMW-yhsEPA
+id: footer
+theme: socialbase
+region: footer
+weight: -23
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

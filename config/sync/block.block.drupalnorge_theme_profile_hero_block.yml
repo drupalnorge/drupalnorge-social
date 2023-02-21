@@ -1,0 +1,28 @@
+uuid: 56bc5fa9-bff6-4552-abe9-265d7926c396
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_profile
+    - system
+  theme:
+    - drupalnorge_theme
+id: drupalnorge_theme_profile_hero_block
+theme: drupalnorge_theme
+region: hero
+weight: -19
+provider: null
+plugin: profile_hero_block
+settings:
+  id: profile_hero_block
+  label: 'Profile hero block'
+  label_display: '0'
+  provider: social_profile
+  context_mapping:
+    user: '@social_user.user_route_context:user'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/user\r\n/user/*"

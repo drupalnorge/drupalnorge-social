@@ -1,0 +1,235 @@
+uuid: 1125637e-6787-4d01-be23-39633c54f8b9
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.group.field_group_description
+    - search_api.server.social_database
+    - core.entity_view_mode.group.teaser
+  module:
+    - group
+    - user
+    - search_api
+_core:
+  default_config_hash: tUFXFR3gN_XD85cd0oLbYRHP-Gwf0CZgtBjzeLfHyJI
+id: social_groups
+name: 'Social Groups'
+description: 'Default group index created for the Social distribution.'
+read_only: false
+field_settings:
+  created:
+    label: 'Created on'
+    datasource_id: 'entity:group'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - group
+  field_group_description:
+    label: Description
+    datasource_id: 'entity:group'
+    property_path: field_group_description
+    type: text
+    dependencies:
+      config:
+        - field.storage.group.field_group_description
+  label:
+    label: Title
+    datasource_id: 'entity:group'
+    property_path: label
+    type: text
+    boost: !!float 21
+    dependencies:
+      module:
+        - group
+  name:
+    label: 'Group creator » User » Name'
+    datasource_id: 'entity:group'
+    property_path: 'uid:entity:name'
+    type: string
+    dependencies:
+      module:
+        - group
+        - user
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        - anonymous
+      view_mode:
+        'entity:group':
+          closed_group: teaser
+          open_group: teaser
+  type:
+    label: Type
+    datasource_id: 'entity:group'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - group
+datasource_settings:
+  'entity:group':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+    plugin_id: 'entity:group'
+processor_settings:
+  add_url:
+    weights:
+      preprocess_index: -30
+    plugin_id: add_url
+  aggregated_field:
+    weights:
+      add_properties: 20
+    plugin_id: aggregated_field
+  html_filter:
+    weights:
+      preprocess_index: -15
+      preprocess_query: -10
+    all_fields: false
+    fields:
+      - field_group_description
+      - rendered_item
+    title: true
+    alt: true
+    tags:
+      b: 2
+      em: 1
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      u: 1
+    plugin_id: html_filter
+  ignore_character:
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+    all_fields: false
+    fields:
+      - field_group_description
+      - label
+      - name
+      - type
+    ignorable: '[''¿¡!?,.:;]'
+    ignorable_classes:
+      - Pc
+      - Pd
+      - Pe
+      - Pf
+      - Pi
+      - Po
+      - Ps
+    plugin_id: ignore_character
+    strip:
+      character_sets:
+        Pc: Pc
+        Pd: Pd
+        Pe: Pe
+        Pf: Pf
+        Pi: Pi
+        Po: Po
+        Ps: Ps
+  ignorecase:
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+    all_fields: true
+    fields:
+      - field_group_description
+      - label
+      - name
+      - rendered_item
+      - type
+    plugin_id: ignorecase
+  language_with_fallback: {  }
+  rendered_item:
+    weights:
+      add_properties: 0
+      pre_index_save: -10
+    plugin_id: rendered_item
+  stopwords:
+    weights:
+      preprocess_index: -5
+      preprocess_query: -2
+    all_fields: false
+    fields:
+      - field_group_description
+      - rendered_item
+    stopwords:
+      - a
+      - an
+      - and
+      - are
+      - as
+      - at
+      - be
+      - but
+      - by
+      - for
+      - if
+      - in
+      - into
+      - is
+      - it
+      - 'no'
+      - not
+      - of
+      - 'on'
+      - or
+      - s
+      - such
+      - t
+      - that
+      - the
+      - their
+      - then
+      - there
+      - these
+      - they
+      - this
+      - to
+      - was
+      - will
+      - with
+    plugin_id: stopwords
+  tokenizer:
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
+    all_fields: true
+    fields:
+      - field_group_description
+      - label
+      - rendered_item
+    spaces: ''
+    ignored: ._-
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    plugin_id: tokenizer
+  transliteration:
+    weights:
+      preprocess_index: -10
+      preprocess_query: -10
+    all_fields: true
+    fields:
+      - field_group_description
+      - label
+      - name
+      - rendered_item
+      - type
+    plugin_id: transliteration
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: false
+  track_changes_in_references: true
+server: social_database

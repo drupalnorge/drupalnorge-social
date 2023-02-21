@@ -1,0 +1,36 @@
+uuid: 16bb3653-0605-44b4-987b-76d48382ea9d
+langcode: nb
+status: true
+dependencies:
+  module:
+    - node
+    - social_core
+    - system
+  theme:
+    - drupalnorge_theme
+id: drupalnorge_theme_pagetitleblock
+theme: drupalnorge_theme
+region: hero
+weight: -20
+provider: null
+plugin: social_page_title_block
+settings:
+  id: social_page_title_block
+  label: 'Page title for nodes'
+  label_display: '0'
+  provider: social_core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '/node/add/*'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      event: event
+      page: page
+      topic: topic

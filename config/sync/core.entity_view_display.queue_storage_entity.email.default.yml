@@ -1,0 +1,61 @@
+uuid: 810d307f-80bb-4eb9-aacf-009a72f15eae
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.field.queue_storage_entity.email.field_message
+    - field.field.queue_storage_entity.email.field_reply_to
+    - field.field.queue_storage_entity.email.field_subject
+    - social_queue_storage.queue_storage_entity_type.email
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: _4878_g8xVoqzKT9689yAte6WgjVDkEnkYPBEVeFyBc
+id: queue_storage_entity.email.default
+targetEntityType: queue_storage_entity
+bundle: email
+mode: default
+content:
+  field_message:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_reply_to:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_subject:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  user_id:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  finished: true
+  langcode: true
+  search_api_excerpt: true

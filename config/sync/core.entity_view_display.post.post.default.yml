@@ -1,0 +1,55 @@
+uuid: 4ae14379-609b-4a6b-842e-0b1c6cde9e43
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.field.post.post.field_post
+    - field.field.post.post.field_post_comments
+    - field.field.post.post.field_recipient_group
+    - field.field.post.post.field_recipient_user
+    - field.field.post.post.field_visibility
+    - social_post.post_type.post
+  module:
+    - social_post
+    - text
+    - user
+_core:
+  default_config_hash: TSVTdiIbrHdgqHWRwxILYab81_Dz-XJLyyO9UiU5pRc
+id: post.post.default
+targetEntityType: post
+bundle: post
+mode: default
+content:
+  field_post:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_post_comments:
+    type: comment_post
+    label: hidden
+    settings:
+      num_comments: '0'
+      order: ASC
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  like_and_dislike:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  user_id:
+    type: author
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_recipient_group: true
+  field_recipient_user: true
+  field_visibility: true
+  search_api_excerpt: true

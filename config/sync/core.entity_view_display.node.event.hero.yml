@@ -1,0 +1,122 @@
+uuid: eefed9ed-9131-43fa-ac91-7c610816d589
+langcode: nb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.hero
+    - field.field.node.event.body
+    - field.field.node.event.field_content_visibility
+    - field.field.node.event.field_enroll_method
+    - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_all_day
+    - field.field.node.event.field_event_comments
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_date_end
+    - field.field.node.event.field_event_enroll
+    - field.field.node.event.field_event_enroll_outside_group
+    - field.field.node.event.field_event_image
+    - field.field.node.event.field_event_location
+    - field.field.node.event.field_event_managers
+    - field.field.node.event.field_event_send_confirmation
+    - field.field.node.event.field_event_send_invite_by_user
+    - field.field.node.event.field_files
+    - field.field.node.event.field_hide_enrollments
+    - image.style.social_xx_large
+    - node.type.event
+  module:
+    - address
+    - datetime
+    - image
+    - user
+_core:
+  default_config_hash: GrxBdGQqONL883C-2VMKy3cm7ewBpA2VHe1UHcF_TLA
+id: node.event.hero
+targetEntityType: node
+bundle: event
+mode: hero
+content:
+  field_event_address:
+    type: address_plain
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_event_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_event_date_end:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_event_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: social_xx_large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_event_location:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  flag_follow_content:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  like_and_dislike:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  shariff_field:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+hidden:
+  body: true
+  field_content_visibility: true
+  field_enroll_method: true
+  field_event_addtocal: true
+  field_event_all_day: true
+  field_event_comments: true
+  field_event_enroll: true
+  field_event_enroll_outside_group: true
+  field_event_managers: true
+  field_event_send_confirmation: true
+  field_event_send_invite_by_user: true
+  field_files: true
+  field_hide_enrollments: true
+  groups: true
+  groups_type_closed_group: true
+  groups_type_open_group: true
+  groups_type_public_group: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

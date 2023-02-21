@@ -1,0 +1,38 @@
+uuid: 14347b30-ba49-43d5-83cb-d1257190b856
+langcode: nb
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - field.field.comment.comment.field_comment_body
+    - field.field.comment.comment.field_comment_files
+  module:
+    - text
+_core:
+  default_config_hash: TRiNIOLp1fn8y1PUIxc4Gp3igg4d-CuPU2a5nzHE9eo
+id: comment.comment.default
+targetEntityType: comment
+bundle: comment
+mode: default
+content:
+  field_comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  like_and_dislike:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_comment_files: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,28 @@
+uuid: ec1a4f21-111a-476c-835b-0193241b6075
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_core
+    - system
+  theme:
+    - socialbase
+_core:
+  default_config_hash: LLwcMpJqUG2c10kgs6wCODEZb_9hCSRCmxXJ0ii5V0k
+id: socialbase_pagetitleblock_2
+theme: socialbase
+region: hero
+weight: -20
+provider: null
+plugin: social_page_title_block
+settings:
+  id: social_page_title_block
+  label: 'Page title for enrollments'
+  label_display: '0'
+  provider: social_core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "*/enrollments\r\n*/organisers\r\n*/manage-enrollments\r\n*/all-enrollments"

@@ -1,0 +1,22 @@
+uuid: c4fe40dc-853f-41ae-beb5-d4cbef5de3b4
+langcode: nb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - socialblue
+_core:
+  default_config_hash: eVKhOL_cct67bmqEqLvJdxLYRhBDWp02t-UrdcJgIrQ
+id: socialblue_messages
+theme: socialblue
+region: content
+weight: -17
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

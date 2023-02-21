@@ -1,0 +1,28 @@
+uuid: 69cd12bb-96c9-430f-b87b-99857ebc87bc
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_search
+    - system
+  theme:
+    - socialbase
+_core:
+  default_config_hash: eRDnrgAFbPm0A-OlCOnP1jDf0GEkTK9undIsnA8cSMo
+id: search_block_hero
+theme: socialbase
+region: hero
+weight: null
+provider: null
+plugin: search_hero_block
+settings:
+  id: search_hero_block
+  label: Search
+  label_display: visible
+  provider: social_search
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/search/content\r\n/search/content/*\r\n/search/users\r\n/search/users/*\r\n/search/groups\r\n/search/groups/*\r\n/search/all\r\n/search/all/*"

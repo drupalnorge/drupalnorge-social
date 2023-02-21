@@ -1,0 +1,44 @@
+uuid: c0ceee89-d638-44e1-9359-372e7991ad51
+langcode: nb
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.simple_text
+  module:
+    - comment
+    - entity_access_by_field
+    - filter
+    - node
+    - profile
+    - social_like
+    - social_post
+    - social_search
+    - system
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Autentisert bruker'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access content search'
+  - 'access group search'
+  - 'add own profile profile'
+  - 'cancel account'
+  - 'change own username'
+  - 'update own profile profile'
+  - 'use text format basic_html'
+  - 'use text format simple_text'
+  - 'view like widget'
+  - 'view node.event.field_content_visibility:public content'
+  - 'view node.page.field_content_visibility:public content'
+  - 'view node.topic.field_content_visibility:public content'
+  - 'view own profile profile'
+  - 'view own unpublished content'
+  - 'view profile'
+  - 'view public posts'
+  - 'view published post entities'
+  - 'view the administration theme'

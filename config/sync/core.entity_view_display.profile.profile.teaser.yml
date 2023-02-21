@@ -1,0 +1,113 @@
+uuid: 0bfab502-0ec8-4688-8ade-f881eb1f2519
+langcode: nb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.profile.teaser
+    - field.field.profile.profile.field_profile_address
+    - field.field.profile.profile.field_profile_banner_image
+    - field.field.profile.profile.field_profile_drupal_org_profile
+    - field.field.profile.profile.field_profile_expertise
+    - field.field.profile.profile.field_profile_facebook_url
+    - field.field.profile.profile.field_profile_first_name
+    - field.field.profile.profile.field_profile_function
+    - field.field.profile.profile.field_profile_image
+    - field.field.profile.profile.field_profile_interests
+    - field.field.profile.profile.field_profile_last_name
+    - field.field.profile.profile.field_profile_organization
+    - field.field.profile.profile.field_profile_phone_number
+    - field.field.profile.profile.field_profile_profile_tag
+    - field.field.profile.profile.field_profile_self_introduction
+    - field.field.profile.profile.field_profile_show_email
+    - field.field.profile.profile.field_profile_summary
+    - field.field.profile.profile.field_profile_twitter_url
+    - image.style.social_x_large
+    - profile.type.profile
+  module:
+    - image
+    - social_profile
+_core:
+  default_config_hash: OmqsF8P69Zich5hoSGDvLiGOy_RTFA2eZSv892kVvtk
+id: profile.profile.teaser
+targetEntityType: profile
+bundle: profile
+mode: teaser
+content:
+  field_profile_first_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_profile_function:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_profile_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: social_x_large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_profile_last_name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_profile_organization:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_profile_profile_tag:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_profile_self_introduction:
+    type: social_profile_text
+    label: hidden
+    settings:
+      trim_length: 140
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_profile_summary:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+hidden:
+  field_profile_address: true
+  field_profile_banner_image: true
+  field_profile_drupal_org_profile: true
+  field_profile_expertise: true
+  field_profile_facebook_url: true
+  field_profile_interests: true
+  field_profile_phone_number: true
+  field_profile_show_email: true
+  field_profile_twitter_url: true
+  search_api_excerpt: true

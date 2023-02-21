@@ -1,0 +1,33 @@
+uuid: 786de845-0ee7-4a02-b7c6-a9c99842e4ac
+langcode: nb
+status: true
+dependencies:
+  config:
+    - views.view.latest_topics
+  module:
+    - system
+    - views
+  theme:
+    - socialblue
+_core:
+  default_config_hash: L0GbzYBp0tvEdRSIZ6uozmaIHK2-g1XxryF-kxttjTQ
+id: socialblue_views_block__latest_topics_default
+theme: socialblue
+region: complementary_bottom
+weight: 3
+provider: null
+plugin: 'views_block:latest_topics-block_latest_topics'
+settings:
+  id: 'views_block:latest_topics-block_latest_topics'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+  type: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/stream\r\n/explore"

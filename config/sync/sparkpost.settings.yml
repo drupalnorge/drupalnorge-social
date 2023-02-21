@@ -1,0 +1,11 @@
+_core:
+  default_config_hash: lwuTjJuABNwT-MOHY53_w6H37MVtiGb_6sZbhDow4lY
+langcode: nb
+api_hostname: api.sparkpost.com
+api_key: ''
+debug: true
+sender: styret@drupalnorge.no
+sender_name: 'Drupal Norge'
+format: restricted_html
+async: false
+skip_cron: false

@@ -1,0 +1,24 @@
+uuid: 3ed425e0-3038-457a-970a-e50d198f0867
+langcode: nb
+status: true
+dependencies:
+  module:
+    - profile
+  enforced:
+    module:
+      - social_profile
+id: profile.field_profile_summary
+field_name: field_profile_summary
+entity_type: profile
+type: string
+settings:
+  max_length: 140
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

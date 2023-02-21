@@ -1,0 +1,32 @@
+uuid: 9da956f4-929c-47c8-a0d2-9fc9ceb14b7e
+langcode: nb
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.register
+  module:
+    - user
+_core:
+  default_config_hash: q2q1Ylfh4nQOHKbKS9jCKipcNXijytSip0H1DBqyjNE
+id: user.user.register
+targetEntityType: user
+bundle: user
+mode: register
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  google_analytics:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  contact: true
+  groups: true
+  langcode: true
+  language: true
+  profile_profiles: true
+  timezone: true
