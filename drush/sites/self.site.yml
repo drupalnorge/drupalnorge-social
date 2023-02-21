@@ -1,5 +1,10 @@
 prod:
-  host: bolt54.servebolt.com
-  user: drupal_5616
-  root: /kunder/drupal_3361/drupal_5616/drupalnorge-social/html
+  host: lukas-osl.servebolt.cloud
+  user: drupal_19039
+  root: /kunder/drupal_13056/drupal_19039/drupalnorge-social/html
   uri: https://www.drupalnorge.no
+  ssh:
+    options: '-A'
+    tty: false
+  paths:
+    drush-script: '/kunder/drupal_13056/drupal_19039/drupalnorge-social/vendor/drush/drush/drush'
