@@ -51,7 +51,6 @@ field_settings:
       module:
         - group
         - user
-        - user
   rendered_item:
     label: 'Rendered HTML output'
     property_path: rendered_item
@@ -213,6 +212,7 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
+    ignored: ._-
   transliteration:
     plugin_id: transliteration
     all_fields: true

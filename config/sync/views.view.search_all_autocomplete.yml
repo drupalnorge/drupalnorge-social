@@ -29,8 +29,9 @@ display:
     position: 0
     display_options:
       access:
-        type: none
-        options: {  }
+        type: perm
+        options:
+          perm: 'access content'
       cache:
         type: tag
         options: {  }
@@ -72,6 +73,9 @@ display:
               raw_output: false
             nothing_2:
               alias: path
+              raw_output: false
+            nothing_3:
+              alias: type
               raw_output: false
       fields:
         type:
@@ -313,7 +317,7 @@ display:
           group_type: group
           admin_label: 'Entity Type'
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: true
             text: '{{ type }}{{ type_1 }}{{ uid_1 }}'
@@ -911,7 +915,280 @@ display:
           empty_zero: false
           hide_alter_empty: false
           plugin_id: custom
-      filters: {  }
+        field_event_type:
+          admin_label: 'Event type'
+          alter:
+            absolute: false
+            alt: ''
+            alter_text: false
+            ellipsis: true
+            external: false
+            html: false
+            link_class: ''
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ''
+            more_link_text: ''
+            nl2br: false
+            path: ''
+            path_case: none
+            prefix: ''
+            preserve_tags: ''
+            rel: ''
+            replace_spaces: false
+            strip_tags: false
+            suffix: ''
+            target: ''
+            text: ''
+            trim: false
+            trim_whitespace: false
+            word_boundary: true
+          click_sort_column: target_id
+          delta_first_last: false
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          element_class: ''
+          element_default_classes: true
+          element_label_class: ''
+          element_label_colon: false
+          element_label_type: ''
+          element_type: ''
+          element_wrapper_class: ''
+          element_wrapper_type: ''
+          empty: ''
+          empty_zero: false
+          entity_type: node
+          exclude: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            display_methods:
+              event_types:
+                display_method: label
+              expertise:
+                display_method: label
+              group_type:
+                display_method: label
+              interests:
+                display_method: label
+              nationality:
+                display_method: label
+              profile_organization_tag:
+                display_method: label
+              profile_tag:
+                display_method: label
+              report_reasons:
+                display_method: label
+              social_tagging:
+                display_method: label
+              topic_types:
+                display_method: label
+            link_to_item: false
+            multi_separator: ', '
+            multi_type: separator
+            use_highlighting: false
+          field: field_event_type
+          field_api_classes: false
+          field_rendering: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          group_type: group
+          hide_alter_empty: false
+          hide_empty: true
+          id: field_event_type
+          label: ''
+          multi_type: separator
+          plugin_id: search_api_field
+          relationship: none
+          separator: ', '
+          settings:
+            link: false
+          table: search_api_datasource_social_all_entity_node
+          type: entity_reference_label
+        field_topic_type:
+          admin_label: 'Topic type'
+          alter:
+            absolute: false
+            alt: ''
+            alter_text: false
+            ellipsis: true
+            external: false
+            html: false
+            link_class: ''
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ''
+            more_link_text: ''
+            nl2br: false
+            path: ''
+            path_case: none
+            prefix: ''
+            preserve_tags: ''
+            rel: ''
+            replace_spaces: false
+            strip_tags: false
+            suffix: ''
+            target: ''
+            text: ''
+            trim: false
+            trim_whitespace: false
+            word_boundary: true
+          click_sort_column: target_id
+          delta_first_last: false
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          element_class: ''
+          element_default_classes: true
+          element_label_class: ''
+          element_label_colon: false
+          element_label_type: ''
+          element_type: ''
+          element_wrapper_class: ''
+          element_wrapper_type: ''
+          empty: ''
+          empty_zero: false
+          entity_type: node
+          exclude: true
+          fallback_handler: search_api_entity
+          fallback_options:
+            display_methods:
+              event_types:
+                display_method: label
+              expertise:
+                display_method: label
+              group_type:
+                display_method: label
+              interests:
+                display_method: label
+              nationality:
+                display_method: label
+              profile_organization_tag:
+                display_method: label
+              profile_tag:
+                display_method: label
+              report_reasons:
+                display_method: label
+              social_tagging:
+                display_method: label
+              topic_types:
+                display_method: label
+            link_to_item: false
+            multi_separator: ', '
+            multi_type: separator
+            use_highlighting: false
+          field: field_topic_type
+          field_api_classes: false
+          field_rendering: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          group_type: group
+          hide_alter_empty: false
+          hide_empty: false
+          id: field_topic_type
+          label: ''
+          multi_type: separator
+          plugin_id: search_api_field
+          relationship: none
+          separator: ', '
+          settings:
+            link: false
+          table: search_api_datasource_social_all_entity_node
+          type: entity_reference_label
+        nothing_3:
+          admin_label: Type
+          alter:
+            absolute: false
+            alt: ''
+            alter_text: true
+            ellipsis: true
+            external: false
+            html: false
+            link_class: ''
+            make_link: false
+            max_length: 0
+            more_link: false
+            more_link_path: ''
+            more_link_text: ''
+            nl2br: false
+            path: ''
+            path_case: none
+            prefix: ''
+            preserve_tags: ''
+            rel: ''
+            replace_spaces: false
+            strip_tags: false
+            suffix: ''
+            target: ''
+            text: '{{ field_event_type }}{{ field_topic_type }}'
+            trim: false
+            trim_whitespace: false
+            word_boundary: true
+          element_class: ''
+          element_default_classes: true
+          element_label_class: ''
+          element_label_colon: false
+          element_label_type: ''
+          element_type: ''
+          element_wrapper_class: ''
+          element_wrapper_type: ''
+          empty: '{{ type_1 }}'
+          empty_zero: false
+          exclude: false
+          field: nothing
+          group_type: group
+          hide_alter_empty: false
+          hide_empty: false
+          id: nothing_3
+          label: ''
+          plugin_id: custom
+          relationship: none
+          table: views
+      filters:
+        search_api_language:
+          id: search_api_language
+          table: search_api_index_social_all
+          field: search_api_language
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          plugin_id: search_api_language
       sorts:
         search_api_relevance:
           id: search_api_relevance
@@ -953,6 +1230,17 @@ display:
           skip_access: false
           entity_type: profile
           plugin_id: search_api
+        field_topic_type:
+          admin_label: 'Type: Taxonomy term'
+          entity_type: node
+          field: field_topic_type
+          group_type: group
+          id: field_topic_type
+          plugin_id: search_api
+          relationship: none
+          required: false
+          skip_access: false
+          table: search_api_datasource_social_all_entity_node
       arguments:
         search_api_fulltext:
           id: search_api_fulltext
@@ -999,6 +1287,7 @@ display:
         - 'languages:language_interface'
         - request_format
         - url
+        - user.permissions
       tags: {  }
   rest_export_1:
     display_plugin: rest_export
@@ -1018,4 +1307,5 @@ display:
         - 'languages:language_interface'
         - request_format
         - url
+        - user.permissions
       tags: {  }

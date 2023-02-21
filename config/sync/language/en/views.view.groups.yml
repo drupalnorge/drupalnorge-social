@@ -42,3 +42,19 @@ display:
     display_options:
       menu:
         title: Groups
+      exposed_form:
+        options:
+          bef:
+            general:
+              secondary_label: 'Advanced options'
+          exposed_sorts_label: 'Sort by'
+          reset_button_label: Reset
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+          submit_button: Apply
+          text_input_required: 'Select any filter and click on Apply to see results'
+          text_input_required_format: basic_html
+      filters:
+        flagged:
+          expose:
+            label: 'Muted groups'

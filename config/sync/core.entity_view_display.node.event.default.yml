@@ -1,4 +1,4 @@
-uuid: 64502e69-3307-4f3b-b496-0a12df553d27
+uuid: null
 langcode: nb
 status: true
 dependencies:
@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_content_visibility
     - field.field.node.event.field_enroll_method
     - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_all_day
     - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
@@ -17,15 +18,14 @@ dependencies:
     - field.field.node.event.field_event_location
     - field.field.node.event.field_event_managers
     - field.field.node.event.field_files
+    - image.style.social_file_thumbnails
     - node.type.event
   module:
     - address
-    - file
     - group_core_comments
+    - social_core
     - text
     - user
-_core:
-  default_config_hash: Ue86jjx6NUR7LEEI9kbUqVpO5fUjxEnFqn8c84AQt20
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -65,15 +65,17 @@ content:
   field_files:
     weight: 4
     label: above
-    settings: {  }
+    settings:
+      image_style: social_file_thumbnails
+      image_link: file
     third_party_settings: {  }
-    type: file_default
+    type: file_image_default
     region: content
   flag_follow_content:
     weight: 5
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   groups_type_public_group:
     label: above
     weight: -5
@@ -84,9 +86,9 @@ content:
     type: entity_reference_label
   like_and_dislike:
     weight: 6
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   links:
     weight: 7
     region: content
@@ -95,8 +97,11 @@ content:
 hidden:
   field_content_visibility: true
   field_enroll_method: true
+  field_event_addtocal: true
+  field_event_all_day: true
   field_event_date: true
   field_event_date_end: true
+  field_event_enable_enrollment: true
   field_event_enroll: true
   field_event_enroll_outside_group: true
   field_event_image: true

@@ -11,6 +11,9 @@ _core:
 format: basic_html
 editor: ckeditor
 settings:
+  plugins:
+    stylescombo:
+      styles: ''
   toolbar:
     rows:
       -
@@ -43,9 +46,10 @@ settings:
           items:
             - Source
             - Maximize
-  plugins:
-    stylescombo:
-      styles: ''
+        -
+          name: Tables
+          items:
+            - Table
 image_upload:
   status: true
   scheme: public

@@ -1,18 +1,10 @@
 third_party_settings:
   field_group:
     group_topic_content:
-      label: Content
-      format_settings:
-        label: Content
-    group_topic_description:
-      label: Description
-      format_settings:
-        label: Description
+      label: 'Basic information'
     group_topic_visibility:
-      label: Visibility
-      format_settings:
-        label: Visibility
+      label: 'Access permissions'
     group_attachments:
-      label: Attachments
-      format_settings:
-        label: Attachments
+      label: 'Additional information'
+    group_settings:
+      label: Settings

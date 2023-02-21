@@ -8,6 +8,7 @@ module:
   address: 0
   admin_toolbar: 0
   admin_toolbar_tools: 0
+  advancedqueue: 0
   better_exposed_filters: 0
   big_pipe: 0
   block: 0
@@ -32,8 +33,6 @@ module:
   entity: 0
   entity_access_by_field: 0
   exif_orientation: 0
-  features: 0
-  features_ui: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -65,6 +64,7 @@ module:
   menu_link_content: 0
   menu_ui: 0
   message: 0
+  message_notify: 0
   node: 0
   options: 0
   override_node_options: 0
@@ -84,7 +84,9 @@ module:
   slack: 0
   slack_invite: 0
   social_activity: 0
+  social_advanced_queue: 0
   social_comment: 0
+  social_comment_upload: 0
   social_core: 0
   social_editor: 0
   social_event: 0
@@ -103,6 +105,7 @@ module:
   social_node: 0
   social_page: 0
   social_post: 0
+  social_post_album: 0
   social_post_photo: 0
   social_profile: 0
   social_queue_storage: 0
@@ -124,6 +127,7 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  ultimate_cron: 0
   update: 0
   update_helper: 0
   user: 0

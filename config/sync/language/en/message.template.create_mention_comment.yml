@@ -2,8 +2,8 @@ label: 'Create mention in a comment'
 description: 'A person mentioned me in a comment'
 text:
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a <a href="[message:field_message_related_object:entity:url:absolute]">comment</a> on [social_mentions:commented_entity_link_html]</p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> mentioned you in a <a href=\"[message:field_message_related_object:entity:url:absolute]\">comment</a> on [social_mentions:commented_entity_link_html]</p>\r\n"
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a <a href="[message:field_message_related_object:entity:url:absolute]">comment</a> on [social_mentions:commented_entity_link_html]</p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> mentioned you in a <a href=\"[message:field_message_related_object:entity:url:absolute]\">comment</a> on [social_mentions:commented_entity_link_html]</p>\r\n"
   -
-    value: '<p><a href="[message:author:url:absolute]">[message:author:display-name]</a> mentioned you in a <a href="[message:field_message_related_object:entity:url:absolute]">comment</a> on [social_mentions:commented_entity_link_html]</p>'
+    value: "<p><a href=\"[message:author:url:absolute]\">[message:author:display-name]</a> mentioned you in a <a href=\"[message:field_message_related_object:entity:url:absolute]\">comment</a>&nbsp;made on the [social_mentions:commented_entity_link_html]</p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"

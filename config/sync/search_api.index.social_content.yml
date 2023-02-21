@@ -5,6 +5,7 @@ dependencies:
   module:
     - node
     - search_api
+    - entity_access_by_field
   config:
     - field.storage.node.field_event_date
     - field.storage.node.field_event_date_end
@@ -122,6 +123,9 @@ processor_settings:
     weights:
       preprocess_index: -10
       preprocess_query: -10
+  entity_access_by_field:
+    weights:
+      preprocess_query: -30
   html_filter:
     plugin_id: html_filter
     all_fields: false
@@ -214,6 +218,7 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
+    ignored: ._-
   transliteration:
     plugin_id: transliteration
     all_fields: true

@@ -14,6 +14,7 @@ third_party_settings:
       post-post: post-post
     activity_action: create_entitiy_action
     activity_aggregate: false
+    email_subject: ''
 _core:
   default_config_hash: nWPJvxp7-QxxKj9ytIlxuI_ITZ72M2a50dMEjmbkw6w
 template: create_post_profile_stream

@@ -8,7 +8,7 @@ enabled_types:
     - event
   post:
     - post
-hide_vote_widget: true
+hide_vote_widget: false
 _core:
   default_config_hash: 6AEbDZGtCKf9Rgdo1yE2umJy2o1tyhRJ0tnwtj6i690
 langcode: nb

@@ -1,4 +1,3 @@
-uuid: 4c19589b-aadb-499f-bc17-5feb64769d12
 langcode: nb
 status: true
 dependencies:
@@ -7,13 +6,11 @@ dependencies:
     - node.type.topic
   module:
     - file
-_core:
-  default_config_hash: 60yftPxc_EYt-k1QzKIvG9htqt_yeyC0jKCKOIZ87iQ
 id: node.topic.field_files
 field_name: field_files
 entity_type: node
 bundle: topic
-label: Files
+label: Attachment
 description: ''
 required: false
 translatable: true
@@ -21,7 +18,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'txt pdf doc docx xls xlsx ppt pptx csv'
+  file_extensions: 'txt pdf doc docx xls xlsx ppt pptx csv jpg jpeg png gif'
   max_filesize: ''
   description_field: true
   handler: 'default:file'

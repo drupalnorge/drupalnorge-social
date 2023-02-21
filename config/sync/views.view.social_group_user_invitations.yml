@@ -1,18 +1,14 @@
-uuid: d280bd5d-69b3-400a-91fa-c792e7ac3aff
-langcode: nb
+langcode: en
 status: true
 dependencies:
-  config:
-    - user.role.authenticated
-  enforced:
-    module:
-      - social_group_invite
   module:
     - group
     - social_group
+    - social_group_invite
     - user
-_core:
-  default_config_hash: MYwTuZI8aQno3WMJYqXpLdCE6xQFkDS6nRMl3VRoAMs
+  enforced:
+    module:
+      - social_group_invite
 id: social_group_user_invitations
 label: 'Social Group User invitations'
 module: group
@@ -61,10 +57,10 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: â€¹â€¹
-            next: â€ºâ€º
-            first: 'Â« First'
-            last: 'Last Â»'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            first: '« First'
+            last: 'Last »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'

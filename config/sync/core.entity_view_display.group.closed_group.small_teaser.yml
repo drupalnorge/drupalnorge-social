@@ -45,3 +45,4 @@ hidden:
   langcode: true
   search_api_excerpt: true
   uid: true
+  flag_mute_group_notifications: true

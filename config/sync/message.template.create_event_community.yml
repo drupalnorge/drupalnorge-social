@@ -17,6 +17,7 @@ third_party_settings:
     activity_action: create_entitiy_action
     activity_bundle_entities:
       node-event: node-event
+    email_subject: ''
 _core:
   default_config_hash: s1MpTn9zFkt9GaS5LPqEJfh9KjvdPzltKHLqk-1JmIQ
 template: create_event_community

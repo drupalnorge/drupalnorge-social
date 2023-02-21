@@ -1,0 +1,17 @@
+uuid: 595f6679-d9e7-464b-9bb0-a66fbd7e7056
+langcode: nb
+status: true
+dependencies:
+  module:
+    - social_lets_connect_usage
+title: 'Default cron handler'
+id: social_lets_connect_usage_cron
+weight: 0
+module: social_lets_connect_usage
+callback: social_lets_connect_usage_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

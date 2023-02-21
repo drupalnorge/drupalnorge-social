@@ -1,5 +1,4 @@
-uuid: c6bbcbbc-41a8-4a43-a68d-6aebab4ee185
-langcode: nb
+langcode: en
 status: true
 dependencies:
   enforced:
@@ -19,8 +18,6 @@ third_party_settings:
     activity_create_direct: true
     activity_aggregate: false
     activity_entity_condition: ''
-_core:
-  default_config_hash: Xhgfsd8evUGA3wgqOQStlgzXVoH6AG_2idsXE09ZVQo
 template: approve_request_join_group
 label: 'Approve request to join a group'
 description: 'My group membership request is approved'
@@ -32,7 +29,7 @@ text:
     value: "<p>Your membership request for the <a href=\"gurl]\">[message:gtitle]</a> group has been approved</p>\r\n"
     format: basic_html
   -
-    value: "<p>Your membership request for the <a href=\"[message:gurl]\">[message:gtitle]</a> group has been approved</p>\r\n\r\n<table class=\"btn-wrapp\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td class=\"align-center\"><a class=\"btn-link btn-link-bg btn-link-one\" href=\"[message:gurl]\">Visit group</a></td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n"
+    value: "<p>Your request to join the <a href=\"[message:gurl]\">[message:gtitle]</a> group has been approved! You are now a member of the group and can start posting.</p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"
     format: full_html
 settings:
   'token options':

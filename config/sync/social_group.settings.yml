@@ -2,3 +2,8 @@ allow_group_selection_in_node: false
 allow_hero_selection: false
 default_hero: hero
 langcode: nb
+allow_group_create: true
+social_group_type_required: false
+cross_posting:
+  status: false
+  content_types: {  }

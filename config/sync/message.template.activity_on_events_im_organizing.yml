@@ -1,4 +1,3 @@
-uuid: 5a2dabf5-106f-4656-89e8-958fe036d79e
 langcode: nb
 status: true
 dependencies:
@@ -16,20 +15,19 @@ third_party_settings:
     activity_create_direct: false
     activity_aggregate: false
     activity_entity_condition: ''
-_core:
-  default_config_hash: fU8silRFFQrY9hQOzMGBkPFIDGc_F8PI94ZUAVe1sQw
+    email_subject: 'You have a new enrollment to your event'
 template: activity_on_events_im_organizing
 label: 'Activity on events I am organizing'
 description: 'Activity on events I am organizing'
 text:
   -
-    value: '<p><a href="[social_event:enrolled_event_url]">[social_event:enrolled_user]</a> has enrolled to the event [social_event:event_iam_organizing] you are organizing</p>'
+    value: "<p><a href=\"[social_event:enrolled_event_url]\">[social_event:enrolled_user]</a> has enrolled to the event [social_event:event_iam_organizing] you are organizing</p>\r\n"
     format: full_html
   -
-    value: '<p><a href="[social_event:enrolled_event_url]">[social_event:enrolled_user]</a> has enrolled to the event [social_event:event_iam_organizing] you are organizing</p>'
+    value: "<p><a href=\"[social_event:enrolled_event_url]\">[social_event:enrolled_user]</a> has enrolled to the event [social_event:event_iam_organizing] you are organizing</p>\r\n"
     format: full_html
   -
-    value: '<p><a href="[social_event:enrolled_event_url]">[social_event:enrolled_user]</a> has enrolled to the event [social_event:event_iam_organizing] you are organizing</p>'
+    value: "<p><a href=\"[social_event:enrolled_event_url]\">[social_event:enrolled_user]</a> has enrolled to the event [social_event:event_iam_organizing] you are organizing</p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"
     format: full_html
 settings:
   'token options':

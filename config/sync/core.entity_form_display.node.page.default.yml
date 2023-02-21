@@ -23,55 +23,62 @@ third_party_settings:
       children:
         - title
         - field_page_image
+        - body
       parent_name: ''
       weight: 0
-      label: Innhold
+      label: 'Basic information'
       format_type: fieldset
       format_settings:
-        label: Innhold
         required_fields: true
         id: content
         classes: 'card '
-      region: content
-    group_page_description:
-      children:
-        - body
-      parent_name: ''
-      weight: 2
-      label: 'Page description'
-      format_type: fieldset
-      format_settings:
-        label: 'Page description'
-        required_fields: true
-        id: description
-        classes: 'card '
-      region: content
+        description: ''
+      region: hidden
     group_attachments:
       children:
         - field_files
       parent_name: ''
       weight: 3
-      label: Attachments
-      format_type: fieldset
+      label: 'Additional information'
+      format_type: details
       format_settings:
-        label: Attachments
         required_fields: true
         id: attachments
-        classes: 'card '
-      region: content
+        classes: social-collapsible-fieldset
+        description: ''
+        open: false
+      region: hidden
     group_page_visibility:
       children:
         - field_content_visibility
       parent_name: ''
       weight: 1
-      label: Visibility
+      label: 'Access permissions'
       format_type: fieldset
       format_settings:
-        label: Visibility
         required_fields: true
         id: visibility
         classes: 'card '
-      region: content
+        description: ''
+      region: hidden
+    group_settings:
+      children:
+        - uid
+        - created
+        - field_page_comments
+        - path
+        - status
+      format_settings:
+        classes: social-collapsible-fieldset
+        description: ''
+        id: ''
+        open: false
+        required_fields: true
+      format_type: details
+      label: Settings
+      parent_name: ''
+      region: hidden
+      weight: 20
 _core:
   default_config_hash: CKl-Z0PoQkJ3FUGjZNwyNd8cjqpjAJbtSaeXPkXKhT8
 id: node.page.default
@@ -81,7 +88,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 2
+    weight: 3
     settings:
       rows: 9
       summary_rows: 3
@@ -91,7 +98,7 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -109,7 +116,7 @@ content:
     type: file_generic
     region: content
   field_page_comments:
-    weight: 6
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: comment_default
@@ -125,6 +132,8 @@ content:
         - hero
         - teaser
       progress_indicator: throbber
+      crop_types_required: {  }
+      warn_multiple_usages: true
     third_party_settings: {  }
     type: image_widget_crop
     region: content
@@ -137,7 +146,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -158,7 +167,7 @@ content:
     region: content
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60
@@ -166,6 +175,11 @@ content:
       match_limit: 10
     third_party_settings: {  }
     region: content
+  url_redirects:
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+    weight: 50
 hidden:
   groups: true
   promote: true

@@ -16,7 +16,7 @@ bundle: topic
 label: Image
 description: 'Crop your image to select which part of your image to show on display.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -38,3 +38,9 @@ settings:
   handler: 'default:file'
   handler_settings: {  }
 field_type: image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      file: '0'
+      title: title

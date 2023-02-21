@@ -8,6 +8,7 @@ dependencies:
     - profile
     - user
     - search_api
+    - entity_access_by_field
     - social_search
   config:
     - field.storage.group.field_group_description
@@ -121,7 +122,6 @@ field_settings:
       module:
         - profile
         - user
-        - user
   node_grants:
     label: 'Node access information'
     property_path: search_api_node_grants
@@ -218,7 +218,6 @@ field_settings:
       module:
         - profile
         - user
-        - user
 datasource_settings:
   'entity:group':
     bundles:
@@ -245,6 +244,9 @@ processor_settings:
     weights:
       preprocess_query: -30
   content_access:
+    weights:
+      preprocess_query: -30
+  entity_access_by_field:
     weights:
       preprocess_query: -30
   html_filter:
@@ -352,6 +354,7 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
+    ignored: ._-
   transliteration:
     all_fields: true
     fields:

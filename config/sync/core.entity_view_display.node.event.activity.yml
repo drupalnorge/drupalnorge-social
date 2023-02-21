@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_content_visibility
     - field.field.node.event.field_enroll_method
     - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_all_day
     - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
@@ -44,7 +45,7 @@ content:
     label: hidden
     settings:
       num_comments: 2
-      always_show_all_comments: '1'
+      always_show_all_comments: true
     third_party_settings: {  }
     type: comment_node
     region: content
@@ -103,6 +104,8 @@ hidden:
   body: true
   field_content_visibility: true
   field_enroll_method: true
+  field_event_addtocal: true
+  field_event_all_day: true
   field_event_enroll: true
   field_event_enroll_outside_group: true
   field_event_managers: true

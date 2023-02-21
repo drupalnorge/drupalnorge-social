@@ -19,6 +19,7 @@ third_party_settings:
     activity_create_direct: false
     activity_aggregate: false
     activity_entity_condition: ''
+    email_subject: 'You have been invited to an event'
 _core:
   default_config_hash: Lz6KAyasxQ6W8lkwJLbSrOWVrM89aXMLCej727o3vig
 template: invite_event_enrollment

@@ -16,6 +16,7 @@ third_party_settings:
     activity_action: create_entitiy_action
     activity_bundle_entities:
       post-post: post-post
+    email_subject: ''
 _core:
   default_config_hash: 93dI7ty4qW1rNQwwKFpjp3-Lsyk3JmaSMxVnMLt1vLw
 template: create_post_group

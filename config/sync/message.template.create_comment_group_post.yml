@@ -16,6 +16,7 @@ third_party_settings:
     activity_create_direct: true
     activity_aggregate: true
     activity_entity_condition: comment_not_reply
+    email_subject: ''
 _core:
   default_config_hash: on-RJ-ruWfmVRJ51LRpkvjmQawj8wIMh6LCkpFP7Ht8
 template: create_comment_group_post

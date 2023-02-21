@@ -67,6 +67,16 @@ display:
           admin_label: 'Entity Path'
           alter:
             text: '{{ nid }}{{ uid }}{{ id }}'
+        field_event_type:
+          admin_label: 'Event type'
+          separator: ', '
+        field_topic_type:
+          admin_label: 'Topic type'
+          separator: ', '
+        nothing_3:
+          admin_label: Type
+          alter:
+            text: '{{ field_event_type }}{{ field_topic_type }}'
       arguments:
         search_api_fulltext:
           exception:

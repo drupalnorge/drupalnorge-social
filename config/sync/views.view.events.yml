@@ -541,6 +541,7 @@ display:
         groups:
           1: AND
       title: 'Upcoming events'
+      rendering_language: '***LANGUAGE_language_interface***'
     cache_metadata:
       max-age: -1
       contexts:
@@ -599,25 +600,25 @@ display:
             default_group: '1'
             default_group_multiple: {  }
             description: ''
-            group_items:
-              1:
-                operator: in
-                title: 'Ongoing and upcoming events'
-                value: '1'
-              2:
-                operator: in
-                title: 'Past events'
-                value: '2'
-              3:
-                operator: in
-                title: ''
-                value: {  }
             identifier: field_event_date_value
             label: ''
             multiple: false
             optional: false
             remember: false
             widget: radios
+            group_items:
+              1:
+                title: 'Ongoing and upcoming events'
+                operator: in
+                value: '1'
+              2:
+                title: 'Past events'
+                operator: in
+                value: '2'
+              3:
+                title: ''
+                operator: in
+                value: null
           group_type: group
           id: event_date
           is_grouped: true
@@ -625,7 +626,7 @@ display:
           plugin_id: social_event_date_filter
           relationship: none
           table: node__field_event_date
-          value: {  }
+          value: null
         type:
           id: type
           table: node_field_data
@@ -809,6 +810,7 @@ display:
           plugin_id: social_event_date_sort
           relationship: none
           table: node__field_event_date
+      rendering_language: '***LANGUAGE_language_interface***'
     cache_metadata:
       max-age: -1
       contexts:

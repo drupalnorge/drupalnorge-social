@@ -17,6 +17,7 @@ third_party_settings:
     activity_action: create_entitiy_action
     activity_bundle_entities:
       node-topic: node-topic
+    email_subject: ''
 _core:
   default_config_hash: Bw5yVJRJ-EanAEt1N7mO67u9Nn3keT9dkMLSgBeAOJ8
 template: create_topic_community

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_content_visibility
     - field.field.node.event.field_enroll_method
     - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_all_day
     - field.field.node.event.field_event_comments
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_date_end
@@ -56,6 +57,8 @@ hidden:
   field_content_visibility: true
   field_enroll_method: true
   field_event_address: true
+  field_event_addtocal: true
+  field_event_all_day: true
   field_event_comments: true
   field_event_date_end: true
   field_event_enroll: true

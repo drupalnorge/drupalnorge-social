@@ -1,4 +1,3 @@
-uuid: 77f78b44-7ce4-4dec-9dce-ebd80ca67648
 langcode: nb
 status: true
 dependencies:
@@ -9,14 +8,13 @@ dependencies:
     - field.field.node.page.field_files
     - field.field.node.page.field_page_comments
     - field.field.node.page.field_page_image
+    - image.style.social_file_thumbnails
     - node.type.page
   module:
     - comment
-    - file
+    - social_core
     - text
     - user
-_core:
-  default_config_hash: mXxs8zpsOG505b8ChDw89wSloy1o7O7mnvzRirKI8rA
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -32,21 +30,26 @@ content:
   field_files:
     weight: 1
     label: above
-    settings: {  }
+    settings:
+      image_style: social_file_thumbnails
+      image_link: file
     third_party_settings: {  }
-    type: file_default
+    type: file_image_default
     region: content
   field_page_comments:
     weight: 2
     label: above
     settings:
       pager_id: 0
+      view_mode: default
     third_party_settings: {  }
     type: comment_default
     region: content
   flag_follow_content:
     weight: 10
     region: content
+    settings: {  }
+    third_party_settings: {  }
   links:
     weight: 11
     region: content
@@ -59,5 +62,4 @@ hidden:
   groups_type_closed_group: true
   groups_type_open_group: true
   groups_type_public_group: true
-  langcode: true
   search_api_excerpt: true

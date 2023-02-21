@@ -1,0 +1,29 @@
+uuid: fb22e0df-15d1-4715-b641-221c10f8e60a
+langcode: nb
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - field.storage.comment.field_comment_files
+  module:
+    - file
+_core:
+  default_config_hash: 2r0a1cQqdEdEetEmMIxoqWVcaDdRctOLKa2Roy0X1UQ
+id: comment.comment.field_comment_files
+field_name: field_comment_files
+entity_type: comment
+bundle: comment
+label: Files
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc docx xls xlsx ppt pptx csv png gif jpg jpeg'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file
