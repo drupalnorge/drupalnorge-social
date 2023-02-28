@@ -125,6 +125,19 @@
                     "Allow class property types instead of @var comments": "https://www.drupal.org/files/issues/2021-09-21/coder-3123282-3.patch"
                 }
             }
+        },
+        "violinist": {
+            "bundled_packages": {
+                "drupal/core-recommended": [
+                    "drupal/core-composer-scaffold",
+                    "drupal/core-dev"
+                ]
+            },
+            "blocklist": [
+                "drupal/core-composer-scaffold",
+                "drupal/core-dev"
+            ],
+            "one_pull_request_per_package": 1
         }
     }
 }
