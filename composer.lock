@@ -4183,6 +4183,10 @@
                     "name": "Kristiaan Van den Eynde",
                     "homepage": "https://www.drupal.org/u/kristiaanvandeneynde",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "kristiaanvandeneynde",
+                    "homepage": "https://www.drupal.org/user/1345130"
                 }
             ],
             "description": "This module allows you to group users, content and other entities",
@@ -6097,10 +6101,6 @@
                     "name": "Stephen Mustgrave (smustgrave)",
                     "homepage": "https://www.drupal.org/u/smustgrave",
                     "role": "Maintainer"
-                },
-                {
-                    "name": "smustgrave",
-                    "homepage": "https://www.drupal.org/user/3252890"
                 }
             ],
             "description": "Integration with Slack.com service.",
@@ -6391,7 +6391,7 @@
                     "homepage": "https://www.drupal.org/user/272162"
                 },
                 {
-                    "name": "Ressinel",
+                    "name": "ressinel",
                     "homepage": "https://www.drupal.org/user/3536075"
                 },
                 {
@@ -15669,8 +15669,14 @@
             "version": "8.3.17",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/coder.git",
+                "url": "https://github.com/pfrenssen/coder.git",
                 "reference": "1c4662337418ab88c9ddf40348f0638e35d49182"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pfrenssen/coder/zipball/1c4662337418ab88c9ddf40348f0638e35d49182",
+                "reference": "1c4662337418ab88c9ddf40348f0638e35d49182",
+                "shasum": ""
             },
             "require": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1 || ^1.0.0",

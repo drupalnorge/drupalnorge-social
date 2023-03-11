@@ -2,7 +2,7 @@
     "name": "goalgorilla/social_template",
     "description": "Social project template for composer based Open Social projects.",
     "type": "project",
-    "license": "GPL-2.0+",
+    "license": "GPL-2.0-or-later",
     "repositories": [
         {
             "type": "composer",
@@ -65,22 +65,22 @@
             "./bin/behat --colors --strict"
         ],
         "import": [
-            "./bin/drush cache:clear drush",
-            "./bin/drush config:import --yes",
-            "./bin/drush cache:rebuild"
+            "./bin/drush --root=$(pwd)/html cache:clear drush",
+            "./bin/drush --root=$(pwd)/html config:import --yes",
+            "./bin/drush --root=$(pwd)/html cache:rebuild"
         ],
         "export": [
-            "./bin/drush cache:clear drush",
-            "./bin/drush config:export --yes"
+            "./bin/drush --root=$(pwd)/html cache:clear drush",
+            "./bin/drush --root=$(pwd)/html config:export --yes"
         ],
         "update-site": [
-            "./bin/drush state:set system.maintenance_mode 1 --yes",
-            "./bin/drush updatedb --yes",
-            "./bin/drush cache:rebuild",
+            "./bin/drush --root=$(pwd)/html state:set system.maintenance_mode 1 --yes",
+            "./bin/drush --root=$(pwd)/html updatedb --yes",
+            "./bin/drush --root=$(pwd)/html cache:rebuild",
             "@composer import",
-            "./bin/drush deploy:hook --yes",
-            "./bin/drush state:set system.maintenance_mode 0 --yes",
-            "./bin/drush cache:rebuild"
+            "./bin/drush --root=$(pwd)/html deploy:hook --yes",
+            "./bin/drush --root=$(pwd)/html state:set system.maintenance_mode 0 --yes",
+            "./bin/drush --root=$(pwd)/html cache:rebuild"
         ],
         "build": [
             "git pull",
@@ -88,12 +88,12 @@
             "@composer update-site"
         ],
         "import-sanitized": [
-            "./bin/drush sql:drop --yes",
+            "./bin/drush --root=$(pwd)/html sql:drop --yes",
             "wget --no-check-certificate https://drupalnorge.no/sanitized.db",
-            "./bin/drush sql:cli < ./sanitized.db",
+            "./bin/drush --root=$(pwd)/html sql:cli < ./sanitized.db",
             "rm -f ./sanitized.db",
-            "./bin/drush cache:rebuild",
-            "./bin/drush user:login"
+            "./bin/drush --root=$(pwd)/html cache:rebuild",
+            "./bin/drush --root=$(pwd)/html user:login"
         ]
     },
     "extra": {
