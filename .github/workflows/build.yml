@@ -1,0 +1,144 @@
+name: Build, Test & Deploy
+
+on:
+  push:
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - synchronize
+      - reopened
+      - ready_for_review
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+env:
+  branch_name: ${{ github.head_ref || github.ref_name }}
+  php_version: "8.1"
+  composer_version: "2.x"
+  project_tools: "composer:v2"
+
+jobs:
+  build:
+    name: "Build"
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Setup PHP environment with Composer
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ env.php_version }}
+          tools: ${{ env.project_tools }}
+
+      - name: Check out the repository code
+        uses: actions/checkout@v3
+
+      - name: Validate composer.json and composer.lock
+        run: composer validate --strict
+
+      - name: Get Composer Cache Directory
+        id: composer-cache
+        run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: ${{ runner.os }}-composer-
+
+      - name: Composer install
+        run: |
+          if [[ ${{ env.branch_name }} == "master" ]]; then
+            composer install --no-dev --no-interaction --optimize-autoloader
+          else
+            composer install --no-interaction --optimize-autoloader
+          fi
+
+      - name: Creating symlink
+        run: |
+          if [ ! -d $(pwd)/html/sites/default/files ]; then
+            mkdir -pm 755 $(pwd)/html/sites/default/files;
+            mkdir -pm 755 $(pwd)/html/sites/default/files/translations;
+          fi
+          if [ ! -d $(pwd)/html/sites/default/private ]; then
+            mkdir -pm 755 $(pwd)/html/sites/default/private;
+          fi
+
+      - name: Creating an artifact
+        run: >
+          tar
+          --exclude="./.ddev"
+          --exclude="./.git"
+          --exclude="./.github"
+          --exclude="./config"
+          --exclude="./drush"
+          --exclude="./html/modules/custom"
+          --exclude="./html/themes/custom"
+          --exclude="./html/sites/default/settings.githubactions.php.example"
+          --exclude="./html/sites/default/settings.php"
+          --exclude="./tests"
+          --exclude="./.gitignore"
+          --exclude="./*.*.dist"
+          --exclude="./composer.*"
+          --exclude="./README.md"
+          -zcvf /tmp/artifact.tar.gz .
+
+      - name: Uploading artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifact
+          path: /tmp/artifact.tar.gz
+          if-no-files-found: error
+
+  test:
+    name: "Test"
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    services:
+      mariadb:
+        image: mariadb:10.5
+        ports:
+          - 3306:3306
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: dnorge
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+      chromedriver:
+        image: selenium/standalone-chrome:104.0-chromedriver-104.0
+        ports:
+          - 8643:8643
+        env:
+          SE_OPTS: "--port 8643"
+
+    steps:
+      - name: Setup PHP environment with Composer
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ env.php_version }}
+          tools: ${{ env.project_tools }}
+
+      - name: Check out the repository code
+        uses: actions/checkout@v3
+
+      - name: Downloading artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifact
+
+      - name: Extracting artifact
+        run: tar -xvf artifact.tar.gz
+
+      - name: Download and import the sanitized database
+        run: composer import-sanitized
+
+      - name: Update database and importing configuration
+        run: composer update-site
+
+      - name: Run tests
+        run: composer test

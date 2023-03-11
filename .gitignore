@@ -54,7 +54,7 @@ node_modules
 
 # Ignore local Behat and Screenshots
 /screenshots
-behat.yml
+./behat.yml
 
 # Ignore SSL well-known
 /html/.well-known/
