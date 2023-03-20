@@ -6264,17 +6264,17 @@
         },
         {
             "name": "drupal/socialbase",
-            "version": "2.4.7",
+            "version": "2.4.8",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/socialbase.git",
-                "reference": "2.4.7"
+                "reference": "2.4.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/socialbase-2.4.7.zip",
-                "reference": "2.4.7",
-                "shasum": "d612d18228a5b6c06a07aad784a6c34a8d106432"
+                "url": "https://ftp.drupal.org/files/projects/socialbase-2.4.8.zip",
+                "reference": "2.4.8",
+                "shasum": "3360028f20f114a9727bda2bd2948d84791e797f"
             },
             "require": {
                 "drupal/bootstrap": "3.25",
@@ -6283,8 +6283,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "2.4.7",
-                    "datestamp": "1676472829",
+                    "version": "2.4.8",
+                    "datestamp": "1679039143",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6342,17 +6342,17 @@
         },
         {
             "name": "drupal/socialblue",
-            "version": "2.4.3",
+            "version": "2.4.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/socialblue.git",
-                "reference": "2.4.3"
+                "reference": "2.4.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/socialblue-2.4.3.zip",
-                "reference": "2.4.3",
-                "shasum": "b12519ee1d995828cb12868cd3f847cec4b3182c"
+                "url": "https://ftp.drupal.org/files/projects/socialblue-2.4.4.zip",
+                "reference": "2.4.4",
+                "shasum": "118e9e0a338185110d40c811e82b87a067a4b9d9"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -6361,8 +6361,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "2.4.3",
-                    "datestamp": "1669883276",
+                    "version": "2.4.4",
+                    "datestamp": "1679043755",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7572,16 +7572,16 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "11.8.0",
+            "version": "11.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "f8f9adbd4d5c7667626af917ffe7e9e915825dbd"
+                "reference": "a9bb20ddc50721b34f56458ab54722a78603a942"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/f8f9adbd4d5c7667626af917ffe7e9e915825dbd",
-                "reference": "f8f9adbd4d5c7667626af917ffe7e9e915825dbd",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/a9bb20ddc50721b34f56458ab54722a78603a942",
+                "reference": "a9bb20ddc50721b34f56458ab54722a78603a942",
                 "shasum": ""
             },
             "require": {
@@ -7771,9 +7771,9 @@
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
             "support": {
-                "source": "https://github.com/goalgorilla/open_social/tree/11.8.0"
+                "source": "https://github.com/goalgorilla/open_social/tree/11.8.1"
             },
-            "time": "2023-03-14T09:19:07+00:00"
+            "time": "2023-03-20T08:26:27+00:00"
         },
         {
             "name": "google/recaptcha",
@@ -16806,24 +16806,27 @@
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.6.2",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "48f445a408c131e38cab1c235aa6d2bb7a0bb20d"
+                "reference": "1534aea9bde19a5c85c5d1e1f834ab63f4c5dcf5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/48f445a408c131e38cab1c235aa6d2bb7a0bb20d",
-                "reference": "48f445a408c131e38cab1c235aa6d2bb7a0bb20d",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/1534aea9bde19a5c85c5d1e1f834ab63f4c5dcf5",
+                "reference": "1534aea9bde19a5c85c5d1e1f834ab63f4c5dcf5",
                 "shasum": ""
             },
             "require": {
+                "doctrine/deprecations": "^1.0",
                 "php": "^7.4 || ^8.0",
-                "phpdocumentor/reflection-common": "^2.0"
+                "phpdocumentor/reflection-common": "^2.0",
+                "phpstan/phpdoc-parser": "^1.13"
             },
             "require-dev": {
                 "ext-tokenizer": "*",
+                "phpbench/phpbench": "^1.2",
                 "phpstan/extension-installer": "^1.1",
                 "phpstan/phpstan": "^1.8",
                 "phpstan/phpstan-phpunit": "^1.1",
@@ -16855,9 +16858,9 @@
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
             "support": {
                 "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
-                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.6.2"
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.7.0"
             },
-            "time": "2022-10-14T12:47:21+00:00"
+            "time": "2023-03-12T10:13:29+00:00"
         },
         {
             "name": "phpspec/prophecy",
