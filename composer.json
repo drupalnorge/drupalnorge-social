@@ -137,7 +137,8 @@
                 "drupal/core-composer-scaffold",
                 "drupal/core-dev"
             ],
-            "one_pull_request_per_package": 1
+            "one_pull_request_per_package": 1,
+            "allow_updates_beyond_constraint": 0
         }
     }
 }
