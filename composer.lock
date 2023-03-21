@@ -7576,16 +7576,16 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "11.8.1",
+            "version": "11.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "a9bb20ddc50721b34f56458ab54722a78603a942"
+                "reference": "86eccd6e5a269e02c27462ccf54b93e4559833f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/a9bb20ddc50721b34f56458ab54722a78603a942",
-                "reference": "a9bb20ddc50721b34f56458ab54722a78603a942",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/86eccd6e5a269e02c27462ccf54b93e4559833f3",
+                "reference": "86eccd6e5a269e02c27462ccf54b93e4559833f3",
                 "shasum": ""
             },
             "require": {
@@ -7775,9 +7775,9 @@
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
             "support": {
-                "source": "https://github.com/goalgorilla/open_social/tree/11.8.1"
+                "source": "https://github.com/goalgorilla/open_social/tree/11.8.2"
             },
-            "time": "2023-03-20T08:26:27+00:00"
+            "time": "2023-03-21T07:54:28+00:00"
         },
         {
             "name": "google/recaptcha",
