@@ -7336,16 +7336,16 @@
         },
         {
             "name": "eiriksm/site-schema",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eiriksm/drush-site-schema.git",
-                "reference": "65eacad506a120bf913027a789f61ec07af0e9e3"
+                "reference": "fdf7961b7262b1433ee21b22ffbb5f798afcfb0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eiriksm/drush-site-schema/zipball/65eacad506a120bf913027a789f61ec07af0e9e3",
-                "reference": "65eacad506a120bf913027a789f61ec07af0e9e3",
+                "url": "https://api.github.com/repos/eiriksm/drush-site-schema/zipball/fdf7961b7262b1433ee21b22ffbb5f798afcfb0c",
+                "reference": "fdf7961b7262b1433ee21b22ffbb5f798afcfb0c",
                 "shasum": ""
             },
             "require": {
@@ -7362,9 +7362,9 @@
             "description": "Allows you to get the complete picture of a site schema, to use for CI for example",
             "support": {
                 "issues": "https://github.com/eiriksm/drush-site-schema/issues",
-                "source": "https://github.com/eiriksm/drush-site-schema/tree/1.1.1"
+                "source": "https://github.com/eiriksm/drush-site-schema/tree/1.2.0"
             },
-            "time": "2022-07-15T09:08:17+00:00"
+            "time": "2023-03-21T13:51:22+00:00"
         },
         {
             "name": "eluceo/ical",
