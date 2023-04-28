@@ -7575,16 +7575,16 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "11.8.3",
+            "version": "11.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "47bb823b7d58aa38c03ef2c50e7aa6b63e60f00e"
+                "reference": "ec9ad46660ee207cd807f9aedbc9a51071830928"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/47bb823b7d58aa38c03ef2c50e7aa6b63e60f00e",
-                "reference": "47bb823b7d58aa38c03ef2c50e7aa6b63e60f00e",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/ec9ad46660ee207cd807f9aedbc9a51071830928",
+                "reference": "ec9ad46660ee207cd807f9aedbc9a51071830928",
                 "shasum": ""
             },
             "require": {
@@ -7712,7 +7712,8 @@
                         "Issue #2998390: Cache is not invalidated when comment deleted": "https://www.drupal.org/files/issues/2022-02-07/2998390-8.patch",
                         "Issue #3282073: Comment the \"user_post_update_update_roles\" that was added in Drupal 9.3": "https://www.drupal.org/files/issues/2022-05-24/social-comment_the_user_post_update_update_roles-3282073-2.patch",
                         "Image derivative generation does not work if effect \"Convert\" in use and file stored in private filesystem": "https://www.drupal.org/files/issues/2022-09-23/2786735-39.patch",
-                        "Issue #2107455: Image field default value not shown when upload destination set to private file storage": "https://www.drupal.org/files/issues/2022-06-24/2107455-75.patch"
+                        "Issue #2107455: Image field default value not shown when upload destination set to private file storage": "https://www.drupal.org/files/issues/2022-06-24/2107455-75.patch",
+                        "Issue #3052115: Mark an entity as 'syncing' during a migration update": "https://www.drupal.org/files/issues/2023-02-01/3052115-59.patch"
                     },
                     "drupal/config_update": {
                         "3248161: Symfony 4.4 event dispatcher parameter order change": "https://www.drupal.org/files/issues/2021-11-08/symfony-4-4-event-dispatcher-parameter-order-change-3248161-3.patch"
@@ -7775,9 +7776,9 @@
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
             "support": {
-                "source": "https://github.com/goalgorilla/open_social/tree/11.8.3"
+                "source": "https://github.com/goalgorilla/open_social/tree/11.8.4"
             },
-            "time": "2023-04-11T12:31:25+00:00"
+            "time": "2023-04-28T08:54:44+00:00"
         },
         {
             "name": "google/recaptcha",
@@ -13987,16 +13988,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v5.4.22",
+            "version": "v5.4.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "e2edac9ce47e6df07e38143c7cfa6bdbc1a6dcc4"
+                "reference": "9a8a5b6d6508928174ded2109e29328a55342a42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/e2edac9ce47e6df07e38143c7cfa6bdbc1a6dcc4",
-                "reference": "e2edac9ce47e6df07e38143c7cfa6bdbc1a6dcc4",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/9a8a5b6d6508928174ded2109e29328a55342a42",
+                "reference": "9a8a5b6d6508928174ded2109e29328a55342a42",
                 "shasum": ""
             },
             "require": {
@@ -14056,7 +14057,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v5.4.22"
+                "source": "https://github.com/symfony/var-dumper/tree/v5.4.23"
             },
             "funding": [
                 {
@@ -14072,7 +14073,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-25T09:27:28+00:00"
+            "time": "2023-04-18T09:26:27+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -19271,16 +19272,16 @@
         },
         {
             "name": "symfony/property-info",
-            "version": "v5.4.22",
+            "version": "v5.4.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-info.git",
-                "reference": "8454a441d117449abd0d61124e68f93f927ad5ba"
+                "reference": "ff45ebbfd781eab2571d9d4412d82a9a733fc2b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-info/zipball/8454a441d117449abd0d61124e68f93f927ad5ba",
-                "reference": "8454a441d117449abd0d61124e68f93f927ad5ba",
+                "url": "https://api.github.com/repos/symfony/property-info/zipball/ff45ebbfd781eab2571d9d4412d82a9a733fc2b3",
+                "reference": "ff45ebbfd781eab2571d9d4412d82a9a733fc2b3",
                 "shasum": ""
             },
             "require": {
@@ -19342,7 +19343,7 @@
                 "validator"
             ],
             "support": {
-                "source": "https://github.com/symfony/property-info/tree/v5.4.22"
+                "source": "https://github.com/symfony/property-info/tree/v5.4.23"
             },
             "funding": [
                 {
@@ -19358,7 +19359,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-14T14:59:20+00:00"
+            "time": "2023-04-17T14:20:34+00:00"
         },
         {
             "name": "theseer/tokenizer",
