@@ -214,6 +214,7 @@ display:
         - url.query_args
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
+        - 'config:core.entity_view_display.activity.activity.featured'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'
   block_stream_explore:
@@ -362,11 +363,12 @@ display:
         - url.query_args
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
+        - 'config:core.entity_view_display.activity.activity.featured'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'
   block_stream_homepage:
     id: block_stream_homepage
-    display_title: 'Homepage stream block'
+    display_title: 'Homepage stream block (with post form)'
     display_plugin: block
     position: 3
     display_options:
@@ -469,6 +471,7 @@ display:
         - user
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
+        - 'config:core.entity_view_display.activity.activity.featured'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'
   block_stream_homepage_without_post:
@@ -578,6 +581,7 @@ display:
         - user
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
+        - 'config:core.entity_view_display.activity.activity.featured'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'
   page_activity_stream:
@@ -601,6 +605,7 @@ display:
         - url.query_args
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
+        - 'config:core.entity_view_display.activity.activity.featured'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'
   page_explore:
@@ -763,5 +768,6 @@ display:
         - url.query_args
       tags:
         - 'config:core.entity_view_display.activity.activity.default'
+        - 'config:core.entity_view_display.activity.activity.featured'
         - 'config:core.entity_view_display.activity.activity.notification'
         - 'config:core.entity_view_display.activity.activity.notification_archive'

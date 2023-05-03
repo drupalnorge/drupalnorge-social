@@ -314,6 +314,7 @@ display:
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
         - 'config:core.entity_view_display.profile.profile.medium_teaser'
+        - 'config:core.entity_view_display.profile.profile.name'
         - 'config:core.entity_view_display.profile.profile.search_index'
         - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'
@@ -367,6 +368,7 @@ display:
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
         - 'config:core.entity_view_display.profile.profile.medium_teaser'
+        - 'config:core.entity_view_display.profile.profile.name'
         - 'config:core.entity_view_display.profile.profile.search_index'
         - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'
@@ -404,6 +406,8 @@ display:
       defaults:
         title: false
         pager: false
+        filters: false
+        filter_groups: false
       display_description: ''
       exposed_block: true
       display_extenders: {  }
@@ -422,6 +426,7 @@ display:
         - 'config:core.entity_view_display.profile.profile.default'
         - 'config:core.entity_view_display.profile.profile.hero'
         - 'config:core.entity_view_display.profile.profile.medium_teaser'
+        - 'config:core.entity_view_display.profile.profile.name'
         - 'config:core.entity_view_display.profile.profile.search_index'
         - 'config:core.entity_view_display.profile.profile.small'
         - 'config:core.entity_view_display.profile.profile.small_teaser'

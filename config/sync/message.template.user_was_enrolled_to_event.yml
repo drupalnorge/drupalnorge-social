@@ -1,9 +1,11 @@
+uuid: null
 langcode: nb
 status: true
 dependencies:
+  config:
+    - filter.format.full_html
   module:
     - activity_logger
-    - social_event_managers
   enforced:
     module:
       - social_event
@@ -23,14 +25,8 @@ template: user_was_enrolled_to_event
 label: 'A user was enrolled for the event'
 description: 'A user was enrolled for the event'
 text:
-  -
-    value: ''
-    format: full_html
-  -
-    value: ''
-    format: full_html
-  -
-    value: "<p>This is to confirm that you've enrolled for the event <u>[social_event:event_iam_organizing]</u>.</p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"
+  4:
+    value: "<p>This is to confirm that you've enrolled for the event <em>[social_event:event_iam_organizing]</em>.</p>\r\n\r\n<p>[message:preview]</p>\r\n\r\n<p>[message:cta_button]</p>\r\n"
     format: full_html
 settings:
   'token options':
