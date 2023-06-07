@@ -1,3 +1,4 @@
+langcode: nb
 excluded_routes:
   - view.my_invitations.page_1
   - ginvite.invitation.accept

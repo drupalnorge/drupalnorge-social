@@ -1,7 +1,14 @@
 uuid: ce624c8f-ab10-4bc5-8755-74c830da23c4
 langcode: nb
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - comment
+    - entity_access_by_field
+    - social_like
+    - social_post
+    - social_search
+    - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
