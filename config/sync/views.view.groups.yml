@@ -160,6 +160,21 @@ display:
             field_identifier: created
           exposed: false
           granularity: second
+        label:
+          id: label
+          table: groups_field_data
+          field: label
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: group
+          entity_field: label
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       arguments:
         group_membership_or_creator:
           id: group_membership_or_creator
