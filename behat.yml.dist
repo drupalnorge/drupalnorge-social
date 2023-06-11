@@ -15,6 +15,7 @@ default:
         - Drupal\social\Behat\PostContext
         - Drupal\social\Behat\SocialDrupalContext
         - Drupal\social\Behat\SocialMinkContext
+        - Drupal\social\Behat\SocialDrupalContext
         - Drupal\DrupalExtension\Context\BatchContext
         - Drupal\DrupalExtension\Context\ConfigContext
         - Drupal\DrupalExtension\Context\MessageContext
