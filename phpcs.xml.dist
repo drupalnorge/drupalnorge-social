@@ -4,6 +4,7 @@
     <arg name="extensions" value="inc,install,module,php,profile,test,theme"/>
 
     <file>./html/modules/custom</file>
+    <file>./tests/src</file>
 
     <rule ref="./vendor/drupal/coder/coder_sniffer/Drupal"/>
 </ruleset>
