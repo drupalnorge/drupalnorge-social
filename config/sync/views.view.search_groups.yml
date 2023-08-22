@@ -236,10 +236,10 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        search_api_language:
-          id: search_api_language
+        language_with_fallback:
+          id: language_with_fallback
           table: search_api_index_social_groups
-          field: search_api_language
+          field: language_with_fallback
           relationship: none
           group_type: group
           admin_label: ''

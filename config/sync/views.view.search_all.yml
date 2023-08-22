@@ -211,10 +211,10 @@ display:
           conjunction: AND
           fields: {  }
       filters:
-        search_api_language:
-          id: search_api_language
+        language_with_fallback:
+          id: language_with_fallback
           table: search_api_index_social_all
-          field: search_api_language
+          field: language_with_fallback
           relationship: none
           group_type: group
           admin_label: ''
@@ -222,7 +222,6 @@ display:
           operator: in
           value:
             '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
-            und: und
           group: 1
           exposed: false
           expose:
@@ -298,7 +297,9 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-      tags: {  }
+        - 'user.node_grants:view'
+      tags:
+        - 'config:search_api.index.social_all'
   page:
     id: page
     display_title: Page
@@ -314,7 +315,9 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-      tags: {  }
+        - 'user.node_grants:view'
+      tags:
+        - 'config:search_api.index.social_all'
   page_no_value:
     id: page_no_value
     display_title: 'Page (no value)'
@@ -331,4 +334,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-      tags: {  }
+        - 'user.node_grants:view'
+      tags:
+        - 'config:search_api.index.social_all'

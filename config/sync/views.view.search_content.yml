@@ -366,10 +366,10 @@ display:
                   max: ''
                   value: now
                   type: date
-        search_api_language:
-          id: search_api_language
+        language_with_fallback:
+          id: language_with_fallback
           table: search_api_index_social_content
-          field: search_api_language
+          field: language_with_fallback
           relationship: none
           group_type: group
           admin_label: ''
@@ -452,8 +452,10 @@ display:
         - url.query_args
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
+        - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:search_api.index.social_content'
   page:
     id: page
     display_title: Page
@@ -487,8 +489,10 @@ display:
         - url.query_args
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
+        - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:search_api.index.social_content'
   page_no_value:
     id: page_no_value
     display_title: 'Page (no value)'
@@ -520,5 +524,7 @@ display:
         - url.query_args
         - 'url.query_args:sort_by'
         - 'url.query_args:sort_order'
+        - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:search_api.index.social_content'

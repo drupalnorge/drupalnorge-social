@@ -42,6 +42,10 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_event_date_end
+  language_with_fallback:
+    label: 'Language (with fallback)'
+    property_path: language_with_fallback
+    type: string
   node_grants:
     label: 'Node access information'
     property_path: search_api_node_grants
@@ -126,6 +130,7 @@ processor_settings:
   entity_access_by_field:
     weights:
       preprocess_query: -30
+  entity_type: {  }
   html_filter:
     weights:
       preprocess_index: -15
@@ -150,6 +155,7 @@ processor_settings:
       preprocess_query: -10
     all_fields: true
     fields:
+      - language_with_fallback
       - rendered_item
       - title
       - type
@@ -225,6 +231,7 @@ processor_settings:
       preprocess_query: -10
     all_fields: true
     fields:
+      - language_with_fallback
       - rendered_item
       - title
       - type

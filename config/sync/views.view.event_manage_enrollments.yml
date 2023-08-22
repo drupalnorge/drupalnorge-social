@@ -1,4 +1,4 @@
-uuid: null
+uuid: ad72dcaa-3d81-46b8-970f-ce7e70ef7ea7
 langcode: nb
 status: true
 dependencies:
@@ -572,7 +572,7 @@ display:
         options:
           query_comment: ''
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_tags: {  }
       relationships:
