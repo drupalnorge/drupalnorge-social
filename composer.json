@@ -133,6 +133,7 @@
                 "drupal/core-dev"
             ],
             "one_pull_request_per_package": 1,
+            "allow_update_indirect_with_direct": 1,
             "allow_updates_beyond_constraint": 0
         }
     }
