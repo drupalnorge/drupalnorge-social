@@ -42,6 +42,10 @@ field_settings:
     dependencies:
       module:
         - group
+  language_with_fallback:
+    label: 'Language (with fallback)'
+    property_path: language_with_fallback
+    type: string
   name:
     label: 'Group creator » User » Name'
     datasource_id: 'entity:group'
@@ -88,6 +92,7 @@ processor_settings:
     weights:
       add_properties: 20
     plugin_id: aggregated_field
+  entity_type: {  }
   html_filter:
     weights:
       preprocess_index: -15
@@ -144,6 +149,7 @@ processor_settings:
     fields:
       - field_group_description
       - label
+      - language_with_fallback
       - name
       - rendered_item
       - type
@@ -221,6 +227,7 @@ processor_settings:
     fields:
       - field_group_description
       - label
+      - language_with_fallback
       - name
       - rendered_item
       - type

@@ -112,6 +112,10 @@ field_settings:
     dependencies:
       module:
         - group
+  language_with_fallback:
+    label: 'Language (with fallback)'
+    property_path: language_with_fallback
+    type: string
   name:
     label: 'Owner » User » Name'
     datasource_id: 'entity:profile'
@@ -284,6 +288,7 @@ processor_settings:
       - field_profile_first_name
       - field_profile_last_name
       - label
+      - language_with_fallback
       - name
       - rendered_item
       - title
@@ -367,6 +372,7 @@ processor_settings:
       - field_profile_first_name
       - field_profile_last_name
       - label
+      - language_with_fallback
       - name
       - rendered_item
       - title
