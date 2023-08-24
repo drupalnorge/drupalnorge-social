@@ -22,15 +22,3 @@ $settings['trusted_host_patterns'] = [
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
-
-if (getenv('GITHUB_ACTIONS') == 'true') {
-  $databases['default']['default'] = [
-    'database' => "dnorge",
-    'username' => "root",
-    'password' => "root",
-    'host' => "127.0.0.1",
-    'driver' => "mysql",
-    'port' => 3306,
-    'prefix' => "",
-  ];
-}

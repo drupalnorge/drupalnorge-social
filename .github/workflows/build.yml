@@ -1,7 +1,6 @@
-name: Build, Test & Deploy
+name: "Build, Test & Deploy"
 
 on:
-  push:
   pull_request_target:
     types:
       - opened
@@ -10,135 +9,144 @@ on:
       - reopened
       - ready_for_review
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
-
 env:
   branch_name: ${{ github.head_ref || github.ref_name }}
-  php_version: "8.1"
-  composer_version: "2.x"
-  project_tools: "composer:v2"
 
 jobs:
   build:
-    name: "Build"
+    name: "Build and test"
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
+    concurrency:
+      group: ${{ github.event.pull_request.number || github.ref }}-build
+      cancel-in-progress: true
 
     steps:
-      - name: Setup PHP environment with Composer
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: ${{ env.php_version }}
-          tools: ${{ env.project_tools }}
-
       - name: Check out the repository code
         uses: actions/checkout@v3
 
+      - name: Setup and start DDEV
+        uses: ddev/github-action-setup-ddev@v1
+
+      - name: Provide information
+        run: |
+          echo "- Docker info"
+          docker info
+          echo "- Docker images"
+          docker images
+          echo "- DDEV information"
+          ddev version
+          echo "- PHP information"
+          ddev php --version
+          echo "- Composer information"
+          ddev composer --version
+
       - name: Validate composer.json and composer.lock
-        run: composer validate --strict
-
-      - name: Get Composer Cache Directory
-        id: composer-cache
-        run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
-
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.composer-cache.outputs.dir }}
-          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
-          restore-keys: ${{ runner.os }}-composer-
+        run: ddev composer validate --strict
 
       - name: Composer install
         run: |
           if [[ ${{ env.branch_name }} == "master" ]]; then
-            composer install --no-dev --no-interaction --optimize-autoloader
+            ddev composer install --no-dev --no-interaction --optimize-autoloader
           else
-            composer install --no-interaction --optimize-autoloader
+            ddev composer install --no-interaction --optimize-autoloader
           fi
 
-      - name: Creating symlink
+      - name: Create symlinks
         run: |
-          if [ ! -d $(pwd)/html/sites/default/files ]; then
-            mkdir -pm 755 $(pwd)/html/sites/default/files;
-            mkdir -pm 755 $(pwd)/html/sites/default/files/translations;
+          if [ ! -d html/sites/default/files ]; then
+            mkdir -pm 755 html/sites/default/files
           fi
-          if [ ! -d $(pwd)/html/sites/default/private ]; then
-            mkdir -pm 755 $(pwd)/html/sites/default/private;
+          if [ ! -d html/sites/default/files/translations ]; then
+            mkdir -pm 755 html/sites/default/files/translations
           fi
+          if [ ! -d html/sites/default/private ]; then
+            mkdir -pm 755 html/sites/default/private
+          fi
+
+      - name: Download and import the sanitized database
+        run: ddev composer import-sanitized
+
+      - name: Run drush deploy commands
+        run: ddev drush deploy
+
+      - name: Enable stage_file_proxy
+        run: |
+          if [[ ${{ env.branch_name }} == "master" ]]; then
+            composer require --dev drupal/stage_file_proxy
+          fi
+          ddev drush pm:enable stage_file_proxy --yes
+          ddev drush config:set stage_file_proxy.settings origin "https://www.drupalnorge.no" --yes
+          ddev drush config:set stage_file_proxy.settings hotlink true --yes
+
+      - name: Run test
+        run: ddev composer test
+
+      - name: Screenshots permissions
+        run: '(test -d screenshots && sudo chmod -R 777 screenshots) || echo "No screenshots found"'
+        if: ${{ failure() }}
+
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v3
+        if: ${{ failure() }}
+        with:
+          name: screenshots
+          path: screenshots
+
+      - name: Disable stage_file_proxy
+        run: |
+          ddev drush pm:uninstall stage_file_proxy --yes
+          ddev drush cache:rebuild
+          if [[ ${{ env.branch_name }} == "master" ]]; then
+            composer remove --dev drupal/stage_file_proxy
+          fi
+
+      - name: Sanitized database
+        run: |
+          ddev drush sql:sanitize --yes
+
+      - name: Database dump
+        run: ddev drush sql:dump > html/sanitized.db
+
+      - name: Upload the sanitized database
+        uses: actions/upload-artifact@v3
+        if: ${{ success() }}
+        with:
+          name: sanitized.db
+          path: html/sanitized.db
+          if-no-files-found: error
 
       - name: Creating an artifact
+        if: ${{ success() }}
         run: >
           tar
-          --exclude="./.ddev"
-          --exclude="./.git"
-          --exclude="./.github"
-          --exclude="./config"
-          --exclude="./drush"
-          --exclude="./html/modules/custom"
-          --exclude="./html/themes/custom"
-          --exclude="./html/sites/default/settings.githubactions.php.example"
-          --exclude="./html/sites/default/settings.php"
-          --exclude="./tests"
-          --exclude="./.gitignore"
-          --exclude="./*.*.dist"
-          --exclude="./composer.*"
-          --exclude="./README.md"
-          -zcvf /tmp/artifact.tar.gz .
+          --exclude="./html/sites/default/files/*"
+          --exclude="./html/sites/default/private/*"
+          --exclude="./html/sites/default/.gitignore"
+          --exclude="./html/sites/default/settings.ddev.php"
+          -zcvf /tmp/artifact.tar.gz
+          ./.ddev/config.yaml
+          ./.ddev/docker-compose.chromedriver.yaml
+          ./.git
+          ./.github
+          ./bin
+          ./config
+          ./drush
+          ./html
+          ./tests
+          ./vendor
+          ./.editorconfig
+          ./.gitattributes
+          ./.gitignore
+          ./behat.yml.dist
+          ./composer.json
+          ./composer.lock
+          ./phpcs.xml.dist
+          ./README.md
 
       - name: Uploading artifact
         uses: actions/upload-artifact@v3
         with:
-          name: build-artifact
+          name: artifact
           path: /tmp/artifact.tar.gz
           if-no-files-found: error
-
-  test:
-    name: "Test"
-    needs: build
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-
-    services:
-      mariadb:
-        image: mariadb:10.5
-        ports:
-          - 3306:3306
-        env:
-          MYSQL_ROOT_PASSWORD: root
-          MYSQL_DATABASE: dnorge
-        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
-      chromedriver:
-        image: selenium/standalone-chrome:104.0-chromedriver-104.0
-        ports:
-          - 8643:8643
-        env:
-          SE_OPTS: "--port 8643"
-
-    steps:
-      - name: Setup PHP environment with Composer
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: ${{ env.php_version }}
-          tools: ${{ env.project_tools }}
-
-      - name: Check out the repository code
-        uses: actions/checkout@v3
-
-      - name: Downloading artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: build-artifact
-
-      - name: Extracting artifact
-        run: tar -xvf artifact.tar.gz
-
-      - name: Download and import the sanitized database
-        run: composer import-sanitized
-
-      - name: Update database and importing configuration
-        run: composer update-site
-
-      - name: Run tests
-        run: composer test
