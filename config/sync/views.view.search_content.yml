@@ -366,8 +366,8 @@ display:
                   max: ''
                   value: now
                   type: date
-        language_with_fallback:
-          id: language_with_fallback
+        search_api_language:
+          id: search_api_language
           table: search_api_index_social_content
           field: language_with_fallback
           relationship: none

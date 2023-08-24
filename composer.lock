@@ -2233,10 +2233,6 @@
                     "homepage": "https://www.drupal.org/user/61114"
                 },
                 {
-                    "name": "soxofaan",
-                    "homepage": "https://www.drupal.org/user/41478"
-                },
-                {
                     "name": "thomas.frobieter",
                     "homepage": "https://www.drupal.org/user/409335"
                 },
@@ -7707,16 +7703,16 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "11.9.10",
+            "version": "11.9.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "44a00aec3bb08ec8134c95073284e491391315fd"
+                "reference": "ac7b522f484934f7a35251a68f4a6dbe28106dfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/44a00aec3bb08ec8134c95073284e491391315fd",
-                "reference": "44a00aec3bb08ec8134c95073284e491391315fd",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/ac7b522f484934f7a35251a68f4a6dbe28106dfb",
+                "reference": "ac7b522f484934f7a35251a68f4a6dbe28106dfb",
                 "shasum": ""
             },
             "require": {
@@ -7904,9 +7900,9 @@
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
             "support": {
-                "source": "https://github.com/goalgorilla/open_social/tree/11.9.10"
+                "source": "https://github.com/goalgorilla/open_social/tree/11.9.11"
             },
-            "time": "2023-08-21T07:32:19+00:00"
+            "time": "2023-08-23T11:13:10+00:00"
         },
         {
             "name": "google/recaptcha",

@@ -75,10 +75,7 @@
         ],
         "update-site": [
             "./bin/drush --root=$(pwd)/html state:set system.maintenance_mode 1 --yes",
-            "./bin/drush --root=$(pwd)/html updatedb --yes",
-            "./bin/drush --root=$(pwd)/html cache:rebuild",
-            "@composer import",
-            "./bin/drush --root=$(pwd)/html deploy:hook --yes",
+            "./bin/drush --root=$(pwd)/html deploy --yes",
             "./bin/drush --root=$(pwd)/html state:set system.maintenance_mode 0 --yes",
             "./bin/drush --root=$(pwd)/html cache:rebuild"
         ],
@@ -89,7 +86,7 @@
         ],
         "import-sanitized": [
             "./bin/drush --root=$(pwd)/html sql:drop --yes",
-            "wget --no-check-certificate https://drupalnorge.no/sanitized.db",
+            "wget --no-check-certificate https://www.drupalnorge.no/sanitized.db",
             "./bin/drush --root=$(pwd)/html sql:cli < ./sanitized.db",
             "rm -f ./sanitized.db",
             "./bin/drush --root=$(pwd)/html cache:rebuild",
