@@ -13,7 +13,9 @@ default:
         - Drupal\social\Behat\EmailContext
         - Drupal\social\Behat\FeatureContext
         - Drupal\social\Behat\PostContext
+        - Drupal\social\Behat\SocialDrupalContext
         - Drupal\social\Behat\SocialMinkContext
+        - Drupal\social\Behat\SocialDrupalContext
         - Drupal\DrupalExtension\Context\BatchContext
         - Drupal\DrupalExtension\Context\ConfigContext
         - Drupal\DrupalExtension\Context\MessageContext
@@ -48,7 +50,7 @@ default:
         root: ./html
       blackbox: ~
       drupal:
-        drupal_root: %paths.base%/html
+        drupal_root: "%paths.base%/html"
       api_driver: 'drupal'
       text:
         username_field: "name_or_mail"

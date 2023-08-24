@@ -5,10 +5,10 @@
  * The drupalnorge migrate module.
  */
 
+use Drupal\Core\Url;
+use Drupal\profile\Entity\Profile;
 use Drupal\profile\Entity\ProfileInterface;
 use Drupal\user\Entity\User;
-use Drupal\profile\Entity\Profile;
-use Drupal\Core\Url;
 
 /**
  * Helper function to create a cache id.
