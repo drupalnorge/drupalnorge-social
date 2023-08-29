@@ -1,1 +1,2 @@
 disabled_user_greeting_key: register_no_approval_required
+disabled_user_greeting_keys: "invite\r\nregister_admin_created\r\nregister_pending_approval\r\nregister_pending_approval_admin\r\nregister_no_approval_required\r\nstatus_activated\r\nstatus_blocked\r\ncancel_confirm\r\nstatus_canceled\r\npassword_reset"
