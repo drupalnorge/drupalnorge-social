@@ -115,6 +115,9 @@
             "drupal/core": "-p2"
         },
         "patches": {
+            "drupal/core": {
+                "[https://dgo.to/3300404] - Unserialize(): Passing null to parameter #1 ($data) of type string is deprecated in Drupal\\Core\\Entity\\Sql\\SqlContentEntityStorage::loadFromSharedTables()": "https://www.drupal.org/files/issues/2023-03-03/3300404-28-map-field-failing-php-81-combined.patch"
+            }
         },
         "patches-ignore": {
         },
