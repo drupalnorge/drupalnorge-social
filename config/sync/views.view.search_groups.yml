@@ -236,8 +236,8 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-        language_with_fallback:
-          id: language_with_fallback
+        search_api_language:
+          id: search_api_language
           table: search_api_index_social_groups
           field: language_with_fallback
           relationship: none
