@@ -4176,17 +4176,17 @@
         },
         {
             "name": "drupal/honeypot",
-            "version": "2.1.2",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/honeypot.git",
-                "reference": "2.1.2"
+                "reference": "2.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/honeypot-2.1.2.zip",
-                "reference": "2.1.2",
-                "shasum": "9511fd6db37c153f2290950bf79611b27510cede"
+                "url": "https://ftp.drupal.org/files/projects/honeypot-2.1.3.zip",
+                "reference": "2.1.3",
+                "shasum": "101105029a10a574ef6017824182500ab9905856"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10"
@@ -4197,8 +4197,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.2",
-                    "datestamp": "1664658244",
+                    "version": "2.1.3",
+                    "datestamp": "1695604754",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
