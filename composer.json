@@ -123,9 +123,16 @@
         },
         "violinist": {
             "bundled_packages": {
-                "drupal/core-recommended": [
+                "drupal/core": [
                     "drupal/core-composer-scaffold",
-                    "drupal/core-dev"
+                    "drupal/core-dev",
+                    "drush/drush"
+                ],
+                "goalgorilla/open_social": [
+                    "drupal/core",
+                    "drupal/core-composer-scaffold",
+                    "drupal/core-dev",
+                    "drush/drush"
                 ]
             },
             "blocklist": [
