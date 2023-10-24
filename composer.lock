@@ -2112,30 +2112,36 @@
         },
         {
             "name": "drupal/bootstrap",
-            "version": "3.26.0",
+            "version": "3.29.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap.git",
-                "reference": "8.x-3.26"
+                "reference": "8.x-3.29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.26.zip",
-                "reference": "8.x-3.26",
-                "shasum": "3d8fae75929ff3d8de52785fce71a236b0c4bc26"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.29.zip",
+                "reference": "8.x-3.29",
+                "shasum": "85ab09921602cb184f1d18b79d7d864b6eb06c8c"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10"
+                "drupal/core": "^9.5 || ^10",
+                "php": ">=8.1.0"
             },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.26",
-                    "datestamp": "1676066874",
+                    "version": "8.x-3.29",
+                    "datestamp": "1689102544",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\bootstrap\\": "src"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2497,29 +2503,29 @@
         },
         {
             "name": "drupal/config_update",
-            "version": "2.0.0-alpha3",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_update.git",
-                "reference": "2.0.0-alpha3"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_update-2.0.0-alpha3.zip",
-                "reference": "2.0.0-alpha3",
-                "shasum": "c35e81e8fb77efdff5ddca3a87116ea0c522a7e2"
+                "url": "https://ftp.drupal.org/files/projects/config_update-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "8f079abf7c2ea826a27fa5224b0770a26404c968"
             },
             "require": {
-                "drupal/core": "^9.4 || ^10"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-alpha3",
-                    "datestamp": "1683807608",
+                    "version": "8.x-1.7",
+                    "datestamp": "1586355587",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -2537,7 +2543,7 @@
                     "homepage": "https://www.drupal.org/user/80733"
                 }
             ],
-            "description": "Provides basic revert and update functionality for other modules.",
+            "description": "Provides basic revert and update functionality for other modules",
             "homepage": "https://www.drupal.org/project/config_update",
             "support": {
                 "source": "https://git.drupalcode.org/project/config_update"
@@ -3214,26 +3220,29 @@
         },
         {
             "name": "drupal/embed",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/embed.git",
-                "reference": "8.x-1.6"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "6d2964775c3228d122cd61904786b3640fa83045"
+                "url": "https://ftp.drupal.org/files/projects/embed-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "b7ca4264be51038f947d26b6725fc0446b224f60"
             },
             "require": {
                 "drupal/core": "^9.3 | ^10"
             },
+            "require-dev": {
+                "drupal/ckeditor": "*"
+            },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1661298150",
+                    "version": "8.x-1.7",
+                    "datestamp": "1697642867",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4070,31 +4079,31 @@
         },
         {
             "name": "drupal/graphql_oauth",
-            "version": "1.0.0-alpha2",
+            "version": "1.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/graphql_oauth.git",
-                "reference": "1.0.0-alpha2"
+                "reference": "1.0.0-alpha3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/graphql_oauth-1.0.0-alpha2.zip",
-                "reference": "1.0.0-alpha2",
-                "shasum": "ec0396d339d65402e615a30e26ec6e82d57efc3b"
+                "url": "https://ftp.drupal.org/files/projects/graphql_oauth-1.0.0-alpha3.zip",
+                "reference": "1.0.0-alpha3",
+                "shasum": "733403af8c388d3bb08e17fb976b99770de3b252"
             },
             "require": {
-                "drupal/core": "^9",
+                "drupal/core": "^9 || ^10",
                 "drupal/graphql": "^4.1",
                 "drupal/simple_oauth": "^6.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0-alpha2",
-                    "datestamp": "1656578205",
+                    "version": "1.0.0-alpha3",
+                    "datestamp": "1697444384",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -4104,16 +4113,20 @@
             ],
             "authors": [
                 {
-                    "name": "Unsupported Projects",
-                    "homepage": "https://www.drupal.org/user/291168"
-                },
-                {
                     "name": "bojan_dev",
                     "homepage": "https://www.drupal.org/user/2801849"
                 },
                 {
                     "name": "bramtenhove",
                     "homepage": "https://www.drupal.org/user/1549848"
+                },
+                {
+                    "name": "Kingdutch",
+                    "homepage": "https://www.drupal.org/user/1868952"
+                },
+                {
+                    "name": "Unsupported Projects",
+                    "homepage": "https://www.drupal.org/user/291168"
                 }
             ],
             "description": "Enables OAuth directive support on GraphQL.",
@@ -5358,21 +5371,21 @@
         },
         {
             "name": "drupal/profile",
-            "version": "1.4.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/profile.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/profile-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "253fd577c3b791c93747bb910ad2ae8e67d71eed"
+                "url": "https://ftp.drupal.org/files/projects/profile-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "f0236acff507aff2a1e2e11cb9c873a0b608ec1c"
             },
             "require": {
-                "drupal/core": "^8.9 || ^9 || ^10",
-                "drupal/entity": "^1.0-rc2"
+                "drupal/core": "^9 || ^10",
+                "drupal/entity": "^1.0"
             },
             "require-dev": {
                 "drupal/token": "^1.7"
@@ -5380,8 +5393,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1652430373",
+                    "version": "8.x-1.7",
+                    "datestamp": "1665131792",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5419,7 +5432,7 @@
                 }
             ],
             "description": "Provides configurable user profiles.",
-            "homepage": "http://drupal.org/project/profile",
+            "homepage": "https://drupal.org/project/profile",
             "support": {
                 "source": "https://git.drupalcode.org/project/profile"
             }
@@ -5971,17 +5984,17 @@
         },
         {
             "name": "drupal/simple_oauth",
-            "version": "6.0.0-beta4",
+            "version": "6.0.0-beta5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/simple_oauth.git",
-                "reference": "6.0.0-beta4"
+                "reference": "6.0.0-beta5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_oauth-6.0.0-beta4.zip",
-                "reference": "6.0.0-beta4",
-                "shasum": "6e24faca858725e0c04781cb6ca95bce6c1898cf"
+                "url": "https://ftp.drupal.org/files/projects/simple_oauth-6.0.0-beta5.zip",
+                "reference": "6.0.0-beta5",
+                "shasum": "a3eff867401dd71b71d8955e165f3b70d0cc3c42"
             },
             "require": {
                 "drupal/consumers": "^1.15",
@@ -5997,8 +6010,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "6.0.0-beta4",
-                    "datestamp": "1681831446",
+                    "version": "6.0.0-beta5",
+                    "datestamp": "1697703258",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -6006,7 +6019,7 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9 || ^10"
+                        "drush.services.yml": "^9 || ^10 || ^11"
                     }
                 }
             },
@@ -6254,27 +6267,27 @@
         },
         {
             "name": "drupal/socialbase",
-            "version": "2.5.8",
+            "version": "2.5.9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/socialbase.git",
-                "reference": "2.5.8"
+                "reference": "2.5.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/socialbase-2.5.8.zip",
-                "reference": "2.5.8",
-                "shasum": "3ead093a29a4eb73564870b95d0ae0f1d084b9ab"
+                "url": "https://ftp.drupal.org/files/projects/socialbase-2.5.9.zip",
+                "reference": "2.5.9",
+                "shasum": "bc0796f20d333237a3f7ce75869136fa800a6dbb"
             },
             "require": {
-                "drupal/bootstrap": "3.26",
-                "drupal/core": "^8.8 || ^9"
+                "drupal/bootstrap": "3.29",
+                "drupal/core": "^8.8 || ^9 || ^10"
             },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "2.5.8",
-                    "datestamp": "1697101787",
+                    "version": "2.5.9",
+                    "datestamp": "1698075104",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6306,6 +6319,10 @@
                 {
                     "name": "navneet0693",
                     "homepage": "https://www.drupal.org/user/3200545"
+                },
+                {
+                    "name": "nkoporec",
+                    "homepage": "https://www.drupal.org/user/3554464"
                 },
                 {
                     "name": "Open Social",
@@ -6340,27 +6357,27 @@
         },
         {
             "name": "drupal/socialblue",
-            "version": "2.5.3",
+            "version": "2.5.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/socialblue.git",
-                "reference": "2.5.3"
+                "reference": "2.5.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/socialblue-2.5.3.zip",
-                "reference": "2.5.3",
-                "shasum": "c288a734c3df69693ed7fcf27ce583e26440ed2b"
+                "url": "https://ftp.drupal.org/files/projects/socialblue-2.5.4.zip",
+                "reference": "2.5.4",
+                "shasum": "0cf3696f4577c766fcb714208194286701d8eedb"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9",
-                "drupal/socialbase": "~2.5.0"
+                "drupal/core": "^8.8 || ^9 || ^10",
+                "drupal/socialbase": "~2.5.9"
             },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "2.5.3",
-                    "datestamp": "1697102221",
+                    "version": "2.5.4",
+                    "datestamp": "1698075727",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6387,6 +6404,10 @@
                 {
                     "name": "navneet0693",
                     "homepage": "https://www.drupal.org/user/3200545"
+                },
+                {
+                    "name": "nkoporec",
+                    "homepage": "https://www.drupal.org/user/3554464"
                 },
                 {
                     "name": "Open Social",
@@ -7675,16 +7696,16 @@
         },
         {
             "name": "goalgorilla/open_social",
-            "version": "11.11.0",
+            "version": "11.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/goalgorilla/open_social.git",
-                "reference": "199ff6d3b7f3435f4b70801ca11bc844e125044d"
+                "reference": "e90af00e15a316bd3a0eaa7263214a0d53d3aaaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/199ff6d3b7f3435f4b70801ca11bc844e125044d",
-                "reference": "199ff6d3b7f3435f4b70801ca11bc844e125044d",
+                "url": "https://api.github.com/repos/goalgorilla/open_social/zipball/e90af00e15a316bd3a0eaa7263214a0d53d3aaaa",
+                "reference": "e90af00e15a316bd3a0eaa7263214a0d53d3aaaa",
                 "shasum": ""
             },
             "require": {
@@ -7697,7 +7718,7 @@
                 "drupal/better_exposed_filters": "6.0.3",
                 "drupal/block_field": "1.0.0-rc4",
                 "drupal/config_modify": "^1",
-                "drupal/config_update": "2.0.0-alpha3",
+                "drupal/config_update": "^1.7 || 2.0.0-alpha3",
                 "drupal/core": "~9.5",
                 "drupal/core-composer-scaffold": "~9.5.3",
                 "drupal/crop": "2.3.0",
@@ -7715,7 +7736,7 @@
                 "drupal/gin_toolbar": "1.0.0-rc3",
                 "drupal/ginvite": "2.1.0",
                 "drupal/graphql": "4.5.0",
-                "drupal/graphql_oauth": "1.0.0-alpha2",
+                "drupal/graphql_oauth": "1.0.0-alpha3",
                 "drupal/group": "1.6.0",
                 "drupal/image_effects": "3.4.0",
                 "drupal/image_widget_crop": "2.4.0",
@@ -7728,7 +7749,7 @@
                 "drupal/paragraphs": "1.15.0",
                 "drupal/pathauto": "1.11.0",
                 "drupal/private_message": "3.0.0-beta2",
-                "drupal/profile": "1.4.0",
+                "drupal/profile": "1.7.0",
                 "drupal/r4032login": "2.2.1",
                 "drupal/redirect": "1.8.0",
                 "drupal/role_delegation": "1.2.0",
@@ -7813,7 +7834,8 @@
                         "Issue #2107455: Image field default value not shown when upload destination set to private file storage": "https://www.drupal.org/files/issues/2022-06-24/2107455-75.patch",
                         "Issue #3052115: Mark an entity as 'syncing' during a migration update": "https://www.drupal.org/files/issues/2023-02-01/3052115-59.patch",
                         "Issue #3332546: CommentSelection::entityQueryAlter() fails on validate when referencing entity is not a comment": "https://www.drupal.org/files/issues/2023-01-11/3332546-6-comment_selection_entityqueryalter.patch",
-                        "2924783 - Fatal error on entity autocomplete widget if entity label contains parentheses": "https://www.drupal.org/files/issues/2021-04-18/2924783-18.patch"
+                        "2924783 - Fatal error on entity autocomplete widget if entity label contains parentheses": "https://www.drupal.org/files/issues/2021-04-18/2924783-18.patch",
+                        "States API doesn't work with multiple select fields": "https://www.drupal.org/files/issues/2023-06-27/drupal-n1149078-172-95x.patch"
                     },
                     "drupal/dynamic_entity_reference": {
                         "Return the same content list after content type is changed": "https://www.drupal.org/files/issues/2021-08-27/dynamic_entity_reference-the_same_content_list-3230158-2.patch"
@@ -7834,6 +7856,13 @@
                     },
                     "drupal/paragraphs": {
                         "Integrity constraint violation: 1048 Column 'langcode' cannot be null": "https://www.drupal.org/files/issues/2019-07-10/paragraphs-set_langcode_widgets-2901390-29.patch"
+                    },
+                    "drupal/private_message": {
+                        "Automated Drupal 10 compatibility fixes": "https://www.drupal.org/files/issues/2023-09-20/drupal_10_compatiblity_issues_3297888_8_t3.0.0-beta2.patch"
+                    },
+                    "drupal/profile": {
+                        "Issue #3380160: Fix race condition for user registration and profile creation": "https://www.drupal.org/files/issues/2023-08-09/profile-3380160-6.patch",
+                        "Issue #3380199: ProfileLabelEvent PHP types hinder internationalization": "https://www.drupal.org/files/issues/2023-08-09/profile-3380199-3.patch"
                     },
                     "drupal/search_api": {
                         "Ensure field definition allowed values callbacks are used for field filter callbacks": "https://www.drupal.org/files/issues/2020-06-03/2949022-12--views_filter_options_callback.patch",
@@ -7868,9 +7897,9 @@
             ],
             "description": "Open Social is a distribution for building social communities and intranets.",
             "support": {
-                "source": "https://github.com/goalgorilla/open_social/tree/11.11.0"
+                "source": "https://github.com/goalgorilla/open_social/tree/11.11.2"
             },
-            "time": "2023-10-09T11:25:37+00:00"
+            "time": "2023-10-24T10:51:59+00:00"
         },
         {
             "name": "goalgorilla/open_social_upgrade_patches",
@@ -11162,16 +11191,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.11.21",
+            "version": "v0.11.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "bcb22101107f3bf770523b65630c9d547f60c540"
+                "reference": "128fa1b608be651999ed9789c95e6e2a31b5802b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/bcb22101107f3bf770523b65630c9d547f60c540",
-                "reference": "bcb22101107f3bf770523b65630c9d547f60c540",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/128fa1b608be651999ed9789c95e6e2a31b5802b",
+                "reference": "128fa1b608be651999ed9789c95e6e2a31b5802b",
                 "shasum": ""
             },
             "require": {
@@ -11200,7 +11229,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "0.11.x-dev"
+                    "dev-0.11": "0.11.x-dev"
                 },
                 "bamarni-bin": {
                     "bin-links": false,
@@ -11236,9 +11265,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.11.21"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.11.22"
             },
-            "time": "2023-09-17T21:15:54+00:00"
+            "time": "2023-10-14T21:56:36+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -15892,16 +15921,16 @@
         },
         {
             "name": "drupal/coder",
-            "version": "8.3.21",
+            "version": "8.3.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pfrenssen/coder.git",
-                "reference": "a0b76c6c8ea277b07d58fa75dcacf102a203ad51"
+                "reference": "ba6e62303d567863275fb086941f50a06dc7d08f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pfrenssen/coder/zipball/a0b76c6c8ea277b07d58fa75dcacf102a203ad51",
-                "reference": "a0b76c6c8ea277b07d58fa75dcacf102a203ad51",
+                "url": "https://api.github.com/repos/pfrenssen/coder/zipball/ba6e62303d567863275fb086941f50a06dc7d08f",
+                "reference": "ba6e62303d567863275fb086941f50a06dc7d08f",
                 "shasum": ""
             },
             "require": {
@@ -15939,7 +15968,7 @@
                 "issues": "https://www.drupal.org/project/issues/coder",
                 "source": "https://www.drupal.org/project/coder"
             },
-            "time": "2023-07-17T15:36:49+00:00"
+            "time": "2023-10-15T09:55:50+00:00"
         },
         {
             "name": "drupal/core-dev",
